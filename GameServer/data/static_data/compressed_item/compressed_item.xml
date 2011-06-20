@@ -1,0 +1,3802 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<compressed_items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compressed_item.xsd">
+	<!-- Greater Gold Ore > 3 Gold Ore -->
+	<compressed_item id="152000103">
+		<production chance="100" item_id="152000102" count="3"/>
+	</compressed_item>
+	<!-- Greater Platinum Ore > 3 Platinum Ore -->
+	<compressed_item id="152000105">
+		<production chance="100" item_id="152000104" count="3"/>
+	</compressed_item>
+	<!-- Greater Mithril Ore > 3 Mythril Ore -->
+	<compressed_item id="152000108">
+		<production chance="100" item_id="152000107" count="3"/>
+	</compressed_item>
+	<!-- Pure Mithril Ore > 3 Greater Mithril Ores -->
+	<compressed_item id="152000109">
+		<production chance="100" item_id="152000108" count="3"/>
+	</compressed_item>
+	<!-- Pure Platinum Ore > 3 Greater Platinum Ores -->
+	<compressed_item id="152000106">
+		<production chance="100" item_id="152000105" count="3"/>
+	</compressed_item>
+	<!-- Brilliant Mithril Ore > 3 Pure Mithril Ores -->
+	<compressed_item id="152000112">
+		<production chance="100" item_id="152000109" count="3"/>
+	</compressed_item>
+	<!-- Greater Malevite Ore > 3 Malevite Ore -->
+	<compressed_item id="152000114">
+		<production chance="100" item_id="152000113" count="3"/>
+	</compressed_item>
+	<!-- Pure Malevite Ore > 3 Greater Malevite Ore-->
+	<compressed_item id="152000115">
+		<production chance="100" item_id="152000114" count="3"/>
+	</compressed_item>
+	<!-- Brilliant Malevite Ore > 3 Pure Malevite Ore -->
+	<compressed_item id="152000116">
+		<production chance="100" item_id="152000115" count="3"/>
+	</compressed_item>
+	<!-- Greater Titanium Ore > 3 Titanium Ore -->
+	<compressed_item id="152000203">
+		<production chance="100" item_id="152000202" count="3"/>
+	</compressed_item>
+	<!-- Greater Titanium Ore > 3 Titanium Ore -->
+	<compressed_item id="152000203">
+		<production chance="100" item_id="152000202" count="3"/>
+	</compressed_item>
+	<!-- Greater Adamantium Ore > 3 Adamantium Ore -->
+	<compressed_item id="152000205">
+		<production chance="100" item_id="152000204" count="3"/>
+	</compressed_item>
+	<!-- Pure Adamantium Ore > 3 Greater Adamantium Ore -->
+	<compressed_item id="152000206">
+		<production chance="100" item_id="152000205" count="3"/>
+	</compressed_item>
+	<!-- Greater Orichalcum Ore > 3 Orichalcum Ore -->
+	<compressed_item id="152000208">
+		<production chance="100" item_id="152000207" count="3"/>
+	</compressed_item>
+	<!-- Pure Orichalcum Ore > 3 Greater Orichalcum Ore -->
+	<compressed_item id="152000209">
+		<production chance="100" item_id="152000208" count="3"/>
+	</compressed_item>
+	<!-- Brilliant Orichalcum Ore > 3 Pure Orichalcum Ore -->
+	<compressed_item id="152000213">
+		<production chance="100" item_id="152000209" count="3"/>
+	</compressed_item>
+	<!-- Greater Drenite Ore > 3 Drenite Ore -->
+	<compressed_item id="152000215">
+		<production chance="100" item_id="152000214" count="3"/>
+	</compressed_item>
+	<!-- Pure Drenite Ore > 3 Greater Drenite Ore -->
+	<compressed_item id="152000216">
+		<production chance="100" item_id="152000215" count="3"/>
+	</compressed_item>
+	<!-- Brillirant Drenite Ore > 3 Pure Drenite Ore -->
+	<compressed_item id="152000217">
+		<production chance="100" item_id="152000216" count="3"/>
+	</compressed_item>
+	<!-- Big Garnet Ore > 3 Garnet Ore -->
+	<compressed_item id="152000308">
+		<production chance="100" item_id="152000307" count="3"/>
+	</compressed_item>
+	<!-- Big Lazuli Ore > 3 Lazuli Ore -->
+	<compressed_item id="152000310">
+		<production chance="100" item_id="152000309" count="3"/>
+	</compressed_item>
+	<!-- Big Moonstone Ore > 3 Moonstone Ore -->
+	<compressed_item id="152000312">
+		<production chance="100" item_id="152000311" count="3"/>
+	</compressed_item>
+	<!-- Big Ruby Ore > 3 Ruby Ore -->
+	<compressed_item id="152000314">
+		<production chance="100" item_id="152000313" count="3"/>
+	</compressed_item>
+	<!-- Big Sapphire Ore > 3 Sapphire Ore -->
+	<compressed_item id="152000316">
+		<production chance="100" item_id="152000315" count="3"/>
+	</compressed_item>
+	<!-- Big Diamond Ore > 3 Diamond Ore -->
+	<compressed_item id="152000318">
+		<production chance="100" item_id="152000317" count="3"/>
+	</compressed_item>
+	<!-- Big Corundum Ore > 3 Corundum Ore -->
+	<compressed_item id="152000321">
+		<production chance="100" item_id="152000320" count="3"/>
+	</compressed_item>
+	<!-- Big Turquoise Ore > 3 Turquoise Ore -->
+	<compressed_item id="152000323">
+		<production chance="100" item_id="152000322" count="3"/>
+	</compressed_item>
+	<!-- Big Elatrite Ore > 3 Elatrite Ore -->
+	<compressed_item id="152000325">
+		<production chance="100" item_id="152000324" count="3"/>
+	</compressed_item>
+	<!-- Dazzling Corundum Ore > 3 Big Corundum Ore -->
+	<compressed_item id="152000326">
+		<production chance="100" item_id="152000321" count="3"/>
+	</compressed_item>
+	<!-- Dazzling Turquoise Ore > 3 Big Turquoise Ore -->
+	<compressed_item id="152000327">
+		<production chance="100" item_id="152000323" count="3"/>
+	</compressed_item>
+	<!-- Dazzling Elatrite Ore > 3 Big Elatrite Ore -->
+	<compressed_item id="152000328">
+		<production chance="100" item_id="152000325" count="3"/>
+	</compressed_item>
+	<!-- Fresh Aria > 3 Aria -->
+	<compressed_item id="152000402">
+		<production chance="100" item_id="152000401" count="3"/>
+	</compressed_item>
+	<!-- Fresh Targena > 3 Targena -->
+	<compressed_item id="152000404">
+		<production chance="100" item_id="152000403" count="3"/>
+	</compressed_item>
+	<!-- Fresh Lumesia > 3 Lumesia -->
+	<compressed_item id="152000406">
+		<production chance="100" item_id="152000405" count="3"/>
+	</compressed_item>
+	<!-- Fresh Umblia > 3 Umblia -->
+	<compressed_item id="152000408">
+		<production chance="100" item_id="152000407" count="3"/>
+	</compressed_item>
+	<!-- Fresh Nepeta > 3 Nepeta -->
+	<compressed_item id="152000410">
+		<production chance="100" item_id="152000409" count="3"/>
+	</compressed_item>
+	<!-- Fresh Amalil > 3 Amalil -->
+	<compressed_item id="152000412">
+		<production chance="100" item_id="152000411" count="3"/>
+	</compressed_item>
+	<!-- Fresh Ferilla > 3 Ferilla -->
+	<compressed_item id="152000414">
+		<production chance="100" item_id="152000413" count="3"/>
+	</compressed_item>
+	<!-- Fresh Griffonia > 3 Griffonia -->
+	<compressed_item id="152000416">
+		<production chance="100" item_id="152000415" count="3"/>
+	</compressed_item>
+	<!-- Fresh Zeldt > 3 Zeldt -->
+	<compressed_item id="152000418">
+		<production chance="100" item_id="152000417" count="3"/>
+	</compressed_item>
+	<!-- Fresh Hintera > 3 Hintera -->
+	<compressed_item id="152000420">
+		<production chance="100" item_id="152000419" count="3"/>
+	</compressed_item>
+	<!-- Fresh Azpha > 3 Azpha -->
+	<compressed_item id="152000452">
+		<production chance="100" item_id="152000451" count="3"/>
+	</compressed_item>
+	<!-- Fresh Kandula > 3 Kandula -->
+	<compressed_item id="152000454">
+		<production chance="100" item_id="152000453" count="3"/>
+	</compressed_item>
+	<!-- Fresh Theonia > 3 Theonia -->
+	<compressed_item id="152000456">
+		<production chance="100" item_id="152000455" count="3"/>
+	</compressed_item>
+	<!-- Fresh Hasia > 3 Hasia -->
+	<compressed_item id="152000458">
+		<production chance="100" item_id="152000457" count="3"/>
+	</compressed_item>
+	<!-- Fresh Neunan > 3 Neunan -->
+	<compressed_item id="152000460">
+		<production chance="100" item_id="152000459" count="3"/>
+	</compressed_item>
+	<!-- Fresh Calamot > 3 Calamot -->
+	<compressed_item id="152000462">
+		<production chance="100" item_id="152000461" count="3"/>
+	</compressed_item>
+	<!-- Fresh Subella > 3 Subella -->
+	<compressed_item id="152000464">
+		<production chance="100" item_id="152000463" count="3"/>
+	</compressed_item>
+	<!-- Fresh Groblue > 3 Groblue -->
+	<compressed_item id="152000466">
+		<production chance="100" item_id="152000465" count="3"/>
+	</compressed_item>
+	<!-- Fresh Plia > 3 Plia -->
+	<compressed_item id="152000469">
+		<production chance="100" item_id="152000468" count="3"/>
+	</compressed_item>
+	<!-- Fresh Liconsis > 3 Liconsis -->
+	<compressed_item id="152000471">
+		<production chance="100" item_id="152000470" count="3"/>
+	</compressed_item>
+	<!-- Greater Aether Crystal > 3 Aether Crystal -->
+	<compressed_item id="152000903">
+		<production chance="100" item_id="152000902" count="3"/>
+	</compressed_item>
+	<!-- Greater Aether Gem > 3 Aether Gem -->
+	<compressed_item id="152000905">
+		<production chance="100" item_id="152000904" count="3"/>
+	</compressed_item>
+	<!-- Pure Aether Gem > 3 Greater Aether Gem -->
+	<compressed_item id="152000906">
+		<production chance="100" item_id="152000905" count="3"/>
+	</compressed_item>
+	<!-- Greater Aether > 3 Aether -->
+	<compressed_item id="152000908">
+		<production chance="100" item_id="152000907" count="3"/>
+	</compressed_item>
+	<!-- Pure Aether > 3 Greater Aether -->
+	<compressed_item id="152000909">
+		<production chance="100" item_id="152000908" count="3"/>
+	</compressed_item>
+	<!-- Brilliant Aether > 3 Pure Aether -->
+	<compressed_item id="152000910">
+		<production chance="100" item_id="152000909" count="3"/>
+	</compressed_item>
+	<!-- Greater Magical Aether > 3 Magical Aether -->
+	<compressed_item id="152000912">
+		<production chance="100" item_id="152000911" count="3"/>
+	</compressed_item>
+	<!-- Pure Magical Aether > 3 Greater Magical Aether -->
+	<compressed_item id="152000913">
+		<production chance="100" item_id="152000912" count="3"/>
+	</compressed_item>
+	<!-- Brilliant Magical Aether > 3 Pure Magical Aether -->
+	<compressed_item id="152000914">
+		<production chance="100" item_id="152000913" count="3"/>
+	</compressed_item>
+	<!--Star Elyos Coins-->
+	<!-- Chest Containing Silver Medal -->
+	<compressed_item id="188050580">
+		<production chance="100" item_id="186000031" min="2" max="5"/>
+	</compressed_item>
+	<!-- Chest Containing Gold Medal -->
+	<compressed_item id="188050581">
+		<production chance="100" item_id="186000030" min="2" max="5"/>
+	</compressed_item>
+	<!-- Chest Containing Silver Medal -->
+	<compressed_item id="188050582">
+		<production chance="100" item_id="186000031" min="2" max="5"/>
+	</compressed_item>
+	<!-- Chest Containing Gold Medal -->
+	<compressed_item id="188050583">
+		<production chance="100" item_id="186000030" min="2" max="5"/>
+	</compressed_item>
+	<!-- Radiant Lesser Godstone Pack -->
+	<compressed_item id="188050731">
+		<production chance="2" item_id="168000042" count="1"/>
+		<production chance="2" item_id="168000041" count="1"/>
+		<production chance="2" item_id="168000039" count="1"/>
+		<production chance="2" item_id="168000075" count="1"/>
+		<production chance="2" item_id="168000074" count="1"/>
+		<production chance="2" item_id="168000036" count="1"/>
+		<production chance="2" item_id="168000073" count="1"/>
+	</compressed_item>	
+		<!-- Crusader's Lesser Godstone Pack -->
+	<compressed_item id="188050732">
+		<production chance="2" item_id="168000042" count="1"/>
+		<production chance="2" item_id="168000041" count="1"/>
+		<production chance="2" item_id="168000039" count="1"/>
+		<production chance="2" item_id="168000075" count="1"/>
+		<production chance="2" item_id="168000074" count="1"/>
+		<production chance="2" item_id="168000036" count="1"/>
+		<production chance="2" item_id="168000073" count="1"/>
+	</compressed_item>
+	<!-- Fortuneer's Enchantment Stone Pack -->
+	<compressed_item id="188050733">
+		<production chance="2" item_id="166000055" min="2" max="5"/>
+		<production chance="2" item_id="166000056" min="2" max="5"/>
+		<production chance="2" item_id="166000057" min="2" max="5"/>
+		<production chance="2" item_id="166000058" min="2" max="5"/>
+		<production chance="2" item_id="166000059" min="2" max="5"/>
+		<production chance="2" item_id="166000060" min="2" max="5"/>
+	</compressed_item>
+	<!-- Daemon's Enchantment Stone Pack -->
+	<compressed_item id="188050734">
+		<production chance="2" item_id="166000055" min="2" max="5"/>
+		<production chance="2" item_id="166000056" min="2" max="5"/>
+		<production chance="2" item_id="166000057" min="2" max="5"/>
+		<production chance="2" item_id="166000058" min="2" max="5"/>
+		<production chance="2" item_id="166000059" min="2" max="5"/>
+		<production chance="2" item_id="166000060" min="2" max="5"/>
+	</compressed_item>
+	<!-- Fortuneer's Godstone Pack -->
+	<compressed_item id="188050735">
+		<production chance="5" item_id="168000044" count="1"/>
+		<production chance="4" item_id="168000046" count="1"/>
+		<production chance="4" item_id="168000045" count="1"/>
+		<production chance="3" item_id="168000043" count="1"/>
+		<production chance="3" item_id="168000048" count="1"/>
+		<production chance="2" item_id="168000050" count="1"/>
+		<production chance="2" item_id="168000049" count="1"/>
+		<production chance="1" item_id="168000047" count="1"/>
+	</compressed_item>
+	<!-- Daemon's Godstone Pack -->
+	<compressed_item id="188050736">
+		<production chance="5" item_id="168000044" count="1"/>
+		<production chance="4" item_id="168000046" count="1"/>
+		<production chance="4" item_id="168000045" count="1"/>
+		<production chance="3" item_id="168000043" count="1"/>
+		<production chance="3" item_id="168000048" count="1"/>
+		<production chance="2" item_id="168000050" count="1"/>
+		<production chance="2" item_id="168000049" count="1"/>
+		<production chance="1" item_id="168000047" count="1"/>
+	</compressed_item>	
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050773">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050774">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050775">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050776">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050777">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050778">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050779">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050780">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050781">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050782">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050783">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050784">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050785">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050786">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050787">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050788">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050789">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Elyos Bronze Coin-->
+	<compressed_item id="188050790">
+		<production chance="100" item_id="186000002" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050791">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050791">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050792">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050793">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050794">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050795">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050796">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050797">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050798">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050799">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050800">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050801">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050802">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050803">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050804">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050805">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050806">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050807">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Elyos Silver Coin-->
+	<compressed_item id="188050808">
+		<production chance="100" item_id="186000003" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050809">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050810">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050811">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050812">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050813">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050814">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050815">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050816">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050817">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050818">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050819">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050820">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050821">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050822">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050823">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050824">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050825">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050826">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Elyos Gold Coin-->
+	<compressed_item id="188050826">
+		<production chance="100" item_id="186000004" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050827">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050828">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050829">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050830">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050831">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050832">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050833">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050834">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050835">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050836">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050837">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050838">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050839">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050840">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050841">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050842">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050843">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Elyos Platinum Coin-->
+	<compressed_item id="188050844">
+		<production chance="100" item_id="186000005" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050845">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050846">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050847">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+		<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050848">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050849">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050850">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050851">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050852">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050853">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050854">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050855">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050856">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050857">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050858">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050859">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050860">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050861">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Elyos Mithril Coin-->
+	<compressed_item id="188050862">
+		<production chance="100" item_id="186000018" min="2" max="5"/>
+	</compressed_item>
+	<!--End Elyos Coins-->
+	<!--Start Asmodian Coins-->
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050863">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050864">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050865">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050866">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050867">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050868">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050869">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050870">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050871">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050872">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050873">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050874">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050875">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050876">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050877">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050878">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050879">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Bronze Coin Chest > Asmodian Bronze Coin-->
+	<compressed_item id="188050880">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050881">
+		<production chance="100" item_id="186000007" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050882">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050883">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050884">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050885">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050886">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050887">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050888">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050889">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050890">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050891">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050892">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050893">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050894">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050895">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050896">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050897">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Silver Coin Chest > Asmodian Silver Coin-->
+	<compressed_item id="188050898">
+		<production chance="100" item_id="186000008" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050899">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050900">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050901">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050902">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050903">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050904">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050905">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050906">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050907">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050908">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050909">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050910">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050911">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050912">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050913">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050914">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050915">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050916">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Gold Coin Chest > Asmodian Gold Coin-->
+	<compressed_item id="188050917">
+		<production chance="100" item_id="186000009" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050918">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050919">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050920">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050921">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050922">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050923">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050924">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050925">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050926">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050927">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050928">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050929">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050930">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050931">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050932">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050933">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Platinum Coin Chest > Asmodian Platinum Coin-->
+	<compressed_item id="188050934">
+		<production chance="100" item_id="186000010" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050935">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050936">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050937">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050938">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050939">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050940">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050941">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050942">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050943">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050944">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050945">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050946">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050947">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050948">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050949">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050950">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050951">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--Mithril Coin Chest > Asmodian Mithril Coin-->
+	<compressed_item id="188050952">
+		<production chance="100" item_id="186000019" min="2" max="5"/>
+	</compressed_item>
+	<!--End Asmodian Coins-->
+	<!-- Gift Filled with Sincerity -->
+	<compressed_item id="188051146" maxproduction="1">
+		<production chance="100" item_id="186000002" min="1" max="10"/>
+	</compressed_item>
+	<!-- Gift Filled with Heart -->
+	<compressed_item id="188051147" maxproduction="1">
+		<production chance="100" item_id="186000002" min="1" max="10"/>
+	</compressed_item>
+	<!-- [Event] Red Gift -->
+	<compressed_item id="188051136" maxproduction="1">
+		<production chance="1" item_id="100001080" count="1"/>
+		<production chance="1" item_id="100000893" count="1"/>
+		<production chance="1" item_id="100100676" count="1"/>
+		<production chance="1" item_id="100200807" count="1"/>
+		<production chance="1" item_id="100500698" count="1"/>
+		<production chance="1" item_id="100600755" count="1"/>
+		<production chance="1" item_id="100900684" count="1"/>
+		<production chance="1" item_id="101300655" count="1"/>
+		<production chance="1" item_id="101500698" count="1"/>
+		<production chance="1" item_id="101700722" count="1"/>
+		<production chance="1" item_id="115000966" count="1"/>
+		<production chance="1" item_id="115000967" count="1"/>
+		<production chance="1" item_id="100100581" count="1"/>
+		<production chance="1" item_id="100600636" count="1"/>
+		<production chance="1" item_id="100000768" count="1"/>
+		<production chance="1" item_id="101300564" count="1"/>
+		<production chance="1" item_id="115000860" count="1"/>
+		<production chance="1" item_id="101700620" count="1"/>
+		<production chance="1" item_id="100500602" count="1"/>
+		<production chance="1" item_id="100900591" count="1"/>
+		<production chance="1" item_id="100200702" count="1"/>
+		<production chance="1" item_id="182206098" count="1"/>
+		<production chance="1" item_id="186000077" count="1"/>
+		<production chance="1" item_id="169660000" count="1"/>
+		<production chance="10" item_id="169650000" count="1"/>
+		<production chance="10" item_id="166000190" min="5" max="10"/>
+		<production chance="10" item_id="166100008" min="10" max="20"/>
+		<production chance="10" item_id="167000561" min="5" max="10"/>
+		<production chance="10" item_id="167000556" min="5" max="10"/>
+		<production chance="10" item_id="167000559" min="5" max="10"/>
+		<production chance="10" item_id="167000560" min="5" max="10"/>
+		<production chance="10" item_id="167000555" min="5" max="10"/>
+		<production chance="10" item_id="167000552" min="5" max="10"/>
+		<production chance="10" item_id="167000551" min="5" max="10"/>
+		<production chance="10" item_id="167000554" min="5" max="10"/>
+		<production chance="10" item_id="167000558" min="5" max="10"/>
+		<production chance="10" item_id="167000557" min="5" max="10"/>
+		<production chance="100" item_id="167000553" min="5" max="10"/>
+	</compressed_item>
+	<!-- [Event] Blue Gift -->
+	<compressed_item id="188051135" maxproduction="1">
+		<production chance="1" item_id="101500394" count="1"/>
+		<production chance="1" item_id="100600421" count="1"/>
+		<production chance="1" item_id="101700406" count="1"/>
+		<production chance="1" item_id="100100396" count="1"/>
+		<production chance="1" item_id="100900388" count="1"/>
+		<production chance="1" item_id="100200502" count="1"/>
+		<production chance="1" item_id="101300379" count="1"/>
+		<production chance="1" item_id="100000513" count="1"/>
+		<production chance="1" item_id="100500390" count="1"/>
+		<production chance="1" item_id="100200245" count="1"/>
+		<production chance="1" item_id="100500153" count="1"/>
+		<production chance="1" item_id="101700164" count="1"/>
+		<production chance="1" item_id="100900148" count="1"/>
+		<production chance="1" item_id="101300145" count="1"/>
+		<production chance="1" item_id="101500154" count="1"/>
+		<production chance="1" item_id="100000228" count="1"/>
+		<production chance="1" item_id="100600166" count="1"/>
+		<production chance="1" item_id="100100142" count="1"/>
+		<production chance="1" item_id="125040037" count="1"/>
+		<production chance="1" item_id="125000929" count="1"/>
+		<production chance="1" item_id="125001101" count="1"/>
+		<production chance="1" item_id="125001106" count="1"/>
+		<production chance="1" item_id="125001884" count="1"/>
+		<production chance="1" item_id="125001111" count="1"/>
+		<production chance="1" item_id="125000950" count="1"/>
+		<production chance="1" item_id="125001117" count="1"/>
+		<production chance="1" item_id="125000955" count="1"/>
+		<production chance="1" item_id="125001499" count="1"/>
+		<production chance="1" item_id="115000959" count="1"/>
+		<production chance="1" item_id="101700719" count="1"/>
+		<production chance="1" item_id="101500695" count="1"/>
+		<production chance="1" item_id="101300652" count="1"/>
+		<production chance="1" item_id="100900681" count="1"/>
+		<production chance="1" item_id="100600752" count="1"/>
+		<production chance="1" item_id="100500695" count="1"/>
+		<production chance="1" item_id="100200803" count="1"/>
+		<production chance="1" item_id="100100673" count="1"/>
+		<production chance="1" item_id="100000879" count="1"/>
+		<production chance="1" item_id="110900067" count="1"/>
+		<production chance="1" item_id="110900063" count="1"/>
+		<production chance="1" item_id="110900066" count="1"/>
+		<production chance="1" item_id="110900064" count="1"/>
+		<production chance="1" item_id="110900062" count="1"/>
+		<production chance="1" item_id="110900061" count="1"/>
+		<production chance="50" item_id="166100005" min="10" max="20"/>
+		<production chance="100" item_id="166100002" min="10" max="20"/>
+	</compressed_item>
+	<!-- Fat Bundle of Hair and Written Oath -->
+	<!--
+    <compressed_item id="188051184">
+	<production chance="100" item_id="186000029" count="40"/>
+	<production chance="100" item_id="186000047" count="40"/>
+	</compressed_item>
+    -->
+	<!-- Thick Bundle of Hair and Written Oath -->
+	<!--
+    <compressed_item id="188051183">
+	<production chance="100" item_id="186000029" count="30"/>
+	<production chance="100" item_id="186000047" count="30"/>
+	</compressed_item>
+    -->
+	<!-- Thin Bundle of Hair and Written Oath -->
+	<!--
+    <compressed_item id="188051182">
+	<production chance="100" item_id="186000029" count="20"/>
+	<production chance="100" item_id="186000047" count="20"/>
+	</compressed_item>
+    -->
+	<!-- Fat Bundle of Molar and Insignia -->
+	<!--
+    <compressed_item id="188051180">
+	<production chance="100" item_id="186000028" count="40"/>
+	<production chance="100" item_id="186000046" count="40"/>
+	</compressed_item>
+    -->
+	<!-- Thick Bundle of Molar and Insignia -->
+	<!--
+    <compressed_item id="188051179">
+	<production chance="100" item_id="186000028" count="30"/>
+	<production chance="100" item_id="186000046" count="30"/>
+	</compressed_item>
+    -->
+	<!-- Thin Bundle of Molar and Insignia -->
+	<!--
+    <compressed_item id="188051178">
+	<production chance="100" item_id="186000028" count="20"/>
+	<production chance="100" item_id="186000046" count="20"/>
+	</compressed_item>
+    -->
+	<!-- Surreal Brand Package (3 days) > Surreal Brand (3 days) -->
+	<compressed_item id="188050012">
+		<production chance="100" item_id="100000979" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Brand Package (3 days) > Ephemeral Brand (3 days) -->
+	<compressed_item id="188050013">
+		<production chance="100" item_id="100000925" count="1"/>
+	</compressed_item>
+	<!-- Transient Brand Package (3 days) > Transient Brand (3 days) -->
+	<compressed_item id="188050014">
+		<production chance="100" item_id="100000926" count="1"/>
+	</compressed_item>
+	<!-- Brand of Dreams Package (3 days) > Brand of Dreams (3 days) -->
+	<compressed_item id="188050015">
+		<production chance="100" item_id="100000982" count="1"/>
+	</compressed_item>
+	<!-- Delirium Brand Package (3 days) > Delirium Brand (3 days) -->
+	<compressed_item id="188050016">
+		<production chance="100" item_id="100000973" count="1"/>
+	</compressed_item>
+	<!-- Fugue Brand Package (3 days) > Fugue Brand (3 days) -->
+	<compressed_item id="188050017">
+		<production chance="100" item_id="100000974" count="1"/>
+	</compressed_item>
+	<!-- Surreal Warhammer Package (3 days) > Surreal Warhammer (3 days) -->
+	<compressed_item id="188050018">
+		<production chance="100" item_id="100100741" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Warhammer Package (3 days) > Ephemeral Warhammer (3 days) -->
+	<compressed_item id="188050019">
+		<production chance="100" item_id="100100695" count="1"/>
+	</compressed_item>
+	<!-- Transient Warhammer Package (3 days) > Transient Warhammer (3 days) -->
+	<compressed_item id="188050020">
+		<production chance="100" item_id="100100696" count="1"/>
+	</compressed_item>
+	<!-- Warhammer of Dreams Package (3 days) > Warhammer of Dreams (3 days) -->
+	<compressed_item id="188050021">
+		<production chance="100" item_id="100100744" count="1"/>
+	</compressed_item>
+	<!-- Delirium Warhammer Package (3 days) > Delirium Warhammer (3 days) -->
+	<compressed_item id="188050022">
+		<production chance="100" item_id="100100736" count="1"/>
+	</compressed_item>
+	<!-- Fugue Warhammer Package (3 days) > Fugue Warhammer (3 days) -->
+	<compressed_item id="188050023">
+		<production chance="100" item_id="100100737" count="1"/>
+	</compressed_item>
+	<!-- Surreal Dirk Package (3 days) > Surreal Dirk (3 days) -->
+	<compressed_item id="188050024">
+		<production chance="100" item_id="100200868" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Dirk Package (3 days) > Ephemeral Dirk (3 days) -->
+	<compressed_item id="188050025">
+		<production chance="100" item_id="100200825" count="1"/>
+	</compressed_item>
+	<!-- Transient Dirk Package (3 days) > Transient Dirk (3 days) -->
+	<compressed_item id="188050026">
+		<production chance="100" item_id="100200826" count="1"/>
+	</compressed_item>
+	<!-- Dirk of Dreams Package (3 days) > Dirk of Dreams (3 days) -->
+	<compressed_item id="188050027">
+		<production chance="100" item_id="100200871" count="1"/>
+	</compressed_item>
+	<!-- Delirium Dirk Package (3 days) > Delirium Dirk (3 days) -->
+	<compressed_item id="188050028">
+		<production chance="100" item_id="100200864" count="1"/>
+	</compressed_item>
+	<!-- Fugue Dirk Package (3 days) > Fugue Dirk (3 days) -->
+	<compressed_item id="188050029">
+		<production chance="100" item_id="100200865" count="1"/>
+	</compressed_item>
+	<!-- Surreal Sphere Package (3 days) > Surreal Sphere (3 days) -->
+	<compressed_item id="188050030">
+		<production chance="100" item_id="100500761" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Sphere Package (3 days) > Ephemeral Sphere (3 days) -->
+	<compressed_item id="188050031">
+		<production chance="100" item_id="100500716" count="1"/>
+	</compressed_item>
+	<!-- Transient Sphere Package (3 days) > Transient Sphere (3 days) -->
+	<compressed_item id="188050032">
+		<production chance="100" item_id="100500717" count="1"/>
+	</compressed_item>
+	<!-- Sphere of Dreams Package (3 days) > Sphere of Dreams (3 days) -->
+	<compressed_item id="188050033">
+		<production chance="100" item_id="100500764" count="1"/>
+	</compressed_item>
+	<!-- Delirium Sphere Package (3 days) > Delirium Sphere (3 days) -->
+	<compressed_item id="188050034">
+		<production chance="100" item_id="100500756" count="1"/>
+	</compressed_item>
+	<!-- Fugue Sphere Package (3 days) > Fugue Sphere (3 days) -->
+	<compressed_item id="188050035">
+		<production chance="100" item_id="100500757" count="1"/>
+	</compressed_item>
+	<!-- Surreal Tome Package (3 days) > Surreal Tome (3 days) -->
+	<compressed_item id="188050036">
+		<production chance="100" item_id="100600816" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Tome Package (3 days) > Ephemeral Tome (3 days) -->
+	<compressed_item id="188050037">
+		<production chance="100" item_id="100600773" count="1"/>
+	</compressed_item>
+	<!-- Transient Tome Package (3 days) > Transient Tome (3 days) -->
+	<compressed_item id="188050038">
+		<production chance="100" item_id="100600774" count="1"/>
+	</compressed_item>
+	<!-- Tome of Dreams Package (3 days) > Tome of Dreams (3 days) -->
+	<compressed_item id="188050039">
+		<production chance="100" item_id="100600819" count="1"/>
+	</compressed_item>
+	<!-- Delirium Tome Package (3 days) > Delirium Tome (3 days) -->
+	<compressed_item id="188050040">
+		<production chance="100" item_id="100600812" count="1"/>
+	</compressed_item>
+	<!-- Fugue Tome Package (3 days) > Fugue Tome (3 days) -->
+	<compressed_item id="188050041">
+		<production chance="100" item_id="100600813" count="1"/>
+	</compressed_item>
+	<!-- Surreal Greatsword Package (3 days) > Surreal Greatsword (3 days) -->
+	<compressed_item id="188050042">
+		<production chance="100" item_id="100900735" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Greatsword Package (3 days) > Ephemeral Greatsword (3 days) -->
+	<compressed_item id="188050043">
+		<production chance="100" item_id="100900702" count="1"/>
+	</compressed_item>
+	<!-- Transient Greatsword Package (3 days) > Transient Greatsword (3 days) -->
+	<compressed_item id="188050044">
+		<production chance="100" item_id="100900703" count="1"/>
+	</compressed_item>
+	<!-- Greatsword of Dreams Package (3 days) > Greatsword of Dreams (3 days) -->
+	<compressed_item id="188050045">
+		<production chance="100" item_id="100900738" count="1"/>
+	</compressed_item>
+	<!-- Delirium Greatsword Package (3 days) > Delirium Greatsword (3 days) -->
+	<compressed_item id="188050046">
+		<production chance="100" item_id="100900731" count="1"/>
+	</compressed_item>
+	<!-- Fugue Greatsword Package (3 days) > Fugue Greatsword (3 days) -->
+	<compressed_item id="188050047">
+		<production chance="100" item_id="100900732" count="1"/>
+	</compressed_item>
+	<!-- Surreal Lance Package (3 days) > Surreal Lance (3 days) -->
+	<compressed_item id="188050048">
+		<production chance="100" item_id="101300714" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Lance Package (3 days) > Ephemeral Lance (3 days) -->
+	<compressed_item id="188050049">
+		<production chance="100" item_id="101300672" count="1"/>
+	</compressed_item>
+	<!-- Transient Lance Package (3 days) > Transient Lance (3 days) -->
+	<compressed_item id="188050050">
+		<production chance="100" item_id="101300673" count="1"/>
+	</compressed_item>
+	<!-- Lance of Dreams Package (3 days) > Lance of Dreams (3 days) -->
+	<compressed_item id="188050051">
+		<production chance="100" item_id="101300717" count="1"/>
+	</compressed_item>
+	<!-- Delirium Lance Package (3 days) > Delirium Lance (3 days) -->
+	<compressed_item id="188050052">
+		<production chance="100" item_id="101300709" count="1"/>
+	</compressed_item>
+	<!-- Fugue Lance Package (3 days) > Fugue Lance (3 days) -->
+	<compressed_item id="188050053">
+		<production chance="100" item_id="101300710" count="1"/>
+	</compressed_item>
+	<!-- Surreal Staff Package (3 days) > Surreal Staff (3 days) -->
+	<compressed_item id="188050054">
+		<production chance="100" item_id="101500764" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Staff Package (3 days) > Ephemeral Staff (3 days) -->
+	<compressed_item id="188050055">
+		<production chance="100" item_id="101500717" count="1"/>
+	</compressed_item>
+	<!-- Transient Staff Package (3 days) > Transient Staff (3 days) -->
+	<compressed_item id="188050056">
+		<production chance="100" item_id="101500718" count="1"/>
+	</compressed_item>
+	<!-- Staff of Dreams Package (3 days) > Staff of Dreams (3 days) -->
+	<compressed_item id="188050057">
+		<production chance="100" item_id="101500767" count="1"/>
+	</compressed_item>
+	<!-- Delirium Staff Package (3 days) > Delirium Staff (3 days) -->
+	<compressed_item id="188050058">
+		<production chance="100" item_id="101500758" count="1"/>
+	</compressed_item>
+	<!-- Fugue Staff Package (3 days) > Fugue Staff (3 days) -->
+	<compressed_item id="188050059">
+		<production chance="100" item_id="101500759" count="1"/>
+	</compressed_item>
+	<!-- Surreal Bow Package (3 days) > Surreal Bow (3 days) -->
+	<compressed_item id="188050060">
+		<production chance="100" item_id="101700781" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Bow Package (3 days) > Ephemeral Bow (3 days) -->
+	<compressed_item id="188050061">
+		<production chance="100" item_id="101700740" count="1"/>
+	</compressed_item>
+	<!-- Transient Bow Package (3 days) > Transient Bow (3 days) -->
+	<compressed_item id="188050062">
+		<production chance="100" item_id="101700741" count="1"/>
+	</compressed_item>
+	<!-- Bow of Dreams Package (3 days) > Bow of Dreams (3 days) -->
+	<compressed_item id="188050063">
+		<production chance="100" item_id="101700784" count="1"/>
+	</compressed_item>
+	<!-- Delirium Bow Package (3 days) > Delirium Bow (3 days) -->
+	<compressed_item id="188050064">
+		<production chance="100" item_id="101700777" count="1"/>
+	</compressed_item>
+	<!-- Fugue Bow Package (3 days) > Fugue Bow (3 days) -->
+	<compressed_item id="188050065">
+		<production chance="100" item_id="101700778" count="1"/>
+	</compressed_item>
+	<!-- Surreal Brand Package (7 days) > Surreal Brand (7 days) -->
+	<compressed_item id="188050066">
+		<production chance="100" item_id="100000985" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Brand Package (7 days) > Ephemeral Brand (7 days) -->
+	<compressed_item id="188050067">
+		<production chance="100" item_id="100000986" count="1"/>
+	</compressed_item>
+	<!-- Transient Brand Package (7 days) > Transient Brand (7 days) -->
+	<compressed_item id="188050068">
+		<production chance="100" item_id="100000987" count="1"/>
+	</compressed_item>
+	<!-- Brand of Dreams Package (7 days) > Brand of Dreams (7 days) -->
+	<compressed_item id="188050069">
+		<production chance="100" item_id="100000988" count="1"/>
+	</compressed_item>
+	<!-- Delirium Brand Package (7 days) > Delirium Brand (7 days) -->
+	<compressed_item id="188050070">
+		<production chance="100" item_id="100000989" count="1"/>
+	</compressed_item>
+	<!-- Fugue Brand Package (7 days) > Fugue Brand (7 days) -->
+	<compressed_item id="188050071">
+		<production chance="100" item_id="100000990" count="1"/>
+	</compressed_item>
+	<!-- Surreal Warhammer Package (7 days) > Surreal Warhammer (7 days) -->
+	<compressed_item id="188050072">
+		<production chance="100" item_id="100100747" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Warhammer Package (7 days) > Ephemeral Warhammer (7 days) -->
+	<compressed_item id="188050073">
+		<production chance="100" item_id="100100748" count="1"/>
+	</compressed_item>
+	<!-- Transient Warhammer Package (7 days) > Transient Warhammer (7 days) -->
+	<compressed_item id="188050074">
+		<production chance="100" item_id="100100749" count="1"/>
+	</compressed_item>
+	<!-- Warhammer of Dreams Package (7 days) > Warhammer of Dreams (7 days) -->
+	<compressed_item id="188050075">
+		<production chance="100" item_id="100100750" count="1"/>
+	</compressed_item>
+	<!-- Delirium Warhammer Package (7 days) > Delirium Warhammer (7 days) -->
+	<compressed_item id="188050076">
+		<production chance="100" item_id="100100751" count="1"/>
+	</compressed_item>
+	<!-- Fugue Warhammer Package (7 days) > Fugue Warhammer (7 days) -->
+	<compressed_item id="188050077">
+		<production chance="100" item_id="100100752" count="1"/>
+	</compressed_item>
+	<!-- Surreal Dirk Package (7 days) > Surreal Dirk (7 days) -->
+	<compressed_item id="188050078">
+		<production chance="100" item_id="100200874" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Dirk Package (7 days) > Ephemeral Dirk (7 days) -->
+	<compressed_item id="188050079">
+		<production chance="100" item_id="100200875" count="1"/>
+	</compressed_item>
+	<!-- Transient Dirk Package (7 days) > Transient Dirk (7 days) -->
+	<compressed_item id="188050080">
+		<production chance="100" item_id="100200876" count="1"/>
+	</compressed_item>
+	<!-- Dirk of Dreams Package (7 days) > Dirk of Dreams (7 days) -->
+	<compressed_item id="188050081">
+		<production chance="100" item_id="100200877" count="1"/>
+	</compressed_item>
+	<!-- Delirium Dirk Package (7 days) > Delirium Dirk (7 days) -->
+	<compressed_item id="188050082">
+		<production chance="100" item_id="100200878" count="1"/>
+	</compressed_item>
+	<!-- Fugue Dirk Package (7 days) > Fugue Dirk (7 days) -->
+	<compressed_item id="188050083">
+		<production chance="100" item_id="100200879" count="1"/>
+	</compressed_item>
+	<!-- Surreal Sphere Package (7 days) > Surreal Sphere (7 days) -->
+	<compressed_item id="188050084">
+		<production chance="100" item_id="100500767" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Sphere Package (7 days) > Ephemeral Sphere (7 days) -->
+	<compressed_item id="188050085">
+		<production chance="100" item_id="100500768" count="1"/>
+	</compressed_item>
+	<!-- Transient Sphere Package (7 days) > Transient Sphere (7 days) -->
+	<compressed_item id="188050086">
+		<production chance="100" item_id="100500769" count="1"/>
+	</compressed_item>
+	<!-- Sphere of Dreams Package (7 days) > Sphere of Dreams (7 days) -->
+	<compressed_item id="188050087">
+		<production chance="100" item_id="100500770" count="1"/>
+	</compressed_item>
+	<!-- Delirium Sphere Package (7 days) > Delirium Sphere (7 days) -->
+	<compressed_item id="188050088">
+		<production chance="100" item_id="100500771" count="1"/>
+	</compressed_item>
+	<!-- Fugue Sphere Package (7 days) > Fugue Sphere (7 days) -->
+	<compressed_item id="188050089">
+		<production chance="100" item_id="100500772" count="1"/>
+	</compressed_item>
+	<!-- Surreal Tome Package (7 days) > Surreal Tome (7 days) -->
+	<compressed_item id="188050090">
+		<production chance="100" item_id="100600822" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Tome Package (7 days) > Ephemeral Tome (7 days) -->
+	<compressed_item id="188050091">
+		<production chance="100" item_id="100600823" count="1"/>
+	</compressed_item>
+	<!-- Transient Tome Package (7 days) > Transient Tome (7 days) -->
+	<compressed_item id="188050092">
+		<production chance="100" item_id="100600824" count="1"/>
+	</compressed_item>
+	<!-- Tome of Dreams Package (7 days) > Tome of Dreams (7 days) -->
+	<compressed_item id="188050093">
+		<production chance="100" item_id="100600825" count="1"/>
+	</compressed_item>
+	<!-- Delirium Tome Package (7 days) > Delirium Tome (7 days) -->
+	<compressed_item id="188050094">
+		<production chance="100" item_id="100600826" count="1"/>
+	</compressed_item>
+	<!-- Fugue Tome Package (7 days) > Fugue Tome (7 days) -->
+	<compressed_item id="188050095">
+		<production chance="100" item_id="100600827" count="1"/>
+	</compressed_item>
+	<!-- Surreal Greatsword Package (7 days) > Surreal Greatsword (7 days) -->
+	<compressed_item id="188050096">
+		<production chance="100" item_id="100900741" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Greatsword Package (7 days) > Ephemeral Greatsword (7 days) -->
+	<compressed_item id="188050097">
+		<production chance="100" item_id="100900742" count="1"/>
+	</compressed_item>
+	<!-- Transient Greatsword Package (7 days) > Transient Greatsword (7 days) -->
+	<compressed_item id="188050098">
+		<production chance="100" item_id="100900743" count="1"/>
+	</compressed_item>
+	<!-- Greatsword of Dreams Package (7 days) > Greatsword of Dreams (7 days) -->
+	<compressed_item id="188050099">
+		<production chance="100" item_id="100900744" count="1"/>
+	</compressed_item>
+	<!-- Delirium Greatsword Package (7 days) > Delirium Greatsword (7 days) -->
+	<compressed_item id="188050100">
+		<production chance="100" item_id="100900745" count="1"/>
+	</compressed_item>
+	<!-- Fugue Greatsword Package (7 days) > Fugue Greatsword (7 days) -->
+	<compressed_item id="188050101">
+		<production chance="100" item_id="100900746" count="1"/>
+	</compressed_item>
+	<!-- Surreal Lance Package (7 days) > Surreal Lance (7 days) -->
+	<compressed_item id="188050102">
+		<production chance="100" item_id="101300720" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Lance Package (7 days) > Ephemeral Lance (7 days) -->
+	<compressed_item id="188050103">
+		<production chance="100" item_id="101300721" count="1"/>
+	</compressed_item>
+	<!-- Transient Lance Package (7 days) > Transient Lance (7 days) -->
+	<compressed_item id="188050104">
+		<production chance="100" item_id="101300722" count="1"/>
+	</compressed_item>
+	<!-- Lance of Dreams Package (7 days) > Lance of Dreams (7 days) -->
+	<compressed_item id="188050105">
+		<production chance="100" item_id="101300723" count="1"/>
+	</compressed_item>
+	<!-- Delirium Lance Package (7 days) > Delirium Lance (7 days) -->
+	<compressed_item id="188050106">
+		<production chance="100" item_id="101300724" count="1"/>
+	</compressed_item>
+	<!-- Fugue Lance Package (7 days) > Fugue Lance (7 days) -->
+	<compressed_item id="188050107">
+		<production chance="100" item_id="101300725" count="1"/>
+	</compressed_item>
+	<!-- Surreal Staff Package (7 days) > Surreal Staff (7 days) -->
+	<compressed_item id="188050108">
+		<production chance="100" item_id="101500770" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Staff Package (7 days) > Ephemeral Staff (7 days) -->
+	<compressed_item id="188050109">
+		<production chance="100" item_id="101500771" count="1"/>
+	</compressed_item>
+	<!-- Transient Staff Package (7 days) > Transient Staff (7 days) -->
+	<compressed_item id="188050110">
+		<production chance="100" item_id="101500772" count="1"/>
+	</compressed_item>
+	<!-- Staff of Dreams Package (7 days) > Staff of Dreams (7 days) -->
+	<compressed_item id="188050111">
+		<production chance="100" item_id="101500773" count="1"/>
+	</compressed_item>
+	<!-- Delirium Staff Package (7 days) > Delirium Staff (7 days) -->
+	<compressed_item id="188050112">
+		<production chance="100" item_id="101500774" count="1"/>
+	</compressed_item>
+	<!-- Fugue Staff Package (7 days) > Fugue Staff (7 days) -->
+	<compressed_item id="188050113">
+		<production chance="100" item_id="101500775" count="1"/>
+	</compressed_item>
+	<!-- Surreal Bow Package (7 days) > Surreal Bow (7 days) -->
+	<compressed_item id="188050114">
+		<production chance="100" item_id="101700787" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Bow Package (7 days) > Ephemeral Bow (7 days) -->
+	<compressed_item id="188050115">
+		<production chance="100" item_id="101700788" count="1"/>
+	</compressed_item>
+	<!-- Transient Bow Package (7 days) > Transient Bow (7 days) -->
+	<compressed_item id="188050116">
+		<production chance="100" item_id="101700789" count="1"/>
+	</compressed_item>
+	<!-- Bow of Dreams Package (7 days) > Bow of Dreams (7 days) -->
+	<compressed_item id="188050117">
+		<production chance="100" item_id="101700790" count="1"/>
+	</compressed_item>
+	<!-- Delirium Bow Package (7 days) > Delirium Bow (7 days) -->
+	<compressed_item id="188050118">
+		<production chance="100" item_id="101700791" count="1"/>
+	</compressed_item>
+	<!-- Fugue Bow Package (7 days) > Fugue Bow (7 days) -->
+	<compressed_item id="188050119">
+		<production chance="100" item_id="101700792" count="1"/>
+	</compressed_item>
+	<!-- Surreal Brand Package (14 days) > Surreal Brand (14 days) -->
+	<compressed_item id="188050120">
+		<production chance="100" item_id="100000991" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Brand Package (14 days) > Ephemeral Brand (14 days) -->
+	<compressed_item id="188050121">
+		<production chance="100" item_id="100000992" count="1"/>
+	</compressed_item>
+	<!-- Transient Brand Package (14 days) > Transient Brand (14 days) -->
+	<compressed_item id="188050122">
+		<production chance="100" item_id="100000993" count="1"/>
+	</compressed_item>
+	<!-- Brand of Dreams Package (14 days) > Brand of Dreams (14 days) -->
+	<compressed_item id="188050123">
+		<production chance="100" item_id="100000994" count="1"/>
+	</compressed_item>
+	<!-- Delirium Brand Package (14 days) > Delirium Brand (14 days) -->
+	<compressed_item id="188050124">
+		<production chance="100" item_id="100000995" count="1"/>
+	</compressed_item>
+	<!-- Fugue Brand Package (14 days) > Fugue Brand (14 days) -->
+	<compressed_item id="188050125">
+		<production chance="100" item_id="100000996" count="1"/>
+	</compressed_item>
+	<!-- Surreal Warhammer Package (14 days) > Surreal Warhammer (14 days) -->
+	<compressed_item id="188050126">
+		<production chance="100" item_id="100100753" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Warhammer Package (14 days) > Ephemeral Warhammer (14 days) -->
+	<compressed_item id="188050127">
+		<production chance="100" item_id="100100754" count="1"/>
+	</compressed_item>
+	<!-- Transient Warhammer Package (14 days) > Transient Warhammer (14 days) -->
+	<compressed_item id="188050128">
+		<production chance="100" item_id="100100755" count="1"/>
+	</compressed_item>
+	<!-- Warhammer of Dreams Package (14 days) > Warhammer of Dreams (14 days) -->
+	<compressed_item id="188050129">
+		<production chance="100" item_id="100100756" count="1"/>
+	</compressed_item>
+	<!-- Delirium Warhammer Package (14 days) > Delirium Warhammer (14 days) -->
+	<compressed_item id="188050130">
+		<production chance="100" item_id="100100757" count="1"/>
+	</compressed_item>
+	<!-- Fugue Warhammer Package (14 days) > Fugue Warhammer (14 days) -->
+	<compressed_item id="188050131">
+		<production chance="100" item_id="100100758" count="1"/>
+	</compressed_item>
+	<!-- Surreal Dirk Package (14 days) > Surreal Dirk (14 days) -->
+	<compressed_item id="188050132">
+		<production chance="100" item_id="100200880" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Dirk Package (14 days) > Ephemeral Dirk (14 days) -->
+	<compressed_item id="188050133">
+		<production chance="100" item_id="100200881" count="1"/>
+	</compressed_item>
+	<!-- Transient Dirk Package (14 days) > Transient Dirk (14 days) -->
+	<compressed_item id="188050134">
+		<production chance="100" item_id="100200882" count="1"/>
+	</compressed_item>
+	<!-- Dirk of Dreams Package (14 days) > Dirk of Dreams (14 days) -->
+	<compressed_item id="188050135">
+		<production chance="100" item_id="100200883" count="1"/>
+	</compressed_item>
+	<!-- Delirium Dirk Package (14 days) > Delirium Dirk (14 days) -->
+	<compressed_item id="188050136">
+		<production chance="100" item_id="100200884" count="1"/>
+	</compressed_item>
+	<!-- Fugue Dirk Package (14 days) > Fugue Dirk (14 days) -->
+	<compressed_item id="188050137">
+		<production chance="100" item_id="100200885" count="1"/>
+	</compressed_item>
+	<!-- Surreal Sphere Package (14 days) > Surreal Sphere (14 days) -->
+	<compressed_item id="188050138">
+		<production chance="100" item_id="100500773" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Sphere Package (14 days) > Ephemeral Sphere (14 days) -->
+	<compressed_item id="188050139">
+		<production chance="100" item_id="100500774" count="1"/>
+	</compressed_item>
+	<!-- Transient Sphere Package (14 days) > Transient Sphere (14 days) -->
+	<compressed_item id="188050140">
+		<production chance="100" item_id="100500775" count="1"/>
+	</compressed_item>
+	<!-- Sphere of Dreams Package (14 days) > Sphere of Dreams (14 days) -->
+	<compressed_item id="188050141">
+		<production chance="100" item_id="100500776" count="1"/>
+	</compressed_item>
+	<!-- Delirium Sphere Package (14 days) > Delirium Sphere (14 days) -->
+	<compressed_item id="188050142">
+		<production chance="100" item_id="100500777" count="1"/>
+	</compressed_item>
+	<!-- Fugue Sphere Package (14 days) > Fugue Sphere (14 days) -->
+	<compressed_item id="188050143">
+		<production chance="100" item_id="100500778" count="1"/>
+	</compressed_item>
+	<!-- Surreal Tome Package (14 days) > Surreal Tome (14 days) -->
+	<compressed_item id="188050144">
+		<production chance="100" item_id="100600828" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Tome Package (14 days) > Ephemeral Tome (14 days) -->
+	<compressed_item id="188050145">
+		<production chance="100" item_id="100600829" count="1"/>
+	</compressed_item>
+	<!-- Transient Tome Package (14 days) > Transient Tome (14 days) -->
+	<compressed_item id="188050146">
+		<production chance="100" item_id="100600830" count="1"/>
+	</compressed_item>
+	<!-- Tome of Dreams Package (14 days) > Tome of Dreams (14 days) -->
+	<compressed_item id="188050147">
+		<production chance="100" item_id="100600831" count="1"/>
+	</compressed_item>
+	<!-- Delirium Tome Package (14 days) > Delirium Tome (14 days) -->
+	<compressed_item id="188050148">
+		<production chance="100" item_id="100600832" count="1"/>
+	</compressed_item>
+	<!-- Fugue Tome Package (14 days) > Fugue Tome (14 days) -->
+	<compressed_item id="188050149">
+		<production chance="100" item_id="100600833" count="1"/>
+	</compressed_item>
+	<!-- Surreal Greatsword Package (14 days) > Surreal Greatsword (14 days) -->
+	<compressed_item id="188050150">
+		<production chance="100" item_id="100900747" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Greatsword Package (14 days) > Ephemeral Greatsword (14 days) -->
+	<compressed_item id="188050151">
+		<production chance="100" item_id="100900748" count="1"/>
+	</compressed_item>
+	<!-- Transient Greatsword Package (14 days) > Transient Greatsword (14 days) -->
+	<compressed_item id="188050152">
+		<production chance="100" item_id="100900749" count="1"/>
+	</compressed_item>
+	<!-- Greatsword of Dreams Package (14 days) > Greatsword of Dreams (14 days) -->
+	<compressed_item id="188050153">
+		<production chance="100" item_id="100900750" count="1"/>
+	</compressed_item>
+	<!-- Delirium Greatsword Package (14 days) > Delirium Greatsword (14 days) -->
+	<compressed_item id="188050154">
+		<production chance="100" item_id="100900751" count="1"/>
+	</compressed_item>
+	<!-- Fugue Greatsword Package (14 days) > Fugue Greatsword (14 days) -->
+	<compressed_item id="188050155">
+		<production chance="100" item_id="100900752" count="1"/>
+	</compressed_item>
+	<!-- Surreal Lance Package (14 days) > Surreal Lance (14 days) -->
+	<compressed_item id="188050156">
+		<production chance="100" item_id="101300726" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Lance Package (14 days) > Ephemeral Lance (14 days) -->
+	<compressed_item id="188050157">
+		<production chance="100" item_id="101300727" count="1"/>
+	</compressed_item>
+	<!-- Transient Lance Package (14 days) > Transient Lance (14 days) -->
+	<compressed_item id="188050158">
+		<production chance="100" item_id="101300728" count="1"/>
+	</compressed_item>
+	<!-- Lance of Dreams Package (14 days) > Lance of Dreams (14 days) -->
+	<compressed_item id="188050159">
+		<production chance="100" item_id="101300729" count="1"/>
+	</compressed_item>
+	<!-- Delirium Lance Package (14 days) > Delirium Lance (14 days) -->
+	<compressed_item id="188050160">
+		<production chance="100" item_id="101300730" count="1"/>
+	</compressed_item>
+	<!-- Fugue Lance Package (14 days) > Fugue Lance (14 days) -->
+	<compressed_item id="188050161">
+		<production chance="100" item_id="101300731" count="1"/>
+	</compressed_item>
+	<!-- Surreal Staff Package (14 days) > Surreal Staff (14 days) -->
+	<compressed_item id="188050162">
+		<production chance="100" item_id="101500776" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Staff Package (14 days) > Ephemeral Staff (14 days) -->
+	<compressed_item id="188050163">
+		<production chance="100" item_id="101500777" count="1"/>
+	</compressed_item>
+	<!-- Transient Staff Package (14 days) > Transient Staff (14 days) -->
+	<compressed_item id="188050164">
+		<production chance="100" item_id="101500778" count="1"/>
+	</compressed_item>
+	<!-- Staff of Dreams Package (14 days) > Staff of Dreams (14 days) -->
+	<compressed_item id="188050165">
+		<production chance="100" item_id="101500779" count="1"/>
+	</compressed_item>
+	<!-- Delirium Staff Package (14 days) > Delirium Staff (14 days) -->
+	<compressed_item id="188050166">
+		<production chance="100" item_id="101500780" count="1"/>
+	</compressed_item>
+	<!-- Fugue Staff Package (14 days) > Fugue Staff (14 days) -->
+	<compressed_item id="188050167">
+		<production chance="100" item_id="101500781" count="1"/>
+	</compressed_item>
+	<!-- Surreal Bow Package (14 days) > Surreal Bow (14 days) -->
+	<compressed_item id="188050168">
+		<production chance="100" item_id="101700793" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Bow Package (14 days) > Ephemeral Bow (14 days) -->
+	<compressed_item id="188050169">
+		<production chance="100" item_id="101700794" count="1"/>
+	</compressed_item>
+	<!-- Transient Bow Package (14 days) > Transient Bow (14 days) -->
+	<compressed_item id="188050170">
+		<production chance="100" item_id="101700795" count="1"/>
+	</compressed_item>
+	<!-- Bow of Dreams Package (14 days) > Bow of Dreams (14 days) -->
+	<compressed_item id="188050171">
+		<production chance="100" item_id="101700796" count="1"/>
+	</compressed_item>
+	<!-- Delirium Bow Package (14 days) > Delirium Bow (14 days) -->
+	<compressed_item id="188050172">
+		<production chance="100" item_id="101700797" count="1"/>
+	</compressed_item>
+	<!-- Fugue Bow Package (14 days) > Fugue Bow (14 days) -->
+	<compressed_item id="188050173">
+		<production chance="100" item_id="101700798" count="1"/>
+	</compressed_item>
+	<!-- Surreal Tunic Package (3 days) > Surreal Tunic (3 days) -->
+	<compressed_item id="188050178">
+		<production chance="100" item_id="110101151" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Tunic Package (3 days) > Ephemeral Tunic (3 days) -->
+	<compressed_item id="188050179">
+		<production chance="100" item_id="110101111" count="1"/>
+	</compressed_item>
+	<!-- Transient Tunic Package (3 days) > Transient Tunic (3 days) -->
+	<compressed_item id="188050180">
+		<production chance="100" item_id="110101112" count="1"/>
+	</compressed_item>
+	<!-- Tunic of Dreams Package (3 days) > Tunic of Dreams (3 days) -->
+	<compressed_item id="188050181">
+		<production chance="100" item_id="110101154" count="1"/>
+	</compressed_item>
+	<!-- Delirium Tunic Package (3 days) > Delirium Tunic (3 days) -->
+	<compressed_item id="188050182">
+		<production chance="100" item_id="110101122" count="1"/>
+	</compressed_item>
+	<!-- Fugue Tunic Package (3 days) > Fugue Tunic (3 days) -->
+	<compressed_item id="188050183">
+		<production chance="100" item_id="110101123" count="1"/>
+	</compressed_item>
+	<!-- Surreal Tunic Package (7 days) > Surreal Tunic (7 days) -->
+	<compressed_item id="188050184">
+		<production chance="100" item_id="110101157" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Tunic Package (7 days) > Ephemeral Tunic (7 days) -->
+	<compressed_item id="188050185">
+		<production chance="100" item_id="110101158" count="1"/>
+	</compressed_item>
+	<!-- Transient Tunic Package (7 days) > Transient Tunic (7 days) -->
+	<compressed_item id="188050186">
+		<production chance="100" item_id="110101159" count="1"/>
+	</compressed_item>
+	<!-- Tunic of Dreams Package (7 days) > Tunic of Dreams (7 days) -->
+	<compressed_item id="188050187">
+		<production chance="100" item_id="110101160" count="1"/>
+	</compressed_item>
+	<!-- Delirium Tunic Package (7 days) > Delirium Tunic (7 days) -->
+	<compressed_item id="188050188">
+		<production chance="100" item_id="110101161" count="1"/>
+	</compressed_item>
+	<!-- Fugue Tunic Package (7 days) > Fugue Tunic (7 days) -->
+	<compressed_item id="188050189">
+		<production chance="100" item_id="110101162" count="1"/>
+	</compressed_item>
+	<!-- Surreal Tunic Package (14 days) > Surreal Tunic (14 days) -->
+	<compressed_item id="188050190">
+		<production chance="100" item_id="110101163" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Tunic Package (14 days) > Ephemeral Tunic (14 days) -->
+	<compressed_item id="188050191">
+		<production chance="100" item_id="110101164" count="1"/>
+	</compressed_item>
+	<!-- Transient Tunic Package (14 days) > Transient Tunic (14 days) -->
+	<compressed_item id="188050192">
+		<production chance="100" item_id="110101165" count="1"/>
+	</compressed_item>
+	<!-- Tunic of Dreams Package (14 days) > Tunic of Dreams (14 days) -->
+	<compressed_item id="188050193">
+		<production chance="100" item_id="110101166" count="1"/>
+	</compressed_item>
+	<!-- Delirium Tunic Package (14 days) > Delirium Tunic (14 days) -->
+	<compressed_item id="188050194">
+		<production chance="100" item_id="110101167" count="1"/>
+	</compressed_item>
+	<!-- Fugue Tunic Package (14 days) > Fugue Tunic (14 days) -->
+	<compressed_item id="188050195">
+		<production chance="100" item_id="110101168" count="1"/>
+	</compressed_item>
+	<!-- Surreal Jerkin Package (3 days) > Surreal Jerkin (3 days) -->
+	<compressed_item id="188050196">
+		<production chance="100" item_id="110301088" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Jerkin Package (3 days) > Ephemeral Jerkin (3 days) -->
+	<compressed_item id="188050197">
+		<production chance="100" item_id="110301060" count="1"/>
+	</compressed_item>
+	<!-- Transient Jerkin Package (3 days) > Transient Jerkin (3 days) -->
+	<compressed_item id="188050198">
+		<production chance="100" item_id="110301061" count="1"/>
+	</compressed_item>
+	<!-- Jerkin of Dreams Package (3 days) > Jerkin of Dreams (3 days) -->
+	<compressed_item id="188050199">
+		<production chance="100" item_id="110301091" count="1"/>
+	</compressed_item>
+	<!-- Delirium Jerkin Package (3 days) > Delirium Jerkin (3 days) -->
+	<compressed_item id="188050200">
+		<production chance="100" item_id="110301071" count="1"/>
+	</compressed_item>
+	<!-- Fugue Jerkin Package (3 days) > Fugue Jerkin (3 days) -->
+	<compressed_item id="188050201">
+		<production chance="100" item_id="110301072" count="1"/>
+	</compressed_item>
+	<!-- Surreal Jerkin Package (7 days) > Surreal Jerkin (7 days) -->
+	<compressed_item id="188050202">
+		<production chance="100" item_id="110301094" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Jerkin Package (7 days) > Ephemeral Jerkin (7 days) -->
+	<compressed_item id="188050203">
+		<production chance="100" item_id="110301095" count="1"/>
+	</compressed_item>
+	<!-- Transient Jerkin Package (7 days) > Transient Jerkin (7 days) -->
+	<compressed_item id="188050204">
+		<production chance="100" item_id="110301096" count="1"/>
+	</compressed_item>
+	<!-- Jerkin of Dreams Package (7 days) > Jerkin of Dreams (7 days) -->
+	<compressed_item id="188050205">
+		<production chance="100" item_id="110301097" count="1"/>
+	</compressed_item>
+	<!-- Delirium Jerkin Package (7 days) > Delirium Jerkin (7 days) -->
+	<compressed_item id="188050206">
+		<production chance="100" item_id="110301098" count="1"/>
+	</compressed_item>
+	<!-- Fugue Jerkin Package (7 days) > Fugue Jerkin (7 days) -->
+	<compressed_item id="188050207">
+		<production chance="100" item_id="110301099" count="1"/>
+	</compressed_item>
+	<!-- Surreal Jerkin Package (14 days) > Surreal Jerkin (14 days) -->
+	<compressed_item id="188050208">
+		<production chance="100" item_id="110301100" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Jerkin Package (14 days) > Ephemeral Jerkin (14 days) -->
+	<compressed_item id="188050209">
+		<production chance="100" item_id="110301101" count="1"/>
+	</compressed_item>
+	<!-- Transient Jerkin Package (14 days) > Transient Jerkin (14 days) -->
+	<compressed_item id="188050210">
+		<production chance="100" item_id="110301102" count="1"/>
+	</compressed_item>
+	<!-- Jerkin of Dreams Package (14 days) > Jerkin of Dreams (14 days) -->
+	<compressed_item id="188050211">
+		<production chance="100" item_id="110301103" count="1"/>
+	</compressed_item>
+	<!-- Delirium Jerkin Package (14 days) > Delirium Jerkin (14 days) -->
+	<compressed_item id="188050212">
+		<production chance="100" item_id="110301104" count="1"/>
+	</compressed_item>
+	<!-- Fugue Jerkin Package (14 days) > Fugue Jerkin (14 days) -->
+	<compressed_item id="188050213">
+		<production chance="100" item_id="110301105" count="1"/>
+	</compressed_item>
+	<!-- Surreal Hauberk Package (3 days) > Surreal Hauberk (3 days) -->
+	<compressed_item id="188050214">
+		<production chance="100" item_id="110501057" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Hauberk Package (3 days) > Ephemeral Hauberk (3 days) -->
+	<compressed_item id="188050215">
+		<production chance="100" item_id="110501028" count="1"/>
+	</compressed_item>
+	<!-- Transient Hauberk Package (3 days) > Transient Hauberk (3 days) -->
+	<compressed_item id="188050216">
+		<production chance="100" item_id="110501029" count="1"/>
+	</compressed_item>
+	<!-- Hauberk of Dreams Package (3 days) > Hauberk of Dreams (3 days) -->
+	<compressed_item id="188050217">
+		<production chance="100" item_id="110501060" count="1"/>
+	</compressed_item>
+	<!-- Delirium Hauberk Package (3 days) > Delirium Hauberk (3 days) -->
+	<compressed_item id="188050218">
+		<production chance="100" item_id="110501039" count="1"/>
+	</compressed_item>
+	<!-- Fugue Hauberk Package (3 days) > Fugue Hauberk (3 days) -->
+	<compressed_item id="188050219">
+		<production chance="100" item_id="110501040" count="1"/>
+	</compressed_item>
+	<!-- Surreal Hauberk Package (7 days) > Surreal Hauberk (7 days) -->
+	<compressed_item id="188050220">
+		<production chance="100" item_id="110501063" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Hauberk Package (7 days) > Ephemeral Hauberk (7 days) -->
+	<compressed_item id="188050221">
+		<production chance="100" item_id="110501064" count="1"/>
+	</compressed_item>
+	<!-- Transient Hauberk Package (7 days) > Transient Hauberk (7 days) -->
+	<compressed_item id="188050222">
+		<production chance="100" item_id="110501065" count="1"/>
+	</compressed_item>
+	<!-- Hauberk of Dreams Package (7 days) > Hauberk of Dreams (7 days) -->
+	<compressed_item id="188050223">
+		<production chance="100" item_id="110501066" count="1"/>
+	</compressed_item>
+	<!-- Delirium Hauberk Package (7 days) > Delirium Hauberk (7 days) -->
+	<compressed_item id="188050224">
+		<production chance="100" item_id="110501067" count="1"/>
+	</compressed_item>
+	<!-- Fugue Hauberk Package (7 days) > Fugue Hauberk (7 days) -->
+	<compressed_item id="188050225">
+		<production chance="100" item_id="110501068" count="1"/>
+	</compressed_item>
+	<!-- Surreal Hauberk Package (14 days) > Surreal Hauberk (14 days) -->
+	<compressed_item id="188050226">
+		<production chance="100" item_id="110501069" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Hauberk Package (14 days) > Ephemeral Hauberk (14 days) -->
+	<compressed_item id="188050227">
+		<production chance="100" item_id="110501070" count="1"/>
+	</compressed_item>
+	<!-- Transient Hauberk Package (14 days) > Transient Hauberk (14 days) -->
+	<compressed_item id="188050228">
+		<production chance="100" item_id="110501071" count="1"/>
+	</compressed_item>
+	<!-- Hauberk of Dreams Package (14 days) > Hauberk of Dreams (14 days) -->
+	<compressed_item id="188050229">
+		<production chance="100" item_id="110501072" count="1"/>
+	</compressed_item>
+	<!-- Delirium Hauberk Package (14 days) > Delirium Hauberk (14 days) -->
+	<compressed_item id="188050230">
+		<production chance="100" item_id="110501073" count="1"/>
+	</compressed_item>
+	<!-- Fugue Hauberk Package (14 days) > Fugue Hauberk (14 days) -->
+	<compressed_item id="188050231">
+		<production chance="100" item_id="110501074" count="1"/>
+	</compressed_item>
+	<!-- Surreal Breastplate Package (3 days) > Surreal Breastplate (3 days) -->
+	<compressed_item id="188050232">
+		<production chance="100" item_id="110601039" count="1"/>
+	</compressed_item>
+	<!-- Transient Breastplate Package (3 days) > Transient Breastplate (3 days) -->
+	<compressed_item id="188050234">
+		<production chance="100" item_id="110601009" count="1"/>
+	</compressed_item>
+	<!-- Delirium Breastplate Package (3 days) > Delirium Breastplate (3 days) -->
+	<compressed_item id="188050236">
+		<production chance="100" item_id="110601023" count="1"/>
+	</compressed_item>
+	<!-- Fugue Breastplate Package (3 days) > Fugue Breastplate (3 days) -->
+	<compressed_item id="188050237">
+		<production chance="100" item_id="110601024" count="1"/>
+	</compressed_item>
+	<!-- Surreal Breastplate Package (7 days) > Surreal Breastplate (7 days) -->
+	<compressed_item id="188050238">
+		<production chance="100" item_id="110601045" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Breastplate Package (7 days) > Ephemeral Breastplate (7 days) -->
+	<compressed_item id="188050239">
+		<production chance="100" item_id="110601046" count="1"/>
+	</compressed_item>
+	<!-- Transient Breastplate Package (7 days) > Transient Breastplate (7 days) -->
+	<compressed_item id="188050240">
+		<production chance="100" item_id="110601047" count="1"/>
+	</compressed_item>
+	<!-- Breastplate of Dreams Package (7 days) > Breastplate of Dreams (7 days) -->
+	<compressed_item id="188050241">
+		<production chance="100" item_id="110601048" count="1"/>
+	</compressed_item>
+	<!-- Delirium Breastplate Package (7 days) > Delirium Breastplate (7 days) -->
+	<compressed_item id="188050242">
+		<production chance="100" item_id="110601049" count="1"/>
+	</compressed_item>
+	<!-- Fugue Breastplate Package (7 days) > Fugue Breastplate (7 days) -->
+	<compressed_item id="188050243">
+		<production chance="100" item_id="110601050" count="1"/>
+	</compressed_item>
+	<!-- Surreal Breastplate Package (14 days) > Surreal Breastplate (14 days) -->
+	<compressed_item id="188050244">
+		<production chance="100" item_id="110601051" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Breastplate Package (14 days) > Ephemeral Breastplate (14 days) -->
+	<compressed_item id="188050245">
+		<production chance="100" item_id="110601052" count="1"/>
+	</compressed_item>
+	<!-- Transient Breastplate Package (14 days) > Transient Breastplate (14 days) -->
+	<compressed_item id="188050246">
+		<production chance="100" item_id="110601053" count="1"/>
+	</compressed_item>
+	<!-- Breastplate of Dreams Package (14 days) > Breastplate of Dreams (14 days) -->
+	<compressed_item id="188050247">
+		<production chance="100" item_id="110601054" count="1"/>
+	</compressed_item>
+	<!-- Delirium Breastplate Package (14 days) > Delirium Breastplate (14 days) -->
+	<compressed_item id="188050248">
+		<production chance="100" item_id="110601055" count="1"/>
+	</compressed_item>
+	<!-- Fugue Breastplate Package (14 days) > Fugue Breastplate (14 days) -->
+	<compressed_item id="188050249">
+		<production chance="100" item_id="110601056" count="1"/>
+	</compressed_item>
+	<!-- Surreal Gloves Package (3 days) > Surreal Gloves (3 days) -->
+	<compressed_item id="188050250">
+		<production chance="100" item_id="111101042" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Gloves Package (3 days) > Ephemeral Gloves (3 days) -->
+	<compressed_item id="188050251">
+		<production chance="100" item_id="111100990" count="1"/>
+	</compressed_item>
+	<!-- Transient Gloves Package (3 days) > Transient Gloves (3 days) -->
+	<compressed_item id="188050252">
+		<production chance="100" item_id="111100991" count="1"/>
+	</compressed_item>
+	<!-- Gloves of Dreams Package (3 days) > Gloves of Dreams (3 days) -->
+	<compressed_item id="188050253">
+		<production chance="100" item_id="111101045" count="1"/>
+	</compressed_item>
+	<!-- Delirium Gloves Package (3 days) > Delirium Gloves (3 days) -->
+	<compressed_item id="188050254">
+		<production chance="100" item_id="111101017" count="1"/>
+	</compressed_item>
+	<!-- Fugue Gloves Package (3 days) > Fugue Gloves (3 days) -->
+	<compressed_item id="188050255">
+		<production chance="100" item_id="111101018" count="1"/>
+	</compressed_item>
+	<!-- Surreal Gloves Package (7 days) > Surreal Gloves (7 days) -->
+	<compressed_item id="188050256">
+		<production chance="100" item_id="111101048" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Gloves Package (7 days) > Ephemeral Gloves (7 days) -->
+	<compressed_item id="188050257">
+		<production chance="100" item_id="111101049" count="1"/>
+	</compressed_item>
+	<!-- Transient Gloves Package (7 days) > Transient Gloves (7 days) -->
+	<compressed_item id="188050258">
+		<production chance="100" item_id="111101050" count="1"/>
+	</compressed_item>
+	<!-- Gloves of Dreams Package (7 days) > Gloves of Dreams (7 days) -->
+	<compressed_item id="188050259">
+		<production chance="100" item_id="111101051" count="1"/>
+	</compressed_item>
+	<!-- Delirium Gloves Package (7 days) > Delirium Gloves (7 days) -->
+	<compressed_item id="188050260">
+		<production chance="100" item_id="111101052" count="1"/>
+	</compressed_item>
+	<!-- Fugue Gloves Package (7 days) > Fugue Gloves (7 days) -->
+	<compressed_item id="188050261">
+		<production chance="100" item_id="111101053" count="1"/>
+	</compressed_item>
+	<!-- Surreal Gloves Package (14 days) > Surreal Gloves (14 days) -->
+	<compressed_item id="188050262">
+		<production chance="100" item_id="111101054" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Gloves Package (14 days) > Ephemeral Gloves (14 days) -->
+	<compressed_item id="188050263">
+		<production chance="100" item_id="111101055" count="1"/>
+	</compressed_item>
+	<!-- Transient Gloves Package (14 days) > Transient Gloves (14 days) -->
+	<compressed_item id="188050264">
+		<production chance="100" item_id="111101056" count="1"/>
+	</compressed_item>
+	<!-- Gloves of Dreams Package (14 days) > Gloves of Dreams (14 days) -->
+	<compressed_item id="188050265">
+		<production chance="100" item_id="111101057" count="1"/>
+	</compressed_item>
+	<!-- Delirium Gloves Package (14 days) > Delirium Gloves (14 days) -->
+	<compressed_item id="188050266">
+		<production chance="100" item_id="111101058" count="1"/>
+	</compressed_item>
+	<!-- Fugue Gloves Package (14 days) > Fugue Gloves (14 days) -->
+	<compressed_item id="188050267">
+		<production chance="100" item_id="111101059" count="1"/>
+	</compressed_item>
+	<!-- Surreal Vambrace Package (3 days) > Surreal Vambrace (3 days) -->
+	<compressed_item id="188050268">
+		<production chance="100" item_id="111301043" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Vambrace Package (3 days) > Ephemeral Vambrace (3 days) -->
+	<compressed_item id="188050269">
+		<production chance="100" item_id="111300995" count="1"/>
+	</compressed_item>
+	<!-- Transient Vambrace Package (3 days) > Transient Vambrace (3 days) -->
+	<compressed_item id="188050270">
+		<production chance="100" item_id="111300996" count="1"/>
+	</compressed_item>
+	<!-- Vambrace of Dreams Package (3 days) > Vambrace of Dreams (3 days) -->
+	<compressed_item id="188050271">
+		<production chance="100" item_id="111301046" count="1"/>
+	</compressed_item>
+	<!-- Delirium Vambrace Package (3 days) > Delirium Vambrace (3 days) -->
+	<compressed_item id="188050272">
+		<production chance="100" item_id="111301026" count="1"/>
+	</compressed_item>
+	<!-- Fugue Vambrace Package (3 days) > Fugue Vambrace (3 days) -->
+	<compressed_item id="188050273">
+		<production chance="100" item_id="111301027" count="1"/>
+	</compressed_item>
+	<!-- Surreal Vambrace Package (7 days) > Surreal Vambrace (7 days) -->
+	<compressed_item id="188050274">
+		<production chance="100" item_id="111301049" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Vambrace Package (7 days) > Ephemeral Vambrace (7 days) -->
+	<compressed_item id="188050275">
+		<production chance="100" item_id="111301050" count="1"/>
+	</compressed_item>
+	<!-- Transient Vambrace Package (7 days) > Transient Vambrace (7 days) -->
+	<compressed_item id="188050276">
+		<production chance="100" item_id="111301051" count="1"/>
+	</compressed_item>
+	<!-- Vambrace of Dreams Package (7 days) > Vambrace of Dreams (7 days) -->
+	<compressed_item id="188050277">
+		<production chance="100" item_id="111301052" count="1"/>
+	</compressed_item>
+	<!-- Delirium Vambrace Package (7 days) > Delirium Vambrace (7 days) -->
+	<compressed_item id="188050278">
+		<production chance="100" item_id="111301053" count="1"/>
+	</compressed_item>
+	<!-- Fugue Vambrace Package (7 days) > Fugue Vambrace (7 days) -->
+	<compressed_item id="188050279">
+		<production chance="100" item_id="111301054" count="1"/>
+	</compressed_item>
+	<!-- Surreal Vambrace Package (14 days) > Surreal Vambrace (14 days) -->
+	<compressed_item id="188050280">
+		<production chance="100" item_id="111301055" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Vambrace Package (14 days) > Ephemeral Vambrace (14 days) -->
+	<compressed_item id="188050281">
+		<production chance="100" item_id="111301056" count="1"/>
+	</compressed_item>
+	<!-- Transient Vambrace Package (14 days) > Transient Vambrace (14 days) -->
+	<compressed_item id="188050282">
+		<production chance="100" item_id="111301057" count="1"/>
+	</compressed_item>
+	<!-- Vambrace of Dreams Package (14 days) > Vambrace of Dreams (14 days) -->
+	<compressed_item id="188050283">
+		<production chance="100" item_id="111301058" count="1"/>
+	</compressed_item>
+	<!-- Delirium Vambrace Package (14 days) > Delirium Vambrace (14 days) -->
+	<compressed_item id="188050284">
+		<production chance="100" item_id="111301059" count="1"/>
+	</compressed_item>
+	<!-- Fugue Vambrace Package (14 days) > Fugue Vambrace (14 days) -->
+	<compressed_item id="188050285">
+		<production chance="100" item_id="111301060" count="1"/>
+	</compressed_item>
+	<!-- Surreal Handguards Package (3 days) > Surreal Handguards (3 days) -->
+	<compressed_item id="188050286">
+		<production chance="100" item_id="111501027" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Handguards Package (3 days) > Ephemeral Handguards (3 days) -->
+	<compressed_item id="188050287">
+		<production chance="100" item_id="111500982" count="1"/>
+	</compressed_item>
+	<!-- Transient Handguards Package (3 days) > Transient Handguards (3 days) -->
+	<compressed_item id="188050288">
+		<production chance="100" item_id="111500983" count="1"/>
+	</compressed_item>
+	<!-- Handguards of Dreams Package (3 days) > Handguards of Dreams (3 days) -->
+	<compressed_item id="188050289">
+		<production chance="100" item_id="111501030" count="1"/>
+	</compressed_item>
+	<!-- Delirium Handguards Package (3 days) > Delirium Handguards (3 days) -->
+	<compressed_item id="188050290">
+		<production chance="100" item_id="111501009" count="1"/>
+	</compressed_item>
+	<!-- Fugue Handguards Package (3 days) > Fugue Handguards (3 days) -->
+	<compressed_item id="188050291">
+		<production chance="100" item_id="111501010" count="1"/>
+	</compressed_item>
+	<!-- Surreal Handguards Package (7 days) > Surreal Handguards (7 days) -->
+	<compressed_item id="188050292">
+		<production chance="100" item_id="111501033" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Handguards Package (7 days) > Ephemeral Handguards (7 days) -->
+	<compressed_item id="188050293">
+		<production chance="100" item_id="111501034" count="1"/>
+	</compressed_item>
+	<!-- Transient Handguards Package (7 days) > Transient Handguards (7 days) -->
+	<compressed_item id="188050294">
+		<production chance="100" item_id="111501035" count="1"/>
+	</compressed_item>
+	<!-- Handguards of Dreams Package (7 days) > Handguards of Dreams (7 days) -->
+	<compressed_item id="188050295">
+		<production chance="100" item_id="111501036" count="1"/>
+	</compressed_item>
+	<!-- Delirium Handguards Package (7 days) > Delirium Handguards (7 days) -->
+	<compressed_item id="188050296">
+		<production chance="100" item_id="111501037" count="1"/>
+	</compressed_item>
+	<!-- Fugue Handguards Package (7 days) > Fugue Handguards (7 days) -->
+	<compressed_item id="188050297">
+		<production chance="100" item_id="111501038" count="1"/>
+	</compressed_item>
+	<!-- Surreal Handguards Package (14 days) > Surreal Handguards (14 days) -->
+	<compressed_item id="188050298">
+		<production chance="100" item_id="111501039" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Handguards Package (14 days) > Ephemeral Handguards (14 days) -->
+	<compressed_item id="188050299">
+		<production chance="100" item_id="111501040" count="1"/>
+	</compressed_item>
+	<!-- Transient Handguards Package (14 days) > Transient Handguards (14 days) -->
+	<compressed_item id="188050300">
+		<production chance="100" item_id="111501041" count="1"/>
+	</compressed_item>
+	<!-- Handguards of Dreams Package (14 days) > Handguards of Dreams (14 days) -->
+	<compressed_item id="188050301">
+		<production chance="100" item_id="111501042" count="1"/>
+	</compressed_item>
+	<!-- Delirium Handguards Package (14 days) > Delirium Handguards (14 days) -->
+	<compressed_item id="188050302">
+		<production chance="100" item_id="111501043" count="1"/>
+	</compressed_item>
+	<!-- Fugue Handguards Package (14 days) > Fugue Handguards (14 days) -->
+	<compressed_item id="188050303">
+		<production chance="100" item_id="111501044" count="1"/>
+	</compressed_item>
+	<!-- Surreal Gauntlets Package (3 days) > Surreal Gauntlets (3 days) -->
+	<compressed_item id="188050304">
+		<production chance="100" item_id="111601016" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Gauntlets Package (3 days) > Ephemeral Gauntlets (3 days) -->
+	<compressed_item id="188050305">
+		<production chance="100" item_id="111600973" count="1"/>
+	</compressed_item>
+	<!-- Transient Gauntlets Package (3 days) > Transient Gauntlets (3 days) -->
+	<compressed_item id="188050306">
+		<production chance="100" item_id="111600974" count="1"/>
+	</compressed_item>
+	<!-- Gauntlets of Dreams Package (3 days) > Gauntlets of Dreams (3 days) -->
+	<compressed_item id="188050307">
+		<production chance="100" item_id="111601019" count="1"/>
+	</compressed_item>
+	<!-- Delirium Gauntlets Package (3 days) > Delirium Gauntlets (3 days) -->
+	<compressed_item id="188050308">
+		<production chance="100" item_id="111601000" count="1"/>
+	</compressed_item>
+	<!-- Fugue Gauntlets Package (3 days) > Fugue Gauntlets (3 days) -->
+	<compressed_item id="188050309">
+		<production chance="100" item_id="111601001" count="1"/>
+	</compressed_item>
+	<!-- Surreal Gauntlets Package (7 days) > Surreal Gauntlets (7 days) -->
+	<compressed_item id="188050310">
+		<production chance="100" item_id="111601022" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Gauntlets Package (7 days) > Ephemeral Gauntlets (7 days) -->
+	<compressed_item id="188050311">
+		<production chance="100" item_id="111601023" count="1"/>
+	</compressed_item>
+	<!-- Transient Gauntlets Package (7 days) > Transient Gauntlets (7 days) -->
+	<compressed_item id="188050312">
+		<production chance="100" item_id="111601024" count="1"/>
+	</compressed_item>
+	<!-- Gauntlets of Dreams Package (7 days) > Gauntlets of Dreams (7 days) -->
+	<compressed_item id="188050313">
+		<production chance="100" item_id="111601025" count="1"/>
+	</compressed_item>
+	<!-- Delirium Gauntlets Package (7 days) > Delirium Gauntlets (7 days) -->
+	<compressed_item id="188050314">
+		<production chance="100" item_id="111601026" count="1"/>
+	</compressed_item>
+	<!-- Fugue Gauntlets Package (7 days) > Fugue Gauntlets (7 days) -->
+	<compressed_item id="188050315">
+		<production chance="100" item_id="111601027" count="1"/>
+	</compressed_item>
+	<!-- Surreal Gauntlets Package (14 days) > Surreal Gauntlets (14 days) -->
+	<compressed_item id="188050316">
+		<production chance="100" item_id="111601028" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Gauntlets Package (14 days) > Ephemeral Gauntlets (14 days) -->
+	<compressed_item id="188050317">
+		<production chance="100" item_id="111601029" count="1"/>
+	</compressed_item>
+	<!-- Transient Gauntlets Package (14 days) > Transient Gauntlets (14 days) -->
+	<compressed_item id="188050318">
+		<production chance="100" item_id="111601030" count="1"/>
+	</compressed_item>
+	<!-- Gauntlets of Dreams Package (14 days) > Gauntlets of Dreams (14 days) -->
+	<compressed_item id="188050319">
+		<production chance="100" item_id="111601031" count="1"/>
+	</compressed_item>
+	<!-- Delirium Gauntlets Package (14 days) > Delirium Gauntlets (14 days) -->
+	<compressed_item id="188050320">
+		<production chance="100" item_id="111601032" count="1"/>
+	</compressed_item>
+	<!-- Fugue Gauntlets Package (14 days) > Fugue Gauntlets (14 days) -->
+	<compressed_item id="188050321">
+		<production chance="100" item_id="111601033" count="1"/>
+	</compressed_item>
+	<!-- Surreal Pauldrons Package (3 days) > Surreal Pauldrons (3 days) -->
+	<compressed_item id="188050322">
+		<production chance="100" item_id="112101000" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Pauldrons Package (3 days) > Ephemeral Pauldrons (3 days) -->
+	<compressed_item id="188050323">
+		<production chance="100" item_id="112100946" count="1"/>
+	</compressed_item>
+	<!-- Transient Pauldrons Package (3 days) > Transient Pauldrons (3 days) -->
+	<compressed_item id="188050324">
+		<production chance="100" item_id="112100947" count="1"/>
+	</compressed_item>
+	<!-- Pauldrons of Dreams Package (3 days) > Pauldrons of Dreams (3 days) -->
+	<compressed_item id="188050325">
+		<production chance="100" item_id="112101003" count="1"/>
+	</compressed_item>
+	<!-- Delirium Pauldrons Package (3 days) > Delirium Pauldrons (3 days) -->
+	<compressed_item id="188050326">
+		<production chance="100" item_id="112100977" count="1"/>
+	</compressed_item>
+	<!-- Fugue Pauldrons Package (3 days) > Fugue Pauldrons (3 days) -->
+	<compressed_item id="188050327">
+		<production chance="100" item_id="112100978" count="1"/>
+	</compressed_item>
+	<!-- Surreal Pauldrons Package (7 days) > Surreal Pauldrons (7 days) -->
+	<compressed_item id="188050328">
+		<production chance="100" item_id="112101006" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Pauldrons Package (7 days) > Ephemeral Pauldrons (7 days) -->
+	<compressed_item id="188050329">
+		<production chance="100" item_id="112101007" count="1"/>
+	</compressed_item>
+	<!-- Transient Pauldrons Package (7 days) > Transient Pauldrons (7 days) -->
+	<compressed_item id="188050330">
+		<production chance="100" item_id="112101008" count="1"/>
+	</compressed_item>
+	<!-- Pauldrons of Dreams Package (7 days) > Pauldrons of Dreams (7 days) -->
+	<compressed_item id="188050331">
+		<production chance="100" item_id="112101009" count="1"/>
+	</compressed_item>
+	<!-- Delirium Pauldrons Package (7 days) > Delirium Pauldrons (7 days) -->
+	<compressed_item id="188050332">
+		<production chance="100" item_id="112101010" count="1"/>
+	</compressed_item>
+	<!-- Fugue Pauldrons Package (7 days) > Fugue Pauldrons (7 days) -->
+	<compressed_item id="188050333">
+		<production chance="100" item_id="112101011" count="1"/>
+	</compressed_item>
+	<!-- Surreal Pauldrons Package (14 days) > Surreal Pauldrons (14 days) -->
+	<compressed_item id="188050334">
+		<production chance="100" item_id="112101012" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Pauldrons Package (14 days) > Ephemeral Pauldrons (14 days) -->
+	<compressed_item id="188050335">
+		<production chance="100" item_id="112101013" count="1"/>
+	</compressed_item>
+	<!-- Transient Pauldrons Package (14 days) > Transient Pauldrons (14 days) -->
+	<compressed_item id="188050336">
+		<production chance="100" item_id="112101014" count="1"/>
+	</compressed_item>
+	<!-- Pauldrons of Dreams Package (14 days) > Pauldrons of Dreams (14 days) -->
+	<compressed_item id="188050337">
+		<production chance="100" item_id="112101015" count="1"/>
+	</compressed_item>
+	<!-- Delirium Pauldrons Package (14 days) > Delirium Pauldrons (14 days) -->
+	<compressed_item id="188050338">
+		<production chance="100" item_id="112101016" count="1"/>
+	</compressed_item>
+	<!-- Fugue Pauldrons Package (14 days) > Fugue Pauldrons (14 days) -->
+	<compressed_item id="188050339">
+		<production chance="100" item_id="112101017" count="1"/>
+	</compressed_item>
+	<!-- Surreal Shoulderguards Package (3 days) > Surreal Shoulderguards (3 days) -->
+	<compressed_item id="188050340">
+		<production chance="100" item_id="112300988" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Shoulderguards Package (3 days) > Ephemeral Shoulderguards (3 days) -->
+	<compressed_item id="188050341">
+		<production chance="100" item_id="112300944" count="1"/>
+	</compressed_item>
+	<!-- Transient Shoulderguards Package (3 days) > Transient Shoulderguards (3 days) -->
+	<compressed_item id="188050342">
+		<production chance="100" item_id="112300945" count="1"/>
+	</compressed_item>
+	<!-- Shoulderguards of Dreams Package (3 days) > Shoulderguards of Dreams (3 days) -->
+	<compressed_item id="188050343">
+		<production chance="100" item_id="112300991" count="1"/>
+	</compressed_item>
+	<!-- Delirium Shoulderguards Package (3 days) > Delirium Shoulderguards (3 days) -->
+	<compressed_item id="188050344">
+		<production chance="100" item_id="112300971" count="1"/>
+	</compressed_item>
+	<!-- Fugue Shoulderguards Package (3 days) > Fugue Shoulderguards (3 days) -->
+	<compressed_item id="188050345">
+		<production chance="100" item_id="112300972" count="1"/>
+	</compressed_item>
+	<!-- Surreal Shoulderguards Package (7 days) > Surreal Shoulderguards (7 days) -->
+	<compressed_item id="188050346">
+		<production chance="100" item_id="112300994" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Shoulderguards Package (7 days) > Ephemeral Shoulderguards (7 days) -->
+	<compressed_item id="188050347">
+		<production chance="100" item_id="112300995" count="1"/>
+	</compressed_item>
+	<!-- Transient Shoulderguards Package (7 days) > Transient Shoulderguards (7 days) -->
+	<compressed_item id="188050348">
+		<production chance="100" item_id="112300996" count="1"/>
+	</compressed_item>
+	<!-- Shoulderguards of Dreams Package (7 days) > Shoulderguards of Dreams (7 days) -->
+	<compressed_item id="188050349">
+		<production chance="100" item_id="112300997" count="1"/>
+	</compressed_item>
+	<!-- Delirium Shoulderguards Package (7 days) > Delirium Shoulderguards (7 days) -->
+	<compressed_item id="188050350">
+		<production chance="100" item_id="112300998" count="1"/>
+	</compressed_item>
+	<!-- Fugue Shoulderguards Package (7 days) > Fugue Shoulderguards (7 days) -->
+	<compressed_item id="188050351">
+		<production chance="100" item_id="112300999" count="1"/>
+	</compressed_item>
+	<!-- Surreal Shoulderguards Package (14 days) > Surreal Shoulderguards (14 days) -->
+	<compressed_item id="188050352">
+		<production chance="100" item_id="112301000" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Shoulderguards Package (14 days) > Ephemeral Shoulderguards (14 days) -->
+	<compressed_item id="188050353">
+		<production chance="100" item_id="112301001" count="1"/>
+	</compressed_item>
+	<!-- Transient Shoulderguards Package (14 days) > Transient Shoulderguards (14 days) -->
+	<compressed_item id="188050354">
+		<production chance="100" item_id="112301002" count="1"/>
+	</compressed_item>
+	<!-- Shoulderguards of Dreams Package (14 days) > Shoulderguards of Dreams (14 days) -->
+	<compressed_item id="188050355">
+		<production chance="100" item_id="112301003" count="1"/>
+	</compressed_item>
+	<!-- Delirium Shoulderguards Package (14 days) > Delirium Shoulderguards (14 days) -->
+	<compressed_item id="188050356">
+		<production chance="100" item_id="112301004" count="1"/>
+	</compressed_item>
+	<!-- Fugue Shoulderguards Package (14 days) > Fugue Shoulderguards (14 days) -->
+	<compressed_item id="188050357">
+		<production chance="100" item_id="112301005" count="1"/>
+	</compressed_item>
+	<!-- Surreal Spaulders Package (3 days) > Surreal Spaulders (3 days) -->
+	<compressed_item id="188050358">
+		<production chance="100" item_id="112500976" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Spaulders Package (3 days) > Ephemeral Spaulders (3 days) -->
+	<compressed_item id="188050359">
+		<production chance="100" item_id="112500931" count="1"/>
+	</compressed_item>
+	<!-- Transient Spaulders Package (3 days) > Transient Spaulders (3 days) -->
+	<compressed_item id="188050360">
+		<production chance="100" item_id="112500932" count="1"/>
+	</compressed_item>
+	<!-- Spaulders of Dreams Package (3 days) > Spaulders of Dreams (3 days) -->
+	<compressed_item id="188050361">
+		<production chance="100" item_id="112500979" count="1"/>
+	</compressed_item>
+	<!-- Delirium Spaulders Package (3 days) > Delirium Spaulders (3 days) -->
+	<compressed_item id="188050362">
+		<production chance="100" item_id="112500958" count="1"/>
+	</compressed_item>
+	<!-- Fugue Spaulders Package (3 days) > Fugue Spaulders (3 days) -->
+	<compressed_item id="188050363">
+		<production chance="100" item_id="112500959" count="1"/>
+	</compressed_item>
+	<!-- Surreal Spaulders Package (7 days) > Surreal Spaulders (7 days) -->
+	<compressed_item id="188050364">
+		<production chance="100" item_id="112500982" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Spaulders Package (7 days) > Ephemeral Spaulders (7 days) -->
+	<compressed_item id="188050365">
+		<production chance="100" item_id="112500983" count="1"/>
+	</compressed_item>
+	<!-- Transient Spaulders Package (7 days) > Transient Spaulders (7 days) -->
+	<compressed_item id="188050366">
+		<production chance="100" item_id="112500984" count="1"/>
+	</compressed_item>
+	<!-- Spaulders of Dreams Package (7 days) > Spaulders of Dreams (7 days) -->
+	<compressed_item id="188050367">
+		<production chance="100" item_id="112500985" count="1"/>
+	</compressed_item>
+	<!-- Delirium Spaulders Package (7 days) > Delirium Spaulders (7 days) -->
+	<compressed_item id="188050368">
+		<production chance="100" item_id="112500986" count="1"/>
+	</compressed_item>
+	<!-- Fugue Spaulders Package (7 days) > Fugue Spaulders (7 days) -->
+	<compressed_item id="188050369">
+		<production chance="100" item_id="112500987" count="1"/>
+	</compressed_item>
+	<!-- Surreal Spaulders Package (14 days) > Surreal Spaulders (14 days) -->
+	<compressed_item id="188050370">
+		<production chance="100" item_id="112500988" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Spaulders Package (14 days) > Ephemeral Spaulders (14 days) -->
+	<compressed_item id="188050371">
+		<production chance="100" item_id="112500989" count="1"/>
+	</compressed_item>
+	<!-- Transient Spaulders Package (14 days) > Transient Spaulders (14 days) -->
+	<compressed_item id="188050372">
+		<production chance="100" item_id="112500990" count="1"/>
+	</compressed_item>
+	<!-- Spaulders of Dreams Package (14 days) > Spaulders of Dreams (14 days) -->
+	<compressed_item id="188050373">
+		<production chance="100" item_id="112500991" count="1"/>
+	</compressed_item>
+	<!-- Delirium Spaulders Package (14 days) > Delirium Spaulders (14 days) -->
+	<compressed_item id="188050374">
+		<production chance="100" item_id="112500992" count="1"/>
+	</compressed_item>
+	<!-- Fugue Spaulders Package (14 days) > Fugue Spaulders (14 days) -->
+	<compressed_item id="188050375">
+		<production chance="100" item_id="112500993" count="1"/>
+	</compressed_item>
+	<!-- Surreal Shoulderplates Package (3 days) > Surreal Shoulderplates (3 days) -->
+	<compressed_item id="188050376">
+		<production chance="100" item_id="112600989" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Shoulderplates Package (3 days) > Ephemeral Shoulderplates (3 days) -->
+	<compressed_item id="188050377">
+		<production chance="100" item_id="112600946" count="1"/>
+	</compressed_item>
+	<!-- Transient Shoulderplates Package (3 days) > Transient Shoulderplates (3 days) -->
+	<compressed_item id="188050378">
+		<production chance="100" item_id="112600947" count="1"/>
+	</compressed_item>
+	<!-- Shoulderplates of Dreams Package (3 days) > Shoulderplates of Dreams (3 days) -->
+	<compressed_item id="188050379">
+		<production chance="100" item_id="112600992" count="1"/>
+	</compressed_item>
+	<!-- Delirium Shoulderplates Package (3 days) > Delirium Shoulderplates (3 days) -->
+	<compressed_item id="188050380">
+		<production chance="100" item_id="112600973" count="1"/>
+	</compressed_item>
+	<!-- Fugue Shoulderplates Package (3 days) > Fugue Shoulderplates (3 days) -->
+	<compressed_item id="188050381">
+		<production chance="100" item_id="112600974" count="1"/>
+	</compressed_item>
+	<!-- Surreal Shoulderplates Package (7 days) > Surreal Shoulderplates (7 days) -->
+	<compressed_item id="188050382">
+		<production chance="100" item_id="112600995" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Shoulderplates Package (7 days) > Ephemeral Shoulderplates (7 days) -->
+	<compressed_item id="188050383">
+		<production chance="100" item_id="112600996" count="1"/>
+	</compressed_item>
+	<!-- Transient Shoulderplates Package (7 days) > Transient Shoulderplates (7 days) -->
+	<compressed_item id="188050384">
+		<production chance="100" item_id="112600997" count="1"/>
+	</compressed_item>
+	<!-- Shoulderplates of Dreams Package (7 days) > Shoulderplates of Dreams (7 days) -->
+	<compressed_item id="188050385">
+		<production chance="100" item_id="112600998" count="1"/>
+	</compressed_item>
+	<!-- Delirium Shoulderplates Package (7 days) > Delirium Shoulderplates (7 days) -->
+	<compressed_item id="188050386">
+		<production chance="100" item_id="112600999" count="1"/>
+	</compressed_item>
+	<!-- Fugue Shoulderplates Package (7 days) > Fugue Shoulderplates (7 days) -->
+	<compressed_item id="188050387">
+		<production chance="100" item_id="112601000" count="1"/>
+	</compressed_item>
+	<!-- Surreal Shoulderplates Package (14 days) > Surreal Shoulderplates (14 days) -->
+	<compressed_item id="188050388">
+		<production chance="100" item_id="112601001" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Shoulderplates Package (14 days) > Ephemeral Shoulderplates (14 days) -->
+	<compressed_item id="188050389">
+		<production chance="100" item_id="112601002" count="1"/>
+	</compressed_item>
+	<!-- Transient Shoulderplates Package (14 days) > Transient Shoulderplates (14 days) -->
+	<compressed_item id="188050390">
+		<production chance="100" item_id="112601003" count="1"/>
+	</compressed_item>
+	<!-- Shoulderplates of Dreams Package (14 days) > Shoulderplates of Dreams (14 days) -->
+	<compressed_item id="188050391">
+		<production chance="100" item_id="112601004" count="1"/>
+	</compressed_item>
+	<!-- Delirium Shoulderplates Package (14 days) > Delirium Shoulderplates (14 days) -->
+	<compressed_item id="188050392">
+		<production chance="100" item_id="112601005" count="1"/>
+	</compressed_item>
+	<!-- Fugue Shoulderplates Package (14 days) > Fugue Shoulderplates (14 days) -->
+	<compressed_item id="188050393">
+		<production chance="100" item_id="112601006" count="1"/>
+	</compressed_item>
+	<!-- Surreal Leggings Package (3 days) > Surreal Leggings (3 days) -->
+	<compressed_item id="188050394">
+		<production chance="100" item_id="113101055" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Leggings Package (3 days) > Ephemeral Leggings (3 days) -->
+	<compressed_item id="188050395">
+		<production chance="100" item_id="113101002" count="1"/>
+	</compressed_item>
+	<!-- Transient Leggings Package (3 days) > Transient Leggings (3 days) -->
+	<compressed_item id="188050396">
+		<production chance="100" item_id="113101003" count="1"/>
+	</compressed_item>
+	<!-- Leggings of Dreams Package (3 days) > Leggings of Dreams (3 days) -->
+	<compressed_item id="188050397">
+		<production chance="100" item_id="113101058" count="1"/>
+	</compressed_item>
+	<!-- Delirium Leggings Package (3 days) > Delirium Leggings (3 days) -->
+	<compressed_item id="188050398">
+		<production chance="100" item_id="113101030" count="1"/>
+	</compressed_item>
+	<!-- Fugue Leggings Package (3 days) > Fugue Leggings (3 days) -->
+	<compressed_item id="188050399">
+		<production chance="100" item_id="113101031" count="1"/>
+	</compressed_item>
+	<!-- Surreal Leggings Package (7 days) > Surreal Leggings (7 days) -->
+	<compressed_item id="188050400">
+		<production chance="100" item_id="113101061" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Leggings Package (7 days) > Ephemeral Leggings (7 days) -->
+	<compressed_item id="188050401">
+		<production chance="100" item_id="113101062" count="1"/>
+	</compressed_item>
+	<!-- Transient Leggings Package (7 days) > Transient Leggings (7 days) -->
+	<compressed_item id="188050402">
+		<production chance="100" item_id="113101063" count="1"/>
+	</compressed_item>
+	<!-- Leggings of Dreams Package (7 days) > Leggings of Dreams (7 days) -->
+	<compressed_item id="188050403">
+		<production chance="100" item_id="113101064" count="1"/>
+	</compressed_item>
+	<!-- Delirium Leggings Package (7 days) > Delirium Leggings (7 days) -->
+	<compressed_item id="188050404">
+		<production chance="100" item_id="113101065" count="1"/>
+	</compressed_item>
+	<!-- Fugue Leggings Package (7 days) > Fugue Leggings (7 days) -->
+	<compressed_item id="188050405">
+		<production chance="100" item_id="113101066" count="1"/>
+	</compressed_item>
+	<!-- Surreal Leggings Package (14 days) > Surreal Leggings (14 days) -->
+	<compressed_item id="188050406">
+		<production chance="100" item_id="113101067" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Leggings Package (14 days) > Ephemeral Leggings (14 days) -->
+	<compressed_item id="188050407">
+		<production chance="100" item_id="113101068" count="1"/>
+	</compressed_item>
+	<!-- Transient Leggings Package (14 days) > Transient Leggings (14 days) -->
+	<compressed_item id="188050408">
+		<production chance="100" item_id="113101069" count="1"/>
+	</compressed_item>
+	<!-- Leggings of Dreams Package (14 days) > Leggings of Dreams (14 days) -->
+	<compressed_item id="188050409">
+		<production chance="100" item_id="113101070" count="1"/>
+	</compressed_item>
+	<!-- Delirium Leggings Package (14 days) > Delirium Leggings (14 days) -->
+	<compressed_item id="188050410">
+		<production chance="100" item_id="113101071" count="1"/>
+	</compressed_item>
+	<!-- Fugue Leggings Package (14 days) > Fugue Leggings (14 days) -->
+	<compressed_item id="188050411">
+		<production chance="100" item_id="113101072" count="1"/>
+	</compressed_item>
+	<!-- Surreal Breeches Package (3 days) > Surreal Breeches (3 days) -->
+	<compressed_item id="188050412">
+		<production chance="100" item_id="113301060" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Breeches Package (3 days) > Ephemeral Breeches (3 days) -->
+	<compressed_item id="188050413">
+		<production chance="100" item_id="113301015" count="1"/>
+	</compressed_item>
+	<!-- Transient Breeches Package (3 days) > Transient Breeches (3 days) -->
+	<compressed_item id="188050414">
+		<production chance="100" item_id="113301016" count="1"/>
+	</compressed_item>
+	<!-- Breeches of Dreams Package (3 days) > Breeches of Dreams (3 days) -->
+	<compressed_item id="188050415">
+		<production chance="100" item_id="113301063" count="1"/>
+	</compressed_item>
+	<!-- Delirium Breeches Package (3 days) > Delirium Breeches (3 days) -->
+	<compressed_item id="188050416">
+		<production chance="100" item_id="113301043" count="1"/>
+	</compressed_item>
+	<!-- Fugue Breeches Package (3 days) > Fugue Breeches (3 days) -->
+	<compressed_item id="188050417">
+		<production chance="100" item_id="113301044" count="1"/>
+	</compressed_item>
+	<!-- Surreal Breeches Package (7 days) > Surreal Breeches (7 days) -->
+	<compressed_item id="188050418">
+		<production chance="100" item_id="113301066" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Breeches Package (7 days) > Ephemeral Breeches (7 days) -->
+	<compressed_item id="188050419">
+		<production chance="100" item_id="113301067" count="1"/>
+	</compressed_item>
+	<!-- Transient Breeches Package (7 days) > Transient Breeches (7 days) -->
+	<compressed_item id="188050420">
+		<production chance="100" item_id="113301068" count="1"/>
+	</compressed_item>
+	<!-- Breeches of Dreams Package (7 days) > Breeches of Dreams (7 days) -->
+	<compressed_item id="188050421">
+		<production chance="100" item_id="113301069" count="1"/>
+	</compressed_item>
+	<!-- Delirium Breeches Package (7 days) > Delirium Breeches (7 days) -->
+	<compressed_item id="188050422">
+		<production chance="100" item_id="113301070" count="1"/>
+	</compressed_item>
+	<!-- Fugue Breeches Package (7 days) > Fugue Breeches (7 days) -->
+	<compressed_item id="188050423">
+		<production chance="100" item_id="113301071" count="1"/>
+	</compressed_item>
+	<!-- Surreal Breeches Package (14 days) > Surreal Breeches (14 days) -->
+	<compressed_item id="188050424">
+		<production chance="100" item_id="113301072" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Breeches Package (14 days) > Ephemeral Breeches (14 days) -->
+	<compressed_item id="188050425">
+		<production chance="100" item_id="113301073" count="1"/>
+	</compressed_item>
+	<!-- Transient Breeches Package (14 days) > Transient Breeches (14 days) -->
+	<compressed_item id="188050426">
+		<production chance="100" item_id="113301074" count="1"/>
+	</compressed_item>
+	<!-- Breeches of Dreams Package (14 days) > Breeches of Dreams (14 days) -->
+	<compressed_item id="188050427">
+		<production chance="100" item_id="113301075" count="1"/>
+	</compressed_item>
+	<!-- Delirium Breeches Package (14 days) > Delirium Breeches (14 days) -->
+	<compressed_item id="188050428">
+		<production chance="100" item_id="113301076" count="1"/>
+	</compressed_item>
+	<!-- Fugue Breeches Package (14 days) > Fugue Breeches (14 days) -->
+	<compressed_item id="188050429">
+		<production chance="100" item_id="113301077" count="1"/>
+	</compressed_item>
+	<!-- Surreal Chausses Package (3 days) > Surreal Chausses (3 days) -->
+	<compressed_item id="188050430">
+		<production chance="100" item_id="113501035" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Chausses Package (3 days) > Ephemeral Chausses (3 days) -->
+	<compressed_item id="188050431">
+		<production chance="100" item_id="113500985" count="1"/>
+	</compressed_item>
+	<!-- Transient Chausses Package (3 days) > Transient Chausses (3 days) -->
+	<compressed_item id="188050432">
+		<production chance="100" item_id="113500986" count="1"/>
+	</compressed_item>
+	<!-- Chausses of Dreams Package (3 days) > Chausses of Dreams (3 days) -->
+	<compressed_item id="188050433">
+		<production chance="100" item_id="113501038" count="1"/>
+	</compressed_item>
+	<!-- Delirium Chausses Package (3 days) > Delirium Chausses (3 days) -->
+	<compressed_item id="188050434">
+		<production chance="100" item_id="113501017" count="1"/>
+	</compressed_item>
+	<!-- Fugue Chausses Package (3 days) > Fugue Chausses (3 days) -->
+	<compressed_item id="188050435">
+		<production chance="100" item_id="113501018" count="1"/>
+	</compressed_item>
+	<!-- Surreal Chausses Package (7 days) > Surreal Chausses (7 days) -->
+	<compressed_item id="188050436">
+		<production chance="100" item_id="113501041" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Chausses Package (7 days) > Ephemeral Chausses (7 days) -->
+	<compressed_item id="188050437">
+		<production chance="100" item_id="113501042" count="1"/>
+	</compressed_item>
+	<!-- Transient Chausses Package (7 days) > Transient Chausses (7 days) -->
+	<compressed_item id="188050438">
+		<production chance="100" item_id="113501043" count="1"/>
+	</compressed_item>
+	<!-- Chausses of Dreams Package (7 days) > Chausses of Dreams (7 days) -->
+	<compressed_item id="188050439">
+		<production chance="100" item_id="113501044" count="1"/>
+	</compressed_item>
+	<!-- Delirium Chausses Package (7 days) > Delirium Chausses (7 days) -->
+	<compressed_item id="188050440">
+		<production chance="100" item_id="113501045" count="1"/>
+	</compressed_item>
+	<!-- Fugue Chausses Package (7 days) > Fugue Chausses (7 days) -->
+	<compressed_item id="188050441">
+		<production chance="100" item_id="113501046" count="1"/>
+	</compressed_item>
+	<!-- Surreal Chausses Package (14 days) > Surreal Chausses (14 days) -->
+	<compressed_item id="188050442">
+		<production chance="100" item_id="113501047" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Chausses Package (14 days) > Ephemeral Chausses (14 days) -->
+	<compressed_item id="188050443">
+		<production chance="100" item_id="113501048" count="1"/>
+	</compressed_item>
+	<!-- Transient Chausses Package (14 days) > Transient Chausses (14 days) -->
+	<compressed_item id="188050444">
+		<production chance="100" item_id="113501049" count="1"/>
+	</compressed_item>
+	<!-- Chausses of Dreams Package (14 days) > Chausses of Dreams (14 days) -->
+	<compressed_item id="188050445">
+		<production chance="100" item_id="113501050" count="1"/>
+	</compressed_item>
+	<!-- Delirium Chausses Package (14 days) > Delirium Chausses (14 days) -->
+	<compressed_item id="188050446">
+		<production chance="100" item_id="113501051" count="1"/>
+	</compressed_item>
+	<!-- Fugue Chausses Package (14 days) > Fugue Chausses (14 days) -->
+	<compressed_item id="188050447">
+		<production chance="100" item_id="113501052" count="1"/>
+	</compressed_item>
+	<!-- Surreal Greaves Package (3 days) > Surreal Greaves (3 days) -->
+	<compressed_item id="188050448">
+		<production chance="100" item_id="113601000" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Greaves Package (3 days) > Ephemeral Greaves (3 days) -->
+	<compressed_item id="188050449">
+		<production chance="100" item_id="113600956" count="1"/>
+	</compressed_item>
+	<!-- Transient Greaves Package (3 days) > Transient Greaves (3 days) -->
+	<compressed_item id="188050450">
+		<production chance="100" item_id="113600957" count="1"/>
+	</compressed_item>
+	<!-- Greaves of Dreams Package (3 days) > Greaves of Dreams (3 days) -->
+	<compressed_item id="188050451">
+		<production chance="100" item_id="113601003" count="1"/>
+	</compressed_item>
+	<!-- Delirium Greaves Package (3 days) > Delirium Greaves (3 days) -->
+	<compressed_item id="188050452">
+		<production chance="100" item_id="113600984" count="1"/>
+	</compressed_item>
+	<!-- Fugue Greaves Package (3 days) > Fugue Greaves (3 days) -->
+	<compressed_item id="188050453">
+		<production chance="100" item_id="113600985" count="1"/>
+	</compressed_item>
+	<!-- Surreal Greaves Package (7 days) > Surreal Greaves (7 days) -->
+	<compressed_item id="188050454">
+		<production chance="100" item_id="113601006" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Greaves Package (7 days) > Ephemeral Greaves (7 days) -->
+	<compressed_item id="188050455">
+		<production chance="100" item_id="113601007" count="1"/>
+	</compressed_item>
+	<!-- Transient Greaves Package (7 days) > Transient Greaves (7 days) -->
+	<compressed_item id="188050456">
+		<production chance="100" item_id="113601008" count="1"/>
+	</compressed_item>
+	<!-- Greaves of Dreams Package (7 days) > Greaves of Dreams (7 days) -->
+	<compressed_item id="188050457">
+		<production chance="100" item_id="113601009" count="1"/>
+	</compressed_item>
+	<!-- Delirium Greaves Package (7 days) > Delirium Greaves (7 days) -->
+	<compressed_item id="188050458">
+		<production chance="100" item_id="113601010" count="1"/>
+	</compressed_item>
+	<!-- Fugue Greaves Package (7 days) > Fugue Greaves (7 days) -->
+	<compressed_item id="188050459">
+		<production chance="100" item_id="113601011" count="1"/>
+	</compressed_item>
+	<!-- Surreal Greaves Package (14 days) > Surreal Greaves (14 days) -->
+	<compressed_item id="188050460">
+		<production chance="100" item_id="113601012" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Greaves Package (14 days) > Ephemeral Greaves (14 days) -->
+	<compressed_item id="188050461">
+		<production chance="100" item_id="113601013" count="1"/>
+	</compressed_item>
+	<!-- Transient Greaves Package (14 days) > Transient Greaves (14 days) -->
+	<compressed_item id="188050462">
+		<production chance="100" item_id="113601014" count="1"/>
+	</compressed_item>
+	<!-- Greaves of Dreams Package (14 days) > Greaves of Dreams (14 days) -->
+	<compressed_item id="188050463">
+		<production chance="100" item_id="113601015" count="1"/>
+	</compressed_item>
+	<!-- Delirium Greaves Package (14 days) > Delirium Greaves (14 days) -->
+	<compressed_item id="188050464">
+		<production chance="100" item_id="113601016" count="1"/>
+	</compressed_item>
+	<!-- Fugue Greaves Package (14 days) > Fugue Greaves (14 days) -->
+	<compressed_item id="188050465">
+		<production chance="100" item_id="113601017" count="1"/>
+	</compressed_item>
+	<!-- Surreal Shoes Package (3 days) > Surreal Shoes (3 days) -->
+	<compressed_item id="188050466">
+		<production chance="100" item_id="114101083" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Shoes Package (3 days) > Ephemeral Shoes (3 days) -->
+	<compressed_item id="188050467">
+		<production chance="100" item_id="114101031" count="1"/>
+	</compressed_item>
+	<!-- Transient Shoes Package (3 days) > Transient Shoes (3 days) -->
+	<compressed_item id="188050468">
+		<production chance="100" item_id="114101032" count="1"/>
+	</compressed_item>
+	<!-- Shoes of Dreams Package (3 days) > Shoes of Dreams (3 days) -->
+	<compressed_item id="188050469">
+		<production chance="100" item_id="114101086" count="1"/>
+	</compressed_item>
+	<!-- Delirium Shoes Package (3 days) > Delirium Shoes (3 days) -->
+	<compressed_item id="188050470">
+		<production chance="100" item_id="114101058" count="1"/>
+	</compressed_item>
+	<!-- Fugue Shoes Package (3 days) > Fugue Shoes (3 days) -->
+	<compressed_item id="188050471">
+		<production chance="100" item_id="114101059" count="1"/>
+	</compressed_item>
+	<!-- Surreal Shoes Package (7 days) > Surreal Shoes (7 days) -->
+	<compressed_item id="188050472">
+		<production chance="100" item_id="114101089" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Shoes Package (7 days) > Ephemeral Shoes (7 days) -->
+	<compressed_item id="188050473">
+		<production chance="100" item_id="114101090" count="1"/>
+	</compressed_item>
+	<!-- Transient Shoes Package (7 days) > Transient Shoes (7 days) -->
+	<compressed_item id="188050474">
+		<production chance="100" item_id="114101091" count="1"/>
+	</compressed_item>
+	<!-- Shoes of Dreams Package (7 days) > Shoes of Dreams (7 days) -->
+	<compressed_item id="188050475">
+		<production chance="100" item_id="114101092" count="1"/>
+	</compressed_item>
+	<!-- Delirium Shoes Package (7 days) > Delirium Shoes (7 days) -->
+	<compressed_item id="188050476">
+		<production chance="100" item_id="114101093" count="1"/>
+	</compressed_item>
+	<!-- Fugue Shoes Package (7 days) > Fugue Shoes (7 days) -->
+	<compressed_item id="188050477">
+		<production chance="100" item_id="114101094" count="1"/>
+	</compressed_item>
+	<!-- Surreal Shoes Package (14 days) > Surreal Shoes (14 days) -->
+	<compressed_item id="188050478">
+		<production chance="100" item_id="114101095" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Shoes Package (14 days) > Ephemeral Shoes (14 days) -->
+	<compressed_item id="188050479">
+		<production chance="100" item_id="114101096" count="1"/>
+	</compressed_item>
+	<!-- Transient Shoes Package (14 days) > Transient Shoes (14 days) -->
+	<compressed_item id="188050480">
+		<production chance="100" item_id="114101097" count="1"/>
+	</compressed_item>
+	<!-- Shoes of Dreams Package (14 days) > Shoes of Dreams (14 days) -->
+	<compressed_item id="188050481">
+		<production chance="100" item_id="114101098" count="1"/>
+	</compressed_item>
+	<!-- Delirium Shoes Package (14 days) > Delirium Shoes (14 days) -->
+	<compressed_item id="188050482">
+		<production chance="100" item_id="114101099" count="1"/>
+	</compressed_item>
+	<!-- Fugue Shoes Package (14 days) > Fugue Shoes (14 days) -->
+	<compressed_item id="188050483">
+		<production chance="100" item_id="114101100" count="1"/>
+	</compressed_item>
+	<!-- Surreal Boots Package (3 days) > Surreal Boots (3 days) -->
+	<compressed_item id="188050484">
+		<production chance="100" item_id="114301095" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Boots Package (3 days) > Ephemeral Boots (3 days) -->
+	<compressed_item id="188050485">
+		<production chance="100" item_id="114301051" count="1"/>
+	</compressed_item>
+	<!-- Transient Boots Package (3 days) > Transient Boots (3 days) -->
+	<compressed_item id="188050486">
+		<production chance="100" item_id="114301052" count="1"/>
+	</compressed_item>
+	<!-- Boots of Dreams Package (3 days) > Boots of Dreams (3 days) -->
+	<compressed_item id="188050487">
+		<production chance="100" item_id="114301098" count="1"/>
+	</compressed_item>
+	<!-- Delirium Boots Package (3 days) > Delirium Boots (3 days) -->
+	<compressed_item id="188050488">
+		<production chance="100" item_id="114301078" count="1"/>
+	</compressed_item>
+	<!-- Fugue Boots Package (3 days) > Fugue Boots (3 days) -->
+	<compressed_item id="188050489">
+		<production chance="100" item_id="114301079" count="1"/>
+	</compressed_item>
+	<!-- Surreal Boots Package (7 days) > Surreal Boots (7 days) -->
+	<compressed_item id="188050490">
+		<production chance="100" item_id="114301101" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Boots Package (7 days) > Ephemeral Boots (7 days) -->
+	<compressed_item id="188050491">
+		<production chance="100" item_id="114301102" count="1"/>
+	</compressed_item>
+	<!-- Transient Boots Package (7 days) > Transient Boots (7 days) -->
+	<compressed_item id="188050492">
+		<production chance="100" item_id="114301103" count="1"/>
+	</compressed_item>
+	<!-- Boots of Dreams Package (7 days) > Boots of Dreams (7 days) -->
+	<compressed_item id="188050493">
+		<production chance="100" item_id="114301104" count="1"/>
+	</compressed_item>
+	<!-- Delirium Boots Package (7 days) > Delirium Boots (7 days) -->
+	<compressed_item id="188050494">
+		<production chance="100" item_id="114301105" count="1"/>
+	</compressed_item>
+	<!-- Fugue Boots Package (7 days) > Fugue Boots (7 days) -->
+	<compressed_item id="188050495">
+		<production chance="100" item_id="114301106" count="1"/>
+	</compressed_item>
+	<!-- Surreal Boots Package (14 days) > Surreal Boots (14 days) -->
+	<compressed_item id="188050496">
+		<production chance="100" item_id="114301107" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Boots Package (14 days) > Ephemeral Boots (14 days) -->
+	<compressed_item id="188050497">
+		<production chance="100" item_id="114301108" count="1"/>
+	</compressed_item>
+	<!-- Transient Boots Package (14 days) > Transient Boots (14 days) -->
+	<compressed_item id="188050498">
+		<production chance="100" item_id="114301109" count="1"/>
+	</compressed_item>
+	<!-- Boots of Dreams Package (14 days) > Boots of Dreams (14 days) -->
+	<compressed_item id="188050499">
+		<production chance="100" item_id="114301110" count="1"/>
+	</compressed_item>
+	<!-- Delirium Boots Package (14 days) > Delirium Boots (14 days) -->
+	<compressed_item id="188050500">
+		<production chance="100" item_id="114301111" count="1"/>
+	</compressed_item>
+	<!-- Fugue Boots Package (14 days) > Fugue Boots (14 days) -->
+	<compressed_item id="188050501">
+		<production chance="100" item_id="114301112" count="1"/>
+	</compressed_item>
+	<!-- Surreal Brogans Package (3 days) > Surreal Brogans (3 days) -->
+	<compressed_item id="188050502">
+		<production chance="100" item_id="114501043" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Brogans Package (3 days) > Ephemeral Brogans (3 days) -->
+	<compressed_item id="188050503">
+		<production chance="100" item_id="114500994" count="1"/>
+	</compressed_item>
+	<!-- Transient Brogans Package (3 days) > Transient Brogans (3 days) -->
+	<compressed_item id="188050504">
+		<production chance="100" item_id="114500995" count="1"/>
+	</compressed_item>
+	<!-- Brogans of Dreams Package (3 days) > Brogans of Dreams (3 days) -->
+	<compressed_item id="188050505">
+		<production chance="100" item_id="114501046" count="1"/>
+	</compressed_item>
+	<!-- Delirium Brogans Package (3 days) > Delirium Brogans (3 days) -->
+	<compressed_item id="188050506">
+		<production chance="100" item_id="114501025" count="1"/>
+	</compressed_item>
+	<!-- Fugue Brogans Package (3 days) > Fugue Brogans (3 days) -->
+	<compressed_item id="188050507">
+		<production chance="100" item_id="114501026" count="1"/>
+	</compressed_item>
+	<!-- Surreal Brogans Package (7 days) > Surreal Brogans (7 days) -->
+	<compressed_item id="188050508">
+		<production chance="100" item_id="114501049" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Brogans Package (7 days) > Ephemeral Brogans (7 days) -->
+	<compressed_item id="188050509">
+		<production chance="100" item_id="114501050" count="1"/>
+	</compressed_item>
+	<!-- Transient Brogans Package (7 days) > Transient Brogans (7 days) -->
+	<compressed_item id="188050510">
+		<production chance="100" item_id="114501051" count="1"/>
+	</compressed_item>
+	<!-- Brogans of Dreams Package (7 days) > Brogans of Dreams (7 days) -->
+	<compressed_item id="188050511">
+		<production chance="100" item_id="114501052" count="1"/>
+	</compressed_item>
+	<!-- Delirium Brogans Package (7 days) > Delirium Brogans (7 days) -->
+	<compressed_item id="188050512">
+		<production chance="100" item_id="114501053" count="1"/>
+	</compressed_item>
+	<!-- Fugue Brogans Package (7 days) > Fugue Brogans (7 days) -->
+	<compressed_item id="188050513">
+		<production chance="100" item_id="114501054" count="1"/>
+	</compressed_item>
+	<!-- Surreal Brogans Package (14 days) > Surreal Brogans (14 days) -->
+	<compressed_item id="188050514">
+		<production chance="100" item_id="114501055" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Brogans Package (14 days) > Ephemeral Brogans (14 days) -->
+	<compressed_item id="188050515">
+		<production chance="100" item_id="114501056" count="1"/>
+	</compressed_item>
+	<!-- Transient Brogans Package (14 days) > Transient Brogans (14 days) -->
+	<compressed_item id="188050516">
+		<production chance="100" item_id="114501057" count="1"/>
+	</compressed_item>
+	<!-- Brogans of Dreams Package (14 days) > Brogans of Dreams (14 days) -->
+	<compressed_item id="188050517">
+		<production chance="100" item_id="114501058" count="1"/>
+	</compressed_item>
+	<!-- Delirium Brogans Package (14 days) > Delirium Brogans (14 days) -->
+	<compressed_item id="188050518">
+		<production chance="100" item_id="114501059" count="1"/>
+	</compressed_item>
+	<!-- Fugue Brogans Package (14 days) > Fugue Brogans (14 days) -->
+	<compressed_item id="188050519">
+		<production chance="100" item_id="114501060" count="1"/>
+	</compressed_item>
+	<!-- Surreal Sabatons Package (3 days) > Surreal Sabatons (3 days) -->
+	<compressed_item id="188050520">
+		<production chance="100" item_id="114600996" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Sabatons Package (3 days) > Ephemeral Sabatons (3 days) -->
+	<compressed_item id="188050521">
+		<production chance="100" item_id="114600953" count="1"/>
+	</compressed_item>
+	<!-- Transient Sabatons Package (3 days) > Transient Sabatons (3 days) -->
+	<compressed_item id="188050522">
+		<production chance="100" item_id="114600954" count="1"/>
+	</compressed_item>
+	<!-- Sabatons of Dreams Package (3 days) > Sabatons of Dreams (3 days) -->
+	<compressed_item id="188050523">
+		<production chance="100" item_id="114600999" count="1"/>
+	</compressed_item>
+	<!-- Delirium Sabatons Package (3 days) > Delirium Sabatons (3 days) -->
+	<compressed_item id="188050524">
+		<production chance="100" item_id="114600980" count="1"/>
+	</compressed_item>
+	<!-- Fugue Sabatons Package (3 days) > Fugue Sabatons (3 days) -->
+	<compressed_item id="188050525">
+		<production chance="100" item_id="114600981" count="1"/>
+	</compressed_item>
+	<!-- Surreal Sabatons Package (7 days) > Surreal Sabatons (7 days) -->
+	<compressed_item id="188050526">
+		<production chance="100" item_id="114601002" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Sabatons Package (7 days) > Ephemeral Sabatons (7 days) -->
+	<compressed_item id="188050527">
+		<production chance="100" item_id="114601003" count="1"/>
+	</compressed_item>
+	<!-- Transient Sabatons Package (7 days) > Transient Sabatons (7 days) -->
+	<compressed_item id="188050528">
+		<production chance="100" item_id="114601004" count="1"/>
+	</compressed_item>
+	<!-- Sabatons of Dreams Package (7 days) > Sabatons of Dreams (7 days) -->
+	<compressed_item id="188050529">
+		<production chance="100" item_id="114601005" count="1"/>
+	</compressed_item>
+	<!-- Delirium Sabatons Package (7 days) > Delirium Sabatons (7 days) -->
+	<compressed_item id="188050530">
+		<production chance="100" item_id="114601006" count="1"/>
+	</compressed_item>
+	<!-- Fugue Sabatons Package (7 days) > Fugue Sabatons (7 days) -->
+	<compressed_item id="188050531">
+		<production chance="100" item_id="114601007" count="1"/>
+	</compressed_item>
+	<!-- Surreal Sabatons Package (14 days) > Surreal Sabatons (14 days) -->
+	<compressed_item id="188050532">
+		<production chance="100" item_id="114601008" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Sabatons Package (14 days) > Ephemeral Sabatons (14 days) -->
+	<compressed_item id="188050533">
+		<production chance="100" item_id="114601009" count="1"/>
+	</compressed_item>
+	<!-- Transient Sabatons Package (14 days) > Transient Sabatons (14 days) -->
+	<compressed_item id="188050534">
+		<production chance="100" item_id="114601010" count="1"/>
+	</compressed_item>
+	<!-- Sabatons of Dreams Package (14 days) > Sabatons of Dreams (14 days) -->
+	<compressed_item id="188050535">
+		<production chance="100" item_id="114601011" count="1"/>
+	</compressed_item>
+	<!-- Delirium Sabatons Package (14 days) > Delirium Sabatons (14 days) -->
+	<compressed_item id="188050536">
+		<production chance="100" item_id="114601012" count="1"/>
+	</compressed_item>
+	<!-- Fugue Sabatons Package (14 days) > Fugue Sabatons (14 days) -->
+	<compressed_item id="188050537">
+		<production chance="100" item_id="114601013" count="1"/>
+	</compressed_item>
+	<!-- Surreal Shield Package (3 days) > Surreal Shield (3 days) -->
+	<compressed_item id="188050538">
+		<production chance="100" item_id="115001035" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Shield Package (3 days) > Ephemeral Shield (3 days) -->
+	<compressed_item id="188050539">
+		<production chance="100" item_id="115000989" count="1"/>
+	</compressed_item>
+	<!-- Transient Shield Package (3 days) > Transient Shield (3 days) -->
+	<compressed_item id="188050540">
+		<production chance="100" item_id="115000990" count="1"/>
+	</compressed_item>
+	<!-- Shield of Dreams Package (3 days) > Shield of Dreams (3 days) -->
+	<compressed_item id="188050541">
+		<production chance="100" item_id="115001038" count="1"/>
+	</compressed_item>
+	<!-- Delirium Shield Package (3 days) > Delirium Shield (3 days) -->
+	<compressed_item id="188050542">
+		<production chance="100" item_id="115001025" count="1"/>
+	</compressed_item>
+	<!-- Fugue Shield Package (3 days) > Fugue Shield (3 days) -->
+	<compressed_item id="188050543">
+		<production chance="100" item_id="115001026" count="1"/>
+	</compressed_item>
+	<!-- Surreal Shield Package (7 days) > Surreal Shield (7 days) -->
+	<compressed_item id="188050544">
+		<production chance="100" item_id="115001041" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Shield Package (7 days) > Ephemeral Shield (7 days) -->
+	<compressed_item id="188050545">
+		<production chance="100" item_id="115001042" count="1"/>
+	</compressed_item>
+	<!-- Transient Shield Package (7 days) > Transient Shield (7 days) -->
+	<compressed_item id="188050546">
+		<production chance="100" item_id="115001043" count="1"/>
+	</compressed_item>
+	<!-- Shield of Dreams Package (7 days) > Shield of Dreams (7 days) -->
+	<compressed_item id="188050547">
+		<production chance="100" item_id="115001044" count="1"/>
+	</compressed_item>
+	<!-- Delirium Shield Package (7 days) > Delirium Shield (7 days) -->
+	<compressed_item id="188050548">
+		<production chance="100" item_id="115001045" count="1"/>
+	</compressed_item>
+	<!-- Fugue Shield Package (7 days) > Fugue Shield (7 days) -->
+	<compressed_item id="188050549">
+		<production chance="100" item_id="115001046" count="1"/>
+	</compressed_item>
+	<!-- Surreal Shield Package (14 days) > Surreal Shield (14 days) -->
+	<compressed_item id="188050550">
+		<production chance="100" item_id="115001047" count="1"/>
+	</compressed_item>
+	<!-- Ephemeral Shield Package (14 days) > Ephemeral Shield (14 days) -->
+	<compressed_item id="188050551">
+		<production chance="100" item_id="115001048" count="1"/>
+	</compressed_item>
+	<!-- Transient Shield Package (14 days) > Transient Shield (14 days) -->
+	<compressed_item id="188050552">
+		<production chance="100" item_id="115001049" count="1"/>
+	</compressed_item>
+	<!-- Shield of Dreams Package (14 days) > Shield of Dreams (14 days) -->
+	<compressed_item id="188050553">
+		<production chance="100" item_id="115001050" count="1"/>
+	</compressed_item>
+	<!-- Delirium Shield Package (14 days) > Delirium Shield (14 days) -->
+	<compressed_item id="188050554">
+		<production chance="100" item_id="115001051" count="1"/>
+	</compressed_item>
+	<!-- Fugue Shield Package (14 days) > Fugue Shield (14 days) -->
+	<compressed_item id="188050555">
+		<production chance="100" item_id="115001052" count="1"/>
+	</compressed_item>
+	<!-- Old Green Sack (level 10) -->
+	<compressed_item id="188051195">
+		<production chance="1" item_id="167000228" count="2"/>
+		<production chance="1" item_id="167000230" count="2"/>
+		<production chance="1" item_id="167000233" count="2"/>
+		<production chance="1" item_id="167000235" count="2"/>
+		<production chance="1" item_id="167000229" count="2"/>
+		<production chance="1" item_id="167000226" count="2"/>
+		<production chance="1" item_id="167000231" count="2"/>
+		<production chance="1" item_id="167000525" count="2"/>
+		<production chance="1" item_id="167000227" count="2"/>
+		<production chance="1" item_id="167000232" count="2"/>
+		<production chance="1" item_id="167000526" count="2"/>
+		<production chance="1" item_id="167000420" count="2"/>
+		<production chance="1" item_id="167000425" count="2"/>
+		<production chance="1" item_id="167000427" count="2"/>
+		<production chance="1" item_id="167000421" count="2"/>
+		<production chance="1" item_id="167000418" count="2"/>
+		<production chance="1" item_id="167000423" count="2"/>
+		<production chance="1" item_id="167000535" count="2"/>
+		<production chance="1" item_id="167000419" count="2"/>
+		<production chance="1" item_id="167000424" count="2"/>
+		<production chance="1" item_id="167000536" count="2"/>
+		<production chance="1" item_id="167000260" count="2"/>
+		<production chance="1" item_id="167000265" count="2"/>
+		<production chance="1" item_id="167000267" count="2"/>
+		<production chance="1" item_id="167000261" count="2"/>
+		<production chance="1" item_id="167000258" count="2"/>
+		<production chance="1" item_id="167000263" count="2"/>
+		<production chance="1" item_id="167000259" count="2"/>
+		<production chance="1" item_id="167000264" count="2"/>
+	</compressed_item>
+	<!-- Old Green Sack (level 30) -->
+	<compressed_item id="188050588">
+		<production chance="1" item_id="167000228" count="2"/>
+		<production chance="1" item_id="167000230" count="2"/>
+		<production chance="1" item_id="167000233" count="2"/>
+		<production chance="1" item_id="167000235" count="2"/>
+		<production chance="1" item_id="167000229" count="2"/>
+		<production chance="1" item_id="167000226" count="2"/>
+		<production chance="1" item_id="167000231" count="2"/>
+		<production chance="1" item_id="167000525" count="2"/>
+		<production chance="1" item_id="167000227" count="2"/>
+		<production chance="1" item_id="167000232" count="2"/>
+		<production chance="1" item_id="167000526" count="2"/>
+		<production chance="1" item_id="167000420" count="2"/>
+		<production chance="1" item_id="167000425" count="2"/>
+		<production chance="1" item_id="167000427" count="2"/>
+		<production chance="1" item_id="167000421" count="2"/>
+		<production chance="1" item_id="167000418" count="2"/>
+		<production chance="1" item_id="167000423" count="2"/>
+		<production chance="1" item_id="167000535" count="2"/>
+		<production chance="1" item_id="167000419" count="2"/>
+		<production chance="1" item_id="167000424" count="2"/>
+		<production chance="1" item_id="167000536" count="2"/>
+		<production chance="1" item_id="167000260" count="2"/>
+		<production chance="1" item_id="167000265" count="2"/>
+		<production chance="1" item_id="167000267" count="2"/>
+		<production chance="1" item_id="167000261" count="2"/>
+		<production chance="1" item_id="167000258" count="2"/>
+		<production chance="1" item_id="167000263" count="2"/>
+		<production chance="1" item_id="167000259" count="2"/>
+		<production chance="1" item_id="167000264" count="2"/>
+	</compressed_item>
+	<!-- Strange Green Sack -->
+	<compressed_item id="188051192">
+		<production chance="1" item_id="166000020" count="2"/>
+		<production chance="1" item_id="166000021" count="2"/>
+		<production chance="1" item_id="166000022" count="2"/>
+		<production chance="1" item_id="166000023" count="2"/>
+		<production chance="1" item_id="166000024" count="2"/>
+		<production chance="1" item_id="166000025" count="2"/>
+		<production chance="1" item_id="166000026" count="2"/>
+		<production chance="1" item_id="166000027" count="2"/>
+		<production chance="1" item_id="166000028" count="2"/>
+		<production chance="1" item_id="166000029" count="2"/>
+		<production chance="1" item_id="166000030" count="2"/>
+	</compressed_item>
+	<!-- Suspicious Green Sack -->
+	<compressed_item id="188050585">
+		<production chance="1" item_id="166000040" count="2"/>
+		<production chance="1" item_id="166000041" count="2"/>
+		<production chance="1" item_id="166000042" count="2"/>
+		<production chance="1" item_id="166000043" count="2"/>
+		<production chance="1" item_id="166000044" count="2"/>
+		<production chance="1" item_id="166000045" count="2"/>
+		<production chance="1" item_id="166000046" count="2"/>
+		<production chance="1" item_id="166000047" count="2"/>
+		<production chance="1" item_id="166000048" count="2"/>
+		<production chance="1" item_id="166000049" count="2"/>
+		<production chance="1" item_id="166000050" count="2"/>
+	</compressed_item>
+	<!-- Old Red Sack (level 20) -->
+	<compressed_item id="188051196">
+		<production chance="1" item_id="167000452" count="2"/>
+		<production chance="1" item_id="167000454" count="2"/>
+		<production chance="1" item_id="167000457" count="2"/>
+		<production chance="1" item_id="167000459" count="2"/>
+		<production chance="1" item_id="167000453" count="2"/>
+		<production chance="1" item_id="167000450" count="2"/>
+		<production chance="1" item_id="167000455" count="2"/>
+		<production chance="1" item_id="167000451" count="2"/>
+		<production chance="1" item_id="167000456" count="2"/>
+		<production chance="1" item_id="167000292" count="2"/>
+		<production chance="1" item_id="167000294" count="2"/>
+		<production chance="1" item_id="167000297" count="2"/>
+		<production chance="1" item_id="167000299" count="2"/>
+		<production chance="1" item_id="167000293" count="2"/>
+		<production chance="1" item_id="167000290" count="2"/>
+		<production chance="1" item_id="167000295" count="2"/>
+		<production chance="1" item_id="167000529" count="2"/>
+		<production chance="1" item_id="167000291" count="2"/>
+		<production chance="1" item_id="167000296" count="2"/>
+	</compressed_item>
+	<!-- Old Red Sack (level 40) -->
+	<compressed_item id="188050589">
+		<production chance="1" item_id="167000484" count="2"/>
+		<production chance="1" item_id="167000489" count="2"/>
+		<production chance="1" item_id="167000491" count="2"/>
+		<production chance="1" item_id="167000485" count="2"/>
+		<production chance="1" item_id="167000482" count="2"/>
+		<production chance="1" item_id="167000487" count="2"/>
+		<production chance="1" item_id="167000539" count="2"/>
+		<production chance="1" item_id="167000483" count="2"/>
+		<production chance="1" item_id="167000488" count="2"/>
+		<production chance="1" item_id="167000540" count="2"/>
+		<production chance="1" item_id="167000324" count="2"/>
+		<production chance="1" item_id="167000329" count="2"/>
+		<production chance="1" item_id="167000331" count="2"/>
+		<production chance="1" item_id="167000325" count="2"/>
+		<production chance="1" item_id="167000322" count="2"/>
+		<production chance="1" item_id="167000327" count="2"/>
+		<production chance="1" item_id="167000531" count="2"/>
+		<production chance="1" item_id="167000323" count="2"/>
+		<production chance="1" item_id="167000328" count="2"/>
+	</compressed_item>
+	<!-- Strange Red Sack -->
+	<compressed_item id="188051193">
+		<production chance="1" item_id="166000030" count="2"/>
+		<production chance="1" item_id="166000031" count="2"/>
+		<production chance="1" item_id="166000032" count="2"/>
+		<production chance="1" item_id="166000033" count="2"/>
+		<production chance="1" item_id="166000034" count="2"/>
+		<production chance="1" item_id="166000035" count="2"/>
+		<production chance="1" item_id="166000036" count="2"/>
+		<production chance="1" item_id="166000037" count="2"/>
+		<production chance="1" item_id="166000038" count="2"/>
+		<production chance="1" item_id="166000039" count="2"/>
+		<production chance="1" item_id="166000040" count="2"/>
+	</compressed_item>
+	<!-- Suspicious Red Sack -->
+	<compressed_item id="188050586">
+		<production chance="1" item_id="166000050" count="2"/>
+		<production chance="1" item_id="166000051" count="2"/>
+		<production chance="1" item_id="166000052" count="2"/>
+		<production chance="1" item_id="166000053" count="2"/>
+		<production chance="1" item_id="166000054" count="2"/>
+		<production chance="1" item_id="166000055" count="2"/>
+		<production chance="1" item_id="166000056" count="2"/>
+		<production chance="1" item_id="166000057" count="2"/>
+		<production chance="1" item_id="166000058" count="2"/>
+		<production chance="1" item_id="166000059" count="2"/>
+		<production chance="1" item_id="166000060" count="2"/>
+	</compressed_item>
+	<!-- Old Yellow Sack -->
+	<compressed_item id="188050590">
+		<production chance="1" item_id="167000516" count="2"/>
+		<production chance="1" item_id="167000518" count="2"/>
+		<production chance="1" item_id="167000521" count="2"/>
+		<production chance="1" item_id="167000522" count="2"/>
+		<production chance="1" item_id="167000517" count="2"/>
+		<production chance="1" item_id="167000514" count="2"/>
+		<production chance="1" item_id="167000519" count="2"/>
+		<production chance="1" item_id="167000541" count="2"/>
+		<production chance="1" item_id="167000515" count="2"/>
+		<production chance="1" item_id="167000520" count="2"/>
+		<production chance="1" item_id="167000542" count="2"/>
+		<production chance="1" item_id="167000356" count="2"/>
+		<production chance="1" item_id="167000358" count="2"/>
+		<production chance="1" item_id="167000361" count="2"/>
+		<production chance="1" item_id="167000363" count="2"/>
+		<production chance="1" item_id="167000357" count="2"/>
+		<production chance="1" item_id="167000354" count="2"/>
+		<production chance="1" item_id="167000359" count="2"/>
+		<production chance="1" item_id="167000355" count="2"/>
+		<production chance="1" item_id="167000360" count="2"/>
+	</compressed_item>
+	<!-- Strange Yellow Sack -->
+	<compressed_item id="188051194">
+		<production chance="1" item_id="166000040" count="2"/>
+		<production chance="1" item_id="166000041" count="2"/>
+		<production chance="1" item_id="166000042" count="2"/>
+		<production chance="1" item_id="166000043" count="2"/>
+		<production chance="1" item_id="166000044" count="2"/>
+		<production chance="1" item_id="166000045" count="2"/>
+		<production chance="1" item_id="166000046" count="2"/>
+		<production chance="1" item_id="166000047" count="2"/>
+		<production chance="1" item_id="166000048" count="2"/>
+		<production chance="1" item_id="166000049" count="2"/>
+		<production chance="1" item_id="166000050" count="2"/>
+	</compressed_item>
+	<!-- Suspicious Yellow Sack -->
+	<compressed_item id="188050587">
+		<production chance="1" item_id="166000050" count="2"/>
+		<production chance="1" item_id="166000051" count="2"/>
+		<production chance="1" item_id="166000052" count="2"/>
+		<production chance="1" item_id="166000053" count="2"/>
+		<production chance="1" item_id="166000054" count="2"/>
+		<production chance="1" item_id="166000055" count="2"/>
+		<production chance="1" item_id="166000056" count="2"/>
+		<production chance="1" item_id="166000057" count="2"/>
+		<production chance="1" item_id="166000058" count="2"/>
+		<production chance="1" item_id="166000059" count="2"/>
+		<production chance="1" item_id="166000060" count="2"/>
+	</compressed_item>
+	<!-- Major Radiant Ops Reward -->
+	<compressed_item id="188050575">
+		<production chance="3" item_id="186000051" count="1"/>
+		<production chance="5" item_id="186000052" count="1"/>
+		<production chance="7" item_id="186000053" count="1"/>
+		<production chance="9" item_id="186000054" count="1"/>
+	</compressed_item>
+	<!-- Major Blood Crusade Reward -->
+	<compressed_item id="188050579">
+		<production chance="3" item_id="186000051" count="1"/>
+		<production chance="5" item_id="186000052" count="1"/>
+		<production chance="7" item_id="186000053" count="1"/>
+		<production chance="9" item_id="186000054" count="1"/>
+	</compressed_item>
+	<!-- Greater Radiant Ops Reward -->
+	<compressed_item id="188050574">
+		<production chance="3" item_id="186000055" count="1"/>
+		<production chance="5" item_id="186000056" count="1"/>
+		<production chance="7" item_id="186000057" count="1"/>
+		<production chance="9" item_id="186000058" count="1"/>
+	</compressed_item>
+	<!-- Blood Crusade Reward -->
+	<compressed_item id="188050577">
+		<production chance="3" item_id="186000059" count="1"/>
+		<production chance="5" item_id="186000060" count="1"/>
+		<production chance="7" item_id="186000061" count="1"/>
+		<production chance="9" item_id="186000062" count="1"/>
+	</compressed_item>
+	<!-- Radiant Ops Reward -->
+	<compressed_item id="188050573">
+		<production chance="3" item_id="186000059" count="1"/>
+		<production chance="5" item_id="186000060" count="1"/>
+		<production chance="7" item_id="186000061" count="1"/>
+		<production chance="9" item_id="186000062" count="1"/>
+	</compressed_item>
+	<!-- Greater Blood Crusade Reward -->
+	<compressed_item id="188050578">
+		<production chance="3" item_id="186000055" count="1"/>
+		<production chance="5" item_id="186000056" count="1"/>
+		<production chance="7" item_id="186000057" count="1"/>
+		<production chance="9" item_id="186000058" count="1"/>
+	</compressed_item>
+	<!-- Lesser Radiant Ops Reward -->
+	<compressed_item id="188050572">
+		<production chance="3" item_id="186000063" count="1"/>
+		<production chance="5" item_id="186000064" count="1"/>
+		<production chance="7" item_id="186000065" count="1"/>
+		<production chance="9" item_id="186000066" count="1"/>
+	</compressed_item>
+	<!-- Lesser Blood Crusade Reward -->
+	<compressed_item id="188050576">
+		<production chance="3" item_id="186000063" count="1"/>
+		<production chance="5" item_id="186000064" count="1"/>
+		<production chance="7" item_id="186000065" count="1"/>
+		<production chance="9" item_id="186000066" count="1"/>
+	</compressed_item>
+	<!-- Lesser Field Warden Supplies -->
+	<compressed_item id="188050559">
+		<production chance="7" item_id="162000023" count="30"/>
+		<production chance="7" item_id="162000054" count="30"/>
+		<production chance="7" item_id="162000059" count="30"/>
+		<production chance="7" item_id="162000004" count="30"/>
+		<production chance="7" item_id="162000009" count="30"/>
+		<production chance="7" item_id="162000048" count="30"/>
+		<production chance="7" item_id="162000043" count="30"/>
+		<production chance="7" item_id="160001273" count="30"/>
+	</compressed_item>
+	<!-- Lesser Alabaster Order Supplies -->
+	<compressed_item id="188050556">
+		<production chance="7" item_id="162000023" count="30"/>
+		<production chance="7" item_id="162000054" count="30"/>
+		<production chance="7" item_id="162000059" count="30"/>
+		<production chance="7" item_id="162000004" count="30"/>
+		<production chance="7" item_id="162000009" count="30"/>
+		<production chance="7" item_id="162000048" count="30"/>
+		<production chance="7" item_id="162000043" count="30"/>
+		<production chance="7" item_id="160001273" count="30"/>
+	</compressed_item>
+	<!-- General Radiant Ops Supplies -->
+	<compressed_item id="188050568">
+		<production chance="5" item_id="160001274" count="40"/>
+		<production chance="5" item_id="162000049" count="40"/>
+		<production chance="5" item_id="162000044" count="40"/>
+		<production chance="7" item_id="162000015" count="40"/>
+		<production chance="7" item_id="162000020" count="40"/>
+		<production chance="7" item_id="162000005" count="40"/>
+		<production chance="7" item_id="162000010" count="40"/>
+		<production chance="7" item_id="162000055" count="40"/>
+		<production chance="7" item_id="162000060" count="40"/>
+	</compressed_item>
+	<!-- General Blood Crusade Supplies -->
+	<compressed_item id="188050570">
+		<production chance="3" item_id="160001274" count="40"/>
+		<production chance="3" item_id="162000049" count="40"/>
+		<production chance="5" item_id="162000044" count="40"/>
+		<production chance="5" item_id="162000015" count="40"/>
+		<production chance="5" item_id="162000020" count="40"/>
+		<production chance="7" item_id="162000005" count="40"/>
+		<production chance="7" item_id="162000010" count="40"/>
+		<production chance="7" item_id="162000055" count="40"/>
+		<production chance="9" item_id="162000060" count="40"/>
+	</compressed_item>
+	<!-- Alabaster Order Supplies -->
+	<compressed_item id="188050557">
+		<production chance="6" item_id="160001274" count="20"/>
+		<production chance="7" item_id="162000049" count="20"/>
+		<production chance="7" item_id="162000044" count="20"/>
+		<production chance="7" item_id="162000015" count="20"/>
+		<production chance="7" item_id="162000020" count="20"/>
+		<production chance="7" item_id="162000005" count="20"/>
+		<production chance="7" item_id="162000010" count="20"/>
+		<production chance="7" item_id="162000055" count="20"/>
+		<production chance="7" item_id="162000060" count="20"/>
+	</compressed_item>
+	<!-- Alabaster Order Reward -->
+	<compressed_item id="188050563">
+		<production chance="3" item_id="167000482" count="5"/>
+		<production chance="3" item_id="167000483" count="5"/>
+		<production chance="3" item_id="167000489" count="5"/>
+		<production chance="3" item_id="167000497" count="5"/>
+		<production chance="3" item_id="167000540" count="5"/>
+		<production chance="3" item_id="167000488" count="5"/>
+		<production chance="3" item_id="167000487" count="5"/>
+		<production chance="3" item_id="167000484" count="5"/>
+		<production chance="3" item_id="167000539" count="5"/>
+		<production chance="3" item_id="167000485" count="5"/>
+		<production chance="3" item_id="167000491" count="5"/>
+	</compressed_item>
+	<!-- Greater Alabaster Order Supplies -->
+	<compressed_item id="188050558">
+		<production chance="1" item_id="162000065" count="2"/>
+		<production chance="1" item_id="162000066" count="2"/>
+		<production chance="1" item_id="162000074" count="2"/>
+		<production chance="1" item_id="162000064" count="2"/>
+		<production chance="2" item_id="162000050" count="10"/>
+		<production chance="3" item_id="162000045" count="20"/>
+		<production chance="3" item_id="162000016" count="20"/>
+		<production chance="3" item_id="162000021" count="20"/>
+		<production chance="3" item_id="162000006" count="20"/>
+		<production chance="3" item_id="162000011" count="20"/>
+		<production chance="3" item_id="162000056" count="20"/>
+		<production chance="3" item_id="162000061" count="20"/>
+		<production chance="3" item_id="160001274" count="20"/>
+	</compressed_item>
+	<!-- Greater Alabaster Order Reward-->
+	<compressed_item id="188050564">
+		<production chance="3" item_id="167000514" count="5"/>
+		<production chance="3" item_id="167000515" count="5"/>
+		<production chance="3" item_id="167000518" count="5"/>
+		<production chance="3" item_id="167000521" count="5"/>
+		<production chance="3" item_id="167000523" count="5"/>
+		<production chance="3" item_id="167000542" count="5"/>
+		<production chance="3" item_id="167000520" count="5"/>
+		<production chance="3" item_id="167000519" count="5"/>
+		<production chance="3" item_id="167000516" count="5"/>
+		<production chance="3" item_id="167000541" count="5"/>
+		<production chance="3" item_id="167000517" count="5"/>
+		<production chance="3" item_id="167000522" count="5"/>
+	</compressed_item>
+	<!-- Lesser Alabaster Order Reward -->
+	<compressed_item id="188050562">
+		<production chance="3" item_id="167000450" count="5"/>
+		<production chance="3" item_id="167000450" count="5"/>
+		<production chance="3" item_id="167000454" count="5"/>
+		<production chance="3" item_id="167000457" count="5"/>
+		<production chance="3" item_id="167000456" count="5"/>
+		<production chance="3" item_id="167000455" count="5"/>
+		<production chance="3" item_id="167000452" count="5"/>
+		<production chance="3" item_id="167000453" count="5"/>
+		<production chance="3" item_id="167000459" count="5"/>
+		<production chance="3" item_id="167000538" count="5"/>
+		<production chance="3" item_id="167000537" count="5"/>
+	</compressed_item>
+	<!-- Lesser Field Warden Reward -->
+	<compressed_item id="188050565">
+		<production chance="3" item_id="167000450" count="5"/>
+		<production chance="3" item_id="167000450" count="5"/>
+		<production chance="3" item_id="167000454" count="5"/>
+		<production chance="3" item_id="167000457" count="5"/>
+		<production chance="3" item_id="167000456" count="5"/>
+		<production chance="3" item_id="167000455" count="5"/>
+		<production chance="3" item_id="167000452" count="5"/>
+		<production chance="3" item_id="167000453" count="5"/>
+		<production chance="3" item_id="167000459" count="5"/>
+		<production chance="3" item_id="167000538" count="5"/>
+		<production chance="3" item_id="167000537" count="5"/>
+	</compressed_item>
+	<!-- Greater Field Warden Reward-->
+	<compressed_item id="188050567">
+		<production chance="3" item_id="167000514" count="5"/>
+		<production chance="3" item_id="167000515" count="5"/>
+		<production chance="3" item_id="167000518" count="5"/>
+		<production chance="3" item_id="167000521" count="5"/>
+		<production chance="3" item_id="167000523" count="5"/>
+		<production chance="3" item_id="167000542" count="5"/>
+		<production chance="3" item_id="167000520" count="5"/>
+		<production chance="3" item_id="167000519" count="5"/>
+		<production chance="3" item_id="167000516" count="5"/>
+		<production chance="3" item_id="167000541" count="5"/>
+		<production chance="3" item_id="167000517" count="5"/>
+		<production chance="3" item_id="167000522" count="5"/>
+	</compressed_item>
+	<!-- Field Warden Reward -->
+	<compressed_item id="188050566">
+		<production chance="3" item_id="167000482" count="5"/>
+		<production chance="3" item_id="167000483" count="5"/>
+		<production chance="3" item_id="167000489" count="5"/>
+		<production chance="3" item_id="167000497" count="5"/>
+		<production chance="3" item_id="167000540" count="5"/>
+		<production chance="3" item_id="167000488" count="5"/>
+		<production chance="3" item_id="167000487" count="5"/>
+		<production chance="3" item_id="167000484" count="5"/>
+		<production chance="3" item_id="167000539" count="5"/>
+		<production chance="3" item_id="167000485" count="5"/>
+		<production chance="3" item_id="167000491" count="5"/>
+	</compressed_item>
+	<!-- Field Warden Supplies -->
+	<compressed_item id="188050560">
+		<production chance="3" item_id="160001274" count="20"/>
+		<production chance="3" item_id="162000049" count="20"/>
+		<production chance="3" item_id="162000044" count="20"/>
+		<production chance="5" item_id="162000015" count="20"/>
+		<production chance="5" item_id="162000020" count="20"/>
+		<production chance="5" item_id="162000005" count="20"/>
+		<production chance="7" item_id="162000010" count="20"/>
+		<production chance="7" item_id="162000055" count="20"/>
+		<production chance="7" item_id="162000060" count="20"/>
+	</compressed_item>
+	<!-- Greater Field Warden Supplies -->
+	<compressed_item id="188050561">
+		<production chance="1" item_id="162000065" count="2"/>
+		<production chance="1" item_id="162000066" count="2"/>
+		<production chance="1" item_id="162000074" count="2"/>
+		<production chance="1" item_id="162000064" count="2"/>
+		<production chance="2" item_id="162000050" count="10"/>
+		<production chance="3" item_id="162000045" count="20"/>
+		<production chance="3" item_id="162000016" count="20"/>
+		<production chance="3" item_id="162000021" count="20"/>
+		<production chance="3" item_id="162000006" count="20"/>
+		<production chance="3" item_id="162000011" count="20"/>
+		<production chance="3" item_id="162000056" count="20"/>
+		<production chance="3" item_id="162000061" count="20"/>
+		<production chance="3" item_id="160001274" count="20"/>
+	</compressed_item>
+</compressed_items>

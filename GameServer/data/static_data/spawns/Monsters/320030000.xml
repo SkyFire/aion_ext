@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+	
+	Bregirun
+
+ -->
+<spawns>
+    <!-- Crusader (Monster Normal lvl:20) -->
+    <spawn map="320030000" npcid="211624" pool="5" interval="295" rw="5">
+        <object x="265.22275" y="213.90982" z="209.82048" h="97"/>
+        <object x="248.60905" y="203.97319" z="203.77673" h="117"/>
+        <object x="281.99832" y="221.43713" z="206.16406" h="82"/>
+        <object x="267.36633" y="228.13713" z="212.65631" h="90"/>
+        <object x="257.30176" y="227.85469" z="213.77347" h="99"/>
+    </spawn>
+    <!-- Draconute Vaegir (Monster Normal lvl:20) -->
+    <spawn map="320030000" npcid="211625" pool="2" interval="295" rw="5">
+        <object x="256.8059" y="220.42996" z="211.14536" h="96"/>
+        <object x="262.6328" y="232.54451" z="214.81044" h="93"/>
+    </spawn>
+</spawns>

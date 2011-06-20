@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+	This file is part of Aion X EMU <aionxemu.com>.
+
+	This is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This software is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this software.  If not, see <http://www.gnu.org/licenses/>.
+	
+	Haramel
+	
+ -->
+<spawns>
+    <spawn map="300200000" npcid="400101" pool="3" interval="295">
+        <object x="246.43724" y="364.1123" z="138.16985" h="0"/>
+        <object x="213.33395" y="359.18524" z="140.22504" h="0"/>
+        <object x="212.62148" y="350.65067" z="142.45294" h="0"/>
+    </spawn>
+    <spawn map="300200000" npcid="400202" pool="5" interval="295">
+        <object x="78.973282" y="126.44594" z="141.33232" h="0"/>
+        <object x="69.588272" y="93.273216" z="139.91153" h="0"/>
+        <object x="86.36776" y="96.194199" z="140.48341" h="0"/>
+        <object x="100.60208" y="113.52893" z="139.90561" h="0"/>
+        <object x="93.466949" y="83.365562" z="143.51517" h="0"/>
+    </spawn>
+    <spawn map="300200000" npcid="400301" pool="3" interval="295">
+        <object x="326.17014" y="322.97211" z="89.544533" h="0"/>
+        <object x="347.48114" y="323.3425" z="87.752922" h="0"/>
+        <object x="326.89508" y="352.16437" z="90.059784" h="0"/>
+    </spawn>
+    <spawn map="300200000" npcid="400302" pool="3" interval="295">
+        <object x="323.9715" y="415.12622" z="91.571434" h="0"/>
+        <object x="300.71664" y="429.70413" z="93.461685" h="0"/>
+        <object x="256.16904" y="399.10611" z="91.890175" h="0"/>
+    </spawn>
+    <spawn map="300200000" npcid="400303" pool="3" interval="295">
+        <object x="386.90619" y="282.66254" z="93.32547" h="0"/>
+        <object x="382.14279" y="316.13168" z="88.300888" h="0"/>
+        <object x="367.29089" y="376.06503" z="96.547417" h="0"/>
+    </spawn>
+</spawns>

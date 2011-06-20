@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quest_scripts>
+	<!--
+   This file is part of Aion X Emu <aionxemu.com>.
+
+	This is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Lesser Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This software is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Lesser Public License for more details.
+
+	You should have received a copy of the GNU Lesser Public License
+	along with this software.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+	<!-- 1923: TODO: A Sage's Precious Weapon -->
+	<!-- 1924: TODO: A Sage's Precious Weapon -->
+	<!-- 1925: TODO: A Sage's Precious Weapon -->
+	<!-- 1988: A Meeting with a Sage handled by script -->
+	<!-- 1989: A Sage's Teachings handled by script -->
+	<!-- 1990: TODO: A Sage's Gift -->
+	<!-- 1991: TODO: A Sage's Encouragement -->
+	<!-- 1992: TODO: A Sage's Precious Weapon -->
+	<!-- 1993: TODO: Another Beginning -->
+	<!-- 1994: TODO: A New Choice -->
+	<!-- 1995: TODO: Another Beginning -->
+	<!-- 1996: TODO: A New Choice -->
+	<!-- 1997: TODO: A Sage's Gift -->
+	<!-- 1998: TODO: A Sage's Gift -->
+	<!-- 1999: TODO: A Sage's Gift -->
+	<!-- 2986: TODO: Daevanion Weapon -->
+	<!-- 2987: TODO: Daevanion Weapon -->
+	<!-- 2988: The Wise in Disguise handled by script -->
+	<!-- 2989: Ceremony of the Wise handled by script -->
+	<!-- 2990: Making the Daevanion Weapon handled by script -->
+	<!-- 2991: TODO: Obtaining Daevanion Armor -->
+	<!-- 2992: TODO: Daevanion Weapon -->
+	<!-- 2993: TODO: Another Beginning -->
+	<!-- 2994: TODO: A New Choice -->
+	<!-- 2995: TODO: Another Beginning -->
+	<!-- 2996: TODO: A New Choice -->
+	<!-- 2997: TODO: Daevanion Ceremony -->
+	<!-- 2998: TODO: Daevanion Ceremony -->
+	<!-- 2999: TODO: Daevanion Ceremony -->
+</quest_scripts>

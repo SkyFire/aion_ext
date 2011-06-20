@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quest_scripts>
+    <!--
+      This file is part of Aion X Emu <aionxemu.com>.
+
+	This is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Lesser Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This software is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Lesser Public License for more details.
+
+	You should have received a copy of the GNU Lesser Public License
+	along with this software.  If not, see <http://www.gnu.org/licenses/>.
+    -->
+
+    <!-- 1006: Ascension handled by script -->
+    <!-- 1007: A Ceremony in Sanctum handled by script -->
+    <!-- 1913: Dispatch to Verteron handled by script -->
+    <!-- 1914: Dispatch to Verteron handled by script -->
+    <!-- 1915: Dispatch to Verteron handled by script -->
+    <!-- 1916: Dispatch to Verteron handled by script -->
+    <!-- 2008: Ascension handled by script -->
+    <!-- 2009: A Ceremony in Pandaemonium handled by script -->
+    <!-- 2010: TODO: Asmodian Quest -->
+    <!-- 2901: Dispatch to Altgard handled by script -->
+    <!-- 2902: Dispatch to Altgard handled by script -->
+    <!-- 2903: Dispatch to Altgard handled by script -->
+    <!-- 2904: Dispatch to Altgard handled by script -->
+</quest_scripts>

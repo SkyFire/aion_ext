@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+	
+	Silver_of_Darkness
+	
+ -->
+<spawns>
+	<spawn map="310070000" npcid="700240" pool="1" interval="400">
+		<object staticid="7" h="0" z="1374.0813" y="263.43832" x="196.1182"/>
+	</spawn>
+	<spawn map="310070000" npcid="205110" pool="1" interval="400">
+		<object h="0" z="1191.0" y="103.0" x="338.0"/>
+	</spawn>
+</spawns>

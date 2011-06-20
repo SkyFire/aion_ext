@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quest_scripts>
+	<!--
+   This file is part of Aion X Emu <aionxemu.com>.
+
+	This is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Lesser Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This software is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Lesser Public License for more details.
+
+	You should have received a copy of the GNU Lesser Public License
+	along with this software.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+	<!-- 46015: TODO: [Daily] A Crystal Clear Job -->
+	<!-- 46016: TODO: [Daily] Ancient Treasures -->
+	<!-- 46017: TODO: [Spy/Daily] Balaurean Booty -->
+	<!-- 46018: TODO: Catch Mice 01 (Asmodian) -->
+	<!-- 46019: TODO: Catch Mice 02 (Asmodian) -->
+	<!-- 46500: TODO: [Daily] Pinebeak's Greed -->
+	<!-- 46501: TODO: [Daily] -->
+	<!-- 46502: TODO: [Daily] Hunt the Hunter -->
+	<!-- 46503: TODO: [Daily] Marvelous Feather -->
+	<!-- 46504: TODO: [Daily] Bosbear Nightmare -->
+	<!-- 46505: TODO: [Daily] Waterfall Ghost -->
+	<!-- 46506: TODO: [Daily] Threebeards' Downfall -->
+	<!-- 46507: TODO: [Daily] -->
+	<!-- 46508: TODO: [Daily] Backstab Stabs Back! -->
+	<!-- 46509: TODO: [Daily] Blacktome's Staff -->
+	<!-- 46510: TODO: [Daily] Snuffler Saboteur -->
+	<!-- 46511: TODO: [Daily] Sorcerer's Rest -->
+	<!-- 46512: TODO: [Daily] Satbakun's Last Stand -->
+	<!-- 46513: TODO: [Daily] -->
+	<!-- 46514: TODO: [Daily] To Kill the Dead -->
+	<!-- 46515: TODO: [Daily] Harviste's Drana -->
+	<!-- 46516: TODO: [Daily] Zantra - the Revenge -->
+	<!-- 46517: TODO: [Daily] Pruning Vinestem -->
+	<!-- 46518: TODO: [Spy/Daily] Zausis Must Die! -->
+	<!-- 46519: TODO: [Spy/Daily] Agent Greenlake's Orders -->
+	<!-- 46520: TODO: [Daily] Paketan Problem -->
+	<!-- 46521: TODO: [Daily] Depravity's Reward -->
+	<!-- 46522: TODO: [Daily] Pursuing the Balaur Remnants -->
+	<!-- 46523: TODO: [Daily] End the Caravan Raids -->
+	<!-- 46524: TODO: [Daily] An Essential Mission -->
+	<!-- 46525: TODO: [Daily] The Stolen Letter -->
+	<!-- 46526: TODO: [Daily] Talking to Plants -->
+	<!-- 46527: TODO: [Daily] An Officer and a Drakan -->
+	<!-- 46528: TODO: [Daily] Ancient Mutant Warrior Beast -->
+	<!-- 46600: TODO: [Asmodian] Daemon's Dividends 1A -->
+	<!-- 46601: TODO: [Asmodian] Daemon's Dividends 1B -->
+	<!-- 46602: TODO: [Asmodian] Daemon's Dividends 1C -->
+	<!-- 46603: TODO: [Asmodian] Daemon's Dividends 1D -->
+	<!-- 48002: TODO: Charlirunerk's Daemons Want You! -->
+	<!-- 48005: TODO: Message from the Daemons -->
+</quest_scripts>

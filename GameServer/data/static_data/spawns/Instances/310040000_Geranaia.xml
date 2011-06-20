@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+
+	Geranaia
+
+ -->
+<spawns>
+	<!-- Kimeia -->
+	<spawn map="310040000" npcid="204044" pool="1" interval="295">
+		<object x="272.66403" y="175.63103" z="205.10122" h="0"/>
+	</spawn>
+	<!-- Abyss Gate (Object Normal lvl:1) (Object Normal lvl:1)-->
+	<spawn map="310040000" npcid="700141" pool="1" interval="295">
+		<object x="276.24802" y="161.69484" z="202.62405" h="34"/>
+	</spawn>
+</spawns>

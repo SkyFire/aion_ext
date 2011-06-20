@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quest_scripts>
+	<!--
+   This file is part of Aion X Emu <aionxemu.com>.
+
+	This is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Lesser Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This software is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Lesser Public License for more details.
+
+	You should have received a copy of the GNU Lesser Public License
+	along with this software.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+	<!-- 35000: TODO: Aetheric Field Observatory Protectors FOBJ 01 -->
+	<!-- 35001: TODO: Aetheric Field Observatory Protectors FOBJ 02 -->
+	<!-- 35002: TODO: Aetheric Field Observatory Protectors FOBJ 03 -->
+	<!-- 35003: TODO: Aetheric Field Observatory Protectors NPC Chat 01 -->
+	<!-- 35004: TODO: Aetheric Field Observatory Protectors NPC Chat 02 -->
+	<!-- 35005: TODO: Aetheric Field Observatory Protectors Item Collection 01 -->
+	<!-- 35006: TODO: Aetheric Field Observatory Protectors Item Collection 02 -->
+	<!-- 35007: TODO: [Daily] Chasing a Memory -->
+	<!-- 35008: TODO: [Daily] Documenting the Scraps -->
+	<!-- 35009: TODO: [Daily] Destroy Ore Be Destroyed -->
+	<!-- 35010: TODO: [Spy/Daily] Trou's Dream -->
+	<!-- 35011: TODO: [Spy/Daily] Pluma Red Feather -->
+	<!-- 35012: TODO: Aetheric Field Observatory Protectors Item Collection 01 -->
+	<!-- 35013: TODO: Aetheric Field Observatory Protectors Item Collection 02 -->
+	<!-- 35014: TODO: [Daily] The Detecting Eye -->
+	<!-- 35015: TODO: [Daily] Protecting Your Members -->
+	<!-- 35016: TODO: [Daily] Passing Stones -->
+	<!-- 35017: TODO: [Daily] Where's Atropos? -->
+	<!-- 35018: TODO: [Daily] The Shugo Stoolie -->
+	<!-- 35019: TODO: Aetheric Field Observatory Protectors Item Collection 01 -->
+	<!-- 35020: TODO: Aetheric Field Observatory Protectors Item Collection 02 -->
+	<!-- 35021: TODO: [Daily] Guarding a Memory -->
+	<!-- 35022: TODO: [Daily] Torn To Pieces -->
+	<!-- 35023: TODO: [Daily] Destroy the Meteorite -->
+	<!-- 35024: TODO: [Daily] The Long Password -->
+	<!-- 35025: TODO: [Daily] Pass the Password -->
+	<!-- 35026: TODO: [Spy/Daily] Iaetia's Observation -->
+	<!-- 35027: TODO: [Spy/Daily] Keios's Observation -->
+	<!-- 35028: TODO: [Spy/Daily] Siaqua's Observation -->
+	<!-- 35029: TODO: [Spy/Daily] Stanis's Observation -->
+	<!-- 35030: TODO: [Spy/Daily] Temenos's Observation -->
+	<!-- 35031: TODO: [Daily] Aether Gems -->
+	<!-- 35032: TODO: [Daily] Helping the Hungry -->
+	<!-- 35033: TODO: [Daily] Holy Reconstruction! -->
+	<!-- 35034: TODO: [Daily] Herbs and Remedies -->
+	<!-- 35035: TODO: [Daily] Kill the Cracktooth! -->
+	<!-- 35036: TODO: [Daily] We've Got Worms -->
+	<!-- 35037: TODO: [Daily] Damn Dirty Troll Looters -->
+	<!-- 35038: TODO: [Daily] Moonflower Mayhem -->
+	<!-- 35039: TODO: [Daily] Gem of an Idea -->
+	<!-- 35040: TODO: [Daily] Asking For Help -->
+	<!-- 35041: TODO: [Daily] Holey Holy Grounds -->
+	<!-- 35042: TODO: [Daily] The Ferilla Potion -->
+	<!-- 35043: TODO: [Daily] Darken the Sparkies -->
+	<!-- 35044: TODO: [Daily] Slaughtering Salt Fins -->
+	<!-- 35045: TODO: [Daily] Aether for the Poor -->
+	<!-- 35046: TODO: [Daily] Caloric Alms -->
+	<!-- 35047: TODO: [Daily] Pre-construction -->
+	<!-- 35048: TODO: [Daily] Potion Maker -->
+	<!-- 35049: TODO: [Daily] Driven to Distraction -->
+	<!-- 35050: TODO: [Daily] Vanquish Grim Puca -->
+	<!-- 35051: TODO: [Daily] Causing Much Angrief -->
+	<!-- 35100: TODO: Aetheric Field Observatory Reward 1 -->
+	<!-- 35101: TODO: Alabaster Order Reward 1 -->
+	<!-- 35102: TODO: Alabaster Order Reward 2 -->
+	<!-- 35103: TODO: Alabaster Order Reward 3 -->
+	<!-- 35104: TODO: Alabaster Order Reward 4 -->
+	<!-- 35105: TODO: Alabaster Order Reward 5 -->
+	<!-- 35106: TODO: Alabaster Order Reward 6 -->
+	<!-- 35107: TODO: Alabaster Order Reward 7 -->
+	<!-- 35108: TODO: Alabaster Order Reward 8 -->
+	<!-- 35109: TODO: Alabaster Order Reward 9 -->
+	<!-- 35110: TODO: Alabaster Order Reward 10 -->
+	<!-- 35111: TODO: Alabaster Order Reward 11 -->
+	<!-- 35112: TODO: Alabaster Order Reward 12 -->
+	<!-- 38000: TODO: Call of the Alabaster Order -->
+	<!-- 38003: TODO: Alabaster Order's Call -->
+</quest_scripts>

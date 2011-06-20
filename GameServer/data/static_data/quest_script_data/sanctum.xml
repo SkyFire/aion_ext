@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quest_scripts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="quest_script_data.xsd">
+<!--
+	This file is part of Aion X Emu <aionxemu.com>.
+
+	This is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Lesser Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This software is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Lesser Public License for more details.
+
+	You should have received a copy of the GNU Lesser Public License
+	along with this software.  If not, see <http://www.gnu.org/licenses/>.
+
+	@fix by Undertrey
+-->
+	<!-- 1044 Testing Flight Skills handled by script -->
+	<!-- 1096 A Past Mission handled by script -->
+	<!-- 1097 Sword of Transcendence handled by script -->
+	<!-- 1098 Pearl of Protection handled by script -->
+	<!-- 1099 An Important Choice handled by script -->
+	<!-- 1900 A Ring Imbued With Aether handled by script -->
+	<!-- 1901 Krallic Language Potion handled by script -->
+	<!-- 1902: [Craft] Crafting Ingots -->
+	<item_collecting start_npc_id="203788" id="1902"/>
+	<!-- 1903: [Craft] Ingot Ingredients -->
+	<item_collecting start_npc_id="203790" id="1903"/>
+	<!-- 1904: [Craft] Roasting Inina -->
+	<item_collecting start_npc_id="203784" id="1904"/>
+	<!-- 1905: [Craft] A Betua Wood Offering -->
+	<item_collecting start_npc_id="203792" id="1905"/>
+	<!-- 1906: [Craft] A Token of Respect -->
+	<item_collecting start_npc_id="203786" id="1906"/>
+	<!-- 1907: [Craft] First Steps in Tailoring -->
+	<item_collecting start_npc_id="203793" id="1907"/>
+	<!-- 1908: TODO: Ulaguru Speaks -->
+	<!-- 1909: A Song Of Praise handled by script -->
+	<!-- 1910: The Seed Of Evil -->
+	<item_collecting start_npc_id="203833" id="1910"/>
+	<!-- 1911: Marmeia's Krall Research -->
+	<item_collecting start_npc_id="203864" id="1911"/>
+	<!-- 1912: Familiar Food -->
+	<item_collecting start_npc_id="203864" id="1912"/>
+	<!-- 1917: A Lingering Mystery handled by script -->
+	<!-- 1918: An Ax For Namus handled by script -->
+	<!-- 1920: Testing Your Mettle handled by script -->
+	<!-- 1921: The Abyss Quiz handled by script -->
+	<!-- 1922: Deliver on Your Promises handled by script -->
+	<!-- 1926: Secret Library Access handled by script -->
+	<!-- 1928: Chasing a Criminal handled by script -->
+	<!-- 1929: A Sliver of Darkness handled by script -->
+	<!-- 1930: Flame Sword -->
+	<item_collecting start_npc_id="203767" id="1930"/>
+	<!-- 1931: Rules Of Alchemy And Life -->
+	<item_collecting start_npc_id="203837" id="1931" action_item_id="700230"/>
+	<!-- 1932: A Matter Of Reputation -->
+	<!-- 1933: A Disturbing Report -->
+	<item_collecting start_npc_id="203833" id="1933"/>
+	<!-- 1934: [Group] RM-78c -->
+	<item_collecting start_npc_id="203833" id="1934"/>
+	<!-- 1935: Tissue? I Don't Even Know You! handled by script -->
+	<!-- 1936: What Nerison Saw -->
+	<report_to start_npc_id="203833" end_npc_id="204573" id="1936"/>
+	<!-- 1937: A Lepharist Monstrosity handled by script -->
+	<!-- 1938: Black Cloud Fakery handled by script -->
+	<!-- 1939: Going Out Of Business -->
+	<monster_hunt start_npc_id="203703" id="1939">
+		<monster_infos var_id="0" npc_id="700265" max_kill="3"/>
+	</monster_hunt>
+	<!-- 1940: Wings of Mastery -->
+	<!-- 1941: [Expert] Weaponsmithing Expert -->
+	<report_to start_npc_id="203788" end_npc_id="203700" id="1941" item_id="182206009"/>
+	<!-- 1942: [Expert] Armorsmithing Expert -->
+	<report_to start_npc_id="203790" end_npc_id="203700" id="1942" item_id="182206010"/>
+	<!-- 1943: [Expert] Handicrafting Expert -->
+	<report_to start_npc_id="203792" end_npc_id="203700" id="1943" item_id="182206011"/>
+	<!-- 1944: [Expert] Cooking Expert -->
+	<report_to start_npc_id="203784" end_npc_id="203700" id="1944" item_id="182206012"/>
+	<!-- 1945: [Expert] Alchemy Expert -->
+	<report_to start_npc_id="203786" end_npc_id="203700" id="1945" item_id="182206013"/>
+	<!-- 1946: [Expert] Tailoring Expert -->
+	<report_to start_npc_id="203793" end_npc_id="203700" id="1946" item_id="182206014"/>
+	<!-- 1947: A Lucky Day -->
+	<report_to start_npc_id="203795" end_npc_id="798012" id="1947"/>
+	<!-- 1948: Where's Vindachinerk? -->
+	<!-- 1949: A Gift For Vindachinerk -->
+	<item_collecting start_npc_id="279006" end_npc_id="279016" id="1949"/>
+	<!-- 1950: A Letter to Medea -->
+	<report_to start_npc_id="203755" end_npc_id="204424" item_id="182206023" id="1950"/>
+	<!-- 1951: Never Short of Steel -->
+	<report_to start_npc_id="203788" end_npc_id="278510" item_id="182206024" id="1951"/>
+	<!-- 1952: A Package From Vulcanus -->
+	<report_to start_npc_id="203790" end_npc_id="278511" item_id="182206025" id="1952"/>
+	<!-- 1953: Getting A Grip -->
+	<report_to start_npc_id="203792" end_npc_id="278510" item_id="182206026" id="1953"/>
+	<!-- 1954: Nuts to Denegos -->
+	<report_to start_npc_id="203784" end_npc_id="278507" item_id="182206027" id="1954"/>
+	<!-- 1955: Spellbook Express -->
+	<report_to start_npc_id="203786" end_npc_id="278510" item_id="182206028" id="1955"/>
+	<!-- 1956: A Mended Robe -->
+	<report_to start_npc_id="203793" end_npc_id="278511" item_id="182206029" id="1956"/>
+	<!-- 1963: Delivery for the Outer Port handled by script -->
+	<!-- 1964: A Souvenir For Noris handled by script -->
+	<!-- 1965: A Sword Gone Astray handled by script -->
+	<!-- 1966: A Helmet Gone Astray handled by script -->
+	<!-- 1967: A Staff Gone Astray handled by script -->
+	<!-- 1968: Combat Rations handled by script -->
+	<!-- 1969: Combat Potions handled by script -->
+	<!-- 1970: A Robe Gone Astray handled by script -->
+	<!-- 1971: D'yer Ma'ker -->
+	<item_collecting start_npc_id="203812" id="1971"/>
+	<!-- 1972: [Expert] Passion For Weaponsmithing -->
+	<item_collecting id="1972" start_npc_id="203788" />
+	<!-- 1973: [Expert] Requirements for Weaponsmithing Expert -->
+	<item_collecting id="1973" start_npc_id="203788" />
+	<!-- 1974: [Expert] Passion for Armorsmithing -->
+	<item_collecting id="1974" start_npc_id="203790" />
+	<!-- 1975: [Expert] Requirements for Armorsmithing Expert -->
+	<item_collecting id="1975" start_npc_id="203790" />
+	<!-- 1976: [Expert] Passion for Handicrafting -->
+	<item_collecting id="1976" start_npc_id="203792" />
+	<!-- 1977: [Expert] Requirements for Handicrafting Expert -->
+	<item_collecting id="1977" start_npc_id="203792" />
+	<!-- 1978: [Expert] Passion For Cooking -->
+	<item_collecting id="1978" start_npc_id="203784" />
+	<!-- 1979: [Expert] Requirements for Cooking Expert -->
+	<item_collecting id="1979" start_npc_id="203784" />
+	<!-- 1980: [Expert] Passion For Alchemy -->
+	<item_collecting id="1980" start_npc_id="203786" />
+	<!-- 1981: [Expert] Requirements for Alchemy Expert -->
+	<item_collecting id="1981" start_npc_id="203786" />
+	<!-- 1982: [Expert] Passion For Tailoring -->
+	<item_collecting id="1982" start_npc_id="203793" />
+	<!-- 1983: [Expert] Requirements For Tailoring Expert -->
+	<item_collecting id="1983" start_npc_id="203793" />
+	<!-- 1986: A Costume on Consignment -->
+	<report_to start_npc_id="798009" end_npc_id="203810" id="1986"/>
+	<!-- 1987: A Bigger Warehouse handled by script-->
+	<!-- 1988: A Meeting with a Sage handled by script -->
+	<!-- 1989: A Sages Teachings handled by script -->
+	<!-- 3201: Snow Blessing handled by script -->
+	<!-- 3202: [Group] A Promise To A Customer -->
+	<item_collecting start_npc_id="203852" id="3202" action_item_id="700523"/>
+	<!-- 3203: The Manduri Imperative -->
+	<item_collecting start_npc_id="798319" id="3203"/>
+	<!-- 3204: Shameless Peperinrinerk -->
+	<report_to start_npc_id="798319" end_npc_id="279008" item_id="182209085" id="3204"/>
+	<!-- 3206: Hairpin Ahoy! -->
+	<item_collecting start_npc_id="798321" id="3206"/>
+	<!-- 3207: The Pirate's Log -->
+	<item_collecting start_npc_id="798320" id="3207" action_item_id="700524"/>
+	<!-- 3208 The Puzz ling Blueprint handled by script -->
+	<report_to id="3209" start_npc_id="798322" end_npc_id="798331" item_id="182209089"/>
+	<!-- 3210: TODO: [Group] Rescue Haorunerk! -->
+	<!-- 3212: TODO: [Group] The Missing Cube Craftsman -->
+	<!-- 3213: Revenge Of Himusus -->
+	<monster_hunt start_npc_id="203735" id="3213">
+		<monster_infos var_id="0" npc_id="214977" max_kill="20"/>
+		<monster_infos var_id="0" npc_id="214978" max_kill="20"/>
+		<monster_infos var_id="0" npc_id="214979" max_kill="20"/>
+		<monster_infos var_id="0" npc_id="214982" max_kill="20"/>
+		<monster_infos var_id="0" npc_id="214983" max_kill="20"/>
+	</monster_hunt>
+	<!-- 3214: The Pirate's Pouch -->
+	<item_collecting start_npc_id="798321" id="3214"/>
+	<!-- 3215: Bring Back The Booty -->
+	<item_collecting start_npc_id="203750" id="3215"/>
+	<!-- 3216: Plunder The Pirates -->
+	<item_collecting start_npc_id="798318" id="3216"/>
+	<!-- 3218: TODO: [Group] The Difficulties Of Beauty -->
+	<!-- 3901: Esoteric Book Of Justice -->
+	<report_to start_npc_id="203758" end_npc_id="203704" item_id="182206052" id="3901"/>
+	<!-- 3902: Esoteric Freedom Book -->
+	<report_to start_npc_id="203759" end_npc_id="203705" item_id="182206053" id="3902"/>
+	<!-- 3903: Esoteric Book Of Illusion -->
+	<report_to start_npc_id="203760" end_npc_id="203706" item_id="182206054" id="3903"/>
+	<!-- 3904: Esoteric Book Of Life -->
+	<report_to start_npc_id="203761" end_npc_id="203707" item_id="182206055" id="3904"/>
+	<!-- 3905: [Group] To Catch A Dragon -->
+	<item_collecting start_npc_id="798316" id="3905"/>
+	<!-- 3906: Destruction And Rebirth -->
+	<item_collecting start_npc_id="798316" id="3906"/>
+	<!-- 3907: Fire And Ice -->
+	<item_collecting start_npc_id="798316" id="3907"/>
+	<!-- 3908: TODO: [Group] To Master The Dragon -->
+	<!-- 3909: TODO: Guide of Life -->
+	<!-- 3910: TODO: Meaning of Life -->
+	<!-- 3911: TODO: Teachings of Life -->
+	<!-- 3912: TODO: Intention of Lady Yustiel -->
+	<!-- 3913: A Secret Summons handled by script -->
+	<!-- 3914: The Balaur Report handled by script -->
+	<!-- 3915: [Group] Obtaining The Dragel -->
+	<item_collecting start_npc_id="203384" id="3915"/>
+	<!-- 3916: [Group] The Danger Of Drana -->
+	<item_collecting start_npc_id="203384" id="3916"/>
+	<!-- 3917: Mutual Benefits -->
+	<report_to id="3917" start_npc_id="203384" end_npc_id="798357" />
+	<!-- 3918: [Group] Gathering The Surkana -->
+	<item_collecting start_npc_id="798357" id="3918"/>
+	<!-- 3919: [Group] Obtaining The Drazma -->
+	<item_collecting start_npc_id="798357" id="3919"/>
+	<!-- 3920: TODO: [Group] The Secret Of Surkana -->
+	<!-- 3921: Shoshinerk's Reward -->
+	<report_to start_npc_id="798357" end_npc_id="279022" item_id="182206101" id="3921"/>
+	<!-- 3922: The Assassin Preceptor's Task (handled by script) -->
+	<!-- 3923: The Chanter Preceptor's Task (handled by script) -->
+	<!-- 3924: The Cleric Preceptor's Task (handled by script) -->
+	<!-- 3925: The Gladiator Preceptor's Task (handled by script) -->
+	<!-- 3926: The Ranger Preceptor's Task (handled by script) -->
+	<!-- 3927: The Sorcerer Preceptor's Task (handled by script) -->
+	<!-- 3928: The Spiritmaster Preceptor's Task (handled by script) -->
+	<!-- 3929: The Templar Preceptor's Task (handled by script) -->
+	<!-- 3930: Secret of the Shattered Stigma handled by script -->
+	<!-- 3931: How To Use Stigma handled by script -->
+	<!-- 3932: Stop The Shulacks handled by script -->
+	<!-- 3941: [Top Expert] Zest For Weaponsmithing -->
+	<item_collecting id="3941" start_npc_id="203788" />
+	<!-- 3942: [Top Expert] Weaponsmith's Craft -->
+	<item_collecting id="3942" start_npc_id="203788" />
+	<!-- 3943: [Top Expert] Weaponsmithing Expert -->
+	<report_to start_npc_id="203788" id="3943" end_npc_id="203700"/>
+	<!-- 3944: [Top Expert] Zest For Armorsmithing -->
+	<item_collecting id="3944" start_npc_id="203790" />
+	<!-- 3945: [Top Expert] Armorsmith's Craft -->
+	<item_collecting id="3945" start_npc_id="203790" />
+	<!-- 3946: [Top Expert] Armorsmith Expert -->
+	<report_to start_npc_id="203790" id="3946" end_npc_id="203700"/>
+	<!-- 3947: [Top Expert] Zest For Handicrafting -->
+	<item_collecting id="3947" start_npc_id="203792" />
+	<!-- 3948: [Top Expert] Handicrafter's Craft -->
+	<item_collecting id="3948" start_npc_id="203792" />
+	<!-- 3949: [Top Expert] Handicraft Expert -->
+	<report_to start_npc_id="203792" id="3949" end_npc_id="203700"/>
+	<!-- 3950: [Top Expert] Zest For Cooking -->
+	<item_collecting id="3950" start_npc_id="203784" />
+	<!-- 3951: [Top Expert] Cook's Craft -->
+	<item_collecting id="3951" start_npc_id="203784" />
+	<!-- 3952: [Top Expert] Cook's Expert -->
+	<report_to start_npc_id="203784" id="3952" end_npc_id="203700"/>
+	<!-- 3953: [Top Expert] Zest For Alchemy -->
+	<item_collecting id="3953" start_npc_id="203786" />
+	<!-- 3954: [Top Expert] Alchemy Craft -->
+	<item_collecting id="3954" start_npc_id="203786" />
+	<!-- 3955: [Top Expert] Alchemy Expert -->
+	<report_to start_npc_id="203786" id="3955" end_npc_id="203700"/>
+	<!-- 3956: [Top Expert] Zest For Tailoring -->
+	<item_collecting id="3956" start_npc_id="203793" />
+	<!-- 3957: [Top Expert] Tailor's Craft -->
+	<item_collecting id="3957" start_npc_id="203793" />
+	<!-- 3958: [Top Expert] Alchemy Expert -->
+	<report_to start_npc_id="203793" id="3958" end_npc_id="203700"/>
+	<!-- 3960: Goodwill Of Kuruminerk -->
+	<report_to start_npc_id="798322" end_npc_id="203711" id="3960"/>
+	<!-- 3961: [Growth] Flora's First Charm handled by script -->
+	<!-- 3962: [Growth] Flora's Second Charm handled by script -->
+	<!-- 3963: [Growth] Flora's Third Charm handled by script-->
+	<!-- 3964: [Growth] Flora's Fourth Charm handled by script-->
+	<!-- 3965: To the Galleria of Grandeur handled by script -->
+	<!-- 3966: Salute A New Uniform handled by script -->
+	<!-- 3967: Andus Dye Box handled by script -->
+	<!-- 3968: Palentines Request handled by script -->
+	<!-- 3969: Sexiest Man Alive handled by script -->
+	<!-- 3970: Kinah-Digging Daughter handled by script -->
+	<!-- 3971: What Did You Buy Me? -->
+	<report_to id="3971" start_npc_id="798386" end_npc_id="203893" item_id="182206135"/>
+	<!-- 3972: The Go-Between -->
+	<xml_quest start_npc_id="203893" end_npc_id="203893" id="3972">
+		<on_talk_event ids="798949">
+			<var value="0">
+				<npc id="798949">
+					<dialog id="25">
+						<operations>
+							<npc_dialog id="1352"/>
+						</operations>
+					</dialog>
+					<dialog id="1353">
+						<operations>
+							<npc_dialog id="1353"/>
+							<set_quest_var var_id="0" value="1"/>
+						</operations>
+					</dialog>
+					<dialog id="10000"/>
+				</npc>
+			</var>
+			<var value="1">
+				<npc id="203893">
+					<dialog id="25">
+						<operations>
+							<npc_dialog id="2375"/>
+						</operations>
+					</dialog>
+					<dialog id="1009">
+						<operations override="false">
+							<set_quest_status status="REWARD"/>
+						</operations>
+					</dialog>
+				</npc>
+			</var>
+		</on_talk_event>
+	</xml_quest>
+	<!-- 3973: Love' Messenger -->
+	<xml_quest start_npc_id="203893" end_npc_id="798949" id="3973">
+		<on_talk_event ids="203792 203793 798391 798949">
+			<var value="0">
+				<npc id="203792">
+					<dialog id="25">
+						<operations>
+							<npc_dialog id="1352"/>
+						</operations>
+					</dialog>
+					<dialog id="10000">
+						<operations>
+							<set_quest_var var_id="0" value="1"/>
+						</operations>
+					</dialog>
+				</npc>
+			</var>
+			<var value="1">
+				<npc id="203793">
+					<dialog id="25">
+						<operations>
+							<npc_dialog id="1693"/>
+						</operations>
+					</dialog>
+					<dialog id="10001">
+						<operations>
+							<set_quest_var var_id="0" value="2"/>
+						</operations>
+					</dialog>
+				</npc>
+			</var>
+			<var value="2">
+				<npc id="798391">
+					<dialog id="25">
+						<operations>
+							<npc_dialog id="2034"/>
+						</operations>
+					</dialog>
+					<dialog id="10002">
+						<operations>
+							<set_quest_var var_id="0" value="3"/>
+						</operations>
+					</dialog>
+				</npc>
+			</var>
+			<var value="3">
+				<npc id="798949">
+					<dialog id="25">
+						<operations>
+							<npc_dialog id="2375"/>
+						</operations>
+					</dialog>
+					<dialog id="1009">
+						<operations override="false">
+							<set_quest_status status="REWARD"/>
+						</operations>
+					</dialog>
+				</npc>
+			</var>
+		</on_talk_event>
+	</xml_quest>
+	<!-- 3974: Love Suicide -->
+	<report_to start_npc_id="798949" end_npc_id="203893" id="3974"/>
+	<!-- 3975: Koruchinerk's Offer -->
+	<item_collecting start_npc_id="798321" id="3975"/>
+	<!-- 3976: Legionary Letters -->
+	<report_to id="3976" start_npc_id="203723" end_npc_id="798222" item_id="182206136"/>
+	<!-- 3977: [Coin/Group] Expunge the Drana Fed -->
+	<monster_hunt start_npc_id="203384" id="3977">
+		<monster_infos var_id="0" npc_id="214849" max_kill="8"/>
+		<monster_infos var_id="0" npc_id="214850" max_kill="8"/>
+		<monster_infos var_id="0" npc_id="214851" max_kill="8"/>
+		<monster_infos var_id="0" npc_id="214894" max_kill="8"/>
+		<monster_infos var_id="0" npc_id="214895" max_kill="8"/>
+		<monster_infos var_id="0" npc_id="214896" max_kill="8"/>
+		<monster_infos var_id="0" npc_id="214897" max_kill="8"/>
+		<monster_infos var_id="0" npc_id="214880" max_kill="8"/>
+		<monster_infos var_id="0" npc_id="215388" max_kill="8"/>
+		<monster_infos var_id="0" npc_id="215389" max_kill="8"/>
+	</monster_hunt>
+	<!-- 3978: [Coin/Group] Golden Eye Gambit -->
+	<monster_hunt start_npc_id="798319" id="3978">
+		<monster_infos var_id="0" npc_id="215079" max_kill="1"/>
+	</monster_hunt>
+	<!-- 3979: [Coin/Group] Steel Rake Rumpus -->
+	<monster_hunt start_npc_id="798322" id="3979">
+		<monster_infos var_id="0" npc_id="215081" max_kill="1"/>
+	</monster_hunt>
+	<!-- 9510: Symbol of the Chosen -->
+	<report_to start_npc_id="203752" end_npc_id="203711" id="9510"/>
+	<!-- 9548: [Event] Chasing The Grankers -->
+	<item_collecting start_npc_id="798301" id="9548"/>
+	<!-- 9549: [Event] Solorius Invitations -->
+	<item_collecting start_npc_id="798301" id="9549"/>
+	<!-- 9550: TODO: [Event] Solorius Donations -->
+	<!-- 9558: TODO: [Event] Thirst for Invention! -->
+	<!-- 9560: TODO: [Event] Daeva's Day Fete -->
+	<!-- 19000: Essencetapper's Test handled by script-->
+	<!-- 19001: Essencetapping Expert -->
+	<report_to id="19001" start_npc_id="203780" end_npc_id="798600" item_id="182206127"/>
+	<!-- 19002:  Aethertapper's Test handled by script -->
+	<!-- 19003:  Aethertapping Expert -->
+	<report_to id="19003" start_npc_id="203782" end_npc_id="798600" item_id="182206128"/>
+	<!-- 19004: Perikles's Insight handled by script -->
+	<!-- 19008: [Master] Weaponsmith's Potential handled by script -->
+	<!-- [Master] Weaponsmithing Master -->
+	<report_to id="19009" start_npc_id="203788" end_npc_id="798600" item_id="182206129"/>
+	<!-- 19014: [Master] Armorsmith's Potential handled by script -->
+	<!-- [Master] Armorsmithing Master -->
+	<report_to id="19015" start_npc_id="203790" end_npc_id="798600" item_id="182206130"/>
+	<!-- 19020: [Master] Tailor's Potential  handled by script -->
+	<!-- [Master] Tailoring Master -->
+	<report_to id="19021" start_npc_id="203793" end_npc_id="798600" item_id="182206131"/>
+	<!-- 19026: [Master] Handicrafter's Potential  handled by script -->
+	<!-- [Master] Handicrafting Master -->
+	<report_to id="19027" start_npc_id="203792" end_npc_id="798600" item_id="182206132"/>
+	<!-- 19032: [Master] Alchemist's Potential  handled by script -->
+	<!-- [Master] Alchemy Master -->
+	<report_to id="19033" start_npc_id="203786" end_npc_id="798600" item_id="182206133"/>
+	<!-- 19038: [Master] Cook's Potential  handled by script -->
+	<!-- [Master] Cooking Master -->
+	<report_to id="19039" start_npc_id="203784" end_npc_id="798600" item_id="182206134"/>
+	<!-- 19040: TODO: Leah's Loneliness  -->
+	<!-- The Delivery -->
+	<report_to id="19041" start_npc_id="203711" end_npc_id="798322"/>
+	<!-- The Shugo and the Shulack -->
+	<item_collecting id="19042" start_npc_id="798322"/>
+	<!-- 19043: [Daily] The Sanctum Shulackwalk --> 
+	<item_collecting id="19043" start_npc_id="798444" /> 
+</quest_scripts>

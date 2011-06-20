@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quest_scripts>
+	<!--
+   This file is part of Aion X Emu <aionxemu.com>.
+
+	This is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Lesser Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This software is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Lesser Public License for more details.
+
+	You should have received a copy of the GNU Lesser Public License
+	along with this software.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+	<!-- 30007: TODO: Drakan Document -->
+	<!-- 30008: TODO: [Group] Legendary Jotun -->
+	<!-- 30009: TODO: [Group] Pieces of You -->
+	<!-- 30011: TODO: [Group] Arachnophobia -->
+	<!-- 30013: TODO: [Group] Axe Another Favor -->
+	<!-- 30014: TODO: [Group] A Reian in the Sun -->
+	<!-- 30033: TODO: [Coin/Group] A New Spin on Death -->
+	<!-- 30107: TODO: Deciphering Drakan -->
+	<!-- 30108: TODO: [Group] Heart of the Matter -->
+	<!-- 30109: TODO: [Group] Pieces of the Past -->
+	<!-- 30111: TODO: [Group] Center of the Web -->
+	<!-- 30113: TODO: [Group] Fan Flames of Vengeance -->
+	<!-- 30114: TODO: [Group] Revenge's Last Link -->
+	<!-- 30133: TODO: [Coin/Group] Chakra Choking -->
+</quest_scripts>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+
+	Nidalber
+
+ -->
+<spawns>
+<!--  -->
+	<spawn map="320040000" npcid="204432" pool="1" interval="300">
+		<object staticid="0" x="272.82886" y="176.81439" z="204.34718" h="0"/>
+	</spawn>
+</spawns>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quest_scripts>
+    <!--
+       This file is part of Aion X Emu <aionxemu.com>.
+
+	This is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Lesser Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This software is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Lesser Public License for more details.
+
+	You should have received a copy of the GNU Lesser Public License
+	along with this software.  If not, see <http://www.gnu.org/licenses/>.
+    -->
+
+	<!-- 30051: TODO: Banishing the Shadowborn -->
+	<!-- 30052: Obtain Jotun Relics -->
+	<item_collecting id="30052" start_npc_id="799033" end_npc_id="798929" action_item_id="700568" />
+	<!-- 30053: Poison Paradise -->
+	<monster_hunt start_npc_id="799031" id="30053">
+		<monster_infos var_id="0" npc_id="216364" max_kill="5"/>
+		<monster_infos var_id="1" npc_id="216365" max_kill="5"/>
+		<monster_infos var_id="2" npc_id="216366" max_kill="5"/>
+	</monster_hunt>
+	<!-- 30054: TODO: Petrification and Pride -->
+	<!-- 30055: TODO: For My Wife -->
+	<!-- 30056: TODO: Dirvisia's Sorrow -->
+	<!-- 30057: TODO: Jotun Jaunt -->
+	<!-- 30151: TODO: Snuff the Sunsuckers -->
+	<!-- 30152: Important Relics -->
+	<item_collecting id="30152" start_npc_id="799338" end_npc_id="799227" action_item_id="700568"/>
+	<!-- 30153: Poison Problem -->
+	<monster_hunt start_npc_id="799335" id="30153">
+		<monster_infos var_id="0" npc_id="216364" max_kill="5"/>
+		<monster_infos var_id="0" npc_id="216365" max_kill="5"/>
+		<monster_infos var_id="1" npc_id="216366" max_kill="5"/>
+	</monster_hunt>
+	<!-- 30154: TODO: Flesh to Stone -->
+	<!-- 30155: TODO: Stone to Flesh -->
+	<!-- 30156: TODO: Nep's Love -->
+	<!-- 30157: TODO: Vili's Mind -->
+	<!-- 30158: TODO: Jotun Junket -->
+	<!-- 38504: The Token of Iconrunerk -->
+	<item_collecting id="38504" start_npc_id="799087"/>
+	<!-- 38507: The Collector of Silentera -->
+	<item_collecting id="38507" start_npc_id="799087"/>
+	<!-- 48504: Shady Dealings? -->
+	<item_collecting id="48504" start_npc_id="799426"/>
+	<!-- 48507: A Special Deal -->
+	<item_collecting id="48507" start_npc_id="799426"/>
+</quest_scripts>

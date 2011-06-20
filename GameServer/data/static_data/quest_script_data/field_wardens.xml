@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quest_scripts>
+	<!--
+   This file is part of Aion X Emu <aionxemu.com>.
+
+	This is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Lesser Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This software is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Lesser Public License for more details.
+
+	You should have received a copy of the GNU Lesser Public License
+	along with this software.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+	<!-- 45000: TODO: Aetheric Field Observatory Protectors FOBJ 01 (Asmodian) -->
+	<!-- 45001: TODO: Aetheric Field Observatory Protectors FOBJ 02 (Asmodian) -->
+	<!-- 45002: TODO: Aetheric Field Observatory Protectors FOBJ 03 (Asmodian) -->
+	<!-- 45003: TODO: Aetheric Field Observatory Protectors NPC Chat 01 (Asmodian) -->
+	<!-- 45004: TODO: Aetheric Field Observatory Protectors NPC Chat 02 (Asmodian) -->
+	<!-- 45005: TODO: Aetheric Field Observatory Protectors Item Collection 01 (Asmodian) -->
+	<!-- 45006: TODO: Aetheric Field Observatory Protectors Item Collection 02 (Asmodian) -->
+	<!-- 45007: TODO: [Daily] Monitoring Beluslan -->
+	<!-- 45008: TODO: [Daily] Scanning Beluslan -->
+	<!-- 45009: TODO: [Daily] Oh the Entropy! -->
+	<!-- 45010: TODO: [Daily] Darkness Runs Across Water -->
+	<!-- 45011: TODO: [Daily] Hidden Missive -->
+	<!-- 45012: TODO: Aetheric Field Observatory Protectors Item Collection 01 (Asmodian) -->
+	<!-- 45013: TODO: Aetheric Field Observatory Protectors Item Collection 02 (Asmodian) -->
+	<!-- 45014: TODO: [Daily] Monitoring Brusthonin -->
+	<!-- 45015: TODO: [Daily] Scanning Brusthonin -->
+	<!-- 45016: TODO: [Daily] Control the Chaos -->
+	<!-- 45017: TODO: [Daily] A Flower Grows in Shade -->
+	<!-- 45018: TODO: [Daily] Secret Tidings -->
+	<!-- 45019: TODO: Aetheric Field Observatory Protectors Item Collection 01 (Asmodian) -->
+	<!-- 45020: TODO: Aetheric Field Observatory Protectors Item Collection 02 (Asmodian) -->
+	<!-- 45021: TODO: [Daily] Monitoring Gelkmaros -->
+	<!-- 45022: TODO: [Daily] Scanning Gelkmaros -->
+	<!-- 45023: TODO: [Daily] Dispel the Discord -->
+	<!-- 45024: TODO: [Daily] Those Who Grasp Fate -->
+	<!-- 45025: TODO: [Daily] Covert Intelligence -->
+	<!-- 45026: TODO: [Daily] Message from a Steward -->
+	<!-- 45027: TODO: [Daily] Message from a Legionary -->
+	<!-- 45028: TODO: [Daily] Message from an Outrider -->
+	<!-- 45029: TODO: [Daily] Message from a Centurion -->
+	<!-- 45030: TODO: [Daily] Message from a Warrior -->
+	<!-- 45031: TODO: [Daily] Sky Sweeper -->
+	<!-- 45032: TODO: [Daily] Warden Needs Food Badly -->
+	<!-- 45033: TODO: [Daily] This Ain't a Scene… -->
+	<!-- 45034: TODO: [Daily] Heavily Medicated -->
+	<!-- 45035: TODO: [Daily] Blue Jaw Breaker -->
+	<!-- 45036: TODO: [Daily] A Little Spriggle Room -->
+	<!-- 45037: TODO: [Daily] Gone Gone Gorgons! -->
+	<!-- 45038: TODO: [Daily] Gluttonous Ettins -->
+	<!-- 45039: TODO: [Daily] Om-Nom Aether -->
+	<!-- 45040: TODO: [Daily] Food Shortage -->
+	<!-- 45041: TODO: [Daily] Weapon Shortage -->
+	<!-- 45042: TODO: [Daily] Medicine Shortage -->
+	<!-- 45043: TODO: [Daily] Anubites on My Heels -->
+	<!-- 45044: TODO: [Daily] Yuck…I Smell Kurin -->
+	<!-- 45045: TODO: [Daily] Gathering Aether 3 -->
+	<!-- 45046: TODO: [Daily] Gathering Foodstuff 3 -->
+	<!-- 45047: TODO: [Daily] Gathering Weapon Materials 3 -->
+	<!-- 45048: TODO: [Daily] Gathering Herbs 3 -->
+	<!-- 45049: TODO: [Daily] Hunt the Starved Barghest -->
+	<!-- 45050: TODO: [Daily] Eradicate the Plains Baku -->
+	<!-- 45051: TODO: [Daily] Eradicate the Smiling Dragrint -->
+	<!-- 45100: TODO: Aetheric Field Observatory Reward 1 (Asmodian) -->
+	<!-- 45101: TODO: [Asmodian] Warden's Wages 1A -->
+	<!-- 45102: TODO: [Asmodian] Warden's Wages 1B -->
+	<!-- 45103: TODO: [Asmodian] Warden's Wages 1C -->
+	<!-- 45104: TODO: [Asmodian] Warden's Wages 1D -->
+	<!-- 45105: TODO: [Asmodian] Warden's Wages 2A -->
+	<!-- 45106: TODO: [Asmodian] Warden's Wages 2B -->
+	<!-- 45107: TODO: [Asmodian] Warden's Wages 2C -->
+	<!-- 45108: TODO: [Asmodian] Warden's Wages 2D -->
+	<!-- 45109: TODO: [Asmodian] Warden's Wages 3A -->
+	<!-- 45110: TODO: [Asmodian] Warden's Wages 3B -->
+	<!-- 45111: TODO: [Asmodian] Warden's Wages 3C -->
+	<!-- 45112: TODO: [Asmodian] Warden's Wages 3D -->
+	<!-- 48000: TODO: Summons from the Wardens -->
+	<!-- 48003: TODO: Message from the Field Wardens -->
+</quest_scripts>
