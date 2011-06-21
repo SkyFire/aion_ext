@@ -1,5 +1,5 @@
 /**
- * This file is part of Aion X Emu <aionxemu.com>
+ * This file is part of Aion Europe  Emulator <aion-core.net>
  *
  *  This is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Lesser Public License as published by

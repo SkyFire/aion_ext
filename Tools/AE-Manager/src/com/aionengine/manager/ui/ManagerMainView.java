@@ -1,5 +1,5 @@
 /**
- * This file is part of Aion X Emu <aionxemu.com>
+ * This file is part of Aion Europe  Emulator <aion-core.net>
  *
  *  This is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Lesser Public License as published by
@@ -29,6 +29,8 @@ import java.awt.GraphicsConfiguration;
 import java.awt.HeadlessException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -52,7 +54,7 @@ import javax.swing.plaf.basic.BasicBorders;
  * @author vyaslav
  *
  */
-public class ManagerMainView extends JFrame {
+public class ManagerMainView extends JFrame implements WindowListener {
 	JTabbedPane screenTabs=new JTabbedPane();
 	JPanel screen=new JPanel();
 	
@@ -62,7 +64,7 @@ public class ManagerMainView extends JFrame {
 	String loginText;
 	String gameText;
 	String chatText;
-	String title= "Aion Engine Server Manager";
+	String title= "Aion Extreme Server Manager";
 	
 	boolean started[]={false,false,false};//login/game/chat
 	
@@ -106,6 +108,8 @@ public class ManagerMainView extends JFrame {
 	 * @throws HeadlessException
 	 */
 	public ManagerMainView() throws HeadlessException {
+		//catch window close events (see handlers below)
+		addWindowListener(this);  
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setTitle(title);
 		Container pane=this.getContentPane();
@@ -323,6 +327,66 @@ public class ManagerMainView extends JFrame {
 		outTextArea.setText(text);
 		int length = outTextArea.getDocument().getLength();
 		outTextArea.setCaretPosition(length);
+	}
+
+	@Override
+	public void windowClosing(WindowEvent arg0) {
+		for (int i=0;i<3;i++)
+		{
+			if (null != orList[i])
+			{
+				try
+				{
+					orList[i].interrupt();
+				}
+				catch (Exception e)
+				{
+					// The above stream may already be closed in a 'dead' state.
+					//	disregard any exceptions.
+				}
+			}
+			
+			if (null != procList[i])
+			{
+				try
+				{
+					procList[i].destroy();
+				}
+				catch (Exception e)
+				{
+					// The above process may already be in a dead state. 
+					// we will ignore any exceptions generated from Process.destroy()
+				}
+			}
+		}
+	}
+
+	/*
+	 * The following are included to keep the WindowLisener contract happy.
+	 * @see java.awt.event.WindowListener#windowActivated(java.awt.event.WindowEvent)
+	 */
+	@Override
+	public void windowActivated(WindowEvent arg0) {
+	}
+
+	@Override
+	public void windowClosed(WindowEvent arg0) {
+	}
+
+	@Override
+	public void windowDeactivated(WindowEvent arg0) {
+	}
+
+	@Override
+	public void windowDeiconified(WindowEvent arg0) {
+	}
+
+	@Override
+	public void windowIconified(WindowEvent arg0) {
+	}
+
+	@Override
+	public void windowOpened(WindowEvent arg0) {
 	}
 
 }
