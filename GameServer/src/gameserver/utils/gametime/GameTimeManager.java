@@ -71,4 +71,15 @@ public class GameTimeManager {
         log.info("Game time saved...");
         return DAOManager.getDAO(GameTimeDAO.class).store(getGameTime().getTime());
     }
+
+    public static void reloadTime(int time)
+    {
+      ThreadPoolManager.getInstance().purge();
+      instance = new GameTime(time);
+
+      clockStarted = false;
+
+      startClock();
+      log.info("Game time changed by admin and clock restarted...");
+    }
 }

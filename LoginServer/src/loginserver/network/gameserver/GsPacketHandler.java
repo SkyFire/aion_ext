@@ -24,7 +24,7 @@ import org.apache.log4j.Logger;
 import java.nio.ByteBuffer;
 
 /**
- * @author -Nemesiss-
+ * @author -Nemesiss-, PZIKO333
  */
 public class GsPacketHandler {
     /**
@@ -77,6 +77,9 @@ public class GsPacketHandler {
                         break;
                     case 0x07:
                         msg = new CM_GS_CHARACTER_COUNT(data, client);
+                        break;
+                    case 0x09:
+                        msg = new CM_GS_TOLL_INFO(data, client);
                         break;
                     default:
                         unknownPacket(state, id);

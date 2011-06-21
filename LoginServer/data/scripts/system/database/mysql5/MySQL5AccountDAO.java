@@ -29,7 +29,7 @@ import java.sql.SQLException;
 /**
  * MySQL5 Account DAO implementation
  *
- * @author SoulKeeper
+ * @author SoulKeeper, PZIKO333
  */
 public class MySQL5AccountDAO extends AccountDAO {
     /**
@@ -63,12 +63,11 @@ public class MySQL5AccountDAO extends AccountDAO {
                 account.setLastIp(rs.getString("last_ip"));
                 account.setIpForce(rs.getString("ip_force"));
                 account.setExpire(rs.getDate("expire"));
+                account.setToll(rs.getInt("toll_count"));
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             log.error("Can't select account with name: " + name, e);
-        }
-        finally {
+        } finally {
             DB.close(st);
         }
 
@@ -91,11 +90,9 @@ public class MySQL5AccountDAO extends AccountDAO {
             rs.next();
 
             id = rs.getInt("id");
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             log.error("Can't select id after account insertion", e);
-        }
-        finally {
+        } finally {
             DB.close(st);
         }
 
@@ -114,11 +111,9 @@ public class MySQL5AccountDAO extends AccountDAO {
             rs.next();
 
             return rs.getInt("c");
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             log.error("Can't get account count", e);
-        }
-        finally {
+        } finally {
             DB.close(st);
         }
 
@@ -131,8 +126,7 @@ public class MySQL5AccountDAO extends AccountDAO {
     @Override
     public boolean insertAccount(Account account) {
         int result = 0;
-        PreparedStatement st =
-                DB.prepareStatement("INSERT INTO account_data(`name`, `password`, access_level, membership, activated, last_server, last_ip, ip_force, expire) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        PreparedStatement st = DB.prepareStatement("INSERT INTO account_data(`name`, `password`, access_level, membership, activated, last_server, last_ip, ip_force, expire) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
         try {
             st.setString(1, account.getName());
@@ -146,11 +140,9 @@ public class MySQL5AccountDAO extends AccountDAO {
             st.setDate(9, account.getExpire());
 
             result = st.executeUpdate();
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             log.error("Can't inser account", e);
-        }
-        finally {
+        } finally {
             DB.close(st);
         }
 
@@ -167,8 +159,7 @@ public class MySQL5AccountDAO extends AccountDAO {
     @Override
     public boolean updateAccount(Account account) {
         int result = 0;
-        PreparedStatement st =
-                DB.prepareStatement("UPDATE account_data SET `name` = ?, `password` = ?, access_level = ?, membership = ?, last_server = ?, last_ip = ?, ip_force = ?, expire = ? WHERE `id` = ?");
+        PreparedStatement st = DB.prepareStatement("UPDATE account_data SET `name` = ?, `password` = ?, access_level = ?, membership = ?, last_server = ?, last_ip = ?, ip_force = ?, expire = ? WHERE `id` = ?");
 
         try {
             st.setString(1, account.getName());
@@ -181,11 +172,9 @@ public class MySQL5AccountDAO extends AccountDAO {
             st.setDate(8, account.getExpire());
             st.setInt(9, account.getId());
             st.executeUpdate();
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             log.error("Can't update account");
-        }
-        finally {
+        } finally {
             DB.close(st);
         }
 
@@ -246,16 +235,35 @@ public class MySQL5AccountDAO extends AccountDAO {
             if (rs.next()) {
                 lastIp = rs.getString("last_ip");
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             log.error("Can't select last IP of account ID: " + accountId, e);
             return "";
-        }
-        finally {
+        } finally {
             DB.close(st);
         }
 
         return lastIp;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean updateTollcount(int toll, String userName) {
+        int result = 0;
+        PreparedStatement st = DB.prepareStatement("UPDATE account_data SET `toll_count` = ? WHERE `name` = ?");
+
+        try {
+            st.setInt(1, toll);
+            st.setString(2, userName);
+            st.executeUpdate();
+        } catch (SQLException e) {
+            log.error("Can't update toll_count");
+        } finally {
+            DB.close(st);
+        }
+
+        return result > 0;
     }
 
     /**

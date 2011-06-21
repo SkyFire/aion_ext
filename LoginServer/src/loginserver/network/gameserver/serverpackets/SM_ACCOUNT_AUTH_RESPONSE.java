@@ -27,7 +27,7 @@ import java.nio.ByteBuffer;
  * In this packet LoginServer is answering on GameServer request about valid authentication data and also sends account
  * name of user that is authenticating on GameServer.
  *
- * @author -Nemesiss-
+ * @author -Nemesiss-, PZIKO333
  */
 public class SM_ACCOUNT_AUTH_RESPONSE extends GsServerPacket {
     /**
@@ -56,6 +56,11 @@ public class SM_ACCOUNT_AUTH_RESPONSE extends GsServerPacket {
     private final byte membership;
 
     /**
+     * Tollcount
+     */
+    private final int toll_count;
+
+    /**
      * Constructor.
      *
      * @param accountId
@@ -64,7 +69,7 @@ public class SM_ACCOUNT_AUTH_RESPONSE extends GsServerPacket {
      * @param accessLevel
      * @param membership
      */
-    public SM_ACCOUNT_AUTH_RESPONSE(int accountId, boolean ok, String accountName, byte accessLevel, byte membership) {
+    public SM_ACCOUNT_AUTH_RESPONSE(int accountId, boolean ok, String accountName, byte accessLevel, byte membership, int toll_count) {
         super(0x01);
 
         this.accountId = accountId;
@@ -72,6 +77,7 @@ public class SM_ACCOUNT_AUTH_RESPONSE extends GsServerPacket {
         this.accountName = accountName;
         this.accessLevel = accessLevel;
         this.membership = membership;
+        this.toll_count = toll_count;
     }
 
     /**
@@ -92,6 +98,7 @@ public class SM_ACCOUNT_AUTH_RESPONSE extends GsServerPacket {
             writeQ(buf, accountTime.getAccumulatedRestTime());
             writeC(buf, accessLevel);
             writeC(buf, membership);
+            writeD(buf, toll_count);
         }
     }
-}        
+}

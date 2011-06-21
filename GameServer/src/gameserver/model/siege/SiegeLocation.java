@@ -21,8 +21,7 @@ import gameserver.model.templates.siege.SiegeLocationTemplate;
 /**
  * @author Sarynth
  */
-public class SiegeLocation
-{
+public class SiegeLocation {
     public static final int INVULNERABLE = 0;
     public static final int VULNERABLE = 1;
 
@@ -44,12 +43,10 @@ public class SiegeLocation
 
     private long lastArtifactActivation;
 
-    public SiegeLocation()
-    {
+    public SiegeLocation() {
     } // <3 Fastmap
 
-    public SiegeLocation(SiegeLocationTemplate template)
-    {
+    public SiegeLocation(SiegeLocationTemplate template) {
         this.template = template;
         this.locationId = template.getId();
         this.worldId = template.getWorldId();
@@ -61,43 +58,35 @@ public class SiegeLocation
      * 
      * @return Integer LocationId
      */
-    public int getLocationId()
-    {
+    public int getLocationId() {
         return this.locationId;
     }
 
-    public SiegeType getSiegeType()
-    {
+    public SiegeType getSiegeType() {
         return type;
     }
 
-    public int getWorldId()
-    {
+    public int getWorldId() {
         return this.worldId;
     }
 
-    public SiegeLocationTemplate getLocationTemplate()
-    {
+    public SiegeLocationTemplate getLocationTemplate() {
         return this.template;
     }
 
-    public SiegeRace getRace()
-    {
+    public SiegeRace getRace() {
         return this.siegeRace;
     }
 
-    public void setRace(SiegeRace siegeRace)
-    {
+    public void setRace(SiegeRace siegeRace) {
         this.siegeRace = siegeRace;
     }
 
-    public int getLegionId()
-    {
+    public int getLegionId() {
         return this.legionId;
     }
 
-    public void setLegionId(int legionId)
-    {
+    public void setLegionId(int legionId) {
         this.legionId = legionId;
     }
 
@@ -106,64 +95,56 @@ public class SiegeLocation
      * 
      * @return nextState
      */
-    public int getNextState()
-    {
+    public int getNextState() {
         return this.nextState;
     }
 
     /**
      * @param nextState
      */
-    public void setNextState(int nextState)
-    {
+    public void setNextState(int nextState) {
         this.nextState = nextState;
     }
 
     /**
      * @return isVulnerable
      */
-    public boolean isVulnerable()
-    {
+    public boolean isVulnerable() {
         return this.isVulnerable;
     }
 
     /**
      * @param new vulnerable value
      */
-    public void setVulnerable(boolean value)
-    {
+    public void setVulnerable(boolean value) {
         this.isVulnerable = value;
     }
 
     /**
      * @return isCanTeleport
      */
-    public boolean isCanTeleport()
-    {
+    public boolean isCanTeleport() {
         return this.isCanTeleport;
     }
 
     /**
      * @param new isCanTeleport value
      */
-    public void setCanTeleport(boolean value)
-    {
+    public void setCanTeleport(boolean value) {
         this.isCanTeleport = value;
     }
 
     /**
      * @return
      */
-    public int getInfluenceValue()
-    {
+    public int getInfluenceValue() {
         return 0;
     }
 
     /**
      * @return the lastArtifactActivation
      */
-    public long getLastArtifactActivation()
-    {
+    public long getLastArtifactActivation() {
         return lastArtifactActivation;
     }
 
@@ -171,16 +152,13 @@ public class SiegeLocation
      * @param lastArtifactActivation
      *            the lastArtifactActivation to set
      */
-    public void setLastArtifactActivation(long lastArtifactActivation)
-    {
+    public void setLastArtifactActivation(long lastArtifactActivation) {
         this.lastArtifactActivation = lastArtifactActivation;
     }
 
-    public int getRemainingEffectSeconds()
-    {
+    public int getRemainingEffectSeconds() {
         int duration = 0;
-        switch(type)
-        {
+        switch (type) {
             case ARTIFACT:
                 break;
             case FORTRESS:
@@ -188,10 +166,11 @@ public class SiegeLocation
                 break;
         }
         long diff = System.currentTimeMillis() - lastArtifactActivation;
-        if(diff > duration)
+        if (diff > duration) {
             return 0;
-        else
+        } else {
             return (int) (duration - diff);
+        }
     }
 
     public int getVulnerabilityDuration() {

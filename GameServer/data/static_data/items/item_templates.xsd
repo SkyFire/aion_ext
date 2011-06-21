@@ -66,6 +66,7 @@
         <xs:attribute name="desc" type="xs:int" default="0"/>
         <xs:attribute name="gender" type="xs:string"/>
         <xs:attribute name="restrict" type="xs:string"/>
+        <xs:attribute name="restrict_max" type="xs:string"/>
         <xs:attribute name="option_slot_bonus" type="xs:int" default="0"/>
         <xs:attribute name="bonus_apply" type="bonusApplyType"/>
         <xs:attribute name="no_enchant" type="xs:boolean"/>
@@ -78,8 +79,10 @@
         <xs:attribute name="aic" type="xs:int" default="0"/>
         <xs:attribute name="ai" type="xs:int" default="0"/>
         <xs:attribute name="ap" type="xs:int" default="0"/>
-		<xs:attribute name="extra_currency_item" type="xs:int" default="0"/>
-		<xs:attribute name="extra_currency_item_count" type="xs:int" default="0"/>
+        <xs:attribute name="extra_currency_item" type="xs:int" default="0"/>
+        <xs:attribute name="extra_currency_item_count" type="xs:int" default="0"/>
+        <xs:attribute name="coupon_item" type="xs:int" default="0"/>
+        <xs:attribute name="coupon_item_count" type="xs:int" default="0"/>
         <xs:attribute name="price" type="xs:int" default="0"/>
         <xs:attribute name="quality" type="itemQuality"/>
         <xs:attribute name="item_category" type="itemCategory"/>
@@ -146,6 +149,14 @@
             <xs:element name="toypetspawn" type="ToyPetSpawnAction"
                         minOccurs="0" maxOccurs="1"/>
             <xs:element name="read" type="ReadAction"
+                        minOccurs="0" maxOccurs="1"/>
+            <xs:element name="ticket" type="TicketAction"
+                        minOccurs="0" maxOccurs="1"/>
+            <xs:element name="title" type="TitleAction"
+                        minOccurs="0" maxOccurs="1"/>
+            <xs:element name="emotion" type="EmotionAction"
+                        minOccurs="0" maxOccurs="1"/>
+            <xs:element name="cosmetic" type="CosmeticAction"
                         minOccurs="0" maxOccurs="1"/>
         </xs:sequence>
     </xs:complexType>
@@ -220,6 +231,50 @@
         </xs:complexContent>
     </xs:complexType>
 
+    <xs:complexType name="TicketAction">
+        <xs:complexContent>
+            <xs:extension base="AbstractItemAction">
+                <xs:attribute name="function" type="xs:string"/>
+                <xs:attribute name="param" type="xs:int"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="TitleAction">
+        <xs:complexContent>
+            <xs:extension base="AbstractItemAction">
+                <xs:attribute name="titleid" type="xs:int"/>
+                <xs:attribute name="expire" type="xs:int"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="EmotionAction">
+        <xs:complexContent>
+            <xs:extension base="AbstractItemAction">
+                <xs:attribute name="emotionid" type="xs:int"/>
+                <xs:attribute name="expire" type="xs:int"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="CosmeticAction">
+        <xs:complexContent>
+            <xs:extension base="AbstractItemAction">
+                <xs:attribute name="lips" type="xs:string"/>
+                <xs:attribute name="eyes" type="xs:string"/>
+                <xs:attribute name="face" type="xs:string"/>
+                <xs:attribute name="hair" type="xs:string"/>
+                <xs:attribute name="hairType" type="xs:int" default="0"/>
+                <xs:attribute name="faceType" type="xs:int" default="0"/>
+                <xs:attribute name="tattooType" type="xs:int" default="0"/>
+                <xs:attribute name="makeupType" type="xs:int" default="0"/>
+                <xs:attribute name="voiceType" type="xs:int" default="0"/>
+                <xs:attribute name="preset" type="xs:string"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
     <xs:simpleType name="equipType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="ARMOR"/>
@@ -242,11 +297,16 @@
             <xs:enumeration value="3"/>
             <xs:enumeration value="5"/>
             <xs:enumeration value="10"/>
+            <xs:enumeration value="60"/>
             <xs:enumeration value="61"/>
+            <xs:enumeration value="81"/>
             <xs:enumeration value="120"/>
+            <xs:enumeration value="1440"/>
+            <xs:enumeration value="1441"/>
             <xs:enumeration value="4321"/>
             <xs:enumeration value="10081"/>
             <xs:enumeration value="20161"/>
+            <xs:enumeration value="21600"/>
             <xs:enumeration value="21601"/>
             <xs:enumeration value="43201"/>
             <xs:enumeration value="129601"/>
@@ -302,6 +362,7 @@
             <xs:enumeration value="AC_HEAD"/>
             <xs:enumeration value="ACCESSORY"/>
             <xs:enumeration value="ADHESIVE"/>
+            <xs:enumeration value="ARENA_REWARD"/>
             <xs:enumeration value="ARROW"/>
             <xs:enumeration value="ARTIFACTSTONE"/>
             <xs:enumeration value="AXE"/>
@@ -368,7 +429,6 @@
             <xs:enumeration value="CASH_ACTION_ZERO"/>
             <xs:enumeration value="CASH_AIONJEWELS"/>
             <xs:enumeration value="CASH_AMERICAN_DRESS_BODY"/>
-			<xs:enumeration value="CASH_BEAR_HEAD"/>
             <xs:enumeration value="CASH_BINYEO_HEAD"/>
             <xs:enumeration value="CASH_BOOK"/>
             <xs:enumeration value="CASH_BOW"/>
@@ -377,6 +437,8 @@
             <xs:enumeration value="CASH_CARD_TITLE"/>
             <xs:enumeration value="CASH_CHERUBIM_HEAD"/>
             <xs:enumeration value="CASH_CHESTNUTS_HEAD"/>
+            <xs:enumeration value="CASH_CHILDREN_BODY"/>
+            <xs:enumeration value="CASH_CHILDREN_HEAD"/>
             <xs:enumeration value="CASH_COIN"/>
             <xs:enumeration value="CASH_COUPON_CUSTOMIZE"/>
             <xs:enumeration value="CASH_COUPON_HAIR_EXCHANGE_M"/>
@@ -389,8 +451,9 @@
             <xs:enumeration value="CASH_DEBRIE_GLOVE"/>
             <xs:enumeration value="CASH_DEBRIE_HEAD"/>
             <xs:enumeration value="CASH_DEBRIE_SHOES"/>
-			<xs:enumeration value="CASH_DEVA_BODY"/>
-			<xs:enumeration value="CASH_DEVA_HEAD"/>
+            <xs:enumeration value="CASH_DEVA_BODY"/>
+            <xs:enumeration value="CASH_DEVA_HEAD"/>
+            <xs:enumeration value="CASH_DEVA_SHOES"/>
             <xs:enumeration value="CASH_DEVIL_HEAD"/>
             <xs:enumeration value="CASH_DYE_BLACK"/>
             <xs:enumeration value="CASH_DYE_DEEP_BLUE"/>
@@ -399,10 +462,12 @@
             <xs:enumeration value="CASH_DYE_YELLOW"/>
             <xs:enumeration value="CASH_DYE_OLIVE_GREEN"/>
             <xs:enumeration value="CASH_DYE_ORANGE"/>
+            <xs:enumeration value="CASH_DYE_PACK"/>
             <xs:enumeration value="CASH_DYE_PINK"/>
             <xs:enumeration value="CASH_DYE_RED"/>
             <xs:enumeration value="CASH_DYE_ROMANTIC_PURPLE"/>
             <xs:enumeration value="CASH_DYE_WHITE"/>
+            <xs:enumeration value="CASH_EARRING"/>
             <xs:enumeration value="CASH_EUROPEAN_DRESS_BODY"/>
             <xs:enumeration value="CASH_FEED"/>
             <xs:enumeration value="CASH_FETHLOT_HEAD"/>
@@ -419,45 +484,51 @@
             <xs:enumeration value="CASH_H2SWORD"/>
             <xs:enumeration value="CASH_HEAD"/>
             <xs:enumeration value="CASH_HIIV_HEAD"/>
+            <xs:enumeration value="CASH_KOREANDRESS_BODY"/>
             <xs:enumeration value="CASH_KOREANDRESS_BODY_M"/>
             <xs:enumeration value="CASH_KOREANDRESS_BODY_W"/>
             <xs:enumeration value="CASH_LINEAGE2_BODY"/>
             <xs:enumeration value="CASH_MACE"/>
             <xs:enumeration value="CASH_MANDURI_HEAD"/>
             <xs:enumeration value="CASH_MINX_HEAD"/>
-			<xs:enumeration value="CASH_MISSA_BODY"/>
-			<xs:enumeration value="CASH_MISSA_HEAD"/>
+            <xs:enumeration value="CASH_MISSA_BODY"/>
+            <xs:enumeration value="CASH_MISSA_HEAD"/>
             <xs:enumeration value="CASH_MUTA_HEAD"/>
             <xs:enumeration value="CASH_NAMBAWI_HEAD"/>
             <xs:enumeration value="CASH_ORB"/>
             <xs:enumeration value="CASH_PETADOPTION"/>
-			<xs:enumeration value="CASH_PILOT_HEAD"/>
             <xs:enumeration value="CASH_POLEARM"/>
             <xs:enumeration value="CASH_POLYMORPH_CANDY"/>
             <xs:enumeration value="CASH_PORGUSS_BODY"/>
             <xs:enumeration value="CASH_PORGUSS_GLOVE"/>
             <xs:enumeration value="CASH_PORGUSS_HEAD"/>
             <xs:enumeration value="CASH_PORGUSS_SHOES"/>
-			<xs:enumeration value="CASH_RABBIT_HEAD"/>
+            <xs:enumeration value="CASH_PUMPKIN_HEAD"/>
             <xs:enumeration value="CASH_RUSSIAN_DRESS_BODY"/>
             <xs:enumeration value="CASH_SANTA_BODY_M"/>
             <xs:enumeration value="CASH_SANTA_BODY_W"/>
             <xs:enumeration value="CASH_SANTA_HEAD"/>
+            <xs:enumeration value="CASH_SCHOOLLOOK_BODY"/>
             <xs:enumeration value="CASH_SHEEP_HEAD"/>
             <xs:enumeration value="CASH_SHIELD"/>
+            <xs:enumeration value="CASH_SHIRT_BODY"/>
             <xs:enumeration value="CASH_SOCKS"/>
             <xs:enumeration value="CASH_SPAKY_HEAD"/>
             <xs:enumeration value="CASH_SPRIGG_HEAD"/>
             <xs:enumeration value="CASH_STAFF"/>
+            <xs:enumeration value="CASH_SUB"/>
             <xs:enumeration value="CASH_SWIMSUIT"/>
             <xs:enumeration value="CASH_SWORD"/>
             <xs:enumeration value="CASH_VALENTINEDAY_BODY"/>
             <xs:enumeration value="CASH_VALENTINEDAY_HEAD"/>
             <xs:enumeration value="CASH_VALENTINEDAY_SHOES"/>
+            <xs:enumeration value="CASH_VICTORYDAY_HEAD"/>
             <xs:enumeration value="CASH_VIKING_HEAD"/>
             <xs:enumeration value="CASH_WEDDINGDRESS_BODY"/>
             <xs:enumeration value="CASH_WHITEDAY_BODY"/>
             <xs:enumeration value="CASH_WHITEDAY_HEAD"/>
+            <xs:enumeration value="CASH_WIZARD_BODY"/>
+            <xs:enumeration value="CASH_WIZARD_HEAD"/>
             <xs:enumeration value="CASH_WGCOS"/>
             <xs:enumeration value="CASH_ZAIF_HEAD"/>
             <xs:enumeration value="CASH_ZERO"/>
@@ -550,8 +621,14 @@
             <xs:enumeration value="HEART_HEAD"/>
             <xs:enumeration value="HELM"/>
             <xs:enumeration value="HERB"/>
+            <xs:enumeration value="HIGHDRESSGT_DA"/>
+            <xs:enumeration value="HIGHDRESSGT_LI"/>
             <xs:enumeration value="HIGHDRESSL"/>
             <xs:enumeration value="HIGHDRESSLO"/>
+            <xs:enumeration value="HIGHDRESSMD__DA"/>
+            <xs:enumeration value="HIGHDRESSMD__LI"/>
+            <xs:enumeration value="HIGHDRESSMD_DA"/>
+            <xs:enumeration value="HIGHDRESSMD_LI"/>
             <xs:enumeration value="HIGHDRESSS"/>
             <xs:enumeration value="HILT"/>
             <xs:enumeration value="HOE"/>

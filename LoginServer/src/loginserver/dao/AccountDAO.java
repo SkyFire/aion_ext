@@ -23,7 +23,7 @@ import loginserver.model.Account;
 /**
  * DAO that manages accounts.
  *
- * @author SoulKeeper
+ * @author SoulKeeper, PZIKO333
  */
 public abstract class AccountDAO implements DAO {
     /**
@@ -98,6 +98,8 @@ public abstract class AccountDAO implements DAO {
      * @return ip address
      */
     public abstract String getLastIp(int accountId);
+
+    public abstract boolean updateTollcount(int toll, String name);
 
     /**
      * Returns uniquire class name for all implementations

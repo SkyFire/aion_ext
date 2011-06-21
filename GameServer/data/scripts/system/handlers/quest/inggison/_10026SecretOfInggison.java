@@ -41,13 +41,13 @@ public class _10026SecretOfInggison extends QuestHandler
 	@Override
 	public void register()
 	{
-                qe.addQuestLvlUp(questId);
-                qe.setNpcQuestData(799052).addOnQuestStart(questId);            // Steropes
-                qe.setNpcQuestData(799052).addOnTalkEvent(questId);
-                qe.setNpcQuestData(799053).addOnTalkEvent(questId);             // Nydrea
+		qe.addQuestLvlUp(questId);
+		qe.setNpcQuestData(799052).addOnQuestStart(questId);            // Steropes
+		qe.setNpcQuestData(799052).addOnTalkEvent(questId);
+		qe.setNpcQuestData(799053).addOnTalkEvent(questId);             // Nydrea
 	}
 
-                @Override
+	@Override
 	public boolean onLvlUpEvent(QuestCookie env)
 	{
 		return defaultQuestOnLvlUpEvent(env, 10001);
@@ -85,7 +85,7 @@ public class _10026SecretOfInggison extends QuestHandler
 						if(var == 0)
 						{
 							qs.setQuestVarById(0, var + 1);
-							 updateQuestStatus(env);
+							updateQuestStatus(env);
 							PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
 							return true;
 						}
@@ -107,9 +107,9 @@ public class _10026SecretOfInggison extends QuestHandler
 					case 10255:
 						if(var == 1)
 						{
-                                                                                                                              qs.setQuestVar(2);
+							qs.setQuestVar(2);
 							qs.setStatus(QuestStatus.REWARD);
-							 updateQuestStatus(env);
+							updateQuestStatus(env);
 							PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
 							return true;
 						}
@@ -123,10 +123,10 @@ public class _10026SecretOfInggison extends QuestHandler
 				switch (env.getDialogId())
 				{
 					case 1009:
-                                                                                                            {
+					{
 						return sendQuestDialog(env, 5);				
-						}
-                                                                                         default : return defaultQuestEndDialog(env);
+					}
+					default : return defaultQuestEndDialog(env);
 				}
 			}
 		}

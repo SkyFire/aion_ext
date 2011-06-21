@@ -25,7 +25,7 @@ import gameserver.network.loginserver.LsClientPacket;
  * In this packet LoginServer is answering on GameServer request about valid authentication data and also sends account
  * name of user that is authenticating on GameServer.
  *
- * @author -Nemesiss-
+ * @author -Nemesiss-, PZIKO333
  */
 public class CM_ACOUNT_AUTH_RESPONSE extends LsClientPacket {
     /**
@@ -53,6 +53,11 @@ public class CM_ACOUNT_AUTH_RESPONSE extends LsClientPacket {
     private byte membership;
 
     /**
+     * Tollcount
+     */
+    private int toll_count;
+
+    /**
      * Constructs new instance of <tt>CM_ACOUNT_AUTH_RESPONSE </tt> packet.
      *
      * @param opcode
@@ -78,6 +83,7 @@ public class CM_ACOUNT_AUTH_RESPONSE extends LsClientPacket {
 
             accessLevel = (byte) readC();
             membership = (byte) readC();
+            toll_count = readD();
         }
     }
 
@@ -86,6 +92,6 @@ public class CM_ACOUNT_AUTH_RESPONSE extends LsClientPacket {
      */
     @Override
     protected void runImpl() {
-        LoginServer.getInstance().accountAuthenticationResponse(accountId, accountName, result, accountTime, accessLevel, membership);
-	}
+        LoginServer.getInstance().accountAuthenticationResponse(accountId, accountName, result, accountTime, accessLevel, membership, toll_count);
+    }
 }

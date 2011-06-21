@@ -62,7 +62,7 @@ public class Promote extends AdminCommand {
         int type = 0;
         if (params[1].toLowerCase().equals("accesslevel")) {
             type = 1;
-            if (mask > 3 || mask < 0) {
+            if (mask > 5 || mask < 0) {
                 PacketSendUtility.sendMessage(admin, "accesslevel can be 0, 1, 2 or 3");
                 return;
             }

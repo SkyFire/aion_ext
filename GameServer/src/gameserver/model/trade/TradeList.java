@@ -46,13 +46,15 @@ public class TradeList {
     public boolean addBuyItem(int itemId, long count) {
 
         ItemTemplate itemTemplate = ItemService.getItemTemplate(itemId);
-        if (itemTemplate == null)
+        if (itemTemplate == null) {
             return false;
+        }
 
         TradeItem tradeItem = new TradeItem(itemId, count);
         tradeItem.setItemTemplate(itemTemplate);
-        if(!tradeItems.add(tradeItem))
+        if (!tradeItems.add(tradeItem)) {
             return false;
+        }
         return true;
     }
 
@@ -62,14 +64,16 @@ public class TradeList {
      */
     public boolean addSellPSItem(TradeItem tradeItem, TradePSItem tradePSItem) {
         ItemTemplate itemTemplate = ItemService.getItemTemplate(tradePSItem.getItemId());
-        if (itemTemplate == null)
+        if (itemTemplate == null) {
             return false;
+        }
 
         TradeItem newTradeItem = new TradeItem(tradePSItem.getItemObjId(), tradeItem.getCount());
         newTradeItem.setItemTemplate(itemTemplate);
         newTradeItem.setItemSlot(tradeItem.getItemId());
-        if(!tradeItems.add(newTradeItem))
+        if (!tradeItems.add(newTradeItem)) {
             return false;
+        }
         return true;
     }
 
@@ -79,8 +83,9 @@ public class TradeList {
      */
     public boolean addSellItem(int itemObjId, long count) {
         TradeItem tradeItem = new TradeItem(itemObjId, count);
-        if(!tradeItems.add(tradeItem))
+        if (!tradeItems.add(tradeItem)) {
             return false;
+        }
         return true;
     }
 
@@ -90,7 +95,6 @@ public class TradeList {
     public boolean calculateBuyListPrice(Player player) {
         long availableKinah = player.getInventory().getKinahItem().getItemCount();
         requiredKinah = 0;
-
 
         for (TradeItem tradeItem : tradeItems) {
             requiredKinah += player.getPrices().getKinahForBuy(tradeItem.getItemTemplate().getPrice(), player.getCommonData().getRace()) * tradeItem.getCount();
@@ -113,19 +117,22 @@ public class TradeList {
             int itemId = tradeItem.getItemTemplate().getAbyssItem();
 
             Integer alreadyAddedCount = requiredItems.get(itemId);
-            if (alreadyAddedCount == null)
+            if (alreadyAddedCount == null) {
                 requiredItems.put(itemId, tradeItem.getItemTemplate().getAbyssItemCount());
-            else
+            } else {
                 requiredItems.put(itemId, alreadyAddedCount + tradeItem.getItemTemplate().getAbyssItemCount());
+            }
         }
 
-        if (ap < requiredAp)
+        if (ap < requiredAp) {
             return false;
+        }
 
         for (Integer itemId : requiredItems.keySet()) {
             long count = player.getInventory().getItemCountByItemId(itemId);
-            if (count < requiredItems.get(itemId))
+            if (count < requiredItems.get(itemId)) {
                 return false;
+            }
         }
 
         return true;
@@ -141,16 +148,18 @@ public class TradeList {
             int itemId = tradeItem.getItemTemplate().getExtraCurrencyItem();
             Integer alreadyAddedCount = requiredItems.get(itemId);
 
-            if (alreadyAddedCount == null)
-                requiredItems.put(itemId, tradeItem.getItemTemplate().getExtraCurrencyItemCount() * (int)tradeItem.getCount());
-            else
-                requiredItems.put(itemId, alreadyAddedCount + tradeItem.getItemTemplate().getExtraCurrencyItemCount() * (int)tradeItem.getCount());
+            if (alreadyAddedCount == null) {
+                requiredItems.put(itemId, tradeItem.getItemTemplate().getExtraCurrencyItemCount() * (int) tradeItem.getCount());
+            } else {
+                requiredItems.put(itemId, alreadyAddedCount + tradeItem.getItemTemplate().getExtraCurrencyItemCount() * (int) tradeItem.getCount());
+            }
         }
 
         for (Integer itemId : requiredItems.keySet()) {
             long count = player.getInventory().getItemCountByItemId(itemId);
-            if (count < requiredItems.get(itemId))
+            if (count < requiredItems.get(itemId)) {
                 return false;
+            }
         }
 
         return true;

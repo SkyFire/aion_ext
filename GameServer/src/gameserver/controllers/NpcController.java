@@ -39,6 +39,7 @@ import gameserver.model.gameobjects.player.RequestResponseHandler;
 import gameserver.model.gameobjects.state.CreatureState;
 import gameserver.model.gameobjects.stats.NpcGameStats;
 import gameserver.model.templates.quest.NpcQuestData;
+import gameserver.model.templates.quest.QuestDrop;
 import gameserver.model.templates.teleport.TelelocationTemplate;
 import gameserver.model.templates.teleport.TeleportLocation;
 import gameserver.model.templates.teleport.TeleporterTemplate;
@@ -152,7 +153,12 @@ public class NpcController extends CreatureController<Npc> {
 
         // Monster Controller overrides this method.
         this.doReward();
-
+        Npc npc = getOwner();
+        List<QuestDrop> drops = QuestEngine.getInstance().getQuestDrop(npc.getNpcId());
+        if(drops.size() > 0)
+        {
+           DropService.getInstance().registerDrop(getOwner(), (Player) lastAttacker, lastAttacker.getLevel());
+        }
         owner.getAi().handleEvent(Event.DIED);
 
         // deselect target at the end

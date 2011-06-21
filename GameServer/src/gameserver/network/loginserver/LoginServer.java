@@ -38,7 +38,7 @@ import java.util.Map;
 /**
  * Utill class for connecting GameServer to LoginServer.
  *
- * @author -Nemesiss-
+ * @author -Nemesiss-, PZIKO333
  */
 public class LoginServer {
     /**
@@ -85,7 +85,7 @@ public class LoginServer {
      */
     public LoginServerConnection connect() {
         SocketChannel sc;
-        for (; ;) {
+        for (;;) {
             loginServer = null;
             log.info("Connecting to LoginServer: " + NetworkConfig.LOGIN_ADDRESS);
             try {
@@ -94,8 +94,7 @@ public class LoginServer {
                 Dispatcher d = nioServer.getReadWriteDispatcher();
                 loginServer = new LoginServerConnection(sc, d);
                 return loginServer;
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 log.info("Cant connect to LoginServer: " + e.getMessage());
             }
         }
@@ -153,8 +152,9 @@ public class LoginServer {
      */
     private void sendAccountDisconnected(int accountId) {
         log.info("Sending account disconnected " + accountId);
-        if (loginServer != null && loginServer.getState() == State.AUTHED)
+        if (loginServer != null && loginServer.getState() == State.AUTHED) {
             loginServer.sendPacket(new SM_ACCOUNT_DISCONNECTED(accountId));
+        }
     }
 
     /**
@@ -180,8 +180,9 @@ public class LoginServer {
         }
 
         synchronized (this) {
-            if (loginRequests.containsKey(accountId))
+            if (loginRequests.containsKey(accountId)) {
                 return;
+            }
             loginRequests.put(accountId, client);
         }
         loginServer.sendPacket(new SM_ACCOUNT_AUTH(accountId, loginOk, playOk1, playOk2));
@@ -196,17 +197,18 @@ public class LoginServer {
      * @param result
      * @param accountTime
      */
-    public void accountAuthenticationResponse(int accountId, String accountName, boolean result, AccountTime accountTime, byte accessLevel, byte membership) {
+    public void accountAuthenticationResponse(int accountId, String accountName, boolean result, AccountTime accountTime, byte accessLevel, byte membership, int toll_count) {
         AionConnection client = loginRequests.remove(accountId);
 
-        if (client == null)
+        if (client == null) {
             return;
+        }
 
         if (result) {
             client.setState(AionConnection.State.AUTHED);
             loggedInAccounts.put(accountId, client);
             log.info("Account authed: " + accountId + " = " + accountName);
-            client.setAccount(AccountService.getAccount(accountId, accountName, accountTime, accessLevel, membership));
+            client.setAccount(AccountService.getAccount(accountId, accountName, accountTime, accessLevel, membership, toll_count));
             client.sendPacket(new SM_L2AUTH_LOGIN_CHECK(true));
         } else {
             log.info("Account not authed: " + accountId);
@@ -231,8 +233,9 @@ public class LoginServer {
         }
 
         synchronized (this) {
-            if (loginRequests.containsKey(client.getAccount().getId()))
+            if (loginRequests.containsKey(client.getAccount().getId())) {
                 return;
+            }
             loginRequests.put(client.getAccount().getId(), client);
 
         }
@@ -249,11 +252,12 @@ public class LoginServer {
     public void authReconnectionResponse(int accountId, int reconnectKey) {
         AionConnection client = loginRequests.remove(accountId);
 
-        if (client == null)
+        if (client == null) {
             return;
+        }
 
         log.info("Account reconnecting: " + accountId + " = " + client.getAccount().getName());
-        //client.sendPacket(new SM_RECONNECT_KEY(reconnectKey));
+        // client.sendPacket(new SM_RECONNECT_KEY(reconnectKey));
         client.close(new SM_RECONNECT_KEY(reconnectKey), false);
     }
 
@@ -325,10 +329,10 @@ public class LoginServer {
         log.info("GameServer disconnected from the Login Server...");
     }
 
-
     public void sendLsControlPacket(String accountName, String playerName, String adminName, int param, int type) {
-        if (loginServer != null && loginServer.getState() == State.AUTHED)
+        if (loginServer != null && loginServer.getState() == State.AUTHED) {
             loginServer.sendPacket(new SM_LS_CONTROL(accountName, playerName, adminName, param, type));
+        }
     }
 
     public void accountUpdate(int accountId, byte param, int type) {
@@ -336,22 +340,30 @@ public class LoginServer {
             AionConnection client = loggedInAccounts.get(accountId);
             if (client != null) {
                 Account account = client.getAccount();
-                if (type == 1)
+                if (type == 1) {
                     account.setAccessLevel(param);
-                if (type == 2)
+                }
+                if (type == 2) {
                     account.setMembership(param);
+                }
             }
         }
     }
 
     public void sendBanPacket(byte type, int accountId, String ip, int time, int adminObjId) {
-        if (loginServer != null && loginServer.getState() == State.AUTHED)
+        if (loginServer != null && loginServer.getState() == State.AUTHED) {
             loginServer.sendPacket(new SM_BAN(type, accountId, ip, time, adminObjId));
+        }
+    }
+
+    public void sendTollInfo(int toll_count, String accountName) {
+        if (loginServer != null && loginServer.getState() == State.AUTHED) {
+            loginServer.sendPacket(new SM_ACCOUNT_TOLL_INFO(toll_count, accountName));
+        }
     }
 
     @SuppressWarnings("synthetic-access")
-	private static class SingletonHolder
-	{
-		protected static final LoginServer instance = new LoginServer();
-	}
+    private static class SingletonHolder {
+        protected static final LoginServer instance = new LoginServer();
+    }
 }

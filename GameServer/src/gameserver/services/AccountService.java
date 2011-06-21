@@ -42,7 +42,7 @@ import java.util.List;
 /**
  * This class is a front-end for daos and it's responsibility is to retrieve the Account objects
  *
- * @author Luno
+ * @author Luno, PZIKO333
  */
 public class AccountService {
     private static final Logger log = Logger.getLogger(AccountService.class);
@@ -59,22 +59,23 @@ public class AccountService {
      * @param membership
      * @return Account
      */
-    public static Account getAccount(int accountId, String accountName, AccountTime accountTime, byte accessLevel,
-                                     byte membership) {
+    public static Account getAccount(int accountId, String accountName, AccountTime accountTime, byte accessLevel, byte membership, int toll_count) {
         log.debug("[AS] request for account: " + accountId);
 
         Account account = accountsMap.get(accountId);
         if (account == null) {
             account = loadAccount(accountId);
 
-            if (CacheConfig.CACHE_ACCOUNTS)
+            if (CacheConfig.CACHE_ACCOUNTS) {
                 accountsMap.put(accountId, account);
+            }
         }
 
         account.setName(accountName);
         account.setAccountTime(accountTime);
         account.setAccessLevel(accessLevel);
         account.setMembership(membership);
+        account.SetToll(toll_count);
 
         removeDeletedCharacters(account);
 
@@ -125,7 +126,6 @@ public class AccountService {
             PlayerCommonData playerCommonData = playerDAO.loadPlayerCommonData(playerOid);
             PlayerAppearance appereance = appereanceDAO.load(playerOid);
 
-
             LegionMember legionMember = DAOManager.getDAO(LegionMemberDAO.class).loadLegionMember(playerOid);
 
             /**
@@ -133,8 +133,7 @@ public class AccountService {
              */
             List<Item> equipment = DAOManager.getDAO(InventoryDAO.class).loadEquipment(playerOid);
 
-            PlayerAccountData acData = new PlayerAccountData(playerCommonData, appereance, equipment,
-                    legionMember);
+            PlayerAccountData acData = new PlayerAccountData(playerCommonData, appereance, equipment, legionMember);
             playerDAO.setCreationDeletionTime(acData);
 
             account.addPlayerAccountData(acData);
@@ -143,7 +142,7 @@ public class AccountService {
              * load account warehouse only once
              */
             if (account.getAccountWarehouse() == null) {
-                //TODO memory lake.....
+                // TODO memory lake.....
                 Player player = new Player(new PlayerController(), playerCommonData, appereance, account);
                 Storage accWarehouse = DAOManager.getDAO(InventoryDAO.class).loadStorage(player, StorageType.ACCOUNT_WAREHOUSE);
                 ItemService.loadItemStones(accWarehouse.getStorageItems());
@@ -154,8 +153,9 @@ public class AccountService {
         /**
          * For new accounts - create empty account warehouse
          */
-        if (account.getAccountWarehouse() == null)
+        if (account.getAccountWarehouse() == null) {
             account.setAccountWarehouse(new Storage(StorageType.ACCOUNT_WAREHOUSE));
+        }
 
         return account;
     }
@@ -168,6 +168,6 @@ public class AccountService {
      */
     public static int getCharacterCountFor(int accountId) {
         PlayerDAO playerDAO = DAOManager.getDAO(PlayerDAO.class);
-		return playerDAO.getCharacterCountOnAccount(accountId);
-	}
+        return playerDAO.getCharacterCountOnAccount(accountId);
+    }
 }

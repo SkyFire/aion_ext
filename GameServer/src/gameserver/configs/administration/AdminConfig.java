@@ -95,6 +95,9 @@ public class AdminConfig {
     @Property(key = "gameserver.administration.command.givemissingskills", defaultValue = "3")
     public static int COMMAND_GIVEMISSINGSKILLS;
 
+    @Property(key = "gameserver.administration.command.grouptome", defaultValue = "3")
+    public static int COMMAND_GROUPTOME;
+
     @Property(key = "gameserver.administration.command.heal", defaultValue = "3")
     public static int COMMAND_HEAL;
 
@@ -300,7 +303,7 @@ public class AdminConfig {
     public static int COMMAND_GMLIST;
 
     @Property(key = "gameserver.administration.command.appearance", defaultValue = "3")
-    public static int COMMAND_APPEARANCE;    
+    public static int COMMAND_APPEARANCE;
 
     @Property(key = "gameserver.administration.command.see", defaultValue = "3")
     public static int COMMAND_SEE;
@@ -319,4 +322,13 @@ public class AdminConfig {
 
     @Property(key = "gameserver.administration.command.goevent", defaultValue = "0")
     public static int COMMAND_GOEVENT;
+
+    @Property(key = "gameserver.administration.command.gameshop", defaultValue = "3")
+    public static int COMMAND_GAMESHOP;
+
+    @Property(key = "gameserver.administration.command.sysmail", defaultValue = "3")
+    public static int COMMAND_SYSMAIL;
+
+    @Property(key = "gameserver.administration.command.time", defaultValue = "3")
+    public static int COMMAND_TIME;
 }

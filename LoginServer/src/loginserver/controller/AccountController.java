@@ -44,21 +44,18 @@ import java.util.Map;
 /**
  * This class is resposible for controlling all account actions
  *
- * @author KID
- * @author SoulKeeper
+ * @author KID, SoulKeeper, PZIKO333
  */
 public class AccountController {
     /**
      * Map with accounts that are active on LoginServer or joined GameServer and are not authenticated yet.
      */
-    private static final Map<Integer, AionConnection> accountsOnLS = new HashMap<Integer,
-            AionConnection>();
+    private static final Map<Integer, AionConnection> accountsOnLS = new HashMap<Integer, AionConnection>();
 
     /**
      * Map with accounts that are reconnecting to LoginServer ie was joined GameServer.
      */
-    private static final Map<Integer, ReconnectingAccount> reconnectingAccounts = new HashMap<Integer,
-            ReconnectingAccount>();
+    private static final Map<Integer, ReconnectingAccount> reconnectingAccounts = new HashMap<Integer, ReconnectingAccount>();
 
     /**
      * Map with characters count on each gameserver and accounts
@@ -103,10 +100,9 @@ public class AccountController {
             /**
              * Send response to GameServer
              */
-            gsConnection.sendPacket(new SM_ACCOUNT_AUTH_RESPONSE(key.accountId, true, acc.getName(), acc
-                    .getAccessLevel(), acc.getMembership()));
+            gsConnection.sendPacket(new SM_ACCOUNT_AUTH_RESPONSE(key.accountId, true, acc.getName(), acc.getAccessLevel(), acc.getMembership(), acc.getToll()));
         } else {
-            gsConnection.sendPacket(new SM_ACCOUNT_AUTH_RESPONSE(key.accountId, false, null, (byte) 0, (byte) 0));
+            gsConnection.sendPacket(new SM_ACCOUNT_AUTH_RESPONSE(key.accountId, false, null, (byte) 0, (byte) 0, 0));
         }
     }
 
@@ -127,8 +123,7 @@ public class AccountController {
      * @param reconnectKey reconnect key
      * @param client       aion client
      */
-    public static synchronized void authReconnectingAccount(int accountId, int loginOk, int reconnectKey,
-                                                            AionConnection client) {
+    public static synchronized void authReconnectingAccount(int accountId, int loginOk, int reconnectKey, AionConnection client) {
         ReconnectingAccount reconnectingAccount = reconnectingAccounts.remove(accountId);
 
         if (reconnectingAccount != null && reconnectingAccount.getReconnectionKey() == reconnectKey) {
@@ -161,8 +156,9 @@ public class AccountController {
         // Try to create new account
         if (account == null && Config.ACCOUNT_AUTO_CREATION) {
             account = createAccount(name, password);
-            if (account == null)
+            if (account == null) {
                 return AionAuthResponse.NO_SUCH_ACCOUNT;
+            }
         }
 
         // If account not found and not created

@@ -89,8 +89,7 @@ public class CompressedItem extends AbstractItemAction {
     }
 
     @Override 
-    public boolean canAct(Player player, Item parentItem, Item targetItem) 
-    {
+    public boolean canAct(Player player, Item parentItem, Item targetItem) { 
         if (production == null) 
             return false; 
         if (parentItem.getItemTemplate().getTemplateId() != id) { 

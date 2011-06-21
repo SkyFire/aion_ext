@@ -290,13 +290,14 @@ public class SpawnEngine {
         int mapId = DataManager.SIEGE_LOCATION_DATA.getSiegeLocations().get(artifactId).getLocationTemplate().getWorldId();
         // Spawn artifact itself
         int artifactNpcId = template.getBaseInfo().getNpcId(race);
-        SpawnTemplate artifactSpawnTemplate = addNewSpawn(mapId, 1, artifactNpcId, template.getBaseInfo().getX(), template.getBaseInfo().getY(), template.getBaseInfo().getZ(), (byte) template.getBaseInfo().getH(), 0, 0, true, true);
-        Artifact af = new Artifact(IDFactory.getInstance().nextId(), new ArtifactController(), artifactSpawnTemplate, DataManager.NPC_DATA.getNpcTemplate(artifactNpcId), artifactId);
+        SpawnTemplate sTemplate = addNewSpawn(mapId, 1, artifactNpcId, template.getBaseInfo().getX(), template.getBaseInfo().getY(), template.getBaseInfo().getZ(), (byte) template.getBaseInfo().getH(), 0, 0, true, true);
+        sTemplate.setStaticid(template.getBaseInfo().getStaticId());
+        Artifact af = new Artifact(IDFactory.getInstance().nextId(), new ArtifactController(), sTemplate, DataManager.NPC_DATA.getNpcTemplate(artifactNpcId), artifactId);
         af.setKnownlist(new NpcKnownList(af));
         af.setEffectController(new EffectController(af));
         af.getController().onRespawn();
         af.setTemplate(template);
-        bringIntoWorld(af, artifactSpawnTemplate, 1);
+        bringIntoWorld(af, sTemplate, 1);
 
         // Spawn and register protector
         if (template.getProtectorTemplate() != null) {

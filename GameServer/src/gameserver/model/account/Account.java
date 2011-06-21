@@ -65,6 +65,8 @@ public class Account implements Iterable<PlayerAccountData> {
 
     private int numberOfElyos = 0;
 
+    private int toll;
+
     public Account(int id) {
         this.id = id;
     }
@@ -174,13 +176,13 @@ public class Account implements Iterable<PlayerAccountData> {
         this.accountWarehouse = accountWarehouse;
     }
 
-
     /**
      * @return the characterPasskey
      */
     public CharacterPasskey getCharacterPasskey() {
-        if (characterPasskey == null)
+        if (characterPasskey == null) {
             characterPasskey = new CharacterPasskey();
+        }
         return characterPasskey;
     }
 
@@ -202,10 +204,11 @@ public class Account implements Iterable<PlayerAccountData> {
             public int compare(PlayerAccountData x, PlayerAccountData y) {
                 Timestamp t1 = x.getPlayerCommonData().getLastOnline();
                 Timestamp t2 = y.getPlayerCommonData().getLastOnline();
-                if (t2 == null)
+                if (t2 == null) {
                     return 1;
-                else if (t1 == null)
+                } else if (t1 == null) {
                     return -1;
+                }
                 return y.getPlayerCommonData().getLastOnline().compareTo(x.getPlayerCommonData().getLastOnline());
             }
         });
@@ -238,6 +241,14 @@ public class Account implements Iterable<PlayerAccountData> {
             case ELYOS:
                 numberOfElyos--;
                 break;
-		}
-	}
+        }
+    }
+
+    public int getToll() {
+        return toll;
+    }
+
+    public void SetToll(int toll) {
+        this.toll = toll;
+    }
 }

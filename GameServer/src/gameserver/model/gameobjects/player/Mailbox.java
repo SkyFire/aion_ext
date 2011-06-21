@@ -45,10 +45,12 @@ public class Mailbox {
 
             @Override
             public int compare(Letter o1, Letter o2) {
-                if (o1.getTimeStamp().getTime() > o2.getTimeStamp().getTime())
+                if (o1.getTimeStamp().getTime() > o2.getTimeStamp().getTime()) {
                     return 1;
-                if (o1.getTimeStamp().getTime() < o2.getTimeStamp().getTime())
+                }
+                if (o1.getTimeStamp().getTime() < o2.getTimeStamp().getTime()) {
                     return -1;
+                }
 
                 return o1.getObjectId() > o2.getObjectId() ? 1 : -1;
             }
@@ -78,8 +80,9 @@ public class Mailbox {
      */
     public boolean haveUnread() {
         for (Letter letter : mails.values()) {
-            if (letter.isUnread())
+            if (letter.isUnread()) {
                 return true;
+            }
         }
 
         return false;
@@ -111,8 +114,16 @@ public class Mailbox {
      *
      * @return
      */
-	public int size()
-	{
-		return mails.size();
-	}
+    public int size() {
+        return mails.size();
+    }
+
+    public boolean haveUnreadExpress() {
+        for (Letter letter : this.mails.values()) {
+            if ((letter.isUnread()) && (letter.isExpress())) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

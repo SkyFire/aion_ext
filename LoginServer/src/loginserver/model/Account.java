@@ -22,7 +22,7 @@ import java.sql.Date;
 /**
  * This class represents Account model
  *
- * @author SoulKeeper
+ * @author SoulKeeper, PZIKO333
  */
 public class Account {
     /**
@@ -79,6 +79,11 @@ public class Account {
      * AccountTime data
      */
     private AccountTime accountTime;
+
+    /**
+     * Tollcount
+     */
+    private int toll_count;
 
     /**
      * Returns account id, null if not stored in DB
@@ -268,6 +273,20 @@ public class Account {
      */
     public void setAccountTime(AccountTime accountTime) {
         this.accountTime = accountTime;
+    }
+
+    /**
+     * @return toll
+     */
+    public int getToll() {
+        return toll_count;
+    }
+
+    /**
+     * @param toll
+     */
+    public void setToll(int toll_count) {
+        this.toll_count = toll_count;
     }
 
     /**

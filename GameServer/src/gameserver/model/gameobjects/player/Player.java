@@ -70,9 +70,7 @@ import java.util.concurrent.ScheduledFuture;
 /**
  * This class is representing Player object, it contains all needed data.
  *
- * @author -Nemesiss-
- * @author SoulKeeper
- * @author alexa026
+ * @author -Nemesiss-, SoulKeeper, alexa026, PZIKO333
  */
 public class Player extends Creature {
     public static final int CHAT_NOT_FIXED = 0;
@@ -155,6 +153,7 @@ public class Player extends Creature {
     private static final int CUBE_SPACE = 9;
     private static final int WAREHOUSE_SPACE = 8;
 
+    private int nrCategoryinGameShop = 0;
     /**
      * Connection of this Player.
      */
@@ -186,29 +185,26 @@ public class Player extends Creature {
     public PlayerAppearance getPlayerAppearance() {
         return playerAppearance;
     }
-    
-    public void setPlayerAppearance(PlayerAppearance playerAppearance)
-    {
+
+    public void setPlayerAppearance(PlayerAppearance playerAppearance) {
         this.playerAppearance = playerAppearance;
     }
-    
+
     /**
      * Only use for the Size admin command
      * 
      * @return PlayerAppearance : The saved player's appearance, to rollback his appearance
      */
-    public PlayerAppearance getSavedPlayerAppearance()
-    {
+    public PlayerAppearance getSavedPlayerAppearance() {
         return savedPlayerAppearance;
     }
-    
+
     /**
      * Only use for the Size admin command
      * 
      * @param playerAppearance PlayerAppearance : The saved player's appearance, to rollback his appearance
      */
-    public void setSavedPlayerAppearance(PlayerAppearance savedPlayerAppearance)
-    {
+    public void setSavedPlayerAppearance(PlayerAppearance savedPlayerAppearance) {
         this.savedPlayerAppearance = savedPlayerAppearance;
     }
 
@@ -326,9 +322,9 @@ public class Player extends Creature {
     @Override
     public PlayerGameStats getGameStats() {
         PlayerGameStats pgs = (PlayerGameStats) super.getGameStats();
-        if (pgs == null)
-            log.warn("Player.getGameStats() coud not be retrieved. " +
-                "PlayerId: " + getObjectId() + ", PlayerName: " + getName());
+        if (pgs == null) {
+            log.warn("Player.getGameStats() coud not be retrieved. " + "PlayerId: " + getObjectId() + ", PlayerName: " + getName());
+        }
         return pgs;
     }
 
@@ -468,8 +464,8 @@ public class Player extends Creature {
             inventory.setOwner(this);
         }
 
-        if (storageType .getId() > 31 && storageType.getId() < 36) {
-            this.petBag[storageType.getId()-32] = storage;
+        if (storageType.getId() > 31 && storageType.getId() < 36) {
+            this.petBag[storageType.getId() - 32] = storage;
         }
 
         if (storageType == StorageType.REGULAR_WAREHOUSE) {
@@ -488,22 +484,27 @@ public class Player extends Creature {
      * @return
      */
     public Storage getStorage(int storageType) {
-        if (storageType == StorageType.REGULAR_WAREHOUSE.getId())
+        if (storageType == StorageType.REGULAR_WAREHOUSE.getId()) {
             return regularWarehouse;
+        }
 
-        if (storageType == StorageType.ACCOUNT_WAREHOUSE.getId())
+        if (storageType == StorageType.ACCOUNT_WAREHOUSE.getId()) {
             return accountWarehouse;
+        }
 
-        if (storageType == StorageType.LEGION_WAREHOUSE.getId() && getLegion() != null)
+        if (storageType == StorageType.LEGION_WAREHOUSE.getId() && getLegion() != null) {
             return getLegion().getLegionWarehouse();
+        }
 
-        if (storageType > 31 && storageType < 36)
-            return petBag[storageType-32];
+        if (storageType > 31 && storageType < 36) {
+            return petBag[storageType - 32];
+        }
 
-        if (storageType == StorageType.CUBE.getId())
+        if (storageType == StorageType.CUBE.getId()) {
             return inventory;
-        else
+        } else {
             return null;
+        }
     }
 
     /**
@@ -536,7 +537,7 @@ public class Player extends Creature {
         }
 
         Storage legionWhStorage = getStorage(StorageType.LEGION_WAREHOUSE.getId());
-        if(legionWhStorage != null) {
+        if (legionWhStorage != null) {
             if (legionWhStorage.getPersistentState() == PersistentState.UPDATE_REQUIRED) {
                 dirtyItems.addAll(legionWhStorage.getAllItems());
                 dirtyItems.addAll(legionWhStorage.getDeletedItems());
@@ -545,8 +546,8 @@ public class Player extends Creature {
         }
 
         for (int petBagId = 32; petBagId < 36; petBagId++) {
-            Storage  petBag = getStorage(petBagId);
-            if(petBag.getPersistentState() == PersistentState.UPDATE_REQUIRED) {
+            Storage petBag = getStorage(petBagId);
+            if (petBag.getPersistentState() == PersistentState.UPDATE_REQUIRED) {
                 dirtyItems.addAll(petBag.getAllItems());
                 dirtyItems.addAll(petBag.getDeletedItems());
                 petBag.setPersistentState(PersistentState.UPDATED);
@@ -589,11 +590,10 @@ public class Player extends Creature {
         if (inventory == null) {
             World world = World.getInstance();
             Player player = world.findPlayer(getName());
-            if (player == null)
+            if (player == null) {
                 return null;
-            log.warn("Storage.getInventory(): Could not be restored for " +
-                "playerId: " + player.getObjectId() +
-                ", playerName: " + getName());
+            }
+            log.warn("Storage.getInventory(): Could not be restored for " + "playerId: " + player.getObjectId() + ", playerName: " + getName());
         }
         return inventory;
     }
@@ -686,12 +686,8 @@ public class Player extends Creature {
      * {@link PlayerService#playerLoggedIn(Player)}</b>
      */
     public void onLoggedIn() {
-        getController().addTask(TaskId.PLAYER_UPDATE,
-                ThreadPoolManager.getInstance().scheduleAtFixedRate(
-                        new GeneralUpdateTask(this), PeriodicSaveConfig.PLAYER_GENERAL * 1000, PeriodicSaveConfig.PLAYER_GENERAL * 1000));
-        getController().addTask(TaskId.INVENTORY_UPDATE,
-                ThreadPoolManager.getInstance().scheduleAtFixedRate(
-                        new ItemUpdateTask(this), PeriodicSaveConfig.PLAYER_ITEMS * 1000, PeriodicSaveConfig.PLAYER_ITEMS * 1000));
+        getController().addTask(TaskId.PLAYER_UPDATE, ThreadPoolManager.getInstance().scheduleAtFixedRate(new GeneralUpdateTask(this), PeriodicSaveConfig.PLAYER_GENERAL * 1000, PeriodicSaveConfig.PLAYER_GENERAL * 1000));
+        getController().addTask(TaskId.INVENTORY_UPDATE, ThreadPoolManager.getInstance().scheduleAtFixedRate(new ItemUpdateTask(this), PeriodicSaveConfig.PLAYER_ITEMS * 1000, PeriodicSaveConfig.PLAYER_ITEMS * 1000));
 
         getCommonData().updateAbyssSkills(this, abyssRank);
     }
@@ -732,10 +728,11 @@ public class Player extends Creature {
      * @return the legion
      */
     public Legion getLegion() {
-        if (legionMember != null)
+        if (legionMember != null) {
             return legionMember.getLegion();
-        else
+        } else {
             return null;
+        }
     }
 
     /**
@@ -751,8 +748,9 @@ public class Player extends Creature {
      * @return true if a player has a store opened
      */
     public boolean hasStore() {
-        if (getStore() != null)
+        if (getStore() != null) {
             return true;
+        }
         return false;
     }
 
@@ -803,8 +801,9 @@ public class Player extends Creature {
      * @return the rates
      */
     public Rates getRates() {
-        if (rates == null)
+        if (rates == null) {
             rates = new RegularRates();
+        }
         return rates;
     }
 
@@ -873,8 +872,9 @@ public class Player extends Creature {
      * @param prisonTimer the prisonTimer to set
      */
     public void setPrisonTimer(long prisonTimer) {
-        if (prisonTimer < 0)
+        if (prisonTimer < 0) {
             prisonTimer = 0;
+        }
 
         this.prisonTimer = prisonTimer;
     }
@@ -924,7 +924,7 @@ public class Player extends Creature {
     public void setInvul(boolean invul) {
         this.invul = invul;
     }
-    
+
     /**
      * Check is player is Protected
      *
@@ -975,8 +975,9 @@ public class Player extends Creature {
 
     public int getLastOnline() {
         Timestamp lastOnline = playerCommonData.getLastOnline();
-        if (lastOnline == null || isOnline())
+        if (lastOnline == null || isOnline()) {
             return 0;
+        }
 
         return (int) (lastOnline.getTime() / 1000);
     }
@@ -1118,11 +1119,13 @@ public class Player extends Creature {
     @Override
     public boolean isAggroFrom(Npc npc) {
         String currentTribe = npc.getTribe();
-        if (npc instanceof FortressGeneral || npc instanceof ArtifactProtector)
+        if (npc instanceof FortressGeneral || npc instanceof ArtifactProtector) {
             return true;
+        }
         // npc's that are 10 or more levels lower don't get aggro on players
-        if (npc.getLevel() + 10 <= getLevel())
+        if (npc.getLevel() + 10 <= getLevel()) {
             return false;
+        }
 
         return getAdminEnmity() == 1 || getAdminEnmity() == 3 ? true : isAggroIconTo(currentTribe);
     }
@@ -1134,17 +1137,20 @@ public class Player extends Creature {
      * @return
      */
     public boolean isAggroIconTo(String npcTribe) {
-    	if(getAdminEnmity() == 1 || getAdminEnmity() == 3)
-    		return true;
-    	
+        if (getAdminEnmity() == 1 || getAdminEnmity() == 3) {
+            return true;
+        }
+
         switch (getCommonData().getRace()) {
             case ELYOS:
-                if (DataManager.TRIBE_RELATIONS_DATA.isGuardDark(npcTribe))
+                if (DataManager.TRIBE_RELATIONS_DATA.isGuardDark(npcTribe)) {
                     return true;
+                }
                 return DataManager.TRIBE_RELATIONS_DATA.isAggressiveRelation(npcTribe, "PC");
             case ASMODIANS:
-                if (DataManager.TRIBE_RELATIONS_DATA.isGuardLight(npcTribe))
+                if (DataManager.TRIBE_RELATIONS_DATA.isGuardLight(npcTribe)) {
                     return true;
+                }
                 return DataManager.TRIBE_RELATIONS_DATA.isAggressiveRelation(npcTribe, "PC_DARK");
         }
         return false;
@@ -1152,7 +1158,7 @@ public class Player extends Creature {
 
     @Override
     protected boolean canSeeNpc(Npc npc) {
-        return true; //TODO
+        return true; // TODO
     }
 
     @Override
@@ -1193,13 +1199,14 @@ public class Player extends Creature {
      * @return
      */
     public boolean isItemUseDisabled(int delayId) {
-        if (itemCoolDowns == null || !itemCoolDowns.containsKey(delayId))
+        if (itemCoolDowns == null || !itemCoolDowns.containsKey(delayId)) {
             return false;
+        }
 
         Long coolDown = itemCoolDowns.get(delayId).getReuseTime();
-        if (coolDown == null)
+        if (coolDown == null) {
             return false;
-
+        }
 
         if (coolDown < System.currentTimeMillis()) {
             itemCoolDowns.remove(delayId);
@@ -1214,8 +1221,9 @@ public class Player extends Creature {
      * @return
      */
     public long getItemCoolDown(int itemMask) {
-        if (itemCoolDowns == null || !itemCoolDowns.containsKey(itemMask))
+        if (itemCoolDowns == null || !itemCoolDowns.containsKey(itemMask)) {
             return 0;
+        }
 
         return itemCoolDowns.get(itemMask).getReuseTime();
     }
@@ -1233,8 +1241,9 @@ public class Player extends Creature {
      * @param useDelay
      */
     public void addItemCoolDown(int delayId, long time, int useDelay) {
-        if (itemCoolDowns == null)
+        if (itemCoolDowns == null) {
             itemCoolDowns = Collections.synchronizedMap(new HashMap<Integer, ItemCooldown>());
+        }
 
         itemCoolDowns.put(delayId, new ItemCooldown(time, useDelay));
     }
@@ -1243,8 +1252,9 @@ public class Player extends Creature {
      * @param itemMask
      */
     public void removeItemCoolDown(int itemMask) {
-        if (itemCoolDowns == null)
+        if (itemCoolDowns == null) {
             return;
+        }
         itemCoolDowns.remove(itemMask);
     }
 
@@ -1297,10 +1307,8 @@ public class Player extends Creature {
                 DAOManager.getDAO(PlayerSkillListDAO.class).storeSkills(player);
                 DAOManager.getDAO(PlayerQuestListDAO.class).store(player);
                 DAOManager.getDAO(PlayerDAO.class).storePlayer(player);
-            }
-            catch (Exception ex) {
-                log.error("Exception during periodic saving of player " + player.getName() + " "
-                        + ex.getCause() != null ? ex.getCause().getMessage() : "null");
+            } catch (Exception ex) {
+                log.error("Exception during periodic saving of player " + player.getName() + " " + ex.getCause() != null ? ex.getCause().getMessage() : "null");
             }
         }
     }
@@ -1317,10 +1325,8 @@ public class Player extends Creature {
             try {
                 DAOManager.getDAO(InventoryDAO.class).store(player);
                 DAOManager.getDAO(ItemStoneListDAO.class).save(player);
-            }
-            catch (Exception ex) {
-                log.error("Exception during periodic saving of player items " + player.getName() + " "
-                        + ex.getCause() != null ? ex.getCause().getMessage() : "null");
+            } catch (Exception ex) {
+                log.error("Exception during periodic saving of player items " + player.getName() + " " + ex.getCause() != null ? ex.getCause().getMessage() : "null");
             }
         }
     }
@@ -1451,6 +1457,7 @@ public class Player extends Creature {
         if (time > 0) {
             final Date endDate = new Date(bannedFromWorldDate.getTime() + bannedFromWorldDuring);
             taskToUnbanFromWorld = ThreadPoolManager.getInstance().schedule(new Runnable() {
+                @Override
                 public void run() {
                     World world = World.getInstance();
                     Player player = world.findPlayer(playerName);
@@ -1524,31 +1531,27 @@ public class Player extends Creature {
     /**
      * @param editmode
      */
-    public void setEditMode(boolean edit_mode)
-    {
+    public void setEditMode(boolean edit_mode) {
         this.edit_mode = edit_mode;
     }
 
     /**
      * @return editmode
      */
-    public boolean isInEditMode()
-    {
+    public boolean isInEditMode() {
         return edit_mode;
     }
 
     private boolean noExperienceGain = false;
 
-    public void setNoExperienceGain(boolean noExperienceGain)
-    {
+    public void setNoExperienceGain(boolean noExperienceGain) {
         this.noExperienceGain = noExperienceGain;
     }
 
     /**
      * @return
      */
-    public boolean isNoExperienceGain()
-    {
+    public boolean isNoExperienceGain() {
         return noExperienceGain;
     }
 
@@ -1583,11 +1586,11 @@ public class Player extends Creature {
      * @param questId
      * @param return boolean value if Quest Complete or not.
      */
-    public boolean isQuestComplete(int questId)
-    {
+    public boolean isQuestComplete(int questId) {
         QuestState questState = questStateList.getQuestState(questId);
-        if (questState == null)
+        if (questState == null) {
             return false;
+        }
         return (questState.getStatus() == QuestStatus.COMPLETE);
     }
 
@@ -1597,27 +1600,33 @@ public class Player extends Creature {
      * @param questId
      * @param return boolean value if Quest Started or not.
      */
-    public boolean isQuestStart(int questId)
-    {
+    public boolean isQuestStart(int questId) {
         QuestState questState = questStateList.getQuestState(questId);
-        if (questState == null)
+        if (questState == null) {
             return false;
+        }
         return (questState.getStatus() == QuestStatus.START);
     }
 
-        /**
+    /**
      * @param connectedChat the connectedChat to set
      */
-    public void setConnectedChat(boolean connectedChat)
-    {
+    public void setConnectedChat(boolean connectedChat) {
         this.connectedChat = connectedChat;
     }
 
     /**
      * @return the connectedChat
      */
-    public boolean isConnectedChat()
-    {
+    public boolean isConnectedChat() {
         return connectedChat;
+    }
+
+    public int getNrCategoryInGameShop() {
+        return nrCategoryinGameShop;
+    }
+
+    public void setNrCategoryInGameShop(int nrCategoryinGameShop) {
+        this.nrCategoryinGameShop = nrCategoryinGameShop;
     }
 }

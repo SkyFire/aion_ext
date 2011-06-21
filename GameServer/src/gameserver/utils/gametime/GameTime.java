@@ -70,7 +70,7 @@ public class GameTime {
     /**
      *
      */
-    private void analyzeDayTime() {
+    public void analyzeDayTime() {
         DayTime newDateTime = null;
         int hour = getHour();
         if (hour > 21 || hour < 4)

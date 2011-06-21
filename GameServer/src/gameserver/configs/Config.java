@@ -66,8 +66,8 @@ public class Config {
             ConfigurableProcessor.process(DatabaseConfig.class, props);
             ConfigurableProcessor.process(HTMLConfig.class, props);
             ConfigurableProcessor.process(CraftConfig.class, props);
-        }
-        catch (Exception e) {
+            ConfigurableProcessor.process(InGameShopConfig.class, props);
+        } catch (Exception e) {
             log.fatal("Can't load gameserver configuration: ", e);
             throw new Error("Can't load gameserver configuration: ", e);
         }
