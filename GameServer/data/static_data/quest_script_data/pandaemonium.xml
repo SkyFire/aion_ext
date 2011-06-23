@@ -34,8 +34,9 @@
 	<!-- 2912: Follow the Ribbon handled by script -->
 	<!-- 2913: A Chain of Debt handled by script -->
 	<!-- 2914: A Token of Lost Love handled by script -->
-	<!-- 2915: TODO: Helping Apellbine -->
-	<!-- 2916: TODO: Man in the Long Black Robe -->
+	<!-- Helping Apellbine -->
+	<item_collecting id="2915" start_npc_id="204173"/>
+	<!-- 2916: Man in the Long Black Robe handled by script -->
 	<!-- 2917: Arekedil's Heritage handled by script -->
 	<!-- 2918: Deep Maternal Love handled by script -->
 	<!-- 2919: TODO: Book of Oblivion -->
@@ -50,7 +51,7 @@
 	<!-- Heart in Love -->
 	<item_collecting id="2926" start_npc_id="204261" />
 	<!-- [Spy/Group] A Many-Splendored Ring -->
-	<item_collecting id="2927" start_npc_id="204261" />
+	<item_collecting id="2927" start_npc_id="204261" end_npc_id="204261" />
 	<!-- 2928: Power of Love handled by script -->
 	<!-- 2931: [Expert] Weaponsmithing Expert -->
 	<report_to start_npc_id="204104" end_npc_id="204052" id="2931" item_id="182207020" />
@@ -66,7 +67,7 @@
 	<report_to start_npc_id="204110" end_npc_id="204052" id="2936" item_id="182207025" />
 	<!-- Unexpected Reward -->
 	<report_to id="2937" start_npc_id="204092" end_npc_id="798059" />
-	<!-- 2938: TODO: Secret Library Access -->
+	<!-- 2938: Secret Library Access handled by script-->
 	<!-- 2939: Weapon for Fraiban -->
 	<report_to id="2939" start_npc_id="204104" end_npc_id="278010" item_id="182207027" />
 	<!-- 2940: Kinterun's Package -->
@@ -94,8 +95,8 @@
 	<report_to id="2955" start_npc_id="204242" end_npc_id="204127" />
 	<!-- Preparing the Banquet -->
 	<item_collecting id="2956" start_npc_id="204127" />
-	<!-- 2957: TODO: Flowers for the Banquet -->
-	<!-- 2958: TODO: Last Minute Worries -->
+	<!-- 2957:Flowers for the Banquet handled by script -->
+	<!-- 2958:Last Minute Worries handled by script -->
 	<!-- You Never Call, You Never Write -->
 	<report_to id="2959" start_npc_id="204211" end_npc_id="204164" />
 	<!-- Peace Offering -->
@@ -139,19 +140,19 @@
 	<!-- Ingredients for Dye -->
 	<report_to id="2984" start_npc_id="204138" end_npc_id="204121" item_id="182207064" />
 	<!-- 2985: An Expert's Reward -->
-	<report_to id="2985" start_npc_id="204052" end_npc_id="204072" />
-	<!-- 4201: TODO: [Group] Sandblossom Wine -->
+	<!-- 4201:[Group] Sandblossom Wine -->
 	<!-- [Group] Request of a Wine Lover -->
 	<item_collecting id="4202" start_npc_id="204173" action_item_id="700523" />
 	<!-- [Group] Anikiki's Taming Manual -->
 	<item_collecting id="4203" start_npc_id="204283" />
 	<!-- 4204: Deliver the Taming Manual -->
-	<report_to id="4204" start_npc_id="204283" end_npc_id="279008" />
+	<report_to id="4204" start_npc_id="204283" end_npc_id="279008" item_id="182209100"/>
 	<!-- [Group] Hat of the Steel Beard Pirates -->
 	<item_collecting id="4206" start_npc_id="204285" />
 	<!-- [Group] Log of the Steel Rake -->
-	<item_collecting id="4207" start_npc_id="204284" />
-	<!-- 4209: TODO: [Group] Rendezvous with the Spy -->
+	<item_collecting id="4207" start_npc_id="204284"  action_item_id="700524"/>
+	<!-- [Group] Rendezvous with the Spy -->
+    <report_to id="4209" start_npc_id="204284" end_npc_id="798331"/>
 	<!-- 4210: TODO: [Group] Missing Haorunerk -->
 	<!-- 4212: TODO: [Group] Missing Sidrunerk -->
 	<!-- [Group] Unlucky Nekai -->
@@ -185,7 +186,8 @@
 	<item_collecting id="4910" start_npc_id="798317" />
 	<!-- [Group] Hilt of Agrif's Rage -->
 	<item_collecting id="4911" start_npc_id="798317" />
-	<!-- 4912: TODO: [Group] The Curse of Agrif's Rage -->
+	<!-- [Group] The Curse of Agrif's Rage -->
+	<item_collecting id="4912" start_npc_id="798317"/>
 	<!-- A Future Threat -->
 	<report_to id="4913" start_npc_id="204182" end_npc_id="279027" />
 	<!-- 4914: TODO: Lifeform Remodeling Report -->
@@ -199,7 +201,8 @@
 	<item_collecting id="4918" start_npc_id="798358" />
 	<!-- [Group] Acquiring the Drazma -->
 	<item_collecting id="4919" start_npc_id="798358" />
-	<!-- 4920: TODO: [Group] Making the Activated Surkana -->
+	<!-- [Group] Making the Activated Surkana -->
+	<report_to id="4920" start_npc_id="730212" end_npc_id="798358"/>
 	<!-- 4921: Chopirunerk's Reward -->
 	<report_to start_npc_id="798358" end_npc_id="279022" item_id="182207128" id="4921" />
 	<!-- 4922: The Gladiator Preceptor's Test handled by script -->
@@ -255,23 +258,29 @@
 	<report_to id="4964" start_npc_id="204286" end_npc_id="204051" />
 	<!-- 4965: TODO: Secretive Communication -->
 	<report_to id="4965" start_npc_id="204182" end_npc_id="204207" item_id="182207135" />
-	<!-- 4966: TODO: [Growth] Ninis's First Charm -->
-	<!-- 4967: TODO: [Growth] Ninis's Second Charm -->
-	<!-- 4968: TODO: [Growth] Ninis's Third Charm -->
-	<!-- 4969: TODO: [Growth] Ninis's Fourth Charm -->
-	<!-- 4970: TODO: The Fashionistas -->
-	<!-- 4971: TODO: Project Runway -->
-	<!-- 4972: TODO: Judge Not -->
-	<!-- 4973: TODO: Marra's Worry -->
-	<!-- 4974: TODO: The Secret of His Success -->
+	<!-- 4966: [Growth] Ninis's First Charm -->
+	<!-- 4967: [Growth] Ninis's Second Charm -->
+	<!-- 4968: [Growth] Ninis's Third Charm -->
+	<!-- 4969: [Growth] Ninis's Fourth Charm -->
+	<!-- 4970:  The Fashionistas -->
+	<!-- 4971:  Project Runway -->
+	<!-- 4972:  Judge Not -->
+	<!-- 4973:  Marra's Worry -->
+	<!-- 4974:  The Secret of His Success -->
 	<!-- 4975: Moorinerk's Offer -->
 	<item_collecting id="4975" start_npc_id="204283" />
 	<!-- 4976: TODO: A Settler's Ambition -->
 	<!-- 4977: [Coin/Group] Drana Gluttony -->
-	<monster_hunt start_npc_id="203385" id="4977">
-		<monster_infos var_id="0" npc_id="214880" max_kill="8"/>
-		<monster_infos var_id="0" npc_id="215388" max_kill="8"/>
-		<monster_infos var_id="0" npc_id="215389" max_kill="8"/>
+	<monster_hunt id="4977" start_npc_id="203385">
+		<monster_infos var_id="0" max_kill="8" npc_id="214850"/>
+		<monster_infos var_id="0" max_kill="8" npc_id="214851"/>
+		<monster_infos var_id="0" max_kill="8" npc_id="214849"/>
+		<monster_infos var_id="0" max_kill="8" npc_id="215389"/>
+		<monster_infos var_id="0" max_kill="8" npc_id="214880"/>
+		<monster_infos var_id="0" max_kill="8" npc_id="215388"/>
+		<monster_infos var_id="0" max_kill="8" npc_id="214896"/>
+		<monster_infos var_id="0" max_kill="8" npc_id="214897"/>
+		<monster_infos var_id="0" max_kill="8" npc_id="214895"/>
 	</monster_hunt>
 	<!-- 4978: [Coin/Group] Safecracking -->
 	<monster_hunt start_npc_id="204286" id="4978">
@@ -285,24 +294,37 @@
 	<item_collecting id="9551" start_npc_id="204209" />
 	<!-- [Event] Runaway Invitations -->
 	<item_collecting id="9552" start_npc_id="204209" />
-	<!-- 29000: TODO: [Expert] Essencetapper's Test -->
-	<!-- 29001: TODO: [Expert] Essencetapping Expert -->
-	<!-- 29002: TODO: [Expert] Aethertapper's Test -->
-	<!-- 29003: TODO: [Expert] Aethertapping Expert -->
+	<!-- 29000: [Expert] Essencetapper's Test -->
+	<!-- [Expert] Essencetapping Expert -->
+	<report_to id="29001" start_npc_id="204096" end_npc_id="798800" item_id="182207141"/>
+	<!-- 29002: [Expert] Aethertapper's Test -->
+	<!-- [Expert] Aethertapping Expert -->
+	<report_to id="29003" start_npc_id="204257" end_npc_id="798800" item_id="182207142"/>
 	<!-- 29004: Veldina's Call handled by script -->
 	<!-- 29008: TODO: [Master] Weaponsmith's Potential -->
-	<!-- 29009: TODO: [Master] Weaponsmithing Master -->
-	<!-- 29014: TODO: [Master] Armorsmith's Potential -->
-	<!-- 29015: TODO: [Master] Armorsmithing Master -->
-	<!-- 29020: TODO: [Master] Tailor's Potential -->
-	<!-- 29021: TODO: [Master] Tailoring Master -->
-	<!-- 29026: TODO: [Master] Handicrafter's Potential -->
-	<!-- 29027: TODO: [Master] Handicrafting Master -->
-	<!-- 29032: TODO: [Master] Alchemist's Potential -->
-	<!-- 29033: TODO: [Master] Alchemy Master -->
-	<!-- 29038: TODO: [Master] Cook's Potential -->
-	<!-- 29039: TODO: [Master] Cooking Master -->
-	<!-- 29040: TODO: Mane's Best Friend -->
+	<!-- [Master] Weaponsmithing Master -->
+	<report_to id="29009" start_npc_id="204104" end_npc_id="798800" item_id="182207143"/>
+	<!-- 29014:[Master] Armorsmith's Potential -->
+	<!-- [Master] Armorsmithing Master -->
+	<report_to id="29015" start_npc_id="204106" end_npc_id="798800" item_id="182207144"/>
+	<!-- 29020:[Master] Tailor's Potential -->
+	<!-- [Master] Tailoring Master -->
+	<report_to id="29021" start_npc_id="204110" end_npc_id="798800" item_id="182207145"/>
+	<!-- 29026:[Master] Handicrafter's Potential -->
+	<!-- [Master] Handicrafting Master -->
+	<report_to id="29027" start_npc_id="204108" end_npc_id="798800" item_id="182207146"/>
+	<!-- 29032:[Master] Alchemist's Potential -->
+	<!-- [Master] Alchemy Master -->
+	<report_to id="29033" start_npc_id="204102" end_npc_id="798800" item_id="182207147"/>
+	<!-- 29038:[Master] Cook's Potential -->
+	<!-- [Master] Cooking Master -->
+	<report_to id="29039" start_npc_id="204100" end_npc_id="798800" item_id="182207148"/>
+	<!-- Mane's Best Friend -->
+	<report_to id="29040" start_npc_id="798385" end_npc_id="798443"/>
+	<!-- Black Clouds Stop Play -->
+	<report_to id="29041" start_npc_id="204051" end_npc_id="204286"/>
+	<!-- An Awkward Alliance -->
+	<item_collecting id="29042" start_npc_id="204286"/>
 	<!-- 29043: [Daily] Flower Power -->
 	<item_collecting id="29043" start_npc_id="798445" />
 </quest_scripts>

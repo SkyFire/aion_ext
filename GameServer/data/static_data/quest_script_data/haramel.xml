@@ -16,37 +16,106 @@
 	You should have received a copy of the GNU Lesser Public License
 	along with this software.  If not, see <http://www.gnu.org/licenses/>.
 -->
-
-	<!-- Shugo Indemnity (Elyos Only) -->
-	<item_collecting id="18501" start_npc_id="799522" end_npc_id="799523"/>
-	<!-- The Maltese Odium (Elyos Only) -->
-	<report_to start_npc_id="799523" end_npc_id="798001" id="18503"/>
+    <!-- 18500: Big Kinah handled by script -->
+	<!-- 18501: Shugo Indemnity handled by script -->
+	<!-- The Maltese Odium -->
+	<item_collecting id="18503" start_npc_id="799523" end_npc_id="798001" action_item_id="700834"/>
+	<!-- A Touch of Odium -->
+	<monster_hunt id="18504" start_npc_id="203166">
+		<monster_infos var_id="0" max_kill="1" npc_id="216898"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216899"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216901"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216902"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216903"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216904"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216905"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216906"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216907"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216897"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216909"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216910"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216911"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216912"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216915"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216908"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216916"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216919"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216920"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216921"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216922"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="217025"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="217067"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="217108"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="282041"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="282042"/>
+	</monster_hunt>
+	<!-- The Big Sleep -->
+	<item_collecting id="18505" start_npc_id="203167"/>
 	<!-- The Third Shugo (Elyos Only) -->
 	<report_to start_npc_id="799523" end_npc_id="799524" id="18506"/>
+	<!-- 18507 The Big Boss andled by script -->
+	<monster_hunt id="18507" start_npc_id="799524" end_npc_id="203166">
+		<monster_infos var_id="0" max_kill="1" npc_id="216922"/>
+	</monster_hunt>
 	<!-- A Handshake Deal (Elyos Only) -->
 	<monster_hunt start_npc_id="799522" end_npc_id="799523" id="18508">
 		<monster_infos var_id="0" npc_id="216898" max_kill="2"/>
 		<monster_infos var_id="1" npc_id="216901" max_kill="3"/>
 		<monster_infos var_id="2" npc_id="216902" max_kill="3"/>
 	</monster_hunt>
-	<!-- This Shugo For Hire (Elyos Only) -->
-	<item_collecting start_npc_id="799523" end_npc_id="798001" id="18509"/>
-	<!-- Out Of The Past (Elyos Only) -->
-	<item_collecting start_npc_id="799522" end_npc_id="799523" id="18511"/>
-	<!-- The Price Of Loyalty (Asmodian Only) -->
-	<item_collecting id="28501" start_npc_id="799522" end_npc_id="799523"/>
-	<!-- Odella For Chauminerk (Asmodian Only) -->
-	<report_to start_npc_id="799523" end_npc_id="798029" item_id="182212016" id="28503"/>
+	<!-- 18509 This Shugo For Hire (Elyos Only) -->
+	<!-- 18510: Murder, My Shugo  handled by script -->
+	<!-- 18511: Out of the Past  handled by script -->
+	
+    <!-- Asmodian Quests --> 
+	<!-- 28500: Odella, Odella, Where Art Thou?  handled by script -->
+	<!-- 28501: The Price of Loyalty  handled by script -->
+	<!-- Odella for Chauminerk -->
+	<item_collecting id="28503" start_npc_id="799523" end_npc_id="798029" action_item_id="700834"/>
+	<!-- Follow the Leaders- -and Kill 'em -->
+	<monster_hunt id="28504" start_npc_id="203649">
+		<monster_infos var_id="0" max_kill="1" npc_id="216898"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216899"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216901"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216902"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216903"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216904"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216905"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216906"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216907"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216897"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216909"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216910"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216911"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216912"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216915"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216908"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216916"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216919"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216920"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216921"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="216922"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="217025"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="217067"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="217108"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="282041"/>
+		<monster_infos var_id="0" max_kill="1" npc_id="282042"/>
+	</monster_hunt>
+	<!-- Overseers Under Attack -->
+	<item_collecting id="28505" start_npc_id="203659"/>
 	<!-- Guess Who (Asmodian Only) -->
 	<report_to start_npc_id="799523" end_npc_id="799524" id="28506"/>
+	<!-- Hammertime -->
+	<monster_hunt id="28507" start_npc_id="799524" end_npc_id="203649">
+		<monster_infos var_id="0" max_kill="1" npc_id="216922"/>
+	</monster_hunt>
 	<!-- Securing Moofrenerk's Retreat (Asmodian Only) -->
 	<monster_hunt start_npc_id="799522" end_npc_id="799523" id="28508">
 		<monster_infos var_id="0" npc_id="216898" max_kill="2"/>
 		<monster_infos var_id="1" npc_id="216901" max_kill="3"/>
 		<monster_infos var_id="2" npc_id="216902" max_kill="3"/>
 	</monster_hunt>
-	<!-- What is Inside the Box? (Asmodian Only) -->
-	<item_collecting start_npc_id="799523" end_npc_id="798029" id="28509"/>
-	<!-- The Soup? Nutsy! (Asmodian Only) -->
-	<item_collecting start_npc_id="799522" end_npc_id="799523" id="28511"/>
+	<!-- 28509: What is Inside the Box?  handled by script -->
+	<!-- 28510: Destroy the Haramel Facilities  handled by script -->
+	<!-- 28511: The Soup? Nutsy! handled by script -->
 </quest_scripts>

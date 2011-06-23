@@ -16,19 +16,19 @@
 	You should have received a copy of the GNU Lesser Public License
 	along with this software.  If not, see <http://www.gnu.org/licenses/>.
  -->
-	<!-- 10020: TODO: Proving Yourself to Outremus -->
+	<!-- 10020: Proving Yourself to Outremus -->
 	<!-- 10021: TODO: Friends for Life -->
-	<!-- 10022: TODO: Support the Inggison Outpost -->
-	<!-- 10023: TODO: Sulla's Startling Discovery -->
-	<!-- 10024: TODO: Will the Aether Rain? -->
-	<!-- 10025: TODO: It's Better! It's an Obelisk! -->
-	<!-- 10026: TODO: Secret of Inggison -->
+	<!-- 10022: Support the Inggison Outpost -->
+	<!-- 10023: Sulla's Startling Discovery -->
+	<!-- 10024: Will the Aether Rain? -->
+	<!-- 10025: It's Better! It's an Obelisk! -->
+	<!-- 10026: Secret of Inggison -->
 	<!-- 10027: TODO: Unable to Pick up in ?? State 2 -->
 	<!-- 10028: TODO: Unable to Pick up in ?? State 3 -->
 	<!-- 10029: TODO: Unable to Pick up in ?? State 4 -->
 	<!-- 10030: TODO: Unable to Pick up in ?? State 5 -->
-	<!-- 11000: TODO: Wisplight Chat Tour -->
-	<!-- 11001: TODO: Kind Meiria -->
+	<!-- 11000: Wisplight Chat Tour -->
+	<!-- 11001: Kind Meiria -->
 	<!-- 11002: Oppressed! All Right, Ignored -->
 	<monster_hunt start_npc_id="798939" id="11002">
 		<monster_infos var_id="0" npc_id="215780" max_kill="15"/>
@@ -44,8 +44,8 @@
 	<!-- 11006: TODO: Testing the Waters -->
 	<!-- 11007: TODO: Finding Lephar -->
 	<!-- 11008: Letter Of Encouragement  handled by script -->
-	<!-- 11009: TODO: Meiria's Friendly Suggestion -->
-	<!-- 11010: TODO: Angel to the Wounded -->
+	<!-- 11009: Meiria's Friendly Suggestion -->
+	<!-- 11010: Angel to the Wounded -->
 	<!-- 11011: Healing Elixir -->
 	<item_collecting id="11011" start_npc_id="799071" action_item_id="700908"/>
 	<!-- 11012: TODO: Practical Nursing -->
@@ -68,7 +68,6 @@
 	<!-- 11020: TODO: [Mithril Coin Reward] CoinReward_Priest -->
 	<!-- 11021: TODO: MithrilCoin_GamblingQuest -->
 	<!-- 11022: [Coin] For the Scholars -->
-	<item_collecting start_npc_id="798914" id="11022"/>
 	<!-- 11023: Lapide Preservation -->
 	<monster_hunt start_npc_id="798951" id="11023">
 		<monster_infos var_id="0" npc_id="215498" max_kill="10"/>
@@ -82,9 +81,15 @@
 	<item_collecting id="11025" start_npc_id="798950"/>
 	<!-- 11026: Solid Evidence handled by script -->
 	<!-- 11027: Stelvia's Sanctum Support Structure -->
-	<monster_hunt start_npc_id="798951" id="11027">
-		<monster_infos var_id="0" npc_id="215517" max_kill="7"/>
-		<monster_infos var_id="1" npc_id="215516" max_kill="8"/>
+	<monster_hunt id="11027" start_npc_id="798951">
+		<monster_infos var_id="0" max_kill="7" npc_id="215517"/>
+		<monster_infos var_id="0" max_kill="7" npc_id="215519"/>
+		<monster_infos var_id="0" max_kill="7" npc_id="216692"/>
+		<monster_infos var_id="0" max_kill="7" npc_id="216648"/>
+		<monster_infos var_id="1" max_kill="8" npc_id="215516"/>
+		<monster_infos var_id="1" max_kill="8" npc_id="215518"/>
+		<monster_infos var_id="1" max_kill="8" npc_id="216691"/>
+		<monster_infos var_id="1" max_kill="8" npc_id="216647"/>
 	</monster_hunt>
 	<!-- 11028: Fluid Nature of Evolution -->
 	<item_collecting id="11028" start_npc_id="798951"/>
@@ -99,51 +104,77 @@
 	<monster_hunt start_npc_id="798960" id="11030">
 		<monster_infos var_id="0" npc_id="216486" max_kill="1"/>
 	</monster_hunt>
-	<!-- 11031: TODO: Can I Eat It? -->
-	<!-- 11032: TODO: Everything's Better With Tentacles -->
-	<!-- 11033: TODO: You Make Me Sick -->
+	<!-- 11031:  Can I Eat It? -->
+	<!-- 11032:  Everything's Better With Tentacles -->
+	<!-- 11033:  You Make Me Sick -->
 	<!-- 11034: Stelvia's Sanctum Support Structure -->
-	<monster_hunt start_npc_id="798957" id="11034">
-		<monster_infos var_id="0" npc_id="215576" max_kill="12"/>
-		<monster_infos var_id="1" npc_id="215528" max_kill="10"/>
+	<monster_hunt id="11034" start_npc_id="798957">
+		<monster_infos var_id="0" max_kill="12" npc_id="215576"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="215528"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="215528"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="215529"/>
 	</monster_hunt>
 	<!-- 11035: A Pack Of Plumas -->
-	<monster_hunt start_npc_id="798955" id="11035">
-		<monster_infos var_id="0" npc_id="215530" max_kill="15"/>
-		<monster_infos var_id="1" npc_id="216487" max_kill="1"/>
+	<monster_hunt id="11035" start_npc_id="798955">
+		<monster_infos var_id="0" max_kill="15" npc_id="215530"/>
+		<monster_infos var_id="0" max_kill="15" npc_id="215531"/>
+		<monster_infos var_id="1" max_kill="1" npc_id="216487"/>
 	</monster_hunt>
 	<!-- 11036: TODO: Uncommon Recipe -->
 	<!-- 11037: An Amoral Meal -->
 	<item_collecting id="11037" start_npc_id="798956"/>
 	<!-- 11038: [Group] Squip's Lamentation -->
-	<monster_hunt start_npc_id="799035" id="11038">
-		<monster_infos var_id="0" npc_id="215550" max_kill="13"/>
-		<monster_infos var_id="1" npc_id="215562" max_kill="10"/>
+	<monster_hunt id="11038" start_npc_id="799035">
+		<monster_infos var_id="0" max_kill="13" npc_id="215550"/>
+		<monster_infos var_id="0" max_kill="13" npc_id="216705"/>
+		<monster_infos var_id="0" max_kill="13" npc_id="216655"/>
+		<monster_infos var_id="0" max_kill="13" npc_id="216709"/>
+		<monster_infos var_id="0" max_kill="13" npc_id="215555"/>
+		<monster_infos var_id="0" max_kill="13" npc_id="215551"/>
+		<monster_infos var_id="0" max_kill="13" npc_id="216466"/>
+		<monster_infos var_id="0" max_kill="13" npc_id="216706"/>
+		<monster_infos var_id="0" max_kill="13" npc_id="216710"/>
+		<monster_infos var_id="0" max_kill="13" npc_id="216707"/>
+		<monster_infos var_id="0" max_kill="13" npc_id="215553"/>
+		<monster_infos var_id="0" max_kill="13" npc_id="216656"/>
+		<monster_infos var_id="0" max_kill="13" npc_id="215552"/>
+		<monster_infos var_id="0" max_kill="13" npc_id="216467"/>
+		<monster_infos var_id="0" max_kill="13" npc_id="216708"/>
+		<monster_infos var_id="0" max_kill="13" npc_id="215554"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="215564"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="216469"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="215565"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="216658"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="215563"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="215567"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="216468"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="216657"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="215562"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="216717"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="215566"/>
 	</monster_hunt>
 	<!-- 11039: [Group] Undying Sorrow -->
 	<item_collecting start_npc_id="799035" id="11039"/>
 	<!-- 11040: TODO: Squamp on the Cooking Plate -->
 	<!-- 11041: Marica's Collection -->
-	<item_collecting start_npc_id="798955" id="11041"/>
 	<!-- 11042: [Coin/Group] Example: Shulacks -->
 	<item_collecting id="11042" start_npc_id="798957"/>
-	<!-- 11043: TODO: Core of the Problem -->
+	<!-- 11043: Core of the Problem -->
 	<!-- 11044: Pompous Adias -->
 	<item_collecting id="11044" start_npc_id="798953"/>
 	<!-- 11045: Crosia's Circumstances -->
 	<monster_hunt start_npc_id="798952" id="11045">
 		<monster_infos var_id="0" npc_id="215525" max_kill="22"/>
 	</monster_hunt>
-	<!-- 11046: TODO: That Pretty Box -->
+	<!-- 11046: That Pretty Box -->
 	<!-- 11047: [Coin] What's Up, Brohum? -->
-	<item_collecting id="11047" start_npc_id="798952"/>
 	<!-- 11048: [Coin] Taloc Rebirth Operation -->
 	<monster_hunt start_npc_id="798954" id="11048">
 		<monster_infos var_id="0" npc_id="216139" max_kill="329"/>
 		<monster_infos var_id="0" npc_id="215464" max_kill="231"/>
 		<monster_infos var_id="1" npc_id="215454" max_kill="77"/>
 	</monster_hunt>
-	<!-- 11050: TODO: Inggison Coin Fountain -->
+	<!-- 11050: Inggison Coin Fountain -->
 	<!-- 11056: TODO: [Spy/Alliance] Elimination Order -->
 	<!-- 11057: TODO: [Spy/Alliance] Stanis's Secret Order -->
 	<!-- 11058: TODO: [Spy/Alliance] Temenos's Secret Order -->
@@ -160,26 +191,30 @@
 	<item_collecting id="11066" start_npc_id="799049"/>
 	<!-- 11067: [PvP] Temenos's Request -->
 	<item_collecting id="11067" start_npc_id="799049"/>
-	<!-- 11068: TODO: A Mysterious Wind -->
-	<!-- 11069: TODO: Mookie Travel Tips -->
-	<!-- 11070: TODO: Crafty Messenger -->
+	<!-- 11068: A Mysterious Wind -->
+	<!-- 11069: Mookie Travel Tips -->
+	<!-- 11070: Crafty Messenger -->
 	<!-- 11071: Fish With Feet -->
 	<monster_hunt start_npc_id="798943" id="11071">
 		<monster_infos var_id="0" npc_id="215532" max_kill="25"/>
 	</monster_hunt>
-	<!-- 11072: TODO: Delus, Culinary Victim -->
+	<!-- 11072: Delus, Culinary Victim -->
 	<!-- 11073: Night Hunter -->
-	<monster_hunt start_npc_id="798936" id="11073">
-		<monster_infos var_id="0" npc_id="215534" max_kill="11"/>
-		<monster_infos var_id="1" npc_id="215528" max_kill="20"/>
+	<monster_hunt id="11073" start_npc_id="798936">
+		<monster_infos var_id="0" max_kill="11" npc_id="215534"/>
+		<monster_infos var_id="0" max_kill="11" npc_id="215535"/>
+		<monster_infos var_id="1" max_kill="20" npc_id="215528"/>
+		<monster_infos var_id="1" max_kill="20" npc_id="215529"/>
 	</monster_hunt>
 	<!-- 11074: Ride The Wind -->
 	<report_to start_npc_id="798938" end_npc_id="799025" id="11074"/>
 	<!-- 11075: The Netherworld Breathes -->
 	<report_to start_npc_id="798939" end_npc_id="799067" id="11075"/>
+	<!-- 11077: A Weapon of Worth -->
 	<!-- 11100: Allergic To What? -->
-	<monster_hunt start_npc_id="798983" id="11100">
-		<monster_infos var_id="0" npc_id="215593" max_kill="20"/>
+	<monster_hunt id="11100" start_npc_id="798983">
+		<monster_infos var_id="0" max_kill="20" npc_id="215593"/>
+		<monster_infos var_id="0" max_kill="20" npc_id="215594"/>
 	</monster_hunt>
 	<!-- 11101: Dragon's Breath -->
 	<item_collecting id="11101" start_npc_id="798981"/>
@@ -190,15 +225,14 @@
 		<monster_infos var_id="2" npc_id="216491" max_kill="1"/>
 	</monster_hunt>
 	<!-- 11103: Finite for a Walk -->
-	<item_collecting id="11103" start_npc_id="798933" end_npc_id="798942"/>
 	<!-- 11104: Savinus's Torn Sack -->
 	<item_collecting start_npc_id="798978" id="11104"/>
-	<!-- 11105: TODO: A Jewel to Quiet Her -->
-	<!-- 11106: TODO: Rewriting History -->
-	<!-- 11107: TODO: Comfort is a Box -->
+	<!-- 11105: A Jewel to Quiet Her -->
+	<!-- 11106: Rewriting History -->
+	<!-- 11107: Comfort is a Box -->
 	<!-- 11108: Levilus And His Leather -->
 	<item_collecting id="11108" start_npc_id="798965"/>
-	<!-- 11109: TODO: The Negotiators -->
+	<!-- 11109: The Negotiators -->
 	<!-- 11110: Killing Time -->
 	<monster_hunt start_npc_id="799075" id="11110">
 		<monster_infos var_id="0" npc_id="217039" max_kill="10"/>
@@ -214,13 +248,15 @@
 	<item_collecting id="11114" start_npc_id="798984"/>
 	<!-- 11115: In Our Hour Of Need -->
 	<item_collecting id="11115" start_npc_id="798985"/>
-	<!-- 11116: TODO: Munching Mookie Pickles -->
-	<!-- 11117: TODO: Medication for Setzkiki -->
-	<!-- 11118: TODO: Making Setzkiki Laugh -->
+	<!-- 11116: Munching Mookie Pickles -->
+	<!-- 11117: Medication for Setzkiki -->
+	<!-- 11118: Making Setzkiki Laugh -->
 	<!-- 11119: Menacing Creature -->
-	<monster_hunt start_npc_id="798989" id="11119">
-		<monster_infos var_id="0" npc_id="215658" max_kill="15"/>
-		<monster_infos var_id="1" npc_id="215652" max_kill="13"/>
+	<monster_hunt id="11119" start_npc_id="798989">
+		<monster_infos var_id="0" max_kill="15" npc_id="215658"/>
+		<monster_infos var_id="0" max_kill="15" npc_id="215659"/>
+		<monster_infos var_id="1" max_kill="13" npc_id="215652"/>
+		<monster_infos var_id="1" max_kill="13" npc_id="215653"/>
 	</monster_hunt>
 	<!-- 11120: Enter The Dragonbound -->
 	<monster_hunt start_npc_id="798991" id="11120">
@@ -240,9 +276,11 @@
 	</monster_hunt>
 	<!-- 11123: TODO: Suspicious Book -->
 	<!-- 11124: Auralia's Been Angry -->
-	<monster_hunt start_npc_id="798999" id="11124">
-		<monster_infos var_id="0" npc_id="215716" max_kill="12"/>
-		<monster_infos var_id="1" npc_id="215718" max_kill="8"/>
+	<monster_hunt id="11124" start_npc_id="798999">
+		<monster_infos var_id="0" max_kill="12" npc_id="215716"/>
+		<monster_infos var_id="0" max_kill="12" npc_id="215717"/>
+		<monster_infos var_id="1" max_kill="8" npc_id="215718"/>
+		<monster_infos var_id="1" max_kill="8" npc_id="215719"/>
 	</monster_hunt>
 	<!-- 11125: Leaking Drana -->
 	<item_collecting id="11125" start_npc_id="798996"/>
@@ -257,7 +295,6 @@
 	<item_collecting id="11128" start_npc_id="798998"/>
 	<!-- 11129: TODO: Blessing to the Agent -->
 	<!-- 11130: [Coin] Tiamat's Mark -->
-	<item_collecting id="11130" start_npc_id="798996"/>
 	<!-- 11131: TODO: Blessing to the Agent -->
 	<!-- 11132: TODO: Blessing to the Agent -->
 	<!-- 11133: TODO: Blessing to the Agent -->
@@ -266,13 +303,16 @@
 	<!-- 11136: TODO: Blessing to the Agent -->
 	<!-- 11137: TODO: Blessing to the Agent -->
 	<!-- 11138: Death Comes With A Smile -->
-	<monster_hunt start_npc_id="798981" id="11138">
-		<monster_infos var_id="0" npc_id="215597" max_kill="15"/>
+	<monster_hunt id="11138" start_npc_id="798981">
+		<monster_infos var_id="0" max_kill="15" npc_id="215597"/>
+		<monster_infos var_id="0" max_kill="15" npc_id="215598"/>
+		<monster_infos var_id="0" max_kill="15" npc_id="216724"/>
 	</monster_hunt>
-	<!-- 11139: TODO: The Bad News -->
+	<!-- 11139: The Bad News -->
 	<!-- 11140: Me Jewels Be Stoled! -->
-	<monster_hunt start_npc_id="799076" id="11140">
-		<monster_infos var_id="0" npc_id="215599" max_kill="20"/>
+	<monster_hunt id="11140" start_npc_id="799076">
+		<monster_infos var_id="0" max_kill="20" npc_id="215599"/>
+		<monster_infos var_id="0" max_kill="20" npc_id="215600"/>
 	</monster_hunt>
 	<!-- 11141: A Mother's Revenge -->
 	<monster_hunt start_npc_id="798985" id="11141">
@@ -282,9 +322,11 @@
 	<item_collecting id="11142" start_npc_id="798986"/>
 	<!-- 11143: TODO: Baby Shulack's Journey -->
 	<!-- 11144: Sueros's Headache -->
-	<monster_hunt start_npc_id="799030" id="11144">
-		<monster_infos var_id="0" npc_id="215656" max_kill="10"/>
-		<monster_infos var_id="1" npc_id="215654" max_kill="7"/>
+	<monster_hunt id="11144" start_npc_id="799030">
+		<monster_infos var_id="0" max_kill="10" npc_id="215656"/>
+		<monster_infos var_id="0" max_kill="10" npc_id="215657"/>
+		<monster_infos var_id="1" max_kill="7" npc_id="215654"/>
+		<monster_infos var_id="1" max_kill="7" npc_id="215655"/>
 	</monster_hunt>
 	<!-- 11145: Undirborg Enterprise -->
 	<monster_hunt start_npc_id="799030" id="11145">
@@ -303,13 +345,15 @@
 	</monster_hunt>
 	<!-- 11201: TODO: [League] Securing Avarice -->
 	<!-- 11202: A Safer Crater -->
-	<monster_hunt start_npc_id="799009" id="11202">
-		<monster_infos var_id="0" npc_id="215730" max_kill="10"/>
-		<monster_infos var_id="1" npc_id="215733" max_kill="12"/>
+	<monster_hunt id="11202" start_npc_id="799009">
+		<monster_infos var_id="0" max_kill="10" npc_id="215730"/>
+		<monster_infos var_id="1" max_kill="12" npc_id="215733"/>
+		<monster_infos var_id="1" max_kill="12" npc_id="215732"/>
 	</monster_hunt>
 	<!-- 11203: Essence Of Sulfur -->
 	<item_collecting id="11203" start_npc_id="799008"/>
-	<!-- 11204: TODO: For the Crater Good -->
+	<!-- 11204: For the Crater Good -->
+	<item_collecting id="11204" start_npc_id="799008"/>
 	<!-- 11205: Protect What's Ours -->
 	<item_collecting id="11205" start_npc_id="799004"/>
 	<!-- Acidproof Armor -->
@@ -322,7 +366,8 @@
 		<monster_infos var_id="0" npc_id="215746" max_kill="10"/>
 		<monster_infos var_id="1" npc_id="215752" max_kill="3"/>
 	</monster_hunt>
-	<!-- 11211: TODO: Chaser's Backpack -->
+	<!-- 11211: Chaser's Backpack -->
+	<item_collecting id="11211" start_npc_id="799010"/>
 	<!-- 11212: TODO: Balaur Records -->
 	<!-- 11213: Damn Tree Creatures -->
 	<monster_hunt start_npc_id="799019" id="11213">
@@ -334,11 +379,16 @@
 		<monster_infos var_id="0" npc_id="257065" max_kill="20"/>
 	</monster_hunt>
 	<!-- 11215: TODO: [League] Reclaim Temple of Scales -->
-	<!-- 11216: TODO: How Many Draks Does It Take To Map? -->
+	<!-- 11216: How Many Draks Does It Take To Map? -->
+	<item_collecting id="11216" start_npc_id="799017"/>
 	<!-- 11217: [Group] Seat of Civilization? -->
-	<monster_hunt start_npc_id="799017" id="11217">
-		<monster_infos var_id="0" npc_id="215768" max_kill="20"/>
-		<monster_infos var_id="1" npc_id="215773" max_kill="10"/>
+	<monster_hunt id="11217" start_npc_id="799019">
+		<monster_infos var_id="0" max_kill="20" npc_id="215768"/>
+		<monster_infos var_id="0" max_kill="20" npc_id="217043"/>
+		<monster_infos var_id="0" max_kill="20" npc_id="217044"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="215773"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="217053"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="217054"/>
 	</monster_hunt>
 	<!-- 11218: [Group] Drakanstaffs at Dawn -->
 	<item_collecting id="11218" start_npc_id="799017"/>
@@ -356,9 +406,10 @@
 	<!-- 11223: Just A Taste -->
 	<item_collecting id="11223" start_npc_id="799000"/>
 	<!-- 11224: Swords And Spectacles -->
-	<monster_hunt start_npc_id="799019" id="11224">
-		<monster_infos var_id="0" npc_id="216593" max_kill="7"/>
-		<monster_infos var_id="1" npc_id="216594" max_kill="7"/>
+	<monster_hunt id="11224" start_npc_id="799019">
+		<monster_infos var_id="0" max_kill="7" npc_id="216593"/>
+		<monster_infos var_id="0" max_kill="7" npc_id="215607"/>
+		<monster_infos var_id="1" max_kill="7" npc_id="216594"/>
 	</monster_hunt>
 	<!-- 11225: [Group] Shadows on the Road -->
 	<monster_hunt start_npc_id="799006" id="11225">
@@ -367,13 +418,7 @@
 	<!-- 11226: Pudding it Together -->
 	<item_collecting id="11226" start_npc_id="798971"/>
 	<!-- 11227: Easy As 4,3,2,1 (to see if it has not do .java)-->
-	<monster_hunt start_npc_id="799076" id="11227">
-		<monster_infos var_id="0" npc_id="217071" max_kill="1"/>
-		<monster_infos var_id="0" npc_id="217070" max_kill="1"/>
-		<monster_infos var_id="1" npc_id="217069" max_kill="1"/>
-		<monster_infos var_id="1" npc_id="217068" max_kill="1"/>
-	</monster_hunt>
-	<!-- 11228: TODO: No, He Never Returned -->
+	<!-- 11228: No, He Never Returned -->
 	<!-- 11229: Allergic Reaction (to see if it has not do .java)-->
 	<item_collecting id="11229" start_npc_id="296491"/>
 	<!-- 11230: Reian History -->
@@ -385,31 +430,22 @@
 	<!-- 11233: TODO: Suleion's Treasure -->
 	<!-- 11250: TODO: [Spy/League] Price of Agency -->
 	<!-- 11251: Greatsword Predilection -->
-	<item_collecting start_npc_id="799038" end_npc_id="798316" id="11251"/>
 	<!-- 11252: TODO: [Spy/League] Veilled Reward -->
 	<!-- 11253: Spellbook Predilection -->
-	<item_collecting start_npc_id="799038" end_npc_id="798316" id="11253"/>
 	<!-- 11254: TODO: [Spy/League] Agency's Prize -->
 	<!-- 11255: Bow Predilection -->
-	<item_collecting start_npc_id="799038" end_npc_id="798316" id="11255"/>
 	<!-- 11256: TODO: [Spy/League] Veilled Compliment -->
 	<!-- 11257: Dagger Predilection -->
-	<item_collecting start_npc_id="799038" end_npc_id="798316" id="11257"/>
 	<!-- 11258: TODO: [Spy/League] Agent's Operative -->
 	<!-- 11259: Mace Predilection -->
-	<item_collecting start_npc_id="799038" end_npc_id="798316" id="11259"/>
 	<!-- 11260: TODO: [Spy/League] Agent's Agent -->
 	<!-- 11261: Orb Predilection -->
-	<item_collecting start_npc_id="799038" end_npc_id="798316" id="11261"/>
 	<!-- 11262: TODO: [Spy/League] Agency's Effect -->
 	<!-- 11263: Polearm Predilection -->
-	<item_collecting start_npc_id="799038" end_npc_id="798316" id="11263"/>
 	<!-- 11264: TODO: [Spy/League] Agency's Toll -->
 	<!-- 11265: Staff Predilection -->
-	<item_collecting start_npc_id="799038" end_npc_id="798316" id="11265"/>
 	<!-- 11266: TODO: [Spy/League] Agency's Aftermath -->
 	<!-- 11267: Sword Predilection -->
-	<item_collecting start_npc_id="799038" end_npc_id="798316" id="11267"/>
 	<!-- 11268: Winning Veille's Favor -->
 	<item_collecting start_npc_id="798958" id="11268"/>
 	<!-- 11269: Favors for Veille -->
@@ -439,7 +475,7 @@
 	</monster_hunt>
 	<!-- 11457: Wood-n't You Know It? -->
 	<item_collecting start_npc_id="798953" action_item_id="700635" id="11457"/>
-	<!-- 11458: TODO: Adias's Report -->
+	<!-- 11458: Adias's Report -->
 	<!-- 11459: The Balance -->
 	<monster_hunt start_npc_id="798952" id="11459">
 		<monster_infos var_id="0" npc_id="215464" max_kill="40"/>
@@ -454,38 +490,30 @@
 	<!-- 30015: Sword of the Reians -->
 	<report_to start_npc_id="798903" end_npc_id="799032" id="30015"/>
 	<!-- 30016: Noble Siel's Supreme Sword -->
-	<item_collecting start_npc_id="799032" id="30016"/>
 	<!-- 30017: Greatsword of the Reians -->
-	<report_to start_npc_id="798903" end_npc_id="799032" id="30018"/>
+	<report_to id="30017" start_npc_id="798903" end_npc_id="799032"/>
 	<!-- 30018: Noble Siel's Supreme Greatsword -->
 	<!-- 30019: Polearm of the Reians -->
 	<report_to start_npc_id="798903" end_npc_id="799032" id="30019"/>
 	<!-- 30020:  Noble Siel's Supreme Polearm -->
-	<item_collecting start_npc_id="799032" id="30020"/>
 	<!-- 30021: Staff of the Reians -->
 	<report_to start_npc_id="798903" end_npc_id="799032" id="30021"/>
 	<!-- 30022: Noble Siel's Supreme Staff -->
-	<item_collecting start_npc_id="799032" id="30022"/>
 	<!-- 30023: Spellbook of the Reians -->
 	<report_to start_npc_id="798903" end_npc_id="799032" id="30023"/>
 	<!-- 30024: Noble Siel's Supreme Spellbook -->
-	<item_collecting start_npc_id="799032" id="30024"/>
 	<!-- 30025: Orb of the Reians -->
 	<report_to start_npc_id="798903" end_npc_id="799032" id="30025"/>
 	<!-- 30026: Noble Siel's Supreme Orb -->
-	<item_collecting start_npc_id="799032" id="30026"/>
 	<!-- 30027: Bow of the Reians -->
 	<report_to start_npc_id="798903" end_npc_id="799032" id="30027"/>
 	<!-- 30028: Noble Siel's Supreme Bow -->
-	<item_collecting start_npc_id="799032" id="30028"/>
 	<!-- 30029: Dagger of the Reians -->
 	<report_to start_npc_id="798903" end_npc_id="799032" id="30029"/>
 	<!-- 30030: Noble Siel's Supreme Dagger -->
-	<item_collecting start_npc_id="799032" id="30030"/>
 	<!-- 30031: Mace of the Reians -->
 	<report_to start_npc_id="798903" end_npc_id="799032" id="30031"/>
 	<!-- 30032: Noble Siel's Supreme Mace -->
-	<item_collecting start_npc_id="799032" id="30032"/>
 	<!-- 30201 Supplyparty handled by script -->
 	<!-- 30204 Pilomenes' Advice handled by script -->
 	<!-- 30205 A Monument Rubbed handled by script -->

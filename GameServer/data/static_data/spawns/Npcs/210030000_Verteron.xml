@@ -4,6 +4,14 @@
 <?xml-stylesheet type="text/css" href="../../../authors/Skyy.css" title="Contributor 2.0" alternate="no"?>
 <spawns xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="../spawns.xsd">
+	<!-- Suspicious Odium Pile -->
+	<spawn map="210030000" npcid="730304" pool="1" interval="105">
+		<object staticid="631" x="2490.0713" y="864.44049" z="100.73459" h="0"/>
+	</spawn>
+	<!-- Suspicious Odium Piece -->
+	<spawn map="210030000" npcid="730305" pool="1" interval="105">
+		<object staticid="630" x="2457.0952" y="872.57697" z="103.08709" h="0"/>
+	</spawn>
 	<!-- Abolos (NPC Normal lvl:20)-->
 	<spawn map="210030000" npcid="203126" pool="1" interval="295">
 		<object x="1282.4749" y="2167.4395" z="151.09532" h="20"/>

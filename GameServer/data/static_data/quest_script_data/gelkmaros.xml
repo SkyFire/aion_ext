@@ -34,23 +34,28 @@
 	<item_collecting id="21001" start_npc_id="799227" />
 	<!-- Cleaning Out Leftovers -->
 	<monster_hunt id="21002" start_npc_id="799228">
-		<monster_infos var_id="0" max_kill="10" npc_id="216092" />
-		<monster_infos var_id="1" max_kill="10" npc_id="216093" />
+		<monster_infos var_id="0" max_kill="10" npc_id="216092"/>
+		<monster_infos var_id="0" max_kill="10" npc_id="216096"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="216093"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="216097"/>
 	</monster_hunt>
 	<!-- 21003: TODO: Childish Revenge -->
 	<!-- 21004: Village Status Report handled by script -->
 	<!-- Distract the Balaur -->
 	<monster_hunt id="21005" start_npc_id="799228">
-		<monster_infos var_id="0" max_kill="10" npc_id="216092" />
-		<monster_infos var_id="1" max_kill="10" npc_id="216093" />
+		<monster_infos var_id="0" max_kill="10" npc_id="216092"/>
+		<monster_infos var_id="0" max_kill="10" npc_id="216096"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="216093"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="216097"/>
 	</monster_hunt>
 	<!-- 21006: TODO: Balaur Plant Research 1 -->
 	<!-- 21007: TODO: Balaur Plant Research 2 -->
 	<!-- 21008: TODO: Balaur Plant Research 3 -->
 	<!-- The Leader of the Drak -->
 	<monster_hunt id="21009" start_npc_id="799229">
-		<monster_infos var_id="0" max_kill="10" npc_id="216091" />
-		<monster_infos var_id="1" max_kill="1" npc_id="216545" />
+		<monster_infos var_id="0" max_kill="10" npc_id="216091"/>
+		<monster_infos var_id="0" max_kill="10" npc_id="216095"/>
+		<monster_infos var_id="1" max_kill="1" npc_id="216545"/>
 	</monster_hunt>
 	<!-- 21010: TODO: [Spy] Collect Balaur Village Named Drop Items -->
 	<!-- 21011: TODO: [Spy] 28 Daevas Later -->
@@ -88,8 +93,10 @@
 	<item_collecting id="21025" start_npc_id="799252" action_item_id="700723" />
 	<!-- Ecologist's Lament -->
 	<monster_hunt id="21026" start_npc_id="799253">
-		<monster_infos var_id="0" max_kill="20" npc_id="215910" />
-		<monster_infos var_id="1" max_kill="20" npc_id="215932" />
+		<monster_infos var_id="0" max_kill="20" npc_id="215910"/>
+		<monster_infos var_id="0" max_kill="20" npc_id="215911"/>
+		<monster_infos var_id="1" max_kill="20" npc_id="215932"/>
+		<monster_infos var_id="1" max_kill="20" npc_id="216443"/>
 	</monster_hunt>
 	<!-- 21027: [Group] Fearless Kantele handled by script -->
 	<!-- [Group] Fierce Strigik -->
@@ -107,8 +114,9 @@
 	<!-- 21033: Exorcising Infisto handled by script -->
 	<!-- Fearsome Condor -->
 	<monster_hunt id="21034" start_npc_id="799256">
-		<monster_infos var_id="0" max_kill="20" npc_id="215885" />
-		<monster_infos var_id="1" max_kill="1" npc_id="216555" />
+		<monster_infos var_id="0" max_kill="20" npc_id="215885"/>
+		<monster_infos var_id="0" max_kill="20" npc_id="215886"/>
+		<monster_infos var_id="1" max_kill="1" npc_id="216555"/>
 	</monster_hunt>
 	<!-- Mystery of the Aether -->
 	<item_collecting id="21035" start_npc_id="799258" />
@@ -117,20 +125,16 @@
 	<item_collecting id="21037" start_npc_id="799209" />
 	<!-- [Manastone Exchange] Stone Deal -->
 	<item_collecting id="21038" start_npc_id="799209" />
-	<!-- [Coin/Group] Beaks and Beakers -->
-	<item_collecting id="21039" start_npc_id="799213" />
+	<!-- 21039:[Coin/Group] Beaks and Beakers -->
 	<!-- [Coin] Parasite's Bane -->
 	<monster_hunt start_npc_id="799214" id="21040">
 		<monster_infos var_id="0" npc_id="216139" max_kill="329"/>
 		<monster_infos var_id="0" npc_id="215464" max_kill="231"/>
 		<monster_infos var_id="1" npc_id="215454" max_kill="77"/>
 	</monster_hunt>
-	<!-- [Coin] Collecting Dranatig -->
-	<item_collecting id="21041" start_npc_id="799216" />
-	<!-- [Coin] To Rebuild Nunglark Village -->
-	<item_collecting id="21042" start_npc_id="799215" />
-	<!-- [Coin/Group] Poaching Parchments -->
-	<item_collecting id="21043" start_npc_id="799215" />
+	<!-- 21041[Coin] Collecting Dranatig -->
+	<!-- 21042[Coin] To Rebuild Nunglark Village -->
+	<!-- 21043[Coin/Group] Poaching Parchments -->
 	<!-- 21044: TODO: [Mithril Coin Reward] Level 51 Warrior Class -->
 	<!-- 21045: TODO: [Mithril Coin Reward] Level 51 Mage Class -->
 	<!-- 21046: TODO: [Mithril Coin Reward] Level 51 Scout Class -->
@@ -147,8 +151,10 @@
 	<!-- 21063: TODO: [Spy/League] Vanquish Veille -->
 	<!-- Tricky Reinforcement Request -->
 	<report_to id="21064" start_npc_id="799249" end_npc_id="799252"/>
-	<!-- 21065: TODO: Swept Away -->
-	<!-- 21066: TODO: Dangerous Geyser -->
+	<!-- Swept Away -->
+	<report_to id="21065" start_npc_id="799231" end_npc_id="799322"/>
+	<!-- Dangerous Geyser -->
+	<report_to id="21066" start_npc_id="799232" end_npc_id="799242"/>
 	<!-- Vyuin's Orders -->
 	<report_to start_npc_id="799238" end_npc_id="799245" item_id="182207912" id="21067"/>
 	<!-- 21068: TODO: The Game is Afoot -->
@@ -160,8 +166,9 @@
 	<item_collecting id="21072" start_npc_id="799407" action_item_id="700931" />
 	<!-- 21073: Listen to My Song, Strigiks handled by script -->
 	<!-- Fated Love -->
-	<monster_hunt start_npc_id="799409" id="21074">
-		<monster_infos var_id="0" npc_id="215891" max_kill="10"/>
+	<monster_hunt id="21074" start_npc_id="799409">
+		<monster_infos var_id="0" max_kill="10" npc_id="215891"/>
+		<monster_infos var_id="0" max_kill="10" npc_id="215892"/>
 	</monster_hunt>
 	<!-- 21075: TODO: Fated Heartbreak -->
 	<!-- 21076: Breaking Out In Hives -->
@@ -169,21 +176,32 @@
 		<monster_infos var_id="0" npc_id="700722" max_kill="3"/>
 	</monster_hunt>
 	<!-- An Excellent Opportunity -->
-	<monster_hunt start_npc_id="799256" id="21077">
-		<monster_infos var_id="0" npc_id="215885" max_kill="20"/>
+	<monster_hunt id="21077" start_npc_id="799256">
+		<monster_infos var_id="0" max_kill="20" npc_id="215885"/>
+		<monster_infos var_id="0" max_kill="20" npc_id="215886"/>
 	</monster_hunt>
 	<!-- Mamuts Of Balaurea -->
 	<item_collecting id="21078" start_npc_id="799249"/>
-	<!-- 21079: TODO: Assault on the Summit -->
+	<!-- 21079: Assault on the Summit -->
+	<monster_hunt start_npc_id="799229" id="21079">
+		<monster_infos var_id="0" npc_id="217082" max_kill="2"/>
+		<monster_infos var_id="0" npc_id="217083" max_kill="2"/>
+		<monster_infos var_id="0" npc_id="217084" max_kill="2"/>
+		<monster_infos var_id="1" npc_id="217080" max_kill="1"/>
+		<monster_infos var_id="2" npc_id="217081" max_kill="1"/>
+	</monster_hunt>
 	<!-- 21080: TODO: Message in a Windstream -->
+	<!-- 21081: A Helping Hand (lvl 50) -->
 	<!-- Please Help Mitta! -->
 	<item_collecting id="21100" start_npc_id="799280"/>
 	<!-- Mitta Needs More Help! -->
 	<item_collecting id="21101" start_npc_id="799280"/>
 	<!-- Clearing The Road -->
-	<monster_hunt start_npc_id="799281" id="21102">
-		<monster_infos var_id="0" npc_id="215933" max_kill="20"/>
-		<monster_infos var_id="1" npc_id="215905" max_kill="20"/>
+	<monster_hunt id="21102" start_npc_id="799281">
+		<monster_infos var_id="0" max_kill="20" npc_id="215933"/>
+		<monster_infos var_id="0" max_kill="20" npc_id="215934"/>
+		<monster_infos var_id="1" max_kill="20" npc_id="215905"/>
+		<monster_infos var_id="1" max_kill="20" npc_id="215906"/>
 	</monster_hunt>
 	<!-- Purkin's Reasons -->
 	<report_to id="21103" start_npc_id="799280" end_npc_id="799276"/>
@@ -193,26 +211,23 @@
 	<!-- 21106: TODO: The Real Rhonnam -->
 	<!-- Selling Salvage -->
 	<item_collecting id="21107" start_npc_id="799262"/>
-	<!-- A Refugee's Revenge -->
-	<monster_hunt start_npc_id="799276" id="21108">
-		<monster_infos var_id="0" npc_id="216079" max_kill="10"/>
-		<monster_infos var_id="0" npc_id="216082" max_kill="10"/>
-		<monster_infos var_id="1" npc_id="216085" max_kill="10"/>
-		<monster_infos var_id="1" npc_id="216088" max_kill="10"/>
-	</monster_hunt>
+	<!-- 21108: A Refugee's Revenge -->
 	<!-- Chenkiki's Enemies -->
 	<monster_hunt start_npc_id="799276" id="21109">
 		<monster_infos var_id="0" npc_id="216559" max_kill="1"/>
 		<monster_infos var_id="1" npc_id="216560" max_kill="1"/>
 	</monster_hunt>
-	<!-- 21110: TODO: Incredulous Priest -->
+	<!-- 21110: Incredulous Priest -->
+	<report_to id="21110" start_npc_id="799263" end_npc_id="799289"/>
 	<!-- 21111: TODO: Test Your Might -->
 	<!-- Marayas Relic -->
 	<item_collecting id="21112" start_npc_id="799282" action_item_id="700726"/>
 	<!-- Aether's Attraction -->
-	<monster_hunt start_npc_id="799283" id="21113">
-		<monster_infos var_id="0" npc_id="216543" max_kill="20"/>
-		<monster_infos var_id="1" npc_id="215893" max_kill="20"/>
+	<monster_hunt id="21113" start_npc_id="799283">
+		<monster_infos var_id="0" max_kill="20" npc_id="216543"/>
+		<monster_infos var_id="0" max_kill="20" npc_id="216544"/>
+		<monster_infos var_id="1" max_kill="20" npc_id="215893"/>
+		<monster_infos var_id="1" max_kill="20" npc_id="215894"/>
 	</monster_hunt>
 	<!-- 21114: TODO: Poisoned Fungi -->
 	<!-- Rise Of Living Stone -->
@@ -224,9 +239,11 @@
 	<!-- Valuable Crystal -->
 	<item_collecting id="21116" start_npc_id="799289"/>
 	<!-- Reian Incorporeal Phantoms -->
-	<monster_hunt start_npc_id="799292" id="21117">
-		<monster_infos var_id="0" npc_id="216041" max_kill="10"/>
-		<monster_infos var_id="1" npc_id="216043" max_kill="10"/>
+	<monster_hunt id="21117" start_npc_id="799292">
+		<monster_infos var_id="0" max_kill="10" npc_id="216041"/>
+		<monster_infos var_id="0" max_kill="10" npc_id="216042"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="216043"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="216044"/>
 	</monster_hunt>
 	<!-- Useless Regret -->
 	<monster_hunt start_npc_id="799292" id="21118">
@@ -234,26 +251,28 @@
 	</monster_hunt>
 	<!-- 21119: TODO: I Need a Drink -->
 	<!-- Stand Against The Raiders -->
-	<monster_hunt start_npc_id="799291" id="21120">
-		<monster_infos var_id="0" npc_id="216102" max_kill="10"/>
+	<monster_hunt id="21120" start_npc_id="799291">
+		<monster_infos var_id="0" max_kill="10" npc_id="216102"/>
+		<monster_infos var_id="0" max_kill="10" npc_id="216103"/>
 	</monster_hunt>
 	<!-- Listen To My Song, Strigiks -->
 	<report_to id="21121" start_npc_id="799292" end_npc_id="799295"/>
 	<!-- End The Abductions -->
-	<monster_hunt start_npc_id="799295" id="21122">
-		<monster_infos var_id="0" npc_id="216049" max_kill="5"/>
-		<monster_infos var_id="0" npc_id="216051" max_kill="5"/>
-		<monster_infos var_id="0" npc_id="216053" max_kill="5"/>
+	<monster_hunt id="21122" start_npc_id="799295">
+		<monster_infos var_id="0" max_kill="5" npc_id="216049"/>
+		<monster_infos var_id="0" max_kill="5" npc_id="216051"/>
+		<monster_infos var_id="0" max_kill="5" npc_id="216053"/>
+		<monster_infos var_id="1" max_kill="5" npc_id="216052"/>
+		<monster_infos var_id="2" max_kill="5" npc_id="216053"/>
+		<monster_infos var_id="2" max_kill="5" npc_id="216054"/>
 	</monster_hunt>
 	<!-- 21123: [Group] Senegal's Arrow -->
-	<item_collecting id="21123" start_npc_id="799296"/>
 	<!-- 21124: [Group] Reian Tribe's Foes -->
 	<monster_hunt start_npc_id="799295" id="21124">
 		<monster_infos var_id="0" npc_id="216566" max_kill="1"/>
 	</monster_hunt>
 	<!-- 21125: TODO: Mystery Blueprint -->
 	<!-- 21126: [Group] Broken Shackles -->
-	<item_collecting id="21126" start_npc_id="799297"/>
 	<!-- 21127: TODO: To Stand Against the Elyos -->
 	<!-- 21128: TODO: To Stand Against the Elyos -->
 	<!-- 21129: TODO: To Stand Against the Elyos -->
@@ -265,39 +284,43 @@
 	<!-- 21135: Vellun's Request handled by script -->
 	<!-- 21136: TODO: In Search of a Witness -->
 	<!-- 21137: TODO: Berokin's Image Marble -->
-	<!-- 21138: TODO: Odd Strigik -->
+	<!-- 21138: Odd Strigik -->
 	<!-- Ulakin's Vengeance -->
-	<monster_hunt start_npc_id="799415" id="21139">
-		<monster_infos var_id="0" npc_id="216444" max_kill="5"/>
-		<monster_infos var_id="1" npc_id="216446" max_kill="5"/>
+	<monster_hunt id="21139" start_npc_id="799415">
+		<monster_infos var_id="0" max_kill="5" npc_id="216444"/>
+		<monster_infos var_id="0" max_kill="5" npc_id="216445"/>
+		<monster_infos var_id="1" max_kill="5" npc_id="216446"/>
+		<monster_infos var_id="1" max_kill="5" npc_id="216447"/>
 	</monster_hunt>
-	<!-- Fisherman's Fix -->
-	<item_collecting id="21200" start_npc_id="799300"/>
-	<!-- Swampy Samples -->
-	<item_collecting id="21201" start_npc_id="799300"/>
+	<!-- 210200: Fisherman's Fix -->
+	<!-- 21201: Swampy Samples -->
 	<!-- 21202: TODO: Viscum Contamination -->
 	<!-- Raid The Drana Farm -->
 	<monster_hunt start_npc_id="799298" id="21203">
 		<monster_infos var_id="0" npc_id="216025" max_kill="5"/>
 		<monster_infos var_id="1" npc_id="216571" max_kill="1"/>
 	</monster_hunt>
-	<!-- Cull The Cultivators -->
-	<item_collecting id="21204" start_npc_id="799298"/>
+	<!-- 21204: Cull The Cultivators -->
 	<!-- 21205: Basic War Tactics -->
 	<item_collecting id="21205" start_npc_id="799308" action_item_id="700733"/>
 	<!-- Arangos' Strategem -->
-	<monster_hunt start_npc_id="799309" id="21206">
-		<monster_infos var_id="0" npc_id="216033" max_kill="15"/>
-		<monster_infos var_id="1" npc_id="216035" max_kill="15"/>
+	<monster_hunt id="21206" start_npc_id="799309">
+		<monster_infos var_id="0" max_kill="15" npc_id="216033"/>
+		<monster_infos var_id="0" max_kill="15" npc_id="216034"/>
+		<monster_infos var_id="1" max_kill="15" npc_id="216035"/>
+		<monster_infos var_id="1" max_kill="15" npc_id="216036"/>
 	</monster_hunt>
-	<!-- Taking Initiative -->
-	<item_collecting id="21207" start_npc_id="799308"/>
+	<!-- 21207: Taking Initiative -->
 	<!-- Balaur Minions -->
-	<monster_hunt start_npc_id="799309" id="21208">
-		<monster_infos var_id="0" npc_id="216452" max_kill="10"/>
-		<monster_infos var_id="0" npc_id="216453" max_kill="5"/>
-		<monster_infos var_id="1" npc_id="216454" max_kill="10"/>
-		<monster_infos var_id="1" npc_id="216455" max_kill="5"/>
+    <monster_hunt id="21208" start_npc_id="799309">
+		<monster_infos var_id="0" max_kill="10" npc_id="216452"/>
+		<monster_infos var_id="0" max_kill="10" npc_id="216081"/>
+		<monster_infos var_id="1" max_kill="5" npc_id="216453"/>
+		<monster_infos var_id="1" max_kill="5" npc_id="216084"/>
+		<monster_infos var_id="2" max_kill="10" npc_id="216454"/>
+		<monster_infos var_id="2" max_kill="10" npc_id="216087"/>
+		<monster_infos var_id="3" max_kill="5" npc_id="216455"/>
+		<monster_infos var_id="3" max_kill="5" npc_id="216090"/>
 	</monster_hunt>
 	<!-- 21209: TODO: Balaur Bind Point 1 (Infiltration1)\n21209 - 21210 -->
 	<!-- 21210: TODO: Balaur Bind Point 1 (Infiltration2)\n21209 - 21210 -->
@@ -305,16 +328,20 @@
 	<!-- Balaur Architecture -->
 	<item_collecting id="21212" start_npc_id="799317" action_item_id="700734"/>
 	<!-- Researcher's Dilemma -->
-	<monster_hunt start_npc_id="799316" id="21213">
-		<monster_infos var_id="0" npc_id="215903" max_kill="20"/>
-		<monster_infos var_id="0" npc_id="215946" max_kill="10"/>
-		<monster_infos var_id="1" npc_id="215927" max_kill="10"/>
+	<monster_hunt id="21213" start_npc_id="799316">
+		<monster_infos var_id="0" max_kill="20" npc_id="215903"/>
+		<monster_infos var_id="0" max_kill="20" npc_id="215904"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="215946"/>
+		<monster_infos var_id="1" max_kill="10" npc_id="215947"/>
+		<monster_infos var_id="2" max_kill="10" npc_id="215927"/>
+		<monster_infos var_id="2" max_kill="10" npc_id="215928"/>
 	</monster_hunt>
 	<!-- Balaur Engineering -->
 	<item_collecting id="21214" start_npc_id="799317" action_item_id="700735"/>
 	<!-- Balaur Anatomy -->
-	<monster_hunt start_npc_id="799316" id="21215">
-		<monster_infos var_id="0" npc_id="215929" max_kill="15"/>
+	<monster_hunt id="21215" start_npc_id="799316">
+		<monster_infos var_id="0" max_kill="15" npc_id="215929"/>
+		<monster_infos var_id="0" max_kill="15" npc_id="215930"/>
 	</monster_hunt>
 	<!-- Research On Tiamat's Power -->
 	<monster_hunt start_npc_id="799316" id="21216">
@@ -325,11 +352,13 @@
 	<!-- 21219: TODO: Balaur Bind Point 2 (Infiltration1)\n21218 - 21219 -->
 	<!-- A Petralith Puzzle -->
 	<item_collecting id="21220" start_npc_id="799320" action_item_id="700736"/>
-	<!-- 21221: TODO: Rusty Relic -->
+	<!-- 21221:  Rusty Relic -->
+	<report_to id="21221" start_npc_id="799239" end_npc_id="799320" item_id="182207878"/>
 	<!-- Hunting Zanthays -->
-	<monster_hunt start_npc_id="799319" id="21222">
-		<monster_infos var_id="0" npc_id="216005" max_kill="5"/>
-		<monster_infos var_id="1" npc_id="216577" max_kill="1"/>
+		<monster_hunt id="21222" start_npc_id="799319">
+		<monster_infos var_id="0" max_kill="5" npc_id="216005"/>
+		<monster_infos var_id="0" max_kill="5" npc_id="216006"/>
+		<monster_infos var_id="1" max_kill="1" npc_id="216577"/>
 	</monster_hunt>
 	<!-- 21223: TODO: Weaken Dramata's Defenses -->
 	<!-- 21224: [Group] Weaken the Defenses -->
@@ -338,13 +367,19 @@
 	<item_collecting id="21225" start_npc_id="799306"/>
 	<!-- The Seed Of Anxiety -->
 	<item_collecting id="21226" start_npc_id="799305"/>
-	<!-- 21227: TODO: [Alliance] Be The Vanguard! -->
+	<!-- 21227: [Alliance] Be The Vanguard! -->
+	<monster_hunt id="21227" start_npc_id="799362">
+		<monster_infos var_id="0" max_kill="20" npc_id="0"/>
+	</monster_hunt>
 	<!-- 21228: TODO: [League] Seize the Citadel -->
 	<!-- Exterminator Duty -->
 	<item_collecting id="21229" start_npc_id="799314"/>
 	<!-- Drackies And Defense -->
 	<item_collecting id="21230" start_npc_id="799315"/>
-	<!-- 21231: TODO: [Alliance] Harass the Enemy Guard -->
+	<!-- 21231: [Alliance] Harass the Enemy Guard -->
+	<monster_hunt id="21231" start_npc_id="799315">
+		<monster_infos var_id="0" max_kill="20" npc_id="0"/>
+	</monster_hunt>
 	<!-- 21232: TODO: [League] Retake the Crimson Temple -->
 	<!-- 21233: [Spy] Food for Rationing -->
 	<item_collecting id="21233" start_npc_id="799354"/>
@@ -369,7 +404,20 @@
 	<monster_hunt start_npc_id="799420" id="21240">
 		<monster_infos var_id="0" npc_id="216845" max_kill="1"/>
 	</monster_hunt>
-	<!-- 21241: TODO: [Group] Convoy! -->
+	<!-- 21241: [Group] Convoy! -->
+	<monster_hunt start_npc_id="799419" id="21241">
+		<monster_infos var_id="0" npc_id="216824" max_kill="10"/>
+		<monster_infos var_id="0" npc_id="216124" max_kill="10"/>
+		<monster_infos var_id="0" npc_id="216826" max_kill="10"/>
+		<monster_infos var_id="0" npc_id="216828" max_kill="10"/>
+		<monster_infos var_id="0" npc_id="216125" max_kill="10"/>
+		<monster_infos var_id="0" npc_id="216832" max_kill="10"/>
+		<monster_infos var_id="0" npc_id="216126" max_kill="10"/>
+		<monster_infos var_id="0" npc_id="216839" max_kill="10"/>
+		<monster_infos var_id="0" npc_id="216127" max_kill="10"/>
+		<monster_infos var_id="0" npc_id="216840" max_kill="10"/>
+		<monster_infos var_id="0" npc_id="216128" max_kill="10"/>
+	</monster_hunt>
 	<!-- Seals And Necklaces -->
 	<item_collecting id="21242" start_npc_id="799421"/>
 	<!-- 21243: TODO: Sakti's Crystal -->
@@ -386,23 +434,23 @@
 	<item_collecting id="21248" start_npc_id="799416" action_item_id="700930"/>
 	<!-- 21249: TODO: The Invincible Starket -->
 	<!-- 21250: TODO: [Spy/League] Greatsword's Fate -->
-	<!-- 21251: TODO: Enhancing the Greatsword -->
+	<!-- 21251: Enhancing the Greatsword -->
 	<!-- 21252: TODO: [Spy/League] Spellbook's Fate -->
-	<!-- 21253: TODO: Enhancing the Spellbook -->
+	<!-- 21253: Enhancing the Spellbook -->
 	<!-- 21254: TODO: [Spy/League] Bow's Fate -->
-	<!-- 21255: TODO: Enhancing the Bow -->
+	<!-- 21255: Enhancing the Bow -->
 	<!-- 21256: TODO: [Spy/League] Dagger's Fate -->
-	<!-- 21257: TODO: Enhancing the Dagger -->
+	<!-- 21257: Enhancing the Dagger -->
 	<!-- 21258: TODO: [Spy/League] Mace's Fate -->
-	<!-- 21259: TODO: Enhancing the Mace -->
+	<!-- 21259: Enhancing the Mace -->
 	<!-- 21260: TODO: [Spy/League] Orb's Fate -->
-	<!-- 21261: TODO: Enhancing the Orb -->
+	<!-- 21261: Enhancing the Orb -->
 	<!-- 21262: TODO: [Spy/League] Polearm's Fate -->
-	<!-- 21263: TODO: Enhancing the Polearm -->
+	<!-- 21263: Enhancing the Polearm -->
 	<!-- 21264: TODO: [Spy/League] Staff's Fate -->
-	<!-- 21265: TODO: Enhancing the Staff -->
+	<!-- 21265: Enhancing the Staff -->
 	<!-- 21266: TODO: [Spy/League] Sword's Fate -->
-	<!-- 21267: TODO: Enhancing the Sword -->
+	<!-- 21267: Enhancing the Sword -->
 	<!-- 21268: Heart of Asmodae -->
 	<item_collecting id="21268" start_npc_id="799323"/>
 	<!-- 21269: Standing for Asmodae -->
@@ -444,6 +492,7 @@
 		<monster_infos var_id="0" npc_id="215464" max_kill="40"/>
 	</monster_hunt>
 	<!-- 21460: A Shulack's Story -->
+	<report_to id="21460" start_npc_id="799258" end_npc_id="799276" item_id="182209520"/>
 	<!-- Goodwill Envoy -->
 	<report_to id="30101" start_npc_id="799226" end_npc_id="799333"/>
 	<!-- Friend Of The Family -->
@@ -451,39 +500,31 @@
 	<!-- 30115: Sword's Potential -->
 	<report_to id="30115" start_npc_id="799202" end_npc_id="799336"/>
 	<!-- 30116: Releasing the Sword's Potential -->
-	<item_collecting id="30116" start_npc_id="799336"/>
 	<!-- 30117: Greatsword's Potential -->
 	<report_to id="30117" start_npc_id="799202" end_npc_id="799336"/>
 	<!-- 30118: Releasing the Greatsword's Potential -->
-	<item_collecting id="30118" start_npc_id="799336"/>
 	<!-- 30119: Polearm's Potential -->
 	<report_to id="30119" start_npc_id="799202" end_npc_id="799336"/>
 	<!-- 30120: Releasing the Polearm's Potential -->
-	<item_collecting id="30120" start_npc_id="799336"/>
 	<!-- 30121: Staff's Potential -->
 	<report_to id="30121" start_npc_id="799202" end_npc_id="799336"/>
 	<!-- 30122: Releasing the Staff's Potential -->
-	<item_collecting id="30122" start_npc_id="799336"/>
 	<!-- 30123: Spellbook's Potential -->
 	<report_to id="30123" start_npc_id="799202" end_npc_id="799336"/>
 	<!-- 30124: Releasing the Spellbook's Potential -->
-	<item_collecting id="30124" start_npc_id="799336"/>
 	<!-- 30125: Orb's Potential -->
 	<report_to id="30125" start_npc_id="799202" end_npc_id="799336"/>
 	<!-- 30126: Releasing the Orb's Potential -->
-	<item_collecting id="30126" start_npc_id="799336"/>
 	<!-- 30127: Bow's Potential -->
 	<report_to id="30127" start_npc_id="799202" end_npc_id="799336"/>
 	<!-- 30128: Releasing the Bow's Potential -->
-	<item_collecting id="30128" start_npc_id="799336"/>
 	<!-- 30129: Dagger's Potential -->
 	<report_to id="30129" start_npc_id="799202" end_npc_id="799336"/>
 	<!-- 30130: Releasing the Dagger's Potential -->
-	<item_collecting id="30130" start_npc_id="799336"/>
 	<!-- 30131: Mace's Potential -->
 	<report_to id="30131" start_npc_id="799202" end_npc_id="799336"/>
 	<!-- 30132: Releasing the Mace's Potential -->
-	<item_collecting id="30132" start_npc_id="799336"/>
+    <!-- 30301: Tracking Supplies -->
 	<!-- 30302: Mysterious Motives handled by script -->
 	<!-- 30303: [Group] The Fall of Isbariya handled by script -->
 	<!-- Swap Meet -->

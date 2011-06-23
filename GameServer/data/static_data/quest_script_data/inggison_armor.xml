@@ -18,13 +18,9 @@
 -->
 
 	<!-- 11051: Paris Je T'aime -->
-	<item_collecting id="11051" start_npc_id="798989" />
 	<!-- 11052:  Gloves and Glossy Beads -->
-	<item_collecting id="11052" start_npc_id="798984" />
 	<!-- 11053:  These Shoes Are Made For Stalking -->
-	<item_collecting id="11053" start_npc_id="799015" />
 	<!-- 11054:  [Group] Accounts about the Armor -->
-	<item_collecting id="11054" start_npc_id="799017" />
 	<!-- 11055:  [Group] Another Piece -->
-	<item_collecting id="11055" start_npc_id="798990" />
+
 </quest_scripts>
