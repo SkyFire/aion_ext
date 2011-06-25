@@ -237,7 +237,7 @@
 		<object staticid="32" x="312.7441" y="596.14636" z="373.53244" h="93"/>
 	</spawn>
 	<!-- Treasure Chest (Object Normal lvl:50) -->
-	<spawn map="300030000" npcid="214804" pool="28" interval="295">
+	<spawn map="300030000" npcid="700415" pool="28" interval="295">
 		<object staticid="15" x="378.12918" y="320.85995" z="397.22217" h="79"/>
 		<object staticid="22" x="284.64728" y="345.3849" z="379.1711" h="104"/>
 		<object staticid="17" x="320.9779" y="328.8806" z="393.09186" h="54"/>

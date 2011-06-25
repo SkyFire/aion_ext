@@ -27,7 +27,7 @@
 	<!-- 1058: Aether Insanity handled by script -->
 	<!-- 1059: The Archon of Storms handled by script -->
 	<!-- 1062: Indratu Legion handled by script -->
-	<!-- 1063: TODO: Brigadier Indratu -->
+	<!-- 1063: Brigadier Indratu handled by script -->
 	<!-- 1500: Orders From Perento handled by script -->
 	<!-- Eliminating Ettins -->
 	<monster_hunt id="1501" start_npc_id="204507">
@@ -42,7 +42,7 @@
 	<!-- Tenacious Ibelia -->
 	<report_to id="1505" start_npc_id="204502" end_npc_id="204582" />
 	<!-- [Coin] Ettin Jerky -->
-	<item_collecting id="1506" start_npc_id="204515" />
+	<item_collecting id="1506" start_npc_id="204582" />
 	<!-- Vaizel Worg Hunt -->
 	<monster_hunt id="1507" start_npc_id="204507">
 		<monster_infos var_id="0" max_kill="3" npc_id="211051" />
@@ -128,7 +128,7 @@
 	<report_to id="1538" start_npc_id="204588" end_npc_id="203073" />
 	<!-- Ben's Special Bait -->
 	<item_collecting id="1539" start_npc_id="203073" end_npc_id="204588"/>
-	<!-- 1540: TODO: Bait the Hooks -->
+	<!-- 1540: Bait the Hooks handled by script -->
 	<!-- Frillneck Fluid -->
 	<item_collecting id="1541" start_npc_id="204585" />
 	<!-- Outlaw of the Jungle -->
@@ -192,11 +192,9 @@
 	</monster_hunt>
 	<!-- 1559: What's in the Box? handled by script -->
 	<!-- 1560: A Job for Pobinerk handled by script -->
-	<!-- 1561: TODO: The Miser's Map -->
-	<!-- 1562: TODO: Crossed Destiny -->
-	<item_collecting id="1562" start_npc_id="204589" />
-	<!-- 1563: TODO: The Legend of Vindachinerk -->
-	<item_collecting id="1563" start_npc_id="798096" action_item_id="182201729" />
+	<!-- 1561: The Miser's Map handled by script-->
+	<!-- 1562: Crossed Destiny handled by script -->
+	<!-- 1563: The Legend of Vindachinerk handled by script-->
 	<!-- Jaiorunerk's Diary -->
 	<report_to id="1564" start_npc_id="798096" end_npc_id="798012" item_id="182201731" />
 	<!-- Banshee Farming -->
@@ -234,7 +232,6 @@
 		<monster_infos var_id="0" max_kill="10" npc_id="211956" />
 	</monster_hunt>
 	<!-- 1573: TODO: Some Tasty Mushrooms -->
-	<item_collecting id="1573" start_npc_id="730025" />
 	<!-- 1574: A Feast For a Village handled by script -->
 	<!-- Deathsong Dangers -->
 	<monster_hunt id="1575" start_npc_id="730025">
@@ -361,7 +358,10 @@
 	<item_collecting id="1610" start_npc_id="204577" />
 	<!-- [Coin] Taking out the Trash -->
 	<item_collecting id="1611" start_npc_id="204574" />
-	<!-- 1612: TODO: Target: Lepharist Secrets -->
+	<!-- 1612: Target: Lepharist Secrets -->
+	<monster_hunt id="1612" start_npc_id="204530">
+		<monster_infos var_id="0" max_kill="4" npc_id="700352"/>
+	</monster_hunt>
 	<!-- Looting the Tigrics -->
 	<monster_hunt id="1613" start_npc_id="204575">
 		<monster_infos var_id="0" max_kill="15" npc_id="211169" />
@@ -387,10 +387,11 @@
 	<item_collecting id="1622" start_npc_id="204534" />
 	<!-- Supplies For the Blue Fleet -->
 	<item_collecting id="1623" start_npc_id="204593" action_item_id="700200" />
-	<!-- 1624: TODO: Weapons of the Ancient Warriors -->
+	<!-- 1624: Weapons of the Ancient Warriors -->
+	<item_collecting id="1624" start_npc_id="204593"/>
 	<!-- Starturtle Oil -->
 	<item_collecting id="1625" start_npc_id="204592" />
-	<!-- 1626: TODO: Light the Path -->
+	<!-- 1626: Light the Path -->
 	<!-- Specter's Wall of Sound -->
 	<monster_hunt id="1627" start_npc_id="204547">
 		<monster_infos var_id="0" max_kill="9" npc_id="212111" />
@@ -409,7 +410,7 @@
 	<item_collecting id="1632" start_npc_id="204590" />
 	<!-- The Stenon Bay Shipwreck -->
 	<report_to id="1633" start_npc_id="204590" end_npc_id="204547" />
-	<!-- 1634: TODO: The Wreck of the Argos -->
+	<!-- 1634: The Wreck of the Argos -->
 	<!-- The Missing Fiance -->
 	<item_collecting id="1635" start_npc_id="204536" />
 	<!-- 1636: A Flute For the Fixing handled by script -->
@@ -481,21 +482,7 @@
 	<monster_hunt id="1665" start_npc_id="204610">
 		<monster_infos var_id="0" max_kill="1" npc_id="212280" />
 	</monster_hunt>
-	<!-- [Group] Taking it to the Indratu -->
-	<monster_hunt id="1666" start_npc_id="204601">
-		<monster_infos var_id="0" max_kill="15" npc_id="213962" />
-		<monster_infos var_id="0" max_kill="15" npc_id="213963" />
-		<monster_infos var_id="0" max_kill="15" npc_id="214042" />
-		<monster_infos var_id="0" max_kill="15" npc_id="214043" />
-		<monster_infos var_id="0" max_kill="15" npc_id="214040" />
-		<monster_infos var_id="0" max_kill="15" npc_id="214041" />
-		<monster_infos var_id="1" max_kill="15" npc_id="213985" />
-		<monster_infos var_id="1" max_kill="15" npc_id="213986" />
-		<monster_infos var_id="1" max_kill="15" npc_id="214057" />
-		<monster_infos var_id="1" max_kill="15" npc_id="214056" />
-		<monster_infos var_id="1" max_kill="15" npc_id="214059" />
-		<monster_infos var_id="1" max_kill="15" npc_id="214058" />
-	</monster_hunt>
+	<!-- 1666:[Group] Taking it to the Indratu -->
 	<!-- [Coin] Eradicating Undead -->
 	<monster_hunt id="1667" start_npc_id="204638">
 		<monster_infos var_id="0" max_kill="10" npc_id="211231" />
@@ -552,8 +539,7 @@
 	<item_collecting id="1683" start_npc_id="204602" end_npc_id="204833"/> 
 	<!-- 1684: Key to the Cave --> 
 	<item_collecting id="1684" start_npc_id="204833"/> 
-	<!-- 1685: The Draupnir Weapons --> 
-	<item_collecting id="1685" start_npc_id="204833" end_npc_id="204500" action_item_id="700354"/>
+	<!-- 1685: The Draupnir Weapons handled by script--> 
 	<!-- 1686: A Cube for Michalis --> 
 	<report_to id="1686" start_npc_id="204500" end_npc_id="278501" item_id="182201808"/> 
 	<!-- 1687: [Spy/Group] The Tigraki Agreement handled by script -->
@@ -563,7 +549,7 @@
 	<item_collecting id="1689" start_npc_id="204601"/> 
 	<!-- 1690: Return to Draupnir Cave --> 
 	<item_collecting id="1690" start_npc_id="204601"/> 
-	<!-- 1691: TODO: The Little Leather Slipper -->
+	<!-- 1691: The Little Leather Slipper handled by script-->
 	<!-- 1692: A Day Older and Deeper in Debt -->
 	<item_collecting id="1692" start_npc_id="798386"/> 
 	<!-- 1693: TODO: Are You My Father? -->
@@ -600,8 +586,9 @@
 	</monster_hunt>
 	<!-- 3512 Lepharists Everywhere -->
 	<monster_hunt id="3512" start_npc_id="204581">
-		<monster_infos npc_id="211064" var_id="0" max_kill="9"/>
-		<monster_infos npc_id="211065" var_id="1" max_kill="5"/>
+		<monster_infos var_id="0" max_kill="9" npc_id="211064"/>
+		<monster_infos var_id="0" max_kill="9" npc_id="211054"/>
+		<monster_infos var_id="1" max_kill="5" npc_id="211065"/>
 	</monster_hunt>
 	<!--  3513 Knight in Shining Basilisk -->
 	<item_collecting id="3513" start_npc_id="204551"/>
@@ -671,9 +658,10 @@
 		<monster_infos npc_id="212007" var_id="0" max_kill="10"/> 
 	</monster_hunt> 
 	<!-- 3527 Cursed Argonauts --> 
-	<monster_hunt id="3527" start_npc_id="204547"> 
-		<monster_infos npc_id="212349" var_id="0" max_kill="10"/> 
-		<monster_infos npc_id="212350" var_id="0" max_kill="10"/> 
+	<monster_hunt id="3527" start_npc_id="204547">
+		<monster_infos var_id="0" max_kill="10" npc_id="212005"/>
+		<monster_infos var_id="0" max_kill="10" npc_id="212349"/>
+		<monster_infos var_id="0" max_kill="10" npc_id="212350"/>
 	</monster_hunt>
 	<!-- 3528 The Love Token --> 
 	<report_to id="3528" start_npc_id="204536" end_npc_id="798165" item_id="182201836"/> 
@@ -706,12 +694,13 @@
 	<!-- 18600: Scoring Some Bad Stigma handled by script -->
 	<!-- Nightmare on My Street -->
 	<report_to id="18601" start_npc_id="204500" end_npc_id="205229" item_id="182213002"/>
-	<!-- 18602 Nightmare in Shining Armor --> 
-	<!-- 18604 TODO: Meeting with Rotan --> 
+	<!-- 18602 Nightmare in Shining Armor handled by script --> 
+	<!-- 18604 Meeting with Rotan handled by script--> 
 	<!-- 18605 Dreams of the Dungeon --> 
-	<monster_hunt id="18605" start_npc_id="205230"> 
-		<monster_infos npc_id="216971" var_id="0" max_kill="8"/> 
-	</monster_hunt>	
+	<monster_hunt id="18605" start_npc_id="205230">
+		<monster_infos var_id="0" max_kill="8" npc_id="217026"/>
+		<monster_infos var_id="0" max_kill="8" npc_id="216971"/>
+	</monster_hunt>
 	<!-- 18606 To Dream, To Die--> 
 	<monster_hunt id="18606" start_npc_id="205231"> 
 		<monster_infos npc_id="216968" var_id="0" max_kill="1"/> 
