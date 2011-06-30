@@ -79,6 +79,8 @@ public class _1033SatalocasHeart extends QuestHandler {
                     updateQuestStatus(env);
                     PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject()
                             .getObjectId(), 10));
+					PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 178));		
+					PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 178));		
                     return true;
                 } else
                     return defaultQuestStartDialog(env);

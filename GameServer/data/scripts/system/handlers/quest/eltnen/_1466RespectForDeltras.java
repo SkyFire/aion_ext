@@ -21,6 +21,8 @@ import gameserver.model.gameobjects.Npc;
 import gameserver.model.gameobjects.player.Player;
 import gameserver.model.templates.quest.QuestItems;
 import gameserver.network.aion.serverpackets.SM_ITEM_USAGE_ANIMATION;
+import gameserver.network.aion.serverpackets.SM_PLAY_MOVIE;
+import gameserver.network.aion.serverpackets.SM_PLAY_MOVIE;
 import gameserver.questEngine.handlers.QuestHandler;
 import gameserver.questEngine.model.QuestCookie;
 import gameserver.questEngine.model.QuestState;
@@ -72,6 +74,8 @@ public class _1466RespectForDeltras extends QuestHandler {
                 player.getInventory().removeFromBagByObjectId(itemObjId, 1);
                 qs.setStatus(QuestStatus.REWARD);
                 updateQuestStatus(env);
+				PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 88));
+				PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 88));
             }
         }, 3000);
         return false;

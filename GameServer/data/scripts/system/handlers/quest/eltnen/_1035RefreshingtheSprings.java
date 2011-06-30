@@ -23,6 +23,8 @@ import gameserver.model.templates.quest.QuestItems;
 import gameserver.network.aion.serverpackets.SM_DIALOG_WINDOW;
 import gameserver.network.aion.serverpackets.SM_EMOTION;
 import gameserver.network.aion.serverpackets.SM_USE_OBJECT;
+import gameserver.network.aion.serverpackets.SM_PLAY_MOVIE;
+import gameserver.network.aion.serverpackets.SM_PLAY_MOVIE;
 import gameserver.questEngine.handlers.QuestHandler;
 import gameserver.questEngine.model.QuestCookie;
 import gameserver.questEngine.model.QuestState;
@@ -87,6 +89,8 @@ public class _1035RefreshingtheSprings extends QuestHandler {
                     if (var == 0) {
                         qs.setQuestVarById(0, var + 1);
                         updateQuestStatus(env);
+						PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 180));
+						PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 180));
                         PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
                         return true;
                     }
@@ -198,6 +202,8 @@ public class _1035RefreshingtheSprings extends QuestHandler {
                 qs.setQuestVarById(0, 8);
                 updateQuestStatus(env);
                 QuestService.questTimerEnd(env);
+				PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 31));
+				PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 31));
                 return true;
             }
         } else if (targetId == 203934) {

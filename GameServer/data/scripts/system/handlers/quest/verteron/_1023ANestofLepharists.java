@@ -23,6 +23,8 @@ import gameserver.questEngine.model.QuestCookie;
 import gameserver.questEngine.model.QuestState;
 import gameserver.questEngine.model.QuestStatus;
 import gameserver.world.zone.ZoneName;
+import gameserver.network.aion.serverpackets.SM_PLAY_MOVIE;
+import gameserver.utils.PacketSendUtility;
 
 public class _1023ANestofLepharists extends QuestHandler {
     private final static int questId = 1023;
@@ -54,6 +56,7 @@ public class _1023ANestofLepharists extends QuestHandler {
             return false;
         qs.setQuestVarById(0, 3);
         updateQuestStatus(env);
+		PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 23));
         return true;
     }
 
@@ -74,7 +77,7 @@ public class _1023ANestofLepharists extends QuestHandler {
                             return sendQuestDialog(env, 1011);
                     case 10000:
                         return defaultCloseDialog(env, 0, 1);
-                }
+						                }
             } else if (env.getTargetId() == 203183)//Khidia
             {
                 switch (env.getDialogId()) {

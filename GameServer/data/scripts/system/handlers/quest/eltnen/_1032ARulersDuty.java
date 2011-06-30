@@ -25,6 +25,7 @@ import gameserver.network.aion.serverpackets.SM_DIALOG_WINDOW;
 import gameserver.network.aion.serverpackets.SM_EMOTION;
 import gameserver.network.aion.serverpackets.SM_ITEM_USAGE_ANIMATION;
 import gameserver.network.aion.serverpackets.SM_USE_OBJECT;
+import gameserver.network.aion.serverpackets.SM_PLAY_MOVIE;
 import gameserver.questEngine.handlers.QuestHandler;
 import gameserver.questEngine.model.QuestCookie;
 import gameserver.questEngine.model.QuestState;
@@ -155,11 +156,12 @@ public class _1032ARulersDuty extends QuestHandler {
                 } else
                     return defaultQuestStartDialog(env);
             } else if (qs.getStatus() == QuestStatus.START && qs.getQuestVarById(0) == 4) {
-                if (env.getDialogId() == 25)
-                    return sendQuestDialog(env, 2034);
+			       if (env.getDialogId() == 25)
+				    return sendQuestDialog(env, 2034);
                 else if (env.getDialogId() == 10003) {
                     qs.setQuestVar(5);
                     updateQuestStatus(env);
+					PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 49));
                     PacketSendUtility
                             .sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
                     return true;

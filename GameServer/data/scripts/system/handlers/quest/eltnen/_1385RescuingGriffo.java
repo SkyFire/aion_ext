@@ -19,72 +19,117 @@ package quest.eltnen;
 import gameserver.model.gameobjects.Npc;
 import gameserver.model.gameobjects.player.Player;
 import gameserver.network.aion.serverpackets.SM_DIALOG_WINDOW;
+import gameserver.network.aion.serverpackets.SM_PLAY_MOVIE;
 import gameserver.questEngine.handlers.QuestHandler;
 import gameserver.questEngine.model.QuestCookie;
 import gameserver.questEngine.model.QuestState;
 import gameserver.questEngine.model.QuestStatus;
+import gameserver.utils.MathUtil;
 import gameserver.utils.PacketSendUtility;
 
 /**
  * @author MrPoke remod By Xitanium
  */
 public class _1385RescuingGriffo extends QuestHandler {
-    private final static int questId = 1385;
 
+    private final static int questId = 1385;
+    private final static int[] npc_ids ={ 204028, 204029 };
+	
+	
     public _1385RescuingGriffo() {
         super(questId);
     }
 
-    @Override
-    public void register() {
-        qe.setNpcQuestData(212057).addOnQuestStart(questId);
-        qe.setNpcQuestData(212057).addOnTalkEvent(questId);
-        qe.setNpcQuestData(204029).addOnTalkEvent(questId);
-    }
+	@Override
+	public void register() {
+		qe.setNpcQuestData(204028).addOnQuestStart(questId);
+		for(int npc_id : npc_ids)
+			qe.setNpcQuestData(npc_id).addOnTalkEvent(questId);	
+	}
 
-    @Override
-    public boolean onDialogEvent(QuestCookie env) {
-        final Player player = env.getPlayer();
-        int targetId = 0;
-        if (env.getVisibleObject() instanceof Npc)
-            targetId = ((Npc) env.getVisibleObject()).getNpcId();
-        QuestState qs = player.getQuestStateList().getQuestState(questId);
-        if (targetId == 212057) {
-            if (qs == null || qs.getStatus() == QuestStatus.NONE) {
-                if (env.getDialogId() == 25)
-                    return sendQuestDialog(env, 1011);
-
-                else
-
-                    return defaultQuestStartDialog(env);
-            } else if (qs != null && qs.getStatus() == QuestStatus.START) {
-                if (env.getDialogId() == 25)
-                    return sendQuestDialog(env, 2375);
-                else if (env.getDialogId() == 1009) {
-                    qs.setQuestVar(2);
-                    qs.setStatus(QuestStatus.REWARD);
-                    updateQuestStatus(env);
-                    return defaultQuestEndDialog(env);
-                } else
-                    return defaultQuestEndDialog(env);
-            } else if (qs != null && qs.getStatus() == QuestStatus.REWARD) {
-                return defaultQuestEndDialog(env);
-            }
-        } else if (targetId == 204029) {
-            if (qs != null && qs.getStatus() == QuestStatus.START && qs.getQuestVarById(0) == 0) {
-                if (env.getDialogId() == 25)
-                    return sendQuestDialog(env, 1352);
-                else if (env.getDialogId() == 10000) {
-                    qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
-                    qs.setStatus(QuestStatus.REWARD);
-                    updateQuestStatus(env);
-                    PacketSendUtility
-                            .sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
-                    return true;
-                } else
-                    return defaultQuestStartDialog(env);
-            }
-        }
-        return false;
-    }
+	@Override
+	public boolean onDialogEvent(QuestCookie env) {
+	final Player player = env.getPlayer();
+	int targetId = 0;
+	if (env.getVisibleObject() instanceof Npc)
+	targetId = ((Npc) env.getVisibleObject()).getNpcId();
+	QuestState qs = player.getQuestStateList().getQuestState(questId);
+		if(targetId == 204028)
+		{
+			if(qs == null || qs.getStatus() == QuestStatus.NONE) 
+			{			
+				if(env.getDialogId() == 25)
+					return sendQuestDialog(env, 4762);
+				else
+					return defaultQuestStartDialog(env);
+			}
+		}
+		
+		if(qs == null)
+			return false;
+		
+		int var = qs.getQuestVarById(0);
+		if(qs.getStatus() == QuestStatus.START)
+		{
+			switch(targetId)
+			{
+				case 204029:
+				{
+					switch(env.getDialogId())
+					{
+						case -1:
+						{
+							if(var == 1)
+							{
+								Npc npc = (Npc)env.getVisibleObject();
+								if (MathUtil.getDistance(1878, 2571, 355, npc.getX(), npc.getY(), npc.getZ()) > 15)
+								{
+									if(!npc.getMoveController().isScheduled())
+										npc.getMoveController().schedule();
+									npc.getMoveController().setFollowTarget(true);
+									return true;
+								}
+								else
+								{
+									qs.setQuestVarById(0, var + 1);
+									qs.setStatus(QuestStatus.REWARD);
+									updateQuestStatus(env);	
+									PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 48));
+									npc.getController().onDie(null);
+									npc.getController().onDespawn(false);								
+									return true;
+								}
+							}
+						}
+						case 25:
+							if(var == 0)
+								return sendQuestDialog(env, 1352);
+						case 10000:
+							if(var == 0)
+							{
+								qs.setQuestVarById(0, var + 1);
+								updateQuestStatus(env);	
+								Npc npc = (Npc)env.getVisibleObject();
+								npc.getMoveController().setDistance(4);
+								npc.getMoveController().setFollowTarget(true);
+								npc.getMoveController().schedule();						
+								PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
+								return true;
+							}
+					}
+				}
+			}
+		}
+		else if(qs.getStatus() == QuestStatus.REWARD)
+		{
+			if(targetId == 204028)
+			{
+				if(env.getDialogId() == 1009)
+					return sendQuestDialog(env, 5);
+				else return defaultQuestEndDialog(env);
+			}
+			return false;
+		}	
+		return false;
+	}
 }

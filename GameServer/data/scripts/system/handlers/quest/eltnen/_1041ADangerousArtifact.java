@@ -82,6 +82,8 @@ public class _1041ADangerousArtifact extends QuestHandler {
                     updateQuestStatus(env);
                     PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject()
                             .getObjectId(), 10));
+					PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 184));		
+					PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 184));		
                     return true;
                 } else
                     return defaultQuestStartDialog(env);

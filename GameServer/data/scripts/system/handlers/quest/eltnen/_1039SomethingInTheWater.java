@@ -22,6 +22,8 @@ import gameserver.model.gameobjects.player.Player;
 import gameserver.model.templates.quest.QuestItems;
 import gameserver.network.aion.serverpackets.SM_DIALOG_WINDOW;
 import gameserver.network.aion.serverpackets.SM_ITEM_USAGE_ANIMATION;
+import gameserver.network.aion.serverpackets.SM_PLAY_MOVIE;
+import gameserver.network.aion.serverpackets.SM_PLAY_MOVIE;
 import gameserver.questEngine.handlers.QuestHandler;
 import gameserver.questEngine.model.QuestCookie;
 import gameserver.questEngine.model.QuestState;
@@ -130,6 +132,8 @@ public class _1039SomethingInTheWater extends QuestHandler {
                     updateQuestStatus(env);
                     PacketSendUtility
                             .sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
+					PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 182));		
+					PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 182));		
                     return true;
                 } else
                     return defaultQuestStartDialog(env);

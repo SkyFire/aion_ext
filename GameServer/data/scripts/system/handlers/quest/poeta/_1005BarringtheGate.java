@@ -22,6 +22,8 @@ import gameserver.questEngine.handlers.QuestHandler;
 import gameserver.questEngine.model.QuestCookie;
 import gameserver.questEngine.model.QuestState;
 import gameserver.questEngine.model.QuestStatus;
+import gameserver.network.aion.serverpackets.SM_PLAY_MOVIE;
+import gameserver.utils.PacketSendUtility;
 
 /**
  * @author MrPoke
@@ -115,7 +117,7 @@ public class _1005BarringtheGate extends QuestHandler {
                             if (var == 9)
                                 return sendQuestDialog(env, 2716);
                         case 1009:
-                            defaultQuestMovie(env, 171);
+                            PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 171));
                     }
                     break;
             }
