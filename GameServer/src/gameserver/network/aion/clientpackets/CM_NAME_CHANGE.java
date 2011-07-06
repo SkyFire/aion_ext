@@ -21,6 +21,8 @@ import com.aionemu.commons.database.dao.DAOManager;
 import gameserver.dao.LegionDAO;
 import gameserver.model.gameobjects.player.Friend;
 import gameserver.model.gameobjects.player.Player;
+import gameserver.model.gameobjects.Item;
+import gameserver.model.templates.item.ItemCategory;
 import gameserver.network.aion.AionClientPacket;
 import gameserver.network.aion.serverpackets.SM_LEGION_UPDATE_MEMBER;
 import gameserver.network.aion.serverpackets.SM_PLAYER_INFO;
@@ -29,13 +31,16 @@ import gameserver.services.LegionService;
 import gameserver.services.PlayerService;
 import gameserver.utils.PacketSendUtility;
 import gameserver.world.Executor;
+import org.apache.log4j.Logger;
 
 import java.util.Iterator;
 
 /**
  * @author xitanium
+ * @fixed pixfid
  */
 public class CM_NAME_CHANGE extends AionClientPacket {
+	private static final Logger log = Logger.getLogger(CM_NAME_CHANGE.class);
     private int action;
     private int itemId;
     private String newName;
@@ -56,6 +61,10 @@ public class CM_NAME_CHANGE extends AionClientPacket {
     @Override
     protected void runImpl() {
         final Player player = getConnection().getActivePlayer();
+        Item ticket = player.getInventory().getItemByObjId(itemId);
+        if (ticket == null) {
+        return;
+        }
         switch (action) {
             case 0:
                 // Change Player Name
@@ -70,6 +79,14 @@ public class CM_NAME_CHANGE extends AionClientPacket {
                 if (!PlayerService.isFreeName(newName)) {
                     PacketSendUtility.sendPacket(player, new SM_SYSTEM_MESSAGE(1400155));
                     return;
+                }
+                if (ticket.getItemTemplate().getItemCategory() != ItemCategory.CHANGE_CHARACTER_NAME)
+                {
+                log.info("[AUDIT] " + player.getName() + " Trying to change name without ticket.");
+                return;
+                }
+                if (!player.getInventory().removeFromBagByObjectId(this.itemId, 1)) {
+                return;
                 }
                 player.getCommonData().setName(newName);
                 PacketSendUtility.sendPacket(player, new SM_PLAYER_INFO(player, false));
@@ -111,8 +128,15 @@ public class CM_NAME_CHANGE extends AionClientPacket {
                     PacketSendUtility.sendPacket(player, new SM_SYSTEM_MESSAGE(1400156));
                     return;
                 }
+                if (ticket.getItemTemplate().getItemCategory() != ItemCategory.CHANGE_LEGION_NAME)
+                {
+                log.info("[AUDIT] " + player.getName() + " Trying to change legion name without ticket.");
+                	return;
+                }
+                if (!player.getInventory().removeFromBagByObjectId(itemId, 1)) {
+                	return;
+                }
                 LegionService.getInstance().setLegionName(player.getLegion(), newName, true);
-                player.getInventory().removeFromBagByObjectId(itemId, 1);
                 PacketSendUtility.sendPacket(player, new SM_SYSTEM_MESSAGE(1400158, newName));
                 break;
         }

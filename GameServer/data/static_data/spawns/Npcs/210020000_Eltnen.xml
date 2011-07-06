@@ -480,6 +480,10 @@
 	<spawn map="210020000" npcid="203995" pool="1" interval="295">
 		<object x="2036.0079" y="1398.7874" z="429.25" h="63"/>
 	</spawn>
+	<!-- Historical Criminals of Atreia -->
+	<spawn map="210020000" npcid="730120" pool="1" interval="295">
+		<object x="1914.7656" y="2015" z="361.67694" h="0" staticid="1115"/>
+	</spawn>
 	<!-- Hippolytus (NPC Normal lvl:45)-->
 	<spawn map="210020000" npcid="203331" pool="1" interval="295">
 		<object x="1571.606" y="1127.8442" z="385.61984" h="24"/>
@@ -1135,5 +1139,9 @@
 	<!-- Eltnen to Geranaia -->
 	<spawn map="210020000" npcid="700177" pool="1" interval="295">
 		<object x="2511.48" y="791.962" z="412.805" h="76"/>
+	</spawn>
+	<!-- Morphinos's Trace -->
+	<spawn map="210020000" npcid="206020" pool="1" interval="295">
+		<object x="410.3496" y="940.9636" z="296" h="39"/>
 	</spawn>	
 </spawns>

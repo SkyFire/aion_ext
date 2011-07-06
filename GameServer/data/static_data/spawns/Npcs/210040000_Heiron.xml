@@ -910,6 +910,10 @@
 	<spawn map="210040000" npcid="204612" pool="1" interval="295">
 		<object x="137.11523" y="1623.29050" z="121.71547" h="10"/>
 	</spawn>
+	<!-- Rediscovery of Superus Civilization -->
+	<spawn map="210040000" npcid="730132" pool="1" interval="295">
+		<object x="2492.7461" y="417.1832" z="412.86401" h="0" staticid="176"/>
+	</spawn>
 	<!-- Reaper Squad (NPC Elite lvl:50)-->
 	<spawn map="210040000" npcid="204649" pool="15" interval="295">
 		<object x="1555.488" y="2602.272" z="105" h="90"/>

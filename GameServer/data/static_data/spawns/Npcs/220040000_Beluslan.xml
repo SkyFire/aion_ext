@@ -789,6 +789,10 @@
 	<spawn map="220040000" npcid="798091" pool="1" interval="295">
 		<object x="310.4997" y="429.19177" z="232.0" h="0"/>
 	</spawn>
+	<!-- Namokata and the Dragon -->
+	<spawn map="220040000" npcid="730136" pool="1" interval="295">
+		<object x="2240.4819" y="1258.6378" z="475.57068" h="0" staticid="44"/>
+	</spawn>
 	<!-- Nargatal (NPC Normal lvl:43)-->
 	<spawn map="220040000" npcid="204788" pool="1" interval="295">
 		<object x="2394.0657" y="1264.9774" z="468.00027" h="0"/>

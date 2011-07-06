@@ -64,6 +64,9 @@ public class ItemTemplate extends VisibleObjectTemplate {
     @XmlAttribute(name = "usedelay")
     private int useDelay;
 
+    @XmlAttribute(name = "usedzone")
+    private int useDzone;
+    
     @XmlAttribute(name = "equipment_type")
     private EquipType equipmentType = EquipType.NONE;
 
@@ -533,6 +536,10 @@ public class ItemTemplate extends VisibleObjectTemplate {
         return useDelayId;
     }
 
+    public int getUsedzone() {
+        return useDzone;
+    }
+    
     /**
      * @return the stigma
      */

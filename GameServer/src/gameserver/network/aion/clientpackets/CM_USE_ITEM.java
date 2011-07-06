@@ -29,6 +29,8 @@ import gameserver.questEngine.QuestEngine;
 import gameserver.questEngine.model.QuestCookie;
 import gameserver.restrictions.RestrictionsManager;
 import gameserver.utils.PacketSendUtility;
+import gameserver.world.zone.ZoneName;
+
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
@@ -126,6 +128,11 @@ public class CM_USE_ITEM extends AionClientPacket {
         if (player.isItemUseDisabled(item.getItemTemplate().getDelayId())) {
             PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_ITEM_CANT_USE_UNTIL_DELAY_TIME);
             return;
+        }
+        
+        if (item.getItemTemplate().getUsedzone() !=0 && item.getItemTemplate().getUsedzone()!= player.getWorldId()){
+        	PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_SKILL_CAN_NOT_USE_ITEM_IN_CURRENT_POSITION); 
+        	return;
         }
 
         int useDelay = item.getItemTemplate().getDelayTime();

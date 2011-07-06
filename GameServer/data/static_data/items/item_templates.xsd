@@ -57,6 +57,7 @@
         <xs:attribute name="equipment_type" type="equipType"/>
         <xs:attribute name="slot" type="xs:int" default="0"/>
         <xs:attribute name="usedelayid" type="xs:int" default="0"/>
+        <xs:attribute name="usedzone" type="xs:int" default="0"/>
         <xs:attribute name="usedelay" type="xs:int" default="0"/>
         <xs:attribute name="cash_item" type="xs:int" default="0"/>
         <xs:attribute name="dmg_decal" type="xs:int" default="0"/>

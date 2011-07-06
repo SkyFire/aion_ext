@@ -413,6 +413,10 @@
 	<spawn map="210060000" npcid="798206" pool="1" interval="295">
 		<object x="906.5777" y="2781.7239" z="62.125" h="34"/>
 	</spawn>
+	<!-- Journal of Melleas-->
+	<spawn map="210060000" npcid="730179" pool="1" interval="295">
+		<object x="468.66486" y="2110.1646" z="55.762753" h="0" staticid="88"/>
+	</spawn>
 	<!-- Kairos (NPC Normal lvl:45)-->
 	<spawn map="210060000" npcid="205281" pool="1" interval="295">
 		<object x="1437.9004" y="1555.2542" z="30.796616" h="91"/>
@@ -803,5 +807,9 @@
 	<!-- A Guardian's Life The Early Years -->
 	<spawn map="210060000" npcid="748005" pool="1" interval="295" time="DAY">
 		<object staticid="976" x="401.30161" y="1234.5601" z="135.65903" h="102"/>
+	</spawn>
+	<!-- The Burning of Theobomos -->
+	<spawn map="210060000" npcid="730180" pool="1" interval="295">
+		<object x="406.26398" y="1235.8484" z="136.17198" h="0" staticid="92"/>
 	</spawn>
 </spawns>

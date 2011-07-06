@@ -21,7 +21,6 @@ import gameserver.model.gameobjects.player.Player;
 import gameserver.model.templates.quest.QuestItems;
 import gameserver.network.aion.serverpackets.SM_DIALOG_WINDOW;
 import gameserver.network.aion.serverpackets.SM_PLAY_MOVIE;
-import gameserver.network.aion.serverpackets.SM_PLAY_MOVIE;
 import gameserver.questEngine.handlers.QuestHandler;
 import gameserver.questEngine.model.QuestCookie;
 import gameserver.questEngine.model.QuestState;
@@ -88,7 +87,6 @@ public class _1422ABetterSword extends QuestHandler {
                     player.getInventory().removeFromBagByItemId(182201389, 1);
                     if (ItemService.addItems(player, Collections.singletonList(new QuestItems(182201390, 1))))
                         updateQuestStatus(env);
-					PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 100));
 					PacketSendUtility.sendPacket(player, new SM_PLAY_MOVIE(0, 100));
                     PacketSendUtility
                             .sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));

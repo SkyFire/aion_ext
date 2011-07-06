@@ -17,6 +17,8 @@
 
 package gameserver.network.aion.clientpackets;
 
+import org.apache.log4j.Logger;
+
 import gameserver.dataholders.DataManager;
 import gameserver.model.gameobjects.Npc;
 import gameserver.model.gameobjects.player.Player;
@@ -24,10 +26,12 @@ import gameserver.model.templates.teleport.TelelocationTemplate;
 import gameserver.model.templates.teleport.TeleporterTemplate;
 import gameserver.network.aion.AionClientPacket;
 import gameserver.services.TeleportService;
+import gameserver.utils.MathUtil;
 import gameserver.world.World;
 
 /**
  * @author ATracer, orz
+ * @fixed pixfid
  */
 public class CM_TELEPORT_SELECT extends AionClientPacket {
     /**
@@ -69,7 +73,13 @@ public class CM_TELEPORT_SELECT extends AionClientPacket {
 
         if (activePlayer == null || activePlayer.getLifeStats().isAlreadyDead())
             return;
-
+        
+        if(!MathUtil.isIn3dRange(npc, activePlayer, 10))
+		{
+			Logger.getLogger(this.getClass()).info("[AUDIT]Player "+activePlayer.getName()+" sending fake CM_TELEPORT_SELECT!");
+			return;
+		}
+        
         teleport = DataManager.TELEPORTER_DATA.getTeleporterTemplate(npc.getNpcId());
 
         switch (teleport.getType()) {

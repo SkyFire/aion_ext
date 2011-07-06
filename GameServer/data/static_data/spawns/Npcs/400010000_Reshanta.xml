@@ -393,6 +393,10 @@
 	<spawn map="400010000" npcid="278567" pool="1" interval="295">
 		<object x="2949.083" y="753.8517" z="1533.2225" h="0"/>
 	</spawn>
+	<!-- Expedition to Reshanta-->
+	<spawn map="400010000" npcid="730128" pool="1" interval="295">
+		<object x="3009.2708" y="902.79572" z="1547.251" h="0" staticid="391"/>
+	</spawn>
 	<!-- Eulos (NPC Normal lvl:50)-->
 	<spawn map="400010000" npcid="278627" pool="1" interval="295">
 		<object x="3065.182" y="1011.3768" z="1513.786" h="0"/>
@@ -1000,6 +1004,10 @@
 	<spawn map="400010000" npcid="278570" pool="1" interval="295">
 		<object x="2942.754" y="691.0462" z="1458.8986" h="0"/>
 	</spawn>
+	<!-- Pompo (NPC Normal lvl:50)-->
+	<spawn map="400010000" npcid="799828" pool="1" interval="295">
+		<object x="3002.44" y="899.6667" z="1547.34" h="0"/>
+	</spawn>
 	<!-- Portal (Object Normal lvl:1)-->
 	<spawn map="400010000" npcid="700414" pool="1" interval="295">
 		<object x="883.3619" y="3078.529" z="1645.2096" h="0" staticid="68"/>
@@ -1267,6 +1275,10 @@
 	<spawn map="400010000" npcid="278146" pool="1" interval="295">
 		<object x="1051.4071" y="2891.4111" z="1636.1456" h="90"/>
 	</spawn>
+	<!-- Terrible Dredgion-->
+	<spawn map="400010000" npcid="730183" pool="1" interval="295">
+		<object x="2943.8169" y="902.72119" z="1540.269" h="90" staticid="1221"/>
+	</spawn>
 	<!-- Tienshunerk (NPC Normal lvl:40)-->
 	<spawn map="400010000" npcid="279015" pool="1" interval="295">
 		<object x="3219.4438" y="1838.3135" z="1470.3427" h="0"/>
@@ -1344,6 +1356,10 @@
 	<!-- Vis (NPC Elite lvl:50)-->
 	<spawn map="400010000" npcid="278051" pool="1" interval="295">
 		<object x="1036.4974" y="2845.4163" z="1635.9048" h="0"/>
+	</spawn>
+	<!-- Viscum (NPC Elite lvl:50)-->
+	<spawn map="400010000" npcid="799868" pool="1" interval="295">
+		<object x="915.6622" y="3001.527" z="1655.87" h="0"/>
 	</spawn>
 	<!-- Votan (NPC Hero lvl:60 Subtext: Governor of Reshanta)-->
 	<spawn map="400010000" npcid="278001" pool="1" interval="295">

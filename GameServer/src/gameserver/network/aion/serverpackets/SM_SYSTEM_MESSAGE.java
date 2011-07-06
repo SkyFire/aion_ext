@@ -1428,6 +1428,8 @@ public class SM_SYSTEM_MESSAGE extends AionServerPacket {
 
     public static final SM_SYSTEM_MESSAGE STR_MSG_DECOMPRESS_INVENTORY_IS_FULL = new SM_SYSTEM_MESSAGE(1400363);
 
+	public static  SM_SYSTEM_MESSAGE STR_SKILL_CAN_NOT_USE_ITEM_IN_CURRENT_POSITION	= new SM_SYSTEM_MESSAGE(1300143);
+
     public static final SM_SYSTEM_MESSAGE STR_MSG_GET_ITEM(int nameId) {
         return new SM_SYSTEM_MESSAGE(1390004, new DescriptionId(nameId));
     }

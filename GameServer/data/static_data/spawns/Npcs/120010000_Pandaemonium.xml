@@ -20,6 +20,10 @@
 	@author Magenik 2.0.0.3 Spawn (EU Retail info)
  -->
 <spawns>
+    <!-- Botanical Museum 7 -->
+	<spawn map="120010000" npcid="730090" pool="1" interval="295">
+		<object x="1408.4098" y="1062.5342" z="207.88631" h="60" staticid="1437"/>
+	</spawn>
 	<!-- Obelisk Pandaemonium (Object Normal lvl:3) -->
 	<spawn map="120010000" npcid="700062" pool="1" interval="295">
 		<object x="1457.07" y="1413.6259" z="178.26524" h="29"/>

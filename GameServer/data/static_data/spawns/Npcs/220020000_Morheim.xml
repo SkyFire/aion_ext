@@ -1132,6 +1132,10 @@
 	<spawn map="220020000" npcid="204402" pool="1" interval="295">
 		<object x="2787.9849" y="478.9313" z="267.0" h="104"/>
 	</spawn>
+	<!-- The Death of Deltras the Prideful -->
+	<spawn map="220020000" npcid="730115" pool="1" interval="295">
+		<object x="325.90988" y="2282.7659" z="454.52487" h="0" staticid="1292"/>
+	</spawn>
 	<!-- Thurnberg (NPC Hero lvl:50)-->
 	<spawn map="220020000" npcid="204312" pool="1" interval="295">
 		<object x="298.1249" y="2292.872" z="450.0" h="33"/>

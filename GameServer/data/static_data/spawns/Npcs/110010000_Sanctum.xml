@@ -19,6 +19,10 @@
 	@Author Magenik (2.0.0.3 from retail Spawn)
  -->
 <spawns>
+    <!-- A Treatise on Aether -->
+	<spawn map="110010000" npcid="730102" pool="1" interval="295">
+		<object x="2047.9817" y="1543.1049" z="583.76898" h="118" staticid="986"/>
+	</spawn>
 	<!-- Ettamirel (NPC Normal lvl:20)-->
 	<spawn map="110010000" npcid="203316" pool="1" interval="295">
 		<object h="43" x="1876.8035" y="1493.8827" z="811.0807"/>
