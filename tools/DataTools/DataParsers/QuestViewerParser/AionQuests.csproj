@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02B0598A-F373-493C-B130-0D3E9F918524}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AionQuests</RootNamespace>
+    <AssemblyName>AionQuests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JustAgile.Html, Version=3.5.0.0, Culture=neutral, PublicKeyToken=c4047c85aea66c1a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\JustAgile.Html.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BonusInfo.cs" />
+    <Compile Include="ItemDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemDetails.Designer.cs">
+      <DependentUpon>ItemDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemData.cs">
+      <DependentUpon>ItemData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DialogStrings.cs">
+      <DependentUpon>DialogStrings.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FlatTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormFreezer.cs" />
+    <Compile Include="HtmlPages.cs">
+      <DependentUpon>HtmlPages.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HyperLinks.cs">
+      <DependentUpon>HyperLinks.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IniReader.cs" />
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="Npcs.cs">
+      <DependentUpon>Npcs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QuestData.cs">
+      <DependentUpon>QuestData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuestDictionary.cs" />
+    <Compile Include="QuestPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuestPage.Designer.cs">
+      <DependentUpon>QuestPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Quests.cs">
+      <DependentUpon>Quests.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuestsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuestsForm.Designer.cs">
+      <DependentUpon>QuestsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ItemDetails.resx">
+      <DependentUpon>ItemDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlatTabControl.resx">
+      <DependentUpon>FlatTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuestPage.resx">
+      <DependentUpon>QuestPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuestsForm.resx">
+      <DependentUpon>QuestsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RewardList.resx">
+      <DependentUpon>RewardList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SizeableTextBox.resx">
+      <DependentUpon>SizeableTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StepPage.resx">
+      <DependentUpon>StepPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransparentPictureBox.resx">
+      <DependentUpon>TransparentPictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DialogStrings.xsd">
+      <LastGenOutput>DialogStrings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HtmlPages.xsd">
+      <LastGenOutput>HtmlPages.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HyperLinks.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Npcs.xsd">
+      <LastGenOutput>Npcs.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuestData.xsd">
+      <LastGenOutput>QuestData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Quests.xsd">
+      <LastGenOutput>Quests.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Strings.xsd">
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="RandomItemSettings.cs" />
+    <Compile Include="Reward.cs" />
+    <Compile Include="RewardList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RewardList.Designer.cs">
+      <DependentUpon>RewardList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SizeableTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StepPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StepPage.Designer.cs">
+      <DependentUpon>StepPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StringExtensions.cs" />
+    <Compile Include="Strings.cs">
+      <DependentUpon>Strings.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TransparentPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransparentRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeNodeExtensions.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="XmlBool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AionQuests.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ItemData.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\dlg_bg_basic.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

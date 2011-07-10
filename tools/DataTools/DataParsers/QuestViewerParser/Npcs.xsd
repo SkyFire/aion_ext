@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="npc_clients" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="tab_list">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="data" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tab" type="xs:string" minOccurs="0" />
+              <xs:element name="atab" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="npc_clients" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="tab_list" />
+        <xs:element name="npc_client">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:string" minOccurs="0" />
+              <xs:element name="desc" type="xs:string" minOccurs="0" />
+              <xs:element name="name" type="xs:string" minOccurs="0" />
+              <xs:element name="dir" type="xs:string" minOccurs="0" />
+              <xs:element name="mesh" type="xs:string" minOccurs="0" />
+              <xs:element name="material" type="xs:string" minOccurs="0" />
+              <xs:element name="show_dmg_decal" type="xs:string" minOccurs="0" />
+              <xs:element name="ui_type" type="xs:string" minOccurs="0" />
+              <xs:element name="cursor_type" type="xs:string" minOccurs="0" />
+              <xs:element name="hide_path" type="xs:string" minOccurs="0" />
+              <xs:element name="erect" type="xs:string" minOccurs="0" />
+              <xs:element name="scale" type="xs:string" minOccurs="0" />
+              <xs:element name="weapon_scale" type="xs:string" minOccurs="0" />
+              <xs:element name="altitude" type="xs:string" minOccurs="0" />
+              <xs:element name="stare_angle" type="xs:string" minOccurs="0" />
+              <xs:element name="stare_distance" type="xs:string" minOccurs="0" />
+              <xs:element name="move_speed_normal_walk" type="xs:string" minOccurs="0" />
+              <xs:element name="art_org_move_speed_normal_walk" type="xs:string" minOccurs="0" />
+              <xs:element name="move_speed_normal_run" type="xs:string" minOccurs="0" />
+              <xs:element name="move_speed_combat_run" type="xs:string" minOccurs="0" />
+              <xs:element name="art_org_speed_combat_run" type="xs:string" minOccurs="0" />
+              <xs:element name="in_time" type="xs:string" minOccurs="0" />
+              <xs:element name="out_time" type="xs:string" minOccurs="0" />
+              <xs:element name="neck_angle" type="xs:string" minOccurs="0" />
+              <xs:element name="spine_angle" type="xs:string" minOccurs="0" />
+              <xs:element name="ammo_bone" type="xs:string" minOccurs="0" />
+              <xs:element name="ammo_fx" type="xs:string" minOccurs="0" />
+              <xs:element name="ammo_speed" type="xs:string" minOccurs="0" />
+              <xs:element name="pushed_range" type="xs:string" minOccurs="0" />
+              <xs:element name="hpgauge_level" type="xs:string" minOccurs="0" />
+              <xs:element name="magical_skill_boost" type="xs:string" minOccurs="0" />
+              <xs:element name="ai_name" type="xs:string" minOccurs="0" />
+              <xs:element name="tribe" type="xs:string" minOccurs="0" />
+              <xs:element name="pet_ai_name" type="xs:string" minOccurs="0" />
+              <xs:element name="sensory_range" type="xs:string" minOccurs="0" />
+              <xs:element name="race_type" type="xs:string" minOccurs="0" />
+              <xs:element name="npc_type" type="xs:string" minOccurs="0" />
+              <xs:element name="talking_distance" type="xs:string" minOccurs="0" />
+              <xs:element name="dmg_decal_texture" type="xs:string" minOccurs="0" />
+              <xs:element name="disk_type" type="xs:string" minOccurs="0" />
+              <xs:element name="weapon_hit_fx" type="xs:string" minOccurs="0" />
+              <xs:element name="foot_mat" type="xs:string" minOccurs="0" />
+              <xs:element name="hide_shadow" type="xs:string" minOccurs="0" />
+              <xs:element name="ammo_hit_fx" type="xs:string" minOccurs="0" />
+              <xs:element name="float_corpse" type="xs:string" minOccurs="0" />
+              <xs:element name="game_lang" type="xs:string" minOccurs="0" />
+              <xs:element name="ui_race_type" type="xs:string" minOccurs="0" />
+              <xs:element name="undetectable" type="xs:string" minOccurs="0" />
+              <xs:element name="idle_animation" type="xs:string" minOccurs="0" />
+              <xs:element name="talk_animation" type="xs:string" minOccurs="0" />
+              <xs:element name="appearance_custom" type="xs:string" minOccurs="0" />
+              <xs:element name="quest_ai_name" type="xs:string" minOccurs="0" />
+              <xs:element name="ment" type="xs:string" minOccurs="0" />
+              <xs:element name="recovery" type="xs:string" minOccurs="0" />
+              <xs:element name="recovery_opt1" type="xs:string" minOccurs="0" />
+              <xs:element name="recovery_opt2" type="xs:string" minOccurs="0" />
+              <xs:element name="walk_animation" type="xs:string" minOccurs="0" />
+              <xs:element name="airlines_name" type="xs:string" minOccurs="0" />
+              <xs:element name="title_offset" type="xs:string" minOccurs="0" />
+              <xs:element name="extendcharwarehouse_start" type="xs:string" minOccurs="0" />
+              <xs:element name="extendcharwarehouse_end" type="xs:string" minOccurs="0" />
+              <xs:element name="give_item_proc" type="xs:string" minOccurs="0" />
+              <xs:element name="remove_item_option" type="xs:string" minOccurs="0" />
+              <xs:element name="change_item_skin" type="xs:string" minOccurs="0" />
+              <xs:element name="gather_skill_levelup" type="xs:string" minOccurs="0" />
+              <xs:element name="extendinventory_start" type="xs:string" minOccurs="0" />
+              <xs:element name="extendinventory_end" type="xs:string" minOccurs="0" />
+              <xs:element name="extendaccountwarehouse_start" type="xs:string" minOccurs="0" />
+              <xs:element name="extendaccountwarehouse_end" type="xs:string" minOccurs="0" />
+              <xs:element name="pvpzone" type="xs:string" minOccurs="0" />
+              <xs:element name="pvpzone_world_name" type="xs:string" minOccurs="0" />
+              <xs:element name="pvpzone_location_alias" type="xs:string" minOccurs="0" />
+              <xs:element name="edit_character_gender" type="xs:string" minOccurs="0" />
+              <xs:element name="edit_character_all" type="xs:string" minOccurs="0" />
+              <xs:element name="fxc_type" type="xs:string" minOccurs="0" />
+              <xs:element name="dmg_texture" type="xs:string" minOccurs="0" />
+              <xs:element name="jobfaction_name" type="xs:string" minOccurs="0" />
+              <xs:element name="static" type="xs:string" minOccurs="0" />
+              <xs:element name="object_type" type="xs:string" minOccurs="0" />
+              <xs:element name="abyss_npc_type" type="xs:string" minOccurs="0" />
+              <xs:element name="artifact_id" type="xs:string" minOccurs="0" />
+              <xs:element name="user_animation" type="xs:string" minOccurs="0" />
+              <xs:element name="spawn_animation" type="xs:string" minOccurs="0" />
+              <xs:element name="deadbody_name_id" type="xs:string" minOccurs="0" />
+              <xs:element name="use_script" type="xs:string" minOccurs="0" />
+              <xs:element name="match_maker" type="xs:string" minOccurs="0" />
+              <xs:element name="huge_mob" type="xs:string" minOccurs="0" />
+              <xs:element name="rotation_period" type="xs:string" minOccurs="0" />
+              <xs:element name="talk_delay_time" type="xs:string" minOccurs="0" />
+              <xs:element name="bindstone_type" type="xs:string" minOccurs="0" />
+              <xs:element name="bindstone_capacity" type="xs:string" minOccurs="0" />
+              <xs:element name="bindstone_usecount" type="xs:string" minOccurs="0" />
+              <xs:element name="check_can_see" type="xs:string" minOccurs="0" />
+              <xs:element name="html_bg" type="xs:string" minOccurs="0" />
+              <xs:element name="bound_radius" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="front" type="xs:string" minOccurs="0" />
+                    <xs:element name="side" type="xs:string" minOccurs="0" />
+                    <xs:element name="upper" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="attack_range" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:simpleContent msdata:ColumnName="attack_range_Text" msdata:Ordinal="0">
+                    <xs:extension base="xs:string">
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="attack_rate" nillable="true" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:simpleContent msdata:ColumnName="attack_rate_Text" msdata:Ordinal="0">
+                    <xs:extension base="xs:string">
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="visible_equipments" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="head" type="xs:string" minOccurs="0" />
+                    <xs:element name="torso" type="xs:string" minOccurs="0" />
+                    <xs:element name="leg" type="xs:string" minOccurs="0" />
+                    <xs:element name="foot" type="xs:string" minOccurs="0" />
+                    <xs:element name="shoulder" type="xs:string" minOccurs="0" />
+                    <xs:element name="glove" type="xs:string" minOccurs="0" />
+                    <xs:element name="main" type="xs:string" minOccurs="0" />
+                    <xs:element name="sub" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="appearance" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="pc_type" type="xs:string" minOccurs="0" />
+                    <xs:element name="face_type" type="xs:string" minOccurs="0" />
+                    <xs:element name="face_color" type="xs:string" minOccurs="0" />
+                    <xs:element name="hair_type" type="xs:string" minOccurs="0" />
+                    <xs:element name="hair_color" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="trade_info" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="sell_price_rate" type="xs:string" minOccurs="0" />
+                    <xs:element name="buy_price_rate" type="xs:string" minOccurs="0" />
+                    <xs:element ref="tab_list" minOccurs="0" maxOccurs="unbounded" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="abyss_trade_info" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="tab_list" minOccurs="0" maxOccurs="unbounded" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

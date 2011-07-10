@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+	This file is part of AionWorld private server.
+	Instance spawns following for quest Following Through <Asmodians>
+	Triniel Coliseum Underground Arena
+	@author Rolandas,Lonelyheart
+	
+ -->
+<spawns>
+	<!--Mage Spirit -->
+	<spawn map="320090000" npcid="213584" pool="6" interval="60">
+		<object x="289.10846" y="220.1431" z="158.8865" h="39"/>
+		<object x="263.1627" y="222.19714" z="158.8865" h="25"/>
+		<object x="254.09344" y="241.92245" z="158.88649" h="9"/>
+		<object x="268.24942" y="252.73717" z="158.8865" h="27"/>
+		<object x="317.67523" y="236.81111" z="158.89537" h="47"/>
+		<object x="312.67603" y="243.83096" z="158.89537" h="74"/>
+	</spawn>
+	<!--Warrior Spirit -->
+	<spawn map="320090000" npcid="213583" pool="6" interval="60">
+		<object x="276.37064" y="235.80434" z="158.8865" h="29"/>
+		<object x="231.76143" y="235.20422" z="158.88121" h="10"/>
+		<object x="273.4143" y="197.89575" z="160.42885" h="25"/>
+		<object x="278.43597" y="189.00159" z="161.14049" h="30"/>
+		<object x="271.16922" y="163.98766" z="161.98436" h="18"/>
+		<object x="277.4654" y="172.84067" z="161.98436" h="40"/>
+	</spawn>
+	<!--Exit portal -->
+	<spawn map="320090000" npcid="700369" pool="1" interval="1200">
+		<object x="276.57837" y="162.48338" z="161.98436" h="30"/>
+	</spawn>
+</spawns>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+	This file is part of aion-unique <aion-unique.org>.
+
+	aion-unique is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	aion-unique is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with aion-unique.  If not, see <http://www.gnu.org/licenses/>.
+	
+	Bregirun
+	@author HGabor85
+ -->
+<spawns>
+	<!-- Crusader (Monster Normal lvl:20)-->
+	<spawn map="320030000" npcid="211624" pool="5" interval="295">
+		<object fly="0" staticid="0" x="265.22275" y="213.90982" z="209.82048" h="97" w="0" rw="3"/>
+		<object fly="0" staticid="0" x="248.60905" y="203.97319" z="203.77673" h="117" w="0" rw="5"/>
+		<object fly="0" staticid="0" x="281.99832" y="221.43713" z="206.16406" h="82" w="0" rw="5"/>
+		<object fly="0" staticid="0" x="267.36633" y="228.13713" z="212.65631" h="90" w="0" rw="3"/>
+		<object fly="0" staticid="0" x="257.30176" y="227.85469" z="213.77347" h="99" w="0" rw="3"/>
+	</spawn>
+	<!-- Draconute Vaegir (Monster Normal lvl:20)-->
+	<spawn map="320030000" npcid="211625" pool="2" interval="295">
+		<object fly="0" staticid="0" x="256.8059" y="220.42996" z="211.14536" h="96" w="0" rw="3"/>
+		<object fly="0" staticid="0" x="262.6328" y="232.54451" z="214.81044" h="93" w="0" rw="3"/>
+	</spawn>
+</spawns>

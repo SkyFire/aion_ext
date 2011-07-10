@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Jamie.Npcs" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="spawnPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Home User\Documents\Java\jamie\AE-go_GameServer\data\static_data\spawns</Value>
+    </Setting>
+    <Setting Name="levelPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Home User\Desktop\levels</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

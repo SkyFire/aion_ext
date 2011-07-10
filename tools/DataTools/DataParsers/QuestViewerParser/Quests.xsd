@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="quests" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="data">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="fighter_selectable_item" type="xs:string" minOccurs="0" />
+        <xs:element name="knight_selectable_item" type="xs:string" minOccurs="0" />
+        <xs:element name="ranger_selectable_item" type="xs:string" minOccurs="0" />
+        <xs:element name="assassin_selectable_item" type="xs:string" minOccurs="0" />
+        <xs:element name="wizard_selectable_item" type="xs:string" minOccurs="0" />
+        <xs:element name="elementalist_selectable_item" type="xs:string" minOccurs="0" />
+        <xs:element name="priest_selectable_item" type="xs:string" minOccurs="0" />
+        <xs:element name="chanter_selectable_item" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="quests" msdata:IsDataSet="true" msdata:Locale="en-US">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="data" />
+        <xs:element name="quest">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:string" minOccurs="0" />
+              <xs:element name="dev_name" type="xs:string" minOccurs="0" />
+              <xs:element name="name" type="xs:string" minOccurs="0" />
+              <xs:element name="desc" type="xs:string" minOccurs="0" />
+              <xs:element name="category1" type="xs:string" minOccurs="0" />
+              <xs:element name="category2" type="xs:string" minOccurs="0" />
+              <xs:element name="f_mission" type="xs:string" minOccurs="0" />
+              <xs:element name="max_repeat_count" type="xs:string" minOccurs="0" />
+              <xs:element name="client_level" type="xs:string" minOccurs="0" />
+              <xs:element name="minlevel_permitted" type="xs:string" minOccurs="0" />
+              <xs:element name="maxlevel_permitted" type="xs:string" minOccurs="0" />
+              <xs:element name="finished_quest_cond1" type="xs:string" minOccurs="0" />
+              <xs:element name="cannot_giveup" type="xs:string" minOccurs="0" />
+              <xs:element name="cannot_share" type="xs:string" minOccurs="0" />
+              <xs:element name="collect_progress" type="xs:string" minOccurs="0" />
+              <xs:element name="collect_item1" type="xs:string" minOccurs="0" />
+              <xs:element name="collect_item2" type="xs:string" minOccurs="0" />
+              <xs:element name="drop_monster_1" type="xs:string" minOccurs="0" />
+              <xs:element name="drop_item_1" type="xs:string" minOccurs="0" />
+              <xs:element name="drop_prob_1" type="xs:string" minOccurs="0" />
+              <xs:element name="drop_each_member_1" type="xs:string" minOccurs="0" />
+              <xs:element name="drop_monster_2" type="xs:string" minOccurs="0" />
+              <xs:element name="drop_item_2" type="xs:string" minOccurs="0" />
+              <xs:element name="drop_prob_2" type="xs:string" minOccurs="0" />
+              <xs:element name="drop_each_member_2" type="xs:string" minOccurs="0" />
+              <xs:element name="drop_monster_3" type="xs:string" minOccurs="0" />
+              <xs:element name="drop_item_3" type="xs:string" minOccurs="0" />
+              <xs:element name="drop_prob_3" type="xs:string" minOccurs="0" />
+              <xs:element name="drop_each_member_3" type="xs:string" minOccurs="0" />
+              <xs:element name="drop_monster_4" type="xs:string" minOccurs="0" />
+              <xs:element name="drop_item_4" type="xs:string" minOccurs="0" />
+              <xs:element name="drop_prob_4" type="xs:string" minOccurs="0" />
+              <xs:element name="drop_each_member_4" type="xs:string" minOccurs="0" />
+              <xs:element name="gender_permitted" type="xs:string" minOccurs="0" />
+              <xs:element name="__type_desc__" type="xs:string" minOccurs="0" />
+              <xs:element name="use_class_reward" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_exp1" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_gold1" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_item1_1" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_item1_2" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item1_1" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item1_2" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item1_3" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_exp2" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item2_1" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item2_2" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item2_3" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_exp3" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item3_1" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item3_2" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_exp4" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item4_1" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item4_2" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item1_4" type="xs:string" minOccurs="0" />
+              <xs:element name="check_item1_1" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_title1" type="xs:string" minOccurs="0" />
+              <xs:element name="class_permitted" type="xs:string" minOccurs="0" />
+              <xs:element name="race_permitted" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_gold2" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_item2_1" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item1_5" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item1_6" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item1_7" type="xs:string" minOccurs="0" />
+              <xs:element name="collect_item3" type="xs:string" minOccurs="0" />
+              <xs:element name="collect_item4" type="xs:string" minOccurs="0" />
+              <xs:element name="check_item1_2" type="xs:string" minOccurs="0" />
+              <xs:element name="check_item1_3" type="xs:string" minOccurs="0" />
+              <xs:element name="check_item1_4" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item1_8" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_abyss_point1" type="xs:string" minOccurs="0" />
+              <xs:element name="quest_work_item1" type="xs:string" minOccurs="0" />
+              <xs:element name="quest_work_item2" type="xs:string" minOccurs="0" />
+              <xs:element name="quest_work_item3" type="xs:string" minOccurs="0" />
+              <xs:element name="quest_work_item4" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_title2" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_gold3" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_item3_1" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_gold4" type="xs:string" minOccurs="0" />
+              <xs:element name="inventory_item_name1" type="xs:string" minOccurs="0" />
+              <xs:element name="extra_category" type="xs:string" minOccurs="0" />
+              <xs:element name="check_item2_1" type="xs:string" minOccurs="0" />
+              <xs:element name="title" type="xs:string" minOccurs="0" />
+              <xs:element name="inventory_item_name2" type="xs:string" minOccurs="0" />
+              <xs:element name="check_item3_1" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_item4_1" type="xs:string" minOccurs="0" />
+              <xs:element name="check_item4_1" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_repeat_count" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_gold_ext" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item_ext_1" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item_ext_2" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item2_4" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item3_3" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item3_4" type="xs:string" minOccurs="0" />
+              <xs:element name="abyss_rank" type="xs:string" minOccurs="0" />
+              <xs:element name="target_type" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_abyss_point2" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_extend_inventory1" type="xs:string" minOccurs="0" />
+              <xs:element name="finished_quest_cond2" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_abyss_point3" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_abyss_point4" type="xs:string" minOccurs="0" />
+              <xs:element name="equiped_item_name1" type="xs:string" minOccurs="0" />
+              <xs:element name="equiped_item_name2" type="xs:string" minOccurs="0" />
+              <xs:element name="equiped_item_name3" type="xs:string" minOccurs="0" />
+              <xs:element name="equiped_item_name4" type="xs:string" minOccurs="0" />
+              <xs:element name="equiped_item_name5" type="xs:string" minOccurs="0" />
+              <xs:element name="unfinished_quest_cond1" type="xs:string" minOccurs="0" />
+              <xs:element name="unfinished_quest_cond2" type="xs:string" minOccurs="0" />
+              <xs:element name="unfinished_quest_cond3" type="xs:string" minOccurs="0" />
+              <xs:element name="unfinished_quest_cond4" type="xs:string" minOccurs="0" />
+              <xs:element name="unfinished_quest_cond5" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item2_5" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item3_5" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item4_3" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item4_4" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item4_5" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_item1_3" type="xs:string" minOccurs="0" />
+              <xs:element name="finished_quest_cond3" type="xs:string" minOccurs="0" />
+              <xs:element name="finished_quest_cond4" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item_ext_3" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item_ext_4" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item2_6" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item_ext_5" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item_ext_6" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item_ext_7" type="xs:string" minOccurs="0" />
+              <xs:element name="selectable_reward_item_ext_8" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_title_ext" type="xs:string" minOccurs="0" />
+              <xs:element name="reward_extend_stigma1" type="xs:string" minOccurs="0" />
+              <xs:element name="finished_quest_cond5" type="xs:string" minOccurs="0" />
+              <xs:element name="combineskill" type="xs:string" minOccurs="0" />
+              <xs:element name="combine_skillpoint" type="xs:string" minOccurs="0" />
+              <xs:element name="recipe_name" type="xs:string" minOccurs="0" />
+              <xs:element name="fighter_selectable_reward" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="data" minOccurs="0" maxOccurs="unbounded" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="knight_selectable_reward" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="data" minOccurs="0" maxOccurs="unbounded" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ranger_selectable_reward" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="data" minOccurs="0" maxOccurs="unbounded" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="assassin_selectable_reward" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="data" minOccurs="0" maxOccurs="unbounded" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="wizard_selectable_reward" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="data" minOccurs="0" maxOccurs="unbounded" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="elementalist_selectable_reward" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="data" minOccurs="0" maxOccurs="unbounded" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="priest_selectable_reward" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="data" minOccurs="0" maxOccurs="unbounded" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="chanter_selectable_reward" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element ref="data" minOccurs="0" maxOccurs="unbounded" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

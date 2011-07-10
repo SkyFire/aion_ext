@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio 1.0.8.0 (http://www.liquid-technologies.com) -->
+<xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns="" id="client_items" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:Locale="en-US" name="client_items">
+    <xs:complexType>
+      <xs:choice minOccurs="1" maxOccurs="1">
+        <xs:element name="client_item">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="id" type="xs:int" />
+              <xs:element minOccurs="0" name="desc" type="xs:string" />
+              <xs:element minOccurs="0" name="name" type="xs:string" />
+              <xs:element minOccurs="0" name="desc_long" type="xs:string" />
+              <xs:element minOccurs="0" name="weapon_type" type="xs:string" />
+              <xs:element minOccurs="0" name="item_type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="normal" />
+                    <xs:enumeration value="abyss" />
+                    <xs:enumeration value="draconic" />
+                    <xs:enumeration value="devanion" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="mesh" type="xs:string" />
+              <xs:element minOccurs="0" name="mesh_change" type="xs:boolean" />
+              <xs:element minOccurs="0" name="material" type="xs:string" />
+              <xs:element minOccurs="0" name="dmg_decal">
+                <xs:simpleType>
+                  <xs:restriction base="xs:short">
+                    <xs:minInclusive value="0" />
+                    <xs:maxExclusive value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="item_fx" type="xs:string" />
+              <xs:element minOccurs="0" name="combat_item_fx" type="xs:string" />
+              <xs:element minOccurs="0" name="icon_name" type="xs:string" />
+              <xs:element minOccurs="0" name="blade_fx" type="xs:string" />
+              <xs:element minOccurs="0" name="trail_tex" type="xs:string" />
+              <xs:element minOccurs="0" name="equip_bone" type="xs:string" />
+              <xs:element minOccurs="0" name="combat_equip_bone" type="xs:string" />
+              <xs:element minOccurs="0" name="price" type="xs:long" />
+              <xs:element minOccurs="0" name="abyss_point" type="xs:long" />
+              <xs:element minOccurs="0" name="max_stack_count" type="xs:int" />
+              <xs:element minOccurs="0" name="equipment_slots">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="none" />
+                    <xs:enumeration value="main" />
+                    <xs:enumeration value="head" />
+                    <xs:enumeration value="foot" />
+                    <xs:enumeration value="glove" />
+                    <xs:enumeration value="leg" />
+                    <xs:enumeration value="sub" />
+                    <xs:enumeration value="right_or_left_ear" />
+                    <xs:enumeration value="waist" />
+                    <xs:enumeration value="torso" />
+                    <xs:enumeration value="shoulder" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="min_damage" type="xs:int" />
+              <xs:element minOccurs="0" name="max_damage" type="xs:int" />
+              <xs:element minOccurs="0" name="str" type="xs:string" />
+              <xs:element minOccurs="0" name="agi" type="xs:string" />
+              <xs:element minOccurs="0" name="kno" type="xs:string" />
+              <xs:element minOccurs="0" name="hit_accuracy" type="xs:int" />
+              <xs:element minOccurs="0" name="critical" type="xs:int" />
+              <xs:element minOccurs="0" name="parry" type="xs:int" />
+              <xs:element minOccurs="0" name="magical_skill_boost" type="xs:int" />
+              <xs:element minOccurs="0" name="magical_hit_accuracy" type="xs:int" />
+              <xs:element minOccurs="0" name="attack_type" type="xs:string" />
+              <xs:element minOccurs="0" name="attack_delay" type="xs:int" />
+              <xs:element minOccurs="0" name="hit_count" type="xs:short" />
+              <xs:element minOccurs="0" name="attack_gap" type="xs:float" />
+              <xs:element minOccurs="0" name="attack_range" type="xs:float" />
+              <xs:element minOccurs="0" name="basic_length" type="xs:float" />
+              <xs:element minOccurs="0" name="quality">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="common" />
+                    <xs:enumeration value="legend" />
+                    <xs:enumeration value="epic" />
+                    <xs:enumeration value="unique" />
+                    <xs:enumeration value="rare" />
+                    <xs:enumeration value="junk" />
+                    <xs:enumeration value="mythic" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="level" type="xs:int" />
+              <xs:element minOccurs="0" name="lore" type="xs:string" />
+              <xs:element minOccurs="0" name="can_exchange" type="xs:string" />
+              <xs:element minOccurs="0" name="can_sell_to_npc" type="xs:string" />
+              <xs:element minOccurs="0" name="can_deposit_to_character_warehouse" type="xs:string" />
+              <xs:element minOccurs="0" name="can_deposit_to_account_warehouse" type="xs:string" />
+              <xs:element minOccurs="0" name="can_deposit_to_guild_warehouse" type="xs:string" />
+              <xs:element minOccurs="0" name="breakable" type="xs:string" />
+              <xs:element minOccurs="0" name="soul_bind" type="xs:string" />
+              <xs:element minOccurs="0" name="remove_when_logout" type="xs:string" />
+              <xs:element minOccurs="0" name="gender_permitted" type="xs:string" />
+              <xs:element minOccurs="0" name="warrior" type="xs:int" />
+              <xs:element minOccurs="0" name="scout" type="xs:int" />
+              <xs:element minOccurs="0" name="mage" type="xs:int" />
+              <xs:element minOccurs="0" name="cleric" type="xs:int" />
+              <xs:element minOccurs="0" name="fighter" type="xs:int" />
+              <xs:element minOccurs="0" name="knight" type="xs:int" />
+              <xs:element minOccurs="0" name="assassin" type="xs:int" />
+              <xs:element minOccurs="0" name="ranger" type="xs:int" />
+              <xs:element minOccurs="0" name="wizard" type="xs:int" />
+              <xs:element minOccurs="0" name="elementalist" type="xs:int" />
+              <xs:element minOccurs="0" name="chanter" type="xs:int" />
+              <xs:element minOccurs="0" name="priest" type="xs:int" />
+              <xs:element minOccurs="0" name="option_slot_bonus" type="xs:short" />
+              <xs:element minOccurs="0" name="bonus_attr12" type="xs:string" />
+              <xs:element minOccurs="0" name="bonus_attr1" type="xs:string" />
+              <xs:element minOccurs="0" name="bonus_attr2" type="xs:string" />
+              <xs:element minOccurs="0" name="bonus_attr3" type="xs:string" />
+              <xs:element minOccurs="0" name="bonus_attr4" type="xs:string" />
+              <xs:element minOccurs="0" name="bonus_apply">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="equip" />
+                    <xs:enumeration value="inventory" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="no_enchant" type="xs:string" />
+              <xs:element minOccurs="0" name="can_proc_enchant" type="xs:string" />
+              <xs:element minOccurs="0" name="cannot_changeskin" type="xs:string" />
+              <xs:element minOccurs="0" name="ui_sound_type" type="xs:string" />
+              <xs:element minOccurs="0" name="cash_item" type="xs:string" />
+              <xs:element minOccurs="0" name="can_split" type="xs:string" />
+              <xs:element minOccurs="0" name="item_drop_permitted" type="xs:string" />
+              <xs:element minOccurs="0" name="race_permitted" type="xs:string" />
+              <xs:element minOccurs="0" name="abyss_item" type="xs:string" />
+              <xs:element minOccurs="0" name="abyss_item_count" type="xs:int" />
+              <xs:element minOccurs="0" name="bonus_attr5" type="xs:string" />
+              <xs:element minOccurs="0" name="bonus_attr6" type="xs:string" />
+              <xs:element minOccurs="0" name="bonus_attr7" type="xs:string" />
+              <xs:element minOccurs="0" name="bonus_attr8" type="xs:string" />
+              <xs:element minOccurs="0" name="cash_available_minute" type="xs:string" />
+              <xs:element minOccurs="0" name="bonus_attr9" type="xs:string" />
+              <xs:element minOccurs="0" name="bonus_attr10" type="xs:string" />
+              <xs:element minOccurs="0" name="confirm_to_delete_cash_item" type="xs:string" />
+              <xs:element minOccurs="0" name="bonus_attr11" type="xs:string" />
+              <xs:element minOccurs="0" name="ammo_bone" type="xs:string" />
+              <xs:element minOccurs="0" name="ammo_fx" type="xs:string" />
+              <xs:element minOccurs="0" name="ammo_speed" type="xs:int" />
+              <xs:element minOccurs="0" name="armor_type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="robe" />
+                    <xs:enumeration value="clothes" />
+                    <xs:enumeration value="leather" />
+                    <xs:enumeration value="plate" />
+                    <xs:enumeration value="no_armor" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="dodge" type="xs:int" />
+              <xs:element minOccurs="0" name="magical_resist" type="xs:int" />
+              <xs:element minOccurs="0" name="physical_defend" type="xs:int" />
+              <xs:element minOccurs="0" name="can_dye" type="xs:boolean" />
+              <xs:element minOccurs="0" name="default_color_m" type="xs:string" />
+              <xs:element minOccurs="0" name="default_color_f" type="xs:string" />
+              <xs:element minOccurs="0" name="visual_slot" type="xs:string" />
+              <xs:element minOccurs="0" name="fx_mesh" type="xs:int" />
+              <xs:element minOccurs="0" name="extract_skin_type" type="xs:short" />
+              <xs:element minOccurs="0" name="block" type="xs:int" />
+              <xs:element minOccurs="0" name="damage_reduce" type="xs:int" />
+              <xs:element minOccurs="0" name="reduce_max" type="xs:int" />
+              <xs:element minOccurs="0" name="gathering_point" type="xs:int" />
+              <xs:element minOccurs="0" name="require_shard" type="xs:int" />
+              <xs:element minOccurs="0" name="gain_skill1" type="xs:string" />
+              <xs:element minOccurs="0" name="gain_level1" type="xs:int" />
+              <xs:element minOccurs="0" name="require_skill1" type="xs:string" />
+              <xs:element minOccurs="0" name="require_skill1_lv" type="xs:string" />
+              <xs:element minOccurs="0" name="require_skill2" type="xs:string" />
+              <xs:element minOccurs="0" name="require_skill2_lv" type="xs:string" />
+              <xs:element minOccurs="0" name="stigma_type" type="xs:string" />
+              <xs:element minOccurs="0" name="gain_skill2" type="xs:string" />
+              <xs:element minOccurs="0" name="gain_level2" type="xs:int" />
+              <xs:element minOccurs="0" name="tool_type" type="xs:string" />
+              <xs:element minOccurs="0" name="motion_name" type="xs:string" />
+              <xs:element minOccurs="0" name="combineskill" type="xs:string" />
+              <xs:element minOccurs="0" name="category">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="armor_craft" />
+                    <xs:enumeration value="cooking" />
+                    <xs:enumeration value="weapon_craft" />
+                    <xs:enumeration value="handiwork" />
+                    <xs:enumeration value="alchemy" />
+                    <xs:enumeration value="carpentry" />
+                    <xs:enumeration value="tailoring" />
+                    <xs:enumeration value="leatherwork" />
+                    <xs:enumeration value="harvest" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="use_fx" type="xs:string" />
+              <xs:element minOccurs="0" name="use_fx_bone" type="xs:string" />
+              <xs:element minOccurs="0" name="activation_mode" type="xs:string" />
+              <xs:element minOccurs="0" name="activation_count" type="xs:boolean" />
+              <xs:element minOccurs="0" name="breakdown" type="xs:string" />
+              <xs:element minOccurs="0" name="activate_target">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="standalone" />
+                    <xs:enumeration value="target" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="use_delay_type_id" type="xs:int" />
+              <xs:element minOccurs="0" name="use_delay" type="xs:int" />
+              <xs:element minOccurs="0" name="craft_recipe_info" type="xs:string" />
+              <xs:element minOccurs="0" name="quest" type="xs:int" />
+              <xs:element minOccurs="0" name="activation_skill" type="xs:string" />
+              <xs:element minOccurs="0" name="activation_level" type="xs:short" />
+              <xs:element minOccurs="0" name="disassembly_item" nillable="true" type="xs:boolean" />
+              <xs:element minOccurs="0" name="warrior_max" type="xs:int" />
+              <xs:element minOccurs="0" name="scout_max" type="xs:int" />
+              <xs:element minOccurs="0" name="mage_max" type="xs:int" />
+              <xs:element minOccurs="0" name="cleric_max" type="xs:int" />
+              <xs:element minOccurs="0" name="fighter_max" type="xs:int" />
+              <xs:element minOccurs="0" name="knight_max" type="xs:int" />
+              <xs:element minOccurs="0" name="assassin_max" type="xs:int" />
+              <xs:element minOccurs="0" name="ranger_max" type="xs:int" />
+              <xs:element minOccurs="0" name="wizard_max" type="xs:int" />
+              <xs:element minOccurs="0" name="elementalist_max" type="xs:int" />
+              <xs:element minOccurs="0" name="chanter_max" type="xs:int" />
+              <xs:element minOccurs="0" name="priest_max" type="xs:int" />
+              <xs:element minOccurs="0" name="unit_sell_count" type="xs:int" />
+              <xs:element minOccurs="0" name="casting_delay" type="xs:int" />
+              <xs:element minOccurs="0" name="return_alias" type="xs:string" />
+              <xs:element minOccurs="0" name="return_worldid" type="xs:int" />
+              <xs:element minOccurs="0" name="area_to_use" type="xs:string" />
+              <xs:element minOccurs="0" name="stat_enchant_type" type="xs:string" />
+              <xs:element minOccurs="0" name="stat_enchant_value" type="xs:int" />
+              <xs:element minOccurs="0" name="proc_enchant_skill" type="xs:string" />
+              <xs:element minOccurs="0" name="proc_enchant_skill_level" type="xs:int" />
+              <xs:element minOccurs="0" name="proc_enchant_effect_occur_prob" type="xs:int" />
+              <xs:element minOccurs="0" name="desc_proc" type="xs:string" />
+              <xs:element minOccurs="0" name="proc_fx" type="xs:string" />
+              <xs:element minOccurs="0" name="proc_enchant_effect_occur_left_prob" type="xs:string" />
+              <xs:element minOccurs="0" name="weapon_boost_value" type="xs:string" />
+              <xs:element minOccurs="0" name="dyeing_color" type="xs:string" />
+              <xs:element minOccurs="0" name="skill_to_learn" type="xs:string" />
+              <xs:element minOccurs="0" name="cash_social" type="xs:string" />
+              <xs:element minOccurs="0" name="cash_title" type="xs:string" />
+              <xs:element minOccurs="0" name="inven_warehouse_max_extendlevel" type="xs:short" />
+              <xs:element minOccurs="0" name="cosmetic_name" type="xs:string" />
+              <xs:element minOccurs="0" name="coupon_item" type="xs:string" />
+              <xs:element minOccurs="0" name="coupon_item_count" type="xs:int" />
+              <xs:element minOccurs="0" name="doc_bg" type="xs:string" />
+              <xs:element minOccurs="0" name="toy_pet_name" type="xs:string" />
+              <xs:element minOccurs="0" name="equip_type" nillable="true" type="xs:int" />
+              <xs:element minOccurs="0" name="difficulty" type="xs:string" />
+              <xs:element minOccurs="0" name="scale" type="xs:float" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

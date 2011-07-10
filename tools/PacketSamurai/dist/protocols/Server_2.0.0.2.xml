@@ -1,0 +1,3105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<protocol checksumSize="2" crypt="AionGame" name="Server_2.0.0.2"
+    packetbuffer="DefaultPacketBuffer" port="7777" sizebytes="2" strictlength="false">
+    <packetfamilly switchtype="c" way="ServerPackets">
+        <packet id="0x0" name="SM_STATUPDATE_MP">
+            <part name="currentMp" type="d"/>
+            <part name="maxMp" type="d"/>
+        </packet>
+        <packet id="0x1" name="SM_STATUPDATE_HP">
+            <part name="currentHp" type="d"/>
+            <part name="maxHp" type="d"/>
+        </packet>
+        <packet id="0x2" name="SM_CHAT_INIT">
+            <part name="tokenLength" type="d"/>
+            <part name="token" type="b"/>
+        </packet>
+        <packet id="0x3" name="SM_CHANNEL_INFO">
+            <part name="currentChannel" type="d"/>
+            <part name="instanceCount" type="d"/>
+        </packet>
+        <packet id="0x4" name="SM_MACRO_RESULT">
+            <part name="result" type="c"/>
+        </packet>
+        <packet id="0x5" name="SM_MACRO_LIST">
+            <part name="player objId" type="d"/>
+            <part name="unk==1" type="c"/>
+            <part id="0" name="size (inversed)" type="h"/>
+            <for id="0">
+                <part name="order" type="c"/>
+                <part name="xml" type="S"/>
+            </for>
+        </packet>
+        <packet id="0x7" name="SM_NICKNAME_CHECK_RESPONSE">
+            <part name="result" type="c"/>
+        </packet>
+        <!-- TODO -->
+        <packet id="0x8" name="SM_RIFT_ANNOUNCE">
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+        </packet>
+        <packet id="0x9" name="SM_SET_BIND_POINT">
+            <part name="kisk?" type="c"/>
+            <part name="0x01" type="c"/>
+            <part name="map id" type="d"/>
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="kiskObjectId" type="d"/>
+        </packet>
+        <packet id="0xb" name="SM_ABYSS_RANK">
+            <part name="ap" type="Q"/>
+            <part name="rank" type="d"/>
+            <part name="rating" type="d"/>
+            <part name="next rank" type="d"/>
+            <part name="all kill" type="d"/>
+            <part name="max rank" type="d"/>
+            <part name="day kill" type="d"/>
+            <part name="day ap" type="Q"/>
+            <part name="this week kill" type="d"/>
+            <part name="this week ap" type="Q"/>
+            <part name="last week kill" type="d"/>
+            <part name="last week ap" type="Q"/>
+            <part name="unk" type="c"/>
+        </packet>
+        <packet id="0xc" name="SM_FRIEND_UPDATE">
+            <part name="name" type="S"/>
+            <part name="level" type="d"/>
+            <part name="classID" type="d"/>
+            <part name="isOnline" type="c"/>
+            <part name="mapId" type="d"/>
+            <part name="lastOnlineTime" type="d"/>
+            <part name="note" type="S"/>
+            <part name="statusIntValue" type="c"/>
+        </packet>
+        <packet id="0xd" name="SM_PETITION">
+            <part name="ActionID" type="c"/>
+            <part name="unk" type="d"/>
+            <part name="usersWaiting" type="h"/>
+            <part name="TicketID" type="S"/>
+            <part name="unk" type="h"/>
+            <part name="TotalPetitions" type="c"/>
+            <part name="RemainingPetitions" type="c"/>
+            <part name="EstimatedGMreply" type="h"/>
+            <part name="0x00" type="d"/>
+        </packet>
+        <packet id="0xe" name="SM_RECIPE_DELETE">
+            <part name="recipeId" type="d"/>
+        </packet>
+        <packet id="0xf" name="SM_LEARN_RECIPE">
+            <part name="recipeId" type="d"/>
+        </packet>
+        <packet id="0x10" name="SM_FLY_TIME">
+            <part name="currentFp" type="d"/>
+            <part name="maxFp" type="d"/>
+        </packet>
+        <packet id="0x11" name="SM_FORTRESS_INFO">
+            <part name="locationId" type="d"/>
+            <part name="value" type="c"/>
+        </packet>
+        <packet id="0x12" name="SM_DELETE">
+            <part name="objId" type="d"/>
+            <part name="deleteTime" type="c"/>
+        </packet>
+        <packet id="0x13" name="SM_PLAYER_MOVE">
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="heading" type="c"/>
+        </packet>
+        <packet id="0x14" name="SM_MESSAGE">
+            <part id="0" name="chat type" type="c"/>
+            <part name="can read" type="c"/>
+            <part name="sender objId" type="d"/>
+            <switch id="0">
+                <case id="0">
+                    <part name="unk" type="h"/>
+                    <part name="message" type="S"/>
+                </case>
+                <case id="3">
+                    <part name="name" type="S"/>
+                    <part name="message" type="S"/>
+                    <part name="x" type="f"/>
+                    <part name="y" type="f"/>
+                    <part name="z" type="f"/>
+                </case>
+                <case id="4">
+                    <part name="name" type="S"/>
+                    <part name="message" type="S"/>
+                </case>
+                <case id="5">
+                    <part name="name" type="S"/>
+                    <part name="message" type="S"/>
+                </case>
+                <case id="7">
+                    <part name="name" type="S"/>
+                    <part name="message" type="S"/>
+                </case>
+                <case id="8">
+                    <part name="name" type="S"/>
+                    <part name="message" type="S"/>
+                </case>
+                <case id="24">
+                    <part name="unk" type="h"/>
+                    <part name="message" type="S"/>
+                </case>
+                <case id="30">
+                    <part name="unk" type="h"/>
+                    <part name="message" type="S"/>
+                </case>
+                <case id="28">
+                    <part name="unk" type="h"/>
+                    <part name="message" type="S"/>
+                </case>
+                <case id="32">
+                    <part name="unk" type="h"/>
+                    <part name="message" type="S"/>
+                </case>
+                <case id="33">
+                    <part name="unk" type="h"/>
+                    <part name="message" type="S"/>
+                </case>
+            </switch>
+        </packet>
+        <packet id="0x15" name="SM_LOGIN_QUEUE">
+            <part name="waitingPosition" type="d"/>
+            <part name="waitingTime" type="d"/>
+            <part name="waitingCount" type="d"/>
+        </packet>
+        <packet id="0x16" name="SM_INVENTORY_INFO">
+            <part name="update cube size" type="c"/>
+            <part name="cube size from npc" type="c"/>
+            <part name="cube size from quest" type="c"/>
+            <part name="unk?" type="c"/>
+            <part id="0" name="number of entries" type="h"/>
+            <for id="0">
+                <part name="objId?" type="d"/>
+                <part name="itemId" type="d"/>
+                <part name="unk1" type="d"/>
+                <part name="unk2" type="d"/>
+                <part id="1" name="size" type="h"/>
+                <part name="unk" sizeid="1" type="b"/>
+                <part name="unk" type="c"/>
+                <part name="unk" type="h"/>
+            </for>
+        </packet>
+        <packet id="0x17" name="SM_SYSTEM_MESSAGE">
+            <part name="0x13" type="h"/>
+            <part name="0x00" type="d"/>
+            <part id="0" name="code" type="d"/>
+            <switch id="0">
+                <case id="230038"/>
+                <case id="900847"/>
+                <case id="1300627"/>
+                <case id="1300719"/>
+                <case id="1340000"/>
+                <case id="1300738"/>
+                <case id="1370002"/>
+                <case id="1300887"/>
+                <case id="1300891"/>
+                <case id="1300894"/>
+                <case id="1300897"/>
+                <case id="1301065"/>
+                <case id="1301067"/>
+                <case id="1300094"/>
+                <case id="1300097"/>
+                <case id="1300628"/>
+                <case id="1390141"/>
+                <case id="1370000"/>
+                <case id="default"/>
+            </switch>
+            <part id="1" name="count" type="c"/>
+            <for id="1">
+                <part name="txt" type="S"/>
+            </for>
+        </packet>
+        <packet id="0x18" name="SM_DELETE_ITEM">
+            <part name="itemUniqueId" type="d"/>
+            <part name="unk" type="c"/>
+        </packet>
+        <packet id="0x19" name="SM_INVENTORY_UPDATE">
+            <part name="unk" type="h"/>
+            <part name="itemCount" type="h"/>
+        </packet>
+        <packet id="0x1a" name="SM_UI_SETTINGS">
+            <part name="settingsType" type="h"/>
+            <part name="unk[0x1C]" type="c"/>
+            <part name="data" type="b"/>
+        </packet>
+        <packet id="0x1b" name="SM_UPDATE_ITEM">
+            <part name="uniqueId" type="d"/>
+            <part name="unk[0x24]" type="h"/>
+            <part name="itemNameId" type="d"/>
+            <part name="unk[0]" type="h"/>
+            <part id="0" name="itemDetailsLength" type="h"/>
+            <part name="itemDetails" sizeid="0" type="b"/>
+        </packet>
+        <packet id="0x1c" name="SM_PLAYER_INFO">
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="objId" type="d"/>
+            <part name="raceSex" type="d"/>
+            <part name="raceSex" type="d"/>
+            <part name="0x00" type="c"/>
+            <part name="0x26" type="c"/>
+            <part name="raceId" type="c"/>
+            <part name="classId" type="c"/>
+            <part name="genderId" type="c"/>
+            <part name="[0x01,9*0x00]" size="10" type="b"/>
+            <part name="heading" type="c"/>
+            <part name="name" type="S"/>
+            <part name="titleId" type="d"/>
+            <part name="canFly" type="c"/>
+            <part name="skillCasting" type="h"/>
+            <part name="legionId" type="d"/>
+            <part name="legionVer" type="c"/>
+            <part name="serverMode?" type="c"/>
+            <part name="isDefault" type="c"/>
+            <part name="color_r" type="c"/>
+            <part name="color_g" type="c"/>
+            <part name="color_b" type="c"/>
+            <part name="legionName" type="S"/>
+            <part name="%hp" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="0x00" type="c"/>
+            <part id="0" name="gears" type="bch"/>
+            <for id="0">
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="unk" type="h"/>
+            </for>
+            <part name="skinRGB" type="d">
+                <reader type="Color"/>
+            </part>
+            <part name="hairRGB" type="d">
+                <reader type="Color"/>
+            </part>
+            <part name="eyeRGB" type="d">
+                <reader type="Color"/>
+            </part>
+            <part name="lipRGB" type="d">
+                <reader type="Color"/>
+            </part>
+            <part name="face" type="c"/>
+            <part name="hair" type="c"/>
+            <part name="deco" type="c"/>
+            <part name="tattoo" type="c"/>
+            <part name="0x04" type="c"/>
+            <part name="faceShape" type="c"/>
+            <part name="foreHead" type="c"/>
+            <part name="eyeHeight" type="c"/>
+            <part name="eyeSpace" type="c"/>
+            <part name="eyeWidth" type="c"/>
+            <part name="eyeSize" type="c"/>
+            <part name="eyeShape" type="c"/>
+            <part name="eyeAngle" type="c"/>
+            <part name="browHeight" type="c"/>
+            <part name="browAngle" type="c"/>
+            <part name="browShape" type="c"/>
+            <part name="nose" type="c"/>
+            <part name="noseBridge" type="c"/>
+            <part name="noseWidth" type="c"/>
+            <part name="noseTip" type="c"/>
+            <part name="cheek" type="c"/>
+            <part name="lipHeight" type="c"/>
+            <part name="mouthSize" type="c"/>
+            <part name="lipSize" type="c"/>
+            <part name="smile" type="c"/>
+            <part name="lipShape" type="c"/>
+            <part name="jawHeight" type="c"/>
+            <part name="chinJut" type="c"/>
+            <part name="earShape" type="c"/>
+            <part name="headSize" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="shoulderSize" type="c"/>
+            <part name="armLength" type="c"/>
+            <part name="legLength" type="c"/>
+            <part name="neck" type="c"/>
+            <part name="neckLength" type="c"/>
+            <part name="shoulders" type="c"/>
+            <part name="torso" type="c"/>
+            <part name="chest" type="c"/>
+            <part name="waist" type="c"/>
+            <part name="hips" type="c"/>
+            <part name="armThickness" type="c"/>
+            <part name="handSize" type="c"/>
+            <part name="legThickness" type="c"/>
+            <part name="footSize" type="c"/>
+            <part name="facialRate" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="voice" type="c"/>
+            <part name="height" type="f"/>
+            <part name="[0x00*2,0x80,0x3E,0x00*3,0x40]" size="8" type="b"/>
+            <part name="moveSpeed?" type="f"/>
+            <part name="[0xDC,0x05,0xDC,0x05,0x02]" type="c"/>
+            <part name="privateShop?" type="S"/>
+            <part name="[0x00*12]" size="12" type="b"/>
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="moveType" type="c"/>
+            <part name="self[0x40|0x00]" type="c"/>
+            <part name="heroe" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="0x00" type="c"/>
+            <part name="level" type="d"/>
+            <part name="0x00" type="c"/>
+            <part name="0x01" type="d"/>
+        </packet>
+        <packet id="0x1d" name="SM_STANCE_STATE">
+            <part name="playerObjId" type="d"/>
+            <part name="stateId" type="c"/>
+        </packet>
+        <packet id="0x1e" name="SM_GATHER_STATUS">
+            <part name="playerObjId" type="d"/>
+            <part name="gatherableObjId" type="d"/>
+            <part name="unk" type="h"/>
+            <part name="status" type="c"/>
+        </packet>
+        <packet id="0x1f" name="SM_CASTSPELL">
+            <part name="attackerId" type="d"/>
+            <part name="spellId" type="h"/>
+            <part name="level" type="c"/>
+            <part id="0" name="point" type="c"/>
+            <switch id="0">
+                <case id="1">
+                    <part name="x" type="f"/>
+                    <part name="y" type="f"/>
+                    <part name="z" type="f"/>
+                </case>
+                <case id="default">
+                    <part name="targetObjId" type="d"/>
+                </case>
+            </switch>
+            <part name="duration" type="d"/>
+            <part name="unk" type="d"/>
+        </packet>
+        <packet id="0x20" name="SM_UPDATE_PLAYER_APPEARANCE">
+            <part name="playerObjId" type="d"/>
+            <part id="0" name="itemMask" type="bch"/>
+            <for id="0">
+                <part name="itemId" type="d"/>
+                <part name="godStone" type="d"/>
+                <part name="itemColor" type="d"/>
+                <part name="0x00" type="h"/>
+            </for>
+        </packet>
+        <packet id="0x21" name="SM_GATHER_UPDATE">
+            <part name="skillLevel" type="h"/>
+            <part id="0" name="action" type="c"/>
+            <part name="itemId" type="d"/>
+            <switch id="0">
+                <case id="0">
+                    <part name="successAdj" type="d"/>
+                    <part name="failureAdj" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="h"/>
+                    <part name="nameId" type="d"/>
+                    <part name="unk" type="h"/>
+                </case>
+                <case id="1">
+                    <part name="success" type="d"/>
+                    <part name="failure" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="h"/>
+                </case>
+                <case id="2">
+                    <part name="successAdj" type="d"/>
+                    <part name="failure" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="h"/>
+                </case>
+                <case id="5">
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="h"/>
+                </case>
+                <case id="6">
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="h"/>
+                </case>
+                <case id="7">
+                    <part name="success" type="d"/>
+                    <part name="failureAdj" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="h"/>
+                    <part name="nameId" type="d"/>
+                    <part name="unk" type="h"/>
+                </case>
+                <case id="default"/>
+            </switch>
+        </packet>
+        <packet id="0x22" name="SM_STATUPDATE_DP">
+            <part name="currentDp" type="h"/>
+        </packet>
+        <packet id="0x23" name="SM_ATTACK_STATUS">
+            <part name="receiver" type="d"/>
+            <part name="value" type="d"/>
+            <part name="type" type="c"/>
+            <part name="currHpPercent" type="h"/>
+            <part name="skillId" type="c"/>
+            <part name="0xA6" type="h"/>
+        </packet>
+        <packet id="0x24" name="SM_STATUPDATE_EXP">
+            <part name="currentExp" type="Q"/>
+            <part name="recoverableExp" type="Q"/>
+            <part name="maxExp" type="Q"/>
+            <part name="curBoostExp" type="Q"/>
+            <part name="maxBoostExp" type="Q"/>
+        </packet>
+        <packet id="0x25" name="SM_DP_INFO">
+            <part name="player objId" type="d"/>
+            <part name="currentDp" type="h"/>
+        </packet>
+        <!--TODO CLASS-->
+        <packet id="0x26" name="SM_FLAME_METEORITE">
+            <part id="0" name="count" type="d"/>
+            <for id="0">
+                <part name="unk" type="d"/>
+                <part name="objId" type="d"/>
+                <part name="npcId" type="d"/>
+                <part name="unk" type="d"/>
+                <part name="unk" type="d"/>
+            </for>
+        </packet>
+        <!--TODO CLASS-->
+        <packet id="0x28" name="SM_LEGION_TABS">
+            <part name="0x12" type="d"/>
+            <part name="currPage" type="d"/>
+            <part name="historySize" type="d"/>
+        </packet>
+        <packet id="0x29" name="SM_LEGION_UPDATE_NICKNAME">
+            <part name="player objId" type="d"/>
+            <part name="nickname" type="S"/>
+        </packet>
+        <packet id="0x2a" name="SM_NPC_INFO">
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="objId" type="d"/>
+            <part name="npcId" type="d"/>
+            <part name="npcId" type="d"/>
+            <part name="npcType" type="c"/>
+            <part name="npcMode" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="npcHeading" type="c"/>
+            <part name="npcTemplateNameId" type="d"/>
+            <part name="npcTemplateTitleId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="h"/>
+            <part name="0x00" type="c"/>
+            <part name="masterObjId" type="d"/>
+            <part name="masterName" type="S"/>
+            <part name="%hp" type="c"/>
+            <part name="maxHp" type="d"/>
+            <part name="level" type="c"/>
+            <part id="0" name="gears" type="bch"/>
+            <for id="0">
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="h"/>
+            </for>
+            <part name="0x3EB33333" type="d"/>
+            <part name="npcTemplateHeight" type="f"/>
+            <part name="speed" type="f"/>
+            <part name="0x834" type="h"/>
+            <part name="0x834" type="h"/>
+            <part name="0x00" type="c"/>
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="moveType" type="c"/>
+            <part name="static_id" type="h"/>
+            <part name="0x00" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="npcObjectType" type="h"/>
+            <part name="0x00" type="c"/>
+        </packet>
+        <packet id="0x2b" name="SM_ENTER_WORLD_CHECK">
+            <part name="0x00" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="0x00" type="c"/>
+        </packet>
+        <packet id="0x2d" name="SM_PLAYER_SPAWN">
+            <part name="worldId" type="d"/>
+            <part name="worldId + chnl" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="c"/>
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="heading" type="c"/>
+        </packet>
+        <packet id="0x2f" name="SM_GATHERABLE_INFO">
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="ObjectId" type="d"/>
+            <part name="Staticid" type="d"/>
+            <part name="TemplateId" type="d"/>
+            <part name="0x01" type="h"/>
+            <part name="0x00" type="c"/>
+            <part name="NameId" type="d"/>
+            <part name="0x00" type="h"/>
+            <part name="0x00" type="h"/>
+            <part name="0x00" type="h"/>
+            <part name="0x100" type="c"/>
+        </packet>
+        <packet id="0x30" name="SM_TELEPORT_LOC">
+            <part name="unk" type="c"/>
+            <part name="unk" type="c"/>
+            <part name="unk" type="c"/>
+            <part name="mapId" type="d"/>
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="heading" type="c"/>
+        </packet>
+        <packet id="0x32" name="SM_ATTACK">
+            <part name="attacker" type="d"/>
+            <part name="attackNo" type="c"/>
+            <part name="time" type="h"/>
+            <part name="type" type="c"/>
+            <part name="target" type="d"/>
+            <part name="attackNumber+1" type="c"/>
+            <part name="unk84" type="h"/>
+            <part name="unk" type="c"/>
+            <part name="unk1" type="c"/>
+            <part name="damage" type="d"/>
+            <part name="unk10" type="h"/>
+            <part name="unk" type="c"/>
+        </packet>
+        <packet id="0x35" name="SM_MOVE">
+            <part name="objId" type="d"/>
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="heading" type="c"/>
+            <part name="movementTypeId" type="c"/>
+        </packet>
+        <packet id="0x36" name="SM_TRANSFORM">
+            <part name="ObjectId" type="d"/>
+            <part name="TransformedModelId" type="d"/>
+            <part name="state" type="h"/>
+            <part name="0.55f" type="f"/>
+            <part name="1.5f" type="f"/>
+            <part name="0x00" type="c"/>
+        </packet>
+        <packet id="0x38" name="SM_DIALOG_WINDOW">
+            <part name="targetObjectId" type="d"/>
+            <part name="dialogID" type="h"/>
+            <part name="questId" type="d"/>
+            <part name="0" type="h"/>
+        </packet>
+        <packet id="0x3a" name="SM_SELL_ITEM">
+            <part name="targetObjId" type="d"/>
+            <part name="sellPercentage" type="d"/>
+        </packet>
+        <packet id="0x3f" name="SM_VIEW_PLAYER_DETAILS">
+            <part name="unk" type="d"/>
+            <part name="unk" type="c"/>
+            <part id="0" name="itemCount" type="c"/>
+            <part name="unk" type="c"/>
+            <part name="unk" type="d"/>
+            <for id="0">
+                <part name="itemId" type="d"/>
+                <part name="unk" type="h"/>
+                <part name="itemNameId" type="d"/>
+                <part name="unk" type="h"/>
+                <part name="unk" type="c"/>
+                <part name="unk" type="c"/>
+                <part name="unk" type="h"/>
+                <part name="unk" type="h"/>
+                <part name="unk" type="c"/>
+                <part name="unk" type="h"/>
+                <part name="unk" type="c"/>
+                <part name="itemSlot" type="h"/>
+                <part name="unk" type="h"/>
+                <part name="unk" type="c"/>
+                <part name="unk" type="h"/>
+                <part name="unk" type="h"/>
+                <part name="unk" type="d"/>
+                <part name="unk" type="d"/>
+                <part name="unk" type="d"/>
+                <part name="unk" type="d"/>
+                <part name="unk" type="d"/>
+                <part name="unk" type="c"/>
+            </for>
+        </packet>
+        <packet id="0x40" name="SM_PLAYER_STATE">
+            <part name="playerObjId" type="d"/>
+            <part name="unk" type="c"/>
+            <part name="unk" type="c"/>
+            <part name="unk" type="c"/>
+        </packet>
+        <packet id="0x41" name="SM_WEATHER">
+            <part name="weatherCode" type="h"/>
+            <part name="0x0" type="c"/>
+        </packet>
+        <packet id="0x42" name="SM_GAME_TIME">
+            <part name="gameTime" type="d"/>
+        </packet>
+        <packet id="0x43" name="SM_EMOTION">
+            <part name="senderId" type="d"/>
+            <part id="0" name="switch" type="c"/>
+            <switch id="0">
+                <case id="16">
+                    <part name="0x07" type="d"/>
+                    <part name="0xC0" type="c"/>
+                    <part name="0x40" type="c"/>
+                    <part name="emotionId" type="d"/>
+                </case>
+                <case id="35">
+                    <part name="0x2c" type="d"/>
+                    <part name="0xC0" type="c"/>
+                    <part name="0x40" type="c"/>
+                </case>
+                <case id="30">
+                    <part name="0x21" type="d"/>
+                    <part name="0xE0" type="c"/>
+                    <part name="0x40" type="c"/>
+                    <part name="0x085E" type="h"/>
+                    <part name="0x085E" type="h"/>
+                </case>
+                <case id="19">
+                    <part name="0x01" type="c"/>
+                    <part name="0x00" type="c"/>
+                    <part name="0x00" type="h"/>
+                    <part name="0xC0" type="c"/>
+                    <part name="0x40" type="c"/>
+                    <part name="targetId" type="d"/>
+                    <part name="emotionId" type="h"/>
+                    <part name="0x01" type="c"/>
+                </case>
+                <case id="36">
+                    <part name="0x21" type="d"/>
+                    <part name="0xC0" type="c"/>
+                    <part name="0x40" type="c"/>
+                </case>
+                <case id="default">
+                    <part name="0x01" type="c"/>
+                    <part name="0x00" type="c"/>
+                    <part name="0x00" type="h"/>
+                    <part name="0xC0" type="c"/>
+                    <part name="0x40" type="c"/>
+                </case>
+            </switch>
+        </packet>
+        <packet id="0x44" name="SM_LOOKATOBJECT">
+            <part name="lookerObjId" type="d"/>
+            <part name="targetObjId" type="d"/>
+            <part name="heading" type="c"/>
+        </packet>
+        <packet id="0x45" name="SM_TIME_CHECK">
+            <part name="time" type="d"/>
+            <part name="nanoTime" type="d"/>
+        </packet>
+        <packet id="0x46" name="SM_SKILL_CANCEL">
+            <part name="objId" type="d"/>
+            <part name="skillId" type="h"/>
+        </packet>
+        <packet id="0x47" name="SM_TARGET_SELECTED">
+            <part name="targetObjId" type="d"/>
+            <part name="level" type="h"/>
+            <part name="maxHp" type="d"/>
+            <part name="currentHp" type="d"/>
+        </packet>
+        <packet id="0x48" name="SM_SKILL_LIST">
+            <part id="0" name="skillsSize" type="h"/>
+            <for id="0">
+                <part name="skillId" type="h"/>
+                <part name="lvl" type="h"/>
+                <part name="unk" type="c"/>
+                <part name="crafting level" type="c"/>
+                <part name="can use time? [s]" type="d"/>
+                <part
+                    name="skillType (0: normal, 1: stigma, 2: advanced stigma)" type="c"/>
+            </for>
+            <part id="1" name="messageId" type="d"/>
+            <switch id="1">
+                <case id="0"/>
+                <case id="default">
+                    <part name="0x24" type="h"/>
+                    <part name="skillNameId" type="d"/>
+                    <part name="0x00" type="h"/>
+                    <part name="skillLevel" type="S"/>
+                </case>
+            </switch>
+        </packet>
+        <packet id="0x49" name="SM_CASTSPELL_END">
+            <part name="attackerId" type="d"/>
+            <part id="0" name="0x00" type="c"/>
+            <switch id="0">
+                <case id="1">
+                    <part name="x" type="f"/>
+                    <part name="y" type="f"/>
+                    <part name="z" type="f"/>
+                </case>
+                <case id="default">
+                    <part name="targetId" type="d"/>
+                </case>
+            </switch>
+            <part name="spellId" type="h"/>
+            <part name="level" type="c"/>
+            <part name="cooldown" type="d"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="c"/>
+            <part name="unk" type="h"/>
+            <part id="1" name="dashType" type="c"/>
+            <switch id="1">
+                <case id="1">
+                    <part name="h" type="c"/>
+                    <part name="x" type="f"/>
+                    <part name="y" type="f"/>
+                    <part name="z" type="f"/>
+                </case>
+                <case id="2">
+                    <part name="h" type="c"/>
+                    <part name="x" type="f"/>
+                    <part name="y" type="f"/>
+                    <part name="z" type="f"/>
+                </case>
+                <case id="4">
+                    <part name="h" type="c"/>
+                    <part name="x" type="f"/>
+                    <part name="y" type="f"/>
+                    <part name="z" type="f"/>
+                </case>
+                <case id="default"/>
+            </switch>
+            <part id="2" name="effectCount" type="h"/>
+            <for id="2">
+                <part name="targetId" type="d"/>
+                <part name="unk" type="c"/>
+                <part name="targetHp" type="c"/>
+                <part name="attackerHp" type="c"/>
+                <part id="3" name="spellStatus" type="c"/>
+                <switch id="3">
+                    <case id="1">
+                        <part name="x" type="f"/>
+                        <part name="y" type="f"/>
+                        <part name="z" type="f"/>
+                    </case>
+                    <case id="2">
+                        <part name="x" type="f"/>
+                        <part name="y" type="f"/>
+                        <part name="z" type="f"/>
+                    </case>
+                    <case id="4">
+                        <part name="x" type="f"/>
+                        <part name="y" type="f"/>
+                        <part name="z" type="f"/>
+                    </case>
+                    <case id="8">
+                        <part name="x" type="f"/>
+                        <part name="y" type="f"/>
+                        <part name="z" type="f"/>
+                    </case>
+                    <case id="16">
+                        <part name="h" type="c"/>
+                    </case>
+                    <case id="default"/>
+                </switch>
+                <part name="unk" type="c"/>
+                <part name="carvedSignetRuneCount" type="c"/>
+                <part name="0x1" type="c"/>
+                <part name="1:manaTreatment" type="c"/>
+                <part name="damage" type="d"/>
+                <part name="attackStatus" type="c"/>
+                <part id="4" name="shieldDefence" type="c"/>
+                <switch id="4">
+                    <case id="1">
+                        <part name="unk" type="d"/>
+                        <part name="unk" type="d"/>
+                        <part name="unk" type="d"/>
+                        <part name="reflectDamage" type="d"/>
+                        <part name="skillId" type="d"/>
+                    </case>
+                    <case id="default"/>
+                </switch>
+            </for>
+        </packet>
+        <packet id="0x4a" name="SM_SKILL_ACTIVATION">
+            <part name="skillId" type="h"/>
+            <part name="unk" type="d"/>
+            <part name="isActive" type="c"/>
+        </packet>
+        <packet id="0x4b" name="SM_STIGMA_SKILL_REMOVE">
+            <part name="skillId" type="d"/>
+            <part name="unk 0x01" type="c"/>
+            <part name="unk 0x01" type="c"/>
+        </packet>
+        <packet id="0x4e" name="SM_ABNORMAL_EFFECT">
+            <part name="effectedId" type="d"/>
+            <part name="unk" type="c"/>
+            <part name="unk" type="d"/>
+            <part name="abnormals" type="d"/>
+            <part id="0" name="effectsSize" type="h"/>
+            <for id="0">
+                <part name="skillId" type="h"/>
+                <part name="skillLevel" type="c"/>
+                <part name="unk" type="c"/>
+                <part name="elapsedTime" type="d"/>
+            </for>
+            <for id="0">
+                <part name="unk" type="d"/>
+            </for>
+        </packet>
+        <packet id="0x4f" name="SM_ABNORMAL_STATE">
+            <part name="abnormal" type="d"/>
+            <part id="0" name="size" type="h"/>
+            <for id="0">
+                <part name="EffectorId" type="d"/>
+                <part name="SkillId" type="h"/>
+                <part name="SkillLevel" type="c"/>
+                <part name="TargetSlot" type="c"/>
+                <part name="elapsedTime" type="d"/>
+            </for>
+        </packet>
+        <packet id="0x50" name="SM_QUESTION_WINDOW">
+            <part name="code" type="d"/>
+            <part name="txt" type="S"/>
+        </packet>
+        <packet id="0x51" name="SM_SKILL_COOLDOWN">
+            <part id="0" name="cooldownsSize" type="h"/>
+            <for id="0">
+                <part name="Key" type="h"/>
+                <part name="timeLeft" type="d"/>
+            </for>
+        </packet>
+        <packet id="0x52" name="SM_FORTRESS_STATUS">
+            <part name="unk" type="c"/>
+            <part name="fortressTimer" type="d"/>
+            <part name="elyos" type="f"/>
+            <part name="asmodian" type="f"/>
+            <part name="balaur" type="f"/>
+            <part id="0" name="mapCount" type="h"/>
+            <for id="0">
+                <part name="mapId" type="d"/>
+                <part name="elyos" type="f"/>
+                <part name="asmodian" type="f"/>
+                <part name="balaur" type="f"/>
+            </for>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part id="0" name="count" type="h"/>
+            <for id="0">
+                <part name="unk" type="d"/>
+                <part name="unk" type="c"/>
+            </for>
+        </packet>
+        <packet id="0x53" name="SM_INFLUENCE_RATIO">
+            <part name="fortressesTimer" type="d"/>
+            <part name="elyos" type="f"/>
+            <part name="asmodian" type="f"/>
+            <part name="balaur" type="f"/>
+            <part id="0" name="mapCount" type="h"/>
+            <for id="0">
+                <part name="mapId" type="d"/>
+                <part name="elyos" type="f"/>
+                <part name="asmodian" type="f"/>
+                <part name="balaur" type="f"/>
+            </for>
+        </packet>
+        <packet id="0x54" name="SM_NAME_CHANGE">
+            <part name="0x00" type="d"/>
+            <part name="0x00:0x03" type="d"/>
+            <part name="playerObjId" type="d"/>
+            <part name="oldName" type="S"/>
+            <part name="newName" type="S"/>
+        </packet>
+        <packet id="0x56" name="SM_GROUP_INFO">
+            <part name="groupId" type="d"/>
+            <part name="leaderId" type="d"/>
+            <part name="lootRuleType" type="d"/>
+            <part name="commonItem" type="d"/>
+            <part name="superiorItem" type="d"/>
+            <part name="heroicItem" type="d"/>
+            <part name="fabledItem" type="d"/>
+            <part name="ethernalItem" type="d"/>
+            <part name="overEthernal" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+        </packet>
+        <packet id="0x57" name="SM_SHOW_NPC_ON_MAP">
+            <part name="npcid" type="d"/>
+            <part name="worldId" type="d"/>
+            <part name="worldId" type="d"/>
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+        </packet>
+        <packet id="0x59" name="SM_GROUP_MEMBER_INFO">
+            <part name="groupId" type="d"/>
+            <part name="playerObjId" type="d"/>
+            <part name="maxHp" type="d"/>
+            <part name="currentHp" type="d"/>
+            <part name="maxMp" type="d"/>
+            <part name="currentMp" type="d"/>
+            <part name="maxFp" type="d"/>
+            <part name="currentFp" type="d"/>
+            <part name="mapId" type="d"/>
+            <part name="mapId" type="d"/>
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="class" type="c"/>
+            <part name="gender" type="c"/>
+            <part name="level" type="c"/>
+            <part name="somethingEvents" type="c"/>
+            <part name="channel" type="h"/>
+        </packet>
+        <packet id="0x5c" name="SM_ABYSS_ARTIFACT_INFO">
+            <part id="0" name="ArtifactCount" type="h"/>
+            <for id="0">
+                <part name="artifactId" type="d"/>
+                <part name="unk" type="d"/>
+                <part name="unk" type="d"/>
+            </for>
+        </packet>
+        <packet id="0x5e" name="SM_QUIT_RESPONSE">
+            <part name="result" type="d"/>
+            <part name="unk" type="c"/>
+        </packet>
+        <packet id="0x61" name="SM_SOME_KIND_OF_CHAT">
+            <part name="channel??" type="c"/>
+            <part name="sendingPlayerName" type="S"/>
+            <part name="sendingPlayerRace??" type="h"/>
+            <part name="sendingPlayerLvl" type="c"/>
+            <part name="sendingPlayerClassId" type="h"/>
+            <part name="message" type="S"/>
+        </packet>
+        <packet id="0x62" name="SM_LEVEL_UPDATE">
+            <part name="targeObjectId" type="d"/>
+            <part name="unk" type="h"/>
+            <part name="level" type="h"/>
+            <part name="unk" type="h"/>
+        </packet>
+        <packet id="0x64" name="SM_KEY">
+            <part name="key" type="d"/>
+        </packet>
+        <packet id="0x66" name="SM_EXCHANGE_REQUEST">
+            <part name="playerName" type="S"/>
+        </packet>
+        <packet id="0x67" name="SM_SUMMON_PANEL_REMOVE">
+            <part name="0x0" type="d"/>
+        </packet>
+        <packet id="0x69" name="SM_EXCHANGE_ADD_ITEM">
+            <part name="action" type="c"/>
+            <part name="itemId" type="d"/>
+            <part name="itemObjId" type="d"/>
+            <part name="unk" type="h"/>
+            <part name="itemNameId" type="d"/>
+            <part name="unk" type="h"/>
+            <part id="0" name="detailsSize" type="h"/>
+            <part name="itemDetails" sizeid="0" type="b"/>
+        </packet>
+        <packet id="0x6a" name="SM_EXCHANGE_CONFIRMATION">
+            <part name="action" type="c"/>
+        </packet>
+        <packet id="0x6b" name="SM_EXCHANGE_ADD_KINAH">
+            <part name="action" type="c"/>
+            <part name="count" type="d"/>
+            <part name="unk" type="d"/>
+        </packet>
+        <packet id="0x6d" name="SM_EMOTION_LIST">
+            <part name="0x00" type="c"/>
+            <part id="0" name="13" type="h"/>
+            <for id="0">
+                <part name="unk" type="d"/>
+                <part name="unk" type="h"/>
+            </for>
+        </packet>
+        <packet id="0x6f" name="SM_TARGET_UPDATE">
+            <part name="playerObjId" type="d"/>
+            <part name="targetObjId" type="d"/>
+        </packet>
+        <packet id="0x71" name="SM_PLASTIC_SURGERY_INIT">
+            <part name="ObjectId" type="d"/>
+            <part name="unk" type="h"/>
+        </packet>
+        <packet id="0x75" name="SM_LEGION_UPDATE_SELF_INTRO">
+            <part name="playerObjId" type="d"/>
+            <part name="selfintro" type="S"/>
+        </packet>
+        <packet id="0x76" name="SM_NOT_SURE">
+            <part name="unk" type="c"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+        </packet>
+        <packet id="0x78" name="SM_QUEST_ACCEPTED">
+            <part name="unk" type="c"/>
+            <part name="questId" type="d"/>
+            <part name="questStatus" type="c"/>
+            <part name="unk" type="c"/>
+            <part name="step" type="c"/>
+            <part name="unk" type="d"/>
+        </packet>
+        <packet id="0x79" name="SM_QUEST_LIST">
+            <part id="0" name="quests" type="h"/>
+            <for id="0">
+                <part name="questId" type="h"/>
+                <part name="0x00" type="h"/>
+                <part name="CompliteCount" type="c"/>
+            </for>
+            <part id="1" name="startedQuests" type="c"/>
+            <for id="1">
+                <part name="questId" type="h"/>
+                <part name="0x00" type="h"/>
+            </for>
+            <for id="1">
+                <part name="questStatus" type="c"/>
+                <part name="questVars" type="d"/>
+                <part name="0x00" type="c"/>
+            </for>
+        </packet>
+        <packet id="0x7c" name="SM_PING_RESPONSE">
+            <part name="0x04" type="c"/>
+        </packet>
+        <packet id="0x7d" name="SM_NEARBY_QUESTS">
+            <part id="0" name="QuestsSize" type="d"/>
+            <for id="0">
+                <part name="questId" type="h"/>
+                <part name="unk" type="h"/>
+            </for>
+        </packet>
+        <packet id="0x7e" name="SM_CUBE_UPDATE">
+            <part id="0" name="cubeType" type="c"/>
+            <part name="advancedSlots" type="c"/>
+            <switch id="0">
+                <case id="0">
+                    <part name="InventorySize" type="d"/>
+                    <part name="CubeSize" type="c"/>
+                    <part name="0x0" type="c"/>
+                    <part name="0x0" type="c"/>
+                </case>
+            </switch>
+        </packet>
+        <packet id="0x80" name="SM_FRIEND_LIST">
+            <part id="0" name="size" type="h"/>
+            <part name="unk" type="c"/>
+            <for id="0">
+                <part name="name" type="S"/>
+                <part name="level" type="d"/>
+                <part name="classId" type="d"/>
+                <part name="unk" type="c"/>
+                <part name="mapId" type="d"/>
+                <part name="lastOnlineTime" type="d"/>
+                <part name="note" type="S"/>
+                <part name="unk" type="c"/>
+            </for>
+        </packet>
+        <packet id="0x84" name="SM_UPDATE_NOTE">
+            <part name="targetObjId" type="d"/>
+            <part name="note" type="S"/>
+        </packet>
+        <packet id="0x85" name="SM_ITEM_COOLDOWN">
+            <part id="0" name="cooldownsSize" type="h"/>
+            <for id="0">
+                <part name="Key" type="h"/>
+                <part name="timeLeft" type="d"/>
+                <part name="UseDelay" type="d"/>
+            </for>
+        </packet>
+        <packet id="0x87" name="SM_PLAY_MOVIE">
+            <part name="unk" type="c"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="d"/>
+        </packet>
+        <packet id="0x8a" name="SM_LEGION_INFO">
+            <part name="guildName" type="S"/>
+            <part name="level" type="c"/>
+            <part name="rank" type="d"/>
+            <part name="cent permissions" type="c"/>
+            <part name="cent permissions" type="c"/>
+            <part name="leg permissions" type="c"/>
+            <part name="leg permissions" type="c"/>
+            <part name="contribution" type="d"/>
+            <part name="unk[0x00]" type="d"/>
+            <part name="unk[0x00]" type="d"/>
+            <part name="unk[0x00]" type="d"/>
+            <part name="announcement" type="S"/>
+            <part name="time" type="d"/>
+            <part name="time" type="d"/>
+            <part name="unk[0x00]" type="h"/>
+        </packet>
+        <packet id="0x8c" name="SM_LEGION_LEAVE_MEMBER">
+            <part name="playerObjId" type="d"/>
+            <part name="0x00" type="c"/>
+            <part name="0x00" type="d"/>
+            <part name="msgId" type="d"/>
+            <part name="name" type="S"/>
+            <part name="name1" type="S"/>
+        </packet>
+        <packet id="0x8d" name="SM_LEGION_ADD_MEMBER">
+            <part name="playerObjId" type="d"/>
+            <part name="playerName" type="S"/>
+            <part name="rankId" type="c"/>
+            <part name="newMember" type="c"/>
+            <part name="classId" type="c"/>
+            <part name="level" type="c"/>
+            <part name="mapId" type="d"/>
+            <part name="msgId" type="d"/>
+            <part name="text" type="S"/>
+        </packet>
+        <packet id="0x8e" name="SM_LEGION_UPDATE_TITLE">
+            <part name="objectId" type="d"/>
+            <part name="legionId" type="d"/>
+            <part name="legionName" type="S"/>
+            <part name="rank" type="c"/>
+        </packet>
+        <packet id="0x8f" name="SM_LEGION_UPDATE_MEMBER">
+            <part name="ObjectId" type="d"/>
+            <part name="RankId" type="c"/>
+            <part name="ClassId" type="c"/>
+            <part name="Level" type="c"/>
+            <part name="MapId" type="d"/>
+            <part name="isOnline" type="c"/>
+            <part name="LastOnline" type="d"/>
+            <part name="msgId" type="d"/>
+            <part name="text" type="S"/>
+        </packet>
+        <packet id="0x93" name="SM_BROKER_REGISTRATION_SERVICE">
+            <part id="0" name="message" type="h"/>
+            <switch id="0">
+                <case id="0">
+                    <part name="UniqueId" type="d"/>
+                    <part name="ItemId" type="d"/>
+                    <part name="Price" type="Q"/>
+                    <part name="ItemCount" type="Q"/>
+                    <part name="ItemCount" type="Q"/>
+                    <part name="0x8" type="h"/>
+                    <part name="0x0" type="c"/>
+                    <part name="ItemId" type="d"/>
+                    <part name="0x0" type="d"/>
+                    <part name="0x0" type="d"/>
+                    <part name="0x0" type="d"/>
+                    <part name="0x0" type="d"/>
+                    <part name="0x0" type="d"/>
+                    <part name="0x0" type="d"/>
+                    <part name="0x0" type="d"/>
+                    <part name="0x0" type="d"/>
+                    <part name="0x0" type="h"/>
+                </case>
+            </switch>
+        </packet>
+        <packet id="0x95" name="SM_BROKER_SETTLED_LIST">
+            <part name="totalKinah" type="Q"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="c"/>
+            <part id="0" name="settledItemsSize" type="h"/>
+            <for id="0">
+                <part name="ItemId" type="d"/>
+                <part name="Price" type="Q"/>
+                <part name="ItemCount" type="Q"/>
+                <part name="ItemCount" type="Q"/>
+                <part name="SettleTime" type="d"/>
+                <part name="unk" type="h"/>
+                <part name="ItemId" type="d"/>
+                <part name="0x0" type="d"/>
+                <part name="0x0" type="d"/>
+                <part name="0x0" type="d"/>
+                <part name="0x0" type="d"/>
+                <part name="0x0" type="d"/>
+                <part name="0x0" type="d"/>
+                <part name="0x0" type="d"/>
+                <part name="0x0" type="d"/>
+                <part name="0x0" type="h"/>
+            </for>
+        </packet>
+        <packet id="0x96" name="SM_SUMMON_OWNER_REMOVE">
+            <part name="summonObjId" type="d"/>
+        </packet>
+        <packet id="0x97" name="SM_SUMMON_PANEL">
+            <part name="objectId" type="d"/>
+            <part name="level" type="h"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="currentHp" type="d"/>
+            <part name="maxHp" type="d"/>
+            <part name="aPower" type="d"/>
+            <part name="defence" type="h"/>
+            <part name="mResist" type="h"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="h"/>
+        </packet>
+        <packet id="0x99" name="SM_SUMMON_UPDATE">
+            <part name="level" type="c"/>
+            <part name="modeId" type="h"/>
+            <part name="unk1" type="d"/>
+            <part name="unk2" type="d"/>
+            <part name="status_bar_Hp" type="d"/>
+            <part name="current_Hp" type="d"/>
+            <part name="current_pAttk" type="d"/>
+            <part name="current_pDef" type="h"/>
+            <part name="current_mRes" type="h"/>
+            <part name="current_Acc" type="h"/>
+            <part name="current_critStrike" type="h"/>
+            <part name="current_mBoost" type="h"/>
+            <part name="current_mAcc" type="h"/>
+            <part name="current_critSpell" type="h"/>
+            <part name="current_Parry" type="h"/>
+            <part name="current_Evas" type="h"/>
+            <part name="max_Hp" type="d"/>
+            <part name="max_pAttk" type="d"/>
+            <part name="max_pDef" type="h"/>
+            <part name="max_mRes" type="h"/>
+            <part name="max_Acc" type="h"/>
+            <part name="max_critStrike" type="h"/>
+            <part name="max_mBoost" type="h"/>
+            <part name="max_mAcc" type="h"/>
+            <part name="max_critSpell" type="h"/>
+            <part name="max_Parry" type="h"/>
+            <part name="max_Evas" type="h"/>
+        </packet>
+        <packet id="0x9a" name="SM_LEGION_EDIT">
+            <part id="0" name="type" type="c"/>
+            <switch id="0">
+                <case id="0">
+                    <part name="new legion level" type="c"/>
+                </case>
+                <case id="1">
+                    <part name="new legion rank" type="c"/>
+                </case>
+                <case id="2">
+                    <part name="cent permissions" type="c"/>
+                    <part name="cent permissions" type="c"/>
+                    <part name="leg permissions" type="c"/>
+                    <part name="leg permissions" type="c"/>
+                </case>
+                <case id="3">
+                    <part name="contribution" type="d"/>
+                </case>
+                <case id="5">
+                    <part name="announce" type="S"/>
+                    <part name="time" type="d"/>
+                </case>
+                <case id="6">
+                    <part name="time" type="d"/>
+                </case>
+                <case id="7"/>
+                <case id="8"/>
+            </switch>
+        </packet>
+        <!-- TODO Full Packet -->
+        <packet id="0x9b" name="SM_LEGION_MEMBERLIST">
+            <part name="0x01" type="c"/>
+            <part name="legionMembersSize" type="h"/>
+        </packet>
+        <packet id="0x9e" name="SM_SUMMON_USESKILL">
+            <part name="summonId" type="d"/>
+            <part name="skillId" type="h"/>
+            <part name="skillLvl" type="c"/>
+            <part name="targetId" type="d"/>
+        </packet>
+        <packet id="0x9f" name="SM_MAIL_SERVICE"/>
+        <packet id="0xa2" name="SM_PRIVATE_STORE">
+            <part name="ObjectId" type="d"/>
+            <part name="soldItemsSize" type="h"/>
+        </packet>
+        <packet id="0xa4" name="SM_ABYSS_RANK_UPDATE">
+            <part name="playerObjId" type="d"/>
+            <part name="rankId" type="d"/>
+        </packet>
+        <packet id="0xa5" name="SM_GROUP_LOOT">
+            <part name="groupId" type="d"/>
+            <part name="unk1" type="d"/>
+            <part name="unk2" type="d"/>
+            <part name="itemId" type="d"/>
+            <part name="itemIndex" type="c"/>
+            <part name="lootCorpseId" type="d"/>
+            <part name="distributionId" type="c"/>
+            <part name="playerId" type="d"/>
+            <part name="luck" type="d"/>
+        </packet>
+        <packet id="0xa6" name="SM_ABYSS_RANKING_PLAYER">
+            <part name="Race" type="d"/>
+            <part name="Date: t_time format " type="d"/>
+            <part name="2^(PacketNumber-1)" type="d"/>
+            <part
+                name="Last Packet: 0x00 if not (2^PacketNumber)-1 if is" type="d"/>
+            <part id="0" name="count" type="h"/>
+            <for id="0">
+                <part name="Rank" type="d"/>
+                <part name="Abyss Title Id" type="d"/>
+                <part name="Previous Rank" type="d"/>
+                <part name="Character Id" type="d"/>
+                <part name="Race" type="d"/>
+                <part name="Class Id" type="d"/>
+                <part name="Sex" type="c"/>
+                <part name="unk" type="h"/>
+                <part name="unk" type="c"/>
+                <part name="Abyss Points" type="d"/>
+                <part name="unk" type="d"/>
+                <part name="Character Level" type="h"/>
+                <part name="Character Name" type="Q"/>
+                <part name="Character Name" type="Q"/>
+                <part name="Character Name" type="Q"/>
+                <part name="Character Name" type="Q"/>
+                <part name="0x00" type="h"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="Legion Name" type="Q"/>
+                <part name="Legion Name" type="Q"/>
+                <part name="Legion Name" type="Q"/>
+                <part name="Legion Name" type="Q"/>
+                <part name="Legion Name" type="Q"/>
+                <part name="Legion Name" type="Q"/>
+                <part name="Legion Name" type="Q"/>
+                <part name="Legion Name" type="Q"/>
+                <part name="unk" type="h"/>
+            </for>
+        </packet>
+        <packet id="0xa7" name="SM_MAY_LOGIN_INTO_GAME">
+            <part name="result" type="d"/>
+        </packet>
+        <packet id="0xa8" name="SM_RIFT_STATUS">
+            <part name="targetObjectId" type="d"/>
+            <part name="usedEntries" type="d"/>
+            <part name="maxEntries" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="maxLevel" type="d"/>
+        </packet>
+        <packet id="0xa9" name="SM_ABYSS_RANKING_LEGION">
+            <part name="Faction" type="d"/>
+            <part name="Date" type="d"/>
+            <part name="2^(PacketNumber-1)" type="d"/>
+            <part
+                name="Last Packet: 0x00 if not (2^PacketNumber)-1 if is" type="d"/>
+            <part id="0" name="count" type="h"/>
+            <for id="0">
+                <part name="Rank" type="d"/>
+                <part name="Previous Rank" type="d"/>
+                <part name="Legion Id" type="d"/>
+                <part name="Race" type="d"/>
+                <part name="Legion Level" type="c"/>
+                <part name="Legion Members" type="d"/>
+                <part name="Contribution Points" type="Q"/>
+                <part name="Legion Name" type="Q"/>
+                <part name="Legion Name" type="Q"/>
+                <part name="Legion Name" type="Q"/>
+                <part name="Legion Name" type="Q"/>
+                <part name="Legion Name" type="Q"/>
+                <part name="Legion Name" type="Q"/>
+                <part name="Legion Name" type="Q"/>
+                <part name="Legion Name" type="Q"/>
+                <part name="unk" type="h"/>
+            </for>
+        </packet>
+        <packet id="0xaa" name="SM_PONG">
+            <part name="unk" type="c"/>
+            <part name="unk" type="c"/>
+        </packet>
+        <packet id="0xab" name="SM_PLAYER_ID">
+            <part name="0x2" type="h"/>
+            <part name="0x0" type="d"/>
+            <part name="0x1" type="h"/>
+            <part name="playerObjId" type="d"/>
+            <part name="0x0" type="h"/>
+            <part name="playerName" type="S"/>
+        </packet>
+        <packet id="0xac" name="SM_KISK_UPDATE">
+            <part name="objId" type="d"/>
+            <part name="useMask" type="d"/>
+            <part name="currentMembers" type="d"/>
+            <part name="maxMembers" type="d"/>
+            <part name="remainingRessurects" type="d"/>
+            <part name="maxRessurects" type="d"/>
+            <part name="remainingLifetime" type="d"/>
+        </packet>
+        <!-- TODO Full Packet -->
+        <packet id="0xae" name="SM_BROKER_ITEMS">
+            <part name="itemsCount" type="d"/>
+            <part name="0x0" type="c"/>
+            <part name="startPage" type="h"/>
+            <part name="brokerItemsLength" type="h"/>
+        </packet>
+        <packet id="0xaf" name="SM_PRIVATE_STORE_NAME">
+            <part name="playerObjectId" type="d"/>
+            <part name="name" type="S"/>
+        </packet>
+        <packet id="0xb1" name="SM_BROKER_REGISTERED_LIST">
+            <part name="0x0" type="d"/>
+            <part id="0" name="registeredItemsSize" type="h"/>
+            <for id="0">
+                <part name="ItemUniqueId" type="d"/>
+                <part name="ItemId" type="d"/>
+                <part name="Price" type="Q"/>
+                <part name="ItemCount" type="Q"/>
+                <part name="ItemCount" type="Q"/>
+                <part name="daysLeft" type="h"/>
+                <part name="0x0" type="c"/>
+                <part name="ItemId" type="d"/>
+                <part name="0x0" type="d"/>
+                <part name="0x0" type="d"/>
+                <part name="0x0" type="d"/>
+                <part name="0x0" type="d"/>
+                <part name="0x0" type="d"/>
+                <part name="0x0" type="d"/>
+                <part name="0x0" type="d"/>
+                <part name="0x0" type="d"/>
+                <part name="0x0" type="h"/>
+            </for>
+        </packet>
+        <packet id="0xb2" name="SM_ASCENSION_MORPH">
+            <part name="inascension" type="c"/>
+        </packet>
+        <packet id="0xb3" name="SM_CRAFT_UPDATE">
+            <part name="skillId" type="h"/>
+            <part id="0" name="action" type="c"/>
+            <part name="itemId" type="d"/>
+            <switch id="0">
+                <case id="0">
+                    <part name="successAdj" type="d"/>
+                    <part name="failureAdj" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="h"/>
+                    <part name="nameId" type="d"/>
+                    <part name="unk" type="h"/>
+                </case>
+                <case id="1">
+                    <part name="success" type="d"/>
+                    <part name="failure" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="h"/>
+                </case>
+                <case id="2">
+                    <part name="successAdj" type="d"/>
+                    <part name="failure" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="h"/>
+                </case>
+                <case id="5">
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="h"/>
+                </case>
+                <case id="6">
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="h"/>
+                </case>
+                <case id="7">
+                    <part name="success" type="d"/>
+                    <part name="failureAdj" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="h"/>
+                    <part name="nameId" type="d"/>
+                    <part name="unk" type="h"/>
+                </case>
+                <case id="default"/>
+            </switch>
+        </packet>
+        <packet id="0xb4" name="SM_CUSTOM_SETTINGS">
+            <part name="ObjectId" type="d"/>
+            <part name="unk" type="c"/>
+            <part name="Display" type="h"/>
+            <part name="Deny" type="h"/>
+        </packet>
+        <packet id="0xb5" name="SM_ITEM_USAGE_ANIMATION">
+            <part name="playerObjId" type="d"/>
+            <part name="playerObjId" type="d"/>
+            <part name="itemObjId" type="d"/>
+            <part name="itemId" type="d"/>
+            <part name="time" type="d"/>
+            <part name="end" type="c"/>
+            <part name="unk" type="c"/>
+            <part name="unk" type="c"/>
+        </packet>
+        <packet id="0xb7" name="SM_DUEL">
+            <part id="0" name="msgType" type="c"/>
+            <switch id="0">
+                <case id="0">
+                    <part name="requesterId" type="d"/>
+                    <part name="unk" type="h"/>
+                    <part name="unk" type="c"/>
+                </case>
+                <case id="1">
+                    <part name="resultId" type="c"/>
+                    <part name="msgId" type="d"/>
+                    <part name="opponentName" type="S"/>
+                </case>
+                <case id="default"/>
+            </switch>
+        </packet>
+        <packet id="0xbd" name="SM_QUESTIONNAIRE">
+            <part name="messageId" type="d"/>
+            <part name="chunk" type="c"/>
+            <part name="count" type="c"/>
+            <part name="htmlLength" type="h"/>
+            <part name="html" type="S"/>
+        </packet>
+        <packet id="0xbe" name="SM_RESURRECT">
+            <part name="name" type="S"/>
+            <part name="skillId" type="h"/>
+            <part name="0x0" type="d"/>
+        </packet>
+        <packet id="0xbf" name="SM_DIE">
+            <part name="skill revive" type="c"/>
+            <part name="item revive" type="c"/>
+            <part name="kisk wait time" type="h"/>
+        </packet>
+        <packet id="0xc0" name="SM_TELEPORT_MAP">
+            <part name="targetObjId" type="d"/>
+            <part name="teleportId" type="h"/>
+        </packet>
+        <packet id="0xc1" name="SM_FORCED_MOVE">
+            <part name="playerObjId" type="d"/>
+            <part name="targetObjId" type="d"/>
+            <part name="unk" type="c"/>
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+        </packet>
+        <!-- TODO Full Packet -->
+        <packet id="0xc4" name="SM_WAREHOUSE_INFO">
+            <part name="warehouseType" type="c"/>
+            <part name="firstPacket?" type="c"/>
+            <part name="expandLvl" type="c"/>
+            <part name="0x0" type="h"/>
+            <part name="itemListSize" type="h"/>
+        </packet>
+        <!-- TODO Full Packet -->
+        <packet id="0xc5" name="SM_REPURCHASE">
+            <part name="targetObjectId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="itemsSize" type="h"/>
+        </packet>
+        <packet id="0xc6" name="SM_DELETE_WAREHOUSE_ITEM">
+            <part name="warehouseType" type="c"/>
+            <part name="itemObjId" type="d"/>
+            <part name="unk" type="c"/>
+        </packet>
+        <!-- TODO Full Packet -->
+        <packet id="0xc7" name="SM_WAREHOUSE_UPDATE">
+            <part name="warehouseType" type="c"/>
+            <part name="0x13" type="h"/>
+            <part name="0x01" type="h"/>
+        </packet>
+        <packet id="0xcc" name="SM_TITLE_LIST">
+            <part name="unk" type="h"/>
+            <part id="0" name="size" type="h"/>
+            <for id="0">
+                <part name="TitleId" type="d"/>
+                <part name="0x0" type="d"/>
+            </for>
+        </packet>
+        <packet id="0xcf" name="SM_TITLE_SET">
+            <part name="titleId" type="d"/>
+        </packet>
+        <packet id="0xd0" name="SM_CRAFT_ANIMATION">
+            <part name="senderObjectId" type="d"/>
+            <part name="targetObjectId" type="d"/>
+            <part name="skillId" type="h"/>
+            <part name="action" type="c"/>
+        </packet>
+        <packet id="0xd1" name="SM_TITLE_UPDATE">
+            <part name="objId" type="d"/>
+            <part name="titleId" type="d"/>
+        </packet>
+        <packet id="0xd2" name="SM_LEGION_SEND_EMBLEM">
+            <part id="0" name="dataSize" type="d"/>
+            <part name="data" type="b"/>
+        </packet>
+        <packet id="0xd3" name="SM_LEGION_EMBLEM">
+            <part name="legionId" type="d"/>
+            <part name="emblemVer" type="c"/>
+            <part name="0x80" type="c"/>
+            <part name="emblemDataSize" type="d"/>
+            <part name="defaultToggle: 0x00 yes 0xFF no" type="c"/>
+            <part name="color_r" type="c"/>
+            <part name="color_g" type="c"/>
+            <part name="color_b" type="c"/>
+            <part name="legionName" type="S"/>
+            <part name="0x01" type="c"/>
+        </packet>
+        <packet id="0xd5" name="SM_LEGION_UPDATE_EMBLEM">
+            <part name="legionId" type="d"/>
+            <part name="emblemVer" type="c"/>
+            <part name="isCustom?" type="c"/>
+            <part name="0xFF" type="c"/>
+            <part name="color_r" type="c"/>
+            <part name="color_g" type="c"/>
+            <part name="color_b" type="c"/>
+        </packet>
+        <packet id="0xd6" name="SM_ABYSS_ARTIFACT_INFO2">
+            <part id="0" name="count" type="h"/>
+            <for id="0">
+                <part name="artifactId" type="d"/>
+                <part name="unk" type="c"/>
+            </for>
+        </packet>
+        <packet id="0xd8" name="SM_ABYSS_ARTIFACT_INFO3">
+            <part id="0" name="count" type="h"/>
+            <for id="0">
+                <part name="unk" type="d"/>
+                <part name="unk" type="d"/>
+                <part name="unk" type="c"/>
+            </for>
+        </packet>
+        <packet id="0xda" name="SM_FRIEND_RESPONSE">
+            <part name="player" type="S"/>
+            <part name="code" type="c"/>
+        </packet>
+        <packet id="0xdc" name="SM_BLOCK_LIST">
+            <part id="0" name="blockCount" type="h"/>
+            <part name="unk" type="c"/>
+            <for id="0">
+                <part name="playerName" type="S"/>
+                <part name="reason" type="S"/>
+            </for>
+        </packet>
+        <packet id="0xdd" name="SM_BLOCK_RESPONSE">
+            <part name="playerName" type="S"/>
+            <part name="responseCode" type="c"/>
+        </packet>
+        <packet id="0xdf" name="SM_FRIEND_NOTIFY">
+            <part name="Player" type="S"/>
+            <part name="Online" type="c"/>
+        </packet>
+        <packet id="0xe3" name="SM_USE_OBJECT">
+            <part name="playerObjId" type="d"/>
+            <part name="targetObjId" type="d"/>
+            <part name="time" type="d"/>
+            <part name="actionType" type="c"/>
+        </packet>
+        <packet id="0xe4" name="SM_CHARACTER_LIST">
+            <part name="playOk2" type="d"/>
+            <part id="0" name="characters" type="c"/>
+            <for id="0">
+                <part name="objectId" type="d"/>
+                <part name="characterName" type="Ss"/>
+                <part name="gender(0=female,1=male)" type="d"/>
+                <part name="race(0=asmo,1=elys)" type="d"/>
+                <part name="classId" type="d"/>
+                <part name="voice" type="d"/>
+                <part name="skinRGB" type="d">
+                    <reader type="Color"/>
+                </part>
+                <part name="hairRGB" type="d">
+                    <reader type="Color"/>
+                </part>
+                <part name="eyeRGB" type="d">
+                    <reader type="Color"/>
+                </part>
+                <part name="lipRGB" type="d">
+                    <reader type="Color"/>
+                </part>
+                <part name="face" type="c"/>
+                <part name="hair" type="c"/>
+                <part name="deco" type="c"/>
+                <part name="tattoo" type="c"/>
+                <part name="0x04" type="c"/>
+                <part name="faceShape" type="c"/>
+                <part name="foreHead" type="c"/>
+                <part name="eyeHeight" type="c"/>
+                <part name="eyeSpace" type="c"/>
+                <part name="eyeWidth" type="c"/>
+                <part name="eyeSize" type="c"/>
+                <part name="eyeShape" type="c"/>
+                <part name="eyeAngle" type="c"/>
+                <part name="browHeight" type="c"/>
+                <part name="browAngle" type="c"/>
+                <part name="browShape" type="c"/>
+                <part name="nose" type="c"/>
+                <part name="noseBridge" type="c"/>
+                <part name="noseWidth" type="c"/>
+                <part name="noseTip" type="c"/>
+                <part name="cheek" type="c"/>
+                <part name="lipHeight" type="c"/>
+                <part name="mouthSize" type="c"/>
+                <part name="lipSize" type="c"/>
+                <part name="smile" type="c"/>
+                <part name="lipShape" type="c"/>
+                <part name="jawHeight" type="c"/>
+                <part name="chinJut" type="c"/>
+                <part name="earShape" type="c"/>
+                <part name="headSize" type="c"/>
+                <part name="0x00" type="c"/>
+                <part name="shoulderSize" type="c"/>
+                <part name="armLength" type="c"/>
+                <part name="legLength" type="c"/>
+                <part name="neck" type="c"/>
+                <part name="neckLength" type="c"/>
+                <part name="shoulders" type="c"/>
+                <part name="torso" type="c"/>
+                <part name="chest" type="c"/>
+                <part name="waist" type="c"/>
+                <part name="hips" type="c"/>
+                <part name="armThickness" type="c"/>
+                <part name="handSize" type="c"/>
+                <part name="legThicknes" type="c"/>
+                <part name="footSize" type="c"/>
+                <part name="facialRate" type="c"/>
+                <part name="0x00" type="c"/>
+                <part name="0x00" type="c"/>
+                <part name="height" type="f"/>
+                <part name="raceSex" type="d"/>
+                <part name="mapId" type="d"/>
+                <part name="x" type="f"/>
+                <part name="y" type="f"/>
+                <part name="z" type="f"/>
+                <part name="unk" type="d"/>
+                <part name="level" type="d"/>
+                <part name="-1" type="d"/>
+                <part name="0x00*19*4" size="76" type="b"/>
+                <part name="item#1Equipped?" type="c">
+                    <reader type="Boolean"/>
+                </part>
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="item#2Equipped?" type="c">
+                    <reader type="Boolean"/>
+                </part>
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="item#3Equipped?" type="c">
+                    <reader type="Boolean"/>
+                </part>
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="item#4Equipped?" type="c">
+                    <reader type="Boolean"/>
+                </part>
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="item#5Equipped?" type="c">
+                    <reader type="Boolean"/>
+                </part>
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="item#6Equipped?" type="c">
+                    <reader type="Boolean"/>
+                </part>
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="item#7Equipped?" type="c">
+                    <reader type="Boolean"/>
+                </part>
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="item#8Equipped?" type="c">
+                    <reader type="Boolean"/>
+                </part>
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="item#9Equipped?" type="c">
+                    <reader type="Boolean"/>
+                </part>
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="item#10Equipped?" type="c">
+                    <reader type="Boolean"/>
+                </part>
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="item#11Equipped?" type="c">
+                    <reader type="Boolean"/>
+                </part>
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="item#12Equipped?" type="c">
+                    <reader type="Boolean"/>
+                </part>
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="item#13Equipped?" type="c">
+                    <reader type="Boolean"/>
+                </part>
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="item#14Equipped?" type="c">
+                    <reader type="Boolean"/>
+                </part>
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="item#15Equipped?" type="c">
+                    <reader type="Boolean"/>
+                </part>
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="item#16Equipped?" type="c">
+                    <reader type="Boolean"/>
+                </part>
+                <part name="itemId" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00" type="d"/>
+                <part name="0x00*22" size="22" type="b"/>
+            </for>
+        </packet>
+        <packet id="0xe5" name="SM_L2AUTH_LOGIN_CHECK">
+            <part name="result" type="d"/>
+            <part name="unk" type="S"/>
+        </packet>
+        <packet id="0xe6" name="SM_DELETE_CHARACTER">
+            <part name="unk1" type="d"/>
+            <part name="objectId" type="d"/>
+            <part name="delete time[s]" type="d"/>
+        </packet>
+        <packet id="0xe7" name="SM_CREATE_CHARACTER">
+            <part name="responseCode" type="d"/>
+            <part name="objectId" type="d"/>
+            <part name="characterName" type="Ss"/>
+            <part name="gender(0=female,1=male)" type="d"/>
+            <part name="race(0=asmo,1=elys)" type="d"/>
+            <part name="classId" type="d"/>
+            <part name="voice" type="d"/>
+            <part name="skinRGB" type="d">
+                <reader type="Color"/>
+            </part>
+            <part name="hairRGB" type="d">
+                <reader type="Color"/>
+            </part>
+            <part name="eyeRGB" type="d">
+                <reader type="Color"/>
+            </part>
+            <part name="lipRGB" type="d">
+                <reader type="Color"/>
+            </part>
+            <part name="face" type="c"/>
+            <part name="hair" type="c"/>
+            <part name="deco" type="c"/>
+            <part name="tattoo" type="c"/>
+            <part name="0x04" type="c"/>
+            <part name="faceShape" type="c"/>
+            <part name="foreHead" type="c"/>
+            <part name="eyeHeight" type="c"/>
+            <part name="eyeSpace" type="c"/>
+            <part name="eyeWidth" type="c"/>
+            <part name="eyeSize" type="c"/>
+            <part name="eyeShape" type="c"/>
+            <part name="eyeAngle" type="c"/>
+            <part name="browHeight" type="c"/>
+            <part name="browAngle" type="c"/>
+            <part name="browShape" type="c"/>
+            <part name="nose" type="c"/>
+            <part name="noseBridge" type="c"/>
+            <part name="noseWidth" type="c"/>
+            <part name="noseTip" type="c"/>
+            <part name="cheek" type="c"/>
+            <part name="lipHeight" type="c"/>
+            <part name="mouthSize" type="c"/>
+            <part name="lipSize" type="c"/>
+            <part name="smile" type="c"/>
+            <part name="lipShape" type="c"/>
+            <part name="jawHeight" type="c"/>
+            <part name="chinJut" type="c"/>
+            <part name="earShape" type="c"/>
+            <part name="headSize" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="shoulderSize" type="c"/>
+            <part name="armLength" type="c"/>
+            <part name="legLength" type="c"/>
+            <part name="neck" type="c"/>
+            <part name="neckLength" type="c"/>
+            <part name="shoulders" type="c"/>
+            <part name="torso" type="c"/>
+            <part name="chest" type="c"/>
+            <part name="waist" type="c"/>
+            <part name="hips" type="c"/>
+            <part name="armThickness" type="c"/>
+            <part name="handSize" type="c"/>
+            <part name="legThickness" type="c"/>
+            <part name="footSize" type="c"/>
+            <part name="facialRate" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="height" type="f"/>
+            <part name="raceSex" type="d"/>
+            <part name="mapId" type="d"/>
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="unk" type="d"/>
+            <part name="level" type="d"/>
+            <part name="-1" type="d"/>
+            <part name="0x00*19*4" size="76" type="b"/>
+            <part name="item#1Equipped?" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="itemId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="item#2Equipped?" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="itemId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="item#3Equipped?" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="itemId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="item#4Equipped?" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="itemId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="item#5Equipped?" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="itemId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="item#6Equipped?" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="itemId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="item#7Equipped?" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="itemId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="item#8Equipped?" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="itemId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="item#9Equipped?" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="itemId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="item#10Equipped?" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="itemId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="item#11Equipped?" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="itemId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="item#12Equipped?" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="itemId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="item#13Equipped?" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="itemId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="item#14Equipped?" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="itemId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="item#15Equipped?" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="itemId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="item#16Equipped?" type="c">
+                <reader type="Boolean"/>
+            </part>
+            <part name="itemId" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="deletionTime" type="d"/>
+            <part name="0x00" type="d"/>
+        </packet>
+        <packet id="0xe8" name="SM_TARGET_IMMOBILIZE">
+            <part name="targetObjId" type="d"/>
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="heading" type="c"/>
+        </packet>
+        <packet id="0xe9" name="SM_RESTORE_CHARACTER">
+            <part name="unk1" type="d"/>
+            <part name="objectId" type="d"/>
+        </packet>
+        <packet id="0xea" name="SM_LOOT_ITEMLIST">
+            <part name="targetObjectId" type="d"/>
+            <part id="0" name="count" type="c"/>
+            <for id="0">
+                <part name="itemIndex" type="c"/>
+                <part name="itemTemplateId" type="d"/>
+                <part name="itemCount" type="d"/>
+                <part name="unk (0)" type="h"/>
+            </for>
+        </packet>
+        <packet id="0xeb" name="SM_LOOT_STATUS">
+            <part name="targetObjectId" type="d"/>
+            <part name="state" type="c"/>
+        </packet>
+        <packet id="0xec" name="SM_MANTRA_EFFECT">
+            <part name="unk (0)" type="d"/>
+            <part name="playerObjId" type="d"/>
+            <part name="subEffectId" type="h"/>
+        </packet>
+        <packet id="0xed" name="SM_RECIPE_LIST">
+            <part id="0" name="count" type="h"/>
+            <for id="0">
+                <part name="id" type="d"/>
+            </for>
+        </packet>
+        <packet id="0xee" name="SM_TO_DO_WITH_FORTRESS_VULN_MSG"/>
+        <packet id="0xef" name="SM_SIEGE_LOCATION_INFO">
+            <part name="0:reset 1:change" type="c"/>
+            <part id="0" name="count" type="h"/>
+            <for id="0">
+                <part name="artifactId" type="d"/>
+                <part name="legionId" type="d"/>
+                <part name="unk" type="d"/>
+                <part name="unk" type="d"/>
+                <part name="raceId" type="d"/>
+                <part name="unk" type="d"/>
+                <part name="unk" type="d"/>
+            </for>
+        </packet>
+        <packet id="0xf1" name="SM_PLAYER_SEARCH">
+            <part id="0" name="resultCount" type="h"/>
+            <for id="0">
+                <part name="mapId" type="d"/>
+                <part name="x" type="f"/>
+                <part name="y" type="f"/>
+                <part name="z" type="f"/>
+                <part name="classId" type="c"/>
+                <part name="genderId" type="c"/>
+                <part name="level" type="c"/>
+                <part name="lookForGroup" type="c"/>
+                <part name="playerName" type="Ss"/>
+            </for>
+        </packet>
+        <packet id="0xf2" name="SM_ALLIANCE_MEMBER_INFO">
+            <part name="allianceId" type="d"/>
+            <part name="playerObjId" type="d"/>
+            <part name="maxHp" type="d"/>
+            <part name="currentHp" type="d"/>
+            <part name="maxMp" type="d"/>
+            <part name="currentMp" type="d"/>
+            <part name="maxFp" type="d"/>
+            <part name="currentFp" type="d"/>
+            <part name="mapId" type="d"/>
+            <part name="mapId" type="d"/>
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="class" type="c"/>
+            <part name="gender" type="c"/>
+            <part name="level" type="c"/>
+            <part id="0" name="groupEvent" type="c"/>
+            <part name="0x00" type="h"/>
+            <switch id="0">
+                <case id="0"/>
+                <case id="3"/>
+                <case id="13">
+                    <part name="name" type="S"/>
+                    <part name="0x00" type="h"/>
+                    <part name="0x00" type="h"/>
+                    <part id="1" name="abnormalEffectCount" type="h"/>
+                    <for id="1">
+                        <part name="casterId" type="d"/>
+                        <part name="spellId" type="h"/>
+                        <part name="spellLvl" type="c"/>
+                        <part name="targetSlot" type="c"/>
+                        <part name="elapsedTime" type="d"/>
+                    </for>
+                </case>
+                <case id="default"/>
+            </switch>
+        </packet>
+        <packet id="0xf3" name="SM_ALLIANCE_INFO">
+            <part name="unk 0x04" type="h"/>
+            <part name="groupId" type="d"/>
+            <part name="leaderId" type="d"/>
+            <part name="viceLeader" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="lootRuleType" type="d"/>
+            <part name="autoDistribution" type="d"/>
+            <part name="commonItem" type="d"/>
+            <part name="superiorItem" type="d"/>
+            <part name="heroicItem" type="d"/>
+            <part name="fabledItem" type="d"/>
+            <part name="ethernalItem" type="d"/>
+            <part name="overEthernal" type="d"/>
+            <part name="overOverEthernal" type="d"/>
+            <part name="unk" type="c"/>
+            <part name="allianceGroupNumber" type="d"/>
+            <part name="allianceId" type="d"/>
+            <part name="allianceGroupNumber" type="d"/>
+            <part name="allianceId" type="d"/>
+            <part name="allianceGroupNumber" type="d"/>
+            <part name="allianceId" type="d"/>
+            <part name="allianceGroupNumber" type="d"/>
+            <part name="allianceId" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="h"/>
+        </packet>
+        <packet id="0xf5" name="SM_LEAVE_GROUP_MEMBER">
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="d"/>
+            <part name="0x00" type="h"/>
+            <part name="0x00" type="c"/>
+        </packet>
+        <packet id="0xf6" name="SM_ALLIANCE_READY_CHECK">
+            <part name="playerObjectId" type="d"/>
+            <part name="statusCode" type="c"/>
+        </packet>
+        <packet id="0xf7" name="SM_SHOW_BRAND">
+            <part name="0x01" type="h"/>
+            <part name="modeId" type="d"/>
+            <part name="brandId" type="d"/>
+            <part name="targetObjectId" type="d"/>
+        </packet>
+        <packet id="0xf8" name="SM_PRICES">
+            <part name="price" type="c"/>
+            <part name="unk" type="c"/>
+            <part name="tax" type="c"/>
+        </packet>
+        <packet id="0xfb" name="SM_TRADELIST">
+            <part name="targetObjectId" type="d"/>
+            <part name="listid?" type="c"/>
+            <part name="unk" type="c"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="c"/>
+            <part name="tabCount" type="h"/>
+            <part name="type" type="d"/>
+        </packet>
+        <packet id="0xfc" name="SM_VERSION_CHECK">
+            <part name="unk" type="c"/>
+            <part name="gameServerId" type="c"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="c"/>
+            <part name="serverCountryCode" type="c"/>
+            <part name="unk" type="c"/>
+            <part name="serverMode" type="c"/>
+            <part name="serverTime" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+        </packet>
+        <packet id="0xfd" name="SM_RECONNECT_KEY">
+            <part name="result" type="c"/>
+            <part name="key" type="d"/>
+        </packet>
+        <packet id="0xff" name="SM_STATS_INFO">
+            <part name="objectId" type="d"/>
+            <part name="gameTime" type="d"/>
+            <part name="currPower" type="h"/>
+            <part name="currHealth" type="h"/>
+            <part name="currAccuracy" type="h"/>
+            <part name="currAgility" type="h"/>
+            <part name="currKnowledge" type="h"/>
+            <part name="currWill" type="h"/>
+            <part name="currWaterResist" type="h"/>
+            <part name="currWindResist" type="h"/>
+            <part name="currEarthResist" type="h"/>
+            <part name="currFireResist" type="h"/>
+            <part name="unk" type="d"/>
+            <part name="level" type="h"/>
+            <part name="unk" type="h"/>
+            <part name="currHp" type="d"/>
+            <part name="expNeed" type="Q"/>
+            <part name="unk" type="Q"/>
+            <part name="expShown" type="Q"/>
+            <part name="unk" type="d"/>
+            <part name="maxHP" type="d"/>
+            <part name="curHP" type="d"/>
+            <part name="maxMP" type="d"/>
+            <part name="curMP" type="d"/>
+            <part name="maxDP" type="h"/>
+            <part name="curDP" type="h"/>
+            <part name="unk3" type="d"/>
+            <part name="flyTime" type="d"/>
+            <part name="unk" type="h"/>
+            <part name="curMainHandAttack" type="h"/>
+            <part name="curOffHandAttack" type="h"/>
+            <part name="curPhysDefence" type="h"/>
+            <part name="unk5" type="h"/>
+            <part name="magicalResist" type="h"/>
+            <part name="unk6" type="h"/>
+            <part name="attackRange" type="h"/>
+            <part name="attackSpeed" type="h"/>
+            <part name="curEvasion" type="h"/>
+            <part name="curParry" type="h"/>
+            <part name="curBlock" type="h"/>
+            <part name="curMainHandCritRate" type="h"/>
+            <part name="curOffHandCritRate" type="h"/>
+            <part name="curMainHandAccuracy" type="h"/>
+            <part name="curOffHandAccuracy" type="h"/>
+            <part name="unk9" type="h"/>
+            <part name="curMagicAccuracy" type="h"/>
+            <part name="unk" type="h"/>
+            <part name="curMagicBoost" type="h"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="classId" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="h"/>
+            <part name="power" type="h"/>
+            <part name="health" type="h"/>
+            <part name="accuracy" type="h"/>
+            <part name="agility" type="h"/>
+            <part name="knowledge" type="h"/>
+            <part name="will" type="h"/>
+            <part name="waterResist" type="h"/>
+            <part name="windResist" type="h"/>
+            <part name="earthResist" type="h"/>
+            <part name="fireResist" type="h"/>
+            <part name="unk14" type="d"/>
+            <part name="maxHp" type="d"/>
+            <part name="maxMp" type="d"/>
+            <part name="unk15" type="d"/>
+            <part name="unk16" type="d"/>
+            <part name="mainHandAttack" type="h"/>
+            <part name="offHandAttack" type="h"/>
+            <part name="unk17" type="h"/>
+            <part name="physDef" type="h"/>
+            <part name="magicResist" type="h"/>
+            <part name="unk18" type="h"/>
+            <part name="unk19" type="d"/>
+            <part name="evasion" type="h"/>
+            <part name="parry" type="h"/>
+            <part name="block" type="h"/>
+            <part name="mainHandCritRate" type="h"/>
+            <part name="offHandCritRate" type="h"/>
+            <part name="mainHandAccuracy" type="h"/>
+            <part name="offHandAccuracy" type="h"/>
+            <part name="unk20" type="h"/>
+            <part name="magicAccuracy" type="h"/>
+            <part name="unk21" type="h"/>
+            <part name="magicBoost" type="h"/>
+            <part name="unk22" type="h"/>
+        </packet>
+    </packetfamilly>
+    <packetfamilly switchtype="c" way="ClientPackets">
+        <packet id="0x0" name="CM_CRAFT">
+            <part name="unk" type="c"/>
+            <part name="targetTemplateId" type="d"/>
+            <part name="recipeId" type="d"/>
+            <part name="targetObjId" type="d"/>
+        </packet>
+        <packet id="0x1" name="CM_CLIENT_COMMAND_LOC"/>
+        <packet id="0x4" name="CM_RESTORE_CHARACTER">
+            <part name="playOk2" type="d"/>
+            <part name="objectId" type="d"/>
+        </packet>
+        <packet id="0x5" name="CM_START_LOOT">
+            <part name="targetObjectId" type="d"/>
+            <part name="startEnd" type="c"/>
+        </packet>
+        <packet id="0x6" name="CM_LOOT_ITEM">
+            <part name="targetObjectId" type="d"/>
+            <part name="lootItemId" type="c"/>
+        </packet>
+        <packet id="0x7" name="CM_MOVE_ITEM">
+            <part name="targetObjectId" type="d"/>
+            <part name="source" type="c"/>
+            <part name="destination" type="c"/>
+            <part name="slot" type="h"/>
+        </packet>
+        <packet id="0x8" name="CM_L2AUTH_LOGIN_CHECK">
+            <part name="playOk2" type="d"/>
+            <part name="playOk1" type="d"/>
+            <part name="accountId" type="d"/>
+            <part name="LoginOk" type="d"/>
+        </packet>
+        <packet id="0x9" name="CM_CHARACTER_LIST">
+            <part name="playOk2" type="d"/>
+        </packet>
+        <packet id="0xa" name="CM_CREATE_CHARACTER">
+            <part name="playOk2" type="d"/>
+            <part name="account" type="S"/>
+            <part name="nick" type="Ss"/>
+            <part name="sex(0=male,1=female)" type="d"/>
+            <part name="race(0=asmo,1=elys)" type="d"/>
+            <part name="classId" type="d"/>
+            <part name="voice" type="d"/>
+            <part name="skinRGB" type="d">
+                <reader type="Color"/>
+            </part>
+            <part name="hairRGB" type="d">
+                <reader type="Color"/>
+            </part>
+            <part name="eyeRGB" type="d">
+                <reader type="Color"/>
+            </part>
+            <part name="lipRGB" type="d">
+                <reader type="Color"/>
+            </part>
+            <part name="face" type="c"/>
+            <part name="hair" type="c"/>
+            <part name="deco" type="c"/>
+            <part name="tattoo" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="faceShape" type="c"/>
+            <part name="foreHead" type="c"/>
+            <part name="eyeHeight" type="c"/>
+            <part name="eyeSpace" type="c"/>
+            <part name="eyeWidth" type="c"/>
+            <part name="eyeSize" type="c"/>
+            <part name="eyeShape" type="c"/>
+            <part name="eyeAngle" type="c"/>
+            <part name="browHeight" type="c"/>
+            <part name="browAngle" type="c"/>
+            <part name="browShape" type="c"/>
+            <part name="nose" type="c"/>
+            <part name="noseBridge" type="c"/>
+            <part name="noseWidth" type="c"/>
+            <part name="noseTip" type="c"/>
+            <part name="cheek" type="c"/>
+            <part name="lipHeight" type="c"/>
+            <part name="mouthSize" type="c"/>
+            <part name="lipSize" type="c"/>
+            <part name="smile" type="c"/>
+            <part name="lipShape" type="c"/>
+            <part name="jawHeight" type="c"/>
+            <part name="chinJut" type="c"/>
+            <part name="earShape" type="c"/>
+            <part name="headSize" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="shoulderSize" type="c"/>
+            <part name="armLength" type="c"/>
+            <part name="legLength" type="c"/>
+            <part name="neck" type="c"/>
+            <part name="neckLength" type="c"/>
+            <part name="shoulders" type="c"/>
+            <part name="torso" type="c"/>
+            <part name="chest" type="c"/>
+            <part name="waist" type="c"/>
+            <part name="hips" type="c"/>
+            <part name="armThickness" type="c"/>
+            <part name="handSize" type="c"/>
+            <part name="legThickness" type="c"/>
+            <part name="footSize" type="c"/>
+            <part name="facialRate" type="c"/>
+            <part name="unk" type="c"/>
+            <part name="unk" type="c"/>
+            <part name="height" type="f"/>
+        </packet>
+        <packet id="0xb" name="CM_DELETE_CHARACTER">
+            <part name="playOk2" type="d"/>
+            <part name="objectId" type="d"/>
+        </packet>
+        <packet id="0xc" name="CM_LEGION_UPLOAD_EMBLEM">
+            <part name="size" type="d"/>
+            <part name="data" type="b"/>
+        </packet>
+        <packet id="0xd" name="CM_MAIL_SUMMON_ZEPHYR">
+            <part name="value" type="c"/>
+        </packet>
+        <packet id="0x10" name="CM_SPLIT_ITEM">
+            <part name="sourceItemObjId" type="d"/>
+            <part name="itemAmount" type="d"/>
+            <part name="zeros" type="b"/>
+            <part name="sourceStorageType" type="c"/>
+            <part name="destinationItemObjId" type="d"/>
+            <part name="destinationStorageType" type="c"/>
+            <part name="slotNum" type="h"/>
+        </packet>
+        <packet id="0x12" name="CM_PLAYER_SEARCH">
+            <part name="name" type="S"/>
+            <part name="unk" type="b"/>
+            <part name="region" type="d"/>
+            <part name="classMask" type="d"/>
+            <part name="minLevel" type="c"/>
+            <part name="maxLevel" type="c"/>
+            <part name="lfgOnly" type="c"/>
+            <part name="unk" type="c"/>
+        </packet>
+        <packet id="0x13" name="CM_LEGION_UPLOAD_INFO">
+            <part name="totalSize" type="d"/>
+            <part name="unk" type="c"/>
+            <part name="color_r" type="c"/>
+            <part name="color_g" type="c"/>
+            <part name="color_b" type="c"/>
+        </packet>
+        <packet id="0x15" name="CM_FRIEND_STATUS">
+            <part name="status" type="c"/>
+        </packet>
+        <packet id="0x17" name="CM_CHANGE_CHANNEL">
+            <part name="channel" type="d"/>
+        </packet>
+        <packet id="0x19" name="CM_BLOCK_ADD">
+            <part name="playerName" type="S"/>
+            <part name="reason" type="S"/>
+        </packet>
+        <packet id="0x1a" name="CM_BLOCK_DEL">
+            <part name="playerName" type="S"/>
+        </packet>
+        <packet id="0x1b" name="CM_SHOW_BLOCKLIST"/>
+        <packet id="0x1c" name="CM_CHECK_NICKNAME">
+            <part name="nick" type="S"/>
+        </packet>
+        <packet id="0x1d" name="CM_REPLACE_ITEM">
+            <part name="sourceStorageType" type="c"/>
+            <part name="sourceItemObjId" type="d"/>
+            <part name="replaceStorageType" type="c"/>
+            <part name="replaceItemObjId" type="d"/>
+        </packet>
+        <packet id="0x1e" name="CM_BLOCK_SET_REASON">
+            <part name="playerName" type="S"/>
+            <part name="reason" type="S"/>
+        </packet>
+        <packet id="0x21" name="CM_MAC_ADDRESS2">
+            <part name="objectId" type="d"/>
+            <part name="macAddress" type="b"/>
+        </packet>
+        <packet id="0x22" name="CM_MACRO_CREATE">
+            <part name="position" type="c"/>
+            <part name="macro" type="S"/>
+        </packet>
+        <packet id="0x23" name="CM_MACRO_DELETE">
+            <part name="position" type="c"/>
+        </packet>
+        <packet id="0x24" name="CM_DISTRIBUTION_SETTINGS">
+            <part name="LootRuleType" type="d"/>
+            <part name="LootDistribution" type="d"/>
+            <part name="common_item_above" type="d"/>
+            <part name="superior_item_above" type="d"/>
+            <part name="heroic_item_above" type="d"/>
+            <part name="fabled_item_above" type="d"/>
+            <part name="ethernal_item_above" type="d"/>
+            <part name="over_ethernal" type="d"/>
+            <part name="over_over_ethernal" type="d"/>
+        </packet>
+        <packet id="0x25" name="CM_MAY_LOGIN_INTO_GAME"/>
+        <packet id="0x27" name="CM_ABYSS_RANKING_PLAYERS">
+            <part name="raceId" type="c"/>
+        </packet>
+        <packet id="0x28" name="CM_SHOW_BRAND">
+            <part name="modeId" type="d"/>
+            <part name="brandId" type="d"/>
+            <part name="targetObjectId" type="d"/>
+        </packet>
+        <packet id="0x2a" name="CM_RECONNECT_AUTH"/>
+        <packet id="0x2b" name="CM_GROUP_LOOT">
+            <part name="groupId" type="d"/>
+            <part name="unk1" type="d"/>
+            <part name="unk2" type="d"/>
+            <part name="itemId" type="d"/>
+            <part name="itemIndex" type="c"/>
+            <part name="npcId" type="d"/>
+            <part name="distributionId" type="c"/>
+            <part name="roll" type="d"/>
+            <part name="bid" type="Q"/>
+        </packet>
+        <packet id="0x2f" name="CM_SHOW_MAP"/>
+        <packet id="0x30" name="CM_MAC_ADDRESS">
+            <part name="unk" type="b"/>
+            <part name="macAddress" type="S"/>
+        </packet>
+        <packet id="0x32" name="CM_REPORT_PLAYER">
+            <part name="unk" type="b"/>
+            <part name="player" type="S"/>
+        </packet>
+        <packet id="0x33" name="CM_GROUP_RESPONSE">
+            <part name="unk" type="d"/>
+            <part name="unk" type="c"/>
+        </packet>
+        <packet id="0x34" name="CM_SUMMON_MOVE">
+            <part name="summonObjectId" type="d"/>
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="heading" type="c"/>
+            <part name="movementType" type="c"/>
+        </packet>
+        <packet id="0x35" name="CM_SUMMON_EMOTION">
+            <part name="summonObjectId" type="d"/>
+            <part name="emotionType" type="c"/>
+        </packet>
+        <packet id="0x36" name="CM_SUMMON_ATTACK">
+            <part name="summonObjectId" type="d"/>
+            <part name="targetObjectId" type="d"/>
+            <part name="unk" type="c"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="c"/>
+        </packet>
+        <packet id="0x43" name="CM_DELETE_QUEST">
+            <part name="questId" type="h"/>
+        </packet>
+        <packet id="0x45" name="CM_ITEM_REMODEL">
+            <part name="npcId" type="d"/>
+            <part name="keepItemId" type="d"/>
+            <part name="extractItemId" type="d"/>
+        </packet>
+        <packet id="0x46" name="CM_GODSTONE_SOCKET">
+            <part name="npcId" type="d"/>
+            <part name="weaponId" type="d"/>
+            <part name="stoneId" type="d"/>
+        </packet>
+        <packet id="0x4c" name="CM_INVITE_TO_GROUP">
+            <part name="unk" type="c"/>
+            <part name="name" type="S"/>
+        </packet>
+        <packet id="0x4d" name="CM_ALLIANCE_CHANGE">
+            <part name="playerObjectId" type="d"/>
+            <part name="newAllianceId" type="d"/>
+            <part name="unk newSlot?" type="d"/>
+        </packet>
+        <packet id="0x4f" name="CM_VIEW_PLAYER_DETAILS">
+            <part name="playerObjId" type="d"/>
+        </packet>
+        <packet id="0x53" name="CM_PLAYER_STATUS_INFO">
+            <part name="status" type="c"/>
+            <part name="playerObjId" type="d"/>
+        </packet>
+        <packet id="0x56" name="CM_CLIENT_COMMAND_ROLL">
+            <part name="maxRoll" type="d"/>
+        </packet>
+        <packet id="0x57" name="CM_GROUP_DISTRIBUTION">
+            <part name="amount" type="d"/>
+        </packet>
+        <packet id="0x5a" name="CM_PING_REQUEST"/>
+        <packet id="0x5d" name="CM_DUEL_REQUEST">
+            <part name="targetId" type="d"/>
+        </packet>
+        <packet id="0x5f" name="CM_DELETE_ITEM">
+            <part name="itemObjId" type="d"/>
+        </packet>
+        <packet id="0x61" name="CM_SHOW_FRIENDLIST"/>
+        <packet id="0x62" name="CM_FRIEND_ADD">
+            <part name="nick" type="S"/>
+        </packet>
+        <packet id="0x63" name="CM_FRIEND_DEL">
+            <part name="friendName" type="S"/>
+        </packet>
+        <packet id="0x64" name="CM_SUMMON_COMMAND">
+            <part name="mode" type="c"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="targetObjectId" type="d"/>
+        </packet>
+        <packet id="0x66" name="CM_BROKER_LIST">
+            <part name="brokerId" type="d"/>
+            <part name="sortType" type="c"/>
+            <part name="page" type="h"/>
+            <part name="listMask" type="h"/>
+        </packet>
+        <packet id="0x69" name="CM_BROKER_LIST">
+            <part name="raceId" type="c"/>
+        </packet>
+        <packet id="0x6a" name="CM_PRIVATE_STORE">
+            <part id="0" name="itemCount" type="h"/>
+            <for id="0">
+                <part name="itemObjId" type="d"/>
+                <part name="itemId" type="d"/>
+                <part name="count" type="h"/>
+                <part name="price" type="d"/>
+            </for>
+        </packet>
+        <packet id="0x6b" name="CM_PRIVATE_STORE_NAME">
+            <part name="name" type="S"/>
+        </packet>
+        <packet id="0x6c" name="CM_BROKER_SETTLE_LIST">
+            <part name="npcId" type="d"/>
+        </packet>
+        <packet id="0x6d" name="CM_BROKER_SETTLE_ACCOUNT">
+            <part name="npcId" type="d"/>
+        </packet>
+        <packet id="0x6f" name="CM_SEND_MAIL">
+            <part name="recipientName" type="S"/>
+            <part name="title" type="S"/>
+            <part name="message" type="S"/>
+            <part name="itemObjId" type="d"/>
+            <part name="itemCount" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="kinahCount" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="express" type="c"/>
+        </packet>
+        <packet id="0x70" name="CM_BROKER_REGISTERED">
+            <part name="npcId" type="d"/>
+        </packet>
+        <packet id="0x71" name="CM_BUY_BROKER_ITEM">
+            <part name="brokerId" type="d"/>
+            <part name="itemUniqueId" type="d"/>
+            <part name="itemCount" type="h"/>
+        </packet>
+        <packet id="0x72" name="CM_REGISTER_BROKER_ITEM">
+            <part name="brokerId" type="d"/>
+            <part name="itemUniqueId" type="d"/>
+            <part name="price" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="itemCount" type="h"/>
+        </packet>
+        <packet id="0x73" name="CM_BROKER_CANCEL_REGISTERED">
+            <part name="npcId" type="d"/>
+            <part name="brokerItemId" type="d"/>
+        </packet>
+        <packet id="0x74" name="CM_DELETE_MAIL">
+            <part name="mailObjId" type="d"/>
+        </packet>
+        <packet id="0x76" name="CM_TITLE_SET">
+            <part name="titleId" type="d"/>
+        </packet>
+        <packet id="0x79" name="CM_READ_MAIL">
+            <part name="mailObjId" type="d"/>
+        </packet>
+        <packet id="0x7b" name="CM_GET_MAIL_ATTACHMENT">
+            <part name="mailObjId" type="d"/>
+            <part name="attachmentType" type="c"/>
+        </packet>
+        <packet id="0x7c" name="CM_QUESTIONNAIRE">
+            <part name="objectId" type="d"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="h"/>
+            <part name="unk" type="h"/>
+        </packet>
+        <packet id="0x7f" name="CM_TELEPORT_SELECT">
+            <part name="targetObjId" type="d"/>
+            <part name="locId" type="d"/>
+            <part name="unk" type="h"/>
+        </packet>
+        <packet id="0x83" name="CM_LEGION_EMBLEM">
+            <part name="legionId" type="d"/>
+        </packet>
+        <packet id="0x85" name="CM_PETITION">
+            <part id="0" name="action" type="h"/>
+            <switch id="0">
+                <case id="2">
+                    <part name="unk" type="d"/>
+                </case>
+                <case id="default">
+                    <part name="data" type="S"/>
+                </case>
+            </switch>
+        </packet>
+        <packet id="0x86" name="CM_CHAT_MESSAGE_PUBLIC">
+            <part name="type" type="c"/>
+            <part name="msg" type="S"/>
+        </packet>
+        <packet id="0x87" name="CM_CHAT_MESSAGE_WHISPER">
+            <part name="name" type="S"/>
+            <part name="msg" type="S"/>
+        </packet>
+        <packet id="0x8a" name="CM_OPEN_STATICDOOR">
+            <part name="doorId" type="d"/>
+        </packet>
+        <packet id="0x8c" name="CM_CASTSPELL">
+            <part name="spellId" type="h"/>
+            <part name="level" type="c"/>
+            <part id="0" name="point" type="c"/>
+            <switch id="0">
+                <case id="1">
+                    <part name="x" type="f"/>
+                    <part name="y" type="f"/>
+                    <part name="z" type="f"/>
+                </case>
+                <case id="default">
+                    <part name="targetObjId" type="d"/>
+                </case>
+            </switch>
+            <part name="time" type="h"/>
+        </packet>
+        <packet id="0x8d" name="CM_SKILL_DEACTIVATE">
+            <part name="skillId" type="d"/>
+        </packet>
+        <packet id="0x8e" name="CM_REMOVE_ALTERED_STATE">
+            <part name="skillId" type="h"/>
+        </packet>
+        <packet id="0x92" name="CM_TARGET_SELECT">
+            <part name="targetObjectId" type="d"/>
+            <part name="unk" type="c"/>
+        </packet>
+        <packet id="0x93" name="CM_ATTACK">
+            <part name="targetId" type="d"/>
+            <part name="unk2" type="c"/>
+            <part name="timer" type="h"/>
+            <part name="unk3" type="c"/>
+        </packet>
+        <packet id="0x96" name="CM_EMOTION">
+            <part id="0" name="emotionType" type="c"/>
+            <switch id="0">
+                <case id="19">
+                    <part name="emotion" type="h"/>
+                </case>
+                <case id="4">
+                    <part name="x" type="f"/>
+                    <part name="y" type="f"/>
+                    <part name="z" type="f"/>
+                    <part name="heading" type="c"/>
+                </case>
+                <case id="5">
+                    <part name="x" type="f"/>
+                    <part name="y" type="f"/>
+                    <part name="z" type="f"/>
+                    <part name="heading" type="c"/>
+                </case>
+                <case id="default"/>
+            </switch>
+        </packet>
+        <packet id="0x97" name="CM_PING">
+            <part name="unk" type="h"/>
+        </packet>
+        <packet id="0x98" name="CM_USE_ITEM">
+            <part name="uniqueItemId" type="d"/>
+            <part name="type" type="c"/>
+        </packet>
+        <packet id="0x99" name="CM_EQUIP_ITEM">
+            <part name="action" type="c"/>
+            <part name="itemSlot" type="d"/>
+            <part name="itemUniqueId" type="d"/>
+        </packet>
+        <packet id="0x9c" name="CM_FLIGHT_TELEPORT">
+            <part name="mapId" type="d"/>
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="locationId" type="c"/>
+            <part name="distance" type="d"/>
+        </packet>
+        <packet id="0x9d" name="CM_QUESTION_RESPONSE">
+            <part name="questionId" type="d"/>
+            <part name="answerId" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="h"/>
+        </packet>
+        <packet id="0x9e" name="CM_BUY_ITEM">
+            <part name="npcObjId" type="d"/>
+            <part name="unk1" type="h"/>
+            <part id="0" name="amount" type="h"/>
+            <for id="0">
+                <part name="itemId" type="d"/>
+                <part name="count" type="d"/>
+                <part name="unk2" type="d"/>
+            </for>
+        </packet>
+        <packet id="0x9f" name="CM_SHOW_DIALOG">
+            <part name="targetObjectId" type="d"/>
+        </packet>
+        <packet id="0xa0" name="CM_LEGION">
+            <part id="0" name="switch" type="c"/>
+            <switch id="0">
+                <case id="0">
+                    <part name="unk" type="d"/>
+                    <part name="legionName" type="S"/>
+                </case>
+                <case id="1">
+                    <part name="unk" type="d"/>
+                    <part name="playerName" type="S"/>
+                </case>
+                <case id="2">
+                    <part name="unk" type="d"/>
+                    <part name="unk" type="S"/>
+                </case>
+                <case id="4">
+                    <part name="unk" type="d"/>
+                    <part name="playerName" type="S"/>
+                </case>
+                <case id="15">
+                    <part name="playerName" type="S"/>
+                    <part name="newNickname" type="S"/>
+                </case>
+                <case id="10">
+                    <part name="unk" type="d"/>
+                    <part name="newSelfIntro" type="S"/>
+                </case>
+                <case id="default"/>
+            </switch>
+        </packet>
+        <packet id="0xa2" name="CM_LEGION_EMBLEM_SEND">
+            <part name="legionId" type="d"/>
+        </packet>
+        <packet id="0xa3" name="CM_MOVE">
+            <part name="x" type="f"/>
+            <part name="y" type="f"/>
+            <part name="z" type="f"/>
+            <part name="heading" type="c"/>
+            <part name="type" type="c"/>
+        </packet>
+        <packet id="0xa5" name="CM_SET_NOTE">
+            <part name="note" type="S"/>
+        </packet>
+        <packet id="0xa6" name="CM_LEGION_MODIFY_EMBLEM">
+            <part name="legionId" type="d"/>
+            <part name="emblemVer" type="h"/>
+            <part name="unk" type="c"/>
+            <part name="red" type="c"/>
+            <part name="green" type="c"/>
+            <part name="blue" type="c"/>
+        </packet>
+        <packet id="0xa8" name="CM_CLOSE_DIALOG">
+            <part name="targetObjectId" type="d"/>
+        </packet>
+        <packet id="0xa9" name="CM_DIALOG_SELECT">
+            <part name="targetObjectId" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="h"/>
+        </packet>
+        <packet id="0xaa" name="CM_LEGION_TABS">
+            <part name="page" type="d"/>
+            <part name="tab" type="c"/>
+        </packet>
+        <packet id="0xad" name="CM_EXCHANGE_ADD_KINAH">
+            <part name="count" type="d"/>
+            <part name="unk" type="d"/>
+        </packet>
+        <packet id="0xae" name="CM_EXCHANGE_LOCK"/>
+        <packet id="0xaf" name="CM_EXCHANGE_OK"/>
+        <packet id="0xb2" name="CM_EXCHANGE_REQUEST">
+            <part name="targetObjectId" type="d"/>
+        </packet>
+        <packet id="0xb3" name="CM_EXCHANGE_ADD_ITEM">
+            <part name="itemId" type="d"/>
+            <part name="count" type="d"/>
+        </packet>
+        <packet id="0xb5" name="CM_MANASTONE">
+            <part id="0" name="actionType" type="c"/>
+            <part name="unk" type="c"/>
+            <part name="targetItemUniqueId" type="d"/>
+            <switch id="0">
+                <case id="1">
+                    <part name="enchantmentStoneUniqueId" type="d"/>
+                </case>
+                <case id="2">
+                    <part name="manastoneUniqueId" type="d"/>
+                </case>
+                <case id="3">
+                    <part name="slotNum" type="c"/>
+                    <part name="unk" type="c"/>
+                    <part name="unk" type="h"/>
+                    <part name="npcObjId" type="c"/>
+                </case>
+                <case id="default"/>
+            </switch>
+        </packet>
+        <packet id="0xb8" name="CM_EXCHANGE_CANCEL"/>
+        <packet id="0xbc" name="CM_PLAY_MOVIE_END">
+            <part name="type" type="c"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="movieId" type="h"/>
+            <part name="unk" type="d"/>
+        </packet>
+        <packet id="0xc0" name="CM_SUMMON_CASTSPELL">
+            <part name="summonObjectId" type="d"/>
+            <part name="skillId" type="h"/>
+            <part name="skillLvl" type="c"/>
+            <part name="targetObjId" type="d"/>
+            <part name="unk" type="f"/>
+        </packet>
+        <packet id="0xc1" name="CM_FUSION_WEAPONS">
+            <part name="unk" type="d"/>
+            <part name="firstItemId" type="d"/>
+            <part name="secondItemId" type="d"/>
+        </packet>
+        <packet id="0xc2" name="CM_BREAK_WEAPONS">
+            <part name="unk" type="d"/>
+            <part name="weaponToBreakUniqueId" type="d"/>
+        </packet>
+        <packet id="0xed" name="CM_DISCONNECT">
+            <part name="unk" type="c"/>
+        </packet>
+        <packet id="0xee" name="CM_QUIT">
+            <part name="unk" type="c"/>
+        </packet>
+        <packet id="0xef" name="CM_MAY_QUIT"/>
+        <packet id="0xf3" name="CM_VERSION_CHECK">
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+        </packet>
+        <packet id="0xf4" name="CM_LEVEL_READY"/>
+        <packet id="0xf5" name="CM_UI_SETTINGS">
+            <part name="settingsType" type="h"/>
+            <part name="unk" type="h"/>
+            <part name="size" type="h"/>
+            <part name="data" type="b"/>
+        </packet>
+        <packet id="0xf6" name="CM_OBJECT_SEARCH">
+            <part name="npcId" type="d"/>
+        </packet>
+        <packet id="0xf7" name="CM_CUSTOM_SETTINGS">
+            <part name="display" type="h"/>
+            <part name="deny" type="h"/>
+        </packet>
+        <packet id="0xf8" name="CM_REVIVE">
+            <part name="reviveId" type="c"/>
+        </packet>
+        <packet id="0xfa" name="CM_PLASTIC_SURGERY_SEND">
+            <part name="playerObjectId" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="unk" type="d"/>
+            <part name="voice" type="d"/>
+            <part name="skinRGB" type="d">
+                <reader type="Color"/>
+            </part>
+            <part name="hairRGB" type="d">
+                <reader type="Color"/>
+            </part>
+            <part name="eyeRGB" type="d">
+                <reader type="Color"/>
+            </part>
+            <part name="lipRGB" type="d">
+                <reader type="Color"/>
+            </part>
+            <part name="face" type="c"/>
+            <part name="hair" type="c"/>
+            <part name="deco" type="c"/>
+            <part name="tattoo" type="c"/>
+            <part name="0x04" type="c"/>
+            <part name="faceShape" type="c"/>
+            <part name="foreHead" type="c"/>
+            <part name="eyeHeight" type="c"/>
+            <part name="eyeSpace" type="c"/>
+            <part name="eyeWidth" type="c"/>
+            <part name="eyeSize" type="c"/>
+            <part name="eyeShape" type="c"/>
+            <part name="eyeAngle" type="c"/>
+            <part name="browHeight" type="c"/>
+            <part name="browAngle" type="c"/>
+            <part name="browShape" type="c"/>
+            <part name="nose" type="c"/>
+            <part name="noseBridge" type="c"/>
+            <part name="noseWidth" type="c"/>
+            <part name="noseTip" type="c"/>
+            <part name="cheek" type="c"/>
+            <part name="lipHeight" type="c"/>
+            <part name="mouthSize" type="c"/>
+            <part name="lipSize" type="c"/>
+            <part name="smile" type="c"/>
+            <part name="lipShape" type="c"/>
+            <part name="jawHeight" type="c"/>
+            <part name="chinJut" type="c"/>
+            <part name="earShape" type="c"/>
+            <part name="headSize" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="shoulderSize" type="c"/>
+            <part name="armLength" type="c"/>
+            <part name="legLength" type="c"/>
+            <part name="neck" type="c"/>
+            <part name="neckLength" type="c"/>
+            <part name="shoulders" type="c"/>
+            <part name="torso" type="c"/>
+            <part name="chest" type="c"/>
+            <part name="waist" type="c"/>
+            <part name="hips" type="c"/>
+            <part name="armThickness" type="c"/>
+            <part name="handSize" type="c"/>
+            <part name="legThicknes" type="c"/>
+            <part name="footSize" type="c"/>
+            <part name="facialRate" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="0x00" type="c"/>
+            <part name="height" type="f"/>
+        </packet>
+        <packet id="0xfb" name="CM_ENTER_WORLD">
+            <part name="chaObjId" type="d"/>
+        </packet>
+        <packet id="0xfd" name="CM_TIME_CHECK">
+            <part name="nanoTime/1000000 [?]" type="d"/>
+        </packet>
+        <packet id="0xfe" name="CM_GATHER">
+            <part name="status" type="d"/>
+        </packet>
+    </packetfamilly>
+</protocol>
