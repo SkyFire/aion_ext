@@ -1,9 +1,9 @@
 @echo off
-title Open Aion Game Server Console
+title Aion Extreme Game Server Console
 
 REM Start...
 :start
-echo Starting Open Aion Game Server.
+echo Starting Aion Extreme Game Server.
 echo.
 
 REM SET PATH="Type here your path to java jdk/jre (including bin folder)."
