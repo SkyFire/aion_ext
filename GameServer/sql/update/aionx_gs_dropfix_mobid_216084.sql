@@ -1,1 +1,0 @@
-UPDATE `droplist` SET `itemId` = '182400001' WHERE `droplist`.`Id` =152449;

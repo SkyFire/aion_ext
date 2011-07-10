@@ -1,9 +1,0 @@
-C:\Users\Marc\Documents\AION SERVER\AIONXEMU\trunk\Launcher\bin\Debug\aionXemu Launcher.exe
-C:\Users\Marc\Documents\AION SERVER\AIONXEMU\trunk\Launcher\bin\Debug\aionXemu Launcher.pdb
-C:\Users\Marc\Documents\AION SERVER\AIONXEMU\trunk\Launcher\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Marc\Documents\AION SERVER\AIONXEMU\trunk\Launcher\obj\x86\Debug\aionXemu_Launcher.Form1.resources
-C:\Users\Marc\Documents\AION SERVER\AIONXEMU\trunk\Launcher\obj\x86\Debug\aionXemu_Launcher.Properties.Resources.resources
-C:\Users\Marc\Documents\AION SERVER\AIONXEMU\trunk\Launcher\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Users\Marc\Documents\AION SERVER\AIONXEMU\trunk\Launcher\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Users\Marc\Documents\AION SERVER\AIONXEMU\trunk\Launcher\obj\x86\Debug\aionXemu Launcher.exe
-C:\Users\Marc\Documents\AION SERVER\AIONXEMU\trunk\Launcher\obj\x86\Debug\aionXemu Launcher.pdb

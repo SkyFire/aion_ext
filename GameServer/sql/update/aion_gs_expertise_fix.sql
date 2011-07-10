@@ -1,1 +1,0 @@
-UPDATE `player_skills` SET `skillLevel` = '549' WHERE `skillLevel` > '549';
