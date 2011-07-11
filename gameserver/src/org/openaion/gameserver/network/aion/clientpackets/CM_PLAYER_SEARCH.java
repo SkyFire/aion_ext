@@ -42,7 +42,7 @@ public class CM_PLAYER_SEARCH extends AionClientPacket
 	/**
 	 * The max number of players to return as results
 	 */
-	public static final int	MAX_RESULTS	= 125;
+	public static final int	MAX_RESULTS	= 111;
 
 	private String			name;
 	private int				region;
