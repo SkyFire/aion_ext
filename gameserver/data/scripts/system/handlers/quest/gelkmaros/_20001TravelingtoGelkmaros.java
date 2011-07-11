@@ -129,7 +129,7 @@ public class _20001TravelingtoGelkmaros extends QuestHandler
 			{
 				if(env.getDialogId() == -1)
 					return sendQuestDialog(env, 10002);
-				else if(env.getDialogId() == 17)
+				else if(env.getDialogId() == 18)
 				{
 					int[] ids = {20020, 20021, 20022, 20023, 20024, 20025, 20026};
 					for(int id: ids)

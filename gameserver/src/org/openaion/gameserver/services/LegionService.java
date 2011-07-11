@@ -773,35 +773,44 @@ public class LegionService
 		}
 	}
 
-	/**
-	 * This method will handle the process when a member is demoted or promoted.
-	 * 
-	 * @param newCenturion
-	 */
-	private void appointRank(Player activePlayer, Player targetPlayer, int rank)
-	{
-		if(legionRestrictions.canAppointRank(activePlayer, targetPlayer))
-		{
-			Legion legion = activePlayer.getLegion();
-			int msgId;
-			LegionMember legionMember = targetPlayer.getLegionMember();
-			if(rank == LegionRank.CENTURION.getRankId() && legionMember.getRank() == LegionRank.LEGIONARY)
-			{
-				// Change rank and define needed msg id
-				legionMember.setRank(LegionRank.CENTURION);
-				msgId = 1300267;
-			}
-			else
-			{
-				// Change rank and define needed msg id
-				legionMember.setRank(LegionRank.LEGIONARY);
-				msgId = 1300268;
-			}
-
-			PacketSendUtility.broadcastPacketToLegion(legion, new SM_LEGION_UPDATE_MEMBER(targetPlayer, msgId,
-				targetPlayer.getName()));
-		}
-	}
+    /**
+     * This method will handle the process when a member is demoted or promoted.
+     * 
+     * @param newCenturion
+     */
+    private void appointRank(Player activePlayer, Player targetPlayer, int rank)
+    {
+        if(legionRestrictions.canAppointRank(activePlayer, targetPlayer))
+        {
+            Legion legion = activePlayer.getLegion();
+            int msgId;
+            LegionMember legionMember = targetPlayer.getLegionMember();
+            if(rank == LegionRank.SUB_GENERAL.getRankId() && legionMember.getRank() != LegionRank.SUB_GENERAL)
+            {
+                legionMember.setRank(LegionRank.SUB_GENERAL);
+                msgId = 1400902;
+            }
+            else if(rank == LegionRank.CENTURION.getRankId() && legionMember.getRank() != LegionRank.CENTURION)
+            {
+                legionMember.setRank(LegionRank.CENTURION);
+                msgId = 1300267;
+            }
+            else if(rank == LegionRank.LEGIONARY.getRankId() && legionMember.getRank() != LegionRank.LEGIONARY)
+            {
+                legionMember.setRank(LegionRank.LEGIONARY);
+                msgId = 1300268;
+            }
+            else
+            {
+                legionMember.setRank(LegionRank.NEW_LEGIONARY);
+                msgId = 1400903;
+            }
+    
+            PacketSendUtility.broadcastPacketToLegion(legion, new SM_LEGION_UPDATE_MEMBER(targetPlayer, msgId,
+                    targetPlayer.getName()));
+            storeLegion(legion); // update DB when change the permission
+        }
+    }
 
 	/**
 	 * This method will handle the changement of a self intro
@@ -826,13 +835,14 @@ public class LegionService
 	 * 
 	 * @param legion
 	 */
-	public void changePermissions(Legion legion, int lP2, int cP1, int cP2)
-	{
-		if(legion.setLegionPermissions(lP2, cP1, cP2))
-		{
-			PacketSendUtility.broadcastPacketToLegion(legion, new SM_LEGION_EDIT(0x02, legion));
-		}
-	}
+	   public void changePermissions(Legion legion, int lp1, int lp2, int cp1, int cp2, int dp1, int dp2, int vp1, int vp2)
+	   {
+	      if(legion.setLegionPermissions(lp1, lp2, cp1, cp2, dp1, dp2, vp1, vp2))
+	      {
+	         PacketSendUtility.broadcastPacketToLegion(legion, new SM_LEGION_EDIT(0x02, legion));
+	         storeLegion(legion);
+	      }
+	   }
 
 	/**
 	 * This method will handle the leveling up of a legion
@@ -1280,8 +1290,7 @@ public class LegionService
 			storeNewAnnouncement(legion.getLegionId(), currentTime, announcement);
 			legion.addAnnouncementToList(currentTime, announcement);
 			PacketSendUtility.sendPacket(activePlayer, SM_SYSTEM_MESSAGE.LEGION_WRITE_NOTICE_DONE());
-			PacketSendUtility.broadcastPacketToLegion(legion, new SM_LEGION_EDIT(0x05, (int) (System
-				.currentTimeMillis() / 1000), announcement));
+			PacketSendUtility.broadcastPacketToLegion(legion, new SM_LEGION_EDIT(0x05, (int) (System.currentTimeMillis() / 1000), announcement));
 		}
 	}
 

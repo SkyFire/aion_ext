@@ -145,42 +145,50 @@ public class LegionMember
 		return objectId;
 	}
 
-	public boolean hasRights(int type)
-	{
-		if(getRank() == LegionRank.BRIGADE_GENERAL)
-			return true;
+   public boolean hasRights(int type)
+   {
+      if(getRank() == LegionRank.BRIGADE_GENERAL)
+         return true;
 
-		int legionarPermission2 = getLegion().getLegionarPermission2();
-		int centurionPermission1 = getLegion().getCenturionPermission1() - LP_CENT_NONE;
-		int centurionPermission2 = getLegion().getCenturionPermission2();
+      int legionaryPermission1 = getLegion().getLegionaryPermission1();
+      int legionaryPermission2 = getLegion().getLegionaryPermission2();
+      int centurionPermission1 = getLegion().getCenturionPermission1();
+      int centurionPermission2 = getLegion().getCenturionPermission2();
+      int deputyPermission1 = getLegion().getDeputyPermission1();
+      int deputyPermission2 = getLegion().getDeputyPermission2();
+      int volunteerPermission1 = getLegion().getVolunteerPermission1();
+      int volunteerPermission2 = getLegion().getVolunteerPermission2();
 
-		switch(type)
-		{
-			case 1:
-				if(getRank().canInviteToLegion(centurionPermission1))
-					return true;
+      switch(type)
+      {
+         case 1:
+            if(getRank().canInviteToLegion(legionaryPermission1, centurionPermission1))
+               return true;
 
-			case 2:
-				if(getRank().canKickFromLegion(centurionPermission1))
-					return true;
+         case 2:
+            if(getRank().canKickFromLegion(legionaryPermission1, centurionPermission1))
+               return true;
 
-			case 3:
-				if(getRank().canUseLegionWarehouse(centurionPermission1))
-					return true;
+         case 3:
+            if(getRank().canUseLegionWarehouse(legionaryPermission1, centurionPermission1, deputyPermission1))
+               return true;
 
-			case 4:
-				if(getRank().canEditAnnouncement(centurionPermission2))
-					return true;
+         case 4:
+            if(getRank().canEditAnnouncement(legionaryPermission2, centurionPermission2))
+               return true;
 
-			case 5:
-				if(getRank().canUseArtifact(centurionPermission2))
-					return true;
+         case 5:
+            if(getRank().canStoreLegionWarehouse(legionaryPermission2, centurionPermission2, deputyPermission2, volunteerPermission2))
+               return true;
 
-			case 6:
-				if(getRank().canUseGateGuardianStone(centurionPermission2, legionarPermission2))
-					return true;
-		}
-		return false;
+         case 6:
+            if(getRank().canUseArtifact(legionaryPermission2, centurionPermission2))
+               return true;
 
-	}
+         case 7:
+            if(getRank().canUseGateGuardianStone(legionaryPermission2, centurionPermission2, deputyPermission2, volunteerPermission2))
+               return true;
+      }
+      return false;
+   }
 }

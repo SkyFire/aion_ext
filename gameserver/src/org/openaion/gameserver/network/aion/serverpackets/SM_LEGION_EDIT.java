@@ -75,10 +75,14 @@ public class SM_LEGION_EDIT extends AionServerPacket
 				break;
 			/** Change Legion Permissions **/
 			case 0x02:
+	            writeC(buf, legion.getDeputyPermission1());
+	            writeC(buf, legion.getDeputyPermission2());
 				writeC(buf, legion.getCenturionPermission1());
 				writeC(buf, legion.getCenturionPermission2());
-				writeC(buf, legion.getLegionarPermission1());
-				writeC(buf, legion.getLegionarPermission2());
+				writeC(buf, legion.getLegionaryPermission1());
+				writeC(buf, legion.getLegionaryPermission2());
+                writeC(buf, legion.getVolunteerPermission1());
+                writeC(buf, legion.getVolunteerPermission2());
 				break;
 			/** Change Legion Contributions **/
 			case 0x03:

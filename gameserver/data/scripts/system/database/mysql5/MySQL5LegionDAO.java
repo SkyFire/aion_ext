@@ -54,7 +54,7 @@ public class MySQL5LegionDAO extends LegionDAO
 	private static final String	SELECT_LEGION_QUERY1			= "SELECT * FROM legions WHERE id=?";
 	private static final String	SELECT_LEGION_QUERY2			= "SELECT * FROM legions WHERE name=?";
 	private static final String	DELETE_LEGION_QUERY				= "DELETE FROM legions WHERE id = ?";
-	private static final String	UPDATE_LEGION_QUERY				= "UPDATE legions SET name=?, level=?, contribution_points=?, legionar_permission2=?, centurion_permission1=?, centurion_permission2=?, disband_time=? WHERE id=?";
+	private static final String UPDATE_LEGION_QUERY             = "UPDATE legions SET name=?, level=?, contribution_points=?, legionary_permission1=?, legionary_permission2=?, centurion_permission1=?, centurion_permission2=?, deputy_permission1=?, deputy_permission2=?, volunteer_permission1=?, volunteer_permission2=?, disband_time=? WHERE id=?";
 
 	/** Legion Ranking Queries **/
 	private static final String	SELECT_LEGIONRANKING_QUERY		= "SELECT id, contribution_points FROM legions ORDER BY contribution_points DESC;";
@@ -149,11 +149,16 @@ public class MySQL5LegionDAO extends LegionDAO
 			stmt.setString(1, legion.getLegionName());
 			stmt.setInt(2, legion.getLegionLevel());
 			stmt.setInt(3, legion.getContributionPoints());
-			stmt.setInt(4, legion.getLegionarPermission2());
-			stmt.setInt(5, legion.getCenturionPermission1());
-			stmt.setInt(6, legion.getCenturionPermission2());
-			stmt.setInt(7, legion.getDisbandTime());
-			stmt.setInt(8, legion.getLegionId());
+			stmt.setInt(4, legion.getLegionaryPermission1());
+			stmt.setInt(5, legion.getLegionaryPermission2());
+			stmt.setInt(6, legion.getCenturionPermission1());
+			stmt.setInt(7, legion.getCenturionPermission2());
+			stmt.setInt(8, legion.getDeputyPermission1());
+			stmt.setInt(9, legion.getDeputyPermission2());
+			stmt.setInt(10, legion.getVolunteerPermission1());
+			stmt.setInt(11, legion.getVolunteerPermission2());
+			stmt.setInt(12, legion.getDisbandTime());
+			stmt.setInt(13, legion.getLegionId());
 			stmt.execute();
 		}
 		catch(Exception e)
@@ -188,8 +193,15 @@ public class MySQL5LegionDAO extends LegionDAO
 				legion.setLegionLevel(resultSet.getInt("level"));
 				legion.addContributionPoints(resultSet.getInt("contribution_points"));
 
-				legion.setLegionPermissions(resultSet.getInt("legionar_permission2"), resultSet
-					.getInt("centurion_permission1"), resultSet.getInt("centurion_permission2"));
+                legion.setLegionPermissions(
+                        resultSet.getInt("legionary_permission1"), 
+                        resultSet.getInt("legionary_permission2"), 
+                        resultSet.getInt("centurion_permission1"), 
+                        resultSet.getInt("centurion_permission2"),
+                        resultSet.getInt("deputy_permission1"), 
+                        resultSet.getInt("deputy_permission2"),
+                        resultSet.getInt("volunteer_permission1"), 
+                        resultSet.getInt("volunteer_permission2"));
 
 				legion.setDisbandTime(resultSet.getInt("disband_time"));
 				log.debug("[MySQL5LegionDAO] Loaded " + legion.getLegionId() + " legion.");
@@ -231,8 +243,15 @@ public class MySQL5LegionDAO extends LegionDAO
 				legion.setLegionLevel(resultSet.getInt("level"));
 				legion.addContributionPoints(resultSet.getInt("contribution_points"));
 
-				legion.setLegionPermissions(resultSet.getInt("legionar_permission2"), resultSet
-					.getInt("centurion_permission1"), resultSet.getInt("centurion_permission2"));
+				legion.setLegionPermissions(
+                        resultSet.getInt("legionary_permission1"), 
+				        resultSet.getInt("legionary_permission2"), 
+				        resultSet.getInt("centurion_permission1"), 
+				        resultSet.getInt("centurion_permission2"),
+                        resultSet.getInt("deputy_permission1"), 
+                        resultSet.getInt("deputy_permission2"),
+                        resultSet.getInt("volunteer_permission1"), 
+                        resultSet.getInt("volunteer_permission2"));
 
 				legion.setDisbandTime(resultSet.getInt("disband_time"));
 				log.debug("[MySQL5LegionDAO] Loaded " + legion.getLegionId() + " legion.");

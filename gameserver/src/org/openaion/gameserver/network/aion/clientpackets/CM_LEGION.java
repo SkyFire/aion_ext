@@ -37,9 +37,15 @@ public class CM_LEGION extends AionClientPacket
 	 * exOpcode and the rest
 	 */
 	private int					exOpcode;
-	private int					legionarPermission2;
-	private int					centurionPermission1;
-	private int					centurionPermission2;
+	private int                 deputyPermission1;
+	private int                 deputyPermission2;
+	private int                 centurionPermission1;
+	private int                 centurionPermission2;
+	private int                 legionaryPermission1;
+	private int                 legionaryPermission2;
+	private int                 volunteerPermission1;
+	private int					volunteerPermission2;
+
 	private int					rank;
 	private String				legionName;
 	private String				charName;
@@ -117,10 +123,14 @@ public class CM_LEGION extends AionClientPacket
 				break;
 			/** Edit permissions **/
 			case 0x0D:
-				centurionPermission1 = readC(); // 0x60 - 0x7C
-				centurionPermission2 = readC(); // 0x00 - 0x0E
-				readC(); // can't be set is static 0x40
-				legionarPermission2 = readC(); // 0x00 - 0x08
+	            deputyPermission1 = readC();
+	            deputyPermission2 = readC();
+				centurionPermission1 = readC();
+				centurionPermission2 = readC();
+                legionaryPermission1 = readC();
+				legionaryPermission2 = readC();
+                volunteerPermission1 = readC();
+                volunteerPermission2 = readC();
 				break;
 			/** Level legion up **/
 			case 0x0E:
@@ -171,8 +181,7 @@ public class CM_LEGION extends AionClientPacket
 					/** Edit permissions **/
 					case 0x0D:
 						if(activePlayer.getLegionMember().isBrigadeGeneral())
-							LegionService.getInstance().changePermissions(legion, legionarPermission2, centurionPermission1,
-								centurionPermission2);
+							LegionService.getInstance().changePermissions(legion, legionaryPermission1, legionaryPermission2, centurionPermission1, centurionPermission2, deputyPermission1, deputyPermission2, volunteerPermission1, volunteerPermission2);
 						break;
 					/** Misc. **/
 					default:

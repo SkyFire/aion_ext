@@ -51,19 +51,18 @@ public class SM_LEGION_INFO extends AionServerPacket
 		writeS(buf, legion.getLegionName());
 		writeC(buf, legion.getLegionLevel());
 		writeD(buf, legion.getLegionRank());
+	    writeC(buf, legion.getDeputyPermission1());
+	    writeC(buf, legion.getDeputyPermission2());
 		writeC(buf, legion.getCenturionPermission1());
 		writeC(buf, legion.getCenturionPermission2());
-		writeC(buf, legion.getLegionarPermission1());
-		writeC(buf, legion.getLegionarPermission2());
-		writeC(buf, 0x00);//legion.getTribunPermission1();
-		writeC(buf, 0x00);//legion.getTribunPermission2();
-		writeC(buf, 0x00);//legion.getNewbiePermission1();
-		writeC(buf, 0x00);//legion.getNewbiePermission2();			
+		writeC(buf, legion.getLegionaryPermission1());
+		writeC(buf, legion.getLegionaryPermission2());
+	    writeC(buf, legion.getVolunteerPermission1());
+	    writeC(buf, legion.getVolunteerPermission2());
 		writeD(buf, legion.getContributionPoints());
 		writeD(buf, 0x00); // unk
 		writeD(buf, 0x00); // unk
 		writeD(buf, 0x00); // unk
-		writeD(buf, 0x00); //unk 2.5
 
 		/** Get Announcements List From DB By Legion **/
 		Map<Timestamp, String> announcementList = legion.getAnnouncementList().descendingMap();

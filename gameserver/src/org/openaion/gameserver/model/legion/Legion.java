@@ -38,11 +38,16 @@ import org.openaion.gameserver.world.World;
 public class Legion
 {
 	/** Static Permission settings **/
-	private static final int						PERMISSION1_MIN				= 0x60;
+	private static final int						PERMISSION1_MIN				= 0x00;
 	private static final int						PERMISSION2_MIN				= 0x00;
-	private static final int						LEGIONAR_PERMISSION2_MAX	= 0x08;
-	private static final int						CENTURION_PERMISSION1_MAX	= 0x7C;
-	private static final int						CENTURION_PERMISSION2_MAX	= 0x0E;
+	private static final int                        VOLUNTEER_PERMISSION1_MAX   = 0x00;
+	private static final int                        VOLUNTEER_PERMISSION2_MAX   = 0x18;
+	private static final int                        LEGIONARY_PERMISSION1_MAX   = 0x04;
+	private static final int						LEGIONARY_PERMISSION2_MAX	= 0x18;
+	private static final int						CENTURION_PERMISSION1_MAX	= 0x1C;
+	private static final int						CENTURION_PERMISSION2_MAX	= 0x1E;
+	private static final int                        DEPUTY_PERMISSION1_MAX   = 0x1C;
+	private static final int                        DEPUTY_PERMISSION2_MAX   = 0x1E;
 
 	/** Legion Information **/
 	private int										legionId					= 0;
@@ -51,10 +56,14 @@ public class Legion
 	private int										legionRank					= 0;
 	private int										contributionPoints			= 0;
 	private List<Integer>							legionMembers				= new ArrayList<Integer>();
-	private static final int						legionarPermission1			= 0x40;
-	private int										legionarPermission2			= 0x00;
-	private int										centurionPermission1		= 0x60;
-	private int										centurionPermission2		= 0x00;
+	private int                                     deputyPermission1           = 0x00;
+	private int                                     deputyPermission2           = 0x00;
+	private int                                     centurionPermission1        = 0x00;
+	private int                                     centurionPermission2        = 0x00;
+	private int                                     legionaryPermission1        = 0x00;
+	private int                                     legionaryPermission2        = 0x00;
+	private int                                     volunteerPermission1        = 0x00;
+	private int                                     volunteerPermission2        = 0x00;
 	private int										disbandTime;
 	private TreeMap<Timestamp, String>				announcementList			= new TreeMap<Timestamp, String>();
 	private LegionEmblem							legionEmblem				= new LegionEmblem();
@@ -193,16 +202,23 @@ public class Legion
 	 * @param centurionPermission2
 	 * @return true or false
 	 */
-	public boolean setLegionPermissions(int legionarPermission2, int centurionPermission1, int centurionPermission2)
+	public boolean setLegionPermissions(int lp1, int lp2, int cp1, int cp2, int dp1, int dp2, int vp1, int vp2)
 	{
-		if(checkPermissions(legionarPermission2, centurionPermission1, centurionPermission2))
-		{
-			this.legionarPermission2 = legionarPermission2;
-			this.centurionPermission1 = centurionPermission1;
-			this.centurionPermission2 = centurionPermission2;
-			return true;
-		}
-		return false;
+	    //zer0patches need check for able to edit permissions?
+	      if(checkPermissions(vp1, vp2, lp1, lp2, cp1, cp2, dp1, dp2))
+	      {
+                this.deputyPermission1 = dp1;
+                this.deputyPermission2 = dp2;
+        	    this.centurionPermission1 = cp1;
+        	    this.centurionPermission2 = cp2;
+                this.legionaryPermission1 = lp1;
+                this.legionaryPermission2 = lp2;
+                this.volunteerPermission1 = vp1;
+                this.volunteerPermission2 = vp2;
+
+	         return true;
+	      }
+	      return false;
 	}
 
 	/**
@@ -210,31 +226,41 @@ public class Legion
 	 * 
 	 * @return true or false
 	 */
-	private boolean checkPermissions(int legionarPermission2, int centurionPermission1, int centurionPermission2)
+	private boolean checkPermissions(int vp1,int  vp2,int  lp1,int  lp2,int  cp1,int  cp2,int  dp1,int  dp2)
 	{
-		if(legionarPermission2 < PERMISSION2_MIN || legionarPermission2 > LEGIONAR_PERMISSION2_MAX)
-			return false;
-		if(centurionPermission1 < PERMISSION1_MIN || centurionPermission1 > CENTURION_PERMISSION1_MAX)
-			return false;
-		if(centurionPermission2 < PERMISSION2_MIN || centurionPermission2 > CENTURION_PERMISSION2_MAX)
-			return false;
-		return true;
+	    if(vp1 < PERMISSION1_MIN || vp1 > VOLUNTEER_PERMISSION1_MAX)
+	        return false;
+	    if(vp2 < PERMISSION2_MIN || vp2 > VOLUNTEER_PERMISSION2_MAX)
+	        return false;
+	    if(lp1 < PERMISSION1_MIN || lp1 > LEGIONARY_PERMISSION1_MAX)
+	        return false;
+	    if(lp2 < PERMISSION2_MIN || lp2 > LEGIONARY_PERMISSION2_MAX)
+	        return false;
+	    if(cp1 < PERMISSION1_MIN || cp1 > CENTURION_PERMISSION1_MAX)
+	        return false;
+	    if(cp2 < PERMISSION2_MIN || cp2 > CENTURION_PERMISSION2_MAX)
+	        return false;
+	    if(dp1 < PERMISSION1_MIN || dp1 > DEPUTY_PERMISSION1_MAX)
+	        return false;
+	    if(dp2 < PERMISSION2_MIN || dp2 > DEPUTY_PERMISSION2_MAX)
+	        return false;
+	    return true;
 	}
 
 	/**
 	 * @return the legionarPermission1
 	 */
-	public int getLegionarPermission1()
+	public int getLegionaryPermission1()
 	{
-		return legionarPermission1;
+		return legionaryPermission1;
 	}
 
 	/**
 	 * @return the legionarPermission2
 	 */
-	public int getLegionarPermission2()
+	public int getLegionaryPermission2()
 	{
-		return legionarPermission2;
+		return legionaryPermission2;
 	}
 
 	/**
@@ -570,4 +596,36 @@ public class Legion
 	{
 		this.legionHistory.add(history);
 	}
+
+    /**
+     * @return
+     */
+    public int getDeputyPermission1() {
+        // TODO Auto-generated method stub
+        return deputyPermission1;
+    }
+
+    /**
+     * @return
+     */
+    public int getDeputyPermission2() {
+        // TODO Auto-generated method stub
+        return deputyPermission2;
+    }
+
+    /**
+     * @return
+     */
+    public int getVolunteerPermission1() {
+        // TODO Auto-generated method stub
+        return volunteerPermission1;
+    }
+
+    /**
+     * @return
+     */
+    public int getVolunteerPermission2() {
+        // TODO Auto-generated method stub
+        return volunteerPermission2;
+    }
 }
