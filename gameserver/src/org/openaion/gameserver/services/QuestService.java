@@ -224,9 +224,10 @@ public final class QuestService
 				{
 					inventory.increaseKinah((player.getRates().getQuestKinahRate() * rewards.getGold()));
 				}
-				if(rewards.getExp() != null)
+				if(rewards.getExp() != null && !player.isNoExperienceGain())
 				{
 					int rewardExp = (player.getRates().getQuestXpRate() * rewards.getExp());
+					if (rewardExp > Integer.MAX_VALUE || rewardExp < 0) rewardExp = Integer.MAX_VALUE;
 					player.getCommonData().addExp(rewardExp);
 				}
 
