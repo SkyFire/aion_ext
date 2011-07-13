@@ -215,6 +215,8 @@
 	<exitpoint mapid="210020000" x="2511.48" y="791.962" z="412.805"/>
 	</portal>
 <!-- Artifact of Circulation / DarkPoeta -->
+	<!-- Model for required item :
+	<portal npcid="730185" instance="true" minlevel="50" maxlevel="60" group="true" race="ASMODIANS" itemreq="185000041"> -->
 	<portal npcid="730185" instance="true" minlevel="50" maxlevel="55" group="true" race="ASMODIANS">
 		<entrypoint mapid="220040000" x="2420.12" y="2061.31" z="579.7" race="ASMODIANS"/>
 		<exitpoint mapid="300040000" x="1214" y="412" z="140"/>
@@ -808,4 +810,56 @@
 		<exitpoint mapid="220070000" x="2927.791" y="921.5419" z="35.288937"/>
 	</portal>
 	
+	<!-- LF4_2011_In_Teleporter_Li -->
+	<portal npcid="257233" instance="false" minlevel="50" maxlevel="60" group="false" race="ELYOS">
+		<exitpoint mapid="210050000" x="1676.0245" y="2194.4194" z="324.94763"/>
+	</portal>
+	<!-- LF4_2011_In_Teleporter_Da -->
+	<portal npcid="257234" instance="false" minlevel="50" maxlevel="60" group="false" race="ASMODIANS">
+		<exitpoint mapid="210050000" x="1676.0245" y="2194.4194" z="324.94763"/>
+	</portal>
+	<!-- LF4_2011_In_Teleporter_Dr -->
+	<portal npcid="257235" instance="false" minlevel="50" maxlevel="60" group="false">
+		<exitpoint mapid="210050000" x="1676.0245" y="2194.4194" z="324.94763"/>
+	</portal>
+
+	<!-- LF4_2021_In_Teleporter_Li -->
+	<portal npcid="257533" instance="false" minlevel="50" maxlevel="60" group="false" race="ELYOS">
+		<exitpoint mapid="210050000" x="815.45436" y="1980.3673" z="337.3635"/>
+	</portal>
+	<!-- LF4_2021_In_Teleporter_Da -->
+	<portal npcid="257534" instance="false" minlevel="50" maxlevel="60" group="false" race="ASMODIANS">
+		<exitpoint mapid="210050000" x="815.45436" y="1980.3673" z="337.3635"/>
+	</portal>
+	<!-- LF4_2021_In_Teleporter_Dr -->
+	<portal npcid="257535" instance="false" minlevel="50" maxlevel="60" group="false">
+		<exitpoint mapid="210050000" x="815.45436" y="1980.3673" z="337.3635"/>
+	</portal>
+
+	<!-- DF4_3011_In_Teleporter_Li -->
+	<portal npcid="257833" instance="false" minlevel="50" maxlevel="60" group="false" race="ELYOS">
+		<exitpoint mapid="220070000" x="1254.2212" y="831.2192" z="310.10916"/>
+	</portal>
+	<!-- DF4_3011_In_Teleporter_Da -->
+	<portal npcid="257834" instance="false" minlevel="50" maxlevel="60" group="false" race="ASMODIANS">
+		<exitpoint mapid="220070000" x="1254.2212" y="831.2192" z="310.10916"/>
+	</portal>
+	<!-- DF4_3011_In_Teleporter_Dr -->
+	<portal npcid="257835" instance="false" minlevel="50" maxlevel="60" group="false">
+		<exitpoint mapid="220070000" x="1254.2212" y="831.2192" z="310.10916"/>
+	</portal>
+
+	<!-- DF4_3021_In_Teleporter_Li -->
+	<portal npcid="258133" instance="false" minlevel="50" maxlevel="60" group="false" race="ELYOS">
+		<exitpoint mapid="220070000" x="1941.3992" y="1068.9736" z="326.93292"/>
+	</portal>
+	<!-- DF4_3021_In_Teleporter_Da -->
+	<portal npcid="258134" instance="false" minlevel="50" maxlevel="60" group="false" race="ASMODIANS">
+		<exitpoint mapid="220070000" x="1941.3992" y="1068.9736" z="326.93292"/>
+	</portal>
+	<!-- DF4_3021_In_Teleporter_Dr -->
+	<portal npcid="258135" instance="false" minlevel="50" maxlevel="60" group="false">
+		<exitpoint mapid="220070000" x="1941.3992" y="1068.9736" z="326.93292"/>
+	</portal>	
+
 </portal_templates>

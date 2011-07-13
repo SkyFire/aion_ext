@@ -5786,6 +5786,10 @@
 	<spawn map="220070000" npcid="217020" pool="1" interval="285">
 		<object x="822.168" y="1973.13" z="326.18143" h="0"/>
 	</spawn>
+	<!-- Narasimha -->
+	<spawn map="220070000" npcid="258229" pool="1" interval="86400">
+		<object x="1821.76" y="1976.65" z="391.25" h="0"/>
+	</spawn>
 	<!-- Harviste -->
 	<spawn map="220070000" npcid="216639" pool="1" interval="285">
 		<object x="842.556" y="965.637" z="315.0" h="0"/>

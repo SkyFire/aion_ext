@@ -165,6 +165,10 @@
 	<spawn map="400010000" npcid="278548" pool="1" interval="295">
 		<object x="2879.88" y="1043.801" z="1527.9965" h="0"/>
 	</spawn>
+	<!-- Asellus (NPC Elite lvl:53)-->
+	<spawn map="400010000" npcid="279039" pool="1" interval="295">
+		<object x="2772.099" y="839.261" z="1484.5559" h="50"/>
+	</spawn>
 	<!-- Asmu (NPC Elite lvl:53 Subtext: Protector of Primum Legionary) -->
 	<spawn map="400010000" npcid="278043" pool="1" interval="295">
 		<object x="970.36017" y="2944.1387" z="1644.5327" h="104"/>
@@ -428,6 +432,10 @@
 	<!-- Erysiphe (NPC Hero lvl:50) -->
 	<spawn map="400010000" npcid="278567" pool="1" interval="295">
 		<object x="2949.083" y="753.8517" z="1533.2225" h="0"/>
+	</spawn>
+	<!-- Expedition to Reshanta-->
+	<spawn map="400010000" npcid="730128" pool="1" interval="295">
+		<object x="3009.2708" y="902.79572" z="1547.251" h="0" staticid="391"/>
 	</spawn>
 	<!-- Eulos (NPC Normal lvl:50) -->
 	<spawn map="400010000" npcid="278627" pool="1" interval="295">

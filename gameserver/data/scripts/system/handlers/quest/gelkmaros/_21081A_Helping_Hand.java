@@ -54,8 +54,8 @@ public class _21081A_Helping_Hand extends QuestHandler
 			if(qs == null)
 			{
 				if(env.getDialogId() == 26)
-					return sendQuestDialog(env, 4762);
-				else if(env.getDialogId() == 1011)
+					return sendQuestDialog(env, 1011);
+				else if(env.getDialogId() == 1002)
 				{
 					if (ItemService.addItems(player, Collections.singletonList(new QuestItems(182214017, 1)))) //Bordereau de caisse d'armes
 						return defaultQuestStartDialog(env);
@@ -118,6 +118,7 @@ public class _21081A_Helping_Hand extends QuestHandler
 						}
 						case 1009:
 						{
+							player.getInventory().removeFromBagByItemId(182214017, 1);
 							qs.setQuestVar(4);
 							qs.setStatus(QuestStatus.REWARD);
 							updateQuestStatus(env);

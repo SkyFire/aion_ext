@@ -19,6 +19,8 @@
 			<to>GENERAL_DRAGON</to>
 		</aggro>
 		<friend>
+			<to>DUMMY</to>
+			<to>DUMMY2</to>
 			<to>PC</to>
 			<to>GUARD</to>
 		</friend>
@@ -30,6 +32,8 @@
 			<to>GUARD_DRAGON</to>
 		</aggro>
 		<friend>
+			<to>DUMMY</to>
+			<to>DUMMY2</to>
 			<to>PC</to>
 		</friend>
 		<support>
@@ -45,6 +49,8 @@
 			<to>GUARD_DRAGON</to>
 		</aggro>
 		<friend>
+			<to>DUMMY</to>
+			<to>DUMMY2</to>
 			<to>PC</to>
 		</friend>
 		<support>
@@ -72,6 +78,8 @@
 			<to>GENERAL_DRAGON</to>
 		</aggro>
 		<friend>
+			<to>DUMMY</to>
+			<to>DUMMY2</to>
 			<to>PC_DARK</to>
 		</friend>
 	</tribe>
@@ -82,6 +90,8 @@
 			<to>GUARD_DRAGON</to>
 		</aggro>
 		<friend>
+			<to>DUMMY</to>
+			<to>DUMMY2</to>
 			<to>PC_DARK</to>
 		</friend>
 		<support>
@@ -97,6 +107,8 @@
 			<to>GUARD_DRAGON</to>
 		</aggro>
 		<friend>
+			<to>DUMMY</to>
+			<to>DUMMY2</to>
 			<to>PC_DARK</to>
 		</friend>
 		<support>
@@ -542,6 +554,7 @@
 	<tribe base="GENERAL_DARK" name="ROBBERALDER_ASPRIGG_DF1">
 		<aggro>
 			<to>SPRIGG_HROBBERALDER_DF1</to>
+			<to>TARGETBASFELT_DF1</to>
 		</aggro>
 	</tribe>
 	<tribe base="MONSTER" name="SPRIGGREFUSE_DF1">
@@ -2622,7 +2635,7 @@
 			<to>IDCATACOMBS_DRAKE</to>
 		</aggro>
 	</tribe>
-	<tribe base="MONSTER" name="DUMMY">
+	<tribe base="MONSTER" name="DUMMY"/>
 		<hostile>
 			<to>GUARD</to>
 			<to>GENERAL_DARK</to>
@@ -2766,7 +2779,7 @@
 			<to>GUARD_DARK</to>
 		</aggro>
 	</tribe>
-	<tribe base="MONSTER" name="DUMMY2">
+	<tribe base="MONSTER" name="DUMMY2"/>
 		<hostile>
 			<to>GUARD</to>
 			<to>GENERAL_DARK</to>

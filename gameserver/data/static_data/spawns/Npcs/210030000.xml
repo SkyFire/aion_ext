@@ -382,7 +382,7 @@
 	<spawn map="210030000" npcid="203109" pool="1" interval="295">
 		<object x="1629.47" y="1521.53" z="120.0625" h="45"/>
 	</spawn>
-	<!-- Kato (NPC Normal lvl:20)-->
+	<!-- Kato (NPC Normal lvl:20) Spawn by quest script
 	<spawn map="210030000" npcid="203195" pool="1" interval="295" time="NIGHT">
 		<object x="1667.65" y="2736.25" z="233.36563" h="85"/>
 		<object x="1647.26" y="2772.54" z="236.34875" h="64"/>
@@ -405,6 +405,7 @@
 		<object x="1666.27" y="2735.43" z="233.55438" h="114"/>
 		<object x="1661.75" y="2749.04" z="233.565" h="44"/>
 	</spawn>
+	-->
 	<!-- Khidia (NPC Normal lvl:27)-->
 	<spawn map="210030000" npcid="203183" pool="1" interval="295">
 		<object x="2377.007" y="830.45013" z="107.65688" h="40"/>
@@ -950,5 +951,9 @@
 	<!-- Legionary 2 -->
 	<spawn map="210030000" npcid="205019" pool="1" interval="295">
 		<object x="1626.0945" y="1482.7241" z="143.53172" h="0" fly="1" rw="186"/>
+	</spawn>
+	<!-- Hilara -->
+	<spawn map="210030000" npcid="798395" pool="1" interval="295">
+		<object x="2324.02" y="1807.74" z="194.651" h="75"/>
 	</spawn>
 </spawns>

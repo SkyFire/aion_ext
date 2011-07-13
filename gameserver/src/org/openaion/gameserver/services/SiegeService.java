@@ -296,60 +296,58 @@ public class SiegeService
 	
 	private boolean goesVulnerablePvP(int locationId, int day, int hour)
 	{
-		if(day == 6 && hour == 20)
-			return true;
 		switch(locationId)
 		{
-			case 1011:
-				if((day == 1 && hour == 20) || (day == 3 && hour == 20) || (day == 6 && hour == 16))
-					return true;
-				break;
-			case 1131:
-				if((day == 3 && hour == 16) || (day == 5 && hour == 16) || (day == 0 && hour == 16))
-					return true;
-				break;
-			case 1132:
-				if((day == 1 && hour == 16) || (day == 6 && hour == 0) || (day == 0 && hour == 16))
-					return true;
-				break;
-			case 1141:
-				if((day == 2 && hour == 16) || (day == 4 && hour == 16) || (day == 6 && hour == 0) || (day == 0 && hour == 16))
-					return true;
-				break;
-			case 1211:
-				if((day == 2 && hour == 16) || (day == 4 && hour == 16) || (day == 0 && hour == 20))
-					return true;
-				break;
-			case 1221:
-				if((day == 2 && hour == 20) || (day == 5 && hour == 16) || (day == 0 && hour == 20))
-					return true;
-				break;
-			case 1231:
-				if((day == 1 && hour == 16) || (day == 4 && hour == 20) || (day == 0 && hour == 20))
-					return true;
-				break;
-			case 1241:
-				if((day == 4 && hour == 20) || (day == 0 && hour == 20))
-					return true;
-				break;
-			case 1251:
-				if((day == 2 && hour == 20) || (day == 3 && hour == 16) || (day == 5 && hour == 20) || (day == 0 && hour == 20))
-					return true;
-				break;
-			case 2011:
-				if((day == 1 && hour == 20) || (day == 3 && hour == 20) || (day == 5 && hour == 20) || (day == 0 && hour == 12))
-					return true;
-				break;
-			case 2021:
-				if((day == 2 && hour == 20) || (day == 4 && hour == 16) || (day == 0 && hour == 12))
-					return true;
-				break;
-			case 3011:
-				if((day == 1 && hour == 16) || (day == 3 && hour == 16) || (day == 0 && hour == 12) || (day == 4 && hour == 20))
-					return true;
-				break;
-			case 3021:
-				if((day == 2 && hour == 16) || (day == 5 && hour == 16) || (day == 0 && hour == 12))
+			 case 1011:
+    if((day == 0 && hour == 0) || (day == 0 && hour == 8) || (day == 0 && hour == 12) || (day == 0 && hour == 20) || (day == 1 && hour == 2) || (day == 1 && hour == 6) || (day == 1 && hour == 14) || (day == 1 && hour == 22) || (day == 2 && hour == 4) || (day == 2 && hour == 8) || (day == 2 && hour == 16) || (day == 2 && hour == 20) || (day == 3 && hour == 2) || (day == 3 && hour == 10) || (day == 3 && hour == 14) || (day == 3 && hour == 22) || (day == 4 && hour == 0) || (day == 4 && hour == 8) || (day == 4 && hour == 16) || (day == 4 && hour == 20) || (day == 5 && hour == 2) || (day == 5 && hour == 6) || (day == 5 && hour == 14) || (day == 5 && hour == 18) || (day == 6 && hour == 4) || (day == 6 && hour == 8) || (day == 6 && hour == 16) || (day == 6 && hour == 20))
+     return true;
+    break;
+   case 1131:
+    if((day == 1 && hour == 0) || (day == 1 && hour == 8) || (day == 1 && hour == 12) || (day == 1 && hour == 20) || (day == 0 && hour == 2) || (day == 0 && hour == 6) || (day == 0 && hour == 14) || (day == 0 && hour == 22) || (day == 3 && hour == 4) || (day == 3 && hour == 8) || (day == 3 && hour == 16) || (day == 3 && hour == 20) || (day == 4 && hour == 2) || (day == 4 && hour == 10) || (day == 4 && hour == 14) || (day == 4 && hour == 22) || (day == 5 && hour == 0) || (day == 5 && hour == 8) || (day == 5 && hour == 16) || (day == 5 && hour == 20) || (day == 6 && hour == 2) || (day == 6 && hour == 6) || (day == 6 && hour == 14) || (day == 6 && hour == 18) || (day == 2 && hour == 4) || (day == 2 && hour == 8) || (day == 2 && hour == 16) || (day == 2 && hour == 20))
+     return true;
+    break;
+   case 1132:
+    if((day == 2 && hour == 0) || (day == 2 && hour == 8) || (day == 2 && hour == 12) || (day == 2 && hour == 20) || (day == 3 && hour == 2) || (day == 3 && hour == 6) || (day == 3 && hour == 14) || (day == 3 && hour == 22) || (day == 0 && hour == 4) || (day == 0 && hour == 8) || (day == 0 && hour == 16) || (day == 0 && hour == 20) || (day == 1 && hour == 2) || (day == 1 && hour == 10) || (day == 1 && hour == 14) || (day == 1 && hour == 22) || (day == 6 && hour == 0) || (day == 6 && hour == 8) || (day == 6 && hour == 16) || (day == 6 && hour == 20) || (day == 4 && hour == 2) || (day == 4 && hour == 6) || (day == 4 && hour == 14) || (day == 4 && hour == 18) || (day == 5 && hour == 4) || (day == 5 && hour == 8) || (day == 5 && hour == 16) || (day == 5 && hour == 20))
+     return true;
+    break;
+   case 1141:
+    if((day == 3 && hour == 0) || (day == 3 && hour == 8) || (day == 3 && hour == 12) || (day == 3 && hour == 20) || (day == 2 && hour == 2) || (day == 2 && hour == 6) || (day == 2 && hour == 14) || (day == 2 && hour == 22) || (day == 6 && hour == 4) || (day == 6 && hour == 8) || (day == 6 && hour == 16) || (day == 6 && hour == 20) || (day == 5 && hour == 2) || (day == 5 && hour == 10) || (day == 5 && hour == 14) || (day == 5 && hour == 22) || (day == 0 && hour == 0) || (day == 0 && hour == 8) || (day == 0 && hour == 16) || (day == 0 && hour == 20) || (day == 4 && hour == 2) || (day == 4 && hour == 6) || (day == 4 && hour == 14) || (day == 4 && hour == 18) || (day == 1 && hour == 4) || (day == 1 && hour == 8) || (day == 1 && hour == 16) || (day == 1 && hour == 20))
+     return true;
+    break;
+   case 1211:
+    if((day == 4 && hour == 0) || (day == 4 && hour == 8) || (day == 4 && hour == 12) || (day == 4 && hour == 20) || (day == 5 && hour == 2) || (day == 5 && hour == 6) || (day == 5 && hour == 14) || (day == 5 && hour == 22) || (day == 1 && hour == 4) || (day == 1 && hour == 8) || (day == 1 && hour == 16) || (day == 1 && hour == 20) || (day == 2 && hour == 2) || (day == 2 && hour == 10) || (day == 2 && hour == 14) || (day == 2 && hour == 22) || (day == 3 && hour == 0) || (day == 3 && hour == 8) || (day == 3 && hour == 16) || (day == 3 && hour == 20) || (day == 0 && hour == 2) || (day == 0 && hour == 6) || (day == 0 && hour == 14) || (day == 0 && hour == 18) || (day == 6 && hour == 4) || (day == 6 && hour == 8) || (day == 6 && hour == 16) || (day == 6 && hour == 20))
+     return true;
+    break;
+   case 1221:
+    if((day == 5 && hour == 0) || (day == 5 && hour == 8) || (day == 5 && hour == 12) || (day == 5 && hour == 20) || (day == 6 && hour == 2) || (day == 6 && hour == 6) || (day == 6 && hour == 14) || (day == 6 && hour == 22) || (day == 4 && hour == 4) || (day == 4 && hour == 8) || (day == 4 && hour == 16) || (day == 4 && hour == 20) || (day == 0 && hour == 2) || (day == 0 && hour == 10) || (day == 0 && hour == 14) || (day == 0 && hour == 22) || (day == 2 && hour == 0) || (day == 2 && hour == 8) || (day == 2 && hour == 16) || (day == 2 && hour == 20) || (day == 1 && hour == 2) || (day == 1 && hour == 6) || (day == 1 && hour == 14) || (day == 1 && hour == 18) || (day == 3 && hour == 4) || (day == 3 && hour == 8) || (day == 3 && hour == 16) || (day == 3 && hour == 20))
+     return true;
+    break;
+   case 1231:
+    if((day == 6 && hour == 0) || (day == 6 && hour == 8) || (day == 6 && hour == 12) || (day == 6 && hour == 20) || (day == 4 && hour == 2) || (day == 4 && hour == 6) || (day == 4 && hour == 14) || (day == 4 && hour == 22) || (day == 5 && hour == 4) || (day == 5 && hour == 8) || (day == 5 && hour == 16) || (day == 5 && hour == 20) || (day == 3 && hour == 2) || (day == 3 && hour == 10) || (day == 3 && hour == 14) || (day == 3 && hour == 22) || (day == 1 && hour == 0) || (day == 1 && hour == 8) || (day == 1 && hour == 16) || (day == 1 && hour == 20) || (day == 2 && hour == 2) || (day == 2 && hour == 6) || (day == 2 && hour == 14) || (day == 2 && hour == 18) || (day == 0 && hour == 4) || (day == 0 && hour == 8) || (day == 0 && hour == 16) || (day == 0 && hour == 20))
+     return true;
+    break;
+   case 1241:
+    if((day == 3 && hour == 0) || (day == 3 && hour == 8) || (day == 3 && hour == 12) || (day == 3 && hour == 20) || (day == 2 && hour == 2) || (day == 2 && hour == 6) || (day == 2 && hour == 14) || (day == 2 && hour == 22) || (day == 6 && hour == 4) || (day == 6 && hour == 8) || (day == 6 && hour == 16) || (day == 6 && hour == 20) || (day == 5 && hour == 2) || (day == 5 && hour == 10) || (day == 5 && hour == 14) || (day == 5 && hour == 22) || (day == 0 && hour == 0) || (day == 0 && hour == 8) || (day == 0 && hour == 16) || (day == 0 && hour == 20) || (day == 4 && hour == 2) || (day == 4 && hour == 6) || (day == 4 && hour == 14) || (day == 4 && hour == 18) || (day == 1 && hour == 4) || (day == 1 && hour == 8) || (day == 1 && hour == 16) || (day == 1 && hour == 20))
+     return true;
+    break;
+   case 1251:
+    if((day == 0 && hour == 0) || (day == 0 && hour == 8) || (day == 0 && hour == 12) || (day == 0 && hour == 20) || (day == 1 && hour == 2) || (day == 1 && hour == 6) || (day == 1 && hour == 14) || (day == 1 && hour == 22) || (day == 2 && hour == 4) || (day == 2 && hour == 8) || (day == 2 && hour == 16) || (day == 2 && hour == 20) || (day == 3 && hour == 2) || (day == 3 && hour == 10) || (day == 3 && hour == 14) || (day == 3 && hour == 22) || (day == 4 && hour == 0) || (day == 4 && hour == 8) || (day == 4 && hour == 16) || (day == 4 && hour == 20) || (day == 5 && hour == 2) || (day == 5 && hour == 6) || (day == 5 && hour == 14) || (day == 5 && hour == 18) || (day == 6 && hour == 4) || (day == 6 && hour == 8) || (day == 6 && hour == 16) || (day == 6 && hour == 20))
+     return true;
+    break;
+   case 2011:
+    if((day == 0 && hour == 10) || (day == 0 && hour == 10) || (day == 0 && hour == 16) || (day == 0 && hour == 20) || (day == 1 && hour == 0) || (day == 1 && hour == 10) || (day == 1 && hour == 14) || (day == 1 && hour == 18) || (day == 2 && hour == 12) || (day == 2 && hour == 16) || (day == 2 && hour == 20) || (day == 2 && hour == 22) || (day == 3 && hour == 0) || (day == 3 && hour == 12) || (day == 3 && hour == 16) || (day == 3 && hour == 20) || (day == 4 && hour == 10) || (day == 4 && hour == 16) || (day == 4 && hour == 20) || (day == 4 && hour == 22) || (day == 5 && hour == 0) || (day == 5 && hour == 10) || (day == 5 && hour == 14) || (day == 5 && hour == 18) || (day == 6 && hour == 12) || (day == 6 && hour == 16) || (day == 6 && hour == 20) || (day == 6 && hour == 22))
+     return true;
+    break;
+   case 2021:
+    if((day == 0 && hour == 0) || (day == 0 && hour == 10) || (day == 0 && hour == 14) || (day == 0 && hour == 18) || (day == 1 && hour == 10) || (day == 1 && hour == 16) || (day == 1 && hour == 20) || (day == 1 && hour == 22) || (day == 2 && hour == 0) || (day == 2 && hour == 12) || (day == 2 && hour == 16) || (day == 2 && hour == 20) || (day == 3 && hour == 12) || (day == 3 && hour == 16) || (day == 3 && hour == 20) || (day == 3 && hour == 22) || (day == 4 && hour == 0) || (day == 4 && hour == 10) || (day == 4 && hour == 14) || (day == 4 && hour == 18) || (day == 5 && hour == 10) || (day == 5 && hour == 16) || (day == 5 && hour == 20) || (day == 5 && hour == 22) || (day == 6 && hour == 0) || (day == 6 && hour == 12) || (day == 6 && hour == 16) || (day == 6 && hour == 20))
+     return true;
+    break;
+   case 3011:
+    if((day == 0 && hour == 12) || (day == 0 && hour == 16) || (day == 0 && hour == 20) || (day == 0 && hour == 22) || (day == 1 && hour == 0) || (day == 1 && hour == 12) || (day == 1 && hour == 16) || (day == 1 && hour == 20) || (day == 2 && hour == 0) || (day == 2 && hour == 10) || (day == 2 && hour == 14) || (day == 2 && hour == 18) || (day == 3 && hour == 10) || (day == 3 && hour == 16) || (day == 3 && hour == 20) || (day == 3 && hour == 22) || (day == 4 && hour == 12) || (day == 4 && hour == 16) || (day == 4 && hour == 20) || (day == 4 && hour == 22) || (day == 5 && hour == 0) || (day == 5 && hour == 12) || (day == 5 && hour == 16) || (day == 5 && hour == 20) || (day == 6 && hour == 0) || (day == 6 && hour == 10) || (day == 6 && hour == 14) || (day == 6 && hour == 18))
+     return true;
+    break;
+   case 3021:
+    if((day == 0 && hour == 0) || (day == 0 && hour == 12) || (day == 0 && hour == 16) || (day == 0 && hour == 20) || (day == 1 && hour == 12) || (day == 1 && hour == 16) || (day == 1 && hour == 20) || (day == 1 && hour == 22) || (day == 2 && hour == 10) || (day == 2 && hour == 16) || (day == 2 && hour == 20) || (day == 2 && hour == 22) || (day == 3 && hour == 0) || (day == 3 && hour == 10) || (day == 3 && hour == 14) || (day == 3 && hour == 18) || (day == 4 && hour == 0) || (day == 4 && hour == 12) || (day == 4 && hour == 16) || (day == 4 && hour == 20) || (day == 5 && hour == 12) || (day == 5 && hour == 16) || (day == 5 && hour == 20) || (day == 5 && hour == 22) || (day == 6 && hour == 10) || (day == 6 && hour == 16) || (day == 6 && hour == 20) || (day == 6 && hour == 22))
 					return true;
 				break;
 		}
@@ -557,7 +555,7 @@ public class SiegeService
 					legionName = "Asmodians";
 				else if(race == SiegeRace.BALAUR)
 					legionName = "Balaurs";
-				else
+				else if(race == SiegeRace.ELYOS)
 					legionName = "Elyos";
 			}
 		}
@@ -568,7 +566,7 @@ public class SiegeService
 				legionName = "Asmodians";
 			else if(race == SiegeRace.BALAUR)
 				legionName = "Balaurs";
-			else
+			else if(race == SiegeRace.ELYOS)
 				legionName = "Elyos";
 		}
 		
@@ -971,7 +969,7 @@ public class SiegeService
 			Player player = World.getInstance().findPlayer(apResult.getKey());
 			if(player == null)
 				continue;
-			if(general.getObjectTemplate().getRace() == player.getCommonData().getRace())
+			if(((general.getObjectTemplate().getRace() == Race.GCHIEF_LIGHT)&&(player.getCommonData().getRace()==Race.ELYOS))||((general.getObjectTemplate().getRace() == Race.GCHIEF_DARK)&&(player.getCommonData().getRace()==Race.ASMODIANS)))
 				continue;
 			apCache.put(apResult.getValue(), apResult.getKey());
 		}
@@ -992,9 +990,9 @@ public class SiegeService
 		}
 		else
 		{
-			if(general.getObjectTemplate().getRace() == Race.ELYOS)
+			if(general.getObjectTemplate().getRace() == Race.GCHIEF_LIGHT)
 				newRace = Race.ASMODIANS;
-			else
+			else 
 				newRace = Race.ELYOS;
 		}
 		
@@ -1123,7 +1121,7 @@ public class SiegeService
 		final SiegeRace sr;
 		if(newRace == Race.ELYOS)
 			sr = SiegeRace.ELYOS;
-		else
+		else 
 			sr = SiegeRace.ASMODIANS;
 		
 		capture(general.getFortressId(), sr, legionId);
@@ -1323,7 +1321,7 @@ public class SiegeService
 				broadcastUpdate(locBoss);
 				
 				SpawnEngine spawnEngine = SpawnEngine.getInstance();
-				SpawnTemplate spawn = spawnEngine.addNewSpawn(220070000, 1, 258221, 1821.76f, 1976.65f, 391.25f, (byte)0, 0, 0, true, true);
+				SpawnTemplate spawn = spawnEngine.addNewSpawn(220070000, 1, 258205, 1821.76f, 1976.65f, 391.25f, (byte)0, 0, 0, true, true);
 				final Npc boss = (Npc)spawnEngine.spawnObject(spawn, 1);
 				//notification on boss appear
 				World.getInstance().doOnAllPlayers(new Executor<Player> () {
@@ -1389,7 +1387,7 @@ public class SiegeService
 				broadcastUpdate(locBoss);
 				
 				SpawnEngine spawnEngine = SpawnEngine.getInstance();
-				SpawnTemplate spawn = spawnEngine.addNewSpawn(210050000, 1, 258219, 1079.61f, 1492.91f, 404.125f, (byte)0, 0, 0, true, true);
+				SpawnTemplate spawn = spawnEngine.addNewSpawn(210050000, 1, 258200, 1079.61f, 1492.91f, 404.125f, (byte)0, 0, 0, true, true);
 				final Npc boss = (Npc)spawnEngine.spawnObject(spawn, 1);
 				//world notification
 				World.getInstance().doOnAllPlayers(new Executor<Player> () {

@@ -66,6 +66,7 @@
 	<spawn map="300170000" interval="105" npcid="730285" pool="1">
 		<object staticid="476" x="1476.9143" y="226.82101" h="0" z="252.21886"/>
 	</spawn>
+    <!-- Calike -->
 	<spawn map="300170000" interval="105" npcid="799521" pool="1">
 		<object x="1046.83" y="327.628" h="0" z="230.885"/>
 	</spawn>
@@ -78,12 +79,15 @@
 	<spawn map="300170000" interval="105" npcid="799518" pool="1">
 		<object x="933.983" y="444.269" h="0" z="220.863"/>
 	</spawn>
+    <!-- Plegeton Boatman -->
 	<spawn map="300170000" interval="105" npcid="799517" pool="1">
 		<object x="1030.58" y="314.677" h="0" z="221.746"/>
 	</spawn>
+    <!-- Bhemah -->
 	<spawn map="300170000" interval="105" npcid="799505" pool="1">
 		<object x="1077.63" y="371.158" h="0" z="232.489"/>
 	</spawn>
+    <!-- Aeshma -->
 	<spawn map="300170000" interval="105" npcid="799504" pool="1">
 		<object x="1109.54" y="277.183" h="0" z="232.495"/>
 	</spawn>

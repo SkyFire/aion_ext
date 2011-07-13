@@ -50,11 +50,8 @@ public class RandomMoveLocEffect extends EffectTemplate
 	@Override
 	public void applyEffect(Effect effect)
 	{
-		if (CustomConfig.GEODATA_EFFECTS_ENABLED)
-		{
-			DashParam dash = effect.getDashParam();
-			World.getInstance().updatePosition((Player)effect.getEffected(), dash.getX(), dash.getY(), dash.getZ(), (byte)dash.getHeading(), false);
-		}
+        DashParam dash = effect.getDashParam();
+        World.getInstance().updatePosition((Player)effect.getEffected(), dash.getX(), dash.getY(), dash.getZ(), (byte)dash.getHeading(), false);
 	}
 	
 	@Override
@@ -63,95 +60,58 @@ public class RandomMoveLocEffect extends EffectTemplate
 		if (!(effect.getEffected() instanceof Player))
 			return;
 		
-		if (CustomConfig.GEODATA_EFFECTS_ENABLED)
-		{
-			Player player = (Player)effect.getEffected();
-			double radian = Math.toRadians(MathUtil.convertHeadingToDegree(player.getHeading()));
-			float x = player.getX();
-			float y = player.getY();
-			float z = player.getZ();
-			int worldId = player.getWorldId();
-			
-			float x2 = 0;
-			float y2 = 0;
-			float lastSee = 0;
-			float lastNonSee = 0;
-						
-			if(direction.equals("FRONT"))
-			{
-				x2 = (float)(x + (value * Math.cos(radian)));
-				y2 = (float)(y + (value * Math.sin(radian)));
-				
-				//if can see the final point then just port
-				if (GeoEngine.getInstance().canSee(worldId, x, y, z, x2, y2, z))
-				{
-					this.setDashParam(effect, x2, y2, GeoEngine.getInstance().getZ(worldId, x2, y2, z));
-					super.calculate(effect);
-					return;
-				}
-				else
-					lastNonSee = value;
-				
-				float temp = 0;
-				
-				while (lastNonSee - lastSee >= 0.5)
-				{
-					temp = (lastNonSee - lastSee)/2 + lastSee;
-					x2 = (float)(x + (temp * Math.cos(radian)));
-					y2 = (float)(y + (temp * Math.sin(radian)));
-					
-					if (GeoEngine.getInstance().canSee(worldId, x, y, z, x2, y2, z))
-						lastSee = temp;
-					else
-						lastNonSee = temp;
-				}
-	
-				//set final coordinates
-				x2 = (float)(x + (lastSee * Math.cos(radian)));
-				y2 = (float)(y + (lastSee * Math.sin(radian)));
-			}
-			else if(direction.equals("BACK"))
-			{
-				x2 = (float)(x + (value * Math.cos(Math.PI+radian)));
-				y2 = (float)(y + (value * Math.sin(Math.PI+radian)));
-				
-				//if can see the final point then just port
-				if (GeoEngine.getInstance().canSee(worldId, x, y, z, x2, y2, z))
-				{
-					this.setDashParam(effect, x2, y2, GeoEngine.getInstance().getZ(worldId, x2, y2, z));
-					super.calculate(effect);
-					return;
-				}
-				else
-					lastNonSee = value;
-				
-				float temp = 0;
-				
-				while (lastNonSee - lastSee >= 0.5)
-				{
-					temp = (lastNonSee - lastSee)/2 + lastSee;
-					x2 = (float)(x + (temp * Math.cos(Math.PI+radian)));
-					y2 = (float)(y + (temp * Math.sin(Math.PI+radian)));
-					
-					if (GeoEngine.getInstance().canSee(worldId, x, y, z, x2, y2, z))
-						lastSee = temp;
-					else
-						lastNonSee = temp;
-				}
-				
-				//set final coordinates
-				x2 = (float)(x + (lastSee * Math.cos(Math.PI+radian)));
-				y2 = (float)(y + (lastSee * Math.sin(Math.PI+radian)));
-			}
-			else
-			{
-				Logger.getLogger(RandomMoveLocEffect.class).error("Cannot move without direction");
-				return;
-			}
+        Player player = (Player)effect.getEffected();
+        double radian = Math.toRadians(MathUtil.convertHeadingToDegree(player.getHeading()));
+        float x = player.getX();
+        float y = player.getY();
+        float z = player.getZ();
+        int worldId = player.getWorldId();
+        
+        float x2 = 0;
+        float y2 = 0;
+        float lastSee = 0;
+        float lastNonSee = 0;
+                    
+        if(direction.equals("FRONT"))
+        {
+            x2 = (float)(x + (value * Math.cos(radian)));
+            y2 = (float)(y + (value * Math.sin(radian)));
+            
+            //if can see the final point then just port
+            this.setDashParam(effect, x2, y2, z + 2);
+            super.calculate(effect);
+            return;
+        } else if(direction.equals("BACK")) {
+            x2 = (float)(x + (value * Math.cos(Math.PI+radian)));
+            y2 = (float)(y + (value * Math.sin(Math.PI+radian)));
+            
+            //if can see the final point then just port
+            this.setDashParam(effect, x2, y2, z + 2);
+            super.calculate(effect);
+            
+            float temp = 0;
+            
+            while (lastNonSee - lastSee >= 0.5)
+            {
+                temp = (lastNonSee - lastSee)/2 + lastSee;
+                x2 = (float)(x + (temp * Math.cos(Math.PI+radian)));
+                y2 = (float)(y + (temp * Math.sin(Math.PI+radian)));
+                
+                lastNonSee = temp;
+            }
+            
+            //set final coordinates
+            x2 = (float)(x + (lastSee * Math.cos(Math.PI+radian)));
+            y2 = (float)(y + (lastSee * Math.sin(Math.PI+radian)));
+        }
+        else
+        {
+            Logger.getLogger(RandomMoveLocEffect.class).error("Cannot move without direction");
+            return;
+        }
 
-			this.setDashParam(effect, x2, y2, GeoEngine.getInstance().getZ(worldId, x2, y2, z));
+        this.setDashParam(effect, x2, y2, z + 2);
 		
-		}
 		super.calculate(effect);
 	}
 	

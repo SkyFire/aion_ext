@@ -27,6 +27,9 @@ public class SiegeConfig
 	 * Basic Siege Config
 	 */
 
+  @Property(key = "gameserver.siege.schedule.type", defaultValue = "1")
+   public static int   SIEGE_SCHEDULE_TYPE;
+
 	/**
 	 * Siege Enabled
 	 */
@@ -48,5 +51,5 @@ public class SiegeConfig
 
 	@Property(key = "gameserver.siege.influence.artifact", defaultValue = "1")
 	public static int		SIEGE_POINTS_ARTIFACT;
-
+		
 }

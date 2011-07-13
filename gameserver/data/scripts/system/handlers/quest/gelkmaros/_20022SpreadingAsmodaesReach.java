@@ -137,7 +137,7 @@ public class _20022SpreadingAsmodaesReach extends QuestHandler
 						return sendQuestDialog(env, 3398);
 					else if(var == 9)
 						return sendQuestDialog(env, 4080);
-				case 36:
+				case 34:
 					if(var == 2)
 					{
 						if(QuestService.collectItemCheck(env, true))
