@@ -39,8 +39,7 @@ public class SiegeConfig
 	/**
 	 * Siege Timer Interval
 	 */
-	@Property(key = "gameserver.siege.schedule.type", defaultValue = "1")
-	public static int	SIEGE_SCHEDULE_TYPE;
+
 
 	/**
 	 * Siege Location Values
