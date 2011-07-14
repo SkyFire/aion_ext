@@ -110,7 +110,13 @@ public class _1194ReducingTursinStrength extends QuestHandler
 	public boolean onKillEvent(QuestCookie env)
 	{
 		if(defaultQuestOnKillEvent(env, mob_ids, 1, 10) || defaultQuestOnKillEvent(env, mob_ids, 10, true))
+		{
+			Player player = env.getPlayer();
+			QuestState qs = player.getQuestStateList().getQuestState(questId);
+			qs.setStatus(QuestStatus.REWARD);
+			updateQuestStatus(env);
 			return true;
+		}
 		else
 			return false;		
 	}

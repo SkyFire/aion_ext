@@ -5732,4 +5732,16 @@ You can nest them as deep as you want to make complex rewards.
 	<wrapper_item id="188051314">
 		<item id="188051313" min="6" max="6" name="Siel's Manastones"/>
 	</wrapper_item>
+	<!-- Sobi Fiber Bundle -->
+	<wrapper_item id="152000609">
+		<item id="152000603" min="3" max="3" name="Sobi Fiber"/>
+	</wrapper_item>
+	<!-- Linon Fiber Bundle -->
+	<wrapper_item id="152000610">
+		<item id="152000604" min="3" max="3" name="Linon Fiber"/>
+	</wrapper_item>
+	<!-- Fess Fiber Bundle -->
+	<wrapper_item id="152000608">
+		<item id="152000602" min="3" max="3" name="Fess Fiber"/>
+	</wrapper_item>
 </wrapped_items>

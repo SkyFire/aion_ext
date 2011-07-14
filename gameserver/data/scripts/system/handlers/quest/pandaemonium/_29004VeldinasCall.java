@@ -91,12 +91,12 @@ public class _29004VeldinasCall extends QuestHandler
 					switch(env.getDialogId())
 					{
 						case 26:
-							if(var == 1)
+							if(var == 0)
 								return sendQuestDialog(env, 1352);
-						case 10001:
-							if (var == 1)
+						case 10000:
+							if (var == 0)
 							{
-								qs.setQuestVarById(0, 2);
+								qs.setQuestVarById(0, 1);
 								updateQuestStatus(env);
 								PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 0));
 								return true;
@@ -108,13 +108,13 @@ public class _29004VeldinasCall extends QuestHandler
 					switch(env.getDialogId())
 					{
 						case 26:
-							if(var == 2)
+							if(var == 1)
 								return sendQuestDialog(env, 1693);
-						case 10255:
-							if (var == 2)
+						case 10001:
+							if (var == 1)
 							{
 								
-								qs.setQuestVarById(0, 3);
+								qs.setQuestVarById(0, 2);
 								updateQuestStatus(env);
 								qs.setStatus(QuestStatus.REWARD);
 								updateQuestStatus(env);
@@ -130,7 +130,7 @@ public class _29004VeldinasCall extends QuestHandler
 			if(targetId == 798700)
 			{	
 				if(env.getDialogId() == -1)
-					return sendQuestDialog(env, 10002);
+					return sendQuestDialog(env, 2375);
 				else	
 					return defaultQuestEndDialog(env);
 			}

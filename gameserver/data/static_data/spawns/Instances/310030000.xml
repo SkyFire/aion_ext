@@ -19,13 +19,13 @@
 
  -->
 <spawns>
-	<!-- Abyss Gate (Object Normal lvl:1) (Object Normal lvl:1) -->
-	<spawn map="310030000" npcid="700141" pool="1" interval="295">
-		<object x="276.24802" y="161.69484" z="205.62405" h="34"/>
+<!-- Abyss Gate (Object Normal lvl:1) (Exit) -->
+	<spawn map="310030000" npcid="700089" pool="1" interval="295">
+		<object x="276.86542" y="159.01343" z="202.38808" h="34"/>
 	</spawn>
-	<!-- Fissure Of Destiny (Object Normal lvl:1) -->
-	<spawn map="310030000" npcid="700551" pool="1" interval="295">
-		<object x="250.58783" y="271.81815" z="230.38853" h="92"/>
+<!-- Abyss Gate (Object Normal lvl:1) (Object Normal lvl:1) -->
+	<spawn map="310030000" npcid="700141" pool="1" interval="295">
+		<object x="250.8047" y="273.29163" z="227.987" h="92"/>
 	</spawn>
 	<!-- Abyss Gate Guardian Stone (Object Normal lvl:1) -->
 	<spawn map="310030000" npcid="700142" pool="1" interval="295">

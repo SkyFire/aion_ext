@@ -62,7 +62,7 @@ public class _2022CrushingtheConspiracy extends QuestHandler
 		qe.addQuestLvlUp(questId);
 		qe.addOnDie(questId);
 		qe.setNpcQuestData(700089).addOnActionItemEvent(questId);//Abyss gate
-		qe.setNpcQuestData(700140).addOnActionItemEvent(questId);//Generator
+		qe.setNpcQuestData(700142).addOnActionItemEvent(questId);//Generator
 		qe.setNpcQuestData(700141).addOnActionItemEvent(questId);
 		for(int npcId : npcIds)
 			qe.setNpcQuestData(npcId).addOnTalkEvent(questId);
@@ -109,8 +109,32 @@ public class _2022CrushingtheConspiracy extends QuestHandler
 					default:
 						return false;
 				}
-		case 700089:
-				if (var == 1 && player.getPlayerGroup() != null)
+			case 700089:
+				if(var == 5)
+				{
+						final int targetObjectId = env.getVisibleObject().getObjectId();
+						PacketSendUtility.broadcastPacket(player, new SM_EMOTION(player, EmotionType.NEUTRALMODE2, 0, targetObjectId), true);
+						PacketSendUtility.sendPacket(player, new SM_USE_OBJECT(player.getObjectId(), targetObjectId, 3000, 1));
+
+					    qs.setQuestVarById(0, 6);
+						//update status
+						qs.setStatus(QuestStatus.REWARD);
+
+						ThreadPoolManager.getInstance().schedule(new Runnable()
+						{
+							@Override
+							public void run()
+							{
+								PacketSendUtility.sendPacket(player, new SM_USE_OBJECT(player.getObjectId(), targetObjectId, 3000, 0));
+								updateQuestStatus(env);
+								TeleportService.teleportTo(player, WorldMapType.ALTGARD.getId(), 2452.8877f, 2553.044f, 316.26282f, 0);
+							}
+						}, 3000);
+						return true;
+				}
+				return false;
+			case 700141:
+				if(var == 1 && player.getPlayerGroup() != null)
 				{
 					final int targetObjectId = env.getVisibleObject().getObjectId();
 					PacketSendUtility.broadcastPacket(player, new SM_EMOTION(player, EmotionType.NEUTRALMODE2, 0, targetObjectId), true);
@@ -135,7 +159,7 @@ public class _2022CrushingtheConspiracy extends QuestHandler
 						{
 							PacketSendUtility.sendPacket(player, new SM_USE_OBJECT(player.getObjectId(), targetObjectId, 3000, 0));
 							updateQuestStatus(env);
-							TeleportService.teleportTo(player, 320030000, instanceId, 274.7905f, 168.0982f, 204.34718f, 36);
+							TeleportService.teleportTo(player, 320030000, instanceId, 270.5f, 174.3f, 204.3f, 0);
 						}
 					}, 3000);
 					return true;
@@ -143,31 +167,8 @@ public class _2022CrushingtheConspiracy extends QuestHandler
 				//TODO: find proper message, just temp fix
 				else if (var == 1 && player.getPlayerGroup() == null)
 					PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_MSG_ENTER_ONLY_PARTY_DON);
-				else if (var == 5)
-				{
-					final int targetObjectId = env.getVisibleObject().getObjectId();
-					PacketSendUtility.broadcastPacket(player, new SM_EMOTION(player, EmotionType.NEUTRALMODE2, 0, targetObjectId), true);
-					PacketSendUtility.sendPacket(player, new SM_USE_OBJECT(player.getObjectId(), targetObjectId, 3000, 1));
-					
-					qs.setQuestVarById(0, 6);
-					//update status
-					qs.setStatus(QuestStatus.REWARD);
-					
-					ThreadPoolManager.getInstance().schedule(new Runnable()
-					{
-						@Override
-						public void run()
-						{
-							PacketSendUtility.sendPacket(player, new SM_USE_OBJECT(player.getObjectId(), targetObjectId, 3000, 0));
-							updateQuestStatus(env);
-							TeleportService.teleportTo(player, WorldMapType.ALTGARD.getId(), 2452.0867f, 2547.304f, 317.40292f, 0);
-						}
-					}, 3000);
-					return true;
-				}
-				return false;
-			case 700141:
-				if (var == 4)
+
+				if(var == 4)
 				{
 					final int targetObjectId = env.getVisibleObject().getObjectId();
 					final Npc npc = (Npc)env.getVisibleObject();
@@ -199,7 +200,7 @@ public class _2022CrushingtheConspiracy extends QuestHandler
 					}, 3000);
 					return true;
 				}
-			case 700140:
+			case 700142:
 				if (var == 2 && spawned == false)
 				{
 					final int targetObjectId = env.getVisibleObject().getObjectId();
@@ -282,4 +283,3 @@ public class _2022CrushingtheConspiracy extends QuestHandler
 	  return true;
 	}
 }
-

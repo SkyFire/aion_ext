@@ -37,7 +37,7 @@
 	</spawn>
 	<!-- Admeta (NPC Normal lvl:45)-->
 	<spawn map="210020000" npcid="203926" pool="1" interval="295">
-		<object x="312.98328" y="2789.02300" z="270.50510" h="17"/>
+		<object x="312.98328" y="2789.02300" z="270.50510" h="17" w="228"/>
 	</spawn>
 	<!-- Aerope (NPC Normal lvl:45)-->
 	<spawn map="210020000" npcid="203949" pool="1" interval="295">
@@ -89,11 +89,11 @@
 	</spawn>
 	<!-- Atro (NPC Normal lvl:45)-->
 	<spawn map="210020000" npcid="798111" pool="1" interval="295">
-		<object x="272.28445" y="2757.89550" z="263.49844" h="46"/>
+		<object x="272.28445" y="2757.89550" z="263.49844" h="7"/>
 	</spawn>
 	<!-- Aurelius (NPC Hero lvl:50)-->
 	<spawn map="210020000" npcid="203902" pool="1" interval="295">
-		<object x="264.29870" y="2789.45900" z="272.66318" h="82"/>
+		<object x="264.29870" y="2789.45900" z="272.66318" h="18"/>
 	</spawn>
 	<!-- Axelion (NPC Elite lvl:45)-->
 	<spawn map="210020000" npcid="203967" pool="1" interval="295">
@@ -101,11 +101,11 @@
 	</spawn>
 	<!-- Axus (NPC Elite lvl:50)-->
 	<spawn map="210020000" npcid="203913" pool="1" interval="295">
-		<object x="295.63806" y="2737.89060" z="263.49844" h="83"/>
+		<object x="295.63806" y="2737.89060" z="263.49844" h="22"/>
 	</spawn>
 	<!-- Benos (NPC Elite lvl:50)-->
 	<spawn map="210020000" npcid="203906" pool="1" interval="295">
-		<object x="284.87518" y="2779.18680" z="272.44960" h="37"/>
+		<object x="284.87518" y="2779.18680" z="272.44960" h="77"/>
 	</spawn>
 	<!-- Beramones (NPC Elite lvl:45)-->
 	<spawn map="210020000" npcid="203947" pool="1" interval="295">
@@ -182,7 +182,7 @@
 	</spawn>
 	<!-- Cyrus (NPC Normal lvl:45)-->
 	<spawn map="210020000" npcid="205250" pool="1" interval="295">
-		<object x="945.8000" y="2218.6000" z="252.5000" h="47"/>
+		<object x="945.8000" y="2218.6000" z="252.5000" h="106"/>
 	</spawn>
 	<!-- Daedalus (NPC Normal lvl:45)-->
 	<spawn map="210020000" npcid="203930" pool="1" interval="295">
@@ -205,14 +205,12 @@
 		<object x="666.5143" y="1496.775" z="277"/>
 	</spawn>
 	<!-- Defense Commander (NPC Hero lvl:50)-->
-	<spawn map="210020000" npcid="207554" pool="2" interval="295">
-		<object x="285.3929" y="2774.8225" z="272.4496" h="106" w="64"/>
+	<spawn map="210020000" npcid="207554" pool="1" interval="295">
 		<object x="262.53738" y="2731.7942" z="270.3994" h="16" w="65"/>
 	</spawn>
 	<!-- Defense Commander (NPC Sanctum Detachment lvl:50) -->
-	<spawn map="210020000" npcid="207847" pool="2" interval="295">
+	<spawn map="210020000" npcid="207847" pool="1" interval="295">
 		<object x="285.3929" y="2774.8225" z="272.4496" h="106" w="64"/>
-		<object x="262.53738" y="2731.7942" z="270.3994" h="16" w="65"/>
 	</spawn>
 	<!-- Dellome (NPC Normal lvl:10)-->
 	<spawn map="210020000" npcid="790007" pool="1" interval="295">
@@ -483,7 +481,7 @@
 	</spawn>
 	<!-- Hageni (NPC Normal lvl:45)-->
 	<spawn map="210020000" npcid="204047" pool="1" interval="295">
-		<object x="312.52792" y="2793.66500" z="270.50510" h="23"/>
+		<object x="312.52792" y="2793.66500" z="270.50510" h="110"/>
 	</spawn>
 	<!-- Hannet (NPC Normal lvl:10)-->
 	<spawn map="210020000" npcid="790004" pool="1" interval="295">
@@ -789,7 +787,7 @@
 	</spawn>
 	<!-- Novan (NPC Elite lvl:45)-->
 	<spawn map="210020000" npcid="204031" pool="1" interval="295">
-		<object x="951.16846" y="2211.89450" z="254.00000" h="35"/>
+		<object x="951.16846" y="2211.89450" z="254.00000" h="113"/>
 	</spawn>
 	<!-- Obelisk Golden Bough Garrison(Object Normal lvl:3)-->
 	<spawn map="210020000" npcid="700022" pool="1" interval="295">
@@ -908,9 +906,8 @@
 		<object x="317.31363" y="2776.0999" z="263.49844" h="75"/>
 	</spawn>
 	<!-- Ramorunerk (NPC Normal lvl:45)-->
-	<spawn map="210020000" npcid="798047" pool="1" interval="295" time="DAY">
-		<object x="374.00000" y="403.00000" z="41.33752" h="92"/>
-		<object x="239.77000" y="94.93000" z="46.88937" h="10"/>
+	<spawn map="210020000" npcid="798047" pool="1" interval="295" time="NIGHT">
+		<object x="239.77000" y="94.93000" z="46.88937" h="28"/>
 	</spawn>
 	<!-- Red Journal (Object Normal lvl:1)-->
 	<spawn map="210020000" npcid="730148" pool="4" interval="295">
@@ -1002,13 +999,12 @@
 	<spawn map="210020000" npcid="207556" pool="5" interval="295">
 		<object x="282.051" y="2765.3" z="263.498" h="15"/>
 		<object x="294.802" y="2779.78" z="263.498" h="75"/>
-		<object x="308.931" y="2768.46" z="270.456" h="75"/>
+		<object x="307.57278" y="2768.7654" z="270.456" h="78"/>
 		<object x="323.55667" y="2727.8281" z="181.98303" h="13"/>
 		<object x="340.4936" y="2743.5364" z="182.28085" h="74"/>
 	</spawn>
 	<!-- Sentinel Leader (NPC Hero lvl:42)-->
-	<spawn map="210020000" npcid="207557" pool="6" interval="295">
-		<object x="295.91644" y="2752.3374" z="270.45584" h="16"/>
+	<spawn map="210020000" npcid="207557" pool="5" interval="295">
 		<object x="1925.4788" y="2046.5143" z="361.625" h="87"/>
 		<object x="1768.1287" y="897.76013" z="421.88998" h="110"/>
 		<object x="1763.8313" y="887.83136" z="422.25" h="97"/>
@@ -1043,7 +1039,7 @@
 	</spawn>
 	<!-- Sonirim (NPC Normal lvl:40)-->
 	<spawn map="210020000" npcid="203337" pool="1" interval="295">
-		<object x="277.94318" y="2761.45210" z="270.45580" h="30"/>
+		<object x="278.6868" y="2762.3564" z="270.4558" h="78"/>
 	</spawn>
 	<!-- Statue of Urgasch (Object Normal lvl:1)-->
 	<spawn map="210020000" npcid="700268" pool="6" interval="295">
@@ -1126,7 +1122,7 @@
 	</spawn>
 	<!-- Telamone (NPC Elite lvl:45)-->
 	<spawn map="210020000" npcid="204048" pool="1" interval="295">
-		<object x="945.33540" y="2205.81760" z="254.00000" h="66"/>
+		<object x="945.33540" y="2205.81760" z="254.00000" h="29"/>
 	</spawn>
 	<!-- Telemachus (NPC Legendary lvl:45)-->
 	<spawn map="210020000" npcid="203901" pool="1" interval="295">
@@ -1204,7 +1200,7 @@
 	</spawn>
 	<!-- Valerius (NPC Hero lvl:50)-->
 	<spawn map="210020000" npcid="203903" pool="1" interval="295">
-		<object x="267.88380" y="2794.33940" z="272.66318" h="40"/>
+		<object x="267.88380" y="2794.33940" z="272.66318" h="91"/>
 	</spawn>
 	<!-- Virdi (NPC Normal lvl:35)-->
 	<spawn map="210020000" npcid="730021" pool="1" interval="295">

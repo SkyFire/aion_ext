@@ -94,7 +94,7 @@ public class _4078ALightThroughtheTrees extends QuestHandler {
 					return sendQuestDialog(env, 10001);
 		}
 	}
-	else if(targetId == 700427)
+	else if(targetId == 700428)
 	{
 			switch(env.getDialogId())
 			{
@@ -126,7 +126,7 @@ public class _4078ALightThroughtheTrees extends QuestHandler {
 				return false;
 			}
 		}
-		else if(targetId == 700428)
+		else if(targetId == 700427)
 		{
 			switch(env.getDialogId())
 			{

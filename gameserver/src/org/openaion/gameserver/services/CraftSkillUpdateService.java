@@ -81,7 +81,7 @@ public class CraftSkillUpdateService
 		cost.put(299, 460000);
 		cost.put(399, 0);
 		cost.put(449, 0);
-		cost.put(499, 0);
+		cost.put(499, 10000000);
 
 		log.info("CraftSkillUpdateService: Initialized.");
 	}

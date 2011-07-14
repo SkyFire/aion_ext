@@ -19,6 +19,10 @@
 
 -->
 <spawns>
+	<!-- Underground Arena Exit -->
+	<spawn map="310080000" npcid="730067" pool="1" interval="295">
+		<object x="275.897" y="295.69427" z="163.5308" h="90" staticid="26"/>
+	</spawn>
 	<!-- Arena Drynac (Monster Normal lvl:25) -->
 	<spawn map="310080000" npcid="213582" pool="4" interval="295">
 		<object x="237.20816" y="243.51447" z="158.91695" h="1"/>

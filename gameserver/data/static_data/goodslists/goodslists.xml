@@ -34006,6 +34006,8 @@
     <item id="152208203"/>
     <item id="152208204"/>
   </list>
+  <list id="1208">
+  </list>
   <list id="5001">
     <item id="152012001" buy_limit="0" sell_limit="100"/>
     <item id="152012002" buy_limit="0" sell_limit="100"/>

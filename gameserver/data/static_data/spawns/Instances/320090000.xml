@@ -7,6 +7,10 @@
 	
  -->
 <spawns>
+	<!-- Underground Arena Exit -->
+	<spawn map="320090000" npcid="730067" pool="1" interval="295">
+		<object x="275.897" y="295.69427" z="163.5308" h="90" staticid="26"/>
+	</spawn>
 	<!--Mage Spirit -->
 	<spawn map="320090000" npcid="213584" pool="6" interval="60">
 		<object x="289.10846" y="220.1431" z="158.8865" h="39"/>

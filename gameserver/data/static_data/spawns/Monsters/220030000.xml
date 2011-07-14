@@ -2305,7 +2305,7 @@
 	</spawn>
 	<!-- Shaman Gabacha (Monster Normal lvl:19)-->
 	<spawn map="220030000" npcid="216893" interval="150">
-		<object x="1652.333" y="2225.7322" z="253" h="111" />
+		<object x="1652.333" y="2225.7322" z="250.875" h="111" />
 	</spawn>
 	<!-- Silverback Haku (Named Mob Normal lvl:17)-->
 	<spawn map="220030000" npcid="210626" pool="1" interval="10800">

@@ -346,7 +346,7 @@
 		<exitpoint mapid="310030000" x="270.5" y="174.3" z="204.3"/>
 	</portal>
 	<!-- Abyss Gate [Crushing the Conspiracy] Asmodians -->
-	<portal npcid="700089" instance="true" group="true" race="ASMODIANS">
+	<portal npcid="700141" instance="true" group="true" race="ASMODIANS">
 		<entrypoint mapid="220030000" x="2452.0867" y="2547.304" z="317.40292" race="ASMODIANS"/>
 		<exitpoint mapid="320030000" x="274.7905" y="168.0982" z="204.34718"/>
 	</portal>
@@ -512,7 +512,7 @@
 	<!-- Elevator Lever (lower deck to middle deck)-->
   <portal npcid="730216" instance="true" minlevel="40" maxlevel="55" group="true">
 		<entrypoint mapid="300100000" x="282.802" y="453.415" z="902.55"/>
-    <exitpoint mapid="300100000" x="282.802" y="453.415" z="952.55"/>
+		<exitpoint mapid="300100000" x="282.802" y="453.415" z="952.55"/>
 	</portal>
 	
 	<!-- Large Gun Deck Entrance-->
@@ -589,7 +589,7 @@
 	<!--  Aerolink to Sanctum -->
 	<portal npcid="730220" instance="false" minlevel="50" maxlevel="60" group="false" race="ELYOS">
 		<entrypoint mapid="210050000" x="1944.40390" y="1529.30860" z="590.36340" race="ELYOS"/>
-		<exitpoint mapid="110010000" x="1743.8636" y="2059.1663" z="517.9073"/>
+		<exitpoint mapid="110010000" x="1743.5411" y="2059.6204" z="517.9073"/>
 	</portal>
 	<!-- Aerolink to Gelkmaros -->
 	<portal npcid="730219" instance="false" minlevel="50" maxlevel="60" group="false" race="ASMODIANS">
@@ -762,6 +762,11 @@
 	</portal>
 
 	<!-- Elyos way out -->
+	<!-- Secret Library Sanctum Exit -->
+	<portal npcid="203895" instance="false" minlevel="20" maxlevel="55" group="false" race="ELYOS">
+		<entrypoint mapid="110010000" x="2037.7122" y="1473.9912" z="592.22534" race="ELYOS"/>
+		<exitpoint mapid="110010000" x="2006.3083" y="1478.7644" z="592.1204"/>
+	</portal> 
 	<!-- Hanarkand Pass To Inggison -->
 	<portal npcid="730258" instance="false" minlevel="50" maxlevel="55" group="false">
 		<entrypoint mapid="600010000" x="920.4469" y="148.93167" z="347.11508"/>

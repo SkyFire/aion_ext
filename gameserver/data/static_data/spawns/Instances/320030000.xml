@@ -20,16 +20,16 @@
 -->
 <spawns>
 	<!-- Dimension Exit (Object Normal lvl:1) -->
-	<spawn map="320030000" npcid="700184" pool="1" interval="295">
-		<object x="275.73795" y="162.70334" z="205.33205" h="0" staticid="17"/>
+	<spawn map="320030000" npcid="700089" pool="1" interval="295">
+		<object x="276.86542" y="159.01343" z="202.38808" h="34"/>
 	</spawn>
 	<!-- Fissure Of Destiny (Object Normal lvl:1) -->
-	<spawn map="320030000" npcid="700089" pool="1" interval="295">
-		<object x="250.74298" y="272.19238" z="230.46043" h="91"/>
+	<spawn map="320030000" npcid="700141" pool="1" interval="295">
+		<object x="250.8047" y="273.29163" z="227.987" h="92"/>
 	</spawn>
 	<!-- Abyss Gate Guardian Stone (Object Normal lvl:1) -->
-	<spawn map="320030000" npcid="700140" pool="1" interval="295">
-		<object x="261.4184" y="229.53114" z="213.9178" h="0" staticid="75"/>
+	<spawn map="320030000" npcid="700142" pool="1" interval="295">
+		<object x="261.4184" y="229.53114" z="213.9178" h="0"/>
 	</spawn>
 	<!-- Crusader (Monster Normal lvl:20) -->
 	<spawn map="320030000" npcid="211624" pool="9" interval="295">

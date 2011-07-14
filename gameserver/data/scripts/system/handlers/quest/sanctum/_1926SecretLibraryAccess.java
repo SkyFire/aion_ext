@@ -80,12 +80,12 @@ public class _1926SecretLibraryAccess extends QuestHandler {
 				       qs.getStatus() == QuestStatus.COMPLETE) {
 				if(env.getDialogId() == -1 && qs.getStatus() == QuestStatus.REWARD)
 					return sendQuestDialog(env, 10002);
-				else if (env.getDialogId() == 17) {
+				else if (env.getDialogId() == 18) {
 					player.getInventory().removeFromBagByItemId(182206022, 1);
 					qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
 					updateQuestStatus(env);
 					return defaultQuestEndDialog(env);
-				} else if (env.getDialogId() == 1009) {
+				} else if (env.getDialogId() == 1008) {
 					return defaultQuestEndDialog(env);
 				}
 				ThreadPoolManager.getInstance().schedule(new Runnable()

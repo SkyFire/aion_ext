@@ -1198,7 +1198,7 @@
 			<routestep step="5" loc_x="319.154" loc_y="2794.5547" loc_z="263.4901" rest_time="5"/>
 			<routestep step="6" loc_x="313.31116" loc_y="2787.7263" loc_z="263.4901" rest_time="0"/>
 			<routestep step="7" loc_x="306.20474" loc_y="2779.409" loc_z="263.49844" rest_time="0"/>
-			<routestep step="8" loc_x="317.16095" loc_y="2770.2793" loc_z="263.49844" rest_time="0"/>
+			<routestep step="8" loc_x="319.18887" loc_y="2794.7256" loc_z="263.4901" rest_time="0"/>
 			<routestep step="9" loc_x="311.05518" loc_y="2763.1216" loc_z="263.49844" rest_time="5"/>
 		</routes>
 	</walker_template>
@@ -4401,6 +4401,18 @@
 			<routestep step="4" loc_x="1673.7666" loc_y="1508.7054" loc_z="119.125" rest_time="2" />
 			<routestep step="5" loc_x="1656.2584" loc_y="1510.4321" loc_z="119" rest_time="2" />
 			<routestep step="6" loc_x="1653.1414" loc_y="1482.3169" loc_z="119.375" rest_time="0" />
+		</routes>
+	</walker_template>
+	<!-- Admeta (Eltnen)-->
+	<walker_template route_id="228">
+		<routes>
+			<routestep step="1" loc_x="312.98328" loc_y="2789.23" loc_z="270.5051" rest_time="12" />
+			<routestep step="2" loc_x="305.78928" loc_y="2780.9153" loc_z="270.45584" rest_time="0" />
+			<routestep step="3" loc_x="318.34973" loc_y="2771.4456" loc_z="270.45584" rest_time="0" />
+			<routestep step="4" loc_x="330.50894" loc_y="2785.06516" loc_z="267.06516" rest_time="0" />
+			<routestep step="5" loc_x="335.93915" loc_y="2780.6055" loc_z="267.06516" rest_time="0" />
+			<routestep step="6" loc_x="324.76373" loc_y="263.49844" loc_z="263.49844" rest_time="0" />
+			<routestep step="7" loc_x="318.54694" loc_y="2771.0547" loc_z="263.49844" rest_time="5" />
 		</routes>
 	</walker_template>
 </npc_walker>

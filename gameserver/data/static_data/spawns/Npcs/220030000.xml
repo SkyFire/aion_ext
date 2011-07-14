@@ -848,7 +848,7 @@
 		<object x="2684.7668" y="1022.1772" z="312.00772" h="23"/>
 	</spawn>
 	<!-- Altgard Abyss Gate(Quest NPC lvl:14 ) -->
-	<spawn map="220030000" npcid="700089" pool="1" interval="295">
+	<spawn map="220030000" npcid="700141" pool="1" interval="295">
 		<object x="2452.26" y="2547.32" z="315.226" h="27"/>
 	</spawn>
 </spawns>

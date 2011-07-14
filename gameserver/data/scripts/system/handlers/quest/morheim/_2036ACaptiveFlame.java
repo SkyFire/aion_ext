@@ -53,9 +53,9 @@ public class _2036ACaptiveFlame extends QuestHandler
 	public void register()
 	{
 		qe.addQuestLvlUp(questId);	
-		qe.setNpcQuestData(212878).addOnKillEvent(questId);
 		for(int npc_id : npc_ids)
 			qe.setNpcQuestData(npc_id).addOnTalkEvent(questId);
+		qe.setNpcQuestData(212878).addOnKillEvent(questId);
 	}
 	
 	@Override
@@ -179,7 +179,7 @@ public class _2036ACaptiveFlame extends QuestHandler
 	@Override
 	public boolean onKillEvent(QuestCookie env)
 	{
-		if(defaultQuestOnKillEvent(env, 212878, 2, 3))
+		if(defaultQuestOnKillEvent(env, 212878, 2, 3) || defaultQuestOnKillEvent(env, 212878, 3, true))
 		{
 			Player player = env.getPlayer();
 			QuestState qs = player.getQuestStateList().getQuestState(questId);
