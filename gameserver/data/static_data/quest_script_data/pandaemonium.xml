@@ -322,6 +322,10 @@
 	<report_to id="29039" start_npc_id="204100" end_npc_id="798800" item_id="182207148"/>
 	<!-- Mane's Best Friend -->
 	<report_to id="29040" start_npc_id="798385" end_npc_id="798443"/>
+	<!-- Pet Perceptions -->
+	<report_to id="29044" start_npc_id="798443" end_npc_id="798441"/>
+	<!-- A Passion for Pets -->
+	<report_to id="29045" start_npc_id="798441" end_npc_id="798442"/>
 	<!-- Black Clouds Stop Play -->
 	<report_to id="29041" start_npc_id="204051" end_npc_id="204286"/>
 	<!-- An Awkward Alliance -->

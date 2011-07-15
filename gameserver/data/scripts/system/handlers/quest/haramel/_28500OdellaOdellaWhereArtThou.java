@@ -111,7 +111,7 @@ public class _28500OdellaOdellaWhereArtThou extends QuestHandler
 			{
 				if(env.getDialogId() == 26)
 					return sendQuestDialog(env, 1352);
-				else if(env.getDialogId() == 10001)
+				else if(env.getDialogId() == -1)
 				{
 					qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
 					updateQuestStatus(env);
@@ -129,7 +129,7 @@ public class _28500OdellaOdellaWhereArtThou extends QuestHandler
 			{
 				if(env.getDialogId() == 26)
 					return sendQuestDialog(env, 1693);
-				else if(env.getDialogId() == 10002)
+				else if(env.getDialogId() == -1)
 				{
 					qs.setQuestVarById(0, qs.getQuestVarById(0) + 1);
 					updateQuestStatus(env);
