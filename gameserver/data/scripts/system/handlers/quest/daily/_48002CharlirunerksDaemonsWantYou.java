@@ -24,7 +24,6 @@ import org.openaion.gameserver.quest.model.QuestState;
 import org.openaion.gameserver.quest.model.QuestStatus;
 import org.openaion.gameserver.services.QuestService;
 
-
 /**
  * @author HellBoy
  * 
@@ -40,12 +39,9 @@ public class _48002CharlirunerksDaemonsWantYou extends QuestHandler
 
 	@Override
 	public void register()
-	{
-		if(GSConfig.SERVER_VERSION.startsWith("2.0"))
-		{
-			qe.setNpcQuestData(799886).addOnTalkEvent(questId);
-			qe.addQuestLvlUp(questId);
-		}
+	{		
+		qe.setNpcQuestData(799886).addOnTalkEvent(questId);
+		qe.addQuestLvlUp(questId);		
 	}
 
 	@Override

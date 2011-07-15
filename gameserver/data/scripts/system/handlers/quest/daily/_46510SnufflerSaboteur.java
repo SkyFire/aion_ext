@@ -45,7 +45,6 @@ public class _46510SnufflerSaboteur extends QuestHandler
 	{
 		qe.setNpcQuestData(700774).addOnTalkEvent(questId);
 		qe.setNpcQuestData(799882).addOnTalkEvent(questId);
-		qe.setNpcQuestData(799883).addOnTalkEvent(questId);
 		qe.setNpcQuestData(216641).addOnKillEvent(questId);
 	}
 
@@ -72,7 +71,7 @@ public class _46510SnufflerSaboteur extends QuestHandler
 			if(env.getTargetId() == 700774)
 				return defaultQuestUseNpc(env, 0, 1, EmotionType.NEUTRALMODE2, EmotionType.START_LOOT, true);
 		}
-		if(defaultQuestRewardDialog(env, 799882, 10002) || defaultQuestRewardDialog(env, 799883, 10002))
+		if(defaultQuestRewardDialog(env, 799882, 10002))
 			return true;
 		else
 			return false;

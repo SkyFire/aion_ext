@@ -45,7 +45,6 @@ public class _46505WaterfallGhost extends QuestHandler
 	{
 		qe.setNpcQuestData(700773).addOnTalkEvent(questId);
 		qe.setNpcQuestData(799882).addOnTalkEvent(questId);
-		qe.setNpcQuestData(799883).addOnTalkEvent(questId);
 		qe.setNpcQuestData(216628).addOnKillEvent(questId);
 	}
 
@@ -72,7 +71,7 @@ public class _46505WaterfallGhost extends QuestHandler
 			if(env.getTargetId() == 700773)
 				return defaultQuestUseNpc(env, 0, 1, EmotionType.NEUTRALMODE2, EmotionType.START_LOOT, true);
 		}
-		if(defaultQuestRewardDialog(env, 799882, 10002) || defaultQuestRewardDialog(env, 799883, 10002))
+		if(defaultQuestRewardDialog(env, 799882, 10002))
 			return true;
 		else
 			return false;

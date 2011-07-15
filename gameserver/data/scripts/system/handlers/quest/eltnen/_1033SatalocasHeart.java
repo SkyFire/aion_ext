@@ -28,7 +28,7 @@ import org.openaion.gameserver.utils.PacketSendUtility;
 
 
 /**
- * @author Sylar
+ * @author Sylar, Fix Dex
  * 
  */
 public class _1033SatalocasHeart extends QuestHandler
@@ -54,20 +54,18 @@ public class _1033SatalocasHeart extends QuestHandler
 	@Override
 	public boolean onMovieEndEvent(QuestCookie env, int movieId)
 	{
-		if(movieId != 42)
-			return false;
-		Player player = env.getPlayer();
-		QuestState qs = player.getQuestStateList().getQuestState(questId);
-		if(qs == null || qs.getStatus() != QuestStatus.START || 
-		   qs.getQuestVarById(0) != 1 || player.getQuestTimerOn())
-			return false;
-
-		// remove all items, so we count from the beginning
-		Storage inventory = player.getInventory();
-		long fangCount = inventory.getItemCountByItemId(182201019);
-		inventory.removeFromBagByItemId(182201019, fangCount);
-		QuestService.questTimerStart(env, 180);
-		return true;
+	    if(movieId != 42)
+            return false;
+        
+        Player player = env.getPlayer();
+        QuestState qs = player.getQuestStateList().getQuestState(questId);
+        if(qs == null || qs.getStatus() != QuestStatus.START || qs.getQuestVarById(0) != 1 || player.getQuestTimerOn())
+            return false;
+        
+        qs.setQuestVar(10);
+        updateQuestStatus(env);        
+        QuestService.questTimerStart(env, 180);
+        return true;
 	}
 
 	@Override
@@ -86,106 +84,51 @@ public class _1033SatalocasHeart extends QuestHandler
 		
 		if(env.getTargetId() == 203900) //Diomedes
 		{
-			if(qs.getStatus() == QuestStatus.START && qs.getQuestVarById(0) == 0)
-			{
-				if(env.getDialogId() == 26)
-					return sendQuestDialog(env, 1011);
-				else if(env.getDialogId() == 10000)
-					return defaultCloseDialog(env, 0, 1);
-			}
-			else if(qs.getStatus() == QuestStatus.REWARD)
-			{
-				if(env.getDialogId() == -1)
-				{
-					if (qs.getCompleteCount() == 1)
-						return sendQuestDialog(env, 2375);
-					else
-						return sendQuestDialog(env, 2716);
-				}
-				else
-				{
-					int reward = qs.getCompleteCount() == 1 ? 0 : 1;
-					return defaultQuestEndDialog(env, reward);
-				}
-			}
+		    if(qs.getStatus() == QuestStatus.START && qs.getQuestVarById(0) == 0)
+            {
+                if(env.getDialogId() == 26)
+                    return sendQuestDialog(env, 1011);
+                else if(env.getDialogId() == 10000)
+                    {
+                        qs.setQuestVar(1);
+                        updateQuestStatus(env);
+                        PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 10));
+                        return true;
+                    }
+                else
+                    return defaultQuestStartDialog(env);
+            }            
+            else if(qs.getStatus() == QuestStatus.REWARD)
+            {
+                return defaultQuestEndDialog(env);
+            }
 		}
 		else if(env.getTargetId() == 203996) //Kimeia
 		{
-			if(qs.getStatus() == QuestStatus.START && qs.getQuestVarById(0) == 1 && qs.getCompleteCount() == 0)
-			{
-				if(env.getDialogId() == 26)
-					return sendQuestDialog(env, 1693);
-				else if(env.getDialogId() == 10002)
-				{
-					PacketSendUtility
-						.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 0));
-					if (!player.getQuestTimerOn())
-						defaultQuestMovie(env, 42);
-					return true;
-				}
-			}
-			else if(qs.getStatus() == QuestStatus.START && qs.getCompleteCount() == 1)
-			{
-				if(env.getDialogId() == 26)
-					return sendQuestDialog(env, 2034);
-				else if (env.getDialogId() == 2035)
-				{
-					Storage inventory = player.getInventory();
-					long fangCount = inventory.getItemCountByItemId(182201019);
-					if (fangCount < 4)
-					{
-						qs.setCompliteCount(2);  // allow to repeat
-						updateQuestStatus(env);
-						return sendQuestDialog(env, 2035);
-					}
-					else
-					{
-						qs.setStatus(QuestStatus.REWARD);
-						updateQuestStatus(env);
-						if (fangCount < 10)
-						{
-							qs.setCompliteCount(2); // average results
-							return sendQuestDialog(env, 2120);
-						}
-						else
-							return sendQuestDialog(env, 2205);
-					}
-				}
-			}
-			else if(qs.getStatus() == QuestStatus.START && qs.getCompleteCount() == 2)
-			{
-				if(env.getDialogId() == 26)
-				{
-					PacketSendUtility
-						.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 0));
-					if (!player.getQuestTimerOn())
-						defaultQuestMovie(env, 42);
-					return true;
-				}
-			}
-			else if(qs.getStatus() == QuestStatus.START && qs.getCompleteCount() > 2)
-			{
-				if(env.getDialogId() == 26)
-					return sendQuestDialog(env, 2034);
-				else if (env.getDialogId() == 2035)
-				{
-					Storage inventory = player.getInventory();
-					long fangCount = inventory.getItemCountByItemId(182201019);
-					if (fangCount < 4)
-					{
-						qs.setCompliteCount(2);  // allow to repeat
-						updateQuestStatus(env);
-						return sendQuestDialog(env, 2035);
-					}
-					else
-					{
-						qs.setStatus(QuestStatus.REWARD);
-						qs.setCompliteCount(2); // average results
-						updateQuestStatus(env);
-						return sendQuestDialog(env, 2205);
-					}
-				}
-			}
+		    if(qs.getStatus() == QuestStatus.START && qs.getQuestVarById(0) == 1)
+            {
+                if(env.getDialogId() == 26)
+                    return sendQuestDialog(env, 1693);
+                else if(env.getDialogId() == 10002)
+                {
+                    PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(env.getVisibleObject().getObjectId(), 0));
+                    if (!player.getQuestTimerOn())
+                        defaultQuestMovie(env, 42);
+                    return true;
+                }
+            }
+            else if(qs.getStatus() == QuestStatus.START && qs.getQuestVarById(0) == 11)
+            {
+                if(env.getDialogId() == 26)
+                {
+                    qs.setQuestVar(qs.getQuestVarById(0) + 1);
+                    qs.setStatus(QuestStatus.REWARD);
+                    updateQuestStatus(env);
+                    return sendQuestDialog(env, 2205);
+                }
+                else
+                    return defaultQuestStartDialog(env);
+            }
 		}
 		return false;
 	}
@@ -198,10 +141,22 @@ public class _1033SatalocasHeart extends QuestHandler
 		if(qs == null || qs.getStatus() != QuestStatus.START)
 			return false;
 		
-		int completeCount = qs.getCompleteCount() + 1;
-		qs.setCompliteCount(completeCount);
-		updateQuestStatus(env);
-		return true;
+		// If player dont get the requerid count items, talk again with kimeia
+        Storage inventory = player.getInventory();
+        long fangCount = inventory.getItemCountByItemId(182201019);
+        
+        if (fangCount > 10) {
+            inventory.removeFromBagByItemId(182201019, fangCount);
+            qs.setQuestVar(11);
+            updateQuestStatus(env);
+        }
+        else {
+            inventory.removeFromBagByItemId(182201019, fangCount);
+            qs.setQuestVar(1);
+            updateQuestStatus(env);
+            PacketSendUtility.sendMessage(player, "You need collect 10 Acheron Drake Fang. Go back to Kimeia");
+        }
+        return true;
 	}
 
 }

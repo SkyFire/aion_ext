@@ -22,8 +22,6 @@ import org.openaion.gameserver.quest.handlers.QuestHandler;
 import org.openaion.gameserver.quest.model.QuestCookie;
 import org.openaion.gameserver.quest.model.QuestState;
 import org.openaion.gameserver.quest.model.QuestStatus;
-import org.openaion.gameserver.services.QuestService;
-import org.openaion.gameserver.utils.ThreadPoolManager;
 
 
 /**
@@ -44,8 +42,6 @@ public class _30322GroupVanquishingAhbana extends QuestHandler
 	{
 		qe.setNpcQuestData(799278).addOnQuestStart(questId);
 		qe.setNpcQuestData(799278).addOnTalkEvent(questId);
-		qe.setNpcQuestData(216739).addOnKillEvent(questId);
-		qe.setNpcQuestData(216740).addOnKillEvent(questId);
 		qe.setNpcQuestData(216239).addOnKillEvent(questId);
 	}
 
@@ -87,32 +83,13 @@ public class _30322GroupVanquishingAhbana extends QuestHandler
 		if(qs.getStatus() != QuestStatus.START)
 			return false;
 			
-		final int instanceId = player.getInstanceId();
 		int var = qs.getQuestVarById(0);
 		int targetId = 0;
 		if(env.getVisibleObject() instanceof Npc)
 			targetId = ((Npc) env.getVisibleObject()).getNpcId();
-		final Npc npc = (Npc)env.getVisibleObject();
 		
 		switch(targetId)
 		{
-			case 216739:
-			case 216740:
-				if(var == 0)
-				{
-					ThreadPoolManager.getInstance().schedule(new Runnable()
-					{
-					@Override
-						public void run()
-						{
-							QuestService.addNewSpawn(300170000, instanceId, 216239, (float) npc.getX(),
-										(float) npc.getY(), (float) npc.getZ(), (byte) 0, true);
-						}
-					}, 2000);					
-
-					return true;
-				}
-				break;
 			case 216239:
 				if(var == 0)
 				{

@@ -39,7 +39,6 @@ public class _46512SatbakunsLastStand extends QuestHandler
 	public void register()
 	{
 		qe.setNpcQuestData(799882).addOnTalkEvent(questId);
-		qe.setNpcQuestData(799883).addOnTalkEvent(questId);
 		qe.setNpcQuestData(216636).addOnKillEvent(questId);
 	}
 
@@ -60,7 +59,7 @@ public class _46512SatbakunsLastStand extends QuestHandler
 		
 		if(qs == null)
 			return false;
-		if(defaultQuestRewardDialog(env, 799882, 10002) || defaultQuestRewardDialog(env, 799883, 10002))
+		if(defaultQuestRewardDialog(env, 799882, 10002))
 			return true;
 		else
 			return false;
