@@ -29,7 +29,7 @@ CREATE TABLE `account_data` (
   `last_ip` varchar(20) DEFAULT NULL,
   `ip_force` varchar(20) DEFAULT NULL,
   `credits` bigint(21) NOT NULL DEFAULT '0',
-  `email` varchar(30) NOT NULL,
+  `email` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
