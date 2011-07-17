@@ -53,7 +53,11 @@
 	</spawn>
 	<!-- Unstable Entrance Fragment -->
 	<spawn map="310110000" npcid="730177" pool="1" interval="105">
-		<object staticid="37" x="569.96021" y="490.50586" z="196.5226" h="0"/>
+		<object staticid="0" x="554.6808" y="490.37527" z="196.8186" h="118"/>
+	</spawn>
+	<!-- Unstable Exit Fragement -->
+	<spawn map="310110000" npcid="730178" pool="1" interval="105">
+		<object staticid="37" x="570.521" y="490.37527" z="196.8489" h="118"/>
 	</spawn>
 	<!-- BIDLF2A_BabyElementalSummon_50_n (NPC Normal lvl:50) (from client spawn)-->
 	<spawn map="310110000" npcid="280983" pool="1" interval="295">

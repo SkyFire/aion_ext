@@ -99,7 +99,7 @@
 	</spawn>
 	<!-- Artifact of Time and Space (Object Normal lvl:1) -->
 	<spawn map="220040000" npcid="700285" pool="1" interval="295">
-		<object x="362.87" y="384.2" z="304.15" h="0"/>
+	<object staticid="386" x="362.86923" y="384.20474" z="304.1546" h="0"/>
 	</spawn>
 	<!-- Auhumla (NPC Normal lvl:50) -->
 	<spawn map="220040000" npcid="204736" pool="1" interval="295">

@@ -632,6 +632,22 @@ public class NpcController extends CreatureController<Npc>
 				// surrender pet
 				PacketSendUtility.sendPacket(player, new SM_PET(7));
 				break;
+			case 68:
+				// housing build
+				PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(targetObjectId, 32));
+				break;
+			case 69:
+				// housing destruct
+				PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(targetObjectId, 33));
+				break;
+			case 70:
+				// condition an individual item
+				PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(targetObjectId, 35));
+				break;
+			case 71:
+				// condition all equiped items 
+				PacketSendUtility.sendPacket(player, new SM_DIALOG_WINDOW(targetObjectId, 35));
+				break;
 			case 10000:
 				// generic npc reply (most are teleporters)
 				TeleporterTemplate template = DataManager.TELEPORTER_DATA.getTeleporterTemplate(npc.getNpcId());

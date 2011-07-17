@@ -188,8 +188,7 @@
 	<item_collecting id="4911" start_npc_id="798317"/>
 	<!-- [Group] The Curse of Agrif's Rage -->
 	<item_collecting id="4912" start_npc_id="798317"/>
-	<!-- A Future Threat -->
-	<report_to id="4913" start_npc_id="204182" end_npc_id="279027"/>
+	<!-- 4913: A Future Threat handled by script -->
 	<!-- 4914: TODO: Lifeform Remodeling Report (lvl 50) -->
 	<!-- [Group] Obtaining the Dragel -->
 	<item_collecting id="4915" start_npc_id="203385"/>

@@ -92,8 +92,7 @@
 		<monster_infos var_id="0" max_kill="12" npc_id="216310"/>
 		<monster_infos var_id="0" max_kill="12" npc_id="216313"/>
 	</monster_hunt>
-	<!-- Tracking Supplies -->
-	<item_collecting id="30301" start_npc_id="799225"/>
+	<!-- 30301: Tracking Supplies handled by script -->
 	<!-- 30302: Mysterious Motives (lvl 55) handled by script -->
 	<!-- 30303: [Group] The Fall of Isbariya (lvl 55) handled by script -->
 	<!-- Herka's Advice -->

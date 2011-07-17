@@ -1073,7 +1073,7 @@ public class LegionService
 		{
 			int expandLvl = legion.getLegionLevel() - 1;
 
-			PacketSendUtility.sendPacket(activePlayer, new SM_DIALOG_WINDOW(activePlayer.getObjectId(), 25));
+			PacketSendUtility.sendPacket(activePlayer, new SM_DIALOG_WINDOW(activePlayer.getObjectId(), 26));
 			PacketSendUtility.sendPacket(activePlayer, new SM_WAREHOUSE_INFO(activePlayer.getLegion()
 				.getLegionWarehouse().getStorageItems(), StorageType.LEGION_WAREHOUSE.getId(), expandLvl, true));
 			PacketSendUtility.sendPacket(activePlayer, new SM_WAREHOUSE_INFO(null,
@@ -1638,7 +1638,7 @@ public class LegionService
 	{
 		/** Static Emblem information **/
 		private static final int	MIN_EMBLEM_ID	= 0;
-		private static final int	MAX_EMBLEM_ID	= 40;
+		private static final int	MAX_EMBLEM_ID	= 50;
 
 		/**
 		 * This method checks all restrictions for legion creation

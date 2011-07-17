@@ -207,14 +207,14 @@
 		<exitpoint mapid="220040000" x="571" y="2504" z="289"/>
 	</portal>
 	<portal npcid="700177" instance="true" minlevel="40" maxlevel="55" group="true">
-	<entrypoint mapid="210020000" x="2511.48" y="791.962" z="412.805" race="ELYOS"/>
-	<exitpoint mapid="310040000" x="274.884" y="167.971" z="204.347"/>
+		<entrypoint mapid="210020000" x="2511.48" y="791.962" z="412.805" race="ELYOS"/>
+		<exitpoint mapid="310040000" x="274.884" y="167.971" z="204.347"/>
 	</portal>
 	<portal npcid="700141" instance="false" minlevel="40" maxlevel="55" group="false">
-	<entrypoint mapid="310040000" x="276.24802" y="161.69484" z="202.62405" race="ELYOS"/>
-	<exitpoint mapid="210020000" x="2511.48" y="791.962" z="412.805"/>
+		<entrypoint mapid="310040000" x="276.24802" y="161.69484" z="202.62405" race="ELYOS"/>
+		<exitpoint mapid="210020000" x="2511.48" y="791.962" z="412.805"/>
 	</portal>
-<!-- Artifact of Circulation / DarkPoeta -->
+	<!-- Artifact of Circulation / DarkPoeta -->
 	<!-- Model for required item :
 	<portal npcid="730185" instance="true" minlevel="50" maxlevel="60" group="true" race="ASMODIANS" itemreq="185000041"> -->
 	<portal npcid="730185" instance="true" minlevel="50" maxlevel="55" group="true" race="ASMODIANS">
@@ -274,15 +274,25 @@
 		<entrypoint mapid="210040000" x="542.84" y="712.9" z="153.03"/>
 		<exitpoint mapid="310100000" x="304.16013" y="323.43713" z="1021.4955"/>
 	</portal>
-    <!-- Azoturan Fortress Exit -->
-    <portal npcid="700367" minlevel="43" maxlevel="55" group="true">
-       	<entrypoint mapid="310100000" x="304.16013" y="323.43713" z="1021.4955"/>
+	<!-- Azoturan Fortress Exit -->
+	<portal npcid="700367" minlevel="43" maxlevel="55" group="true">
+		<entrypoint mapid="310100000" x="304.16013" y="323.43713" z="1021.4955"/>
 		<exitpoint mapid="210040000" x="542.84" y="712.9" z="153.03"/>
-    </portal>	
+	</portal>
 	<!-- Theobomos Lab -->
 	<portal npcid="730154" instance="true" minlevel="46" maxlevel="60" group="true">
 		<entrypoint mapid="210060000" x="2974.363" y="196.73184" z="170.99928"/>
 		<exitpoint mapid="310110000" x="476.96606" y="201.32736" z="169.98848"/>
+	</portal>
+	<!-- Theobomos lab : Internal Portals : Elemental Core Testing Room Entrance -->
+	<portal npcid="730177" instance="true" minlevel="46" maxlevel="60" group="true">
+		<entrypoint mapid="310110000" x="554.6808" y="490.64645" z="196.8186"/>
+		<exitpoint mapid="310110000" x="570.521" y="490.37527" z="196.8489"/>
+	</portal>
+	<!-- Theobomos lab : Internal Portals : Elemental Core Testing Room Exit -->
+	<portal npcid="730178" instance="true" minlevel="46" maxlevel="60" group="true">
+		<entrypoint mapid="31011000" x="570.521" y="490.37527" z="196.8489"/>
+		<exitpoint mapid="31011000" x="554.6808" y="490.64645" z="196.8186"/>
 	</portal>
 	<!-- Theobomos Lab Exit -->
 	<portal npcid="730168" instance="false" minlevel="46" maxlevel="60" group="false">
@@ -360,7 +370,7 @@
 		<entrypoint mapid="400010000" x="2245.72" y="2194.77" z="2191.17"/>
 		<exitpoint mapid="310120000" x="51.051006" y="175.84286" z="229.17937" race="ELYOS"/>
 		<exitpoint mapid="320140000" x="457.82935" y="426.83972" z="230.40048" race="ASMODIANS"/>
-	</portal>	
+	</portal>
 	<!-- ABYSS GATES -->
 	<!-- Verteron to Abyss -->
 	<portal npcid="730059" minlevel="25" maxlevel="60" instance="false" group="false" race="ELYOS">
@@ -505,16 +515,15 @@
 		<exitpoint mapid="120010000" x="950" y="1150" z="195" race="ASMODIANS"/>
 	</portal>
 	<!-- Elevator Lever (middle deck to lower deck)-->
-  <portal npcid="730210" instance="true" minlevel="40" maxlevel="55" group="true">
+	<portal npcid="730210" instance="true" minlevel="40" maxlevel="55" group="true">
 		<entrypoint mapid="300100000" x="282.802" y="453.415" z="952.55"/>
 		<exitpoint mapid="300100000" x="282.802" y="453.415" z="902.55"/>
 	</portal>
 	<!-- Elevator Lever (lower deck to middle deck)-->
-  <portal npcid="730216" instance="true" minlevel="40" maxlevel="55" group="true">
+	<portal npcid="730216" instance="true" minlevel="40" maxlevel="55" group="true">
 		<entrypoint mapid="300100000" x="282.802" y="453.415" z="902.55"/>
 		<exitpoint mapid="300100000" x="282.802" y="453.415" z="952.55"/>
 	</portal>
-	
 	<!-- Large Gun Deck Entrance-->
 	<portal npcid="730203" instance="true" minlevel="40" maxlevel="55" group="true">
 		<entrypoint mapid="300100000" x="720.15" y="509.11" z="1012.9"/>
@@ -731,14 +740,12 @@
 		<exitpoint mapid="220040000" x="1939.3905" y="492.5173" z="412.125" race="ASMODIANS"/>
 		<exitpoint mapid="210040000" x="137.77625" y="1567.5349" z="119.52797" race="ELYOS"/>
 	</portal>
-	
 	<!-- Kromede Trial's Exit 2-->
 	<portal npcid="700928" instance="false" minlevel="37" maxlevel="55" group="false">
 		<entrypoint mapid="300230000" x="676.99603" y="774.2307" z="216.88036"/>
 		<exitpoint mapid="220040000" x="1939.3905" y="492.5173" z="412.125" race="ASMODIANS"/>
 		<exitpoint mapid="210040000" x="137.77625" y="1567.5349" z="119.52797" race="ELYOS"/>
 	</portal>
-	
 	<!-- TODO: Get exacts retail entry/exit points and retail fortress owners restriction-->
 	<!-- Inggison to Silentera Canyon Entrance Elyos -->
 	<portal npcid="730256" instance="false" minlevel="50" maxlevel="60" race="ELYOS">
@@ -760,45 +767,43 @@
 		<entrypoint mapid="600010000" x="471.53934" y="1078.136" z="335.80417"/>
 		<exitpoint mapid="220070000" x="1449.2313" y="903.7223" z="302.2702"/>
 	</portal>
-
 	<!-- Elyos way out -->
 	<!-- Secret Library Sanctum Exit -->
 	<portal npcid="203895" instance="false" minlevel="20" maxlevel="55" group="false" race="ELYOS">
 		<entrypoint mapid="110010000" x="2037.7122" y="1473.9912" z="592.22534" race="ELYOS"/>
 		<exitpoint mapid="110010000" x="2006.3083" y="1478.7644" z="592.1204"/>
-	</portal> 
+	</portal>
 	<!-- Hanarkand Pass To Inggison -->
 	<portal npcid="730258" instance="false" minlevel="50" maxlevel="55" group="false">
 		<entrypoint mapid="600010000" x="920.4469" y="148.93167" z="347.11508"/>
 		<exitpoint mapid="210050000" x="2763.2144" y="2134.2322" z="245.125"/>
-	</portal>		
+	</portal>
 	<!-- Angrief's Pass To Inggison -->
 	<portal npcid="730257" instance="false" minlevel="50" maxlevel="55" group="false">
 		<entrypoint mapid="600010000" x="481.6511" y="108.14716" z="324.52115"/>
 		<exitpoint mapid="210050000" x="1083.0206" y="2016.9448" z="362.21216"/>
-	</portal>	
+	</portal>
 	<!-- Primeval Pass To Inggison -->
 	<portal npcid="730259" instance="false" minlevel="50" maxlevel="55" group="false">
 		<entrypoint mapid="600010000" x="980.95276" y="561.16156" z="310.82953"/>
 		<exitpoint mapid="210050000" x="404.0378" y="2067.6404" z="334.70285"/>
 	</portal>
-
 	<!-- Asmodians way out -->
 	<!-- Secret Library Pandaemonium Exit -->
 	<portal npcid="204268" instance="false" minlevel="20" maxlevel="55" group="false" race="ASMODIANS">
 		<entrypoint mapid="120010000" x="1403.1074" y="1061.9503" z="206.02371" race="ASMODIANS"/>
 		<exitpoint mapid="120010000" x="1392.8877" y="1060.9097" z="206.06915"/>
-	</portal> 
+	</portal>
 	<!-- Mitrakand Pass To Gelkmaros -->
 	<portal npcid="730261" instance="false" minlevel="50" maxlevel="55" group="false">
 		<entrypoint mapid="600010000" x="493.67923" y="1440.8508" z="329.04456"/>
 		<exitpoint mapid="220070000" x="690.89417" y="621.11426" z="385.26166"/>
-	</portal>	
+	</portal>
 	<!-- Earthfang Pass To Gelkmaros -->
 	<portal npcid="730263" instance="false" minlevel="50" maxlevel="55" group="false">
 		<entrypoint mapid="600010000" x="1019.2403" y="961.7963" z="309.11652"/>
 		<exitpoint mapid="220070000" x="2935.5872" y="879.9197" z="310.58344"/>
-	</portal>	
+	</portal>
 	<!-- Vorgaltem Pass To Gelkmaros -->
 	<portal npcid="730262" instance="false" minlevel="50" maxlevel="55" group="false">
 		<entrypoint mapid="600010000" x="1019.2403" y="961.7963" z="309.11652"/>
@@ -814,7 +819,6 @@
 		<entrypoint mapid="220070000" x="2974.4292" y="1205.7853" z="241.9072"/>
 		<exitpoint mapid="220070000" x="2927.791" y="921.5419" z="35.288937"/>
 	</portal>
-	
 	<!-- LF4_2011_In_Teleporter_Li -->
 	<portal npcid="257233" instance="false" minlevel="50" maxlevel="60" group="false" race="ELYOS">
 		<exitpoint mapid="210050000" x="1676.0245" y="2194.4194" z="324.94763"/>
@@ -827,7 +831,6 @@
 	<portal npcid="257235" instance="false" minlevel="50" maxlevel="60" group="false">
 		<exitpoint mapid="210050000" x="1676.0245" y="2194.4194" z="324.94763"/>
 	</portal>
-
 	<!-- LF4_2021_In_Teleporter_Li -->
 	<portal npcid="257533" instance="false" minlevel="50" maxlevel="60" group="false" race="ELYOS">
 		<exitpoint mapid="210050000" x="815.45436" y="1980.3673" z="337.3635"/>
@@ -840,7 +843,6 @@
 	<portal npcid="257535" instance="false" minlevel="50" maxlevel="60" group="false">
 		<exitpoint mapid="210050000" x="815.45436" y="1980.3673" z="337.3635"/>
 	</portal>
-
 	<!-- DF4_3011_In_Teleporter_Li -->
 	<portal npcid="257833" instance="false" minlevel="50" maxlevel="60" group="false" race="ELYOS">
 		<exitpoint mapid="220070000" x="1254.2212" y="831.2192" z="310.10916"/>
@@ -853,7 +855,6 @@
 	<portal npcid="257835" instance="false" minlevel="50" maxlevel="60" group="false">
 		<exitpoint mapid="220070000" x="1254.2212" y="831.2192" z="310.10916"/>
 	</portal>
-
 	<!-- DF4_3021_In_Teleporter_Li -->
 	<portal npcid="258133" instance="false" minlevel="50" maxlevel="60" group="false" race="ELYOS">
 		<exitpoint mapid="220070000" x="1941.3992" y="1068.9736" z="326.93292"/>
@@ -865,6 +866,5 @@
 	<!-- DF4_3021_In_Teleporter_Dr -->
 	<portal npcid="258135" instance="false" minlevel="50" maxlevel="60" group="false">
 		<exitpoint mapid="220070000" x="1941.3992" y="1068.9736" z="326.93292"/>
-	</portal>	
-
+	</portal>
 </portal_templates>

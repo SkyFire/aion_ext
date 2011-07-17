@@ -1,49 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc_skill_templates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="npc_skills.xsd">
-	 <!-- Padmarashka -->
-	<npcskills npcid="216580" skill_count="4">
+<!-- Padmarashka -->
+	 <npcskills npcid="216580" skill_count="11">
+		<!-- Protective Slumber - invul 15 sec! -->
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="19186" id="1"/>	<!-- works  -->
+		<!-- Battle Frenzy -->
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="19187" id="2"/>	<!-- works  -->
+		<!-- Padmarashka's Nurturing - reflect -->
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18727" id="2"/>	<!-- works  --> 
+		<!-- Destructive Bite - normal attack -->
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18728" id="4"/>	<!-- works  -->
+		<!-- Brandish Tail -->
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18725" id="5"/>  <!-- works  -->
+		<!-- Chilling Shriek -->
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="19183" id="6"/>	<!-- works  -->
+		<!-- Despair -->
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18190" id="7"/>	<!-- works  -->
+  	<!-- Poisonous Breath -->
+    <npcskill abouthp="false" probability="3" skilllevel="1" skillid="18724" id="8"/>		<!-- works  -->
+	  <!-- Primal Fear -->
+ 	  <npcskill abouthp="false" probability="3" skilllevel="1" skillid="18722" id="9"/>		<!-- works  -->
+	  <!-- Rock Slide -->
+	  <npcskill abouthp="false" probability="3" skilllevel="1" skillid="19179" id="10"/>	<!-- works  -->	
+    <!-- Toxic Miasma -->
+    <npcskill abouthp="false" probability="3" skilllevel="1" skillid="19185" id="11"/>	<!-- works  -->
+     </npcskills>		
+<!-- Sematariux // Padmarashka  -->
+	  <npcskills npcid="216580" skill_count="11">
 		<!-- Protective Slumber - invul 15 sec! -->
 		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="19186" id="1"/>
+		<!-- Battle Frenzy -->
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="19187" id="2"/>
 		<!-- Padmarashka's Nurturing - reflect -->
 		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18727" id="2"/> 
 		<!-- Destructive Bite - normal attack -->
-		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18728" id="3"/>
-		<!-- Destructive Claw -->
-		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18729" id="4"/>
-		<!-- Lightning Burst - Ranged lightning attack - 5k dmg -->
-		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18732" id="5"/>
-		<!-- Acidic Mist - HydrochloricAcid (Strong DoT) - 750 x 2 -->
-		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18733" id="6"/>
-		<!-- Berserk State - Absorb Vitality and massive damage increase. ? -->
-		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18730" id="7"/>
-		<!-- aoe 100.000 k -->
-<!--	<npcskill abouthp="false" probability="3" skilllevel="1" skillid="18731" id="8"/>			-->
-		<!-- Acid Bomb - aoe 100.000 k -->
-<!--	<npcskill abouthp="false" probability="3" skilllevel="1" skillid="18734" id="9"/>			-->
-	</npcskills>
-	<!-- Sematariux -->
-	<npcskills npcid="216520" skill_count="7">
-		<!-- Protective Slumber - invul 15 sec! -->
-		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="19186" id="1"/>
-		<!-- Padmarashka's Nurturing - reflect -->
-		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18727" id="2"/> 
-		<!-- Destructive Bite - normal attack -->
-		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18728" id="3"/>
-		<!-- Destructive Claw -->
-		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18729" id="4"/>
-		<!-- Lightning Burst - Ranged lightning attack - 5k dmg -->
-		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18732" id="5"/>
-		<!-- Acidic Mist - HydrochloricAcid (Strong DoT) - 750 x 2 -->
-		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18733" id="6"/>
-		<!-- Berserk State - Absorb Vitality and massive damage increase. ? -->
-		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18730" id="7"/>
-		<!-- aoe 100.000 k -->
-<!--	<npcskill abouthp="false" probability="3" skilllevel="1" skillid="18731" id="8"/>			-->
-		<!-- Acid Bomb - aoe 100.000 k -->
-<!--	<npcskill abouthp="false" probability="3" skilllevel="1" skillid="18734" id="9"/>			-->
-	</npcskills>
-	 <!-- Enraged Veille -->
-	<npcskills npcid="258200" skill_count="6">
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18728" id="4"/>
+		<!-- Brandish Tail -->
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18725" id="5"/>
+		<!-- Chilling Shriek -->
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="19183" id="6"/>
+		<!-- Despair -->
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18190" id="7"/>
+  	<!-- Poisonous Breath -->
+    <npcskill abouthp="false" probability="3" skilllevel="1" skillid="18724" id="8"/>	
+	  <!-- Primal Fear -->
+ 	  <npcskill abouthp="false" probability="3" skilllevel="1" skillid="18722" id="9"/>		
+    <!-- Rock Slide -->
+	  <npcskill abouthp="false" probability="3" skilllevel="1" skillid="19179" id="9"/>		
+    <!-- Toxic Miasma -->
+    <npcskill abouthp="false" probability="3" skilllevel="1" skillid="19185" id="9"/>		
+    </npcskills>
+<!-- Enraged Veille -->
+   <npcskills npcid="258200" skill_count="6">
 		<!-- Agent's Call - Teleport the target in front of the caster and Snare. Area of effect. 90% snare - doesnt teleport -->
 		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18709" id="1"/>
 		<!-- Withering Stare - Ranged snare and physical and magical defense decreased. -90% speed -25% phy def / -25% magic res -->
@@ -57,7 +65,7 @@
 		<!-- Sinful Retribution - Powerful Attack - 3sec stunn +748 dmg - delta=2 + weapon dmg -->
 		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18986" id="6"/>
 		<!-- Fool's Bane - Inflicts enough damage to kill the target with a single blow. 100k dmg -->
-<!--	<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18987" id="7"/> -->
+    <!--	<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18987" id="7"/> -->
 	</npcskills>
 	<!-- Enraged Mastarius -->
 	<npcskills npcid="258205" skill_count="6">
@@ -47134,5 +47142,90 @@
 		<npcskill abouthp="false" probability="8" skilllevel="1" skillid="18795" id="11"/>
 		<npcskill abouthp="false" probability="8" skilllevel="1" skillid="18796" id="12"/>
 		<npcskill abouthp="false" probability="8" skilllevel="1" skillid="18797" id="13"/>
+	</npcskills>
+   <!-- Form here Standard records please -->
+	 <!-- Beshmundir Instance Mobs -->
+	 <!-- Ahbana the Wicked -->	
+	<npcskills npcid="216158" skill_count="3">
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18893" id="1"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18894" id="2"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18892" id="3"/>	<!-- works  -->
+   </npcskills>
+   <!-- Manadar -->	
+   <npcskills npcid="216160" skill_count="3">
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18902" id="1"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18903" id="2"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18979" id="3"/>	<!-- works  -->
+   </npcskills>  
+	 <!-- Vehala the Cursed -->	
+	 <npcskills npcid="216162" skill_count="5">
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18744" id="1"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="17061" id="2"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="19118" id="3"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18746" id="4"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18497" id="5"/>	<!-- works  -->	
+    </npcskills>
+	<!-- The Plaguebearer -->	
+	 <npcskills npcid="216163" skill_count="2">
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="19131" id="1"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="19130" id="2"/>	<!-- works  -->
+   </npcskills>
+		 <!-- The Great Virhana -->	
+		<npcskills npcid="216165" skill_count="3">
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18602" id="1"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="3" skilllevel="1" skillid="18897" id="2"/>	  <!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="19121" id="3"/>	<!-- works  -->
+    </npcskills>	
+  	<!-- Shadowshift -->		
+	 <npcskills npcid="216166" skill_count="4">
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18906" id="1"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18907" id="2"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="19069" id="3"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18996" id="4"/>	<!-- works  -->
+   </npcskills>
+	 <!-- Taros Lifebane -->
+	 <npcskills npcid="216167" skill_count="6">
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="19091" id="1"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18741" id="2"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18740" id="3"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="19160" id="4"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="19092" id="5"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18742" id="6"/>	<!-- works  -->		
+   </npcskills>	
+	<!-- Flarestorm -->
+	<npcskills npcid="216168" skill_count="3">
+        <npcskill abouthp="false" probability="3" skilllevel="1" skillid="18911" id="1"/>		<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18909" id="2"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18997" id="3"/>	<!-- works  -->
+  </npcskills>	
+	<!-- Dorakiki the Bold -->	
+	 <npcskills npcid="216169" skill_count="9">
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="19005" id="1"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="19006" id="2"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="19001" id="3"/>	<!-- works  -->	
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="19004" id="4"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="19003" id="5"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="19002" id="6"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18901" id="7"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="19007" id="8"/>	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18969" id="9"/>	<!-- works  -->	
+   </npcskills>
+	<!-- Isbariya the Resolute -->
+	 <npcskills npcid="216182" skill_count="5">
+        <npcskill abouthp="false" probability="3" skilllevel="1" skillid="18913" id="1"/>   <!-- works  -->
+        <npcskill abouthp="false" probability="3" skilllevel="1" skillid="18912" id="2"/>   <!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18993" id="3"/> 	<!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18914" id="4"/>  <!-- works  -->
+        <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18959" id="5"/>	<!-- works  -->
+    </npcskills>	
+ <!-- Beta Test - Experiment -->
+	<!-- Storwing -->
+	<npcskills npcid="216183" skill_count="6">
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18612" id="1"/>
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18613" id="2"/>
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18614" id="3"/>
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18615" id="4"/>
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18616" id="5"/>
+		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18617" id="6"/>
 	</npcskills>
 </npc_skill_templates>
