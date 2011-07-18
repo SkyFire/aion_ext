@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc_skill_templates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="npc_skills.xsd">
-<!-- Padmarashka -->
+   <!-- NPC Skills made by Aion-Extreme 2.5 retail by Dallas -->
+	 <!-- Padmarashka -->
 	 <npcskills npcid="216580" skill_count="11">
 		<!-- Protective Slumber - invul 15 sec! -->
 		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="19186" id="1"/>	<!-- works  -->
@@ -47144,7 +47145,7 @@
 		<npcskill abouthp="false" probability="8" skilllevel="1" skillid="18797" id="13"/>
 	</npcskills>
    <!-- Form here Standard records please -->
-	 <!-- Beshmundir Instance Mobs -->
+	 <!-- Beshmundir Instance Mobs  aionextreme 2.5 / Dallas -->
 	 <!-- Ahbana the Wicked -->	
 	<npcskills npcid="216158" skill_count="3">
         <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18893" id="1"/>	<!-- works  -->
@@ -47194,7 +47195,7 @@
    </npcskills>	
 	<!-- Flarestorm -->
 	<npcskills npcid="216168" skill_count="3">
-        <npcskill abouthp="false" probability="3" skilllevel="1" skillid="18911" id="1"/>		<!-- works  -->
+        <npcskill abouthp="false" probability="3" skilllevel="1" skillid="18911" id="1"/>   <!-- works  -->
         <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18909" id="2"/>	<!-- works  -->
         <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18997" id="3"/>	<!-- works  -->
   </npcskills>	

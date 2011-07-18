@@ -321,13 +321,7 @@
 			<telelocation loc_id="25" price="1000"/>
 			<telelocation loc_id="24" price="800"/>
 		</locations>
-	</teleporter_template>
-	<teleporter_template npc_id="203895" name="Lamid" teleportId="102" type="REGULAR">
-		<locations>
-			<telelocation loc_id="24" price="50"/>
-			<telelocation loc_id="106" price="800"/>
-		</locations>
-	</teleporter_template>
+		</teleporter_template>
 	<!-- Sanctum - Kaisinel Sanctuary Teleports -->
 	<teleporter_template npc_id="730265" name="LC1_Airport_ZONE_Entrance" teleportId="56"
 		type="REGULAR">
