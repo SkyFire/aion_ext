@@ -26,8 +26,8 @@ public class AdminConfig
 	@Property(key = "gameserver.administration.gmlevel", defaultValue = "3")
 	public static int	GM_LEVEL;
 
-    @Property(key = "gameserver.administration.flight.freefly", defaultValue = "3")
-    public static int GM_FLIGHT_FREE;
+  @Property(key = "gameserver.administration.flight.freefly", defaultValue = "3")
+  public static int GM_FLIGHT_FREE;
 
 	@Property(key = "gameserver.administration.flight.unlimited", defaultValue = "3")
 	public static int	GM_FLIGHT_UNLIMITED;
@@ -80,6 +80,8 @@ public class AdminConfig
 	@Property(key = "gameserver.administration.command.gag", defaultValue = "3")
 	public static int	COMMAND_GAG;
 
+    @Property(key = "gameserver.administration.command.goto", defaultValue = "3")
+    public static int COMMAND_GOTO;
 	@Property(key = "gameserver.administration.command.givemissingskills", defaultValue = "3")
 	public static int	COMMAND_GIVEMISSINGSKILLS;
 
@@ -169,8 +171,9 @@ public class AdminConfig
 
 	@Property(key = "gameserver.administration.command.savespawndata", defaultValue = "3")
 	public static int	COMMAND_SAVESPAWNDATA;
-    @Property(key = "gameserver.administration.command.dropinfo", defaultValue = "0")
-    public static int COMMAND_DROPINFO;
+  
+  @Property(key = "gameserver.administration.command.dropinfo", defaultValue = "0")
+  public static int COMMAND_DROPINFO;
 
 	@Property(key = "gameserver.administration.command.sendfakeserverpacket", defaultValue = "3")
 	public static int	COMMAND_SENDFAKESERVERPACKET;
@@ -299,7 +302,6 @@ public class AdminConfig
 
 	@Property(key = "gameserver.administration.command.passkey", defaultValue = "3")
 	public static int	COMMAND_PASSKEY;
-
 
 	@Property(key = "gameserver.administration.command.who", defaultValue = "3")
 	public static int	COMMAND_WHO;

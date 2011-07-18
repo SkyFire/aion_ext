@@ -388,4 +388,16 @@ public class CustomConfig
 
 	@Property(key = "gameserver.aionshop.gift.enable", defaultValue = "false")
 	public static boolean AIONSHOP_GIFT_ENABLE;
+
+	@Property(key = "gameserver.rate.tollexchange.enable", defaultValue = "true")
+	public static boolean TOLL_EXCHANGE_ENABLED;
+
+	@Property(key = "gameserver.rate.tollexchange.restriction", defaultValue = "none")
+	public static String TOLL_EXCHANGE_RESTRICTION;
+
+	@Property(key = "gameserver.rate.tollexchange.ap", defaultValue = "10")
+	public static int TOLL_EXCHANGE_AP_RATE;
+
+	@Property(key = "gameserver.rate.tollexchange.kinah", defaultValue = "1000")
+	public static int TOLL_EXCHANGE_KINAH_RATE;
 }

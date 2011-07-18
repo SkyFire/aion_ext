@@ -60,7 +60,7 @@ public class QuestHandler
 	private Object syncObject = new Object();
 	private boolean busy = false;
 	
-	private static Logger	log	= Logger.getLogger(QuestHandler.class);
+	//private static Logger	log	= Logger.getLogger(QuestHandler.class);
 	
 	/**
 	 * @param questId
@@ -454,7 +454,7 @@ public class QuestHandler
 					if(template.getRacePermitted().ordinal() != player.getCommonData().getRace().ordinal())
 						return false;
 				}
-				log.warn("Quest "+questId+" is NULL but used OnLvlUpEvent");
+				//log.warn("Quest "+questId+" is NULL but used OnLvlUpEvent");
 			}
 
 			if(locked && qs != null && qs.getStatus() == QuestStatus.LOCKED)
@@ -471,7 +471,7 @@ public class QuestHandler
 
 			if (qs == null || qs.getStatus() == QuestStatus.LOCKED)
 			{
-				log.warn("Quest "+questId+" has invalid OnLvlUpEvent");
+				//log.warn("Quest "+questId+" has invalid OnLvlUpEvent");
 			}
 		}
 
