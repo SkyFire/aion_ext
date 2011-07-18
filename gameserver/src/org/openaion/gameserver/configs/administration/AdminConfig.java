@@ -80,13 +80,11 @@ public class AdminConfig
 	@Property(key = "gameserver.administration.command.gag", defaultValue = "3")
 	public static int	COMMAND_GAG;
 
-    @Property(key = "gameserver.administration.command.goto", defaultValue = "3")
-    public static int COMMAND_GOTO;
+  @Property(key = "gameserver.administration.command.goto", defaultValue = "3")
+  public static int COMMAND_GOTO;
+	
 	@Property(key = "gameserver.administration.command.givemissingskills", defaultValue = "3")
 	public static int	COMMAND_GIVEMISSINGSKILLS;
-
-	@Property(key = "gameserver.administration.command.goto", defaultValue = "3")
-	public static int	COMMAND_GOTO;
 
 	@Property(key = "gameserver.administration.command.gps", defaultValue = "3")
 	public static int	COMMAND_GPS;
@@ -225,17 +223,18 @@ public class AdminConfig
 
 	@Property(key = "gameserver.administration.command.zone", defaultValue = "3")
 	public static int	COMMAND_ZONE;
-    @Property(key = "gameserver.administration.command.enchant", defaultValue = "3")
-    public static int	COMMAND_ENCHANT;
+  
+  @Property(key = "gameserver.administration.command.enchant", defaultValue = "3")
+  public static int	COMMAND_ENCHANT;
 
-    @Property(key = "gameserver.administration.command.socket", defaultValue = "3")
-    public static int	COMMAND_SOCKET;
+  @Property(key = "gameserver.administration.command.socket", defaultValue = "3")
+  public static int	COMMAND_SOCKET;
 
-    @Property(key = "gameserver.administration.command.powerup", defaultValue = "3")
-    public static int	COMMAND_POWERUP;
+  @Property(key = "gameserver.administration.command.powerup", defaultValue = "3")
+  public static int	COMMAND_POWERUP;
 	
-    @Property(key = "gameserver.administration.command.godstone", defaultValue = "3")
-    public static int	COMMAND_GODSTONE;
+  @Property(key = "gameserver.administration.command.godstone", defaultValue = "3")
+  public static int	COMMAND_GODSTONE;
 
 	@Property(key ="gameserver.administration.command.worldban", defaultValue = "3")
 	public static int	COMMAND_WORLDBAN;
