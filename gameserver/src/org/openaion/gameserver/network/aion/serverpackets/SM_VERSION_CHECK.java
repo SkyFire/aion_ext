@@ -86,8 +86,7 @@ public class SM_VERSION_CHECK extends AionServerPacket
 		writeH(buf, 0x0A01);
 		writeH(buf, 0x0A01);
 		writeH(buf, 0x020A);
-		writeC(buf, 0x00);
-		writeC(buf, 0x14);
+		writeC(buf, 0x00);		
 		writeC(buf, 0x01);
 		writeC(buf, 0x00);
 		writeC(buf, 0x00);
