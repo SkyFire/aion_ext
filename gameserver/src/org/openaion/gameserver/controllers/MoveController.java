@@ -1,6 +1,7 @@
 package org.openaion.gameserver.controllers;
 
 import java.util.concurrent.Future;
+
 import org.apache.log4j.Logger;
 import org.openaion.gameserver.ai.desires.impl.MoveToHomeDesire;
 import org.openaion.gameserver.controllers.movement.MovementType;

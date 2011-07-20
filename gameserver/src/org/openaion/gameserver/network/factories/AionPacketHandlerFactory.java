@@ -18,8 +18,8 @@ package org.openaion.gameserver.network.factories;
 
 import org.openaion.gameserver.configs.main.GSConfig;
 import org.openaion.gameserver.network.aion.AionClientPacket;
-import org.openaion.gameserver.network.aion.AionPacketHandler;
 import org.openaion.gameserver.network.aion.AionConnection.State;
+import org.openaion.gameserver.network.aion.AionPacketHandler;
 import org.openaion.gameserver.network.aion.clientpackets.*;
 
 /**

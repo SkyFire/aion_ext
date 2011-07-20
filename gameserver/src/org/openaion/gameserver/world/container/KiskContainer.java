@@ -18,11 +18,11 @@ package org.openaion.gameserver.world.container;
 
 import java.util.Map;
 
+import javolution.util.FastMap;
+
 import org.openaion.gameserver.model.gameobjects.Kisk;
 import org.openaion.gameserver.model.gameobjects.player.Player;
 import org.openaion.gameserver.world.exceptions.DuplicateAionObjectException;
-
-import javolution.util.FastMap;
 
 
 /**

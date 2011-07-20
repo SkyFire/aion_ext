@@ -19,6 +19,8 @@ package org.openaion.gameserver.ai;
 import java.util.Map;
 import java.util.concurrent.Future;
 
+import javolution.util.FastMap;
+
 import org.openaion.gameserver.ai.desires.Desire;
 import org.openaion.gameserver.ai.desires.DesireQueue;
 import org.openaion.gameserver.ai.desires.impl.CounterBasedDesireFilter;
@@ -31,8 +33,6 @@ import org.openaion.gameserver.ai.state.handler.StateHandler;
 import org.openaion.gameserver.model.gameobjects.Creature;
 import org.openaion.gameserver.model.gameobjects.player.Player;
 import org.openaion.gameserver.utils.ThreadPoolManager;
-
-import javolution.util.FastMap;
 
 
 public abstract class AI<T extends Creature> implements Runnable

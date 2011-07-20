@@ -16,8 +16,8 @@
  */
 package org.openaion.gameserver.network.aion.clientpackets;
 
-import org.openaion.gameserver.model.gameobjects.player.Player;
 import org.openaion.gameserver.model.gameobjects.player.FriendList.Status;
+import org.openaion.gameserver.model.gameobjects.player.Player;
 import org.openaion.gameserver.network.aion.AionClientPacket;
 
 /**

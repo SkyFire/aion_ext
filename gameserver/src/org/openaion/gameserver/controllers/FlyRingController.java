@@ -16,13 +16,13 @@
  */
 package org.openaion.gameserver.controllers;
 
+import javolution.util.FastMap;
+
 import org.apache.log4j.Logger;
 import org.openaion.gameserver.controllers.movement.FlyRingObserver;
 import org.openaion.gameserver.model.flyring.FlyRing;
 import org.openaion.gameserver.model.gameobjects.VisibleObject;
 import org.openaion.gameserver.model.gameobjects.player.Player;
-
-import javolution.util.FastMap;
 
 
 /**

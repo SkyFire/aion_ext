@@ -20,10 +20,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.openaion.gameserver.configs.main.CustomConfig;
-
-
 import javolution.util.FastMap;
+
+import org.openaion.gameserver.configs.main.CustomConfig;
 
 /**
  * @author Sarynth

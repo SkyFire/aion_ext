@@ -16,6 +16,8 @@
  */
 package org.openaion.gameserver.services;
 
+import java.util.Set;
+
 import org.apache.log4j.Logger;
 import org.openaion.commons.database.dao.DAOManager;
 import org.openaion.gameserver.dao.InventoryDAO;
@@ -30,8 +32,6 @@ import org.openaion.gameserver.network.aion.serverpackets.SM_SYSTEM_MESSAGE;
 import org.openaion.gameserver.network.aion.serverpackets.SM_UPDATE_ITEM;
 import org.openaion.gameserver.utils.MathUtil;
 import org.openaion.gameserver.utils.PacketSendUtility;
-
-import java.util.Set;
 
 
 /**

@@ -18,12 +18,6 @@ package org.openaion.gameserver.dataholders;
 
 import gnu.trove.TIntObjectHashMap;
 
-import org.apache.log4j.Logger;
-import org.openaion.gameserver.model.templates.spawn.SpawnGroup;
-import org.openaion.gameserver.model.templates.spawn.SpawnTemplate;
-import org.openaion.gameserver.spawn.DayNightSpawnManager;
-import org.openaion.gameserver.spawn.SpawnEngine;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,6 +27,12 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+
+import org.apache.log4j.Logger;
+import org.openaion.gameserver.model.templates.spawn.SpawnGroup;
+import org.openaion.gameserver.model.templates.spawn.SpawnTemplate;
+import org.openaion.gameserver.spawn.DayNightSpawnManager;
+import org.openaion.gameserver.spawn.SpawnEngine;
 
 
 /**

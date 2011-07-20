@@ -27,7 +27,6 @@ import org.openaion.gameserver.dataholders.DataManager;
 import org.openaion.gameserver.model.gameobjects.VisibleObject;
 import org.openaion.gameserver.model.templates.WorldMapTemplate;
 
-
 import aionjHungary.geoEngine.GeoWorldLoader;
 import aionjHungary.geoEngine.models.GeoMap;
 import aionjHungary.geoEngine.scene.Spatial;

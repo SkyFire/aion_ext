@@ -17,6 +17,7 @@
 package org.openaion.gameserver.model.templates.bonus;
 
 import java.util.Collections;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;

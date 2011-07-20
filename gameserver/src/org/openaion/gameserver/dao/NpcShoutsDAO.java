@@ -19,10 +19,10 @@ package org.openaion.gameserver.dao;
 
 import java.util.List;
 
+import javolution.util.FastMap;
+
 import org.openaion.commons.database.dao.DAO;
 import org.openaion.gameserver.model.NpcShout;
-
-import javolution.util.FastMap;
 
 
 /**

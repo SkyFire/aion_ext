@@ -18,6 +18,8 @@ package org.openaion.gameserver.model.group;
 
 import java.util.Collection;
 
+import javolution.util.FastMap;
+
 import org.openaion.commons.objects.filter.ObjectFilter;
 import org.openaion.gameserver.configs.main.GroupConfig;
 import org.openaion.gameserver.model.gameobjects.AionObject;
@@ -30,8 +32,6 @@ import org.openaion.gameserver.network.aion.serverpackets.SM_LEAVE_GROUP_MEMBER;
 import org.openaion.gameserver.network.aion.serverpackets.SM_SYSTEM_MESSAGE;
 import org.openaion.gameserver.utils.MathUtil;
 import org.openaion.gameserver.utils.PacketSendUtility;
-
-import javolution.util.FastMap;
 
 
 /**

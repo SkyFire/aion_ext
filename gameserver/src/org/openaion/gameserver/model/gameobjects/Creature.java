@@ -16,8 +16,8 @@
  */
 package org.openaion.gameserver.model.gameobjects;
 
-import java.util.concurrent.Future;
 import java.util.Map;
+import java.util.concurrent.Future;
 
 import javolution.util.FastMap;
 

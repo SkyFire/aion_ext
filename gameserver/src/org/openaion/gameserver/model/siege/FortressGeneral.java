@@ -16,6 +16,8 @@
  */
 package org.openaion.gameserver.model.siege;
 
+import javolution.util.FastList;
+
 import org.openaion.gameserver.ai.npcai.AggressiveAi;
 import org.openaion.gameserver.ai.npcai.MonsterAi;
 import org.openaion.gameserver.configs.main.CustomConfig;
@@ -25,8 +27,6 @@ import org.openaion.gameserver.model.gameobjects.Npc;
 import org.openaion.gameserver.model.group.PlayerGroup;
 import org.openaion.gameserver.model.templates.VisibleObjectTemplate;
 import org.openaion.gameserver.model.templates.spawn.SpawnTemplate;
-
-import javolution.util.FastList;
 
 
 public class FortressGeneral extends Npc

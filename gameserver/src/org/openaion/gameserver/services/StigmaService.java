@@ -22,7 +22,6 @@ import org.apache.log4j.Logger;
 import org.openaion.gameserver.configs.main.CustomConfig;
 import org.openaion.gameserver.dataholders.DataManager;
 import org.openaion.gameserver.model.DescriptionId;
-import org.openaion.gameserver.model.Race;
 import org.openaion.gameserver.model.gameobjects.Item;
 import org.openaion.gameserver.model.gameobjects.PersistentState;
 import org.openaion.gameserver.model.gameobjects.player.Player;

@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.concurrent.Future;
 
 import org.openaion.gameserver.controllers.movement.ActionObserver;
-import org.openaion.gameserver.controllers.movement.StartMovingListener;
 import org.openaion.gameserver.controllers.movement.ActionObserver.ObserverType;
+import org.openaion.gameserver.controllers.movement.StartMovingListener;
 import org.openaion.gameserver.dataholders.DataManager;
 import org.openaion.gameserver.model.ChatType;
 import org.openaion.gameserver.model.EmotionType;

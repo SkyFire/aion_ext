@@ -18,8 +18,8 @@ package org.openaion.gameserver.network.chatserver.clientpackets;
 
 import org.apache.log4j.Logger;
 import org.openaion.commons.utils.ExitCode;
-import org.openaion.gameserver.network.chatserver.CsClientPacket;
 import org.openaion.gameserver.network.chatserver.ChatServerConnection.State;
+import org.openaion.gameserver.network.chatserver.CsClientPacket;
 import org.openaion.gameserver.network.chatserver.serverpackets.SM_CS_AUTH;
 import org.openaion.gameserver.services.ChatService;
 import org.openaion.gameserver.utils.ThreadPoolManager;

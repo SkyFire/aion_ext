@@ -23,6 +23,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import javolution.util.FastMap;
+
 import org.openaion.commons.utils.Rnd;
 import org.openaion.gameserver.model.gameobjects.player.Player;
 import org.openaion.gameserver.model.gameobjects.stats.modifiers.Executor;
@@ -32,8 +34,6 @@ import org.openaion.gameserver.utils.ThreadPoolManager;
 import org.openaion.gameserver.world.MapRegion;
 import org.openaion.gameserver.world.World;
 import org.openaion.gameserver.world.WorldMap;
-
-import javolution.util.FastMap;
 
 /**
  * This service in future should schedule job that is changing weather sometimes in region and probably sends to all

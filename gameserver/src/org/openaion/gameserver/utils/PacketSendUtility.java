@@ -24,7 +24,6 @@ import org.openaion.gameserver.model.gameobjects.stats.modifiers.Executor;
 import org.openaion.gameserver.model.legion.Legion;
 import org.openaion.gameserver.network.aion.AionServerPacket;
 import org.openaion.gameserver.network.aion.serverpackets.SM_MESSAGE;
-import org.openaion.gameserver.utils.Util;
 
 /**
  * This class contains static methods, which are utility methods, all of them are interacting only with objects passed

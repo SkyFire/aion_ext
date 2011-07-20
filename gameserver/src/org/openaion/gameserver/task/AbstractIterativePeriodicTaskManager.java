@@ -18,9 +18,9 @@ package org.openaion.gameserver.task;
 
 import java.util.Set;
 
-import org.openaion.commons.utils.concurrent.RunnableStatsManager;
-
 import javolution.util.FastSet;
+
+import org.openaion.commons.utils.concurrent.RunnableStatsManager;
 
 
 /**

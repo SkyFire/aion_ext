@@ -21,6 +21,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.Future;
 
+import javolution.util.FastMap;
+
 import org.apache.log4j.Logger;
 import org.openaion.commons.utils.Rnd;
 import org.openaion.gameserver.ai.events.Event;
@@ -43,11 +45,11 @@ import org.openaion.gameserver.model.gameobjects.stats.modifiers.Executor;
 import org.openaion.gameserver.model.templates.stats.NpcRank;
 import org.openaion.gameserver.network.aion.serverpackets.SM_ATTACK;
 import org.openaion.gameserver.network.aion.serverpackets.SM_ATTACK_STATUS;
+import org.openaion.gameserver.network.aion.serverpackets.SM_ATTACK_STATUS.TYPE;
 import org.openaion.gameserver.network.aion.serverpackets.SM_LOOKATOBJECT;
 import org.openaion.gameserver.network.aion.serverpackets.SM_MOVE;
 import org.openaion.gameserver.network.aion.serverpackets.SM_SKILL_CANCEL;
 import org.openaion.gameserver.network.aion.serverpackets.SM_SYSTEM_MESSAGE;
-import org.openaion.gameserver.network.aion.serverpackets.SM_ATTACK_STATUS.TYPE;
 import org.openaion.gameserver.restrictions.RestrictionsManager;
 import org.openaion.gameserver.skill.SkillEngine;
 import org.openaion.gameserver.skill.action.DamageType;
@@ -57,8 +59,6 @@ import org.openaion.gameserver.skill.model.SkillType;
 import org.openaion.gameserver.utils.PacketSendUtility;
 import org.openaion.gameserver.utils.ThreadPoolManager;
 import org.openaion.gameserver.world.World;
-
-import javolution.util.FastMap;
 
 
 /**

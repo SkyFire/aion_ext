@@ -17,9 +17,9 @@
 package org.openaion.gameserver.network.factories;
 
 
+import org.openaion.gameserver.network.loginserver.LoginServerConnection.State;
 import org.openaion.gameserver.network.loginserver.LsClientPacket;
 import org.openaion.gameserver.network.loginserver.LsPacketHandler;
-import org.openaion.gameserver.network.loginserver.LoginServerConnection.State;
 import org.openaion.gameserver.network.loginserver.clientpackets.CM_ACCOUNT_RECONNECT_KEY;
 import org.openaion.gameserver.network.loginserver.clientpackets.CM_ACOUNT_AUTH_RESPONSE;
 import org.openaion.gameserver.network.loginserver.clientpackets.CM_BAN_RESPONSE;
