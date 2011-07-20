@@ -19,8 +19,8 @@ package org.openaion.gameserver.model.gameobjects.stats;
 import org.openaion.gameserver.model.gameobjects.Creature;
 import org.openaion.gameserver.model.gameobjects.Summon;
 import org.openaion.gameserver.model.gameobjects.player.Player;
-import org.openaion.gameserver.network.aion.serverpackets.SM_ATTACK_STATUS.TYPE;
 import org.openaion.gameserver.network.aion.serverpackets.SM_SUMMON_UPDATE;
+import org.openaion.gameserver.network.aion.serverpackets.SM_ATTACK_STATUS.TYPE;
 import org.openaion.gameserver.services.LifeStatsRestoreService;
 import org.openaion.gameserver.utils.PacketSendUtility;
 

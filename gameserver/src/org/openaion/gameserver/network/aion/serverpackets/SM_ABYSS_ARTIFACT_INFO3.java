@@ -19,12 +19,12 @@ package org.openaion.gameserver.network.aion.serverpackets;
 import java.nio.ByteBuffer;
 import java.util.Collection;
 
-import javolution.util.FastList;
-
 import org.openaion.gameserver.model.siege.SiegeLocation;
 import org.openaion.gameserver.model.siege.SiegeType;
 import org.openaion.gameserver.network.aion.AionConnection;
 import org.openaion.gameserver.network.aion.AionServerPacket;
+
+import javolution.util.FastList;
 
 
 /**

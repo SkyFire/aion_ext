@@ -19,10 +19,11 @@ package org.openaion.gameserver.utils.chathandlers;
 
 import java.io.File;
 
-import javolution.util.FastList;
-
 import org.openaion.commons.scripting.scriptmanager.ScriptManager;
 import org.openaion.gameserver.GameServerError;
+
+
+import javolution.util.FastList;
 
 /**
  * This class is managing a list of all chat handlers.

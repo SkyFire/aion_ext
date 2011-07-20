@@ -24,8 +24,6 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 import org.openaion.commons.utils.Rnd;
 import org.openaion.gameserver.dataholders.DataManager;
@@ -45,6 +43,8 @@ import org.openaion.gameserver.skill.model.SkillTemplate;
 import org.openaion.gameserver.skill.model.SkillType;
 import org.openaion.gameserver.skill.model.SpellStatus;
 import org.openaion.gameserver.utils.stats.StatFunctions;
+
+import javolution.util.FastList;
 
 
 /**

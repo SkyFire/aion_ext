@@ -20,8 +20,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ScheduledFuture;
 
-import javolution.util.FastMap;
-
 import org.openaion.gameserver.configs.main.GroupConfig;
 import org.openaion.gameserver.dataholders.DataManager;
 import org.openaion.gameserver.model.Race;
@@ -51,6 +49,8 @@ import org.openaion.gameserver.utils.idfactory.IDFactory;
 import org.openaion.gameserver.utils.stats.StatFunctions;
 import org.openaion.gameserver.world.WorldMapInstance;
 import org.openaion.gameserver.world.WorldType;
+
+import javolution.util.FastMap;
 
 
 /**

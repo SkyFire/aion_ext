@@ -1,7 +1,7 @@
 package org.openaion.gameserver.services;
 
-import java.util.Collection;
 import java.util.HashMap;
+import java.util.Collection;
 
 import org.openaion.gameserver.model.Race;
 import org.openaion.gameserver.model.gameobjects.LFGApplyGroup;

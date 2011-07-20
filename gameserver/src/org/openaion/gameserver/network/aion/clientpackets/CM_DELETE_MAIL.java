@@ -17,6 +17,7 @@
 package org.openaion.gameserver.network.aion.clientpackets;
 
 import org.apache.log4j.Logger;
+
 import org.openaion.gameserver.model.gameobjects.player.Player;
 import org.openaion.gameserver.network.aion.AionClientPacket;
 import org.openaion.gameserver.services.MailService;

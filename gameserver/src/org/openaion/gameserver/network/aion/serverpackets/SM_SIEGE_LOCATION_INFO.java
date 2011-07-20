@@ -19,13 +19,13 @@ package org.openaion.gameserver.network.aion.serverpackets;
 import java.nio.ByteBuffer;
 import java.util.Map;
 
-import javolution.util.FastMap;
-
 import org.openaion.gameserver.configs.main.SiegeConfig;
 import org.openaion.gameserver.model.siege.SiegeLocation;
 import org.openaion.gameserver.network.aion.AionConnection;
 import org.openaion.gameserver.network.aion.AionServerPacket;
 import org.openaion.gameserver.services.SiegeService;
+
+import javolution.util.FastMap;
 
 
 /**

@@ -24,10 +24,10 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
-import javolution.util.FastMap;
-
 import org.openaion.gameserver.quest.QuestEngine;
 import org.openaion.gameserver.quest.handlers.template.MonsterHunt;
+
+import javolution.util.FastMap;
 
 
 /**

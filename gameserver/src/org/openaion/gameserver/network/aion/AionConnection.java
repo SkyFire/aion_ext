@@ -19,10 +19,10 @@ package org.openaion.gameserver.network.aion;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
-import java.util.Arrays;
-import java.util.List;
 
 import javolution.util.FastList;
+import java.util.Arrays;
+import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.openaion.commons.network.AConnection;

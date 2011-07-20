@@ -24,8 +24,8 @@ import org.openaion.gameserver.model.gameobjects.Creature;
 import org.openaion.gameserver.model.gameobjects.player.Player;
 import org.openaion.gameserver.skill.action.DamageType;
 import org.openaion.gameserver.skill.model.DashParam;
-import org.openaion.gameserver.skill.model.DashParam.DashType;
 import org.openaion.gameserver.skill.model.Effect;
+import org.openaion.gameserver.skill.model.DashParam.DashType;
 import org.openaion.gameserver.utils.MathUtil;
 import org.openaion.gameserver.world.World;
 

@@ -16,8 +16,6 @@
  */
 package org.openaion.gameserver.services;
 
-import java.util.List;
-
 import org.apache.log4j.Logger;
 import org.openaion.commons.database.dao.DAOManager;
 import org.openaion.gameserver.configs.main.GSConfig;
@@ -31,6 +29,8 @@ import org.openaion.gameserver.network.aion.serverpackets.SM_SYSTEM_MESSAGE;
 import org.openaion.gameserver.utils.PacketSendUtility;
 import org.openaion.gameserver.utils.idfactory.IDFactory;
 import org.openaion.gameserver.world.World;
+
+import java.util.List;
 
 
 /**

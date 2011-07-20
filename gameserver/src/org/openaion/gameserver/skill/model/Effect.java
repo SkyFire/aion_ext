@@ -22,8 +22,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Future;
 
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 import org.openaion.commons.utils.Rnd;
 import org.openaion.gameserver.controllers.attack.AttackStatus;
@@ -46,6 +44,8 @@ import org.openaion.gameserver.skill.effect.SkillLauncherEffect;
 import org.openaion.gameserver.skill.effect.TransformEffect;
 import org.openaion.gameserver.utils.PacketSendUtility;
 import org.openaion.gameserver.utils.ThreadPoolManager;
+
+import javolution.util.FastMap;
 
 
 /**

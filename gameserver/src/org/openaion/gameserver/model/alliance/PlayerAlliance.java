@@ -20,8 +20,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import javolution.util.FastMap;
-
 import org.openaion.gameserver.configs.main.GroupConfig;
 import org.openaion.gameserver.model.gameobjects.AionObject;
 import org.openaion.gameserver.model.gameobjects.Npc;
@@ -33,6 +31,8 @@ import org.openaion.gameserver.network.aion.serverpackets.SM_SYSTEM_MESSAGE;
 import org.openaion.gameserver.services.AllianceService;
 import org.openaion.gameserver.utils.MathUtil;
 import org.openaion.gameserver.utils.PacketSendUtility;
+
+import javolution.util.FastMap;
 
 
 /**

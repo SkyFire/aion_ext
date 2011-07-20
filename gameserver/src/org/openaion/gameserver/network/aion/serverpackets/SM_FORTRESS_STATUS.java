@@ -18,14 +18,14 @@ package org.openaion.gameserver.network.aion.serverpackets;
 
 import java.nio.ByteBuffer;
 
-import javolution.util.FastList;
-
 import org.openaion.gameserver.model.siege.Influence;
 import org.openaion.gameserver.model.siege.SiegeLocation;
 import org.openaion.gameserver.model.siege.SiegeType;
 import org.openaion.gameserver.network.aion.AionConnection;
 import org.openaion.gameserver.network.aion.AionServerPacket;
 import org.openaion.gameserver.services.SiegeService;
+
+import javolution.util.FastList;
 
 
 /**

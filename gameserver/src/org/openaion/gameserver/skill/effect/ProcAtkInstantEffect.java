@@ -22,8 +22,8 @@ import javax.xml.bind.annotation.XmlType;
 
 import org.openaion.gameserver.model.DescriptionId;
 import org.openaion.gameserver.model.gameobjects.player.Player;
-import org.openaion.gameserver.network.aion.serverpackets.SM_ATTACK_STATUS.TYPE;
 import org.openaion.gameserver.network.aion.serverpackets.SM_SYSTEM_MESSAGE;
+import org.openaion.gameserver.network.aion.serverpackets.SM_ATTACK_STATUS.TYPE;
 import org.openaion.gameserver.skill.action.DamageType;
 import org.openaion.gameserver.skill.model.Effect;
 import org.openaion.gameserver.utils.PacketSendUtility;

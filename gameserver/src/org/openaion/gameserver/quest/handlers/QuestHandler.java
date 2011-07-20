@@ -18,6 +18,7 @@ package org.openaion.gameserver.quest.handlers;
 
 import java.util.Collections;
 
+import org.apache.log4j.Logger;
 import org.openaion.gameserver.dataholders.DataManager;
 import org.openaion.gameserver.model.EmotionType;
 import org.openaion.gameserver.model.NpcType;

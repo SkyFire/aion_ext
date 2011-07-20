@@ -19,8 +19,6 @@ package org.openaion.gameserver.services;
 import java.util.ArrayList;
 import java.util.List;
 
-import javolution.util.FastMap;
-
 import org.openaion.gameserver.configs.main.CustomConfig;
 import org.openaion.gameserver.configs.main.GroupConfig;
 import org.openaion.gameserver.controllers.attack.AggroInfo;
@@ -36,6 +34,8 @@ import org.openaion.gameserver.utils.MathUtil;
 import org.openaion.gameserver.utils.PacketSendUtility;
 import org.openaion.gameserver.utils.stats.AbyssRankEnum;
 import org.openaion.gameserver.utils.stats.StatFunctions;
+
+import javolution.util.FastMap;
 
 
 /**

@@ -19,10 +19,10 @@ package org.openaion.gameserver.world.container;
 import java.util.Iterator;
 import java.util.Map;
 
-import javolution.util.FastMap;
-
 import org.openaion.gameserver.model.legion.Legion;
 import org.openaion.gameserver.world.exceptions.DuplicateAionObjectException;
+
+import javolution.util.FastMap;
 
 
 /**

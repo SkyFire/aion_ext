@@ -16,9 +16,9 @@
  */
 package org.openaion.gameserver.network.rdc.commands;
 
-import javolution.util.FastMap;
-
 import org.openaion.gameserver.network.rdc.commands.impl.AbyssStatus;
+
+import javolution.util.FastMap;
 
 /**
  * @author Sylar

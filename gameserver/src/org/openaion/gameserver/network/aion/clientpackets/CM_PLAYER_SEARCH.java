@@ -21,8 +21,8 @@ import java.util.List;
 
 import org.openaion.gameserver.configs.administration.AdminConfig;
 import org.openaion.gameserver.configs.main.CustomConfig;
-import org.openaion.gameserver.model.gameobjects.player.FriendList.Status;
 import org.openaion.gameserver.model.gameobjects.player.Player;
+import org.openaion.gameserver.model.gameobjects.player.FriendList.Status;
 import org.openaion.gameserver.model.gameobjects.stats.modifiers.Executor;
 import org.openaion.gameserver.network.aion.AionClientPacket;
 import org.openaion.gameserver.network.aion.serverpackets.SM_PLAYER_SEARCH;

@@ -16,9 +16,9 @@
  */
 package org.openaion.gameserver.network.factories;
 
-import org.openaion.gameserver.network.chatserver.ChatServerConnection.State;
 import org.openaion.gameserver.network.chatserver.CsClientPacket;
 import org.openaion.gameserver.network.chatserver.CsPacketHandler;
+import org.openaion.gameserver.network.chatserver.ChatServerConnection.State;
 import org.openaion.gameserver.network.chatserver.clientpackets.CM_CS_AUTH_RESPONSE;
 import org.openaion.gameserver.network.chatserver.clientpackets.CM_CS_PLAYER_AUTH_RESPONSE;
 
