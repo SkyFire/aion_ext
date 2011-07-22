@@ -19956,6 +19956,12 @@
 			<selectable_reward_item count="1" item_id="114500829"/>
 			<selectable_reward_item count="1" item_id="114600786"/>
 		</rewards>
+		<finished_quest_conds>
+			<condition>
+				<quest id="1099"/>
+				<quest id="1989"/>
+			</condition>
+		</finished_quest_conds>
 		<quest_work_items>
 			<quest_work_item count="1" item_id="182206086"/>
 			<quest_work_item count="1" item_id="182206087"/>
@@ -23873,6 +23879,12 @@
 			<selectable_reward_item count="1" item_id="114500830"/>
 			<selectable_reward_item count="1" item_id="114600787"/>
 		</rewards>
+		<finished_quest_conds>
+			<condition>
+				<quest id="2099"/>
+				<quest id="2989"/>
+			</condition>
+		</finished_quest_conds>
 		<quest_work_items>
 			<quest_work_item count="1" item_id="182207112"/>
 			<quest_work_item count="1" item_id="182207113"/>

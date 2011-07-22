@@ -581,7 +581,7 @@ public class DropService
 
 		if(CustomConfig.ANNOUNCE_RAREDROPS && !player.getInventory().isFull())
 		{
-			ItemTemplate itemTemplate = ItemService.getItemTemplate(requestedItem.getDropTemplate().getItemId());
+			final ItemTemplate itemTemplate = ItemService.getItemTemplate(requestedItem.getDropTemplate().getItemId());
 			if(itemTemplate.getItemQuality() == ItemQuality.UNIQUE || itemTemplate.getItemQuality() == ItemQuality.EPIC)
 			{
 				final int pRaceId = player.getCommonData().getRace().getRaceId();
@@ -605,9 +605,7 @@ public class DropService
 
 						if(oRaceId == pRaceId && oMap == pMap && oRegion == pRegion && oInstance == pInstance)
 						{
-							// TODO send a message id instead of a string
-							PacketSendUtility.sendMessage(other, player.getCommonData().getName() + " has acquired "
-								+ "[item:" + requestedItem.getDropTemplate().getItemId() + ";ver1;;]");
+						    PacketSendUtility.sendPacket(other,SM_SYSTEM_MESSAGE.STR_FORCE_ITEM_WIN(player.getCommonData().getName(),new DescriptionId(itemTemplate.getNameId())));
 						}
 						return true;
 					}

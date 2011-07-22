@@ -11,6 +11,7 @@ import org.openaion.gameserver.model.gameobjects.Kisk;
 import org.openaion.gameserver.model.gameobjects.Npc;
 import org.openaion.gameserver.model.gameobjects.Servant;
 import org.openaion.gameserver.model.gameobjects.Summon;
+import org.openaion.gameserver.model.gameobjects.Trap;
 import org.openaion.gameserver.model.gameobjects.player.Player;
 import org.openaion.gameserver.model.gameobjects.stats.StatEnum;
 import org.openaion.gameserver.model.items.ItemSlot;
@@ -135,6 +136,22 @@ public class SM_NPC_INFO extends AionServerPacket
 			masterName = "LOST";
 		}
 	}
+	
+	    public SM_NPC_INFO(Trap trap) {
+        this.npc = trap;
+        npcTemplate = trap.getObjectTemplate();
+        npcTypeId = npcTemplate.getNpcType().getId();
+        npcId = trap.getNpcId();
+        Player owner = (Player)trap.getMaster();
+        if (owner != null) {
+            masterObjId = owner.getObjectId();
+            masterName = owner.getName();
+            speed = 0;
+        } else {
+            masterName = "LOST";
+        }
+    }
+	
 	/**
 	 *
 	 * * @param homing

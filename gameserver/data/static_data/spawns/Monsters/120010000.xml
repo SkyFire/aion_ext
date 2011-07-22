@@ -17,13 +17,13 @@
 		<object x="973.305" y="1103.815" z="195.8803" h="106"/>
 	</spawn>
 	<!-- Training Dummy lvl:1 -->
-	<spawn map="120010000" npcid="700581" pool="3" interval="295">
+	<spawn map="120010000" npcid="700574" pool="3" interval="295">
 		<object x="1314.38" y="1259.26" z="208.5403" h="30"/>
 		<object x="1326.51" y="1259.26" z="208.5403" h="30"/>
 		<object x="1229.72" y="1262.01" z="208.54" h="30"/>
 	</spawn>
 	<!-- Training Dummy lvl:1 -->
-	<spawn map="120010000" npcid="700592" pool="3" interval="295">
+	<spawn map="120010000" npcid="700574" pool="3" interval="295">
 		<object x="1320.63" y="1259.26" z="208.5403" h="30"/>
 		<object x="1236.14" y="1262.01" z="208.54" h="30"/>
 		<object x="1223.631" y="1262.009" z="208.54" h="30"/>

@@ -1605,6 +1605,15 @@ public class SM_SYSTEM_MESSAGE extends AionServerPacket
 	public static final SM_SYSTEM_MESSAGE	STR_CANNOT_REGISTER_BINDSTONE_FULL		= new SM_SYSTEM_MESSAGE(1400247);
 
 	public static final SM_SYSTEM_MESSAGE	STR_CANNOT_USE_MAGIC_PASSAGE		= new SM_SYSTEM_MESSAGE(1300150);
+	/**
+	 * add by xj2479564
+	 * @param name
+	 * @param itemDescId
+	 */
+	public static SM_SYSTEM_MESSAGE STR_FORCE_ITEM_WIN(String name,DescriptionId itemDescId)
+    {
+        return new SM_SYSTEM_MESSAGE(1390003,name,itemDescId);
+    }
 
 	/***
 	 *  fusion/break  Weapons

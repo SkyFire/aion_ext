@@ -602,7 +602,7 @@ Forteresses et Artefacts Abyssaux-->
 		</instance_portal>
 		<!-- Fortress General -->
 		<fortress_general>
-			<baseinfo npcid_dr="269915" npcid_da="269910" npcid_li="269905" x="1772.2528" y="2268.5317" z="2906.9924" h="105"/>
+			<baseinfo npcid_dr="269915" npcid_da="269910" npcid_li="269905" x="1775.8071" y="2267.5813" z="2903.7485" h="112"/>
 		</fortress_general>
 		<!--Fortress Gate A-->
 		<fortress_gate>
@@ -956,7 +956,7 @@ Forteresses et Artefacts Abyssaux-->
 		</instance_portal>
 		<!-- Fortress General -->
 		<fortress_general>
-			<baseinfo npcid_dr="263015" npcid_da="263010" npcid_li="263005" x="2789.9211" y="2608.7219" z="1507.1716" h="0"/>
+			<baseinfo npcid_dr="263015" npcid_da="263010" npcid_li="263005" x="2791.1482" y="2608.7207" z="1503.3386" h="0"/>
 		</fortress_general>
 		<!--Fortress Gate A-->
 		<fortress_gate>
@@ -1324,7 +1324,7 @@ Forteresses et Artefacts Abyssaux-->
 		</instance_portal>
 		<!-- Fortress General -->
 		<fortress_general>
-			<baseinfo npcid_dr="264515" npcid_da="264510" npcid_li="264505" x="1393.3375" y="1180.9839" z="1473.4489" h="27"/>
+			<baseinfo npcid_dr="264515" npcid_da="264510" npcid_li="264505" x="1393.7294" y="1183.0966" z="1468.8658" h="25"/>
 		</fortress_general>
 		<!--Fortress Gate A-->
 		<fortress_gate>
@@ -1555,7 +1555,7 @@ Forteresses et Artefacts Abyssaux-->
 		</instance_portal>
 		<!-- Fortress General -->
 		<fortress_general>
-			<baseinfo npcid_dr="270815" npcid_da="270810" npcid_li="270805" x="693.87518" y="2984.1997" z="2769.8257" h="105"/>
+			<baseinfo npcid_dr="270815" npcid_da="270810" npcid_li="270805" x="694.6087" y="2982.856" z="2765.6392" h="105"/>
 		</fortress_general>
 		<!--Fortress Gate A-->
 		<fortress_gate>
@@ -2224,7 +2224,7 @@ Forteresses et Artefacts Abyssaux-->
 		</instance_portal>
 		<!-- Fortress General -->
 		<fortress_general>
-			<baseinfo npcid_dr="267814" npcid_da="267809" npcid_li="267804" x="2070.1191" y="1284.1936" z="2920.6848" h="45"/>
+			<baseinfo npcid_dr="267815" npcid_da="267810" npcid_li="267805" x="2070.5688" y="1283.5447" z="2917.6615" h="44"/>
 		</fortress_general>
 		<!--Fortress Gate A-->
 		<fortress_gate>
@@ -2502,7 +2502,7 @@ Forteresses et Artefacts Abyssaux-->
 		</instance_portal>
 		<!-- Fortress General -->
 		<fortress_general>
-			<baseinfo npcid_dr="269014" npcid_da="269009" npcid_li="269004" x="2495.3391" y="2119.5603" z="3007.3096" h="77"/>
+			<baseinfo npcid_dr="269015" npcid_da="269010" npcid_li="269005" x="2495.623" y="2120.5562" z="3004.0457" h="76"/>
 		</fortress_general>
 		<!--Fortress Gate A-->
 		<fortress_gate>
@@ -2865,7 +2865,7 @@ Forteresses et Artefacts Abyssaux-->
 		</instance_portal>
 		<!-- Fortress General -->
 		<fortress_general>
-			<baseinfo npcid_dr="266315" npcid_da="266310" npcid_li="266305" x="2678.0686" y="807.02557" z="2829.4734" h="77"/>
+			<baseinfo npcid_dr="266315" npcid_da="266310" npcid_li="266305" x="2677.2605" y="805.97107" z="2826.58" h="76"/>
 		</fortress_general>
 		<!--Fortress Gate A-->
 		<fortress_gate>

@@ -67,6 +67,7 @@ import org.openaion.gameserver.model.gameobjects.VisibleObject;
 import org.openaion.gameserver.model.gameobjects.player.Player;
 import org.openaion.gameserver.model.gameobjects.state.CreatureState;
 import org.openaion.gameserver.model.gameobjects.stats.NpcLifeStats;
+import org.openaion.gameserver.model.gameobjects.state.CreatureVisualState;
 import org.openaion.gameserver.model.gameobjects.stats.StatEnum;
 import org.openaion.gameserver.model.siege.AethericField;
 import org.openaion.gameserver.model.siege.Artifact;
@@ -318,6 +319,7 @@ public class SpawnEngine
 		trap.setEffectController(new EffectController(trap));
 		trap.setCreator(creator);
 		trap.setSkillId(skillId);
+		trap.setVisualState(CreatureVisualState.HIDE3);
 		trap.getController().onRespawn();
 		bringIntoWorld(trap, spawn, instanceIndex);
 		return trap;

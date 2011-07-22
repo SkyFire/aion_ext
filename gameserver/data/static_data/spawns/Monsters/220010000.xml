@@ -1174,11 +1174,11 @@
 		<object x="433.04706" y="1936.5977" z="309.78146" h="72"/>
 	</spawn>
 	<!-- Training Dummy (Monster Normal lvl:5)-->
-	<spawn map="220010000" npcid="700103" pool="1" interval="30">
+	<spawn map="220010000" npcid="700574" pool="1" interval="30">
 		<object x="606.3851" y="2452.5564" z="280.5" h="40"/>
 	</spawn>
 	<!-- Training Dummy (Monster Normal lvl:5)-->
-	<spawn map="220010000" npcid="700102" pool="1" interval="30">
+	<spawn map="220010000" npcid="700574" pool="1" interval="30">
 		<object x="609.4572" y="2454.6704" z="280.5" h="46"/>
 	</spawn>
 	<!-- Treasure Box (Monster Normal lvl:9)-->

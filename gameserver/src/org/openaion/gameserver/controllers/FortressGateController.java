@@ -75,7 +75,9 @@ public class FortressGateController extends NpcController
 	@Override
 	public void onDialogRequest(Player p)
 	{
-		if (p.getCommonData().getRace()==getOwner().getObjectTemplate().getRace())
+		
+		if(((p.getCommonData().getRace() == Race.ELYOS)&&(getOwner().getObjectTemplate().getRace()==Race.PC_LIGHT_CASTLE_DOOR))||((p.getCommonData().getRace() == Race.ASMODIANS)&&(getOwner().getObjectTemplate().getRace()==Race.PC_DARK_CASTLE_DOOR)))
+		
 		{
 			RequestResponseHandler gateHandler = new RequestResponseHandler(p)
 			{

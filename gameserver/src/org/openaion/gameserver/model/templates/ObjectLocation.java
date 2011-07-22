@@ -1,4 +1,4 @@
-package org.aionemu.gameserver.model.templates;
+package org.openaion.gameserver.model.templates;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

@@ -5372,12 +5372,12 @@
 		<object x="1280.92800" y="2725.69480" z="302.50000" h="120"/>
 	</spawn>
 	<!-- Training Dummy (Monster Normal lvl:1)-->
-	<spawn map="210020000" npcid="700572" pool="2" interval="150">
+	<spawn map="210020000" npcid="700574" pool="2" interval="150">
 		<object x="316.05502" y="2734.5198" z="182.44943" h="11"/>
 		<object x="317.73212" y="2732.1543" z="182.17809" h="11"/>
 	</spawn>
 	<!-- Training Dummy (Monster Normal lvl:1)-->
-	<spawn map="210020000" npcid="700589" pool="2" interval="150">
+	<spawn map="210020000" npcid="700574" pool="2" interval="150">
 		<object x="331.60379" y="2749.675" z="182.56752" h="74"/>
 		<object x="333.80203" y="2747.5735" z="182.55017" h="74"/>
 	</spawn>

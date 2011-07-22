@@ -2676,11 +2676,11 @@
 		<object x="2112.58500" y="2556.74800" z="342.70830" h="89"/>
 	</spawn>
 	<!-- Training Dummy (Monster Normal lvl:5) (from client spawn)-->
-	<spawn map="220030000" npcid="700133" pool="1" interval="150">
+	<spawn map="220030000" npcid="700574" pool="1" interval="150">
 		<object x="1944.2072" y="768.8318" z="262.18994" h="115"/>
 	</spawn>
 	<!-- Training Dummy (Monster Normal lvl:5) (from client spawn)-->
-	<spawn map="220030000" npcid="700103" pool="1" interval="150">
+	<spawn map="220030000" npcid="700574" pool="1" interval="150">
 		<object x="1939.4875" y="769.198" z="261.6327" h="13"/>
 	</spawn>
 	<!-- Transparent Waterworm (Monster Normal lvl:18) (from client spawn)-->

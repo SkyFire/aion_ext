@@ -36,6 +36,7 @@ import org.openaion.gameserver.model.gameobjects.Kisk;
 import org.openaion.gameserver.model.gameobjects.Npc;
 import org.openaion.gameserver.model.gameobjects.StaticObject;
 import org.openaion.gameserver.model.gameobjects.Summon;
+import org.openaion.gameserver.model.gameobjects.Trap;
 import org.openaion.gameserver.model.gameobjects.VisibleObject;
 import org.openaion.gameserver.model.gameobjects.player.Player;
 import org.openaion.gameserver.model.gameobjects.player.SkillListEntry;
@@ -140,6 +141,9 @@ public class PlayerController extends CreatureController<Player>
 				PacketSendUtility.sendPacket(getOwner(), new SM_PET(3, player.getToyPet()));
 			}
 			getOwner().getEffectController().sendEffectIconsTo((Player) object);
+			} else if (object instanceof Trap) {
+            Trap trap = (Trap)object;
+            PacketSendUtility.sendPacket(getOwner(), new SM_NPC_INFO(trap));
 		}
 		else if (object instanceof Kisk)
 		{

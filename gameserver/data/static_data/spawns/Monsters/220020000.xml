@@ -6355,17 +6355,17 @@
 		<object x="2680.9531" y="442.25861" z="218.15791" h="31" />
 	</spawn>
 	<!-- Training Dummy (Normal lvl:5)-->
-	<spawn map="220020000" npcid="700103" interval="295">
+	<spawn map="220020000" npcid="700574" interval="295">
 		<object x="2681.0327" y="456.68912" z="217.115" h="61" />
 		<object x="2681.1243" y="461.11148" z="217.115" h="61" />
 	</spawn>
 	<!-- Training Dummy (Normal lvl:1)-->
-	<spawn map="220020000" npcid="700582" interval="295">
+	<spawn map="220020000" npcid="700574" interval="295">
 		<object x="270.87897" y="2376.9048" z="444" h="101" />
 		<object x="272.96631" y="2377.8928" z="443.82758" h="101" />
 	</spawn>
 	<!-- Training Dummy (Normal lvl:1)-->
-	<spawn map="220020000" npcid="700593" interval="295">
+	<spawn map="220020000" npcid="700574" interval="295">
 		<object x="269.82294" y="2372.7461" z="443.3558" h="10" />
 		<object x="276.8851" y="2376.3298" z="443.31726" h="80" />
 	</spawn>

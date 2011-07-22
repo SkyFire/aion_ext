@@ -6619,7 +6619,7 @@
 		<object x="2954.2925" y="2616.3408" z="682.125" h="92" />
 	</spawn>
 	<!-- Training Dummy (Monster Normal lvl:5)-->
-	<spawn map="220040000" npcid="700103" interval="295">
+	<spawn map="220040000" npcid="700574" interval="295">
 		<object x="2559.2844" y="2925.5544" z="689" h="91" />
 		<object x="2565.678" y="2927.2881" z="689" h="93" />
 		<object x="2571.7285" y="2928.7644" z="689" h="93" />
@@ -6630,12 +6630,12 @@
 		<object x="2949.2781" y="2617.8101" z="684" h="111" />
 	</spawn>
 	<!-- Training Dummy (Monster Normal lvl:1)-->
-	<spawn map="220040000" npcid="700583" interval="295">
+	<spawn map="220040000" npcid="700574" interval="295">
 		<object x="395.72638" y="291.35349" z="230.71693" h="70" />
 		<object x="398.07657" y="290.14673" z="231.96471" h="20" />
 	</spawn>
 	<!-- Training Dummy (Monster Normal lvl:1)-->
-	<spawn map="220040000" npcid="700594" interval="295">
+	<spawn map="220040000" npcid="700574" interval="295">
 		<object x="389.4353" y="296.53616" z="230.71693" h="22" />
 		<object x="391.16342" y="294.87106" z="230.71693" h="70" />
 	</spawn>

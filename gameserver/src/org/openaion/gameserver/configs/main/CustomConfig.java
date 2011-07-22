@@ -67,6 +67,12 @@ public class CustomConfig
 	 */
 	@Property(key = "gameserver.enable.simple.2ndclass", defaultValue = "false")
 	public static boolean		ENABLE_SIMPLE_2NDCLASS;
+	
+	/**
+	 * Enable the Christmas decorations
+	 */
+	@Property(key = "gameserver.enable.decor.christmas", defaultValue = "false")
+	public static boolean		ENABLE_DECOR_CHRISTMAS;
 
 	/**
 	 * Unstuck delay
