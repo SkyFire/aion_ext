@@ -5569,15 +5569,7 @@
 	<!-- Trifire -->
 	<spawn map="220070000" npcid="216545" pool="1" interval="10800">
 		<object x="2192.5237" y="2360.4739" z="437.4331" h="50"/>
-	</spawn>
-	<!-- Alpha Kuruku -->
-	<spawn map="220070000" npcid="216547" pool="1" interval="10800">
-		<object x="1190.45" y="2805.48" z="400.4467" h="0"/>
-	</spawn>
-	<!-- Alpha Mansat -->
-	<spawn map="220070000" npcid="216548" pool="1" interval="10800">
-		<object x="772.6342" y="2504.413" z="379.8816" h="0"/>
-	</spawn>
+	</spawn>	
 	<!-- Wildspine -->
 	<spawn map="220070000" npcid="216549" pool="1" interval="10800">
 		<object x="727.583" y="2737.37" z="391.37454" h="0"/>
@@ -5585,27 +5577,11 @@
 	<!-- Chieftain Owloro -->
 	<spawn map="220070000" npcid="216552" pool="1" interval="10800">
 		<object x="508.878" y="2915.41" z="485.75226" h="0"/>
-	</spawn>
-	<!-- Chieftain Ulagu -->
-	<spawn map="220070000" npcid="216553" pool="1" interval="14400">
-		<object x="510.648" y="2769.74" z="470.99136" h="0"/>
-	</spawn>
-	<!-- Windchaser -->
-	<spawn map="220070000" npcid="216554" pool="1" interval="10800">
-		<object x="2689.71" y="2794.34" z="452.6276" h="0"/>
-	</spawn>
+	</spawn>		
 	<!-- Skraw -->
 	<spawn map="220070000" npcid="216555" pool="1" interval="10800">
 		<object x="2919.52" y="2544.26" z="519.16016" h="0"/>
-	</spawn>
-	<!-- Orciphae -->
-	<spawn map="220070000" npcid="216557" pool="1" interval="10800">
-		<object x="1243.87" y="2550.42" z="164.02406" h="0"/>
-	</spawn>
-	<!-- Captain Naiyak -->
-	<spawn map="220070000" npcid="216558" pool="1" interval="10800">
-		<object x="285.173" y="1540.05" z="356.5" h="0"/>
-	</spawn>
+	</spawn>	
 	<!-- Mitrakand Drakan Destroyer -->
 	<spawn map="220070000" npcid="216807" pool="1" interval="390">
 		<object x="1023.87" y="947.65" z="335.3722" h="0"/>
@@ -5666,14 +5642,6 @@
 	<spawn map="220070000" npcid="216567" pool="1" interval="10800">
 		<object x="2563.82" y="1797.06" z="310.74405" h="0"/>
 	</spawn>
-	<!-- Highpriest Heka -->
-	<spawn map="220070000" npcid="216569" pool="1" interval="14400">
-		<object x="2789.94" y="1855.09" z="268.0" h="0"/>
-	</spawn>
-	<!-- Turatu Spawnfoot -->
-	<spawn map="220070000" npcid="216570" pool="1" interval="14400">
-		<object x="599.155" y="1401.88" z="276.875" h="0"/>
-	</spawn>
 	<!-- Glurg the Bloated -->
 	<spawn map="220070000" npcid="216845" pool="1" interval="10800">
 		<object x="664.52" y="1532.51" z="276.2445" h="0"/>
@@ -5721,11 +5689,7 @@
 	<!-- Arges -->
 	<spawn map="220070000" npcid="217024" pool="1" interval="10800">
 		<object x="978.843" y="1322.79" z="57.5" h="0"/>
-	</spawn>
-	<!-- Elder Malekor -->
-	<spawn map="220070000" npcid="216575" pool="1" interval="14400">
-		<object x="829.268" y="582.042" z="353.56213" h="0"/>
-	</spawn>
+	</spawn>	
 	<!-- Cobaltan -->
 	<spawn map="220070000" npcid="217079" pool="1" interval="10800">
 		<object x="267.71" y="1263.31" z="483.45563" h="0"/>
@@ -5737,14 +5701,6 @@
 	<!-- Dukah the Pharos -->
 	<spawn map="220070000" npcid="217081" pool="1" interval="10800">
 		<object x="928.374" y="1478.33" z="357.2774" h="0"/>
-	</spawn>
-	<!-- Ragnarok -->
-	<spawn map="220070000" npcid="216576" pool="1" interval="86400">
-		<object x="1828.72" y="1337.69" z="317.72217" h="0"/>
-	</spawn>
-	<!-- Padmarashka -->
-	<spawn map="220070000" npcid="216580" pool="1" interval="86400">
-		<object x="2933.62" y="852.026" z="35.288967" h="0"/>
 	</spawn>
 	<!-- Corsus the Slayer -->
 	<spawn map="220070000" npcid="216622" pool="1" interval="10800">
@@ -5814,59 +5770,74 @@
 	<spawn map="220070000" npcid="216636" pool="1" interval="285">
 		<object x="748.59546" y="1271.1758" z="279.5" h="10"/>
 	</spawn>
-	<!-- Minga Bigeyes -->
-	<spawn map="220070000" npcid="216581" pool="1" interval="10800">
-		<object x="1070.81" y="2156.04" z="109.33609" h="0"/>
-		<object x="972.9" y="1337.18" z="56.933815" h="0"/>
-		<object x="1121.64" y="1586.6" z="49.42775" h="0"/>
-		<object x="1224.72" y="2088.7" z="109.0" h="0"/>
+	<!-- Boss -->
+	<spawn map="220070000" npcid="216579" pool="1" interval="10800"><!-- Lord Dhuni Prendre -->
+		<object x="2936.78" y="1314.22" z="243.383" h="71"/>
 	</spawn>
-	<!-- Deathwing -->
-	<spawn map="220070000" npcid="216551" pool="1" interval="10800">
-		<object x="350.633" y="2816.36" z="515.693" h="53"/>
-		<object x="188.099" y="2984.41" z="628.9527" h="0"/>
-		<object x="78.46" y="2957.47" z="633.2932" h="0"/>
-		<object x="201.168" y="2777.41" z="578.20874" h="0"/>
+	<spawn map="220070000" npcid="216578" pool="1" interval="10800"><!-- Gravekeeper Basaim -->
+		<object x="2624.59" y="634.619" z="140.632" h="32"/>
 	</spawn>
-	<!-- Hashak the Plough -->
-	<spawn map="220070000" npcid="216574" pool="1" interval="10800">
-		<object x="904.28" y="816.769" z="332.57578" h="0"/>
-		<object x="719.07245" y="688.33777" z="348.03198" h="0"/>
+	<spawn map="220070000" npcid="216572" pool="1" interval="10800"><!-- Pincers Prime -->
+		<object x="675.297" y="685.615" z="328.432" h="19"/>
 	</spawn>
-	<!-- Gravekeeper Basaim -->
-	<spawn map="220070000" npcid="216578" pool="1" interval="14400">
-		<object x="2633.408" y="636.3255" z="142.088" h="42"/>
+	<spawn map="220070000" npcid="216581" pool="1" interval="10800"><!-- Minga Bigeyes -->
+		<object x="1061.02" y="2159.58" z="108.75" h="18"/>
 	</spawn>
-	<!-- Lord Dhuni Prendre -->
-	<spawn map="220070000" npcid="216579" pool="1" interval="14400">
-		<object x="2957.093" y="1244.6467" z="239.01627" h="42"/>
+	<spawn map="220070000" npcid="216551" pool="1" interval="10800"><!-- Deathwing -->
+		<object x="355.89" y="2815.97" z="515.67" h="22"/>	
 	</spawn>
-	<!-- Pincers Prime -->
-	<spawn map="220070000" npcid="216572" pool="1" interval="14400">
-		<object x="783.18195" y="598.1184" z="358.06918" h="22"/>
+	<spawn map="220070000" npcid="216546" pool="1" interval="10800"><!-- Flesh-eating Swarm.-->
+		<object x="1769.9" y="2513.24" z="475.827" h="25"/>
 	</spawn>
-	<!-- Flesh-eating Swarm.-->
-	<spawn map="220070000" npcid="216546" pool="1" interval="10800">
-		<object x="1793.6537" y="2497.965" h="23" z="479.08932"/>
+	<spawn map="220070000" npcid="216568" pool="1" interval="10800"><!-- Saira Sharpeyes.-->
+		<object x="2927"    y="1604.09" z="416.369" h="51"/>
 	</spawn>
-	<!-- Camu the Forestkeeper -->
-	<spawn map="220070000" npcid="216550" pool="1" interval="10800">
-		<object x="213.05972" y="2146.1936" h="102" z="458.14462"/>
+	<spawn map="220070000" npcid="216547" pool="1" interval="10800"><!-- Alpha Kuruku -->
+		<object x="1190.45" y="2805.48" z="400.4467" h="0"/>
 	</spawn>
-	<!-- Little Lost May -->
-	<spawn map="220070000" npcid="216556" pool="1" interval="10800">
-		<object x="2871.3481" y="2727.5952" h="40" z="377.125"/>
+	<spawn map="220070000" npcid="216548" pool="1" interval="10800"><!-- Alpha Mansat -->
+		<object x="772.6342" y="2504.413" z="379.8816" h="91"/>
 	</spawn>
-	<!-- The Administrator -->
-	<spawn map="220070000" npcid="216564" pool="1" interval="10800">
-		<object x="2019.8253" y="1586.0676" h="15" z="357.15527"/>
+	<spawn map="220070000" npcid="216550" pool="1" interval="10800"><!-- Camu the Forestkeeper -->
+		<object x="207.902" y="2147.44" z="459.29" h="22"/>
 	</spawn>
-	<!-- Skully Crimsonshell -->
-	<spawn map="220070000" npcid="216561" pool="1" interval="10800">
-		<object x="999.9534" y="1922.258" h="81" z="344.9839"/>
+	<spawn map="220070000" npcid="216554" pool="1" interval="10800"><!-- Windchaser -->
+		<object x="2689.71" y="2794.34" z="452.6276" h="80"/>
 	</spawn>
-	<!-- Saira Sharpeyes.-->
-	<spawn map="220070000" npcid="216568" pool="1" interval="10800">
-		<object x="2798.475" y="1912.2867" h="109" z="327.4226"/>
+	<spawn map="220070000" npcid="216553" pool="1" interval="10800"><!-- Chieftain Ulagu -->
+		<object x="510.648" y="2769.74" z="470.99136" h="40"/>
+	</spawn>
+	<spawn map="220070000" npcid="216556" pool="1" interval="10800"><!-- Little Lost May -->
+		<object x="2702.07" y="2922.66" z="372.41" h="94"/>
+	</spawn>
+	<spawn map="220070000" npcid="216564" pool="1" interval="10800"><!-- The Administrator -->
+		<object x="2022.24" y="1580.78" z="356.36" h="2"/>
+	</spawn>
+	<spawn map="220070000" npcid="216561" pool="1" interval="10800"><!-- Skully Crimsonshell -->
+		<object x="988.328" y="1913.26" z="342.364" h="75"/>
+	</spawn>
+	<spawn map="220070000" npcid="216557" pool="1" interval="10800"><!-- Orciphae -->
+		<object x="1243.87" y="2550.42" z="164.02406" h="74"/>
+	</spawn>
+	<spawn map="220070000" npcid="216558" pool="1" interval="10800"><!-- Captain Naiyak -->
+		<object x="285.173" y="1540.05" z="356.5" h="0"/>
+	</spawn>
+	<spawn map="220070000" npcid="216569" pool="1" interval="10800"><!-- Highpriest Heka -->
+		<object x="2789.94" y="1855.09" z="268.0" h="75"/>
+	</spawn>
+	<spawn map="220070000" npcid="216570" pool="1" interval="10800"><!-- Turatu Spawnfoot -->
+		<object x="599.155" y="1401.88" z="276.875" h="0"/>
+	</spawn>
+	<spawn map="220070000" npcid="216574" pool="1" interval="10800"><!-- Hashak the Plough -->
+		<object x="904.28" y="816.769" z="332.57578" h="55"/>
+	</spawn>
+	<spawn map="220070000" npcid="216575" pool="1" interval="10800"><!-- Elder Malekor -->
+		<object x="829.268" y="582.042" z="365.95" h="28"/>
+	</spawn>
+	<spawn map="220070000" npcid="216576" pool="1" interval="86400"><!-- Ragnarok -->
+		<object x="1828.72" y="1337.69" z="317.72217" h="0"/>
+	</spawn>
+	<spawn map="220070000" npcid="216580" pool="1" interval="86400"><!-- Padmarashka -->
+		<object x="2933.62" y="852.026" z="35.28" h="29"/>
 	</spawn>
 </spawns>

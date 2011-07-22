@@ -21,7 +21,7 @@
 	<map id="300010000" name="IDAbPro" death_level="0" water_level="16" world_size="512"/>
 	<map id="300020000" name="IDTest_Dungeon" death_level="0" water_level="16" world_size="256"/>
 	<map id="300030000" name="NochsanaTrainingCamp" nameid="401161" instance="true" instanceMapId="8" cooldown="1080" death_level="0" water_level="16" world_type="ABYSS" world_size="1024"/>
-	<map id="300040000" name="DarkPoeta" nameid="401172" instance="true" instanceMapId="9" cooldown="720" death_level="0" water_level="16" world_size="1536"/>
+	<map id="300040000" name="DarkPoeta" nameid="401172" instance="true" instanceMapId="9" cooldown="720" death_level="0" water_level="16" world_size="1536" world_type="ABYSS"/>
 	<map id="300050000" name="AstreiaChamber" nameid="401201" instance="true" instanceMapId="13" cooldown="1080" death_level="0" water_level="16" world_type="ABYSS" world_size="1024"/>
 	<map id="300060000" name="SulfurTreeNest" nameid="401198" instance="true" instanceMapId="10" cooldown="1080" death_level="0" water_level="16" world_type="ABYSS" world_size="1024"/>
 	<map id="300070000" name="ChamberOfRoah" nameid="401202" instance="true" instanceMapId="14" cooldown="1080" death_level="0" water_level="16" world_type="ABYSS" world_size="1024"/>
@@ -32,9 +32,9 @@
 	<map id="300120000" name="KysisChamber" nameid="401204" instance="true" instanceMapId="16" cooldown="1080" death_level="0" water_level="16" world_type="ABYSS" world_size="1024"/>
 	<map id="300130000" name="MirenChamber" nameid="401205" instance="true" instanceMapId="17" cooldown="1080" death_level="0" water_level="16" world_type="ABYSS" world_size="1024"/>
 	<map id="300140000" name="KrotanChamber" nameid="401203" instance="true" instanceMapId="15" cooldown="1080" death_level="0" water_level="16" world_type="ABYSS" world_size="1024"/>
-	<map id="300150000" name="IDTemple_Up" nameid="401311" instance="true" instanceMapId="26" cooldown="360" death_level="0" water_level="16" world_size="1024"/>	
-	<map id="300160000" name="IDTemple_Low" nameid="401325" instance="true" instanceMapId="27" cooldown="360" death_level="0" water_level="16" world_size="2048"/>
-	<map id="300170000" name="IDCatacombs" nameid="401411" instance="true" instanceMapId="28" cooldown="720" death_level="0" water_level="16" world_size="2048"/>
+	<map id="300150000" name="IDTemple_Up" nameid="401311" instance="true" instanceMapId="26" cooldown="360" death_level="0" water_level="16" world_size="1024" world_type="ABYSS"/>	
+	<map id="300160000" name="IDTemple_Low" nameid="401325" instance="true" instanceMapId="27" cooldown="360" death_level="0" water_level="16" world_size="2048" world_type="ABYSS"/>
+	<map id="300170000" name="IDCatacombs" nameid="401411" instance="true" instanceMapId="28" cooldown="720" death_level="0" water_level="16" world_size="2048" world_type="ABYSS"/>
 	<map id="300190000" name="IDElim" nameid="401295" instance="true" instanceMapId="29" cooldown="2760" death_level="0" water_level="16" world_size="2048"/>
 	<map id="300200000" name="IDNovice" nameid="401728" instance="true" instanceMapId="46" cooldown="180" death_level="0" water_level="16" world_size="512"/>
 	<map id="300210000" name="IDDreadgion_02" nameid="401675" instance="true" instanceMapId="43" cooldown="120" death_level="0" water_level="16" world_type="ABYSS" world_size="1024"/>
@@ -92,4 +92,3 @@
 	<map id="120080000" name="Arena_D_Lobby" death_level="0" water_level="16" world_type="ASMODAE" world_size="2048"/>
 	<map id="110070000" name="Arena_L_Lobby" death_level="0" water_level="16" world_type="ELYSEA" world_size="2048"/>
 </world_maps>
-

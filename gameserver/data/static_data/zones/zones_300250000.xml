@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<zones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="zones.xsd">
+	<zone mapid="300250000" name="ESOTERRACE_300250000" priority="8" fly="true">
+		<points top="163.0" bottom="51.0">
+			<point x="1347.2206" y="1159.1605" />
+			<point x="1329.8533" y="1141.3217" />
+			<point x="1305.0646" y="1140.748" />
+			<point x="1286.0863" y="1159.1807" />
+			<point x="1286.356" y="1183.4913" />
+			<point x="1304.138" y="1201.1187" />
+			<point x="1328.971" y="1201.1696" />
+			<point x="1346.8379" y="1183.5671" />
+		</points>
+	</zone>
+</zones>

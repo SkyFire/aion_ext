@@ -1496,4 +1496,8 @@
 	<spawn map="210050000" npcid="206170" interval="295" pool="1">
 		<object x="2529.0056" y="180.72392" z="445" h="0" />
 	</spawn>
+    <!-- Wild Phanoe Ginseng -->
+	<spawn map="210050000" npcid="700768" pool="1" interval="390">
+        <object x="2487.3777" y="231.50584" z="414.0466" h="81"/>
+    </spawn>
 </spawns>

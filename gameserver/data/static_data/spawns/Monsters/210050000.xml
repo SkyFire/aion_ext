@@ -5530,11 +5530,7 @@
 		<object x="1121.29" y="1313.52" z="409.65753" h="0"/>
 		<object x="1130.28" y="1342.13" z="414.57242" h="0"/>
 		<object x="1127.75" y="1344.77" z="415.0949" h="0"/>
-	</spawn>
-	<!-- Skuma Silvereye -->
-	<spawn map="210050000" npcid="216507" pool="1" interval="10800">
-		<object x="2184.71" y="1552.83" z="240.625" h="0"/>
-	</spawn>
+	</spawn>	
 	<spawn map="210050000" npcid="216474" pool="5" interval="295">
 		<object x="1120.58" y="1292.39" z="417.44342" h="0"/>
 		<object x="1449.78" y="1061.86" z="425.82718" h="0"/>
@@ -5613,11 +5609,7 @@
 		<object x="202.371" y="1123.48" z="268.0" h="0"/>
 		<object x="154.122" y="1171.63" z="287.52737" h="0"/>
 		<object x="144.559" y="1154.28" z="289.02307" h="0"/>
-	</spawn>
-	<!-- Priest Zitan -->
-	<spawn map="210050000" npcid="216512" pool="1" interval="14400">
-		<object x="328.795" y="1211.59" z="344.3426" h="0"/>
-	</spawn>
+	</spawn>	
 	<spawn map="210050000" npcid="216658" pool="4" interval="295">
 		<object x="89.9364" y="320.03" z="583.5646" h="0"/>
 		<object x="102.165" y="365.493" z="583.25" h="0"/>
@@ -5863,28 +5855,16 @@
 		<object x="2250.01" y="618.153" z="421.25" h="0"/>
 		<object x="2143.26" y="463.895" z="434.95734" h="0"/>
 		<object x="2350.489" y="684.45715" z="406.9987" h="0"/>
-	</spawn>
-	<!-- Geffen -->
-	<spawn map="210050000" npcid="216524" pool="1" interval="10800">
-		<object x="2731.08" y="1641.65" z="189.625" h="0"/>
-	</spawn>
+	</spawn>	
 	<spawn map="210050000" npcid="215542" pool="3" interval="295">
 		<object x="150.439" y="401.239" z="575.3539" h="0"/>
 		<object x="205.03" y="670.135" z="618.75" h="0"/>
 		<object x="110.522" y="545.349" z="592.0623" h="0"/>
-	</spawn>
-	<!-- Skar -->
-	<spawn map="210050000" npcid="216510" pool="1" interval="10800">
-		<object x="684.561" y="812.883" z="471.3676" h="0"/>
-	</spawn>
+	</spawn>	
 	<spawn map="210050000" npcid="215539" pool="3" interval="295">
 		<object x="175.273" y="388.1" z="573.0119" h="0"/>
 		<object x="335.655" y="282.384" z="580.8564" h="0"/>
 		<object x="145.286" y="199.737" z="576.2777" h="0"/>
-	</spawn>
-	<!-- Chief Kurnus -->
-	<spawn map="210050000" npcid="216501" pool="1" interval="10800">
-		<object x="2710.36" y="509.686" z="347.23874" h="0"/>
 	</spawn>
 	<spawn map="210050000" npcid="216470" pool="3" interval="295">
 		<object x="215.066" y="275.583" z="583.9675" h="0"/>
@@ -5951,11 +5931,7 @@
 	<spawn map="210050000" npcid="215551" pool="2" interval="295">
 		<object x="250.755" y="329.578" z="578.5" h="0"/>
 		<object x="242.471" y="416.074" z="579.46045" h="0"/>
-	</spawn>
-	<!-- Tiritaphon -->
-	<spawn map="210050000" npcid="216513" pool="1" interval="10800">
-		<object x="1081.73" y="800.089" z="651.66077" h="0"/>
-	</spawn>
+	</spawn>	
 	<spawn map="210050000" npcid="215545" pool="2" interval="295">
 		<object x="314.942" y="295.439" z="576.8568" h="0"/>
 		<object x="215.375" y="344.062" z="570.25" h="0"/>
@@ -6003,11 +5979,7 @@
 	<spawn map="210050000" npcid="258245" pool="2" interval="295">
 		<object x="1342.96" y="470.461" z="540.85815" h="0"/>
 		<object x="1516.42" y="341.332" z="545.7237" h="0"/>
-	</spawn>
-	<!-- Glugbeard -->
-	<spawn map="210050000" npcid="216503" pool="1" interval="10800">
-		<object x="114.369" y="588.714" z="601.4514" h="0"/>
-	</spawn>
+	</spawn>	
 	<spawn map="210050000" npcid="215560" pool="2" interval="295">
 		<object x="210.142" y="656.982" z="618.75" h="0"/>
 		<object x="83.5797" y="465.357" z="597.437" h="0"/>
@@ -6105,10 +6077,6 @@
 		<object x="2577.58" y="1657.96" z="276.875" h="0"/>
 		<object x="2348.5" y="1803.32" z="247.26562" h="0"/>
 	</spawn>
-	<!-- Baydeeafa -->
-	<spawn map="210050000" npcid="216521" pool="1" interval="10800">
-		<object x="2131.13" y="1900.21" z="309.0" h="0"/>
-	</spawn>
 	<!-- Chieftain Josefin -->
 	<spawn map="210050000" npcid="216488" pool="1" interval="10800">
 		<object x="77.4478" y="496.414" z="592.6817" h="0"/>
@@ -6160,67 +6128,15 @@
 	<!-- Elder Zanuta -->
 	<spawn map="210050000" npcid="216500" pool="1" interval="10800">
 		<object x="2470.2" y="1846.45" z="235.05469" h="0"/>
-	</spawn>
-	<!-- Titch Kippie -->
-	<spawn map="210050000" npcid="216502" pool="1" interval="14400">
-		<object x="101.505" y="316.328" z="583.4992" h="0"/>
-	</spawn>
-	<!-- Elder Narikiki -->
-	<spawn map="210050000" npcid="216504" pool="1" interval="14400">
-		<object x="226.455" y="676.461" z="618.75" h="0"/>
-	</spawn>
-	<!-- Rockhorn -->
-	<spawn map="210050000" npcid="216505" pool="1" interval="10800">
-		<object x="2776.49" y="817.224" z="386.87158" h="0"/>
-	</spawn>
-	<!-- Violoton -->
-	<spawn map="210050000" npcid="216506" pool="1" interval="10800">
-		<object x="2603.39" y="1023.48" z="384.65137" h="0"/>
-	</spawn>
-	<!-- Queen Klawnickt -->
-	<spawn map="210050000" npcid="216514" pool="1" interval="14400">
-		<object x="1190.0134" y="778.45856" z="388.98212" h="0"/>
-	</spawn>
-	<!-- Mervin -->
-	<spawn map="210050000" npcid="216515" pool="1" interval="10800">
-		<object x="1489.16" y="1550.26" z="201.875" h="0"/>
-	</spawn>
-	<!-- Omega -->
-	<spawn map="210050000" npcid="216516" pool="1" interval="86400">
-		<object x="1426.65" y="1922.26" z="307.5747" h="0"/>
-	</spawn>
-	<!-- Kyang Redmane -->
-	<spawn map="210050000" npcid="216517" pool="1" interval="10800">
-		<object x="1101.69" y="2170.23" z="339.86115" h="0"/>
-	</spawn>
+	</spawn>	
 	<!-- Shulack Hunterkiller -->
 	<spawn map="210050000" npcid="215561" pool="1" interval="390">
 		<object x="72.2828" y="586.502" z="608.19226" h="0"/>
-	</spawn>
-	<!-- Latzio Stoneheart -->
-	<spawn map="210050000" npcid="216518" pool="1" interval="14400">
-		<object x="184.917" y="1765.49" z="329.24417" h="0"/>
-	</spawn>
+	</spawn>	
 	<!-- Shulack Hunterkiller -->
 	<spawn map="210050000" npcid="215558" pool="1" interval="390">
 		<object x="245.674" y="269.051" z="583.3723" h="0"/>
-	</spawn>
-	<!-- Captain Voltayre -->
-	<spawn map="210050000" npcid="216519" pool="1" interval="14400">
-		<object x="156.541" y="1580.2" z="356.06537" h="0"/>
-	</spawn>
-	<!-- Sematariux -->
-	<spawn map="210050000" npcid="216520" pool="1" interval="86400">
-		<object x="142.092" y="2139.93" z="440.0" h="0"/>
-	</spawn>
-	<!-- Sukana the Learned -->
-	<spawn map="210050000" npcid="216522" pool="1" interval="10800">
-		<object x="2468.24" y="2109.73" z="213.125" h="0"/>
-	</spawn>
-	<!-- Head Priest Nashuma -->
-	<spawn map="210050000" npcid="216523" pool="1" interval="14400">
-		<object x="2523.75" y="1608.06" z="277.125" h="0"/>
-	</spawn>
+	</spawn>	
 	<!-- Venomiki -->
 	<spawn map="210050000" npcid="216606" pool="1" interval="295">
 		<object x="302.116" y="503.934" z="572.25" h="0"/>
@@ -6484,11 +6400,7 @@
 	<!-- Sobi Alula Lunini -->
 	<spawn map="210050000" npcid="216487" pool="1" interval="10800">
 		<object x="348.074" y="55.6793" z="471.85406" h="0"/>
-	</spawn>
-	<!-- The Punisher -->
-	<spawn map="210050000" npcid="216511" pool="1" interval="10800">
-		<object x="343.811" y="1144.2932" z="331.05374" h="114"/>
-	</spawn>
+	</spawn>	
 	<!-- The Shieldbearer -->
 	<spawn map="210050000" npcid="216511" pool="1" interval="10800">
 		<object x="1352.2434" y="1378.45" z="396.16833" h="39"/>
@@ -6499,5 +6411,72 @@
 	<!-- blackheart undarr -->
 	<spawn map="210050000" npcid="216616" pool="1" interval="10800">
 		<object x="239.45686" y="1860.717" z="325.89523" h="113"/>
+	</spawn>
+	<!-- Boss -->	
+	<spawn map="210050000" npcid="216524" pool="1" interval="10800"><!-- Geffen -->
+		<object x="2731.08" y="1641.65" z="189.625" h="32"/>
+	</spawn>	
+	<spawn map="210050000" npcid="216503" pool="1" interval="10800"><!-- Glugbeard -->
+		<object x="198.085" y="515.18" z="593.03815" h="0"/>
+	</spawn>	
+	<spawn map="210050000" npcid="216502" pool="1" interval="10800"><!-- Titch Kippie -->
+		<object x="101.505" y="316.328" z="583.4992" h="0"/>
+	</spawn>	
+	<spawn map="210050000" npcid="216501" pool="1" interval="10800"><!-- Chief Kurnus -->
+		<object x="2710.36" y="509.686" z="347.23874" h="0"/>
+	</spawn>	
+	<spawn map="210050000" npcid="216504" pool="1" interval="10800"><!-- Elder Narikiki -->
+		<object x="226.455" y="676.461" z="618.75" h="63"/>
+	</spawn>	
+	<spawn map="210050000" npcid="216505" pool="1" interval="10800"><!-- Rockhorn -->
+		<object x="2776.49" y="817.224" z="386.87158" h="53"/>
+	</spawn>	
+	<spawn map="210050000" npcid="216506" pool="1" interval="10800"><!-- Violoton -->
+		<object x="2603.39" y="1023.48" z="384.65137" h="0"/>
+	</spawn>
+	<spawn map="210050000" npcid="216511" pool="1" interval="10800"><!-- The Punisher -->
+		<object x="452.232" y="1184.47" z="331.291" h="45"/>
+	</spawn>
+	<spawn map="210050000" npcid="216513" pool="1" interval="10800"><!-- Tiritaphon -->
+		<object x="1081.73" y="800.089" z="406.62" h="18"/>
+	</spawn>
+	<spawn map="210050000" npcid="216515" pool="1" interval="10800"><!-- Mervin -->
+		<object x="1489.16" y="1550.26" z="201.875" h="0"/>
+	</spawn>		
+	<spawn map="210050000" npcid="216507" pool="1" interval="10800"><!-- Skuma Silvereye -->
+		<object x="2184.71" y="1552.83" z="240.625" h="58"/>
+	</spawn>
+	<spawn map="210050000" npcid="216510" pool="1" interval="10800"><!-- Skar -->
+		<object x="684.561" y="812.883" z="471.3676" h="42"/>
+	</spawn>
+	<spawn map="210050000" npcid="216512" pool="1" interval="10800"><!-- Priest Zitan -->
+		<object x="328.795" y="1211.59" z="344.3426" h="59"/>
+	</spawn>
+	<spawn map="210050000" npcid="216514" pool="1" interval="10800"><!-- Queen Klawnickt -->
+		<object x="1190.01" y="778.459" z="388.98" h="34"/>
+	</spawn>
+	<spawn map="210050000" npcid="216517" pool="1" interval="10800"><!-- Kyang Redmane -->
+		<object x="1101.69" y="2170.23" z="339.86115" h="89"/>
+	</spawn>
+	<spawn map="210050000" npcid="216518" pool="1" interval="10800"><!-- Latzio Stoneheart -->
+		<object x="184.917" y="1765.49" z="329.24417" h="0"/>
+	</spawn>
+	<spawn map="210050000" npcid="216519" pool="1" interval="10800"><!-- Captain Voltayre -->
+		<object x="156.541" y="1580.2" z="356.06537" h="29"/>
+	</spawn>	
+	<spawn map="210050000" npcid="216521" pool="1" interval="10800"><!-- Baydeeafa -->
+		<object x="2131.13" y="1900.21" z="309.0" h="42"/>
+	</spawn>	
+	<spawn map="210050000" npcid="216522" pool="1" interval="10800"><!-- Sukana the Learned -->
+		<object x="2468.24" y="2109.73" z="216.78" h="106"/>
+	</spawn>	
+	<spawn map="210050000" npcid="216523" pool="1" interval="10800"><!-- Head Priest Nashuma -->
+		<object x="2523.75" y="1608.06" z="277.125" h="0"/>
+	</spawn>	
+	<spawn map="210050000" npcid="216516" pool="1" interval="86400"><!-- Omega -->
+		<object x="1426.65" y="1922.26" z="307.5747" h="62"/>
+	</spawn>
+	<spawn map="210050000" npcid="216520" pool="1" interval="86400"><!-- Sematariux -->
+		<object x="142.092" y="2139.93" z="440.062" h="89"/>
 	</spawn>
 </spawns>

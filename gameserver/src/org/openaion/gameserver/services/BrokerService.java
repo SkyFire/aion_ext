@@ -624,13 +624,16 @@ public class BrokerService
 			PacketSendUtility.sendPacket(player, new SM_SYSTEM_MESSAGE(901298));
 			return;
 		}
-
+		int playerId = player.getObjectId();
 		Map<Integer, BrokerItem> brokerItems = getRaceBrokerItems(player.getCommonData().getRace());
 		BrokerItem brokerItem = brokerItems.get(brokerItemId);
 		
 		if(brokerItem == null)
 			return;
-		
+        if (playerId != brokerItem.getSellerId()){
+    	  	Logger.getLogger(this.getClass()).info("[AUDIT]Player: "+player.getName()+" is trying to steal: " +brokerItem.getItemId()+ " => Hacking!");
+    	  	return;
+        }
 		synchronized(brokerItem)
 		{
 			if(brokerItem != null)
