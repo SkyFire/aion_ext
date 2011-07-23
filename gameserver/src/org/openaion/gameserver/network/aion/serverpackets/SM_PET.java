@@ -110,10 +110,9 @@ public class SM_PET extends AionServerPacket
 					writeC(buf, 0); //??
 					writeC(buf, 0); //??
 					writeD(buf, 0); // TODO: features1 override ???
-					writeH(buf, 0); //unk 
+					writeD(buf, 0); //unk 
 					writeC(buf, 1); // hasFunction? 1 / 0
-					writeQ(buf, 0); //unk
-					writeQ(buf, 0); //unk
+					
  				}
 				break;
 			case 1:
