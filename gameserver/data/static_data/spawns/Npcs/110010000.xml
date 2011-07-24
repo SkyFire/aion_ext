@@ -1234,4 +1234,16 @@
 	<spawn map="110010000" npcid="798444" pool="1" interval="295">
 		<object x="1864.0" y="2054.0" z="519.0" h="0"/>
 	</spawn>
+	<!-- Cinna -->
+	<spawn map="110010000" npcid="798446" pool="1" interval="295">
+		<object x="1612.642" y="1490.8577" z="549.5507" h="102"/>
+	</spawn>
+	<!-- Portia -->
+	<spawn map="110010000" npcid="798447" pool="1" interval="295">
+		<object x="1611.7472" y="1531.2974" z="549.55096" h="24"/>
+	</spawn>
+	<!-- Kunberunerk -->
+	<spawn map="110010000" npcid="798026" pool="1" interval="295">
+		<object x="1973.9308" y="1767.8472" z="576.7586" h="63"/>
+	</spawn>
 </spawns>

@@ -3,49 +3,57 @@
 
 	<!-- WARRIOR -->
 	
-    <skill skillId="1" name="Basic Sword Training" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+   <skill skillId="1" name="Basic Sword Training" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+	 <skill skillId="3" name="Basic Mace Training" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+	 <skill skillId="4" name="Basic Clothing Proficiency" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+	 <skill skillId="5" name="Basic Leather Armor Proficiency" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+	 <skill skillId="6" name="Basic Mail Proficiency" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+	 <skill skillId="7" name="Basic Shield Training" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+	 <skill skillId="67" name="Basic Cloth Armor Proficiency" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+	 
+	 <skill skillId="122" name="Boost Physical Attack I" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+	 <skill skillId="121" name="Boost HP I" minLevel="5" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+	 <skill skillId="120" name="Boost Parry I" minLevel="9" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+	 <skill skillId="111" name="Boost Block I" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
 	
-    <skill skillId="3" name="Basic Mace Training" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+	 <skill skillId="358" name="Boost Physical Attack II" minLevel="10" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>	
 	
-    <skill skillId="4" name="Basic Clothing Proficiency" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+	 <skill skillId="361" name="Boost Physical Attack III" minLevel="19" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
 	
-    <skill skillId="5" name="Basic Leather Armor Proficiency" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+	 <skill skillId="138" name="Boost Physical Attack IV" minLevel="28" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	 <skill skillId="359" name="Boost HP II" minLevel="34" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	 <skill skillId="104" name="Boost Knockdown I" minLevel="37" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
 	
-    <skill skillId="6" name="Basic Mail Proficiency" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
 	
-    <skill skillId="7" name="Basic Shield Training" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+	 <skill skillId="367" name="Boost Physical Attack V" minLevel="45" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	 <skill skillId="496" name="Boost HP III" minLevel="49" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	 <skill skillId="131" name="Boost Accuracy II" minLevel="51" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	 <skill skillId="132" name="Boost Accuracy III" minLevel="55" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	 <skill skillId="129" name="Boost Critical Hit Chance I" minLevel="55" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
 	
-	<skill skillId="67" name="Basic Cloth Armor Proficiency" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+   <skill skillId="169" name="Ferocious Strike I" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="ACTIVE"/>
+   <skill skillId="169" name="Ferocious Strike I" minLevel="2" autolearn="true" skillLevel="2" race="ALL" classId="WARRIOR" type="ACTIVE"/>
+   <skill skillId="169" name="Ferocious Strike I" minLevel="3" autolearn="true" skillLevel="3" race="ALL" classId="WARRIOR" type="ACTIVE"/>
+   <skill skillId="169" name="Ferocious Strike I" minLevel="4" autolearn="true" skillLevel="4" race="ALL" classId="WARRIOR" type="ACTIVE"/>
+   <skill skillId="169" name="Ferocious Strike I" minLevel="5" autolearn="true" skillLevel="5" race="ALL" classId="WARRIOR" type="ACTIVE"/>
+   <skill skillId="169" name="Ferocious Strike I" minLevel="6" autolearn="true" skillLevel="6" race="ALL" classId="WARRIOR" type="ACTIVE"/>
+   <skill skillId="169" name="Ferocious Strike I" minLevel="7" autolearn="true" skillLevel="7" race="ALL" classId="WARRIOR" type="ACTIVE"/>
+   <skill skillId="169" name="Ferocious Strike I" minLevel="8" autolearn="true" skillLevel="8" race="ALL" classId="WARRIOR" type="ACTIVE"/>
+   <skill skillId="169" name="Ferocious Strike I" minLevel="9" autolearn="true" skillLevel="9" race="ALL" classId="WARRIOR" type="ACTIVE"/>
 	
-    <skill skillId="122" name="Boost Physical Attack I" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+   <skill skillId="165" name="Robust Blow I" minLevel="3" skillLevel="1" race="ALL" classId="WARRIOR" type="ACTIVE"/>
+   <skill skillId="165" name="Robust Blow I" minLevel="4" skillLevel="2" race="ALL" classId="WARRIOR" type="ACTIVE"/>
+   <skill skillId="165" name="Robust Blow I" minLevel="5" skillLevel="3" race="ALL" classId="WARRIOR" type="ACTIVE"/>
+   <skill skillId="165" name="Robust Blow I" minLevel="6" skillLevel="4" race="ALL" classId="WARRIOR" type="ACTIVE"/>
+   <skill skillId="165" name="Robust Blow I" minLevel="7" skillLevel="5" race="ALL" classId="WARRIOR" type="ACTIVE"/>
+   <skill skillId="165" name="Robust Blow I" minLevel="8" skillLevel="6" race="ALL" classId="WARRIOR" type="ACTIVE"/>
+   <skill skillId="165" name="Robust Blow I" minLevel="9" skillLevel="7" race="ALL" classId="WARRIOR" type="ACTIVE"/>
 	
-    <skill skillId="121" name="Boost HP I" minLevel="5" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
+   <skill skillId="165" name="Robust Blow I" minLevel="10" skillLevel="8" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+   <skill skillId="165" name="Robust Blow I" minLevel="11" skillLevel="9" race="ALL" classId="FIGHTER" type="ACTIVE"/>
 	
-    <skill skillId="120" name="Boost Parry I" minLevel="9" skillLevel="1" race="ALL" classId="WARRIOR" type="PASSIVE"/>
-	
-    <skill skillId="169" name="Ferocious Strike I" minLevel="1" autolearn="true" skillLevel="1" race="ALL" classId="WARRIOR" type="ACTIVE"/>
-    <skill skillId="169" name="Ferocious Strike I" minLevel="2" autolearn="true" skillLevel="2" race="ALL" classId="WARRIOR" type="ACTIVE"/>
-    <skill skillId="169" name="Ferocious Strike I" minLevel="3" autolearn="true" skillLevel="3" race="ALL" classId="WARRIOR" type="ACTIVE"/>
-    <skill skillId="169" name="Ferocious Strike I" minLevel="4" autolearn="true" skillLevel="4" race="ALL" classId="WARRIOR" type="ACTIVE"/>
-    <skill skillId="169" name="Ferocious Strike I" minLevel="5" autolearn="true" skillLevel="5" race="ALL" classId="WARRIOR" type="ACTIVE"/>
-    <skill skillId="169" name="Ferocious Strike I" minLevel="6" autolearn="true" skillLevel="6" race="ALL" classId="WARRIOR" type="ACTIVE"/>
-    <skill skillId="169" name="Ferocious Strike I" minLevel="7" autolearn="true" skillLevel="7" race="ALL" classId="WARRIOR" type="ACTIVE"/>
-    <skill skillId="169" name="Ferocious Strike I" minLevel="8" autolearn="true" skillLevel="8" race="ALL" classId="WARRIOR" type="ACTIVE"/>
-    <skill skillId="169" name="Ferocious Strike I" minLevel="9" autolearn="true" skillLevel="9" race="ALL" classId="WARRIOR" type="ACTIVE"/>
-	
-    <skill skillId="165" name="Robust Blow I" minLevel="3" skillLevel="1" race="ALL" classId="WARRIOR" type="ACTIVE"/>
-    <skill skillId="165" name="Robust Blow I" minLevel="4" skillLevel="2" race="ALL" classId="WARRIOR" type="ACTIVE"/>
-    <skill skillId="165" name="Robust Blow I" minLevel="5" skillLevel="3" race="ALL" classId="WARRIOR" type="ACTIVE"/>
-    <skill skillId="165" name="Robust Blow I" minLevel="6" skillLevel="4" race="ALL" classId="WARRIOR" type="ACTIVE"/>
-    <skill skillId="165" name="Robust Blow I" minLevel="7" skillLevel="5" race="ALL" classId="WARRIOR" type="ACTIVE"/>
-    <skill skillId="165" name="Robust Blow I" minLevel="8" skillLevel="6" race="ALL" classId="WARRIOR" type="ACTIVE"/>
-    <skill skillId="165" name="Robust Blow I" minLevel="9" skillLevel="7" race="ALL" classId="WARRIOR" type="ACTIVE"/>
-	
-    <skill skillId="165" name="Robust Blow I" minLevel="10" skillLevel="8" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="165" name="Robust Blow I" minLevel="11" skillLevel="9" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-	
-    <skill skillId="165" name="Robust Blow I" minLevel="10" skillLevel="8" race="ALL" classId="KNIGHT" type="ACTIVE"/>
-    <skill skillId="165" name="Robust Blow I" minLevel="11" skillLevel="9" race="ALL" classId="KNIGHT" type="ACTIVE"/>
+   <skill skillId="165" name="Robust Blow I" minLevel="10" skillLevel="8" race="ALL" classId="KNIGHT" type="ACTIVE"/>
+   <skill skillId="165" name="Robust Blow I" minLevel="11" skillLevel="9" race="ALL" classId="KNIGHT" type="ACTIVE"/>
 	
     <skill skillId="173" name="Shield Defense I" minLevel="3" skillLevel="1" race="ALL" classId="WARRIOR" type="TOGGLE"/>
 	
@@ -69,7 +77,7 @@
     <skill skillId="161" name="Rage I" minLevel="8" skillLevel="2" race="ALL" classId="WARRIOR" type="ACTIVE"/>
     <skill skillId="161" name="Rage I" minLevel="9" skillLevel="3" race="ALL" classId="WARRIOR" type="ACTIVE"/>
 	
-    <skill skillId="161" name="Rage I" minLevel="10" skillLevel="4" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+	  <skill skillId="161" name="Rage I" minLevel="10" skillLevel="4" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="161" name="Rage I" minLevel="11" skillLevel="5" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="161" name="Rage I" minLevel="12" skillLevel="6" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="161" name="Rage I" minLevel="13" skillLevel="7" race="ALL" classId="FIGHTER" type="ACTIVE"/>
@@ -83,7 +91,7 @@
     <skill skillId="161" name="Rage I" minLevel="14" skillLevel="8" race="ALL" classId="KNIGHT" type="ACTIVE"/>
     <skill skillId="161" name="Rage I" minLevel="15" skillLevel="9" race="ALL" classId="KNIGHT" type="ACTIVE"/>
 	
-    <skill skillId="154" name="Shield Counter I" minLevel="9" skillLevel="1" race="ALL" classId="WARRIOR" type="ACTIVE"/>
+   <skill skillId="154" name="Shield Counter I" minLevel="9" skillLevel="1" race="ALL" classId="WARRIOR" type="ACTIVE"/> 
 	
     <skill skillId="154" name="Shield Counter I" minLevel="10" skillLevel="2" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="154" name="Shield Counter I" minLevel="11" skillLevel="3" race="ALL" classId="FIGHTER" type="ACTIVE"/>
@@ -104,102 +112,55 @@
     <skill skillId="154" name="Shield Counter I" minLevel="17" skillLevel="9" race="ALL" classId="KNIGHT" type="ACTIVE"/>
 	
 	<!-- FIGHTER -->
-    
     <skill skillId="8" name="Advanced Sword Training I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="9" name="Advanced Dagger Training I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="10" name="Advanced Mace Training I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="15" name="Advanced Greatsword Training I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="16" name="Advanced Polearm Training I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="17" name="Advanced Archery Training I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="12" name="Advanced Leather Armor Proficiency I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="13" name="Advanced Mail Proficiency I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="14" name="Advanced Shield Training I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="18" name="Advanced Plate Armor Proficiency I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="326" name="Winged Strength I" minLevel="10" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="358" name="Boost Physical Attack II" minLevel="10" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="102" name="Aggravation I" minLevel="13" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-	<skill skillId="19" name="Advanced Dual-Wielding I" minLevel="20" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE" stigma="true"/>
-	
-    <skill skillId="361" name="Boost Physical Attack III" minLevel="19" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="336" name="Advanced Sword Training II" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="337" name="Advanced Dagger Training II" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="338" name="Advanced Mace Training II" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="339" name="Advanced Greatsword Training II" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="340" name="Advanced Polearm Training II" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="341" name="Advanced Archery Training II" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="111" name="Boost Block I" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="333" name="Winged Rage" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="138" name="Boost Physical Attack IV" minLevel="28" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="359" name="Boost HP II" minLevel="34" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="104" name="Boost Knockdown I" minLevel="37" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="342" name="Advanced Sword Training III" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
+	  <skill skillId="9" name="Advanced Dagger Training I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="10" name="Advanced Mace Training I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="15" name="Advanced Greatsword Training I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="16" name="Advanced Polearm Training I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="17" name="Advanced Archery Training I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="12" name="Advanced Leather Armor Proficiency I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="13" name="Advanced Mail Proficiency I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="14" name="Advanced Shield Training I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="18" name="Advanced Plate Armor Proficiency I" minLevel="9" autolearn="true" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="19" name="Advanced Dual-Wielding I" minLevel="20" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE" stigma="true"/>
+	  
+	  <skill skillId="336" name="Advanced Sword Training II" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="337" name="Advanced Dagger Training II" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="338" name="Advanced Mace Training II" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="339" name="Advanced Greatsword Training II" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="340" name="Advanced Polearm Training II" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="341" name="Advanced Archery Training II" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="360" name="Advanced Dual-Wielding II" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE" stigma="true"/>
+	  
     <skill skillId="343" name="Advanced Dagger Training III" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="344" name="Advanced Mace Training III" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="345" name="Advanced Greatsword Training III" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="346" name="Advanced Polearm Training III" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="347" name="Advanced Archery Training III" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="342" name="Advanced Sword Training III" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
 	
-    <skill skillId="344" name="Advanced Mace Training III" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="345" name="Advanced Greatsword Training III" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="346" name="Advanced Polearm Training III" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="347" name="Advanced Archery Training III" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
+	 
+	  <skill skillId="369" name="Advanced Dagger Training IV" minLevel="50" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="370" name="Advanced Mace Training IV" minLevel="50" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="371" name="Advanced Greatsword Training IV" minLevel="50" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="372" name="Advanced Polearm Training IV" minLevel="50" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="373" name="Advanced Archery Training IV" minLevel="50" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="368" name="Advanced Sword Training IV" minLevel="50" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	 
+	  <skill skillId="326" name="Winged Strength I" minLevel="10" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="102" name="Aggravation I" minLevel="13" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
     <skill skillId="124" name="Determination I" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	 
+	  
+	  <skill skillId="333" name="Winged Rage" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	 
+	  
+	  <skill skillId="113" name="Boost Accuracy I" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
+	  <skill skillId="366" name="Aggravation II" minLevel="41" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
 	
-    <skill skillId="360" name="Advanced Dual-Wielding II" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE" stigma="true"/>
-	
-    <skill skillId="113" name="Boost Accuracy I" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="366" name="Aggravation II" minLevel="41" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="367" name="Boost Physical Attack V" minLevel="45" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="496" name="Boost HP III" minLevel="49" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="368" name="Advanced Sword Training IV" minLevel="50" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="369" name="Advanced Dagger Training IV" minLevel="50" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="370" name="Advanced Mace Training IV" minLevel="50" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="371" name="Advanced Greatsword Training IV" minLevel="50" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="372" name="Advanced Polearm Training IV" minLevel="50" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="373" name="Advanced Archery Training IV" minLevel="50" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-		   
-    <skill skillId="131" name="Boost Accuracy II" minLevel="51" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-	
-    <skill skillId="132" name="Boost Accuracy III" minLevel="55" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-		   
-    <skill skillId="129" name="Boost Critical Hit Chance I" minLevel="55" skillLevel="1" race="ALL" classId="FIGHTER" type="PASSIVE"/>
-		   
-    <skill skillId="170" name="Ferocious Strike II" minLevel="10" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+	  
+	 
+	  <skill skillId="170" name="Ferocious Strike II" minLevel="10" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="170" name="Ferocious Strike II" minLevel="11" skillLevel="2" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="170" name="Ferocious Strike II" minLevel="12" skillLevel="3" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="170" name="Ferocious Strike II" minLevel="13" skillLevel="4" race="ALL" classId="FIGHTER" type="ACTIVE"/>
@@ -208,8 +169,8 @@
     <skill skillId="170" name="Ferocious Strike II" minLevel="16" skillLevel="7" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="170" name="Ferocious Strike II" minLevel="17" skillLevel="8" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="170" name="Ferocious Strike II" minLevel="18" skillLevel="9" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-	 
-    <skill skillId="284" name="Seismic Wave I" minLevel="10" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+	  
+	  <skill skillId="284" name="Seismic Wave I" minLevel="10" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="284" name="Seismic Wave I" minLevel="11" skillLevel="2" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="284" name="Seismic Wave I" minLevel="12" skillLevel="3" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="284" name="Seismic Wave I" minLevel="13" skillLevel="4" race="ALL" classId="FIGHTER" type="ACTIVE"/>
@@ -218,8 +179,8 @@
     <skill skillId="284" name="Seismic Wave I" minLevel="16" skillLevel="7" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="284" name="Seismic Wave I" minLevel="17" skillLevel="8" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="284" name="Seismic Wave I" minLevel="18" skillLevel="9" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-	
-    <skill skillId="158" name="Taunt I" minLevel="10" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+	  
+	  <skill skillId="158" name="Taunt I" minLevel="10" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="158" name="Taunt I" minLevel="11" skillLevel="2" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="158" name="Taunt I" minLevel="12" skillLevel="3" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="158" name="Taunt I" minLevel="13" skillLevel="4" race="ALL" classId="FIGHTER" type="ACTIVE"/>
@@ -268,6 +229,18 @@
     <skill skillId="273" name="Wrathful Strike I" minLevel="19" skillLevel="7" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="273" name="Wrathful Strike I" minLevel="20" skillLevel="8" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="273" name="Wrathful Strike I" minLevel="21" skillLevel="9" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+		  
+	  <skill skillId="274" name="Wrathful Strike II" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="274" name="Wrathful Strike II" minLevel="26" skillLevel="2" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="274" name="Wrathful Strike II" minLevel="27" skillLevel="3" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="274" name="Wrathful Strike II" minLevel="28" skillLevel="4" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="274" name="Wrathful Strike II" minLevel="29" skillLevel="5" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="274" name="Wrathful Strike II" minLevel="30" skillLevel="6" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="274" name="Wrathful Strike II" minLevel="31" skillLevel="7" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="274" name="Wrathful Strike II" minLevel="32" skillLevel="8" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="274" name="Wrathful Strike II" minLevel="33" skillLevel="9" race="ALL" classId="FIGHTER" type="ACTIVE"/>  
+		  
+		  
 		   
     <skill skillId="251" name="Aion's Strength I" minLevel="13" skillLevel="1" race="ALL" classId="FIGHTER" type="TOGGLE"/>
 		   
@@ -300,7 +273,17 @@
     <skill skillId="278" name="Rupture I" minLevel="22" skillLevel="7" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="278" name="Rupture I" minLevel="23" skillLevel="8" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="278" name="Rupture I" minLevel="24" skillLevel="9" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-	
+        
+    <skill skillId="279" name="Rupture II" minLevel="28" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="279" name="Rupture II" minLevel="29" skillLevel="2" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="279" name="Rupture II" minLevel="30" skillLevel="3" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="279" name="Rupture II" minLevel="31" skillLevel="4" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="279" name="Rupture II" minLevel="32" skillLevel="5" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="279" name="Rupture II" minLevel="33" skillLevel="6" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="279" name="Rupture II" minLevel="34" skillLevel="7" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="279" name="Rupture II" minLevel="35" skillLevel="8" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="279" name="Rupture II" minLevel="36" skillLevel="9" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    
     <skill skillId="182" name="Charge I" minLevel="16" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
 	
     <skill skillId="155" name="Shield Counter II" minLevel="19" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
@@ -395,7 +378,7 @@
     <skill skillId="351" name="Body Smash I" minLevel="29" skillLevel="8" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="351" name="Body Smash I" minLevel="30" skillLevel="9" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     
-	<skill skillId="167" name="Robust Blow III" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+  	<skill skillId="167" name="Robust Blow III" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="167" name="Robust Blow III" minLevel="26" skillLevel="2" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="167" name="Robust Blow III" minLevel="27" skillLevel="3" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="167" name="Robust Blow III" minLevel="28" skillLevel="4" race="ALL" classId="FIGHTER" type="ACTIVE"/>
@@ -404,17 +387,7 @@
     <skill skillId="167" name="Robust Blow III" minLevel="31" skillLevel="7" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="167" name="Robust Blow III" minLevel="32" skillLevel="8" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="167" name="Robust Blow III" minLevel="33" skillLevel="9" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-		   
-    <skill skillId="274" name="Wrathful Strike II" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="274" name="Wrathful Strike II" minLevel="26" skillLevel="2" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="274" name="Wrathful Strike II" minLevel="27" skillLevel="3" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="274" name="Wrathful Strike II" minLevel="28" skillLevel="4" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="274" name="Wrathful Strike II" minLevel="29" skillLevel="5" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="274" name="Wrathful Strike II" minLevel="30" skillLevel="6" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="274" name="Wrathful Strike II" minLevel="31" skillLevel="7" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="274" name="Wrathful Strike II" minLevel="32" skillLevel="8" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="274" name="Wrathful Strike II" minLevel="33" skillLevel="9" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-		   
+		 		   
     <skill skillId="261" name="Crashing Blow I" minLevel="25" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="261" name="Crashing Blow I" minLevel="26" skillLevel="2" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="261" name="Crashing Blow I" minLevel="27" skillLevel="3" race="ALL" classId="FIGHTER" type="ACTIVE"/>
@@ -449,15 +422,6 @@
     <skill skillId="163" name="Rage III" minLevel="35" skillLevel="8" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="163" name="Rage III" minLevel="36" skillLevel="9" race="ALL" classId="FIGHTER" type="ACTIVE"/>
 	
-    <skill skillId="279" name="Rupture II" minLevel="28" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="279" name="Rupture II" minLevel="29" skillLevel="2" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="279" name="Rupture II" minLevel="30" skillLevel="3" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="279" name="Rupture II" minLevel="31" skillLevel="4" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="279" name="Rupture II" minLevel="32" skillLevel="5" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="279" name="Rupture II" minLevel="33" skillLevel="6" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="279" name="Rupture II" minLevel="34" skillLevel="7" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="279" name="Rupture II" minLevel="35" skillLevel="8" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="279" name="Rupture II" minLevel="36" skillLevel="9" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     
     <skill skillId="353" name="Shock Wave I" minLevel="28" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="353" name="Shock Wave I" minLevel="29" skillLevel="2" race="ALL" classId="FIGHTER" type="ACTIVE"/>
@@ -637,6 +601,18 @@
     <skill skillId="275" name="Wrathful Strike III" minLevel="44" skillLevel="8" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="275" name="Wrathful Strike III" minLevel="45" skillLevel="9" race="ALL" classId="FIGHTER" type="ACTIVE"/>
 		   
+   <skill skillId="365" name="Wrathful Wave I" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="365" name="Wrathful Wave I" minLevel="41" skillLevel="2" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="365" name="Wrathful Wave I" minLevel="42" skillLevel="3" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="365" name="Wrathful Wave I" minLevel="43" skillLevel="4" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="365" name="Wrathful Wave I" minLevel="44" skillLevel="5" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="365" name="Wrathful Wave I" minLevel="45" skillLevel="6" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="365" name="Wrathful Wave I" minLevel="46" skillLevel="7" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="365" name="Wrathful Wave I" minLevel="47" skillLevel="8" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+    <skill skillId="365" name="Wrathful Wave I" minLevel="48" skillLevel="9" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+  
+  
+  
     <skill skillId="309" name="Crashing Blow II" minLevel="37" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="309" name="Crashing Blow II" minLevel="38" skillLevel="2" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="309" name="Crashing Blow II" minLevel="39" skillLevel="3" race="ALL" classId="FIGHTER" type="ACTIVE"/>
@@ -741,15 +717,7 @@
 		   
     <skill skillId="183" name="Siegebreaker I" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE" stigma="true"/>
 		   
-    <skill skillId="365" name="Wrathful Wave I" minLevel="40" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="365" name="Wrathful Wave I" minLevel="41" skillLevel="2" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="365" name="Wrathful Wave I" minLevel="42" skillLevel="3" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="365" name="Wrathful Wave I" minLevel="43" skillLevel="4" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="365" name="Wrathful Wave I" minLevel="44" skillLevel="5" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="365" name="Wrathful Wave I" minLevel="45" skillLevel="6" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="365" name="Wrathful Wave I" minLevel="46" skillLevel="7" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="365" name="Wrathful Wave I" minLevel="47" skillLevel="8" race="ALL" classId="FIGHTER" type="ACTIVE"/>
-    <skill skillId="365" name="Wrathful Wave I" minLevel="48" skillLevel="9" race="ALL" classId="FIGHTER" type="ACTIVE"/>
+   
 		   
     <skill skillId="157" name="Shield Counter IV" minLevel="41" skillLevel="1" race="ALL" classId="FIGHTER" type="ACTIVE"/>
     <skill skillId="157" name="Shield Counter IV" minLevel="42" skillLevel="2" race="ALL" classId="FIGHTER" type="ACTIVE"/>
