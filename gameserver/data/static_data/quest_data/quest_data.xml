@@ -13533,7 +13533,7 @@
 			<reward_item count="1" item_id="188050589"/>
 		</rewards>
 		<quest_drop drop_each_member="false" chance="70" item_id="182204549" npc_id="213113"/>
-		<quest_drop drop_each_member="false" chance="70" item_id="182204550" npc_id="213115"/>
+		<quest_drop drop_each_member="false" chance="70" item_id="182204550" npc_id="213114"/>
 	</quest>
 	<quest race_permitted="ASMODIANS" cannot_share="true" max_repeat_count="1" minlevel_permitted="41" nameId="2207883" name="Powwow With the Mau" id="2641">
 		<rewards exp="732200" gold="57720"/>
