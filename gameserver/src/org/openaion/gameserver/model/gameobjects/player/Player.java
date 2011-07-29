@@ -199,7 +199,7 @@ public class Player extends Creature
         /**
          * Test Value for ingame shop currency
          */
-        public int                                                        shopMoney = 0;
+	public long							shopMoney = 0;
 
         /**
          * Windstream variable for handshake.
