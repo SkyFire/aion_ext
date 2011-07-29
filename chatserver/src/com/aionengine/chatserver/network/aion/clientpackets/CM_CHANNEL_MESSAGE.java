@@ -40,7 +40,6 @@ public class CM_CHANNEL_MESSAGE extends AbstractClientPacket
 	private int					channelId;
 	private byte[]				content;
 
-	private BroadcastService	broadcastService;
 	/**
 	 * 
 	 * @param channelBuffer
@@ -48,10 +47,8 @@ public class CM_CHANNEL_MESSAGE extends AbstractClientPacket
 	 * @param opCode
 	 */
 	public CM_CHANNEL_MESSAGE(ChannelBuffer channelBuffer, ClientChannelHandler gameChannelHandler)
-		BroadcastService broadcastService)
 	{
 		super(channelBuffer, gameChannelHandler, 0x18);
-		this.broadcastService = broadcastService;
 	}
 
 	@Override

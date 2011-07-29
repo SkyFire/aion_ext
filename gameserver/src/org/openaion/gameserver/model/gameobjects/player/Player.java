@@ -96,6 +96,7 @@ import org.openaion.gameserver.utils.rates.RegularRates;
 import org.openaion.gameserver.world.World;
 import org.openaion.gameserver.world.zone.ZoneInstance;
 
+import org.openaion.gameserver.model.templates.LocationTemplate;
 
 /**
  * This class is representing Player object, it contains all needed data.
@@ -224,6 +225,7 @@ public class Player extends Creature
         // debug
         private static int                                                counter = 0;
 
+	private LocationTemplate lastLoc;
 
         /**
          * Quest time counter, to avoid from sending fake quest reward packet.
@@ -254,6 +256,15 @@ public class Player extends Creature
                 counter++;
         }
 
+	public LocationTemplate getLastLoc()
+	{
+		return lastLoc;
+	}
+	
+	public void setLastLoc(LocationTemplate loc)
+	{
+		lastLoc = loc;
+	}
         public Account getAccount()
         {
                 return playerAccount;
