@@ -1,4 +1,4 @@
-/**
+﻿/**
  * This file is part of aion-emu <aion-emu.com>.
  *
  *  aion-emu is free software: you can redistribute it and/or modify
@@ -96,7 +96,7 @@ import org.openaion.gameserver.utils.rates.RegularRates;
 import org.openaion.gameserver.world.World;
 import org.openaion.gameserver.world.zone.ZoneInstance;
 
-import org.openaion.gameserver.model.templates.LocationTemplate;
+
 
 /**
  * This class is representing Player object, it contains all needed data.
