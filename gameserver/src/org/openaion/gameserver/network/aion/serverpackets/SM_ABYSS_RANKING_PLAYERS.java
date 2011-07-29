@@ -21,11 +21,9 @@ import java.util.ArrayList;
 
 import org.openaion.gameserver.model.AbyssRankingResult;
 import org.openaion.gameserver.model.Race;
-import org.openaion.gameserver.model.gameobjects.player.Player;
 import org.openaion.gameserver.network.aion.AionConnection;
 import org.openaion.gameserver.network.aion.AionServerPacket;
 import org.openaion.gameserver.services.AbyssRankingService;
-import org.openaion.gameserver.utils.PacketSendUtility;
 
 
 /**
@@ -35,94 +33,52 @@ public class SM_ABYSS_RANKING_PLAYERS extends AionServerPacket
 {
 	
 	private ArrayList<AbyssRankingResult> 	data;
-	private ArrayList<AbyssRankingResult>	dataTemp;
 	private int 							race;
-	private int action = 0;
-	private int section = 1;
-	private Player player;
 	
-	public SM_ABYSS_RANKING_PLAYERS(ArrayList<AbyssRankingResult> data, Race race, Player player)
+	public SM_ABYSS_RANKING_PLAYERS(ArrayList<AbyssRankingResult> data, Race race)
 	{
 		this.data = data;
-		dataTemp = new ArrayList<AbyssRankingResult>();
 		this.race = race.getRaceId();
-		this.player = player;
 	}
-	
-	public SM_ABYSS_RANKING_PLAYERS(ArrayList<AbyssRankingResult> data, int race, int action, int section, Player player)
-	{
-		this.data = data;
-		dataTemp = new ArrayList<AbyssRankingResult>();
-		this.race = race;
-		this.action = action;
-		this.section = section;
-		this.player = player;
-	}
-	
+
 	@Override	
 	protected void writeImpl(AionConnection con, ByteBuffer buf)
 	{
-		int count = 0;
-		
 		writeD(buf, race);// 0:Elyos 1:Asmo
 		writeD(buf, Math.round(AbyssRankingService.getInstance().getTimeOfUpdate() / 1000));//TODO Date
-		writeD(buf, section);
-		writeD(buf, action);// 0:Nothing 1:Update Table
-		
-		if(data.size() > 46)
-			writeH(buf, 0x2E);
-		else
-			writeH(buf, data.size());
-			
+		writeD(buf, 0x01);
+		writeD(buf, 0x01);// 0:Nothing 1:Update Table
+		writeH(buf, data.size());// list size
 		
 		for (AbyssRankingResult rs : data)
 		{
-			if(count >= 46)
-			{
-				dataTemp.add(rs);
-			}	
-			else
-			{
-				writeD(buf, rs.getTopRanking());// Current Rank
-				writeD(buf, rs.getPlayerRank());// AbyssRank
-				writeD(buf, rs.getOldRanking());// Old Rank, TODO: build history table and schedule hourly refresh
-				writeD(buf, rs.getPlayerId()); // PlayerID
-				writeD(buf, race);
-				writeD(buf, rs.getPlayerClass().getClassId());// Class Id
-				writeD(buf, 0); // Sex ? 0=male / 1=female
-				writeD(buf, rs.getPlayerAP());// Abyss Points
-				writeD(buf, 0); // Unk
-				writeC(buf, rs.getPlayerLevel());
-				writeC(buf, 0);
-				
-				writeS(buf, rs.getPlayerName());// Player Name
+			writeD(buf, rs.getTopRanking());// Current Rank
+			writeD(buf, rs.getPlayerRank());// AbyssRank
+			writeD(buf, rs.getOldRanking());// Old Rank, TODO: build history table and schedule hourly refresh
+			writeD(buf, rs.getPlayerId()); // PlayerID
+			writeD(buf, race);
+			writeD(buf, rs.getPlayerClass().getClassId());// Class Id
+			writeD(buf, 0); // Sex ? 0=male / 1=female
+			writeD(buf, rs.getPlayerAP());// Abyss Points
+			writeD(buf, 0); // Unk
+			writeH(buf, rs.getPlayerLevel());
+			
+			writeS(buf, rs.getPlayerName());// Player Name
 
-				writeB(buf, new byte[50 - (rs.getPlayerName().length() * 2)]);
+		    writeB(buf, new byte[52 - (rs.getPlayerName().length() * 2 + 2)]);
 
-				if(rs.getLegionName() == null)
-				{
-				writeS(buf, "");
-				writeB(buf, new byte[80]);
-				}
-				else
-				{
-				writeS(buf, rs.getLegionName());// Legion Name
-				writeB(buf, new byte[80 - (rs.getLegionName().length() * 2)]);
-				}
-				count++;
+			if(rs.getLegionName() == null)
+			{
+			writeB(buf, new byte[80]);
 			}
-		}
-		if (section < 64)
-		{
-			section *= 2 ;
-			if(section == 64)
-				action = 127;
 			else
-				action = 0;
-				
-			data = null;	
-			PacketSendUtility.sendPacket(player, new SM_ABYSS_RANKING_PLAYERS(dataTemp, race, action, section, player));
+			{
+			writeS(buf, rs.getLegionName());// Legion Name
+			writeB(buf, new byte[78 - (rs.getLegionName().length() * 2)]);
+			}
+			writeH(buf, 0x00);
 		}
+		
 		data = null;
 		
 	}

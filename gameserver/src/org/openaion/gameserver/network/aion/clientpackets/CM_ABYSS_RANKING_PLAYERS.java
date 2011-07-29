@@ -71,7 +71,7 @@ public class CM_ABYSS_RANKING_PLAYERS extends AionClientPacket
 		if(queriedRace != null)
 		{
 			ArrayList<AbyssRankingResult> results = AbyssRankingService.getInstance().getInviduals(queriedRace);
-			PacketSendUtility.sendPacket(getConnection().getActivePlayer(), new SM_ABYSS_RANKING_PLAYERS(results,queriedRace, getConnection().getActivePlayer()));
+			PacketSendUtility.sendPacket(getConnection().getActivePlayer(), new SM_ABYSS_RANKING_PLAYERS(results,queriedRace));
 		}
 		else
 		{
