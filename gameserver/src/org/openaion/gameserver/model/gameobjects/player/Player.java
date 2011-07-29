@@ -1,4 +1,4 @@
-﻿/**
+/**
  * This file is part of aion-emu <aion-emu.com>.
  *
  *  aion-emu is free software: you can redistribute it and/or modify
@@ -95,7 +95,6 @@ import org.openaion.gameserver.utils.rates.Rates;
 import org.openaion.gameserver.utils.rates.RegularRates;
 import org.openaion.gameserver.world.World;
 import org.openaion.gameserver.world.zone.ZoneInstance;
-
 
 
 /**
@@ -199,7 +198,7 @@ public class Player extends Creature
         /**
          * Test Value for ingame shop currency
          */
-	public long							shopMoney = 0;
+        public int                                                        shopMoney = 0;
 
         /**
          * Windstream variable for handshake.
@@ -225,7 +224,6 @@ public class Player extends Creature
         // debug
         private static int                                                counter = 0;
 
-	private LocationTemplate lastLoc;
 
         /**
          * Quest time counter, to avoid from sending fake quest reward packet.
@@ -256,15 +254,6 @@ public class Player extends Creature
                 counter++;
         }
 
-	public LocationTemplate getLastLoc()
-	{
-		return lastLoc;
-	}
-	
-	public void setLastLoc(LocationTemplate loc)
-	{
-		lastLoc = loc;
-	}
         public Account getAccount()
         {
                 return playerAccount;
