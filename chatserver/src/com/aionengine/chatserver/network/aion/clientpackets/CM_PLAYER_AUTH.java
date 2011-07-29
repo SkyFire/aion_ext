@@ -28,6 +28,7 @@ import com.aionengine.chatserver.service.ChatService;
  */
 public class CM_PLAYER_AUTH extends AbstractClientPacket
 {
+	private ChatService	chatService;
 
 	private int			playerId;
 	private byte[]		token;
@@ -42,8 +43,10 @@ public class CM_PLAYER_AUTH extends AbstractClientPacket
 	 * @param opCode
 	 */
 	public CM_PLAYER_AUTH(ChannelBuffer channelBuffer, ClientChannelHandler clientChannelHandler)
+		ChatService chatService)
 	{
 		super(channelBuffer, clientChannelHandler, 0x05);
+		this.chatService = chatService;
 	}
 
 	@Override

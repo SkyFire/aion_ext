@@ -29,6 +29,15 @@ import org.openaion.gameserver.network.aion.serverpackets.SM_SYSTEM_MESSAGE;
 import org.openaion.gameserver.skill.model.SkillTargetSlot;
 import org.openaion.gameserver.utils.PacketSendUtility;
 import org.openaion.gameserver.world.World;
+import org.openaion.gameserver.services.TeleportService;
+
+import org.openaion.gameserver.model.templates.LocationTemplate;
+import org.openaion.gameserver.world.WorldMap;
+import org.openaion.gameserver.world.WorldMapInstance;
+
+import org.openaion.gameserver.services.InstanceService;
+import java.util.Timer;
+import java.util.TimerTask;
 
 
 /**
@@ -171,6 +180,68 @@ public class DuelService
 	 */
 	private void startDuel(Player requester, Player responder)
 	{
+		//Alte Positionen sichern
+		LocationTemplate locTreq = new LocationTemplate();
+		locTreq.setLocation(requester.getWorldId(), requester.getX(), requester.getY(), requester.getZ());
+		requester.setLastLoc(locTreq);
+		
+		LocationTemplate locTres = new LocationTemplate();
+		locTres.setLocation(responder.getWorldId(), responder.getX(), responder.getY(), responder.getZ());
+		responder.setLastLoc(locTres);
+		
+		final LocationTemplate fLocReq = locTreq;
+		final LocationTemplate fLocRes = locTres;
+		
+		//Instanz der Arena erzeugen
+		WorldMapInstance instance = InstanceService.getNextAvailableInstance(300300000);
+		InstanceService.registerPlayerWithInstance(instance, requester);
+		InstanceService.registerPlayerWithInstance(instance, responder);
+		
+		//Spieler in die Instanz teleportieren
+		TeleportService.freeTeleport(requester, 300300000, instance.getInstanceId(), 1802.4008f, 790.57776f, 469.4145f);
+		TeleportService.freeTeleport(responder, 300300000, instance.getInstanceId(), 1766.6227f, 796.4245f, 469.35007f);
+		
+		final Player req = requester;
+		final Player res = responder;
+		
+		//Nach 2 Sekunden alle 0.5 Sekunden ueberpruefen, ob sich beide Spieler bewegt haben, wenn ja startet der Countdown fuer das Duell
+		
+		try {
+			final Timer timer = new Timer();
+			TimerTask task = new TimerTask() {
+				public void run() {
+					if (checkPosition(req, 1802.4008f, 790.57776f, 469.4145f) && checkPosition(res, 1766.6227f, 796.4245f, 469.35007f))
+					{
+					    if (checkPosition(req, fLocReq.getX(), fLocReq.getY(), fLocReq.getZ()) && checkPosition(res, fLocRes.getX(), fLocRes.getY(), fLocRes.getZ()))
+						{
+							continueStartDuel(req, res);
+							timer.cancel();
+						}
+					}
+				}
+			};
+			timer.scheduleAtFixedRate(task, 500, 2000);
+		} catch (Exception e) {
+			continueStartDuel(req, res);
+		}
+		
+	}
+
+	private boolean checkPosition(Player player, float x, float y, float z)
+	{
+		boolean moved = false;
+		if (player.getX() != x)
+			moved = true;
+		else if (player.getY() != y)
+			moved = true;
+		else if (player.getZ() != z)
+			moved = true;
+			
+		return moved;
+	}
+	
+	private void continueStartDuel(Player requester, Player responder)
+	{
 		PacketSendUtility.sendPacket(requester, SM_DUEL.SM_DUEL_STARTED(responder.getObjectId()));
 		PacketSendUtility.sendPacket(responder, SM_DUEL.SM_DUEL_STARTED(requester.getObjectId()));
 		createDuel(requester.getObjectId(), responder.getObjectId());
@@ -183,8 +254,10 @@ public class DuelService
 	 */
 	public void loseDuel(Player player)
 	{
-		if(!isDueling(player.getObjectId()))
-			return;
+		try {
+			if(!isDueling(player.getObjectId()))
+				return;
+		} catch (Exception ex) { log.info("[DS] ERROR: " + ex.toString()); }
 
 		/**
 		 * all debuffs are removed from loser
@@ -214,6 +287,13 @@ public class DuelService
 		}
 
 		removeDuel(player.getObjectId(), opponnentId);
+		try { Thread.sleep(2000); } catch (Exception ex) { }
+			
+		LocationTemplate locTp = player.getLastLoc();			
+		TeleportService.freeTeleport(player, locTp.getMapId(), locTp.getX(), locTp.getY(), locTp.getZ());
+			
+		LocationTemplate locTo = opponent.getLastLoc();
+		TeleportService.freeTeleport(opponent, locTo.getMapId(), locTo.getX(), locTo.getY(), locTo.getZ());
 	}
 
 	/**

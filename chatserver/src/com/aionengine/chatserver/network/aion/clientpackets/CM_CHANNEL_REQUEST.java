@@ -38,6 +38,7 @@ public class CM_CHANNEL_REQUEST extends AbstractClientPacket
 	private int					channelIndex;
 	private byte[]				channelIdentifier;
 
+	private ChatService			chatService;
 	/**
 	 * 
 	 * @param channelBuffer
@@ -45,8 +46,10 @@ public class CM_CHANNEL_REQUEST extends AbstractClientPacket
 	 * @param opCode
 	 */
 	public CM_CHANNEL_REQUEST(ChannelBuffer channelBuffer, ClientChannelHandler gameChannelHandler)
+		ChatService chatService)
 	{
 		super(channelBuffer, gameChannelHandler, 0x10);
+		this.chatService = chatService;
 	}
 
 	@Override

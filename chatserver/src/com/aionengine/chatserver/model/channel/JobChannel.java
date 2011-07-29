@@ -36,6 +36,31 @@ public class JobChannel extends RaceChannel
 	{
 		super(ChannelType.JOB, race);
 		this.playerClass = playerClass;
+		frenchAlias = "@\u0001job_";
+		switch(this.playerClass)
+		{
+			case ASSASSIN: frenchAlias += "Assassin"; break;
+			case CHANTER: frenchAlias += "A\u00e8de"; break;
+			case CLERIC: frenchAlias += "Clerc"; break;
+			case GLADIATOR: frenchAlias += "Gladiateur[f:\"Gladiatrice\"]"; break;
+			case RANGER: frenchAlias += "R\u00f4deur[f:\"R\u00f4deuse\"]"; break;
+			case SORCERER: frenchAlias += "Sorcier[f:\"Sorci\u00e8re\"]"; break;
+			case SPIRIT_MASTER: frenchAlias += "Spiritualiste"; break;
+			case TEMPLAR: frenchAlias += "Templier[f:\"Templi\u00e8re\"]"; break;
+		}
+		frenchAlias += "\u0001";
+		frenchAlias += GameServerService.GAMESERVER_ID;
+		frenchAlias += ".";
+		if(race == Race.ASMODIANS)
+			frenchAlias += "1";
+		else
+			frenchAlias += "0";
+		frenchAlias += ".AION.KOR";
+	}
+	
+	public byte[] getFrenchAlias()
+	{
+		return frenchAlias.getBytes(Charset.forName("UTF-16le"));
 	}
 
 	/**
