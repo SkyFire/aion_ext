@@ -178,12 +178,17 @@
 		<exitpoint mapid="400010000" x="876.7211" y="3079.2874" z="1644.5786" race="ASMODIANS"/>
 		<exitpoint mapid="400010000" x="2890" y="754" z="1498.5786" race="ELYOS"/>
 	</portal>
-	<!-- Fire Temple-->
+	<!-- Fire Temple Entrance Asmo -->
 	<portal npcid="730047" instance="true" minlevel="27" group="true" maxlevel="60">
 		<entrypoint mapid="220020000" x="1592.178" y="977.2572" z="140.75" race="ASMODIANS"/>
+		<exitpoint mapid="320100000" x="148.256" y="460.857" z="141.713"/>
+	</portal>
+    <!-- Fire Temple Entrance Elyos -->
+	<portal npcid="730069" instance="true" minlevel="27" group="true" maxlevel="60">
 		<entrypoint mapid="210020000" x="1343.28" y="350.96" z="348.67" race="ELYOS"/>
 		<exitpoint mapid="320100000" x="148.256" y="460.857" z="141.713"/>
 	</portal>
+    <!-- Fire Temple Exit -->
 	<portal npcid="730048" instance="false" minlevel="30" group="false" maxlevel="55">
 		<entrypoint mapid="320100000" x="149.01385" y="466.66568" z="141.31714"/>
 		<exitpoint mapid="220020000" x="1591.4039" y="970.94464" z="141.00067" race="ASMODIANS"/>
@@ -291,8 +296,8 @@
 	</portal>
 	<!-- Theobomos lab : Internal Portals : Elemental Core Testing Room Exit -->
 	<portal npcid="730178" instance="true" minlevel="46" maxlevel="60" group="true">
-		<entrypoint mapid="31011000" x="570.521" y="490.37527" z="196.8489"/>
-		<exitpoint mapid="31011000" x="554.6808" y="490.64645" z="196.8186"/>
+		<entrypoint mapid="310110000" x="570.521" y="490.37527" z="196.8489"/>
+		<exitpoint mapid="310110000" x="554.6808" y="490.64645" z="196.8186"/>
 	</portal>
 	<!-- Theobomos Lab Exit -->
 	<portal npcid="730168" instance="false" minlevel="46" maxlevel="60" group="false">
@@ -867,4 +872,43 @@
 	<portal npcid="258135" instance="false" minlevel="50" maxlevel="60" group="false">
 		<exitpoint mapid="220070000" x="1941.3992" y="1068.9736" z="326.93292"/>
 	</portal>
-</portal_templates>
+    <!-- 2.5 Instances by Hadesh and Destructor -->
+	<!-- Esoterrace Entrance Elyos -->
+	<portal npcid="730409" instance="true" minlevel="50" maxlevel="60" group="true" race="ELYOS">
+		<entrypoint mapid="210050000" x="930.49" y="1904.88" z="338.01" />
+		<exitpoint mapid="300250000" x="324.386017" y="426.344788" z="330"/>
+	</portal>
+	<!-- Esoterrace Entrance Asmo -->
+	<portal npcid="700138" instance="true" minlevel="50" maxlevel="60" group="true" race="ASMODIANS">
+		<entrypoint mapid="220070000" x="1807.01" y="1091.45" z="327.56"/>
+		<exitpoint mapid="300250000" x="324.386017" y="426.344788" z="330"/>
+	</portal>
+	<!-- Esoterrace Dimensional Rift Exit -->
+	<portal npcid="205437" minlevel="50" maxlevel="60" instance="false" group="false">
+		<entrypoint mapid="300250000" x="1316.596" y="1148.0472" z="51.676174"/>
+		<exitpoint mapid="210050000" x="932.951355" y="1906.001343" z="340.000" race="ELYOS"/>
+		<exitpoint mapid="210070000" x="1287.057617" y="857.303101" z="312.459076" race="ASMODIANS"/>
+	</portal>
+	<!-- Pvp Zone -->
+	<portal npcid="250148" instance="false" minlevel="50" maxlevel="55" group="false">
+		<exitpoint mapid="300100000" x="484.684" y="517.064" z="1032.84" race="ELYOS"/>
+		<exitpoint mapid="300100000" x="633.1899" y="540.5875" z="1031.0491" race="ASMODIANS"/>
+	</portal>
+	<!-- Pvp Zone Terrase Teleporter Ely/Asmo -->
+	<portal npcid="250146" instance="false" minlevel="50" maxlevel="55" group="false">
+	<entrypoint mapid="300100000" x="393.3586" y="546.53845" z="1072.0844"/>
+	<exitpoint mapid="300100000" x="489.95102" y="498.1902" z="951.7029" race="ELYOS"/>
+	<exitpoint mapid="300100000" x="613.9179" y="501.58667" z="942.24" race="ASMODIANS"/>
+	</portal>
+	<!-- Pvp Zone Out Teleporter Ely/Asmo -->
+	<portal npcid="250147" instance="false" minlevel="50" maxlevel="55" group="false">
+		<exitpoint mapid="300100000" x="484.684" y="517.064" z="1032.84" race="ELYOS"/>
+		<exitpoint mapid="300100000" x="633.1899" y="540.5875" z="1031.0491" race="ASMODIANS"/>
+	</portal>
+	<!-- Pvp Zone Endboss Teleporter Ely/Asmo -->
+	<portal npcid="217778" instance="true" minlevel="50" maxlevel="60" group="true">
+		<entrypoint mapid="300100000" x="2019.51" y="1467.34" z="947.018"/>
+		<exitpoint mapid="300100000" x="375.63638" y="510.2968" z="1072.1212"/>
+	<portalitem id="1" itemid="186000098" quantity="1"/>
+	</portal>
+	</portal_templates>

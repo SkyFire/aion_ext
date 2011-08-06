@@ -490,7 +490,11 @@
 	<item_collecting id="2657" start_npc_id="204817"/>
 	<!-- [Spy/Group] No Reinforcements -->
 	<item_collecting id="2658" start_npc_id="204785"/>
-	<!-- 2659: TODO: [Spy/Group] Clear the Way (lvl 44) -->
+	<!-- 2659: [Spy/Group] Clear the Way -->
+	<monster_hunt id="2659" start_npc_id="204651">
+		<monster_infos var_id="0" max_kill="11" npc_id="213577" />
+		<monster_infos var_id="1" max_kill="20" npc_id="213579" />
+	</monster_hunt>
 	<!-- [Spy/Group] Open the Path -->
 	<item_collecting id="2660" start_npc_id="204651"/>
 	<!-- An Unobtrusive Journey -->
@@ -534,7 +538,8 @@
 		<monster_infos var_id="0" max_kill="9" npc_id="213625"/>
 		<monster_infos var_id="0" max_kill="9" npc_id="213627"/>
 	</monster_hunt>
-	<!-- 2672: TODO: A Careful Eggs-amination (lvl 99) -->
+	<!-- 2672: A Careful Eggs-amination -->
+	<item_collecting id="2672" start_npc_id="204785" action_item_id="700337"/>
 	<!-- [Spy/Group] Getting Through Indratu -->
 	<item_collecting id="2673" start_npc_id="204785"/>
 	<!-- [Group] Dangerous Drake -->
@@ -709,12 +714,14 @@
 	<!-- Nightmares and Dreamscapes -->
 	<report_to id="28601" start_npc_id="204702" end_npc_id="205234" item_id="182213006"/>
 	<!-- 28602: Into the Unknown (lvl 37) handled by script -->
-	<!-- Seeking Slumber -->
-	<monster_hunt id="28605" start_npc_id="205235">
-		<monster_infos var_id="0" max_kill="8" npc_id="217026"/>
-		<monster_infos var_id="0" max_kill="8" npc_id="216971"/>
-	</monster_hunt>
-	<!-- 28606: TODO: An Honorable Death (lvl 37) -->
+	<!-- 28605 Seeking Slumber --> 
+	<monster_hunt id="28605" start_npc_id="205235"> 
+		<monster_infos npc_id="216971" var_id="0" max_kill="8"/> 
+	</monster_hunt>	
+	<!-- 28606 An Honorable Death--> 
+	<monster_hunt id="28606" start_npc_id="205236"> 
+		<monster_infos npc_id="216968" var_id="0" max_kill="1"/> 
+	</monster_hunt>	
 	<!-- A Blacksmith's Dream -->
 	<item_collecting id="28607" start_npc_id="205237"/>
 	<!-- Judge's Tear-Soaked Sword -->

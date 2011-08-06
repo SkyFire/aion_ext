@@ -308,5 +308,7 @@ public class AdminConfig
 	@Property(key = "gameserver.administration.command.preset", defaultValue = "3")
 	public static int	COMMAND_APPLY_PRESET;
 
+        @Property(key = "gameserver.administration.command.pvp", defaultValue = "3")
+	public static int	COMMAND_PVP;
 
 }

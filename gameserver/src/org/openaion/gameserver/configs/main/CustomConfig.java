@@ -406,4 +406,9 @@ public class CustomConfig
 
 	@Property(key = "gameserver.rate.tollexchange.kinah", defaultValue = "1000")
 	public static int TOLL_EXCHANGE_KINAH_RATE;
+	/**
+    * Enable dredgion
+    */
+    @Property(key = "gameserver.dredgion.enable", defaultValue = "true")
+    public static boolean       ENABLE_DREDGION;
 }

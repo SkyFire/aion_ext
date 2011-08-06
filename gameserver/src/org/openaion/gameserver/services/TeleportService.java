@@ -51,11 +51,12 @@ import org.openaion.gameserver.utils.PacketSendUtility;
 import org.openaion.gameserver.utils.ThreadPoolManager;
 import org.openaion.gameserver.world.World;
 import org.openaion.gameserver.world.WorldMapType;
+import org.apache.log4j.Logger;
 
 
 /**
  * @author ATracer , orz, Simple
- * 
+ * @co-author Aion Germany, Dallas, Iven, Dex
  */
 public class TeleportService
 {
@@ -187,6 +188,58 @@ public class TeleportService
 		scheduleTeleportTask(player, locationTemplate.getMapId(), locationTemplate.getX(), locationTemplate.getY(),
 			locationTemplate.getZ());
 	}
+	public static void freeTeleport(TeleporterTemplate template, int locId, Player player)
+	{
+		if(template.getTeleLocIdData() == null)
+		{
+			log.info(String.format("Missing locId for this teleporter at teleporter_templates.xml with locId: %d",
+				locId));
+			PacketSendUtility.sendMessage(player,
+				"Missing locId for this teleporter at teleporter_templates.xml with locId: " + locId);
+			return;
+		}
+		if( template.getRace() != null && !player.getCommonData().getRace().equals(template.getRace()) )
+		{
+				PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_MOVE_PORTAL_ERROR_INVALID_RACE);
+				return;
+		}
+		TeleportLocation location = template.getTeleLocIdData().getTeleportLocation(locId);
+		if(location == null)
+		{
+			log.info(String.format("Missing locId for this teleporter at teleporter_templates.xml with locId: %d",
+				locId));
+			PacketSendUtility.sendMessage(player,
+				"Missing locId for this teleporter at teleporter_templates.xml with locId: " + locId);
+			return;
+		}
+		TelelocationTemplate locationTemplate = DataManager.TELELOCATION_DATA.getTelelocationTemplate(locId);
+		if(locationTemplate == null)
+		{
+			log.info(String.format("Missing info at teleport_location.xml with locId: %d", locId));
+			PacketSendUtility.sendMessage(player, "Missing info at teleport_location.xml with locId: " + locId);
+			return;
+		}
+		if(player.getToyPet() != null)
+			ToyPetService.getInstance().dismissPet(player, player.getToyPet().getPetId());
+		PacketSendUtility.sendPacket(player, new SM_TELEPORT_LOC(locationTemplate.getMapId(), locationTemplate.getX(),
+			locationTemplate.getY(), locationTemplate.getZ()));
+		scheduleTeleportTask(player, locationTemplate.getMapId(), locationTemplate.getX(), locationTemplate.getY(),
+			locationTemplate.getZ());
+	}
+	public static void freeTeleport(Player player, int MapId, float x, float y, float z)
+	{
+		if(player.getToyPet() != null)
+			ToyPetService.getInstance().dismissPet(player, player.getToyPet().getPetId());
+		PacketSendUtility.sendPacket(player, new SM_TELEPORT_LOC(MapId, x, y, z));
+		teleportTo(player, MapId, x, y, z, 2000);
+	}
+	public static void freeTeleport(Player player, int MapId, int instanceId, float x, float y, float z)
+	{
+		if(player.getToyPet() != null)
+			ToyPetService.getInstance().dismissPet(player, player.getToyPet().getPetId());
+		PacketSendUtility.sendPacket(player, new SM_TELEPORT_LOC(MapId, x, y, z));
+		teleportTo(player, MapId, instanceId, x, y, z, 2000);
+	}
 
 	/**
 	 * Check kinah in inventory for teleportation
@@ -227,9 +280,9 @@ public class TeleportService
 		
 		Npc object = (Npc) world.findAionObject(targetObjectId);
 		Race npcRace = object.getObjectTemplate().getRace();
-		if(npcRace != null && npcRace != player.getCommonData().getRace())
+		if(npcRace != null && npcRace != player.getCommonData().getRace() && npcRace != Race.TELEPORTER)
 		{
-			PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_CANNOT_MOVE_TO_AIRPORT_WRONG_NPC);//TODO retail message
+			PacketSendUtility.sendPacket(player, SM_SYSTEM_MESSAGE.STR_MOVE_PORTAL_ERROR_INVALID_RACE);
 			return;
 		}
 		

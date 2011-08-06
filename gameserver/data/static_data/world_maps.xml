@@ -75,7 +75,7 @@
 	<map id="900100000" name="Test_GiantMonster" death_level="0" water_level="16" world_size="1024"/>
 	<map id="900110000" name="Housing_barrack" death_level="0" water_level="16" world_size="512"/>
 	<map id="300240000" name="Aturam Sky Fortress" instance="true" instanceMapId="50" death_level="0" water_level="16" world_size="1024"/>
-	<map id="300250000" name="Esoterrace" instance="true" instanceMapId="51" cooldown="10" death_level="0" water_level="16" world_size="2048"/>
+	<map id="300250000" name="Esoterrace" instance="true" instanceMapId="51" cooldown="1320" death_level="0" water_level="16" world_size="2048"/>
 	<map id="300260000" name="Ladis Forest" instance="true" instanceMapId="47" death_level="0" water_level="16" world_size="2048"/>
 	<map id="300270000" name="Dorgel Manor" instance="true" instanceMapId="48" death_level="0" water_level="16" world_size="2048"/>
 	<map id="300280000" name="Lentor Outpost" instance="true" instanceMapId="49" death_level="0" water_level="16" world_size="2048"/>

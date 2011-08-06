@@ -238,7 +238,7 @@ public final class ThreadPoolManager implements DisconnectionThreadPool
 
 	/*
 	 * (non-Javadoc)
-	 * @seecom.aionemu.commons.network.DisconnectionThreadPool#scheduleDisconnection(org.openaion.commons.network.
+	 * @seeorg.openaion.commons.network.DisconnectionThreadPool#scheduleDisconnection(org.openaion.commons.network.
 	 * DisconnectionTask, long)
 	 */
 	@Override

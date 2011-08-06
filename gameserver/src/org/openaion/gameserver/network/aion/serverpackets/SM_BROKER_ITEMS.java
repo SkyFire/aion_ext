@@ -136,9 +136,9 @@ public class SM_BROKER_ITEMS extends AionServerPacket
 					ItemStone god = item.getItem().getGodStone();
 					writeD(buf, god == null ? 0 : god.getItemId());
 					
-					writeD(buf, 0x00); //unk
-					writeD(buf, 0x00); //unk
 					writeC(buf, 0x00); //unk
+					writeD(buf, 0x00); //unk
+					writeD(buf, 0x00); //unk
 					writeS(buf, item.getItem().getCrafterName()); //creator
 				}
 				break;
@@ -240,7 +240,7 @@ public class SM_BROKER_ITEMS extends AionServerPacket
 					writeC(buf, modifier.getStat().getItemStoneMask());
 				}
 			}
-			writeB(buf, new byte[(6-count)]);
+			writeB(buf, new byte[(6-count)*2]);
 			count = 0;
 			for(ManaStone itemStone : itemStones)
 			{
@@ -258,7 +258,7 @@ public class SM_BROKER_ITEMS extends AionServerPacket
 		}
 		else
 		{
-			writeB(buf, new byte[18]);
+			writeB(buf, new byte[24]);
 		}
 
 		//for now max 6 stones - write some junk

@@ -84,7 +84,8 @@ CREATE TABLE `bookmark` (
   `y` float NOT NULL,
   `z` float NOT NULL,
   `world_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  KEY `char_id` (`char_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
@@ -126,7 +127,8 @@ CREATE TABLE `droplist` (
   `min` int(11) NOT NULL DEFAULT '0',
   `max` int(11) NOT NULL DEFAULT '0',
   `chance` float NOT NULL DEFAULT '0',
-  PRIMARY KEY (`Id`)
+  PRIMARY KEY (`Id`),
+  UNIQUE KEY `mobId_itemId` (`mobId`,`itemId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- ----------------------------
@@ -241,9 +243,14 @@ CREATE TABLE `legions` (
   `oldrank` int(11) NOT NULL DEFAULT '0',
   `level` int(1) NOT NULL DEFAULT '1',
   `contribution_points` int(11) NOT NULL DEFAULT '0',
-  `legionar_permission2` int(11) NOT NULL DEFAULT '64',
-  `centurion_permission1` int(11) NOT NULL DEFAULT '104',
-  `centurion_permission2` int(11) NOT NULL DEFAULT '8',
+  `deputy_permission1` int(1) NOT NULL DEFAULT '0',
+  `deputy_permission2` int(1) NOT NULL DEFAULT '0',
+  `legionary_permission1` int(1) NOT NULL DEFAULT '0',
+  `legionary_permission2` int(1) NOT NULL DEFAULT '0',
+  `centurion_permission1` int(1) NOT NULL DEFAULT '0',
+  `centurion_permission2` int(1) NOT NULL DEFAULT '0',
+  `volunteer_permission1` int(1) NOT NULL DEFAULT '0',
+  `volunteer_permission2` int(1) NOT NULL DEFAULT '0',
   `disband_time` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name_unique` (`name`)
@@ -313,7 +320,7 @@ CREATE TABLE `legion_members` (
   `legion_id` int(11) NOT NULL,
   `player_id` int(11) NOT NULL,
   `nickname` varchar(16) NOT NULL DEFAULT '',
-  `rank` enum('BRIGADE_GENERAL','CENTURION','LEGIONARY') NOT NULL DEFAULT 'LEGIONARY',
+  `rank` enum('BRIGADE_GENERAL','SUB_GENERAL','CENTURION','LEGIONARY','NEW_LEGIONARY') NOT NULL default 'NEW_LEGIONARY',
   `selfintro` varchar(25) DEFAULT '',
   PRIMARY KEY (`player_id`),
   KEY `player_id` (`player_id`),

@@ -16,8 +16,6 @@
  */
 package org.openaion.gameserver.services;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import org.openaion.gameserver.configs.main.CustomConfig;
 import org.openaion.gameserver.configs.main.GroupConfig;
@@ -34,16 +32,27 @@ import org.openaion.gameserver.utils.MathUtil;
 import org.openaion.gameserver.utils.PacketSendUtility;
 import org.openaion.gameserver.utils.stats.AbyssRankEnum;
 import org.openaion.gameserver.utils.stats.StatFunctions;
+import java.util.ArrayList;
+import java.util.List;
 
 import javolution.util.FastMap;
 
 
 /**
  * @author Sarynth
- *
+ * @co-author Aion Germany, Dallas, Iven. Dex
  */
 public class PvpService
 {
+	public static boolean pvpZoneReward = true;
+	public static boolean getPvpZoneReward()
+	{
+		return pvpZoneReward;
+	}
+	public static void setPvpZoneReward(boolean reward)
+	{
+		pvpZoneReward = reward;
+	}
 	public static final PvpService getInstance()
 	{
 		return SingletonHolder.instance;
@@ -122,6 +131,11 @@ public class PvpService
 			}
 		}
 
+		PacketSendUtility.sendMessage(victim, Integer.toString(victim.getWorldId()));
+		PacketSendUtility.sendMessage(victim, Boolean.toString(pvpZoneReward));
+		//Don't count kill & AP if its disabled
+		if (victim.getWorldId() == 300100000 && !pvpZoneReward)
+			return;
 		// Add Player Kill to record.
 		if (this.getKillsFor(winner.getObjectId(), victim.getObjectId()) < CustomConfig.MAX_DAILY_PVP_KILLS)
 			winner.getAbyssRank().setAllKill();
@@ -174,6 +188,9 @@ public class PvpService
 	 */
 	private boolean rewardPlayerGroup(Player victim, int totalDamage, AggroInfo aggro)
 	{
+		//Don't count kill & AP if its disabled
+		if (victim.getWorldId() == 300100000 && !pvpZoneReward)
+			return false;
 		// Reward Group
 		PlayerGroup group = ((PlayerGroup)aggro.getAttacker());
 		
@@ -246,6 +263,9 @@ public class PvpService
 	 */
 	private boolean rewardPlayerAlliance(Player victim, int totalDamage, AggroInfo aggro)
 	{
+		//Don't count kill & AP if its disabled
+		if (victim.getWorldId() == 300100000 && !pvpZoneReward)
+			return false;
 		// Reward Alliance
 		PlayerAlliance alliance = ((PlayerAlliance)aggro.getAttacker());
 		
@@ -311,6 +331,9 @@ public class PvpService
 	 */
 	private boolean rewardPlayer(Player victim, int totalDamage, AggroInfo aggro)
 	{
+		//Don't count kill & AP if its disabled
+		if (victim.getWorldId() == 300100000 && !pvpZoneReward)
+			return false;
 		// Reward Player
 		Player winner = ((Player)aggro.getAttacker());
 

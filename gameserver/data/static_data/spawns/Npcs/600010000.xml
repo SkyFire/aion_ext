@@ -256,4 +256,8 @@
 	<spawn map="600010000" npcid="799392" pool="1" interval="295">
 		<object x="484.41" y="369.01" z="327.382" h="20"/>
 	</spawn>
+	<!-- Icorunerk -->
+	<spawn map="600010000" pool="1" npcid="799087" interval="295">
+		<object x="531" y="335" z="299.625" h="110"/>
+	</spawn>
 </spawns>

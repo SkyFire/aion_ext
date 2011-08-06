@@ -401,8 +401,7 @@
 	<item_collecting id="2412" start_npc_id="204366"/>
 	<!-- Elemental Stone of Water -->
 	<item_collecting id="2413" start_npc_id="204364"/>
-	<!-- Hreidmar the Furious -->
-	<report_to id="2414" start_npc_id="204369" end_npc_id="204369"/>
+	<!-- Hreidmar the Furious (lvl l35) handled by script -->
 	<!-- Trolls on the Path -->
 	<monster_hunt id="2415" start_npc_id="204359">
 		<monster_infos var_id="0" max_kill="11" npc_id="212535"/>

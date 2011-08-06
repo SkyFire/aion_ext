@@ -16,20 +16,6 @@
  */
 package org.openaion.gameserver.model.gameobjects.player;
 
-import gnu.trove.TIntObjectHashMap;
-
-import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Collections;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.ScheduledFuture;
-
-import org.apache.log4j.Logger;
 import org.openaion.commons.database.dao.DAOManager;
 import org.openaion.gameserver.configs.administration.AdminConfig;
 import org.openaion.gameserver.configs.main.CustomConfig;
@@ -95,7 +81,22 @@ import org.openaion.gameserver.utils.rates.Rates;
 import org.openaion.gameserver.utils.rates.RegularRates;
 import org.openaion.gameserver.world.World;
 import org.openaion.gameserver.world.zone.ZoneInstance;
+import gnu.trove.TIntObjectHashMap;
 
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.ScheduledFuture;
+
+import org.apache.log4j.Logger;
+
+import org.openaion.gameserver.model.templates.LocationTemplate;
 
 /**
  * This class is representing Player object, it contains all needed data.
@@ -224,6 +225,7 @@ public class Player extends Creature
         // debug
         private static int                                                counter = 0;
 
+	private LocationTemplate lastLoc;
 
         /**
          * Quest time counter, to avoid from sending fake quest reward packet.
@@ -254,6 +256,14 @@ public class Player extends Creature
                 counter++;
         }
 
+	public LocationTemplate getLastLoc()
+	{
+		return lastLoc;
+	}
+	public void setLastLoc(LocationTemplate loc)
+	{
+		lastLoc = loc;
+	}
         public Account getAccount()
         {
                 return playerAccount;

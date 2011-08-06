@@ -24,12 +24,6 @@
 	<spawn map="110010000" npcid="798440" pool="1" interval="295">
 		<object x="1551.1426" y="1457.9706" z="572.87195" h="100"/>
 	</spawn>
-	<spawn map="110010000" npcid="798430" pool="1" interval="295">
-		<object x="1945.314" y="1492.108" z="590.3636" h="90"/>
-	</spawn>
-	<spawn map="110010000" npcid="798431" pool="1" interval="295">
-		<object x="1943.505" y="1548.667" z="590.3635" h="90"/>
-	</spawn>
 	<!-- A History of Legions (Object Normal lvl:1)-->
 	<spawn map="110010000" npcid="730100" pool="1" interval="295">
 		<object x="2042.4034" y="1475.6287" z="583.71265" h="33" staticid="990"/>
@@ -495,17 +489,13 @@
 	<spawn map="110010000" npcid="203818" pool="1" interval="295">
 		<object x="1905.00000" y="1630.00000" z="590.35895" h="104"/>
 	</spawn>
-	<!-- Jaichinerk (sells rented items) -->
-	<spawn map="110010000" npcid="798471" pool="1" interval="105">
-		<object x="1945.2653" y="1547.3644" z="590.3637" h="89"/>
-	</spawn>
 	<!-- Jairinerk (sells rented items) -->
-	<spawn map="110010000" npcid="798470" pool="1" interval="105">
+	<spawn map="110010000" npcid="798431" pool="1" interval="105">
 		<object x="1943.4313" y="1547.2537" z="590.3635" h="89"/>
 	</spawn>
 	<!-- Jairunerk (sells rented items) -->
-	<spawn map="110010000" npcid="798469" pool="1" interval="105">
-		<object x="1945.3032" y="1490.7712" z="590.36365" h="89"/>
+	<spawn map="110010000" npcid="798430" pool="1" interval="105">
+		<object x="1945.5717" y="1458.3883" z="590.4085" h="90"/>
 	</spawn>
 	<!-- Jhaelas (NPC Normal lvl:40)-->
 	<spawn map="110010000" npcid="203782" pool="1" interval="295">
@@ -613,7 +603,7 @@
 	</spawn>
 	<!-- Lampard -->
 	<spawn map="110010000" npcid="798397" pool="1" interval="105">
-		<object x="1532.375" y="1511.525" z="565.88245" h="115"/>
+		<object x="1525.8407" y="1527.9125" z="565.9245" h="119"/>
 	</spawn>
 	<!-- Laokones (NPC Normal lvl:40)-->
 	<spawn map="110010000" npcid="203731" pool="1" interval="295">
@@ -1212,7 +1202,7 @@
   	</spawn>
 	<!-- Jaichinerk (Shield Seller)-->
 	<spawn map="110010000" npcid="798432" pool="1" interval="295">
-		<object x="1945.278" y="1458.641" z="590.3634" h="30"/>
+		<object x="1945.6589" y="1548.9323" z="590.3637" h="89"/>
 	</spawn>
 	<!-- Eliana (NPC Daeva of Summer lvl:55) -->
 	<spawn map="110010000" npcid="799706" pool="1" interval="295">
@@ -1228,7 +1218,7 @@
 	</spawn>
 	<!-- Etonia (NPC Daeva of Song lvl:30) -->
 	<spawn map="110010000" npcid="798398" pool="1" interval="295">
-		<object x="1528.0" y="1511.0" z="565.8933" h="0"/>
+		<object x="1529.3351" y="1527.7394" z="565.92206" h="59"/>
 	</spawn>
 	<!-- Chaokin (Sell Steel Rake Quest Items) -->
 	<spawn map="110010000" npcid="798444" pool="1" interval="295">

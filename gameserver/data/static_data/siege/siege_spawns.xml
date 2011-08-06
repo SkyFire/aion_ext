@@ -12,7 +12,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2585.4" y="2882.3" z="1506.5" h="102"/>
 			</siege_guard>
 			<!-- Ahsur / Cachus, Quartier-maitre de la Forteresse abyssale, normal, level 40-->
-			<siege_guard npcid_dr="263514" npcid_da="263567" npcid_li="263566">
+			<siege_guard npcid_dr="263214" npcid_da="263567" npcid_li="263566">
 				<loc x="2576.1" y="2831.1" z="1506.5" h="102"/>
 			</siege_guard>
 			<!-- Semund / Ipimedea, Proprietaire d'entrepot, normal, level 40-->
@@ -28,39 +28,18 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2601.8" y="2823.1" z="1499.3" h="26"/>
 			</siege_guard>
 			<!-- Sagah / Yullus, Entrepot des Legions, normal, level 40-->
-			<siege_guard npcid_dr="263514" npcid_da="263518" npcid_li="263516">
+			<siege_guard npcid_dr="263214" npcid_da="263518" npcid_li="263516">
 				<loc x="2546.3" y="2848.6" z="1488.8" h="119"/>
 			</siege_guard>
 			<!-- Tevenaz / Silvius, Responsable de l'Ombre de l'Aile droite, normal, level 40-->
 			<siege_guard npcid_dr="0" npcid_da="263598" npcid_li="263597">
 				<loc x="2543.0" y="2854.2" z="1488.8" h="11"/>
 			</siege_guard>
-			<siege_guard npcid_dr="263501" npcid_da="263500" npcid_li="263499">
-				<loc x="2809.75" y="3202.625" z="1480.625" h="10"/>
-				<loc x="2657.6482" y="2799.3289" z="1480.0896" h="90"/>
-				<loc x="2651.1018" y="3075.7263" z="1482.2325" h="30"/>
-				<loc x="2655.4526" y="3054.0564" z="1482.2307" h="90"/>
-				<loc x="2644.2195" y="3059.7412" z="1482.2311" h="90"/>
-				<loc x="2642.875" y="2845.625" z="1523.5022" h="60"/>
-				<loc x="2570" y="2858" z="1523.4645" h="0"/>
-				<loc x="2667.8743" y="3058.5808" z="1481.344" h="30"/>
-				<loc x="2791.375" y="3230.25" z="1479.25" h="10"/>
-				<loc x="2790.75" y="3216.75" z="1479.25" h="70"/>
-				<loc x="2661.8503" y="2799.3608" z="1480.1899" h="85"/>
-				<loc x="2662.8794" y="3069.7102" z="1482.2089" h="30"/>
-				<loc x="2800.75" y="3216.25" z="1479.25" h="10"/>
-				<loc x="2678.8513" y="3053.6543" z="1481.1342" h="30"/>
-				<loc x="2597.75" y="2800.5" z="1523.6797" h="87"/>
-				<loc x="2811.625" y="3215.5" z="1479.25" h="10"/>
-				<loc x="2815.25" y="3193.5" z="1478.25" h="10"/>
-				<loc x="2627.7036" y="3077.5913" z="1481.1342" h="30"/>
-				<loc x="2656.1733" y="3070.1223" z="1483.1167" h="27"/>
-				<loc x="2797.5" y="3206" z="1479.25" h="70"/>
-				<loc x="2786.25" y="3239.375" z="1480.5" h="10"/>
-				<loc x="2804.25" y="3225.875" z="1479.25" h="10"/>
+			<siege_guard npcid_dr="271816" npcid_da="271811" npcid_li="271806">
+				<loc x="2611.019" y="2834.5876" z="1486.6653" h="111"/>
 			</siege_guard>
 			<siege_guard npcid_dr="263345" npcid_da="263340" npcid_li="263335">
-				<loc x="2815.375" y="3193.375" z="1473.625" h="10"/>
+			<loc x="2815.375" y="3193.375" z="1473.625" h="10"/>
 				<loc x="2655.9443" y="3070.3936" z="1484.3965" h="27"/>
 				<loc x="2812.125" y="3214.875" z="1473.625" h="10"/>
 				<loc x="2575.7996" y="2887.2046" z="1523.3499" h="47"/>
@@ -93,10 +72,19 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2642.1921" y="2889.5449" z="1518.9905" h="7"/>
 				<loc x="2554.5928" y="2864.2422" z="1524.536" h="62"/>
 				<loc x="2800.5" y="3216.5" z="1473.625" h="10"/>
+				<loc x="2666.74" y="2949.12" z="1505.91" h="25"/>
+				<loc x="2649.44" y="2953.59" z="1503.34" h="25"/>
+				<loc x="2626.13" y="2957.67" z="1505.33" h="26"/>
+				<loc x="2602.91" y="2961.4" z="1503.41" h="25"/>
+				<loc x="2581.32" y="2964.32" z="1505.91" h="25"/>
+				<loc x="2612.42" y="2876.75" z="1459.22" h="44"/>
+				<loc x="2583.81" y="2854.57" z="1489.43" h="70"/>
+				<loc x="2641.72" y="2819.25" z="1481.97" h="110"/>
+				<loc x="2657.83" y="2792.21" z="1478.62" h="88"/>
 			</siege_guard>
 			<siege_guard npcid_dr="263541" npcid_da="263536" npcid_li="263531">
-				<loc x="2821.7903" y="3229.905" z="1461.25" h="10"/>
-				<loc x="2627.7214" y="2981.6116" z="1494.8739" h="30"/>
+				<loc x="2821.7903" y="3229.905" z="1456.3207" h="10"/>
+				<loc x="2628.7146" y="2974.3487" z="1489.3754" h="28"/>
 			</siege_guard>
 			<siege_guard npcid_dr="263572" npcid_da="263571" npcid_li="263570">
 				<loc x="2623.885" y="2950.0686" z="1494.5054" h="25"/>
@@ -108,10 +96,11 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2628.571" y="3043.0444" z="1474.7667" h="27"/>
 				<loc x="2814.8721" y="3230.8005" z="1457.7268" h="7"/>
 				<loc x="2788.5481" y="3201.4736" z="1457.7268" h="68"/>
+				<loc x="2601.187" y="2782.5505" z="1503.9553" h="81"/>
+				<loc x="2588.8335" y="2785.1362" z="1503.9209" h="91"/>
 			</siege_guard>
-			<siege_guard npcid_dr="263514" npcid_da="0" npcid_li="0">
-				<loc x="2576.1509" y="2831.1313" z="1506.9742" h="13"/>
-				<loc x="2546.387" y="2848.6284" z="1489.9696" h="0"/>
+			<siege_guard npcid_dr="263214" npcid_da="0" npcid_li="0">
+				<loc x="2627.589" y="2821.9905" z="1506.5194" h="56"/>
 				<loc x="2636.3926" y="2870.7261" z="1507.3501" h="60"/>
 			</siege_guard>
 			<siege_guard npcid_dr="275220" npcid_da="275216" npcid_li="275212">
@@ -174,12 +163,8 @@ Forteresses et Artefacts Abyssaux-->
 			<siege_guard npcid_dr="263562" npcid_da="263561" npcid_li="263560">
 				<loc x="2822.1509" y="3184.6106" z="1473.2341" h="30"/>
 			</siege_guard>
-			<siege_guard npcid_dr="263521" npcid_da="0" npcid_li="0">
-				<loc x="2585.4258" y="2882.291" z="1507.631" h="103"/>
-			</siege_guard>
-			<siege_guard npcid_dr="263510" npcid_da="263509" npcid_li="263508">
-				<loc x="2614.875" y="2860.25" z="1507.4982" h="87"/>
-			</siege_guard>
+
+
 			<siege_guard npcid_dr="0" npcid_da="0" npcid_li="0">
 				<loc x="2600.2441" y="2871.887" z="1506.6831" h="27"/>
 			</siege_guard>
@@ -276,7 +261,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2585.4" y="2882.3" z="1506.5" h="102"/>
 			</peace_guard>
 			<!-- Ahsur / Cachus, Quartier-maitre de la Forteresse abyssale, normal, level 40-->
-			<peace_guard npcid_dr="263514" npcid_da="263567" npcid_li="263566">
+			<peace_guard npcid_dr="263214" npcid_da="263567" npcid_li="263566">
 				<loc x="2576.1" y="2831.1" z="1506.5" h="102"/>
 			</peace_guard>
 			<!-- Semund / Ipimedea, Proprietaire d'entrepot, normal, level 40-->
@@ -292,7 +277,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2601.8" y="2823.1" z="1499.3" h="26"/>
 			</peace_guard>
 			<!-- Sagah / Yullus, Entrepot des Legions, normal, level 40-->
-			<peace_guard npcid_dr="263514" npcid_da="263518" npcid_li="263516">
+			<peace_guard npcid_dr="263214" npcid_da="263518" npcid_li="263516">
 				<loc x="2546.3" y="2848.6" z="1488.8" h="119"/>
 			</peace_guard>
 			<!-- Tevenaz / Silvius, Responsable de l'Ombre de l'Aile droite, normal, level 40-->
@@ -352,7 +337,7 @@ Forteresses et Artefacts Abyssaux-->
 			<artifact_effect skillid="12071" range="WORLD"/>
 		</artifact>
 		<aetheric_field>
-			<baseinfo npcid_dr="263510" npcid_da="263509" npcid_li="263508" x="2614.875" y="2860.25" z="1507.4982" h="87"/>
+			<baseinfo npcid_dr="263510" npcid_da="263509" npcid_li="263508" x="2607.1038" y="2850.7283" z="1529.4946" h="25"/>
 		</aetheric_field>
 	</siege_spawn>
 	<siege_spawn location_id="1241">
@@ -427,8 +412,6 @@ Forteresses et Artefacts Abyssaux-->
 			</siege_guard>
 			<siege_guard npcid_dr="270114" npcid_da="0" npcid_li="0">
 				<loc x="1768.7756" y="2250.4126" z="2950.3267" h="15"/>
-				<loc x="1748.8502" y="2294.4084" z="2950.4536" h="10"/>
-				<loc x="1830.9767" y="2320.0959" z="2932.0964" h="70"/>
 			</siege_guard>
 			<siege_guard npcid_dr="276423" npcid_da="276419" npcid_li="276415">
 				<loc x="1786.5366" y="2350.8735" z="2946.188" h="40"/>
@@ -462,8 +445,9 @@ Forteresses et Artefacts Abyssaux-->
 			<siege_guard npcid_dr="0" npcid_da="0" npcid_li="0">
 				<loc x="1777.8992" y="2264.3545" z="2951.667" h="105"/>
 			</siege_guard>
-			<siege_guard npcid_dr="270121" npcid_da="0" npcid_li="0">
-				<loc x="1816.213" y="2272.3479" z="2950.2563" h="60"/>
+			<siege_guard npcid_dr="269989" npcid_da="269984" npcid_li="269979">
+				<loc x="1776.9025" y="2259.3408" z="2903.7485" h="109"/>
+				<loc x="1782.6516" y="2271.5718" z="2903.7485" h="113"/>
 			</siege_guard>
 			<!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -->
 			<!-- Spawned when Fortress is invulnerable (Only for Fortresses) -->
@@ -646,7 +630,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2764.1" y="2582.6" z="1504.1" h="30"/>
 			</siege_guard>
 			<!-- Lote / Kercopes, Quartier-maitre de la Forteresse abyssale, normal, level 40-->
-			<siege_guard npcid_dr="263514" npcid_da="263265" npcid_li="263264">
+			<siege_guard npcid_dr="263214" npcid_da="263265" npcid_li="263264">
 				<loc x="2763.4" y="2635.7" z="1504.1" h="90"/>
 			</siege_guard>
 			<!-- Lienhart / Ebenarus, Guerisseur d'ame, Elite, level 45-->
@@ -662,48 +646,15 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2785.4" y="2660.3" z="1486.0" h="62"/>
 			</siege_guard>
 			<!-- Oberate / Eomates, Entrepot des Legions, normal, level 40-->
-			<siege_guard npcid_dr="263514" npcid_da="263218" npcid_li="263216">
+			<siege_guard npcid_dr="263214" npcid_da="263218" npcid_li="263216">
 				<loc x="2775.8" y="2668.2" z="1486.4" h="93"/>
 			</siege_guard>
 			<!-- Givihi / Sicairos, Teleporteur de la forteresse, Elite, level 40-->
 			<siege_guard npcid_dr="263224" npcid_da="263223" npcid_li="263222">
 				<loc x="2984.8" y="2599.0" z="1489.1" h="92"/>
 			</siege_guard>
-			<siege_guard npcid_dr="263201" npcid_da="263200" npcid_li="263199">
-				<loc x="2982" y="2616" z="1490.5619" h="0"/>
-				<loc x="3193.625" y="2681.125" z="1489" h="13"/>
-				<loc x="3174.25" y="2703.875" z="1479.045" h="13"/>
-				<loc x="2994.625" y="2584.375" z="1494.875" h="0"/>
-				<loc x="2759.0867" y="2643.634" z="1461.8223" h="45"/>
-				<loc x="2738.041" y="2665.1475" z="1457.7554" h="42"/>
-				<loc x="2989.875" y="2571.375" z="1488.5726" h="0"/>
-				<loc x="2986.375" y="2589.125" z="1487.995" h="0"/>
-				<loc x="3204.875" y="2681.25" z="1480.152" h="13"/>
-				<loc x="2983.25" y="2606.5" z="1488.5735" h="0"/>
-				<loc x="2977.25" y="2595" z="1489.0945" h="60"/>
-				<loc x="2993.25" y="2597.25" z="1489.9775" h="0"/>
-				<loc x="2979.75" y="2581.625" z="1489.0476" h="60"/>
-				<loc x="3183.75" y="2680" z="1487.5" h="13"/>
-				<loc x="3207.125" y="2668" z="1488.375" h="13"/>
-				<loc x="3180.375" y="2697" z="1479.47" h="13"/>
-				<loc x="3192.25" y="2670.875" z="1487.5" h="13"/>
-				<loc x="3195.75" y="2690.5" z="1487.5" h="13"/>
-			</siege_guard>
-			<siege_guard npcid_dr="275119" npcid_da="275115" npcid_li="275111">
-				<loc x="2770.593" y="2649.1331" z="1536.3051" h="40"/>
-				<loc x="2773.4846" y="2608.595" z="1562.4211" h="40"/>
-				<loc x="3176.7458" y="2700.1572" z="1500.3655" h="15"/>
-				<loc x="2991.7366" y="2552.9451" z="1516.4146" h="5"/>
-				<loc x="3209.5427" y="2663.7725" z="1502.271" h="15"/>
-				<loc x="3198.8645" y="2674.4063" z="1496.1261" h="15"/>
-				<loc x="2823.8271" y="2621.6804" z="1540.6791" h="10"/>
-				<loc x="3167.1931" y="2710.3467" z="1496.8589" h="15"/>
-				<loc x="2982.6604" y="2610.0952" z="1510.45" h="5"/>
-				<loc x="2986.3962" y="2589.0894" z="1514.3203" h="5"/>
-				<loc x="2990.4651" y="2565.8643" z="1509.656" h="5"/>
-				<loc x="2744.564" y="2597.752" z="1540.6791" h="70"/>
-				<loc x="2794.8193" y="2560.4285" z="1540.6791" h="110"/>
-				<loc x="2980.2446" y="2634.7014" z="1509.0878" h="5"/>
+			<siege_guard npcid_dr="271815" npcid_da="271810" npcid_li="271805">
+				<loc x="2763.914" y="2642.6016" z="1461.7152" h="53"/>
 			</siege_guard>
 			<siege_guard npcid_dr="263045" npcid_da="263040" npcid_li="263035">
 				<loc x="3180.1824" y="2696.5159" z="1479.045" h="10"/>
@@ -721,6 +672,40 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2990.083" y="2570.5994" z="1487.995" h="5"/>
 				<loc x="2979.1777" y="2580.958" z="1490.9523" h="65"/>
 				<loc x="3192.8074" y="2681.1409" z="1481.028" h="10"/>
+				<loc x="2850.83" y="2602.84" z="1516.05" h="1"/>
+				<loc x="2850.09" y="2615.44" z="1516.05" h="0"/>
+				<loc x="2835.39" y="2585.11" z="1516.76" h="0"/>
+				<loc x="2836.99" y="2628.91" z="1516.76" h="0"/>
+				<loc x="2780.91" y="2554.98" z="1522.1"	h="90"/>
+				<loc x="2790.69" y="2554.66" z="1522.09" h="87"/>
+				<loc x="2798.36" y="2554.78" z="1522.11" h="90"/>
+				<loc x="2778.98" y="2661.86" z="1521.97" h="47"/>
+				<loc x="2773.22" y="2656.61" z="1521.41" h="48"/>
+				<loc x="2764.07" y="2649.76" z="1520.78" h="42"/>
+				<loc x="2776.85" y="2616.02" z="1556.56" h="71"/>
+				<loc x="2775.47" y="2625.83" z="1556.56" h="44"/>
+				<loc x="2798.17" y="2640.37" z="1554.69" h="42"/>
+				<loc x="2808.82" y="2636.2"	z="1554.69"	h="15"/>
+				<loc x="2809.08" y="2626.8"	z="1554.69"	h="113"/>
+				<loc x="2806.65" y="2622.3"	z="1562.73"	h="119"/>
+				<loc x="2728.51" y="2603.03" z="1516.05" h="59"/>
+				<loc x="2728.5"	y="2615.8"	z="1516.06"	h="62"/>
+			</siege_guard>
+			<siege_guard npcid_dr="275119" npcid_da="275115" npcid_li="275111">
+				<loc x="2770.593" y="2649.1331" z="1536.3051" h="40"/>
+				<loc x="2773.4846" y="2608.595" z="1562.4211" h="40"/>
+				<loc x="3176.7458" y="2700.1572" z="1500.3655" h="15"/>
+				<loc x="2991.7366" y="2552.9451" z="1516.4146" h="5"/>
+				<loc x="3209.5427" y="2663.7725" z="1502.271" h="15"/>
+				<loc x="3198.8645" y="2674.4063" z="1496.1261" h="15"/>
+				<loc x="2823.8271" y="2621.6804" z="1540.6791" h="10"/>
+				<loc x="3167.1931" y="2710.3467" z="1496.8589" h="15"/>
+				<loc x="2982.6604" y="2610.0952" z="1510.45" h="5"/>
+				<loc x="2986.3962" y="2589.0894" z="1514.3203" h="5"/>
+				<loc x="2990.4651" y="2565.8643" z="1509.656" h="5"/>
+				<loc x="2744.564" y="2597.752" z="1540.6791" h="70"/>
+				<loc x="2794.8193" y="2560.4285" z="1540.6791" h="110"/>
+				<loc x="2980.2446" y="2634.7014" z="1509.0878" h="5"/>
 			</siege_guard>
 			<siege_guard npcid_dr="275120" npcid_da="275116" npcid_li="275112">
 				<loc x="3218.6504" y="2672.519" z="1470.3214" h="15"/>
@@ -729,27 +714,23 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="3003.406" y="2566.8418" z="1475.6088" h="3"/>
 			</siege_guard>
 			<siege_guard npcid_dr="263030" npcid_da="263025" npcid_li="263020">
-				<loc x="2850.3293" y="2596.1355" z="1480.4344" h="73"/>
 				<loc x="2857.1184" y="2609.0225" z="1501.7384" h="0"/>
 				<loc x="2819.5327" y="2609.3813" z="1503.6846" h="60"/>
 				<loc x="2787.3967" y="2601.0156" z="1503.3386" h="30"/>
 				<loc x="2719.8174" y="2609.5623" z="1501.39" h="60"/>
-				<loc x="2823.9106" y="2643.502" z="1480.4692" h="0"/>
+				<loc x="2823.9106" y="2643.502" z="1476.9528" h="0"/>
 				<loc x="2787.3882" y="2617.0381" z="1503.7496" h="90"/>
+				<loc x="2800.1663" y="2643.2434" z="1483.2761" h="0"/>
 			</siege_guard>
 			<siege_guard npcid_dr="263210" npcid_da="263209" npcid_li="263208">
 				<loc x="2986.9849" y="2579.4719" z="1482.2784" h="33"/>
-			</siege_guard>
-			<siege_guard npcid_dr="263221" npcid_da="0" npcid_li="0">
-				<loc x="2811.375" y="2635.25" z="1504.875" h="90"/>
 			</siege_guard>
 			<siege_guard npcid_dr="263257" npcid_da="263256" npcid_li="263255">
 				<loc x="2898.8772" y="2551.4897" z="1503.711" h="30"/>
 				<loc x="2918.7407" y="2613.8645" z="1503.716" h="70"/>
 			</siege_guard>
 			<siege_guard npcid_dr="263214" npcid_da="0" npcid_li="0">
-				<loc x="2775.8328" y="2668.2168" z="1486.946" h="93"/>
-				<loc x="2763.3708" y="2635.5703" z="1504.6311" h="90"/>
+				<loc x="2764.5908" y="2583.1155" z="1504.068" h="30"/>
 			</siege_guard>
 			<siege_guard npcid_dr="263270" npcid_da="263269" npcid_li="263268">
 				<loc x="2966.5603" y="2590.2927" z="1475.681" h="62"/>
@@ -906,7 +887,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2764.1" y="2582.6" z="1504.1" h="30"/>
 			</peace_guard>
 			<!-- Lote / Kercopes, Quartier-maitre de la Forteresse abyssale, normal, level 40-->
-			<peace_guard npcid_dr="263514" npcid_da="263265" npcid_li="263264">
+			<peace_guard npcid_dr="263214" npcid_da="263265" npcid_li="263264">
 				<loc x="2763.4" y="2635.7" z="1504.1" h="90"/>
 			</peace_guard>
 			<!-- Lienhart / Ebenarus, Guerisseur d'ame, Elite, level 45-->
@@ -922,7 +903,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2785.4" y="2660.3" z="1486.0" h="62"/>
 			</peace_guard>
 			<!-- Oberate / Eomates, Entrepot des Legions, normal, level 40-->
-			<peace_guard npcid_dr="263514" npcid_da="263218" npcid_li="263216">
+			<peace_guard npcid_dr="263214" npcid_da="263218" npcid_li="263216">
 				<loc x="2775.8" y="2668.2" z="1486.4" h="93"/>
 			</peace_guard>
 			<!-- Givihi / Sicairos, Teleporteur de la forteresse, Elite, level 40-->
@@ -1026,6 +1007,10 @@ Forteresses et Artefacts Abyssaux-->
 			<siege_guard npcid_dr="263514" npcid_da="264718" npcid_li="264716">
 				<loc x="1331.5" y="1242.1" z="1497.0" h="100"/>
 			</siege_guard>
+			<siege_guard npcid_dr="271813" npcid_da="271808" npcid_li="271803">
+				<loc x="1319.7307" y="1187.9994" z="1485.3788" h="78"/>
+			</siege_guard>
+			<!--
 			<siege_guard npcid_dr="253671" npcid_da="253668" npcid_li="253665">
 				<loc x="1516.4153" y="1468.9309" z="1545.625" h="75"/>
 				<loc x="1535.625" y="1576.625" z="1548.625" h="90"/>
@@ -1044,27 +1029,8 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="1462" y="1554.25" z="1558.25" h="75"/>
 				<loc x="1578.25" y="1370.75" z="1539.25" h="0"/>
 				<loc x="1588.0135" y="1392.8732" z="1539.25" h="75"/>
-			</siege_guard>
-			<siege_guard npcid_dr="264701" npcid_da="264700" npcid_li="264699">
-				<loc x="1411.9285" y="1144.0829" z="1532.6653" h="103"/>
-				<loc x="1324.3773" y="1156.2169" z="1526.6569" h="73"/>
-				<loc x="1401.8655" y="1201.3394" z="1467.3636" h="27"/>
-				<loc x="1397.765" y="1234.9675" z="1527.3636" h="25"/>
-				<loc x="1349.6798" y="1233.1724" z="1532.663" h="43"/>
-				<loc x="1333.1221" y="1200.9818" z="1531.3385" h="52"/>
-				<loc x="1425.9269" y="1226.1573" z="1526.6609" h="13"/>
-				<loc x="1429.8063" y="1188.3322" z="1527.3636" h="115"/>
-				<loc x="1371.8206" y="1234.8795" z="1531.8802" h="30"/>
-				<loc x="1326.6052" y="1185.2401" z="1526.8292" h="52"/>
-				<loc x="1330.6575" y="1146.9984" z="1526.6608" h="73"/>
-				<loc x="1421.2604" y="1216.725" z="1528.1122" h="13"/>
-				<loc x="1398.8854" y="1156.725" z="1531.628" h="43"/>
-				<loc x="1358.3019" y="1139.3303" z="1526.6696" h="85"/>
-				<loc x="1432.1028" y="1217.1908" z="1526.6669" h="13"/>
-				<loc x="1375.2181" y="1139.1779" z="1531.6549" h="85"/>
-				<loc x="1422.9406" y="1173.0465" z="1531.4801" h="115"/>
-				<loc x="1357.0104" y="1217.6" z="1531.7363" h="103"/>
-			</siege_guard>
+			</siege_guard>-->
+			
 			<siege_guard npcid_dr="264772" npcid_da="264771" npcid_li="264770">
 				<loc x="1317.5482" y="1152.2761" z="1511.6411" h="70"/>
 				<loc x="1438.3782" y="1221.3956" z="1512.349" h="10"/>
@@ -1096,12 +1062,13 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="1430.0778" y="1188.1866" z="1527.3635" h="115"/>
 				<loc x="1357.1354" y="1217.725" z="1531.7247" h="103"/>
 				<loc x="1324.2587" y="1156.1975" z="1526.9564" h="72"/>
-				<loc x="1375.2323" y="1139.298" z="1534.4769" h="83"/>
+				<loc x="1375.2323" y="1139.298" z="1531.6549" h="83"/>
 				<loc x="1303.3601" y="1219.5789" z="1446.6151" h="65"/>
 				<loc x="1392.3271" y="1203.209" z="1467.3636" h="27"/>
-				<loc x="1399.0104" y="1156.225" z="1534.2583" h="43"/>
+				<loc x="1398.8854" y="1156.725" z="1531.628" h="43"/>
 				<loc x="1338.7252" y="1211.6003" z="1497.7999" h="17"/>
 				<loc x="1297.8805" y="1174.3344" z="1462.2762" h="70"/>
+				<loc x="1401.8655" y="1201.3394" z="1467.3636" h="27"/>
 			</siege_guard>
 			<siege_guard npcid_dr="275417" npcid_da="275413" npcid_li="275409">
 				<loc x="1317.7181" y="1208.0804" z="1511.9186" h="60"/>
@@ -1113,14 +1080,13 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="1457.2384" y="1261.4532" z="1509.9077" h="10"/>
 			</siege_guard>
 			<siege_guard npcid_dr="264714" npcid_da="0" npcid_li="0">
-				<loc x="1331.5537" y="1242.067" z="1497.7002" h="100"/>
 				<loc x="1411.8854" y="1178.35" z="1516.177" h="40"/>
-				<loc x="1372.0132" y="1152.0894" z="1515.6284" h="40"/>
 			</siege_guard>
 			<siege_guard npcid_dr="264530" npcid_da="264525" npcid_li="264520">
 				<loc x="1322.8817" y="1148.892" z="1512.1241" h="73"/>
 				<loc x="1433.7468" y="1225.8188" z="1513.6843" h="13"/>
 			</siege_guard>
+			<!--
 			<siege_guard npcid_dr="253653" npcid_da="253650" npcid_li="253647">
 				<loc x="1545.625" y="1407.0" z="1537.8447" h="87"/>
 				<loc x="1552.125" y="1400.0" z="1537.8156" h="120"/>
@@ -1140,14 +1106,12 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="1462.0" y="1554.25" z="1546.6329" h="35"/>
 				<loc x="1578.25" y="1370.75" z="1535.6265" h="18"/>
 				<loc x="1588.014" y="1392.873" z="1536.7596" h="64"/>
-			</siege_guard>
-			<siege_guard npcid_dr="264721" npcid_da="0" npcid_li="0">
-				<loc x="1383.3854" y="1220.975" z="1515.6284" h="97"/>
-			</siege_guard>
+			</siege_guard>-->
 			<siege_guard npcid_dr="0" npcid_da="0" npcid_li="0">
 				<loc x="1309.1754" y="1094.8853" z="1514.5398" h="75"/>
 				<loc x="1301.4418" y="1101.4568" z="1514.5398" h="75"/>
 			</siege_guard>
+			<!--
 			<siege_guard npcid_dr="253680" npcid_da="253677" npcid_li="253674">
 				<loc x="1514.3381" y="1510.8472" z="1545.625" h="97"/>
 				<loc x="1511.375" y="1609.375" z="1558.25" h="75"/>
@@ -1156,7 +1120,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="1565.25" y="1398.625" z="1539.25" h="60"/>
 				<loc x="1473.125" y="1532.875" z="1558.25" h="75"/>
 				<loc x="1614.5" y="1430.25" z="1544.25" h="75"/>
-			</siege_guard>
+			</siege_guard>-->
 			<siege_guard npcid_dr="275416" npcid_da="275412" npcid_li="275408">
 				<loc x="1304.501" y="1165.9121" z="1445.707" h="90"/>
 				<loc x="1297.626" y="1206.4121" z="1466.582" h="75"/>
@@ -1174,15 +1138,6 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="1463.0406" y="1252.6617" z="1509.8079" h="10"/>
 				<loc x="1308.5646" y="1102.4808" z="1508.8545" h="75"/>
 			</siege_guard>
-			<siege_guard npcid_dr="253662" npcid_da="253659" npcid_li="253656">
-				<loc x="1581.25" y="1473.75" z="1532.3976" h="27"/>
-				<loc x="1514.338" y="1510.847" z="1544.4263" h="70"/>
-				<loc x="1511.375" y="1609.375" z="1552.1493" h="43"/>
-				<loc x="1539.454" y="1528.111" z="1543.1919" h="105"/>
-				<loc x="1565.25" y="1398.625" z="1537.2682" h="23"/>
-				<loc x="1473.125" y="1532.875" z="1547.6863" h="82"/>
-				<loc x="1614.5" y="1430.25" z="1538.5393" h="90"/>
-			</siege_guard>
 			<siege_guard npcid_dr="0" npcid_da="0" npcid_li="0">
 				<loc x="1355.6611" y="1177.475" z="1507.9337" h="103"/>
 			</siege_guard>
@@ -1193,13 +1148,75 @@ Forteresses et Artefacts Abyssaux-->
 			<siege_guard npcid_dr="264762" npcid_da="264761" npcid_li="264760">
 				<loc x="1353.9907" y="1210.1887" z="1497.6973" h="45"/>
 			</siege_guard>
-			<!-- Captured Elyos Prisoner (NPC Normal lvl:28)-->
+			<!-- Captured Prisoner first center (NPC Normal lvl:28)-->
 			<siege_guard npcid_dr="253623" npcid_da="253623" npcid_li="253626">
 				<loc x="1583.9425" y="1420.9829" z="1538.0168" h="108"/>
 				<loc x="1581.059" y="1429.4629" z="1538.0168" h="36"/>
 				<loc x="1565.3157" y="1442.2593" z="1537.654" h="96"/>
 				<loc x="1568.526" y="1425.0121" z="1538.0168" h="88"/>
 				<loc x="1589.4976" y="1436.0986" z="1537.654" h="56"/>
+			</siege_guard>
+			<!-- Captured Prisoner seconde center (NPC Normal lvl:28)-->
+			<siege_guard npcid_dr="253626" npcid_da="253623" npcid_li="253626">
+				<loc x="1503.03" y="1545.56" z="1547.28" h="98"/>
+				<loc x="1493.19" y="1549.08" z="1547.28" h="88"/>
+				<loc x="1493.82" y="1558.45" z="1547.28" h="105"/>
+				<loc x="1502.79" y="1559.56" z="1547.28" h="118"/>
+				<loc x="1513.66" y="1554.98" z="1547.28" h="64"/>
+			</siege_guard>
+			<!-- Prisoner's guards first-->
+			<siege_guard npcid_dr="253653" npcid_da="253668" npcid_li="253665">
+				<loc x="1545.625" y="1407.0" z="1537.8447" h="87"/>
+				<loc x="1552.125" y="1400.0" z="1537.8156" h="120"/>
+				<loc x="1599.0" y="1454.125" z="1537.4148" h="41"/>
+				<loc x="1504.331" y="1510.563" z="1545.3271" h="59"/>
+				<loc x="1556.0" y="1547.375" z="1542.3651" h="49"/>
+				<loc x="1516.415" y="1468.931" z="1539.5469" h="21"/>
+				<loc x="1535.625" y="1576.625" z="1544.7316" h="51"/>
+				<loc x="1538.75" y="1448.75" z="1537.1506" h="65"/>
+				<loc x="1558.558" y="1513.444" z="1538.9124" h="98"/>
+				<loc x="1539.375" y="1602.0" z="1547.2123" h="51"/>
+				<loc x="1597.875" y="1525.125" z="1535.7982" h="61"/>
+				<loc x="1485.07" y="1591.255" z="1548.5641" h="27"/>
+				<loc x="1489.5" y="1497.125" z="1545.8779" h="107"/>
+				<loc x="1549.625" y="1478.5" z="1536.9896" h="44"/>
+				<loc x="1462.0" y="1554.25" z="1546.6329" h="35"/>
+				<loc x="1578.25" y="1370.75" z="1535.6265" h="18"/>
+				<loc x="1588.014" y="1392.873" z="1536.7596" h="64"/>
+			</siege_guard>
+			<!-- Prisoner's guards second-->
+			<siege_guard npcid_dr="253662" npcid_da="253677" npcid_li="253656">
+				<loc x="1581.25" y="1473.75" z="1532.3976" h="27"/>
+				<loc x="1514.338" y="1510.847" z="1544.4263" h="70"/>
+				<loc x="1511.375" y="1609.375" z="1552.1493" h="43"/>
+				<loc x="1539.454" y="1528.111" z="1543.1919" h="105"/>
+				<loc x="1565.25" y="1398.625" z="1537.2682" h="23"/>
+				<loc x="1473.125" y="1532.875" z="1547.6863" h="82"/>
+				<loc x="1614.5" y="1430.25" z="1538.5393" h="90"/>
+			</siege_guard>
+			<siege_guard npcid_dr="253653" npcid_da="253641" npcid_li="253635">
+				<loc x="1337.95" y="1508.18" z="1566.353" h="49"/>
+				<loc x="1315.39" y="1483.27" z="1571.1168" h="116"/>
+				<loc x="1318.0" y="1485.88" z="1570.6791" h="13"/>
+				<loc x="1339.52" y="1505.29" z="1566.4286" h="111"/>
+				<loc x="1364.47" y="1510.72" z="1562.3289" h="75"/>
+				<loc x="1374.45" y="1460.46" z="1560.1534" h="42"/>
+				<loc x="1388.7" y="1485.71" z="1559.0922" h="18"/>
+				<loc x="1412.27" y="1432.08" z="1554.5575" h="58"/>
+				<loc x="1443.87" y="1459.95" z="1550.9731" h="26"/>
+				<loc x="1410.15" y="1427.37" z="1555.2118" h="120"/>
+			</siege_guard>
+			<siege_guard npcid_dr="253662" npcid_da="253641" npcid_li="253635">
+				<loc x="1389.63" y="1483.8" z="1558.8679" h="15"/>
+				<loc x="1388.98" y="1476.38" z="1558.8124" h="3"/>
+				<loc x="1375.27" y="1458.5" z="1559.4688" h="41"/>
+				<loc x="1400.38" y="1522.07" z="1556.0564" h="66"/>
+				<loc x="1359.41" y="1514.41" z="1562.4233" h="111"/>
+				<loc x="1418.88" y="1550.5" z="1554.2261" h="65"/>
+				<loc x="1437.51" y="1464.25" z="1551.4541" h="49"/>
+				<loc x="1402.88" y="1432.22" z="1555.5226" h="102"/>
+				<loc x="1397.03" y="1489.78" z="1557.0497" h="99"/>
+				<loc x="1404.26" y="1521.49" z="1555.6323" h="81"/>
 			</siege_guard>
 			<!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -->
 			<!-- Spawned when Fortress is invulnerable (Only for Fortresses) -->
@@ -1282,7 +1299,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="1412.0" y="1178.4" z="1514.7" h="41"/>
 			</peace_guard>
 			<!-- Naun / Proserpine, Quartier-maitre de la Forteresse abyssale, normal, level 40-->
-			<peace_guard npcid_dr="263514" npcid_da="264767" npcid_li="264766">
+			<peace_guard npcid_dr="263214" npcid_da="264767" npcid_li="264766">
 				<loc x="1372.0" y="1152.1" z="1514.7" h="41"/>
 			</peace_guard>
 			<!-- Sygfuson / Chrisotemis, Teleporteur de la forteresse, Elite, level 40-->
@@ -1298,10 +1315,10 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="1343.3" y="1241.3" z="1496.6" h="73"/>
 			</peace_guard>
 			<!-- Lasario / Forbin, Entrepot des Legions, normal, level 40-->
-			<peace_guard npcid_dr="263514" npcid_da="264718" npcid_li="264716">
+			<peace_guard npcid_dr="263214" npcid_da="264718" npcid_li="264716">
 				<loc x="1331.5" y="1242.1" z="1497.0" h="100"/>
 			</peace_guard>
-			<!-- Captured Elyos Prisoner (NPC Normal lvl:28)-->
+			<!-- Captured Prisoner first center (NPC Normal lvl:28)-->
 			<peace_guard npcid_dr="253623" npcid_da="253623" npcid_li="253626">
 				<loc x="1583.9425" y="1420.9829" z="1538.0168" h="108"/>
 				<loc x="1581.059" y="1429.4629" z="1538.0168" h="36"/>
@@ -1309,13 +1326,67 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="1568.526" y="1425.0121" z="1538.0168" h="88"/>
 				<loc x="1589.4976" y="1436.0986" z="1537.654" h="56"/>
 			</peace_guard>
-			<!-- Captured Asmodian Prisoner (NPC Normal lvl:28)-->
+			<!-- Captured Prisoner seconde center (NPC Normal lvl:28)-->
 			<peace_guard npcid_dr="253626" npcid_da="253623" npcid_li="253626">
-				<loc x="1493.88" y="1541.91" z="1547.28" h="108"/>
-				<loc x="1491.47" y="1540.98" z="1547.09" h="36"/>
-				<loc x="1491.27" y="1565.94" z="1546.91" h="96"/>
-				<loc x="1488.5" y="1554.06" z="1547.28" h="88"/>
-				<loc x="1504.65" y="1546.01" z="1547.28" h="56"/>
+				<loc x="1503.03" y="1545.56" z="1547.28" h="98"/>
+				<loc x="1493.19" y="1549.08" z="1547.28" h="88"/>
+				<loc x="1493.82" y="1558.45" z="1547.28" h="105"/>
+				<loc x="1502.79" y="1559.56" z="1547.28" h="118"/>
+				<loc x="1513.66" y="1554.98" z="1547.28" h="64"/>
+			</peace_guard>
+			<!-- Prisoner's guards first-->
+			<peace_guard npcid_dr="253653" npcid_da="253668" npcid_li="253665">
+				<loc x="1545.625" y="1407.0" z="1537.8447" h="87"/>
+				<loc x="1552.125" y="1400.0" z="1537.8156" h="120"/>
+				<loc x="1599.0" y="1454.125" z="1537.4148" h="41"/>
+				<loc x="1504.331" y="1510.563" z="1545.3271" h="59"/>
+				<loc x="1556.0" y="1547.375" z="1542.3651" h="49"/>
+				<loc x="1516.415" y="1468.931" z="1539.5469" h="21"/>
+				<loc x="1535.625" y="1576.625" z="1544.7316" h="51"/>
+				<loc x="1538.75" y="1448.75" z="1537.1506" h="65"/>
+				<loc x="1558.558" y="1513.444" z="1538.9124" h="98"/>
+				<loc x="1539.375" y="1602.0" z="1547.2123" h="51"/>
+				<loc x="1597.875" y="1525.125" z="1535.7982" h="61"/>
+				<loc x="1485.07" y="1591.255" z="1548.5641" h="27"/>
+				<loc x="1489.5" y="1497.125" z="1545.8779" h="107"/>
+				<loc x="1549.625" y="1478.5" z="1536.9896" h="44"/>
+				<loc x="1462.0" y="1554.25" z="1546.6329" h="35"/>
+				<loc x="1578.25" y="1370.75" z="1535.6265" h="18"/>
+				<loc x="1588.014" y="1392.873" z="1536.7596" h="64"/>
+			</peace_guard>
+			<!-- Prisoner's guards second-->
+			<peace_guard npcid_dr="253662" npcid_da="253677" npcid_li="253656">
+				<loc x="1581.25" y="1473.75" z="1532.3976" h="27"/>
+				<loc x="1514.338" y="1510.847" z="1544.4263" h="70"/>
+				<loc x="1511.375" y="1609.375" z="1552.1493" h="43"/>
+				<loc x="1539.454" y="1528.111" z="1543.1919" h="105"/>
+				<loc x="1565.25" y="1398.625" z="1537.2682" h="23"/>
+				<loc x="1473.125" y="1532.875" z="1547.6863" h="82"/>
+				<loc x="1614.5" y="1430.25" z="1538.5393" h="90"/>
+			</peace_guard>
+			<peace_guard npcid_dr="253653" npcid_da="253641" npcid_li="253635">
+				<loc x="1337.95" y="1508.18" z="1566.353" h="49"/>
+				<loc x="1315.39" y="1483.27" z="1571.1168" h="116"/>
+				<loc x="1318.0" y="1485.88" z="1570.6791" h="13"/>
+				<loc x="1339.52" y="1505.29" z="1566.4286" h="111"/>
+				<loc x="1364.47" y="1510.72" z="1562.3289" h="75"/>
+				<loc x="1374.45" y="1460.46" z="1560.1534" h="42"/>
+				<loc x="1388.7" y="1485.71" z="1559.0922" h="18"/>
+				<loc x="1412.27" y="1432.08" z="1554.5575" h="58"/>
+				<loc x="1443.87" y="1459.95" z="1550.9731" h="26"/>
+				<loc x="1410.15" y="1427.37" z="1555.2118" h="120"/>
+			</peace_guard>
+			<peace_guard npcid_dr="253662" npcid_da="253641" npcid_li="253635">
+				<loc x="1389.63" y="1483.8" z="1558.8679" h="15"/>
+				<loc x="1388.98" y="1476.38" z="1558.8124" h="3"/>
+				<loc x="1375.27" y="1458.5" z="1559.4688" h="41"/>
+				<loc x="1400.38" y="1522.07" z="1556.0564" h="66"/>
+				<loc x="1359.41" y="1514.41" z="1562.4233" h="111"/>
+				<loc x="1418.88" y="1550.5" z="1554.2261" h="65"/>
+				<loc x="1437.51" y="1464.25" z="1551.4541" h="49"/>
+				<loc x="1402.88" y="1432.22" z="1555.5226" h="102"/>
+				<loc x="1397.03" y="1489.78" z="1557.0497" h="99"/>
+				<loc x="1404.26" y="1521.49" z="1555.6323" h="81"/>
 			</peace_guard>
 		</guards>
 		<!-- Fortress Instance: Sulfur -->
@@ -1368,7 +1439,7 @@ Forteresses et Artefacts Abyssaux-->
 			<!-- Spawned when Fortress is under Siege -->
 			<!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -->
 			<!-- Beilar / Ophion, Proprietaire d'entrepot, normal, level 50-->
-			<siege_guard npcid_dr="0" npcid_da="271017" npcid_li="271015">
+			<siege_guard npcid_dr="268014" npcid_da="271017" npcid_li="271015">
 				<loc x="676.7" y="2955.8" z="2893.0" h="16"/>
 			</siege_guard>
 			<!-- Bey / Yana, Teleporteur de la forteresse, Elite, level 50-->
@@ -1384,7 +1455,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="722.0" y="2915.5" z="2893.0" h="16"/>
 			</siege_guard>
 			<!-- Snori / Euridice, Officier d'etat-major, normal, level 50-->
-			<siege_guard npcid_dr="0" npcid_da="271054" npcid_li="271053">
+			<siege_guard npcid_dr="268014" npcid_da="271054" npcid_li="271053">
 				<loc x="747.0" y="2937.7" z="2884.3" h="47"/>
 			</siege_guard>
 			<!-- Himir / Phantasource, Entrepot des Legions, normal, level 50-->
@@ -1392,7 +1463,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="740.5" y="2952.3" z="2884.3" h="105"/>
 			</siege_guard>
 			<!-- Varden / Keabarah, Responsable des Abysses d'Asteria, normal, level 50-->
-			<siege_guard npcid_dr="0" npcid_da="271068" npcid_li="271067">
+			<siege_guard npcid_dr="268014" npcid_da="271068" npcid_li="271067">
 				<loc x="707.6" y="2924.1" z="2877.5" h="98"/>
 			</siege_guard>
 			<siege_guard npcid_dr="276519" npcid_da="276515" npcid_li="276511">
@@ -1434,27 +1505,51 @@ Forteresses et Artefacts Abyssaux-->
 			</siege_guard>
 			<siege_guard npcid_dr="270845" npcid_da="270840" npcid_li="270835">
 				<loc x="737.66138" y="2932.9756" z="2769.4531" h="37"/>
-				<loc x="734.91132" y="2991.0166" z="2773.6196" h="67"/>
+				<loc x="734.91132" y="2991.0166" z="2771.1545" h="67"/>
 				<loc x="797.52472" y="3017.6333" z="2735.2859" h="15"/>
-			</siege_guard>
-			<siege_guard npcid_dr="271014" npcid_da="0" npcid_li="0">
-				<loc x="721.91418" y="2915.6216" z="2894.0544" h="15"/>
-				<loc x="676.65668" y="2955.8882" z="2894.0276" h="15"/>
-				<loc x="740.64246" y="2952.3005" z="2885.0369" h="105"/>
+				<loc x="731.844" y="2968.49" z="2727.98" h="46"/>
+				<loc x="731.187" y="2969.11" z="2727.98" h="45"/>
+				<loc x="695.263" y="2943.19" z="2768.3" h="17"/>
+				<loc x="749.47" y="2948.65" z="2768.27" h="46"/>
+				<loc x="635.95" y="3051.32" z="2720.27" h="17"/>
+				<loc x="628.849" y="3051.44" z="2720.27" h="42"/>
+				<loc x="626.622" y="3042.65" z="2720.27" h="74"/>
+				<loc x="635.26" y="3041.47" z="2720.27" h="106"/>
+				<loc x="622.593" y="3016.02" z="2920.27" h="69"/>
+				<loc x="629.384" y="3024.52" z="2920.27" h="26"/>
+				<loc x="633.792" y="3016.25" z="2920.27" h="110"/>
+				<loc x="661.314" y="3002.64" z="2907.44" h="14"/>
+				<loc x="670.504" y="3013.34" z="2907.44" h="76"/>
+				<loc x="666.599" y="2939.73" z="2915.48" h="64"/>
 			</siege_guard>
 			<siege_guard npcid_dr="270860" npcid_da="270855" npcid_li="270850">
 				<loc x="687.20056" y="3069.7441" z="2908.8977" h="0"/>
 				<loc x="680.85913" y="3061.1729" z="2908.8977" h="90"/>
 				<loc x="676.27716" y="3072.5991" z="2908.8977" h="45"/>
+				<loc x="714.835" y="2953.39" z="2884.32" h="16"/>
+				<loc x="727.372" y="2967.68" z="2884.32" h="76"/>
 			</siege_guard>
 			<siege_guard npcid_dr="271047" npcid_da="271046" npcid_li="271045">
-				<loc x="627.93665" y="3019.949" z="2921.2966" h="45"/>
+				<loc x="695.101" y="2982.78" z="2892.58" h="46"/>
 			</siege_guard>
 			<siege_guard npcid_dr="276523" npcid_da="276522" npcid_li="276521">
 				<loc x="739.875" y="2943.625" z="2894.25" h="105"/>
 			</siege_guard>
-			<siege_guard npcid_dr="271021" npcid_da="0" npcid_li="0">
-				<loc x="765.70526" y="2965.7158" z="2894.3289" h="75"/>
+			<siege_guard npcid_dr="270107" npcid_da="270106" npcid_li="270105">
+				<loc x="732.0818" y="2950.3813" z="2884.3196" h="46"/>
+			</siege_guard>
+			<siege_guard npcid_dr="270998" npcid_da="270997" npcid_li="270996">
+				<loc x="696.542" y="2958.2" z="2892.63" h="45"/> 
+				<loc x="719.388" y="2985.25" z="2892.63" h="47"/>
+				<loc x="743.691" y="2961.14" z="2892.63" h="46"/>
+				<loc x="706.968" y="2983.18" z="2762.97" h="106"/>
+				<loc x="725.718" y="2937.25" z="2892.63" h="45"/>
+				<loc x="696.12" y="2971.38" z="2762.97" h="106"/>
+				<loc x="722.867" y="2968.82" z="2727.98" h="46"/>
+				<loc x="715.755" y="2961.4" z="2727.98" h="44"/>
+				<loc x="771.36" y="2966.03" z="2857.63" h="39"/>
+				<loc x="715.438" y="2909.26" z="2877.43" h="22"/>
+				<loc x="731.987" y="2943" z="2763.56" h="9"/>
 			</siege_guard>
 			<!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -->
 			<!-- Spawned when Fortress is invulnerable (Only for Fortresses) -->
@@ -1521,7 +1616,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="720.3" y="2946.1" z="2884.3" h="49"/>
 			</peace_guard>
 			<!-- Beilar / Ophion, Proprietaire d'entrepot, normal, level 50-->
-			<peace_guard npcid_dr="0" npcid_da="271017" npcid_li="271015">
+			<peace_guard npcid_dr="268014" npcid_da="271017" npcid_li="271015">
 				<loc x="676.7" y="2955.8" z="2893.0" h="16"/>
 			</peace_guard>
 			<!-- Bey / Yana, Teleporteur de la forteresse, Elite, level 50-->
@@ -1537,7 +1632,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="722.0" y="2915.5" z="2893.0" h="16"/>
 			</peace_guard>
 			<!-- Snori / Euridice, Officier d'etat-major, normal, level 50-->
-			<peace_guard npcid_dr="0" npcid_da="271054" npcid_li="271053">
+			<peace_guard npcid_dr="268014" npcid_da="271054" npcid_li="271053">
 				<loc x="747.0" y="2937.7" z="2884.3" h="47"/>
 			</peace_guard>
 			<!-- Himir / Phantasource, Entrepot des Legions, normal, level 50-->
@@ -1545,7 +1640,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="740.5" y="2952.3" z="2884.3" h="105"/>
 			</peace_guard>
 			<!-- Varden / Keabarah, Responsable des Abysses d'Asteria, normal, level 50-->
-			<peace_guard npcid_dr="0" npcid_da="271068" npcid_li="271067">
+			<peace_guard npcid_dr="268014" npcid_da="271068" npcid_li="271067">
 				<loc x="707.6" y="2924.1" z="2877.5" h="98"/>
 			</peace_guard>
 		</guards>
@@ -1562,7 +1657,7 @@ Forteresses et Artefacts Abyssaux-->
 			<baseinfo npcid_dr="276505" npcid_da="276504" npcid_li="276503" x="703.41058" y="2979.0959" z="2727.1362" h="0" static_id="111"/>
 			<!--Stone Gate A-->
 			<fortress_gate_artifact>
-				<baseinfo npcid_dr="276507" npcid_da="276506" npcid_li="276505" x="706.65991" y="2972.5347" z="2894.1982" h="0" static_id="208"/>
+				<baseinfo npcid_dr="276508" npcid_da="276507" npcid_li="276506" x="706.65991" y="2972.5347" z="2894.1982" h="0" static_id="208"/>
 				<heal_gate percent="100"/>
 		</fortress_gate_artifact>
 			<tele_enter x="706.1124" y="2976.7402" z="2727.0676" h="0"/>
@@ -1573,7 +1668,7 @@ Forteresses et Artefacts Abyssaux-->
 			<baseinfo npcid_dr="276505" npcid_da="276504" npcid_li="276503" x="669.18866" y="3005.2656" z="2890.9038" h="0" static_id="116"/>
 			<!--Stone Gate B-->
 			<fortress_gate_artifact>
-				<baseinfo npcid_dr="276507" npcid_da="276506" npcid_li="276505" x="733.57404" y="2952.7739" z="2729.7415" h="0" static_id="209"/>
+				<baseinfo npcid_dr="276508" npcid_da="276507" npcid_li="276506" x="733.57404" y="2952.7739" z="2729.7415" h="0" static_id="209"/>
 				<heal_gate percent="100"/>
 		</fortress_gate_artifact>
 			<tele_enter x="671.227" y="3003.4792" z="2891.2197" h="0"/>
@@ -1676,9 +1771,6 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2089.6807" y="2038.1351" z="2313.0186" h="50"/>
 				<loc x="2209.8259" y="1998.7428" z="2313.1555" h="12"/>
 			</siege_guard>
-			<siege_guard npcid_dr="260209" npcid_da="260208" npcid_li="260207">
-				<loc x="2071.6809" y="1930.1443" z="2318.157" h="30"/>
-			</siege_guard>
 			<siege_guard npcid_dr="275049" npcid_da="275045" npcid_li="275041">
 				<loc x="2158.8098" y="1902.8353" z="2355.2312" h="110"/>
 				<loc x="2109.4761" y="1950.2773" z="2355.2312" h="50"/>
@@ -1758,9 +1850,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2134.707" y="1974.5842" z="2556.6926" h="50"/>
 			</siege_guard>
 			<siege_guard npcid_dr="260213" npcid_da="0" npcid_li="0">
-				<loc x="2154.5964" y="1950.6317" z="2322.9744" h="75"/>
 				<loc x="2135.8577" y="1947.0654" z="2315.5723" h="30"/>
-				<loc x="2195.324" y="1915.0874" z="2303.5085" h="30"/>
 			</siege_guard>
 			<siege_guard npcid_dr="0" npcid_da="0" npcid_li="0">
 				<loc x="2122.5896" y="1910.6819" z="2324.2515" h="15"/>
@@ -1768,9 +1858,6 @@ Forteresses et Artefacts Abyssaux-->
 			<siege_guard npcid_dr="0" npcid_da="0" npcid_li="0">
 				<loc x="2223.2239" y="1930.2369" z="2342.0159" h="0"/>
 				<loc x="2053.0344" y="1892.1584" z="2338.1294" h="60"/>
-			</siege_guard>
-			<siege_guard npcid_dr="260220" npcid_da="0" npcid_li="0">
-				<loc x="2154.0264" y="1910.486" z="2322.9744" h="45"/>
 			</siege_guard>
 			<siege_guard npcid_dr="260254" npcid_da="260253" npcid_li="260252">
 				<loc x="2137.6462" y="1810.1881" z="2310.4495" h="90"/>
@@ -2061,8 +2148,6 @@ Forteresses et Artefacts Abyssaux-->
 			</siege_guard>
 			<siege_guard npcid_dr="268014" npcid_da="0" npcid_li="0">
 				<loc x="2084.0728" y="1249.3396" z="2964.1155" h="60"/>
-				<loc x="1996.3673" y="1259.0864" z="2946.5435" h="0"/>
-				<loc x="2030.8993" y="1248.8839" z="2964.0571" h="0"/>
 			</siege_guard>
 			<siege_guard npcid_dr="276224" npcid_da="276220" npcid_li="276216">
 				<loc x="2056.4121" y="1297.3912" z="3027.3184" h="30"/>
@@ -2297,6 +2382,12 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2570.3364" y="2109.9688" z="3058.592" h="3"/>
 				<loc x="2511.8223" y="2071.8752" z="3067.037" h="33"/>
 				<loc x="2442.2881" y="2093.3682" z="3059.2725" h="63"/>
+				<loc x="2379.97" y="2109.3" z="3050.57" h="58"/>
+				<loc x="2383.2" y="2101.09" z="3050.57" h="82"/>
+				<loc x="2391.95" y="2107.48" z="3050.57" h="4"/>
+				<loc x="2615.46" y="2116.6" z="3043.8" h="78"/>
+				<loc x="2626.19" y="2122.21" z="3043.8" h="3"/>
+				<loc x="2617.67" y="2129.1" z="3043.8" h="33"/>
 			</siege_guard>
 			<siege_guard npcid_dr="269201" npcid_da="269200" npcid_li="269199">
 				<loc x="2520.7795" y="2049.7625" z="3058.3826" h="92"/>
@@ -2311,8 +2402,6 @@ Forteresses et Artefacts Abyssaux-->
 			</siege_guard>
 			<siege_guard npcid_dr="269214" npcid_da="0" npcid_li="0">
 				<loc x="2478.9321" y="2131.1306" z="3050.7078" h="97"/>
-				<loc x="2527.9065" y="2135.5537" z="3050.7847" h="97"/>
-				<loc x="2527.7026" y="2049.1707" z="3032.6516" h="33"/>
 			</siege_guard>
 			<siege_guard npcid_dr="269090" npcid_da="269085" npcid_li="269080">
 				<loc x="2494.2622" y="2113.188" z="3005.167" h="77"/>
@@ -2343,9 +2432,6 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2502.1519" y="2130.741" z="3049.657" h="93"/>
 				<loc x="2476.7515" y="2106.0034" z="3002.539" h="77"/>
 				<loc x="2508.9937" y="2086.0481" z="3049.657" h="30"/>
-			</siege_guard>
-			<siege_guard npcid_dr="269221" npcid_da="0" npcid_li="0">
-				<loc x="2485.5923" y="2080.7864" z="3050.7847" h="20"/>
 			</siege_guard>
 			<siege_guard npcid_dr="269245" npcid_da="269244" npcid_li="269243">
 				<loc x="2609.0154" y="2108.9199" z="3040.959" h="105"/>
@@ -2604,8 +2690,6 @@ Forteresses et Artefacts Abyssaux-->
 			</siege_guard>
 			<siege_guard npcid_dr="266514" npcid_da="0" npcid_li="0">
 				<loc x="2705.979" y="824.08246" z="2872.9302" h="90"/>
-				<loc x="2710.3584" y="736.26709" z="2855.1289" h="37"/>
-				<loc x="2760.9221" y="778.87042" z="2873.3965" h="30"/>
 			</siege_guard>
 			<siege_guard npcid_dr="0" npcid_da="0" npcid_li="0">
 				<loc x="2730.125" y="870.31097" z="2871.1057" h="0"/>
@@ -2613,6 +2697,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2728.1274" y="869.97455" z="2871.1057" h="60"/>
 				<loc x="2730.3142" y="868.68768" z="2871.1057" h="0"/>
 			</siege_guard>
+			<!--
 			<siege_guard npcid_dr="266557" npcid_da="266556" npcid_li="266555">
 				<loc x="2742.7329" y="734.54675" z="2869.908" h="60"/>
 				<loc x="2728.2292" y="868.58661" z="2869.908" h="60"/>
@@ -2624,7 +2709,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2730.0376" y="870.54633" z="2869.907" h="0"/>
 				<loc x="2744.8501" y="734.99658" z="2869.908" h="0"/>
 				<loc x="2730.2268" y="868.92303" z="2869.908" h="0"/>
-			</siege_guard>
+			</siege_guard>-->
 			<siege_guard npcid_dr="266560" npcid_da="266559" npcid_li="266558">
 				<loc x="2795.051" y="832.8194" z="2869.908" h="15"/>
 				<loc x="2667.6541" y="813.073" z="2869.908" h="40"/>
@@ -2635,6 +2720,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2660.3384" y="789.96289" z="2885.883" h="63"/>
 				<loc x="2824.3699" y="812.74371" z="2869.907" h="7"/>
 			</siege_guard>
+			<!--
 			<siege_guard npcid_dr="266501" npcid_da="266500" npcid_li="266499">
 				<loc x="2568.166" y="722.45081" z="2891.984" h="60"/>
 				<loc x="2675.1504" y="787.57617" z="2884.368" h="60"/>
@@ -2660,7 +2746,7 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="2596.4307" y="738.04395" z="2893.865" h="0"/>
 				<loc x="2576.7478" y="733.9776" z="2893.865" h="40"/>
 				<loc x="2750.6321" y="846.89392" z="2889.205" h="20"/>
-			</siege_guard>
+			</siege_guard>-->
 			<siege_guard npcid_dr="266360" npcid_da="266355" npcid_li="266350">
 				<loc x="2687.7651" y="823.11865" z="2885.1558" h="50"/>
 				<loc x="2781.3599" y="778.8797" z="2885.1809" h="110"/>
@@ -2738,9 +2824,6 @@ Forteresses et Artefacts Abyssaux-->
 			</siege_guard>
 			<siege_guard npcid_dr="266510" npcid_da="266509" npcid_li="266508">
 				<loc x="2590.5999" y="766.94562" z="2873.947" h="58"/>
-			</siege_guard>
-			<siege_guard npcid_dr="266521" npcid_da="0" npcid_li="0">
-				<loc x="2754.1287" y="830.6405" z="2873.3965" h="90"/>
 			</siege_guard>
 			<!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -->
 			<!-- Spawned when Fortress is invulnerable (Only for Fortresses) -->
@@ -4282,6 +4365,10 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="929.1499" y="1899.1896" z="338.0136" h="53"/>
 			</peace_guard>
 		</guards>
+		<!-- Esoterrace Entrance Elyos -->
+		<instance_portal>
+			<baseinfo npcid_dr="0" npcid_da="0" npcid_li="730409" x="930.49" y="1904.88" z="338.01" h="52"/>
+		</instance_portal>
 		<!-- Fortress General - Ulsarak/ Stallari /Dux -->
 		<fortress_general>
 			<baseinfo npcid_dr="257312" npcid_da="257307" npcid_li="257302" x="892.479" y="1992.6" z="340.719" h="105"/>
@@ -4589,6 +4676,10 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="1702.41" y="2174.28" z="324.358" h="0"/>
 			</peace_guard>
 		</guards>
+		<!-- Esoterrace Entrance Elyos -->
+		<instance_portal>
+			<baseinfo npcid_dr="0" npcid_da="0" npcid_li="730409" x="1812.7401" y="2209.7158" z="325.59113" h="65"/>
+		</instance_portal>
 		<!-- Fortress General - Ulsarak/ Stallari /Dux -->
 		<fortress_general>
 			<baseinfo npcid_dr="257012" npcid_da="257007" npcid_li="257002" x="1725.53" y="2251.4" z="328.294" h="110"/>
@@ -5011,6 +5102,10 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="1205.59" y="852.126" z="309.495" h="0"/>
 			</peace_guard>
 		</guards>
+		<!-- Esoterrace Entrance Asmodian -->
+		<instance_portal>
+			<baseinfo npcid_dr="0" npcid_da="700138" npcid_li="0" x="1123.99" y="854.81" z="310.71" h="0"/>
+		</instance_portal>
 		<!-- Fortress General - Ulsarak/ Stallari /Dux -->
 		<fortress_general>
 			<baseinfo npcid_dr="257612" npcid_da="257607" npcid_li="257602" x="1194.37" y="788.097" z="313.421" h="105"/>
@@ -5302,6 +5397,10 @@ Forteresses et Artefacts Abyssaux-->
 				<loc x="1811.9" y="1129.58" z="323.19034" h="0"/>
 			</peace_guard>
 		</guards>
+		<!-- Esoterrace Entrance Asmodian -->
+		<instance_portal>
+			<baseinfo npcid_dr="0" npcid_da="700138" npcid_li="0" x="1807.01" y="1091.45" z="327.56" h="119"/>
+		</instance_portal>
 		<!-- Fortress General - Ulsarak/ Stallari /Dux -->
 		<fortress_general>
 			<baseinfo npcid_dr="257912" npcid_da="257907" npcid_li="257902" x="1878.78" y="1027.0" z="330.271" h="30"/>
@@ -5334,8 +5433,5 @@ Forteresses et Artefacts Abyssaux-->
 			<baseinfo npcid_dr="258103" npcid_da="258102" npcid_li="258101" x="1823.5378" y="1063.9467" z="326.86865" h="0" static_id="857"/>
 			<artifact_effect skillid="12112" range="WORLD"/>
 		</artifact>
-		<aetheric_field>
-			<baseinfo npcid_dr="258124" npcid_da="258123" npcid_li="258122" x="1942.82" y="1061.14" z="326.895" h="0"/>
-		</aetheric_field> 
 	</siege_spawn>
 </siege_spawns>

@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?xml-stylesheet type="text/css" href="../../licenses/Aion-X.css" title="License Aion X Emu" alternate="no"?>
-<?xml-stylesheet type="text/css" href="../../authors/Magenik.css"?>
 <bind_points xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="bind_points.xsd">
 	<!-- Sanctum -->
 	<bind_point name="Sanctum" npcid="700018" bindid="1" mapid="110010000" posX="1476.3" posY="1595.5" posZ="572.9" price="1540"/>

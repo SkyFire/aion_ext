@@ -124,9 +124,9 @@
 	<teleloc_template loc_id="100" mapid="210050000" name="Inggison Illusion Fortress"/>
 	<teleloc_template loc_id="101" mapid="210050000" name="Sotena Sanctuary Village"/>
 	<!-- Gelkmaros -->
-	<teleloc_template loc_id="93" mapid="220070000" name="DF4_Dyn_D_3011"/>
-	<teleloc_template loc_id="94" mapid="220070000" name="DF4_Dyn_D_3021"/>
-	<teleloc_template loc_id="102" mapid="220070000" name="Gelkmaros Fortress"/>
+	<teleloc_template loc_id="93" mapid="220070000" name="DF4_Dyn_D_3011" posX="1263.3544" posY="823.83575" posZ="310.0366" heading="56"/>
+	<teleloc_template loc_id="94" mapid="220070000" name="DF4_Dyn_D_3021" posX="1952.8867" posY="1069.4634" posZ="326.8721" heading="68"/>
+	<teleloc_template loc_id="102" mapid="220070000" name="Gelkmaros Fortress" posX="1790.0" posY="2915.0" posZ="554.8073" heading="17"/>
 	<teleloc_template loc_id="103" mapid="220070000" name="Rhombus Refugee Village"/>
 	<teleloc_template loc_id="104" mapid="220070000" name="Underground City observation Post"/>
 </teleport_location>

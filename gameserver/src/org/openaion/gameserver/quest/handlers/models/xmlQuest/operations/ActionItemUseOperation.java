@@ -46,7 +46,7 @@ public class ActionItemUseOperation extends QuestOperation
 
 	/*
 	 * (non-Javadoc)
-	 * @seecom.aionemu.gameserver.questEngine.handlers.models.xmlQuest.operations.QuestOperation#doOperate(org.openaion.
+	 * @seeorg.openaion.gameserver.questEngine.handlers.models.xmlQuest.operations.QuestOperation#doOperate(org.openaion.
 	 * gameserver.services.QuestService, org.openaion.gameserver.quest.model.QuestEnv)
 	 */
 	@Override
