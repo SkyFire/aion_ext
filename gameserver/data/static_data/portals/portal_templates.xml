@@ -909,6 +909,6 @@
 	<portal npcid="217778" instance="true" minlevel="50" maxlevel="60" group="true">
 		<entrypoint mapid="300100000" x="2019.51" y="1467.34" z="947.018"/>
 		<exitpoint mapid="300100000" x="375.63638" y="510.2968" z="1072.1212"/>
-	<portalitem id="1" itemid="186000098" quantity="1"/>
+	<portalitem id="1" itemid="168000112" quantity="1"/>
 	</portal>
 	</portal_templates>
