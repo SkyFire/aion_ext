@@ -2001,12 +2001,10 @@
 	<tradelist_template npc_id="798303" name="andreas" count="3" sell_rate="1" buy_rate="0.2">
 		<tradelist id="458"/>
 		<tradelist id="1208"/>
-		<tradelist id="5063"/>
 	</tradelist_template>
 	<tradelist_template npc_id="798304" name="seriphim" count="2" sell_rate="1" buy_rate="0.2">
 		<tradelist id="459"/>
 		<tradelist id="1209"/>
-		<tradelist id="5063"/>
 	</tradelist_template>
 	<tradelist_template npc_id="798357" name="shoshinerk" count="4" sell_rate="1" buy_rate="0.2">
 		<tradelist id="1200"/>

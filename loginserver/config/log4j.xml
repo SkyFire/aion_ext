@@ -17,6 +17,7 @@
         <param name="file" value="log/console.log"/>
         <param name="append" value="false"/>
         <param name="backupDir" value="log/backup"/>
+        <param name="encoding" value="UTF-8"/>
         <!-- Windows systems doesn't support : char in file names -->
         <param name="backupDateFormat" value="yyyy-MM-dd HH-mm-ss"/>
         <layout class="org.apache.log4j.EnhancedPatternLayout">
@@ -30,6 +31,7 @@
         <param name="file" value="log/errors.log"/>
         <param name="append" value="false"/>
         <param name="backupDir" value="log/backup"/>
+        <param name="encoding" value="UTF-8"/>
         <!-- Windows systems doesn't support : char in file names -->
         <param name="backupDateFormat" value="yyyy-MM-dd HH-mm-ss"/>
         <layout class="org.apache.log4j.EnhancedPatternLayout">

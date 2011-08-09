@@ -180,11 +180,12 @@ public abstract class InventoryPacket extends AionServerPacket
 		writeD(buf, god == null ? 0 : god.getItemId());			
 		writeD(buf, 0);
 		writeD(buf, 0);//unk 1.5.1.9
+		/*
 		writeC(buf, 0);
 		writeC(buf, 0x0A);
 		writeH(buf, 0x19);
 		writeD(buf, 0x07);
-			
+		*/	
 			/*
 			 * This is where item bonuses should be inserted.
 			 * The format is as follows:

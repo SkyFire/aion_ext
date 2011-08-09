@@ -132,4 +132,17 @@ xsi:noNamespaceSchemaLocation="chests_template.xsd">
 	<chest npcid="700938">
         <keyitem id="1" itemid="0" quantity="1"/>
     </chest>
+    <!-- Esoterrace -->
+    <chest npcid="701022">
+        <keyitem id="1" itemid="185000110" quantity="1"/>
+    </chest>
+    <chest npcid="701023">
+        <keyitem id="1" itemid="185000110" quantity="1"/>
+    </chest>
+    <chest npcid="701024">
+        <keyitem id="1" itemid="0" quantity="1"/>
+    </chest>
+    <chest npcid="701027">
+        <keyitem id="1" itemid="0" quantity="1"/>
+    </chest>
 </chest_templates>

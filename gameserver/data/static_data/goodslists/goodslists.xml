@@ -34476,7 +34476,11 @@
   <list id="5062">
     <item id="186000113" buy_limit="1" sell_limit="1000"/>
   </list>
-  <list id="5063">
+  <list id="1208">
+    <item id="188508001" buy_limit="1" sell_limit="1"/>
+    <item id="188508002" buy_limit="1" sell_limit="1"/>
+  </list>
+    <list id="1209">
     <item id="188508001" buy_limit="1" sell_limit="1"/>
     <item id="188508002" buy_limit="1" sell_limit="1"/>
   </list>

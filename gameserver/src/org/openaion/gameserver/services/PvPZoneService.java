@@ -50,7 +50,7 @@ public class PvPZoneService
 	{
 		if (!opened)
 		{
-			//Gelmaros Gate
+			//Gelkmaros Gate
 			float x = 1812.5325f;
 			float y = 2929.5986f;
 			float z = 554.7982f;

@@ -575,7 +575,7 @@ CREATE TABLE `player_life_stats` (
   `mp` int(11) NOT NULL DEFAULT '1',
   `fp` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`player_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of player_life_stats
@@ -627,7 +627,7 @@ CREATE TABLE `player_pets` (
   `feed_state` enum('HUNGRY','CONTENT','SEMIFULL','FULL') NOT NULL DEFAULT 'HUNGRY',
   `cd_started` bigint(20) NOT NULL DEFAULT '0',
   PRIMARY KEY (`player_id`,`pet_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of player_pets
@@ -867,7 +867,7 @@ CREATE TABLE `surveys` (
   `itemExistTime` bigint(20) NOT NULL DEFAULT '0',
   PRIMARY KEY (`survey_id`),
   KEY `player_id` (`player_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of surveys
