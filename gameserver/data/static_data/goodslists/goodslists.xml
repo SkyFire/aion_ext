@@ -34489,7 +34489,7 @@
     <item id="188508002" buylimit="1" selllimit="1"/>
   </list>
     <list id="1209">
-    <item id="188508001" buy_limit="1" sell_limit="1"/>
-    <item id="188508002" buy_limit="1" sell_limit="1"/>
+    <item id="188508001" buylimit="1" selllimit="1"/>
+    <item id="188508002" buylimit="1" selllimit="1"/>
   </list>
 </goodslists>
