@@ -298,18 +298,23 @@ public class ArtifactController extends NpcController
 	// This function is called after skill effected list has been populated with players
 	private void castSkill()
 	{
-		// Cast the Artifact Skill
-		Skill skill = SkillEngine.getInstance().getSkill(getOwner(), skillTemplate.getSkillId(), 1, getOwner());
-		skill.setFirstTargetRangeCheck(false);
+		
+	
+	
+		
+		//Cast the Artifact Skill 
 		for(Player p : World.getInstance().getPlayers())
 		{
+			Skill skill = SkillEngine.getInstance().getSkill(getOwner(), skillTemplate.getSkillId(), 1, getOwner());
+			skill.setFirstTargetRangeCheck(false);
+			skill.getEffectedList().clear();
 			if(checkStartConditions(p))
-			{
-				skill.getEffectedList().add(new CreatureWithDistance(p, 0));
-			}
+				{					
+					skill.getEffectedList().add(new CreatureWithDistance(p, 0));
+	}
+			skill.endCast();
 		}
-		skill.getEffectedList().remove(getOwner());
-		skill.endCast();
+
 	}
 	
 	/**
