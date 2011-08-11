@@ -362,9 +362,11 @@
 			<telelocation loc_id="101" teleportid="98001" price="2500"/>
 		</locations>
 	</teleporter_template>
-	<teleporter_template npc_id="798962" name="Soteria Sanctuary" teleportId="117" type="FLIGHT">
+	<teleporter_template npc_id="798962" name="Soteria Sanctuary" teleportId="117" type="REGULAR">
 		<locations>
-			<telelocation loc_id="99" teleportid="101001" price="2500"/>
+			<telelocation loc_id="90" price="8600"/>
+			<telelocation loc_id="91" price="5200"/>
+			<telelocation loc_id="99" price="2600"/>
 		</locations>
 	</teleporter_template>
 	<teleporter_template npc_id="799057" name="Undirborg Observation Post" teleportId="118"

@@ -120,6 +120,8 @@
 	<teleloc_template loc_id="127" mapid="220050000" name="Edge of Torment"/>
 	<teleloc_template loc_id="128" mapid="220050000" name="Lollu Overlook"/>
 	<!-- Inggison -->
+   <teleloc_template loc_id="90" mapid="210050000" name="LF4_Dyn_L_2011" posX="1666.5121" posY="2190.421" posZ="324.8958" heading="7"/>
+   <teleloc_template loc_id="91" mapid="210050000" name="LF4_Dyn_L_2021" posX="812.62964" posY="1986.4653" posZ="337.32233" heading="113"/>
 	<teleloc_template loc_id="99" mapid="210050000" name="Underground Fortress Observation Base"/>
 	<teleloc_template loc_id="100" mapid="210050000" name="Inggison Illusion Fortress"/>
 	<teleloc_template loc_id="101" mapid="210050000" name="Sotena Sanctuary Village"/>

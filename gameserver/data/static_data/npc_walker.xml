@@ -4415,4 +4415,84 @@
 			<routestep step="7" loc_x="318.54694" loc_y="2771.0547" loc_z="263.49844" rest_time="5" />
 		</routes>
 	</walker_template>
-</npc_walker>
+	<!--Esoterrace Hunter #1-->
+	<walker_template route_id="229">
+		<routes>
+			<routestep step="1" loc_x="1000.64825" loc_y="434.93536" loc_z="227.31308" rest_time="0"/>
+			<routestep step="2" loc_x="978.0228" loc_y="428.8097" loc_z="222.75714" rest_time="0"/>
+			<routestep step="3" loc_x="964.40656" loc_y="433.81094" loc_z="218.85342" rest_time="0"/>
+			<routestep step="4" loc_x="951.01984" loc_y="434.43155" loc_z="215.27214" rest_time="0"/>
+			<routestep step="5" loc_x="932.25543" loc_y="448.8374" loc_z="212.9229" rest_time="0"/>
+			<routestep step="6" loc_x="951.01984" loc_y="434.43155" loc_z="215.27214" rest_time="0"/>
+			<routestep step="7" loc_x="964.40656" loc_y="433.81094" loc_z="218.85342" rest_time="0"/>
+			<routestep step="8" loc_x="978.0228" loc_y="428.8097" loc_z="222.75714" rest_time="0"/>
+		</routes>
+	</walker_template>
+	<!--Esoterrace Hunter #2-->
+	<walker_template route_id="230">
+		<routes>
+			<routestep step="1" loc_x="916.69696" loc_y="466.69464" loc_z="208.86975" rest_time="0"/>
+			<routestep step="2" loc_x="911.3904" loc_y="477.35974" loc_z="205.1151" rest_time="0"/>
+			<routestep step="3" loc_x="910.5271" loc_y="491.18817" loc_z="201.2359" rest_time="0"/>
+			<routestep step="4" loc_x="904.8242" loc_y="506.2939" loc_z="197.18013" rest_time="0"/>
+			<routestep step="5" loc_x="903.6254" loc_y="525.4249" loc_z="194.18436" rest_time="0"/>
+			<routestep step="6" loc_x="904.8242" loc_y="506.2939" loc_z="197.18013" rest_time="0"/>
+			<routestep step="7" loc_x="910.5271" loc_y="491.18817" loc_z="201.2359" rest_time="0"/>
+			<routestep step="8" loc_x="911.3904" loc_y="477.35974" loc_z="205.1151" rest_time="0"/>
+		</routes>
+	</walker_template>
+	<!--Esoterrace Hunter #3-->
+	<walker_template route_id="231">
+		<routes>
+			<routestep step="1" loc_x="979.79095" loc_y="564.46655" loc_z="241.10054" rest_time="0"/>
+			<routestep step="2" loc_x="976.51776" loc_y="547.4532" loc_z="239.90373" rest_time="0"/>
+			<routestep step="3" loc_x="972.68616" loc_y="533.96826" loc_z="239.16423" rest_time="0"/>
+			<routestep step="4" loc_x="979.7236" loc_y="520.6826" loc_z="237.52539" rest_time="0"/>
+			<routestep step="5" loc_x="972.68616" loc_y="533.96826" loc_z="239.16423" rest_time="0"/>
+			<routestep step="6" loc_x="976.51776" loc_y="547.4532" loc_z="239.90373" rest_time="0"/>
+		</routes>
+	</walker_template>
+	<!--Esoterrace Hunter #4-->
+	<walker_template route_id="232">
+		<routes>
+			<routestep step="1" loc_x="979.46356" loc_y="500.42273" loc_z="233.8892" rest_time="0"/>
+			<routestep step="2" loc_x="984.8888" loc_y="481.11356" loc_z="230.13919" rest_time="0"/>
+			<routestep step="3" loc_x="988.7005" loc_y="462.66214" loc_z="227.4976" rest_time="0"/>
+			<routestep step="4" loc_x="997.2276" loc_y="444.04282" loc_z="226.62767" rest_time="0"/>
+			<routestep step="5" loc_x="988.7005" loc_y="462.66214" loc_z="227.4976" rest_time="0"/>
+			<routestep step="6" loc_x="984.8888" loc_y="481.11356" loc_z="230.13919" rest_time="0"/>
+		</routes>
+	</walker_template>
+	<!--Esoterrace Hunter #4-->
+	<walker_template route_id="233">
+		<routes>
+			<routestep step="1" loc_x="1122.8716" loc_y="461.69498" loc_z="267.82053" rest_time="0"/>
+			<routestep step="2" loc_x="1113.2899" loc_y="475.7505" loc_z="267.2656" rest_time="0"/>
+			<routestep step="3" loc_x="1109.4705" loc_y="495.5284" loc_z="266.09552" rest_time="0"/>
+			<routestep step="4" loc_x="1099.6428" loc_y="510.5909" loc_z="266.55154" rest_time="0"/>
+			<routestep step="5" loc_x="1096.1312" loc_y="530.8329" loc_z="267.14142" rest_time="0"/>
+			<routestep step="6" loc_x="1099.6428" loc_y="510.5909" loc_z="266.55154" rest_time="0"/>
+			<routestep step="7" loc_x="1109.4705" loc_y="495.5284" loc_z="266.09552" rest_time="0"/>
+			<routestep step="8" loc_x="1113.2899" loc_y="475.7505" loc_z="267.2656" rest_time="0"/>
+		</routes>
+	</walker_template>
+	 <!-- Robots (Araka)-->
+   <walker_template route_id="234">
+      <routes>
+         <routestep step="1" loc_x="954.79926" loc_y="496.19214" loc_z="232.97406" rest_time="3" />
+         <routestep step="2" loc_x="956.7104" loc_y="491.6463" loc_z="232.16158" rest_time="2" />
+         <routestep step="3" loc_x="954.79926" loc_y="496.19214" loc_z="232.97406" rest_time="3" />
+         <routestep step="4" loc_x="959.37445" loc_y="502.29645" loc_z="233.92084" rest_time="2" />
+         <routestep step="5" loc_x="954.79926" loc_y="496.19214" loc_z="232.97406" rest_time="3" />
+      </routes>
+   </walker_template>
+   <walker_template route_id="235">
+      <routes>
+         <routestep step="1" loc_x="1036.1913" loc_y="485.68906" loc_z="245.375" rest_time="3" />
+         <routestep step="2" loc_x="1031.1562" loc_y="503.89923" loc_z="245.56596" rest_time="2" />
+         <routestep step="3" loc_x="1022.8903" loc_y="518.65576" loc_z="245.125" rest_time="3" />
+         <routestep step="4" loc_x="1031.1562" loc_y="503.89923" loc_z="245.56596" rest_time="2" />
+         <routestep step="5" loc_x="1036.1913" loc_y="485.68906" loc_z="245.375" rest_time="3" />
+      </routes>
+   </walker_template>
+	 </npc_walker>
