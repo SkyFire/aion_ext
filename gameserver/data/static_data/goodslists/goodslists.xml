@@ -34014,8 +34014,6 @@
     <item id="152208203"/>
     <item id="152208204"/>
   </list>
-    <list id="1208">
-  </list>
   <list id="5001">
     <item id="152012001" buylimit="0" selllimit="100"/>
     <item id="152012002" buylimit="0" selllimit="100"/>
@@ -34488,7 +34486,7 @@
     <item id="188508001" buylimit="1" selllimit="1"/>
     <item id="188508002" buylimit="1" selllimit="1"/>
   </list>
-    <list id="1209">
+  <list id="1209">
     <item id="188508001" buylimit="1" selllimit="1"/>
     <item id="188508002" buylimit="1" selllimit="1"/>
   </list>
