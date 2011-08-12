@@ -599,10 +599,10 @@
 	<spawn map="300040000" npcid="214887" pool="1" interval="300">
 		<object x="224.58984" y="476.73724" z="112.26929" h="105"/>
 	</spawn>
-	<!-- Brigade General Anuhart (Monster Hero lvl:50)
+	<!-- Brigade General Anuhart (Monster Hero lvl:50) -->
 	<spawn map="300040000" npcid="214904" pool="1" interval="14400">
 		<object x="275.34537" y="323.02072" z="130.9302" h="52"/>
-	</spawn>-->
+	</spawn>
 	<!-- Calindi Flamelord (Monster Hero lvl:50)
 	<spawn map="300040000" npcid="215281" pool="1" interval="14400">
 		<object x="1108.3105" y="1305.4781" z="109.64441" h="41"/>

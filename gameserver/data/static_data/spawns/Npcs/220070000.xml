@@ -1299,4 +1299,8 @@
 	<spawn map="220070000" npcid="700048" pool="1" interval="295">
 		<object x="1419.5447" y="2099.5276" z="364.81265" h="90" staticid="706" />
 	</spawn>
+	 <!-- Rift Asmo -->
+  <spawn map="220070000" npcid="700138" pool="1" interval="295">
+  <object x="1807.01" y="1091.45" z="327.56" h="0"/>
+  </spawn>
 </spawns>
