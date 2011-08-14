@@ -1150,6 +1150,14 @@
 	<spawn map="300170000" npcid="216238" pool="1" interval="295" rw="20">
 		<object x="1342.94" y="288.048" h="0" z="244.977"/>
 	</spawn>
+<!-- Artefact1 Divine Artifact -->
+ <spawn map="300170000" npcid="281541" pool="1" interval="295" rw="10">
+ <object x="1588.6936" y="1587.7366" z="308.24246" h="78"/>
+ </spawn>
+ <!-- Artefact2  Magic Artifact -->
+ <spawn map="300170000" npcid="281542" pool="1" interval="295" rw="10">
+ <object x="1601.2065" y="1578.2158" z="308.24246" h="78"/>
+ </spawn>
 	<!-- IDCatacome_SensoryArea_Q20025 (Monster Normal lvl:55) -->
 	<spawn map="300170000" npcid="206109" pool="1" interval="295" rw="10">
 		<object x="1355.42" y="119.871" h="0" z="246.272"/>

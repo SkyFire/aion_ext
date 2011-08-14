@@ -47192,7 +47192,15 @@
         <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18914" id="4"/>  <!-- works  -->
         <npcskill abouthp="false" probability="10" skilllevel="1" skillid="18959" id="5"/>	<!-- works  -->
     </npcskills>	
-	<!-- Stormwing -->
+    	<!--  Divine Artifact -->
+    <npcskills npcid="281541" skill_count="1">
+        <npcskill abouthp="false" probability="3" skilllevel="1" skillid="18915" id="1"/>   <!-- works  -->
+    </npcskills>	
+     	<!--  Magic Artifact -->
+    <npcskills npcid="281542" skill_count="1">
+        <npcskill abouthp="false" probability="3" skilllevel="1" skillid="18915" id="1"/>   <!-- works  -->
+    </npcskills>	
+   <!-- Stormwing -->
 	<npcskills npcid="216183" skill_count="6">
 		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18612" id="1"/>
 		<npcskill abouthp="false" probability="10" skilllevel="1" skillid="18613" id="2"/>

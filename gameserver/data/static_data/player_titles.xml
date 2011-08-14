@@ -993,34 +993,6 @@
 			<rate name="SPEED" value="3" bonus="true"/>
 		</modifiers>
 	</title>
-	<title id="160" race="2">
-		<modifiers>
-			<rate name="SPEED" value="4" bonus="true"/>
-			<rate name="FLY_SPEED" value="3" bonus="true"/>
-			<rate name="ATTACK_SPEED" value="-2" bonus="true"/>
-		</modifiers>
-	</title>
-	<title id="161" race="2">
-		<modifiers>
-			<rate name="SPEED" value="4" bonus="true"/>
-			<rate name="FLY_SPEED" value="3" bonus="true"/>
-			<rate name="BOOST_CASTING_TIME" value="-2" bonus="true"/>
-		</modifiers>
-	</title>
-	<title id="162" race="2">
-		<modifiers>
-			<rate name="SPEED" value="5" bonus="true"/>
-			<rate name="FLY_SPEED" value="4" bonus="true"/>
-			<rate name="ATTACK_SPEED" value="-2" bonus="true"/>
-		</modifiers>
-	</title>
-	<title id="163" race="2">
-		<modifiers>
-			<rate name="SPEED" value="5" bonus="true"/>
-			<rate name="FLY_SPEED" value="4" bonus="true"/>
-			<rate name="BOOST_CASTING_TIME" value="-2" bonus="true"/>
-		</modifiers>
-	</title>
 	<title id="154" race="0">
 		<modifiers>
 			<add name="PHYSICAL_CRITICAL" value="4" bonus="true"/>

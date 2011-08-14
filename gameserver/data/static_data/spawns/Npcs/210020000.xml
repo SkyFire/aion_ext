@@ -532,7 +532,7 @@
 		<object x="2034.59440" y="1398.65650" z="430.00485" h="82"/>
 	</spawn>
 	<!-- Hippolytus (NPC Normal lvl:45) -->
-	<spawn map="210020000" npcid="204005" pool="1" interval="295">
+	<spawn map="210020000" npcid="203331" pool="1" interval="295">
 		<object x="1571.606" y="1127.8442" z="385.61984" h="24"/>
 	</spawn>
 	<!-- Historical Criminals of Atreia -->
